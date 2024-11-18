@@ -22,4 +22,4 @@ w32tm /query /configuration
 w32tm /resync /force
 
 # Write w32time debug logs into a file (run in elevated console)
-w32tm /debug /enable /file:{{path\to\debug.log}} /size:<10000000> /entries:<0_300>
+w32tm /debug /enable /file:{{path	o\debug.log}} /size:<10000000> /entries:<0_300>

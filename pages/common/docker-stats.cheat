@@ -10,7 +10,7 @@ docker stats
 docker stats <container_name>
 
 # Change the columns format to display container's CPU usage percentage
-docker stats --format "<_Name>:\t<_CPUPerc>"
+docker stats --format "<_Name>:	<_CPUPerc>"
 
 # Display statistics for all containers (both running and stopped)
 docker stats --all

@@ -10,7 +10,7 @@ repair-bde <C_>
 repair-bde <C_> <D_>
 
 # Attempt to repair a specified volume using the provided recovery key file
-repair-bde <C_> -RecoveryKey {{path\to\file.bek}}
+repair-bde <C_> -RecoveryKey {{path	oile.bek}}
 
 # Attempt to repair a specified volume using the provided numerical recovery password
 repair-bde <C_> -RecoveryPassword <password>
@@ -19,10 +19,10 @@ repair-bde <C_> -RecoveryPassword <password>
 repair-bde <C_> -Password <password>
 
 # Attempt to repair a specified volume using the provided key package
-repair-bde <C_> -KeyPackage {{path\to\directory}}
+repair-bde <C_> -KeyPackage {{path	o\directory}}
 
 # Log all output to a specific file
-repair-bde <C_> -LogFile {{path\to\file}}
+repair-bde <C_> -LogFile {{path	oile}}
 
 # Display all available options
 repair-bde /?

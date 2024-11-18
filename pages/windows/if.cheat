@@ -22,4 +22,4 @@ if %<variable>% == <string> ({{echo Condition is true}})
 if /i %<variable>% == <string> ({{echo Condition is true}})
 
 # Check whether a file exist
-if exist {{path\to\file}} ({{echo Condition is true}})
+if exist {{path	oile}} ({{echo Condition is true}})

@@ -4,7 +4,7 @@
 % mkdir, windows
 
 # Create a directory
-mkdir {{path\to\directory}}
+mkdir {{path	o\directory}}
 
 # Create a nested directory tree recursively
-mkdir {{path\to\sub_directory}}
+mkdir {{path	o\sub_directory}}

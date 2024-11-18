@@ -13,10 +13,10 @@ xml format --html --indent-spaces <4> <path_to_input_html_URI> > <path_to_output
 xml format --recover --noindent <path_to_malformed_xml_URI> > <path_to_recovered_xml>
 
 # Format an XML document from `stdin`, removing the `DOCTYPE` declaration
-cat {{path\to\input.xml}} | xml format --dropdtd > <path_to_output_xml>
+cat {{path	o\input.xml}} | xml format --dropdtd > <path_to_output_xml>
 
 # Format an XML document, omitting the XML declaration
-xml format --omit-decl {{path\to\input.xml|URI}} > <path_to_output_xml>
+xml format --omit-decl {{path	o\input.xml|URI}} > <path_to_output_xml>
 
 # Display help for the `format` subcommand
 xml format --help

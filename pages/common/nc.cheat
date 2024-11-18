@@ -22,4 +22,7 @@ nc <host> <port> -e <shell_executable>
 nc -l -p <local_port> | nc <host> <remote_port>
 
 # Send an HTTP GET request
-echo -e "GET / HTTP/1.1\nHost: <host>\n\n" | nc <host> 80
+echo -e "GET / HTTP/1.1
+Host: <host>
+
+" | nc <host> 80

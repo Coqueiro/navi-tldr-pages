@@ -4,25 +4,25 @@
 % xcopy, windows
 
 # Copy the file(s) to the specified destination
-xcopy {{path\to\file_or_directory}} {{path\to\destination_directory}}
+xcopy {{path	oile_or_directory}} {{path	o\destination_directory}}
 
 # List files that will be copied before copying
-xcopy {{path\to\file_or_directory}} {{path\to\destination_directory}} /p
+xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /p
 
 # Copy the directory structure only, excluding files
-xcopy {{path\to\file_or_directory}} {{path\to\destination_directory}} /t
+xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /t
 
 # Include empty directories when copying
-xcopy {{path\to\file_or_directory}} {{path\to\destination_directory}} /e
+xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /e
 
 # Keep the source ACL in the destination
-xcopy {{path\to\file_or_directory}} {{path\to\destination_directory}} /o
+xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /o
 
 # Allow resuming when network connection is lost
-xcopy {{path\to\file_or_directory}} {{path\to\destination_directory}} /z
+xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /z
 
 # Disable the prompt when the file exists in the destination
-xcopy {{path\to\file_or_directory}} {{path\to\destination_directory}} /y
+xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /y
 
 # Display detailed usage information
 xcopy /?

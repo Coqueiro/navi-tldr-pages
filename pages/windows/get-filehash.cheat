@@ -4,7 +4,7 @@
 % get-filehash, windows
 
 # Calculate a hash for a specified file using the SHA256 algorithm
-Get-FileHash {{path\to\file}}
+Get-FileHash {{path	oile}}
 
 # Calculate a hash for a specified file using a specified algorithm
-Get-FileHash {{path\to\file}} -Algorithm <SHA1_SHA384_SHA256_SHA512_MD5>
+Get-FileHash {{path	oile}} -Algorithm <SHA1_SHA384_SHA256_SHA512_MD5>

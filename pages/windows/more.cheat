@@ -7,19 +7,19 @@
 {{echo test}} | more
 
 # Display paginated output from one or more files
-more {{path\to\file}}
+more {{path	oile}}
 
 # Convert tabs to the specified number of spaces
-more {{path\to\file}} /t<spaces>
+more {{path	oile}} /t<spaces>
 
 # Clear the screen before displaying the page
-more {{path\to\file}} /c
+more {{path	oile}} /c
 
 # Display the output starting at line 5
-more {{path\to\file}} +<5>
+more {{path	oile}} +<5>
 
 # Enable extended interactive mode (see help for usage)
-more {{path\to\file}} /e
+more {{path	oile}} /e
 
 # Display full usage information
 more /?

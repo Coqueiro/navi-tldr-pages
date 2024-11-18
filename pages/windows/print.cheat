@@ -4,7 +4,7 @@
 % print, windows
 
 # Print a text file to the default printer
-print {{path\to\file}}
+print {{path	oile}}
 
 # Print a text file to a specific printer
-print /d:<printer> {{path\to\file}}
+print /d:<printer> {{path	oile}}

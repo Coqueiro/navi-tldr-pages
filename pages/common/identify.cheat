@@ -10,4 +10,5 @@ identify <path_to_image>
 identify -verbose <path_to_image>
 
 # Collect dimensions of all JPEG files under current directory
-identify -format "%f,%w,%h\n" *.<jpg> > <path_to_filelist_csv>
+identify -format "%f,%w,%h
+" *.<jpg> > <path_to_filelist_csv>

@@ -16,7 +16,7 @@ pipwin install <package>
 pipwin uninstall <package>
 
 # Download a package to a specific directory
-pipwin download --dest {{path\to\directory}} <package>
+pipwin download --dest {{path	o\directory}} <package>
 
 # Install packages according to `requirements.txt`
-pipwin install --file {{path\to\requirements.txt}}
+pipwin install --file {{path	oequirements.txt}}

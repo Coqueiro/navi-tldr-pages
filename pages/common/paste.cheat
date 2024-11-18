@@ -16,4 +16,5 @@ paste <file1> <file2>
 paste -d <delimiter> <file1> <file2>
 
 # Merge two files, with lines added alternatively
-paste -d '\n' <file1> <file2>
+paste -d '
+' <file1> <file2>

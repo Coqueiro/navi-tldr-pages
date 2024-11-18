@@ -7,7 +7,7 @@
 net <start_stop> <service>
 
 # Make sure an SMB share is available in the current console
-net use {{\\smb_shared_folder}} /USER:<username>
+net use {{\smb_shared_folder}} /USER:<username>
 
 # Show the folders currently shared over SMB
 net share

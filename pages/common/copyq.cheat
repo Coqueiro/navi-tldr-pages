@@ -12,8 +12,10 @@ copyq clipboard
 # Insert raw text into the clipboard history
 copyq add -- <text1> <text2> <text3>
 
-# Insert text containing escape sequences ('\n', '\t') into the clipboard history
-copyq add {{firstline\nsecondline}}
+# Insert text containing escape sequences ('
+', '	') into the clipboard history
+copyq add {{firstline
+secondline}}
 
 # Print the content of the first 3 items in the clipboard history
 copyq read 0 1 2

@@ -10,7 +10,8 @@ csvformat -T <data_csv>
 csvformat -D "<custom_character>" <data_csv>
 
 # Convert line endings to carriage return (^M) + line feed
-csvformat -M "{{\r\n}}" <data_csv>
+csvformat -M "{{
+}}" <data_csv>
 
 # Minimize use of quote characters
 csvformat -U 0 <data_csv>

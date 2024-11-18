@@ -4,7 +4,7 @@
 % invoke-webrequest, windows
 
 # Download the contents of a URL to a file
-Invoke-WebRequest <http___example_com> -OutFile {{path\to\file}}
+Invoke-WebRequest <http___example_com> -OutFile {{path	oile}}
 
 # Send form-encoded data (POST request of type `application/x-www-form-urlencoded`)
 Invoke-WebRequest -Method Post -Body @{ name='bob' } <http___example_com_form>

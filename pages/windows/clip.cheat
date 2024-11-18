@@ -7,7 +7,7 @@
 <dir> | clip
 
 # Copy the contents of a file to the Windows clipboard
-clip < {{path\to\file.ext}}
+clip < {{path	oile.ext}}
 
 # Copy text with a trailing newline to the Windows clipboard
 echo {{some text}} | clip

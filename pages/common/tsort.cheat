@@ -7,4 +7,6 @@
 tsort <path_to_file>
 
 # Perform a topological sort consistent on strings
-echo -e "{{UI Backend\nBackend Database\nDocs UI}}" | tsort
+echo -e "{{UI Backend
+Backend Database
+Docs UI}}" | tsort

@@ -25,4 +25,4 @@ shutdown /s /t <8>
 shutdown /a
 
 # Shutdown a remote machine
-shutdown /m {{\\hostname}}
+shutdown /m {{\hostname}}

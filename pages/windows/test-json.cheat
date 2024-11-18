@@ -10,4 +10,4 @@
 Test-Json -Json '<json_to_test>'
 
 # Test if a string from `stdin` matches a specific schema file
-'<string>' | Test-Json -SchemaFile {{path\to\schema_file.json}}
+'<string>' | Test-Json -SchemaFile {{path	o\schema_file.json}}

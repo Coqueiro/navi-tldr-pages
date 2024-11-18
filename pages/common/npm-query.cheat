@@ -19,7 +19,8 @@ npm query #<package>@<semantic_version>
 npm query ':empty'
 
 # Find all dependencies with postinstall scripts and uninstall them
-npm query ":attr(scripts, [postinstall])" | jq 'map(.name) | join("\n")' -r | xargs -I {} npm uninstall {}
+npm query ":attr(scripts, [postinstall])" | jq 'map(.name) | join("
+")' -r | xargs -I {} npm uninstall {}
 
 # Find all Git dependencies and print which application requires them
 npm query ":type(git)" | jq 'map(.name)' | xargs -I {} npm why {}

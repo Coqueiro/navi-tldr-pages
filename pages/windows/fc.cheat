@@ -4,22 +4,22 @@
 % fc, windows
 
 # Compare 2 specified files
-fc {{path\to\file1}} {{path\to\file2}}
+fc {{path	oile1}} {{path	oile2}}
 
 # Perform a case-insensitive comparison
-fc /c {{path\to\file1}} {{path\to\file2}}
+fc /c {{path	oile1}} {{path	oile2}}
 
 # Compare files as Unicode text
-fc /u {{path\to\file1}} {{path\to\file2}}
+fc /u {{path	oile1}} {{path	oile2}}
 
 # Compare files as ASCII text
-fc /l {{path\to\file1}} {{path\to\file2}}
+fc /l {{path	oile1}} {{path	oile2}}
 
 # Compare files as binary
-fc /b {{path\to\file1}} {{path\to\file2}}
+fc /b {{path	oile1}} {{path	oile2}}
 
 # Disable tab-to-space expansion
-fc /t {{path\to\file1}} {{path\to\file2}}
+fc /t {{path	oile1}} {{path	oile2}}
 
 # Compress whitespace (tabs and spaces) for comparisons
-fc /w {{path\to\file1}} {{path\to\file2}}
+fc /w {{path	oile1}} {{path	oile2}}

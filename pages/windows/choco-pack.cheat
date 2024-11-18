@@ -4,10 +4,10 @@
 % choco-pack, windows
 
 # Package a NuGet specification to a nupkg file
-choco pack {{path\to\specification_file}}
+choco pack {{path	o\specification_file}}
 
 # Package a NuGet specification specifying the version of the resulting file
-choco pack {{path\to\specification_file}} --version <version>
+choco pack {{path	o\specification_file}} --version <version>
 
 # Package a NuGet specification to a specific directory
-choco pack {{path\to\specification_file}} --output-directory {{path\to\output_directory}}
+choco pack {{path	o\specification_file}} --output-directory {{path	o\output_directory}}

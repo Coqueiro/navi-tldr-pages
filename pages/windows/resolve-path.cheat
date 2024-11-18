@@ -7,7 +7,7 @@
 Resolve-Path <_>
 
 # Resolve a UNC path
-Resolve-Path -Path "\\<hostname>\{{path\to\file}}"
+Resolve-Path -Path "\<hostname>\{{path	oile}}"
 
 # Get relative paths
-Resolve-Path -Path {{path\to\file_or_directory}} -Relative
+Resolve-Path -Path {{path	oile_or_directory}} -Relative

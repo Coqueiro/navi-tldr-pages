@@ -3,7 +3,8 @@
 
 % yank, common
 
-# Yank using the default delimiters (\f, \n, \r, \s, \t)
+# Yank using the default delimiters (, 
+, , \s, 	)
 {{sudo dmesg}} | yank
 
 # Yank an entire line

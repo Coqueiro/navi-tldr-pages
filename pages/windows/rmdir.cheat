@@ -4,10 +4,10 @@
 % rmdir, windows
 
 # Remove an empty directory
-rmdir {{path\to\directory}}
+rmdir {{path	o\directory}}
 
 # Remove a directory and its contents recursively
-rmdir {{path\to\directory}} /s
+rmdir {{path	o\directory}} /s
 
 # Remove a directory and its contents recursively without prompting
-rmdir {{path\to\directory}} /s /q
+rmdir {{path	o\directory}} /s /q

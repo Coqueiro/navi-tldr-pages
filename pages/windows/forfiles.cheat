@@ -7,7 +7,7 @@
 forfiles
 
 # Search for files in a specific directory
-forfiles /p {{path\to\directory}}
+forfiles /p {{path	o\directory}}
 
 # Run the specified command for each file
 forfiles /c "<command>"

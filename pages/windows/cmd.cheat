@@ -10,7 +10,7 @@ cmd
 cmd /c {{echo Hello world}}
 
 # Execute a specific script
-cmd {{path\to\script.bat}}
+cmd {{path	o\script.bat}}
 
 # Execute specific commands and then enter an interactive shell
 cmd /k {{echo Hello world}}

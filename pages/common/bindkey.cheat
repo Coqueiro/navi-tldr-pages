@@ -7,7 +7,8 @@
 bindkey "<_k>" <kill_line>
 
 # Bind a hotkey to a specific key sequence
-bindkey -s '^o' 'cd ..\n'
+bindkey -s '^o' 'cd ..
+'
 
 # View keymaps
 bindkey -l

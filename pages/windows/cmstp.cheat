@@ -4,25 +4,25 @@
 % cmstp, windows
 
 # Install a specific profile
-cmstp "{{path\to\profile_file}}"
+cmstp "{{path	o\profile_file}}"
 
 # Install without creating a desktop shortcut
-cmstp /ns "{{path\to\profile_file}}"
+cmstp /ns "{{path	o\profile_file}}"
 
 # Install without checking for dependencies
-cmstp /nf "{{path\to\profile_file}}"
+cmstp /nf "{{path	o\profile_file}}"
 
 # Only install for the current user
-cmstp /su "{{path\to\profile_file}}"
+cmstp /su "{{path	o\profile_file}}"
 
 # Install for all users (requires administrator privileges)
-cmstp /au "{{path\to\profile_file}}"
+cmstp /au "{{path	o\profile_file}}"
 
 # Install silently without any prompts
-cmstp /s "{{path\to\profile_file}}"
+cmstp /s "{{path	o\profile_file}}"
 
 # Uninstall a specific profile
-cmstp /u "{{path\to\profile_file}}"
+cmstp /u "{{path	o\profile_file}}"
 
 # Uninstall silently without a confirmation prompt
-cmstp /u /s "{{path\to\profile_file}}"
+cmstp /u /s "{{path	o\profile_file}}"
