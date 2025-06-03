@@ -4,4 +4,4 @@
 % gnice, osx
 
 # View documentation for the original command
-tldr nice
+tldr -p linux nice

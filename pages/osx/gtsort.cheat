@@ -4,4 +4,4 @@
 % gtsort, osx
 
 # View documentation for the original command
-tldr tsort
+tldr -p linux tsort

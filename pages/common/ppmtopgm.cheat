@@ -4,7 +4,7 @@
 % ppmtopgm, common
 
 # Convert PPM image to PGM image
-ppmtopgm <path_to_file_ppm> > <path_to_file_pgm>
+ppmtopgm <path_to_file.ppm> > <path_to_file.pgm>
 
 # Display version
-ppmtopgm {{[-v|-version]}}
+ppmtopgm -version

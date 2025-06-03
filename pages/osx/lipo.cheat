@@ -4,7 +4,7 @@
 % lipo, osx
 
 # Create a universal file from two single-architecture files
-lipo <path_to_binary_file_x86_64> <path_to_binary_file_arm64e> -create -output <path_to_binary_file>
+lipo <path_to_binary_file.x86_64> <path_to_binary_file.arm64e> -create -output <path_to_binary_file>
 
 # List all architectures contained in a universal file
 lipo <path_to_binary_file> -archs
@@ -13,4 +13,4 @@ lipo <path_to_binary_file> -archs
 lipo <path_to_binary_file> -detailed_info
 
 # Extract a single-architecture file from a universal file
-lipo <path_to_binary_file> -thin <arm64e> -output <path_to_binary_file_arm64e>
+lipo <path_to_binary_file> -thin <arm64e> -output <path_to_binary_file.arm64e>

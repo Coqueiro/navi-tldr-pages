@@ -7,7 +7,7 @@
 swift repl
 
 # Execute a program
-swift <file_swift>
+swift <file.swift>
 
 # Start a new project with the package manager
 swift package init

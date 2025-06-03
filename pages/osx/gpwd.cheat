@@ -4,4 +4,4 @@
 % gpwd, osx
 
 # View documentation for the original command
-tldr pwd
+tldr -p linux pwd

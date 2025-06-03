@@ -4,10 +4,10 @@
 % pamfile, common
 
 # Describe the specified Netpbm files
-pamfile {{path/to/file1 path/to/file2 ...}}
+pamfile <path_to_file1 path_to_file2 ...>
 
 # Describe every image in each input file (as opposed to only the first image in each file) in a machine-readable format
-pamfile {{[-a|-allimages]}} -machine <path_to_file>
+pamfile -allimages -machine <path_to_file>
 
 # Display a count on how many images the input files contain
-pamfile {{[-cou|-count]}} <path_to_file>
+pamfile -count <path_to_file>

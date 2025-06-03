@@ -4,4 +4,4 @@
 % gsha512sum, osx
 
 # View documentation for the original command
-tldr sha512sum
+tldr -p linux sha512sum

@@ -13,7 +13,7 @@ restic --repo <path_to_repository> backup <path_to_directory>
 restic --repo <path_to_repository> snapshots
 
 # Restore a specific backup snapshot to a target directory
-restic --repo <path_to_repository> restore <latest_snapshot_id> --target <path_to_target>
+restic --repo <path_to_repository> restore <latest|snapshot_id> --target <path_to_target>
 
 # Restore a specific path from a specific backup to a target directory
 restic --repo <path_to_repository> restore <snapshot_id> --target <path_to_target> --include <path_to_restore>

@@ -13,4 +13,4 @@ virsh connect qemu:///system
 virsh connect qemu:///session
 
 # Connect as root to a remote hypervisor using SSH
-virsh connect qemu+ssh://<user_name_host_name>/system
+virsh connect qemu+ssh://<user_name@host_name>/system

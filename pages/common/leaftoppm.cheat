@@ -4,7 +4,7 @@
 % leaftoppm, common
 
 # Generate a PPM image file as output for an Interleaf image file as input
-leaftoppm <path_to_file_pl>
+leaftoppm <path_to_file.pl>
 
 # Display version
-leaftoppm {{[-v|-version]}}
+leaftoppm -version

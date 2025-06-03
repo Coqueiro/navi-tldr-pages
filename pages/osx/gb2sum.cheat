@@ -4,4 +4,4 @@
 % gb2sum, osx
 
 # View documentation for the original command
-tldr b2sum
+tldr -p linux b2sum

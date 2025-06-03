@@ -7,7 +7,7 @@
 okular
 
 # Open specific documents
-okular {{path/to/file1 path/to/file2 ...}}
+okular <path_to_file1 path_to_file2 ...>
 
 # Open a document at a specific page
 okular --page <page_number> <path_to_file>

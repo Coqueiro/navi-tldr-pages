@@ -10,10 +10,10 @@ cb
 cb copy <path_to_file>
 
 # Copy some text to the clipboard
-cb copy "{{Some example text}}"
+cb copy "<Some example text>"
 
 # Copy piped data to the clipboard
-echo "{{Some example text}}" | cb
+echo "<Some example text>" | cb
 
 # Paste clipboard content
 cb paste

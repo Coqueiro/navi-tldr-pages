@@ -4,4 +4,4 @@
 % gsha224sum, osx
 
 # View documentation for the original command
-tldr sha224sum
+tldr -p linux sha224sum

@@ -4,22 +4,10 @@
 % less-than, common
 
 # Redirect a file to `stdin` (achieves the same effect as `cat file.txt |`)
-<command> < <path_to_file_txt>
+<command> < <path_to_file.txt>
 
 # Create a here document and pass that into `stdin` (requires a multiline command)
-<command> << <EOF> <Enter> <multiline_text> <Enter> <EOF>
+<command> << <EOF> <Enter> <multiline_data> <Enter> <EOF>
 
 # Create a here string and pass that into `stdin` (achieves the same effect as `echo string |`)
 <command> <<< <string>
-
-# Process data from a file and write the output to another file
-<command> < <path_to_file_txt> > <path_to_file2_txt>
-
-# Write a here document into a file
-cat << <EOF> > <path_to_file_txt> <Enter> <multiline_data> <Enter> <EOF>
-
-# Disregard leading tabs (good for scripts with indentation but does not work for spaces)
-cat <<- <EOF> > <path_to_file_txt> <Enter> <multiline_data> <Enter> <EOF>
-
-# Pass command output to a program as a file descriptor
-diff <(<command1>) <(<command2>)

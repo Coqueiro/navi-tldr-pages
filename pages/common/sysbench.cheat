@@ -16,4 +16,4 @@ sysbench memory run
 sysbench fileio prepare
 
 # Run a filesystem-level benchmark
-sysbench --file-test-mode=<rndrd_rndrw_rndwr_seqrd_seqrewr_seqwr> fileio run
+sysbench --file-test-mode=<rndrd|rndrw|rndwr|seqrd|seqrewr|seqwr> fileio run

@@ -7,7 +7,7 @@
 serialver <classnames>
 
 # Display the serialVersionUID for a colon-separated list of classes and resources
-serialver -classpath <path_to_directory> <classname1_classname2____>
+serialver -classpath <path_to_directory> <classname1:classname2:...>
 
 # Use a specific option from reference page of Java application launcher to the Java Virtual Machine
 serialver -Joption <classnames>

@@ -4,4 +4,4 @@
 % gchmod, osx
 
 # View documentation for the original command
-tldr chmod
+tldr -p linux chmod

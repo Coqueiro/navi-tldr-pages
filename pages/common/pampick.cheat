@@ -4,4 +4,4 @@
 % pampick, common
 
 # Execute a shell command on each image in a Netpbm file
-pampick {{image_number1 image_number2 ...}} < <path_to_image_pam> > <path_to_output_pam>
+pampick <image_number1 image_number2 ...> < <path_to_image.pam> > <path_to_output.pam>

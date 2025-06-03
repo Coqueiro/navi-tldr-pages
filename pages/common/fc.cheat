@@ -7,7 +7,7 @@
 fc
 
 # Specify an editor to open with
-fc -e <_emacs_>
+fc -e <'emacs'>
 
 # List recent commands from history
 fc -l

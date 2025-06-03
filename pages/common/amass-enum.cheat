@@ -7,7 +7,7 @@
 amass enum -d <domain_name>
 
 # Find subdomains of a [d]omain and actively verify them attempting to resolve the found subdomains
-amass enum -active -d <domain_name> -p <80_443_8080>
+amass enum -active -d <domain_name> -p <80,443,8080>
 
 # Do a brute force search for sub[d]omains
 amass enum -brute -d <domain_name>

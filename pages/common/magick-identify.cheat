@@ -10,4 +10,4 @@ magick identify <path_to_image>
 magick identify -verbose <path_to_image>
 
 # Collect dimensions of all JPEG files in the current directory and save them into a CSV file
-magick identify -format "{{%f,%w,%h\n}}" {{*.jpg}} > <path_to_filelist_csv>
+magick identify -format "<%f,%w,%h\n>" <*.jpg> > <path_to_filelist.csv>

@@ -4,4 +4,4 @@
 % pgmtofs, common
 
 # Convert the specified PGM image to Usenix FaceSave format
-pgmtofs <path_to_input_pgm> > <path_to_output_fs>
+pgmtofs <path_to_input.pgm> > <path_to_output.fs>

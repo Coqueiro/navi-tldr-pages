@@ -4,4 +4,4 @@
 % gchown, osx
 
 # View documentation for the original command
-tldr chown
+tldr -p linux chown

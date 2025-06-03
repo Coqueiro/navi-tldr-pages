@@ -7,7 +7,7 @@
 keychain
 
 # Also check for gpg-agent
-keychain --agents "<gpg_ssh>"
+keychain --agents "<gpg,ssh>"
 
 # List signatures of all active keys
 keychain --list

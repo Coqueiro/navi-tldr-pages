@@ -4,4 +4,4 @@
 % gtruncate, osx
 
 # View documentation for the original command
-tldr truncate
+tldr -p linux truncate

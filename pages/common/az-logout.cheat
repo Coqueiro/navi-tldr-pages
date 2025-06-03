@@ -7,4 +7,4 @@
 az logout
 
 # Log out a specific username
-az logout --username <alias_somedomain_com>
+az logout --username <alias@somedomain.com>

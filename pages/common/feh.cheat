@@ -19,7 +19,7 @@ feh --cycle-once <path_to_images>
 feh --slideshow-delay <seconds> <path_to_images>
 
 # Use a specific wallpaper mode (centered, filled, maximized, scaled or tiled)
-feh --bg-<center_fill_max_scale_tile> <path_to_image>
+feh --bg-<center|fill|max|scale|tile> <path_to_image>
 
 # Create a montage of all images within a directory, outputting as a new image
-feh --montage --thumb-height <150> --thumb-width <150> --index-info "<_nn_wx_h>" --output <path_to_montage_image_png>
+feh --montage --thumb-height <150> --thumb-width <150> --index-info "<%nn%wx%h>" --output <path_to_montage_image.png>

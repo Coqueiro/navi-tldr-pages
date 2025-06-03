@@ -4,4 +4,4 @@
 % gpinky, osx
 
 # View documentation for the original command
-tldr pinky
+tldr -p linux pinky

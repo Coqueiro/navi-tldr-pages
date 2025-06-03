@@ -4,4 +4,4 @@
 % gtty, osx
 
 # View documentation for the original command
-tldr tty
+tldr -p linux tty

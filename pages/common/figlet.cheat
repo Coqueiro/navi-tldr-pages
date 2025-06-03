@@ -7,10 +7,10 @@
 figlet <input_text>
 
 # Use a custom [f]ont file
-figlet -f <path_to_font_file_flf> <input_text>
+figlet <input_text> -f <path_to_font_file.flf>
 
 # Use a [f]ont from the default font directory (the extension can be omitted)
-figlet -f <font_filename> <input_text>
+figlet <input_text> -f <font_filename>
 
 # Pipe command output through FIGlet
 <command> | figlet

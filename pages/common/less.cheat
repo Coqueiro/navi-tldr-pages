@@ -7,22 +7,22 @@
 less <source_file>
 
 # Page down/up
-<_Space___b_>
+<Space> (down), b (up)
 
 # Go to end/start of file
-<_G___g_>
+G (end), g (start)
 
-# Forward search for a string (press `<n>`/`<N>` to go to next/previous match)
-</><something>
+# Forward search for a string (press `n`/`N` to go to next/previous match)
+/<something>
 
-# Backward search for a string (press `<n>`/`<N>` to go to next/previous match)
-<?><something>
+# Backward search for a string (press `n`/`N` to go to next/previous match)
+?<something>
 
 # Follow the output of the currently opened file
-<F>
+F
 
 # Open the current file in an editor
-<v>
+v
 
 # Exit
-<q>
+q

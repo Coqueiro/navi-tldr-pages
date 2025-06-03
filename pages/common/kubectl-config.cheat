@@ -7,16 +7,16 @@
 kubectl config get-contexts
 
 # Get all clusters/contexts/users in a custom kubeconfig file
-kubectl config <get_clusters_get_contexts_get_users> --kubeconfig <path_to_kubeconfig_yaml>
+kubectl config <get-clusters|get-contexts|get-users> --kubeconfig <path_to_kubeconfig.yaml>
 
 # Get the current context
 kubectl config current-context
 
 # Switch to another context
-kubectl config <use_use_context> <context_name>
+kubectl config <use|use-context> <context_name>
 
 # Delete clusters/contexts/users
-kubectl config <delete_cluster_delete_context_delete_user> <cluster_context_user>
+kubectl config <delete-cluster|delete-context|delete-user> <cluster|context|user>
 
 # Permanently add custom kubeconfig files
-export KUBECONFIG="<_HOME_kube_config_path_to_custom_kubeconfig_yaml>" kubectl config get-contexts
+export KUBECONFIG="<$HOME.kube_config:path_to_custom_kubeconfig.yaml>" kubectl config get-contexts

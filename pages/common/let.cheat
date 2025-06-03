@@ -4,13 +4,13 @@
 % let, common
 
 # Evaluate a simple arithmetic expression
-let "{{result = a + b}}"
+let "<result = a + b>"
 
 # Use post-increment and assignment in an expression
-let "<x__>"
+let "<x++>"
 
 # Use conditional operator in an expression
-let "{{result = (x > 10) ? x : 0}}"
+let "<result = (x > 10) ? x : 0>"
 
 # Display help
 let --help

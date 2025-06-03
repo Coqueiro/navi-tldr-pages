@@ -4,4 +4,4 @@
 % pamtoqoi, common
 
 # Convert a Netpbm image to the QOI format
-pamtoqoi <path_to_image_pnm> > <path_to_output_qoi>
+pamtoqoi <path_to_image.pnm> > <path_to_output.qoi>

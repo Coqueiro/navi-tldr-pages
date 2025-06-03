@@ -16,10 +16,10 @@ cypher-shell --username <username> --password <password>
 cypher-shell --database <database_name>
 
 # Execute Cypher statements in a file and close
-cypher-shell --file <path_to_file_cypher>
+cypher-shell --file <path_to_file.cypher>
 
 # Enable logging to a file
-cypher-shell --log <path_to_file_log>
+cypher-shell --log <path_to_file.log>
 
 # Display help
 cypher-shell --help

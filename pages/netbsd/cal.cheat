@@ -25,4 +25,4 @@ cal -A 3 -B 2 <month>
 cal -C <months> <month>
 
 # Specify the starting [d]ay of the week (0: Sunday, 1: Monday, ..., 6: Saturday)
-cal -d <0__6>
+cal -d <0..6>

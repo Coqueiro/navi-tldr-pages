@@ -4,4 +4,4 @@
 % pbmtoptx, common
 
 # Convert a PBM image into a PTX file
-pbmtoptx <path_to_image_pbm> > <path_to_output_ptx>
+pbmtoptx <path_to_image.pbm> > <path_to_output.ptx>

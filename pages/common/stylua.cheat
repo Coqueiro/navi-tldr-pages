@@ -13,7 +13,7 @@ stylua --check <path_to_file>
 stylua --config-path <path_to_config_file> <path_to_file>
 
 # Format code from `stdin` and output to `stdout`
-stylua - < <path_to_file_lua>
+stylua - < <path_to_file.lua>
 
 # Format a file or directory using spaces and preferring single quotes
 stylua --indent-type <Spaces> --quote-style <AutoPreferSingle> <path_to_file_or_directory>

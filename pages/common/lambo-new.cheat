@@ -13,7 +13,7 @@ lambo new --path=<path_to_directory> <app_name>
 lambo new --auth <app_name>
 
 # Include a specific frontend
-lambo new --<vue_bootstrap_react> <app_name>
+lambo new --<vue|bootstrap|react> <app_name>
 
 # Install `npm` dependencies after the project has been created
 lambo new --node <app_name>

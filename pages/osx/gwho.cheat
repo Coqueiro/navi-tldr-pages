@@ -4,4 +4,4 @@
 % gwho, osx
 
 # View documentation for the original command
-tldr who
+tldr -p linux who

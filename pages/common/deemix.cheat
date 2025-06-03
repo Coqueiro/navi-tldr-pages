@@ -4,10 +4,10 @@
 % deemix, common
 
 # Download a track or playlist
-deemix <https___www_deezer_com_us_track_00000000>
+deemix <https:__www.deezer.com_us_track_00000000>
 
 # Download track/playlist at a specific bitrate
-deemix --bitrate <FLAC_MP3> <url>
+deemix --bitrate <FLAC|MP3> <url>
 
 # Download to a specific path
 deemix --bitrate <bitrate> --path <path> <url>

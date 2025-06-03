@@ -4,4 +4,4 @@
 % ged, osx
 
 # View documentation for the original command
-tldr ed
+tldr -p linux ed

@@ -4,4 +4,4 @@
 % pulumi-gen-completion, common
 
 # Generate completion scripts
-pulumi gen-completion <bash_zsh_fish>
+pulumi gen-completion <bash|zsh|fish>

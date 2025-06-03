@@ -4,7 +4,7 @@
 % ftxdiff, osx
 
 # Output differences to a specific text file
-ftxdiff --output <path_to_fontdiff_file_txt> <path_to_font_file1_ttc> <path_to_font_file2_ttc>
+ftxdiff --output <path_to_fontdiff_file.txt> <path_to_font_file1.ttc> <path_to_font_file2.ttc>
 
 # Include glyph names in output
 ftxdiff --include-glyph-names

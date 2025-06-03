@@ -3,4 +3,8 @@
 
 % msedge, common
 
+# View the documentation for Microsoft Edge for Windows
+tldr -p windows msedge
 
+# View the documentation for Microsoft Edge for other platforms
+tldr -p common microsoft-edge

@@ -25,4 +25,4 @@ gopass find <keyword>
 gopass sync
 
 # Show a particular password entry
-gopass <store_name_path_to_directory_email_email_com>
+gopass <store_name|path_to_directory|email@email.com>

@@ -4,4 +4,4 @@
 % sc_wartsdump, common
 
 # Output the content of `warts` files verbose
-sc_wartsdump {{path/to/file1.warts path/to/file2.warts ...}}
+sc_wartsdump <path_to_file1.warts path_to_file2.warts ...>

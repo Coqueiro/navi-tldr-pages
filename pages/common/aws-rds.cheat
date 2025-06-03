@@ -16,7 +16,7 @@ aws rds start-db-instance --db-instance-identifier <instance_identifier>
 aws rds modify-db-instance --db-instance-identifier <instance_identifier> <parameters> --apply-immediately
 
 # Apply updates to an RDS instance
-aws rds apply-pending-maintenance-action --resource-identifier <database_arn> --apply-action <system_update> --opt-in-type <immediate>
+aws rds apply-pending-maintenance-action --resource-identifier <database_arn> --apply-action <system-update> --opt-in-type <immediate>
 
 # Change an instance identifier
 aws rds modify-db-instance --db-instance-identifier <old_instance_identifier> --new-db-instance-identifier <new_instance_identifier>

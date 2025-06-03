@@ -19,7 +19,7 @@ undo<Enter>
 %s/<regular_expression>/<replacement>/g<Enter>
 
 # Insert text
-i<Enter><text><Ctrl c>
+i<Enter><text><C-c>
 
 # Switch to Vim
 visual<Enter>

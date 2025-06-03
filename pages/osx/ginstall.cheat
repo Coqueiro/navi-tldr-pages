@@ -4,4 +4,4 @@
 % ginstall, osx
 
 # View documentation for the original command
-tldr install
+tldr -p linux install

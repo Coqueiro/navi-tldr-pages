@@ -4,4 +4,4 @@
 % glink, osx
 
 # View documentation for the original command
-tldr link
+tldr -p linux link

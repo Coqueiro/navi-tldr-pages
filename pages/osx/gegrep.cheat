@@ -4,4 +4,4 @@
 % gegrep, osx
 
 # View documentation for the original command
-tldr egrep
+tldr -p linux egrep

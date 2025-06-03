@@ -7,10 +7,10 @@
 ippeveprinter "<service_name>"
 
 # Load printer attributes from a PPD file
-ippeveprinter -P <path_to_file_ppd> "<service_name>"
+ippeveprinter -P <path_to_file.ppd> "<service_name>"
 
 # Run the `file` command whenever a job is sent to the server
-ippeveprinter -c <_usr_bin_file> "<service_name>"
+ippeveprinter -c <usr_bin_file> "<service_name>"
 
 # Specify the directory that will hold the print files (by default, a directory under the user's temporary directory)
 ippeveprinter -d <spool_directory> "<service_name>"

@@ -10,4 +10,4 @@ calligrawords
 calligrawords <path_to_document>
 
 # Display help or version
-calligrawords --<help_version>
+calligrawords --<help|version>

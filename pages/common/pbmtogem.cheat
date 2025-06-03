@@ -4,10 +4,10 @@
 % pbmtogem, common
 
 # Convert a PBM image into a GEM .img file
-pbmtogem <path_to_file_pbm> > <path_to_file_img>
+pbmtogem <path_to_file.pbm> > <path_to_file.img>
 
 # Suppress all informational messages
-pbmtogem {{[-q|-quiet]}}
+pbmtogem -quiet
 
 # Display version
-pbmtogem {{[-v|-version]}}
+pbmtogem -version

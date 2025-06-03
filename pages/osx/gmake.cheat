@@ -4,4 +4,4 @@
 % gmake, osx
 
 # View documentation for the original command
-tldr make
+tldr -p linux make

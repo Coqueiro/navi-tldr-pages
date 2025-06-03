@@ -4,4 +4,4 @@
 % pbmto4425, common
 
 # Display a PBM image on an AT&T 4425 terminal using the terminal's mosaic graphics character set
-pbmto4425 <path_to_image_pbm>
+pbmto4425 <path_to_image.pbm>

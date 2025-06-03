@@ -4,10 +4,10 @@
 % pstopnm, common
 
 # Convert a PS file to PNM images, storing page N of the input to `path/to/fileN.ppm`
-pstopnm <path_to_file_ps>
+pstopnm <path_to_file.ps>
 
 # Explicitly specify the output format
-pstopnm -<pbm_pgm_ppm> <path_to_file_ps>
+pstopnm -<pbm|pgm|ppm> <path_to_file.ps>
 
 # Specify the resolution of the output in dots per inch
-pstopnm -dpi <n> <path_to_file_ps>
+pstopnm -dpi <n> <path_to_file.ps>

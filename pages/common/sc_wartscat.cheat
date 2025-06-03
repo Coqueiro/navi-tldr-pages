@@ -4,4 +4,4 @@
 % sc_wartscat, common
 
 # Concatenate `warts` files into one
-sc_wartscat -o <path_to_output_warts> {{path/to/file1.warts path/to/file2.warts ...}}
+sc_wartscat -o <path_to_output.warts> <path_to_file1.warts path_to_file2.warts ...>

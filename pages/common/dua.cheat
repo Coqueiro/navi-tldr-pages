@@ -19,7 +19,7 @@ dua aggregate
 dua interactive
 
 # Format printing byte counts
-dua --format <metric_binary_bytes_GB_GiB_MB_MiB>
+dua --format <metric|binary|bytes|GB|GiB|MB|MiB>
 
 # Use a specific number of threads (defaults to the process number of threads)
 dua --threads <count>

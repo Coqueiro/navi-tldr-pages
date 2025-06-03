@@ -4,4 +4,4 @@
 % ghostname, osx
 
 # View documentation for the original command
-tldr hostname
+tldr -p linux hostname

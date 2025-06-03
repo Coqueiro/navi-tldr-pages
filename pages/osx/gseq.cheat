@@ -4,4 +4,4 @@
 % gseq, osx
 
 # View documentation for the original command
-tldr seq
+tldr -p linux seq

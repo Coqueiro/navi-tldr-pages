@@ -7,7 +7,7 @@
 s3cmd --configure
 
 # List Buckets/Folders/Objects
-s3cmd ls s3://<bucket_path_to_file>
+s3cmd ls s3://<bucket|path_to_file>
 
 # Create Bucket/Folder
 s3cmd mb s3://<bucket>

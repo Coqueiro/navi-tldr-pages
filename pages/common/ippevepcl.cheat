@@ -7,4 +7,4 @@
 ippeveps <path_to_file>
 
 # Print a file from `stdin` to `stdout`
-{{wget -O - https://example.com/file}} | ippeveps
+<wget -O - https:__examplewebsite.com_file> | ippeveps

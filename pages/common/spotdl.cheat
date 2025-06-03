@@ -4,10 +4,10 @@
 % spotdl, common
 
 # Download songs from the provided URLs and embed metadata
-spotdl {{open.spotify.com/playlist/playlistId1 open.spotify.com/track/trackId2 ...}}
+spotdl <open.spotify.com_playlist_playlistId open.spotify.com_track_trackId ...>
 
 # Start a web interface to download individual songs
 spotdl web
 
 # Save only the metadata without downloading anything
-spotdl save {{open.spotify.com/playlist/playlistId1 open.spotify.com/track/trackId2 ...}} --save-file <path_to_save_file_spotdl>
+spotdl save <open.spotify.com_playlist_playlistId ...> --save-file <path_to_save_file.spotdl>

@@ -3,4 +3,8 @@
 
 % crane-delete, common
 
+# Delete an image reference from its registry
+crane delete <image_name>
 
+# Display help
+crane delete <-h|--help>

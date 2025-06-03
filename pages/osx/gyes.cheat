@@ -4,4 +4,4 @@
 % gyes, osx
 
 # View documentation for the original command
-tldr yes
+tldr -p linux yes

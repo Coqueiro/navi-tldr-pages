@@ -10,19 +10,19 @@ vim <path_to_file>
 vim +<line_number> <path_to_file>
 
 # View Vim's help manual
-<:>help<Enter>
+:help<Enter>
 
 # Save and quit the current buffer
-<_Esc__Z__Z___Esc____x_Enter___Esc____wq_Enter_>
+<<Esc>ZZ|<Esc>:x<Enter>|<Esc>:wq<Enter>>
 
 # Enter normal mode and undo the last operation
-<Esc><u>
+<Esc>u
 
-# Search for a pattern in the file (press `<n>`/`<N>` to go to next/previous match)
-</><search_pattern><Enter>
+# Search for a pattern in the file (press `n`/`N` to go to next/previous match)
+/<search_pattern><Enter>
 
 # Perform a regular expression substitution in the whole file
-<:>%s/<regular_expression>/<replacement>/g<Enter>
+:%s/<regular_expression>/<replacement>/g<Enter>
 
 # Display the line numbers
-<:>set nu<Enter>
+:set nu<Enter>

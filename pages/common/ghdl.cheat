@@ -4,7 +4,7 @@
 % ghdl, common
 
 # Analyze a VHDL source file and produce an object file
-ghdl -a <filename_vhdl>
+ghdl -a <filename.vhdl>
 
 # Elaborate a design (where `design` is the name of a configuration unit, entity unit or architecture unit)
 ghdl -e <design>
@@ -13,10 +13,10 @@ ghdl -e <design>
 ghdl -r <design>
 
 # Run an elaborated design and dump output to a waveform file
-ghdl -r <design> --wave=<output_ghw>
+ghdl -r <design> --wave=<output.ghw>
 
 # Check the syntax of a VHDL source file
-ghdl -s <filename_vhdl>
+ghdl -s <filename.vhdl>
 
 # Display help
 ghdl --help

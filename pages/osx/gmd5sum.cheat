@@ -4,4 +4,4 @@
 % gmd5sum, osx
 
 # View documentation for the original command
-tldr md5sum
+tldr -p linux md5sum

@@ -4,4 +4,4 @@
 % ppmtopict, common
 
 # Convert a PPM image to a PICT file
-ppmtopict <path_to_file_ppm> > <path_to_file_pict>
+ppmtopict <path_to_file.ppm> > <path_to_file.pict>

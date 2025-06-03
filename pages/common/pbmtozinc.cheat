@@ -4,4 +4,4 @@
 % pbmtozinc, common
 
 # Convert a PBM image to a Zinc bitmap
-pbmtozinc <path_to_image_pbm> > <path_to_output_zinc>
+pbmtozinc <path_to_image.pbm> > <path_to_output.zinc>

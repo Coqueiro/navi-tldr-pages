@@ -16,4 +16,4 @@ wc -c <path_to_file>
 wc -m <path_to_file>
 
 # Use `stdin` to count lines, words and characters (bytes) in that order
-{{find .}} | wc
+<find .> | wc

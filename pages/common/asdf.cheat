@@ -16,10 +16,7 @@ asdf list all <name>
 asdf install <name> <version>
 
 # Set global version for a package
-asdf set -u <name> <version>
+asdf global <name> <version>
 
 # Set local version for a package
-asdf set <name> <version>
-
-# See the current version used for a package
-asdf current <name>
+asdf local <name> <version>

@@ -4,10 +4,10 @@
 % sntp, osx
 
 # Query a specified SNTP server and display the time
-sntp <pool_ntp_org>
+sntp <pool.ntp.org>
 
 # Synchronize the system clock with a specified SNTP server
-sudo sntp -S <pool_ntp_org>
+sudo sntp -S <pool.ntp.org>
 
 # Enable debug logging
-sntp -d <pool_ntp_org>
+sntp -d <pool.ntp.org>

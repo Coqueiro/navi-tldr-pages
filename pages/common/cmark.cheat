@@ -4,13 +4,13 @@
 % cmark, common
 
 # Render a CommonMark Markdown file to HTML
-cmark --to html <filename_md>
+cmark --to html <filename.md>
 
 # Convert data from `stdin` to LaTeX
 cmark --to latex
 
 # Convert straight quotes to smart quotes
-cmark --smart --to html <filename_md>
+cmark --smart --to html <filename.md>
 
 # Validate UTF-8 characters
-cmark --validate-utf8 <filename_md>
+cmark --validate-utf8 <filename.md>

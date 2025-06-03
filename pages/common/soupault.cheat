@@ -13,7 +13,7 @@ soupault
 soupault --config <config_path> --site-dir <input_dir> --build-dir <output_dir>
 
 # Extract metadata into a JSON file without generating pages
-soupault --index-only --dump-index-json <path_to_file_json>
+soupault --index-only --dump-index-json <path_to_file.json>
 
 # Show the effective configuration (values from `soupault.toml` plus defaults)
 soupault --show-effective-config

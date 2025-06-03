@@ -4,10 +4,10 @@
 % tcc, common
 
 # Compile and link 2 source files to generate an executable
-tcc -o <executable_name> <path_to_file1_c> <path_to_file2_c>
+tcc -o <executable_name> <path_to_file1.c> <path_to_file2.c>
 
 # Directly run an input file like a script and pass arguments to it
-tcc -run <path_to_source_file_c> <arguments>
+tcc -run <path_to_source_file.c> <arguments>
 
 # Interpret C source files with a shebang inside the file
-#!<_full_path_to_tcc> -run
+#!<full_path_to_tcc> -run

@@ -4,4 +4,4 @@
 % gcp, osx
 
 # View documentation for the original command
-tldr cp
+tldr -p linux cp

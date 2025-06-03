@@ -4,13 +4,13 @@
 % direnv, common
 
 # Grant direnv permission to load the `.envrc` present in the current directory
-direnv allow <_>
+direnv allow <.>
 
 # Revoke the authorization to load the `.envrc` present in the current directory
-direnv deny <_>
+direnv deny <.>
 
 # Edit the `.envrc` file in the default text editor and reload the environment on exit
-direnv edit <_>
+direnv edit <.>
 
 # Trigger a reload of the environment
 direnv reload

@@ -7,22 +7,22 @@
 vimdiff <path_to_file1> <path_to_file2>
 
 # Move the cursor to the window on the left|right
-<Ctrl w><_h___l_>
+<Ctrl> + w <h|l>
 
 # Jump to the previous difference
-<[><c>
+[c
 
 # Jump to the next difference
-<]><c>
+]c
 
 # Copy the highlighted difference from the other window to the current window
-<d><o>
+do
 
 # Copy the highlighted difference from the current window to the other window
-<d><p>
+dp
 
 # Update all highlights and folds
-<:>diffupdate
+:diffupdate
 
 # Toggle the highlighted code fold
-<z><a>
+za

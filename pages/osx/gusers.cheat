@@ -4,4 +4,4 @@
 % gusers, osx
 
 # View documentation for the original command
-tldr users
+tldr -p linux users

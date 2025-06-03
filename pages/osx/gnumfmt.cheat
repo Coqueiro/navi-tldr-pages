@@ -4,4 +4,4 @@
 % gnumfmt, osx
 
 # View documentation for the original command
-tldr numfmt
+tldr -p linux numfmt

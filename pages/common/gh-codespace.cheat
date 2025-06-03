@@ -25,4 +25,4 @@ gh codespace logs
 gh codespace delete
 
 # Display help for a subcommand
-gh codespace <code_cp_create_delete_edit____> --help
+gh codespace <code|cp|create|delete|edit|...> --help

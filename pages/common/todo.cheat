@@ -16,7 +16,7 @@ todo edit --location <location_name> <task_id>
 todo show <task_id>
 
 # Mark tasks with the specified IDs as completed
-todo done {{task_id1 task_id2 ...}}
+todo done <task_id1 task_id2 ...>
 
 # Delete a task
 todo delete <task_id>

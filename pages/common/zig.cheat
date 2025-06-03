@@ -13,16 +13,16 @@ zig build run
 zig init
 
 # Create and run a test build
-zig test <path_to_file_zig>
+zig test <path_to_file.zig>
 
 # Cross compile, build and run a project for `x86_64` architecture and `windows` operating system
 zig build run -fwine -Dtarget=x86_64-windows
 
 # Reformat Zig source into canonical form
-zig fmt <path_to_file_zig>
+zig fmt <path_to_file.zig>
 
 # Translate a C file to `zig`
-zig translate-c -lc <path_to_file_c>
+zig translate-c -lc <path_to_file.c>
 
 # Use Zig as a drop-in C++ compiler
-zig c++ <path_to_file_cpp>
+zig c++ <path_to_file.cpp>

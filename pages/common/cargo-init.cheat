@@ -13,7 +13,7 @@ cargo init <path_to_directory>
 cargo init --lib
 
 # Initialize a version control system repository in the project directory (default: `git`)
-cargo init --vcs <git_hg_pijul_fossil_none>
+cargo init --vcs <git|hg|pijul|fossil|none>
 
 # Set the package name (default: directory name)
 cargo init --name <name>

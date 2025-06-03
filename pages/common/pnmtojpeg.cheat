@@ -4,7 +4,7 @@
 % pnmtojpeg, common
 
 # Read a PNM image as input and produce a JPEG/JFIF/EXIF image as output
-pnmtojpeg <path_to_file_pnm> > <path_to_file_jpg>
+pnmtojpeg <path_to_file.pnm> > <path_to_file.jpg>
 
 # Display version
 pnmtojpeg -version

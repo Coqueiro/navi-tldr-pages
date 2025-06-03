@@ -4,4 +4,4 @@
 % grm, osx
 
 # View documentation for the original command
-tldr rm
+tldr -p linux rm

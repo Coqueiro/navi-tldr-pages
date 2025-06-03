@@ -7,19 +7,19 @@
 bastet
 
 # Navigate the piece horizontally
-<_ArrowLeft___ArrowRight_>
+<Left|Right arrow key>
 
 # Rotate the piece clockwise or counterclockwise
-<_Space___ArrowUp_>
+<Spacebar|Up arrow key>
 
 # Soft drop the piece
-<ArrowDown>
+<Down arrow key>
 
 # Hard drop the piece
 <Enter>
 
 # Pause the game
-<p>
+p
 
 # Quit the game
-<Ctrl c>
+<Ctrl> + C

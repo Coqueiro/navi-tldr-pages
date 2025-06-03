@@ -16,4 +16,4 @@ cargo tree --prune <package_spec>
 cargo tree --no-dedupe
 
 # Only show normal/build/development dependencies
-cargo tree --edges <normal_build_dev>
+cargo tree --edges <normal|build|dev>

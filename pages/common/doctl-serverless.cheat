@@ -4,13 +4,13 @@
 % doctl-serverless, common
 
 # Connect local serverless support to a functions namespace
-doctl {{[sls|serverless]}} connect
+doctl serverless connect
 
 # Deploy a functions project to your functions namespace
-doctl {{[sls|serverless]}} deploy
+doctl serverless deploy
 
 # Obtain metadata of a functions project
-doctl {{[sls|serverless]}} get-metadata
+doctl serverless get-metadata
 
 # Provide information about serverless support
-doctl {{[sls|serverless]}} status
+doctl serverless status

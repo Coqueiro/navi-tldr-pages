@@ -4,7 +4,7 @@
 % ppmtoascii, common
 
 # Convert a PPM image to an ASCII image, combining an area of 1x2 pixels into a character
-ppmtoascii <path_to_input_ppm> > <path_to_output_txt>
+ppmtoascii <path_to_input.ppm> > <path_to_output.txt>
 
 # Convert a PPM image to an ASCII image, combining an area of 2x4 pixels into a character
-ppmtoascii -2x4 <path_to_input_ppm> > <path_to_output_txt>
+ppmtoascii -2x4 <path_to_input.ppm> > <path_to_output.txt>
