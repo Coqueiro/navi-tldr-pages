@@ -13,7 +13,7 @@ n
 n rm <version>
 
 # Execute a file with a given version
-n use <version> <file.js>
+n use <version> <file_js>
 
 # Output binary path for a version
 n bin <version>

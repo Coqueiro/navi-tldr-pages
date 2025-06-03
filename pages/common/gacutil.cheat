@@ -4,7 +4,7 @@
 % gacutil, common
 
 # Install the specified assembly into GAC
-gacutil -i <path_to_assembly.dll>
+gacutil -i <path_to_assembly_dll>
 
 # Uninstall the specified assembly from GAC
 gacutil -i <assembly_display_name>

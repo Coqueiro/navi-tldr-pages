@@ -9,5 +9,5 @@ while read line; do echo "$line"; done
 # Execute a command forever once every second
 while :; do <command>; sleep 1; done
 
-# Execute a command until it returns a non-zero value
+# Execute a command until it fails
 while <command>; do :; done

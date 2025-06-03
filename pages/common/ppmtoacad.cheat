@@ -4,10 +4,10 @@
 % ppmtoacad, common
 
 # Convert a PPM image to an AutoCAD slide
-ppmtoacad <path_to_file.ppm> > <path_to_file.acad>
+ppmtoacad <path_to_file_ppm> > <path_to_file_acad>
 
 # Convert a PPM image to an AutoCAD binary database import file
-ppmtoacad -dxb <path_to_file.ppm> > <path_to_file.dxb>
+ppmtoacad {{[-d|-dxb]}} <path_to_file_ppm> > <path_to_file_dxb>
 
 # Restrict the colors in the output to 8 RGB shades
-ppmtoacad -8 <path_to_file.ppm> > <path_to_file.dxb>
+ppmtoacad -8 <path_to_file_ppm> > <path_to_file_dxb>

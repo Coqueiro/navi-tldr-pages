@@ -10,7 +10,7 @@ perlbrew init
 perlbrew available
 
 # Install/uninstall a Perl version
-perlbrew <install|uninstall> <version>
+perlbrew <install_uninstall> <version>
 
 # List perl installations
 perlbrew list

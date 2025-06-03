@@ -10,10 +10,10 @@ gem search <regular_expression> --all
 gem install <gem_name>
 
 # Install a specific version of a gem
-gem install <gem_name> --version <1.0.0>
+gem install <gem_name> --version <1_0_0>
 
 # Install the latest matching (SemVer) version of a gem
-gem install <gem_name> --version '~> <1.0>'
+gem install <gem_name> --version '~> <1_0>'
 
 # Update a gem
 gem update <gem_name>
@@ -25,4 +25,4 @@ gem list
 gem uninstall <gem_name>
 
 # Uninstall a specific version of a gem
-gem uninstall <gem_name> --version <1.0.0>
+gem uninstall <gem_name> --version <1_0_0>

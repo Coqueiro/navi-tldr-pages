@@ -22,7 +22,7 @@ PS > upload <path_to_local_file> <path_to_remote_file>
 PS > menu
 
 # Load a PowerShell script from the `--scripts` directory
-PS > <script.ps1>
+PS > <script_ps1>
 
 # Invoke a binary on the host from the `--executables` directory
-PS > Invoke-Binary <binary.exe>
+PS > Invoke-Binary <binary_exe>

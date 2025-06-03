@@ -25,4 +25,4 @@ birdc "show route where bgp_path ~ [<4242120045>]"
 birdc show route primary
 
 # Show all details of all routes from a given prefix
-birdc show route for <fd00:_8> all
+birdc show route for <fd00__8> all

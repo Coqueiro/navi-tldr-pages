@@ -4,10 +4,10 @@
 % setfile, osx
 
 # Set creation date for specific files
-setfile -d "<MM_DD_YYYY HH:MM:SS>" <path_to_file1 path_to_file2 ...>
+setfile -d "{{MM/DD/YYYY HH:MM:SS}}" {{path/to/file1 path/to/file2 ...}}
 
 # Set modification date for specific files
-setfile -m "<MM_DD_YYYY HH:MM:SS>" <path_to_file1 path_to_file2 ...>
+setfile -m "{{MM/DD/YYYY HH:MM:SS}}" {{path/to/file1 path/to/file2 ...}}
 
 # Set modification date for symlink file (not to linked file itself)
-setfile -P -m "<MM_DD_YYYY HH:MM:SS>" <path_to_file1 path_to_file2 ...>
+setfile -P -m "{{MM/DD/YYYY HH:MM:SS}}" {{path/to/file1 path/to/file2 ...}}

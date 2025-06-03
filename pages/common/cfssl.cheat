@@ -4,13 +4,13 @@
 % cfssl, common
 
 # Show certificate information of a host
-cfssl certinfo -domain <www.google.com>
+cfssl certinfo -domain <www_google_com>
 
 # Decode certificate information from a file
-cfssl certinfo -cert <path_to_certificate.pem>
+cfssl certinfo -cert <path_to_certificate_pem>
 
 # Scan host(s) for SSL/TLS issues
-cfssl scan <host1 host2 ...>
+cfssl scan {{host1 host2 ...}}
 
 # Display help for a subcommand
-cfssl <genkey|gencsr|certinfo|sign|gencrl|ocspdump|ocsprefresh|ocspsign|ocspserve|scan|bundle|crl|print-defaults|revoke|gencert|serve|version|selfsign|info> -h
+cfssl <genkey_gencsr_certinfo_sign_gencrl_ocspdump_ocsprefresh_ocspsign_ocspserve_scan_bundle_crl_print_defaults_revoke_gencert_serve_version_selfsign_info> -h

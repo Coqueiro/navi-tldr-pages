@@ -4,7 +4,7 @@
 % jpegtopnm, common
 
 # Convert JPEG/JFIF image to a PPM or PGM image
-jpegtopnm <path_to_file.jpg> > <path_to_file.pnm>
+jpegtopnm <path_to_file_jpg> > <path_to_file_pnm>
 
 # Display version
-jpegtopnm -version
+jpegtopnm {{[-v|-version]}}

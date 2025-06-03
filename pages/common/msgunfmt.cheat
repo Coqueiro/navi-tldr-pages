@@ -4,7 +4,7 @@
 % msgunfmt, common
 
 # Output conversion
-msgunfmt <path_to_file.mo>
+msgunfmt <path_to_file_mo>
 
 # Convert a `.mo` file to a `.po` file
-msgunfmt <path_to_file.mo> > <path_to_file.po>
+msgunfmt <path_to_file_mo> > <path_to_file_po>

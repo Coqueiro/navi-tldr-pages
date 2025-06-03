@@ -4,7 +4,7 @@
 % moreutils, common
 
 # View documentation for pages related to standard streams
-tldr <ifne|mispipe|pee|sponge|vipe|vidir>
+tldr <ifne_mispipe_pee_sponge_vipe_vidir>
 
 # View documentation for other pages
-tldr <combine|errno|ifdata|isutt8|lckdo|parallel|zrun>
+tldr <combine_errno_ifdata_isutt8_lckdo_parallel_zrun>

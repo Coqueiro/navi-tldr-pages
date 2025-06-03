@@ -10,7 +10,7 @@ gixy
 gixy --skips <http_splitting>
 
 # Analyze nginx configuration with the specific severity level
-gixy <-l|-ll|-lll>
+gixy <_l__ll__lll>
 
 # Analyze nginx configuration files on the specific path
 gixy <path_to_configuration_file_1> <path_to_configuration_file_2>

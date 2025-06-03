@@ -4,7 +4,7 @@
 % lpoptions, common
 
 # Set the default printer
-lpoptions -d <printer[_instance]>
+lpoptions -d {{printer[/instance]}}
 
 # List printer-specific options of a specific printer
 lpoptions -d <printer> -l

@@ -4,7 +4,7 @@
 % pamtopam, common
 
 # Copy a PAM image (i.e. a PBM, PGM, PPM or PAM image) from `stdin` to `stdout`
-pamtopam < <path_to_image.pam> > <path_to_output.pam>
+pamtopam < <path_to_image_pam> > <path_to_output_pam>
 
 # Display version
-pamtopam -version
+pamtopam {{[-v|-version]}}

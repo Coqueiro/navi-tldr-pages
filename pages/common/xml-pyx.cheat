@@ -4,10 +4,10 @@
 % xml-pyx, common
 
 # Convert an XML document to PYX format
-xml pyx <path_to_input.xml|URI> > <path_to_output.pyx>
+xml pyx <path_to_input_xml_URI> > <path_to_output_pyx>
 
 # Convert an XML document from `stdin` to PYX format
-cat <path_to_input.xml> | xml pyx > <path_to_output.pyx>
+cat <path_to_input_xml> | xml pyx > <path_to_output_pyx>
 
 # Display help
 xml pyx --help

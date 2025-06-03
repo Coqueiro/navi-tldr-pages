@@ -4,7 +4,7 @@
 % pbmtoppa, common
 
 # Convert a PBM image into a PPA file
-pbmtoppa <path_to_image.pbm> > <path_to_output.ppa>
+pbmtoppa <path_to_image_pbm> > <path_to_output_ppa>
 
 # Specify the desired dots-per-inch and paper size
-pbmtoppa -d <300> -s <a4> <path_to_image.pbm> > <path_to_output.ppa>
+pbmtoppa -d <300> -s <a4> <path_to_image_pbm> > <path_to_output_ppa>

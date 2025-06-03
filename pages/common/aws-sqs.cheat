@@ -10,13 +10,13 @@ aws sqs list-queues
 aws sqs get-queue-url --queue-name <queue_name>
 
 # Create a queue with specific attributes from a file in JSON format
-aws sqs create-queue --queue-name <queue_name> --attributes <file:__path_to_attributes_file.json>
+aws sqs create-queue --queue-name <queue_name> --attributes <file___path_to_attributes_file_json>
 
 # Send a specific message to a queue
-aws sqs send-message --queue-url https://sqs.<region>.amazonaws.com/<queue_name> --message-body "<message_body>" --delay-seconds <delay> --message-attributes <file:__path_to_attributes_file.json>
+aws sqs send-message --queue-url https://sqs.<region>.amazonaws.com/<queue_name> --message-body "<message_body>" --delay-seconds <delay> --message-attributes <file___path_to_attributes_file_json>
 
 # Delete the specified message from a queue
-aws sqs delete-message --queue-url <https:__queue_url> --receipt-handle <receipt_handle>
+aws sqs delete-message --queue-url <https___queue_url> --receipt-handle <receipt_handle>
 
 # Delete a specific queue
 aws sqs delete-queue --queue-url https://sqs.<region>.amazonaws.com/<queue_name>

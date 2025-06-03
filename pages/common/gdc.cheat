@@ -4,7 +4,7 @@
 % gdc, common
 
 # Create an executable
-gdc <path_to_source.d> -o <path_to_output_executable>
+gdc <path_to_source_d> -o <path_to_output_executable>
 
 # Print information about module dependencies
 gdc -fdeps

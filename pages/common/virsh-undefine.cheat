@@ -10,4 +10,4 @@ virsh undefine --domain <vm_name>
 virsh undefine --domain <vm_name> --remove-all-storage
 
 # Delete the configuration file and the specified storage volumes using the target name or the source name (as obtained from the `virsh domblklist` command)
-virsh undefine --domain <vm_name> --storage <sda,path_to_source>
+virsh undefine --domain <vm_name> --storage <sda_path_to_source>

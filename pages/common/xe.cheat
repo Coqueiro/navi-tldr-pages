@@ -13,7 +13,7 @@
 echo -e 'a\nb' | xe -N<2> -s 'echo $2 $1'
 
 # Delete all files with a `.backup` extension
-find . -name <'*.backup'> | xe rm -v
+find . -name {{'*.backup'}} | xe rm -v
 
 # Run up to `max-jobs` processes in parallel; the default is 1. If `max-jobs` is 0, xe will run as many processes as cpu cores
-<arguments_source> | xe -j <max-jobs> <command>
+<arguments_source> | xe -j <max_jobs> <command>

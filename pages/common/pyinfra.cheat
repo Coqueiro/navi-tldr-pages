@@ -7,10 +7,10 @@
 pyinfra <target_ip_address> exec -- <command_name_and_arguments>
 
 # Execute contents of a deploy file on a list of targets
-pyinfra <path_to_target_list.py> <path_to_deploy.py>
+pyinfra <path_to_target_list_py> <path_to_deploy_py>
 
 # Execute commands on locally
-pyinfra @local <path_to_deploy.py>
+pyinfra @local <path_to_deploy_py>
 
 # Execute commands over Docker
-pyinfra @docker/<container> <path_to_deploy.py>
+pyinfra @docker/<container> <path_to_deploy_py>

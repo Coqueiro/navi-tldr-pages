@@ -19,7 +19,7 @@ neo4j-admin database dump --to-path=<path_to_directory> <database_name>
 neo4j-admin database load --from-path=<path_to_directory> <database_name> --overwrite-destination=true
 
 # Load a database from a specified archive file through `stdin`
-neo4j-admin database load --from-stdin <database_name> --overwrite-destination=true < <path_to_filename.dump>
+neo4j-admin database load --from-stdin <database_name> --overwrite-destination=true < <path_to_filename_dump>
 
 # Display help
 neo4j-admin --help

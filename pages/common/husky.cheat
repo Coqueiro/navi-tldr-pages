@@ -10,10 +10,10 @@ husky install
 husky install <path_to_directory>
 
 # Set a specific command as a `pre-push` hook for Git
-husky set <.husky_pre-push> "<command> <command_arguments>"
+husky set <_husky_pre_push> "<command> <command_arguments>"
 
 # Add a specific command to the current `pre-commit` hook
-husky add <.husky_pre-commit> "<command> <command_arguments>"
+husky add <_husky_pre_commit> "<command> <command_arguments>"
 
 # Uninstall Husky hooks from the current directory
 husky uninstall

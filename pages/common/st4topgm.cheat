@@ -4,4 +4,4 @@
 % st4topgm, common
 
 # Convert an SBIG ST-4 file to a PGM file
-st4topgm <path_to_input_file.st4> > <path_to_output.pgm>
+st4topgm <path_to_input_file_st4> > <path_to_output_pgm>

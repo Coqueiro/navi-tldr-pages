@@ -4,7 +4,7 @@
 % aws-s3-website, common
 
 # Configure a bucket as a static website
-aws s3 website <s3:__bucket-name> --index-document <index.html>
+aws s3 website <s3___bucket_name> --index-document <index_html>
 
 # Configure an error page for the website
-aws s3 website <s3:__bucket-name> --index-document <index.html> --error-document <error.html>
+aws s3 website <s3___bucket_name> --index-document <index_html> --error-document <error_html>

@@ -4,4 +4,4 @@
 % ppmtoyuvsplit, common
 
 # Read a PPM image from the input file, convert it to three subsampled Abekas YUV image and store these images to output files starting with the specified basename
-ppmtoyuvsplit <basename> <path_to_input_file.ppm>
+ppmtoyuvsplit <basename> <path_to_input_file_ppm>

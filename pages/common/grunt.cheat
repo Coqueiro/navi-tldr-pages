@@ -7,7 +7,7 @@
 grunt
 
 # Run one or more tasks
-grunt <task1 task2 ...>
+grunt {{task1 task2 ...}}
 
 # Specify an alternative configuration file
 grunt --gruntfile <path_to_file>

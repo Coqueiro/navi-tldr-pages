@@ -4,4 +4,4 @@
 % gpathchk, osx
 
 # View documentation for the original command
-tldr -p linux pathchk
+tldr pathchk

@@ -4,13 +4,13 @@
 % pamslice, common
 
 # Print the values of the pixels in the n'th row in a table
-pamslice -row <n> <path_to_image.pam>
+pamslice {{[-r|-row]}} <__c__column_> <path_to_image_pam>
 
 # Print the values of the pixels in the n'th column in a table
-pamslice -column <n> <path_to_image.pam>
+pamslice {{[-c|-column]}} <__c__column_> <path_to_image_pam>
 
 # Consider the m'th plane of the input image only
-pamslice -row <n> -plane <m> <path_to_image.pam>
+pamslice {{[-r|-row]}} <__c__column_> -plane <__c__column_> <path_to_image_pam>
 
 # Produce output in a format suitable for input to an `xmgr` for visualisation
-pamslice -row <n> -xmgr <path_to_image.pam>
+pamslice {{[-r|-row]}} <__c__column_> {{[-x|-xmgr]}} <path_to_image_pam>

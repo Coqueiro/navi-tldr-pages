@@ -4,7 +4,7 @@
 % tag, osx
 
 # Add tags to a file
-tag --add <tag_name1,tag_name2,...> <path_to_file>
+tag --add <tag_name1_tag_name2____> <path_to_file>
 
 # Remove a tag
 tag --remove <tag_name> <path_to_file>

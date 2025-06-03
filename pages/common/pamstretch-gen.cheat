@@ -4,4 +4,4 @@
 % pamstretch-gen, common
 
 # Scale up a PAM image by the specified decimal factor
-pamstretch-gen <N> <path_to_image.pam> > <path_to_output.pam>
+pamstretch-gen <n> <path_to_image_pam> > <path_to_output_pam>

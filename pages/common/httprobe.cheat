@@ -10,7 +10,7 @@ cat <input_file> | httprobe
 cat <input_file> | httprobe --prefer-https
 
 # Probe additional ports with a given protocol
-cat <input_file> | httprobe -p <https:2222>
+cat <input_file> | httprobe -p <https_2222>
 
 # Display help
 httprobe --help

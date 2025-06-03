@@ -4,10 +4,10 @@
 % pnmtosgi, common
 
 # Convert a PNM image to an SGI image
-pnmtosgi <path_to_input.pnm> > <path_to_output.sgi>
+pnmtosgi <path_to_input_pnm> > <path_to_output_sgi>
 
 # Disable or enable compression
-pnmtosgi -<verbatim|rle> <path_to_input.pnm> > <path_to_output.sgi>
+pnmtosgi -<verbatim_rle> <path_to_input_pnm> > <path_to_output_sgi>
 
 # Write the specified string into the SGI image header's `imagename` field
-pnmtosgi -imagename <string> <path_to_input.pnm> > <path_to_output.sgi>
+pnmtosgi {{[-i|-imagename]}} <string> <path_to_input_pnm> > <path_to_output_sgi>

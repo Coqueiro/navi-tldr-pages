@@ -4,4 +4,4 @@
 % greadlink, osx
 
 # View documentation for the original command
-tldr -p linux readlink
+tldr readlink

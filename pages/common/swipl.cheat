@@ -10,7 +10,7 @@ swipl
 swipl --quiet -t "<command>"
 
 # Execute a script
-swipl <path_to_file.pl>
+swipl <path_to_file_pl>
 
 # Print all shell configuration variables
 swipl --dump-runtime-variables

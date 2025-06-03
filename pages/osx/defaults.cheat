@@ -13,7 +13,7 @@ defaults read -app "<application>" "<option>"
 defaults find "<keyword>"
 
 # Write the default value of an application option
-defaults write "<application>" "<option>" <-type> <value>
+defaults write "<application>" "<option>" <_type> <value>
 
 # Speed up Mission Control animations
 defaults write com.apple.Dock expose-animation-duration -float 0.1

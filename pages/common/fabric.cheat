@@ -13,7 +13,7 @@ fabric --listpatterns
 fabric --pattern <pattern_name> < <path_to_input_file>
 
 # Run a pattern on a YouTube video URL
-fabric --youtube "<https:__www.youtube.com_watch?v=video_id>" --pattern <pattern_name>
+fabric --youtube "<https___www_youtube_com_watch_v_video_id>" --pattern <pattern_name>
 
 # Chain patterns together by piping output from one to another
 fabric --pattern <pattern1> | fabric --pattern <pattern2>

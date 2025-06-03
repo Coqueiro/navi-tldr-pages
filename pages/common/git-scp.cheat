@@ -13,7 +13,7 @@ git scp <remote_name> HEAD
 git scp <remote_name> HEAD~1
 
 # Copy specific files to a remote
-git scp <remote_name> <path_to_file1 path_to_file2 ...>
+git scp <remote_name> {{path/to/file1 path/to/file2 ...}}
 
 # Copy a specific directory to a remote
 git scp <remote_name> <path_to_directory>

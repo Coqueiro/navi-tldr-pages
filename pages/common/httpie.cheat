@@ -10,4 +10,4 @@ httpie cli check-updates
 httpie cli plugins list
 
 # Install/upgrade/uninstall plugins
-httpie cli plugins <install|upgrade|uninstall> <plugin_name>
+httpie cli plugins <install_upgrade_uninstall> <plugin_name>

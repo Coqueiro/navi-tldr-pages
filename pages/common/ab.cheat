@@ -10,7 +10,7 @@ ab -n 100 <url>
 ab -n 100 -c 10 <url>
 
 # Execute 100 HTTP POST requests to a URL, using a JSON payload from a file
-ab -n 100 -T <application_json> -p <path_to_file.json> <url>
+ab -n 100 -T <application_json> -p <path_to_file_json> <url>
 
 # Use HTTP [k]eep-Alive, i.e. perform multiple requests within one HTTP session
 ab -k <url>
@@ -19,4 +19,4 @@ ab -k <url>
 ab -t <60> <url>
 
 # Write the results to a CSV file
-ab -e <path_to_file.csv>
+ab -e <path_to_file_csv>

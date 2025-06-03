@@ -10,7 +10,7 @@ mysqld
 mysqld --console
 
 # Start the server, saving logging output to a custom log file
-mysqld --log=<path_to_file.log>
+mysqld --log=<path_to_file_log>
 
 # Print the default arguments and their values and exit
 mysqld --print-defaults

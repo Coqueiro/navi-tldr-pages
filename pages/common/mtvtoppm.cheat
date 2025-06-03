@@ -4,4 +4,4 @@
 % mtvtoppm, common
 
 # Convert an MTV or PRT ray tracer file to a PPM image
-mtvtoppm <path_to_file.mtv> > <path_to_output.ppm>
+mtvtoppm <path_to_file_mtv> > <path_to_output_ppm>

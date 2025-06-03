@@ -10,7 +10,7 @@ history
 history <20>
 
 # Display history with timestamps in different formats (only available in Zsh)
-history -<d|f|i|E>
+history -<d_f_i_E>
 
 # [c]lear the commands history list (only for current Bash shell)
 history -c

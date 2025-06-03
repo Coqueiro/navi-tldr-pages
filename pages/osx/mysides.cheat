@@ -7,7 +7,7 @@
 mysides list
 
 # Add a new item to the end of the sidebar favorites
-mysides add <example> <file:___Users_Shared_example>
+mysides add <example> <file____Users_Shared_example>
 
 # Remove an item by name
 mysides remove <example>

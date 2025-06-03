@@ -13,7 +13,7 @@ git describe --abbrev=<4>
 git describe --all
 
 # Describe a Git tag
-git describe <v1.0.0>
+git describe <v1_0_0>
 
 # Create a name for the last commit of a given branch
 git describe <branch_name>

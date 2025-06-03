@@ -13,7 +13,7 @@ borg create --progress <path_to_repo_directory>::<Monday> <path_to_source_direct
 borg list <path_to_repo_directory>
 
 # Extract a specific directory from the "Monday" archive in a remote repository, excluding all `*.ext` files
-borg extract <user>@<host>:<path_to_repo_directory>::<Monday> <path_to_target_directory> --exclude '<*.ext>'
+borg extract <user>@<host>:<path_to_repo_directory>::<Monday> <path_to_target_directory> --exclude '{{*.ext}}'
 
 # Prune a repository by deleting all archives older than 7 days, listing changes
 borg prune --keep-within <7d> --list <path_to_repo_directory>

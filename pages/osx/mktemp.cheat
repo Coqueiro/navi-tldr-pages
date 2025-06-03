@@ -7,10 +7,10 @@
 mktemp
 
 # Use a custom directory (defaults to the output of `getconf DARWIN_USER_TEMP_DIR`, or `/tmp`)
-mktemp --tmpdir=<path_to_tempdir>
+mktemp --tmpdir=<_path_to_tempdir>
 
 # Use a custom path template (`X`s are replaced with random alphanumeric characters)
-mktemp <tmp_example.XXXXXXXX>
+mktemp <_tmp_example_XXXXXXXX>
 
 # Use a custom file name prefix
 mktemp -t <example>

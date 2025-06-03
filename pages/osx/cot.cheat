@@ -7,7 +7,7 @@
 cot
 
 # Open specific files
-cot <path_to_file1 path_to_file2 ...>
+cot {{path/to/file1 path/to/file2 ...}}
 
 # Open a new blank document
 cot --new

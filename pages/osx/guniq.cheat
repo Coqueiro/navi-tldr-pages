@@ -4,4 +4,4 @@
 % guniq, osx
 
 # View documentation for the original command
-tldr -p linux uniq
+tldr uniq

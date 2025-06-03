@@ -6,17 +6,17 @@
 # Create a new Python project in the current directory
 uv init
 
-# Create a new Python project in a directory with the given name
-uv init <project_name>
+# Create a new Python project at the specified path
+uv init <path_to_directory>
 
-# Add a new package to the project
+# Add a new dependency to the project
 uv add <package>
 
-# Remove a package from the project
+# Remove a dependency from the project
 uv remove <package>
 
 # Run a script in the project's environment
-uv run <path_to_script.py>
+uv run <path_to_script_py>
 
 # Run a command in the project's environment
 uv run <command>

@@ -19,7 +19,7 @@ eksctl create cluster --config-file=<path> --without-nodegroup
 eksctl delete cluster --name=<name> --region=<region>
 
 # Create cluster and write cluster credentials to a file other than the default
-eksctl create cluster --name=<name> --nodes=<4> --kubeconfig=<path_to_config.yaml>
+eksctl create cluster --name=<name> --nodes=<4> --kubeconfig=<path_to_config_yaml>
 
 # Create a cluster and prevent storing cluster credentials locally
 eksctl create cluster --name=<name> --nodes=<4> --write-kubeconfig=false

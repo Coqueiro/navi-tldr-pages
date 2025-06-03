@@ -4,13 +4,13 @@
 % amass, common
 
 # Execute an Amass subcommand
-amass <intel|enum> <options>
+amass <intel_enum> <options>
 
 # Display help
 amass -help
 
 # Display help on an Amass subcommand
-amass <intel|enum> -help
+amass <intel_enum> -help
 
 # Display version
 amass -version

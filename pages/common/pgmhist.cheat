@@ -4,16 +4,16 @@
 % pgmhist, common
 
 # Display the histogram for human reading
-pgmhist <path_to_image.pgm>
+pgmhist <path_to_image_pgm>
 
 # Display the median grey value
-pgmhist -median <path_to_image.pgm>
+pgmhist {{[-me|-median]}} <path_to_image_pgm>
 
 # Display four quartile grey value
-pgmhist -quartile <path_to_image.pgm>
+pgmhist {{[-qua|-quartile]}} <path_to_image_pgm>
 
 # Report the existence of invalid grey values
-pgmhist -forensic <path_to_image.pgm>
+pgmhist {{[-f|-forensic]}} <path_to_image_pgm>
 
 # Display machine-readable output
-pgmhist -machine <path_to_image.pgm>
+pgmhist {{[-ma|-machine]}} <path_to_image_pgm>

@@ -10,7 +10,7 @@ ropper --file <path_to_binary>
 ropper --file <path_to_binary> --search <regex>
 
 # List gadgets of specified type in the binary file
-ropper --file <path_to_binary> --type <rop|job|sys|all>
+ropper --file <path_to_binary> --type <rop_job_sys_all>
 
 # Exclude bad byte gadgets in the binary file
 ropper --file <path_to_binary> --badbytes <byte_string>

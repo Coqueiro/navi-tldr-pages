@@ -16,4 +16,4 @@ top -o cpu -O time
 top -user <user_name>
 
 # Display help about interactive commands
-?
+<?>

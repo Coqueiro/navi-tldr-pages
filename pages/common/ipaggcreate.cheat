@@ -4,10 +4,10 @@
 % ipaggcreate, common
 
 # Count the number of packets sent from each source address appearing in a PCAP file
-ipaggcreate --src <path_to_file.pcap>
+ipaggcreate --src <path_to_file_pcap>
 
 # Group and count packets read from a network interface by IP packet length
 ipaggcreate --interface <eth0> --length
 
 # Count the number of bytes sent between each address pair appearing in a PCAP file
-ipaggcreate --address-pairs --bytes <path_to_file.pcap>
+ipaggcreate --address-pairs --bytes <path_to_file_pcap>

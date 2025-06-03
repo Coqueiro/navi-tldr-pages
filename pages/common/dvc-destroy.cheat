@@ -3,8 +3,4 @@
 
 % dvc-destroy, common
 
-# Destroy the current project
-dvc destroy
 
-# Force destroy the current project
-dvc destroy --force

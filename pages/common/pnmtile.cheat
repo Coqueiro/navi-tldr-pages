@@ -4,4 +4,4 @@
 % pnmtile, common
 
 # Replicate an image to fill an area of the specified dimensions
-pnmtile <width> <height> <path_to_input.pnm> > <path_to_output.pnm>
+pnmtile <width> <height> <path_to_input_pnm> > <path_to_output_pnm>

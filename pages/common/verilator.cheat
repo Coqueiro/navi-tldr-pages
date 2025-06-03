@@ -4,13 +4,13 @@
 % verilator, common
 
 # Build a specific C project in the current directory
-verilator --binary --build-jobs 0 -Wall <path_to_source.v>
+verilator --binary --build-jobs 0 -Wall <path_to_source_v>
 
 # Create a C++ executable in a specific folder
-verilator --cc --exe --build --build-jobs 0 -Wall <path_to_source.cpp> <path_to_output.v>
+verilator --cc --exe --build --build-jobs 0 -Wall <path_to_source_cpp> <path_to_output_v>
 
 # Perform linting over a code in the current directory
 verilator --lint-only -Wall
 
 # Create XML output about the design (files, modules, instance hierarchy, logic and data types) to feed into other tools
-verilator --xml-output -Wall <path_to_output.xml>
+verilator --xml-output -Wall <path_to_output_xml>

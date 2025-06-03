@@ -16,4 +16,4 @@ doctum update
 doctum update --only-version=<version>
 
 # Parse and render a project using a specific configuration
-doctum update <path_to_config.php>
+doctum update <path_to_config_php>

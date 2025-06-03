@@ -4,7 +4,7 @@
 % lsyncd, common
 
 # Watch the source for changes and run `rsync` to synchronize files to the destination on every change
-lsyncd -rsync <path_to_source> <host::share_name>
+lsyncd -rsync <path_to_source> <host__share_name>
 
 # Use SSH instead of `rsyncd` shares
 lsyncd -rsyncssh <path_to_source> <host> <path_to_destination>

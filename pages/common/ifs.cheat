@@ -7,10 +7,10 @@
 echo "$IFS"
 
 # Change the IFS value
-IFS="<:>"
+IFS="<_>"
 
 # Reset IFS to default
 IFS=$' \t\n'
 
 # Temporarily change the IFS value in a subshell
-(IFS="<:>"; echo "<one:two:three>")
+(IFS="<_>"; echo "<one_two_three>")

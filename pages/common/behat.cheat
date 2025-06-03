@@ -13,7 +13,7 @@ behat
 behat --suite <suite_name>
 
 # Run tests with a specific output formatter
-behat --format <pretty|progress>
+behat --format <pretty_progress>
 
 # Run tests and output results to a file
 behat --out <path_to_file>

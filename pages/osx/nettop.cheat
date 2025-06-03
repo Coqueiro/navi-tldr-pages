@@ -10,7 +10,7 @@ nettop
 nettop -m <tcp> -t <loopback>
 
 # Monitor a specific process
-nettop -p "<process_id|process_name>"
+nettop -p "<process_id_process_name>"
 
 # Display a per-process summary
 nettop -P
@@ -22,7 +22,7 @@ nettop -l <10>
 nettop -d -s <5>
 
 # While running nettop, list interactive commands
-h
+<h>
 
 # Display help
 nettop -h

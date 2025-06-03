@@ -4,4 +4,4 @@
 % pgmtost4, common
 
 # Convert a PGM image file to the SBIG ST-4 format
-pgmtost4 <path_to_input_file.pgm> > <path_to_output.st4>
+pgmtost4 <path_to_input_file_pgm> > <path_to_output_st4>

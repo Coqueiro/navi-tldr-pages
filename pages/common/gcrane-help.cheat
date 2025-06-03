@@ -3,8 +3,4 @@
 
 % gcrane-help, common
 
-# Display help for a subcommand
-gcrane help <command>
 
-# Display help
-gcrane help <-h|--help>

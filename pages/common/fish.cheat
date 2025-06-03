@@ -10,16 +10,16 @@ fish
 fish --no-config
 
 # Execute specific commands
-fish --command "<echo 'fish is executed'>"
+fish --command "{{echo 'fish is executed'}}"
 
 # Execute a specific script
-fish <path_to_script.fish>
+fish <path_to_script_fish>
 
 # Check a specific script for syntax errors
-fish --no-execute <path_to_script.fish>
+fish --no-execute <path_to_script_fish>
 
 # Execute specific commands from `stdin`
-<echo "echo 'fish is executed'"> | fish
+{{echo "echo 'fish is executed'"}} | fish
 
 # Start an interactive shell session in private mode, where the shell does not access old history or save new history
 fish --private

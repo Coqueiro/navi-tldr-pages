@@ -19,4 +19,4 @@ kmutil check
 sudo kmutil dumpstate
 
 # Load one or more extensions based on the bundle specified at this path in the results
-kmutil load --bundle-path <path_to_extension.kext>
+kmutil load --bundle-path <path_to_extension_kext>

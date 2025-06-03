@@ -13,7 +13,7 @@ transfersh --progress <path_to_file>
 transfersh --name <filename> <path_to_file>
 
 # Upload a file to a custom transfer.sh server
-transfersh --servername <upload.server.name> <path_to_file>
+transfersh --servername <upload_server_name> <path_to_file>
 
 # Upload all files from a directory recursively
 transfersh --recursive <path_to_directory_>

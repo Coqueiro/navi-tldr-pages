@@ -4,13 +4,13 @@
 % bob, common
 
 # Install and switch to the specified version of Neovim
-bob use <nightly|stable|latest|version_string|commit_hash>
+bob use <nightly_stable_latest_version_string_commit_hash>
 
 # List installed and currently used versions of Neovim
 bob list
 
 # Uninstall the specified version of Neovim
-bob uninstall <nightly|stable|latest|version_string|commit_hash>
+bob uninstall <nightly_stable_latest_version_string_commit_hash>
 
 # Uninstall Neovim and erase any changes `bob` has made
 bob erase

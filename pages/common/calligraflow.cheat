@@ -10,4 +10,4 @@ calligraflow
 calligraflow <path_to_file>
 
 # Display help or version
-calligraflow --<help|version>
+calligraflow --<help_version>

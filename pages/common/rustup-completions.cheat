@@ -4,4 +4,4 @@
 % rustup-completions, common
 
 # Print the completion script to `stdout`
-rustup completions <bash|elvish|fish|powershell|zsh> <rustup|cargo>
+rustup completions <bash_elvish_fish_powershell_zsh> <rustup_cargo>

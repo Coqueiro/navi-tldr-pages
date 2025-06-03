@@ -3,8 +3,4 @@
 
 % fc-pattern, common
 
-# Display default information about a font
-fc-pattern --default '<DejaVu Serif>'
 
-# Display configuration information about a font
-fc-pattern --config '<DejaVu Serif>'

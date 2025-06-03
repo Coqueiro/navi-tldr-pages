@@ -16,4 +16,4 @@ snowsql --mfa-passcode <token>
 snowsql --query '<query>'
 
 # Execute commands from a specific file on the default connection
-snowsql --filename <path_to_file.sql>
+snowsql --filename <path_to_file_sql>

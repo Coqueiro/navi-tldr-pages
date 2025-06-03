@@ -15,8 +15,8 @@ zoxide query --interactive
 # Add a directory or increment its rank
 zoxide add <path_to_directory>
 
-# Remove a directory from `zoxide`'s database interactively
-zoxide remove <path_to_directory> --interactive
+# Remove a directory from `zoxide`'s database
+zoxide remove <path_to_directory>
 
-# Generate shell configuration for command aliases (`z`, `za`, `zi`, `zq`, `zr`)
-zoxide init <bash|fish|zsh>
+# Generate shell configuration for command aliases (`z`, `zi`)
+zoxide init <bash_elvish_fish_nushell_posix_powershell_tcsh_xonsh_zsh>

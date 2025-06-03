@@ -13,7 +13,7 @@ rgpt --v --i "$(git diff <path_to_file>)"
 rgpt --max <300> --i "$(git diff <path_to_file>)"
 
 # Ask GPT for a more unique result using a float value between 0 and 2. (higher = more unique)
-rgpt --pres <1.2> --i "$(git diff <path_to_file>)"
+rgpt --pres <1_2> --i "$(git diff <path_to_file>)"
 
 # Ask GPT to review your code using a specific model
 rgpt --model <davinci> --i "$(git diff <path_to_file>)"

@@ -4,10 +4,10 @@
 % pbmreduce, common
 
 # Reduce the specified image by the specified factor
-pbmreduce <N> <path_to_image.pbm> > <path_to_output.pbm>
+pbmreduce <n> <path_to_image_pbm> > <path_to_output_pbm>
 
 # Use simple thresholding when reducing
-pbmreduce -threshold <N> <path_to_image.pbm> > <path_to_output.pbm>
+pbmreduce {{[-t|-threshold]}} <n> <path_to_image_pbm> > <path_to_output_pbm>
 
 # Use the specified threshold for all quantizations
-pbmreduce -value <0.6> <N> <path_to_image.pbm> > <path_to_output.pbm>
+pbmreduce {{[-va|-value]}} <0_6> <n> <path_to_image_pbm> > <path_to_output_pbm>

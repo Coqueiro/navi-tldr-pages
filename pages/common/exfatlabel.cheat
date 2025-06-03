@@ -4,7 +4,7 @@
 % exfatlabel, common
 
 # Display the current filesystem label
-exfatlabel <dev_sda>
+exfatlabel <_dev_sda>
 
 # Set the filesystem label
-exfatlabel <dev_sda> <new_label>
+exfatlabel <_dev_sda> <new_label>

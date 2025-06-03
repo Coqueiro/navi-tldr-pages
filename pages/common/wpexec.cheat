@@ -4,7 +4,7 @@
 % wpexec, common
 
 # Run a WirePlumber script
-wpexec <path_to_file.lua>
+wpexec <path_to_file_lua>
 
 # Display help
 wpexec --help

@@ -3,8 +3,4 @@
 
 % djxl, common
 
-# Decompress a JPEG XL image to another format
-djxl <path_to_image.jxl> <path_to_output.ext>
 
-# Display an extremely detailed help page
-djxl --help --verbose --verbose --verbose --verbose

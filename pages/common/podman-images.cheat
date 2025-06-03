@@ -16,4 +16,4 @@ podman images --quiet
 podman images --filter dangling=true
 
 # List images that contain a substring in their name
-podman images "<*image|image*>"
+podman images "{{*image|image*}}"

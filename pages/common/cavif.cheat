@@ -4,13 +4,13 @@
 % cavif, common
 
 # Convert a JPEG file to AVIF, saving it to `file.avif`
-cavif <path_to_image.jpg>
+cavif <path_to_image_jpg>
 
 # Adjust the image quality and convert a PNG file to AVIF
-cavif --quality <1..100> <path_to_image.png>
+cavif --quality <1__100> <path_to_image_png>
 
 # Specify the output location
-cavif <path_to_image.jpg> --output <path_to_output.avif>
+cavif <path_to_image_jpg> --output <path_to_output_avif>
 
 # Overwrite the destination file if it already exists
-cavif --overwrite <path_to_image.jpg>
+cavif --overwrite <path_to_image_jpg>

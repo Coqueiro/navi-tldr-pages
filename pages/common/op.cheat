@@ -22,7 +22,7 @@ op read <secret_reference>
 op run -- <command>
 
 # Pass secret references from an environment file to a command
-op run --env-file <path_to_env_file.env> -- <command>
+op run --env-file <path_to_env_file_env> -- <command>
 
 # Read secret references from a file and save plaintext secrets to a file
 op inject --in-file <path_to_input_file> --out-file <path_to_output_file>

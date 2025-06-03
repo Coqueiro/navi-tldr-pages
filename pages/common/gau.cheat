@@ -4,22 +4,22 @@
 % gau, common
 
 # Fetch all URLs of a domain from AlienVault's Open Threat Exchange, the Wayback Machine, Common Crawl, and URLScan
-gau <example.com>
+gau <example_com>
 
 # Fetch URLs of multiple domains
-gau <domain1 domain2 ...>
+gau {{domain1 domain2 ...}}
 
 # Fetch all URLs of several domains from an input file, running multiple threads
-gau --threads <4> < <path_to_domains.txt>
+gau --threads <4> < <path_to_domains_txt>
 
 # Write [o]utput results to a file
-gau <example.com> --o <path_to_found_urls.txt>
+gau <example_com> --o <path_to_found_urls_txt>
 
 # Search for URLs from only one specific provider
-gau --providers <wayback|commoncrawl|otx|urlscan> <example.com>
+gau --providers <wayback_commoncrawl_otx_urlscan> <example_com>
 
 # Search for URLs from multiple providers
-gau --providers <wayback,otx,...> <example.com>
+gau --providers <wayback_otx____> <example_com>
 
 # Search for URLs within specific date range
-gau --from <YYYYMM> --to <YYYYMM> <example.com>
+gau --from <YYYYMM> --to <YYYYMM> <example_com>

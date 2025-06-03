@@ -4,10 +4,10 @@
 % pnmnlfilt, common
 
 # Apply the "alpha trimmed mean" filter with the specified alpha and radius values onto the PNM image
-pnmnlfilt <0.0..0.5> <radius> <path_to_image.pnm> > <path_to_output.pnm>
+pnmnlfilt <0_0__0_5> <radius> <path_to_image_pnm> > <path_to_output_pnm>
 
 # Apply the "optimal estimation smoothing" filter with the specified noise threshold and radius onto the PNM image
-pnmnlfilt <1.0..2.0> <radius> <path_to_image.pnm> > <path_to_output.pnm>
+pnmnlfilt <1_0__2_0> <radius> <path_to_image_pnm> > <path_to_output_pnm>
 
 # Apply the "edge enhancement" filter with the specified alpha and radius onto the PNM image
-pnmnlfilt <-0.9..(-0.1)> <radius> <path_to_image.pnm> > <path_to_output.pnm>
+pnmnlfilt <_0_9____0_1_> <radius> <path_to_image_pnm> > <path_to_output_pnm>

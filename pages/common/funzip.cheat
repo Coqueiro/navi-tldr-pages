@@ -4,10 +4,10 @@
 % funzip, common
 
 # Print the content of the first member in a Zip archive
-funzip <path_to_archive.zip>
+funzip <path_to_archive_zip>
 
 # Print the content in a gzip archive
-funzip <path_to_archive.gz>
+funzip <path_to_archive_gz>
 
 # Decrypt a Zip or gzip archive and print the content
 funzip -password <password> <path_to_archive>

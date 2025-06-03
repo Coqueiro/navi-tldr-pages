@@ -4,7 +4,7 @@
 % yadm-config, common
 
 # Set or update a `yadm`'s Git configuration
-yadm config <key.inner-key> <value>
+yadm config <key_inner_key> <value>
 
 # Get a value from `yadm`'s Git configuration
 yadm config --get <key>

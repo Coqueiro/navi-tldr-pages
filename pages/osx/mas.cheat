@@ -4,7 +4,7 @@
 % mas, osx
 
 # Sign into the Mac App Store for the first time
-mas signin "<user@example.com>"
+mas signin "<user_example_com>"
 
 # Show all installed applications and their product identifiers
 mas list

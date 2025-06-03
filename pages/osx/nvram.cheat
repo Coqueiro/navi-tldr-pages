@@ -19,4 +19,4 @@ sudo nvram -d <name>
 sudo nvram -c
 
 # Set a firmware variable from a specific [x]ML [f]ile
-sudo nvram -xf <path_to_file.xml>
+sudo nvram -xf <path_to_file_xml>

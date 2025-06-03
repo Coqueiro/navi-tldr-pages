@@ -7,7 +7,7 @@
 jmap <java_pid>
 
 # Print heap summary information
-jmap -heap <filename.jar> <java_pid>
+jmap -heap <filename_jar> <java_pid>
 
 # Print histogram of heap usage by type
 jmap -histo <java_pid>

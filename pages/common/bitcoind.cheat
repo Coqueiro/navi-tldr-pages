@@ -10,7 +10,7 @@ bitcoind
 bitcoind -daemon
 
 # Start the Bitcoin Core daemon on a specific network
-bitcoind -chain=<main|test|signet|regtest>
+bitcoind -chain=<main_test_signet_regtest>
 
 # Start the Bitcoin Core daemon using specific config file and data directory
-bitcoind -conf=<path_to_bitcoin.conf> -datadir=<path_to_directory>
+bitcoind -conf=<path_to_bitcoin_conf> -datadir=<path_to_directory>

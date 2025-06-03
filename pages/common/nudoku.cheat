@@ -7,22 +7,22 @@
 nudoku
 
 # Choose the difficulty of the game
-nudoku -d <easy|normal|hard>
+nudoku -d <easy_normal_hard>
 
 # Navigate the board
-<h|j|k|l> OR <Left|Down|Up|Right arrow key>
+<_h___j___k___l___ArrowKeys_>
 
 # Delete a number
-<Backspace|x>
+<_Backspace___x_>
 
 # Get a hint
-H
+<H>
 
 # See the complete solution
-S
+<S>
 
 # Create a new puzzle
-N
+<N>
 
 # Quit the game
-Q
+<Q>

@@ -4,10 +4,10 @@
 % ngs, common
 
 # Execute a code snippet
-ngs -e "<echo('ngs is executed')>"
+ngs -e "{{echo('ngs is executed')}}"
 
 # Execute a script
-ngs <path_to_script.ngs>
+ngs <path_to_script_ngs>
 
 # Display version
 ngs --version

@@ -7,10 +7,10 @@
 python
 
 # Execute a specific Python file
-python <path_to_file.py>
+python <path_to_file_py>
 
 # Execute a specific Python file and start a REPL
-python -i <path_to_file.py>
+python -i <path_to_file_py>
 
 # Execute a Python expression
 python -c "<expression>"
@@ -22,7 +22,7 @@ python -m <module> <arguments>
 python -m pip install <package>
 
 # Interactively debug a Python script
-python -m pdb <path_to_file.py>
+python -m pdb <path_to_file_py>
 
 # Start the built-in HTTP server on port 8000 in the current directory
 python -m http.server

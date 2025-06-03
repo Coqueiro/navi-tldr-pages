@@ -10,7 +10,7 @@ df
 df -h -c
 
 # Use [H]uman-readable units (based on powers of 1000)
-df -<-si|H>
+df -<_si_H>
 
 # Display the filesystem and its disk usage containing the given file or directory
 df <path_to_file_or_directory>

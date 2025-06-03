@@ -4,7 +4,7 @@
 % aws-kafka, common
 
 # Create a new MSK cluster
-aws kafka create-cluster --cluster-name <cluster_name> --broker-node-group-info instanceType=<instance_type>,clientSubnets=<subnet_id1 subnet_id2 ...> --kafka-version <version> --number-of-broker-nodes <number>
+aws kafka create-cluster --cluster-name <cluster_name> --broker-node-group-info instanceType=<instance_type>,clientSubnets={{subnet_id1 subnet_id2 ...}} --kafka-version <version> --number-of-broker-nodes <number>
 
 # Describe a MSK cluster
 aws kafka describe-cluster --cluster-arn <cluster_arn>
@@ -13,7 +13,7 @@ aws kafka describe-cluster --cluster-arn <cluster_arn>
 aws kafka list-clusters
 
 # Create a new MSK configuration
-aws kafka create-configuration --name <configuration_name> --server-properties file://<path_to_configuration_file.txt>
+aws kafka create-configuration --name <configuration_name> --server-properties file://<path_to_configuration_file_txt>
 
 # Describe a MSK configuration
 aws kafka describe-configuration --arn <configuration_arn>

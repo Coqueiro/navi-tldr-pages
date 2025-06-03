@@ -7,4 +7,4 @@
 gcloud kms decrypt --key=<key_name> --keyring=<keyring_name> --location=<global> --ciphertext-file=<path_to_ciphertext> --plaintext-file=<path_to_plaintext>
 
 # Decrypt a file with additional authenticated data (AAD) and write the decrypted plaintext to `stdout`
-gcloud kms decrypt --key=<key_name> --keyring=<keyring_name> --location=<global> --additional-authenticated-data-file=<path_to_file.aad> --ciphertext-file=<path_to_ciphertext> --plaintext-file=-
+gcloud kms decrypt --key=<key_name> --keyring=<keyring_name> --location=<global> --additional-authenticated-data-file=<path_to_file_aad> --ciphertext-file=<path_to_ciphertext> --plaintext-file=-

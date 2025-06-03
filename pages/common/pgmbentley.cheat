@@ -4,4 +4,4 @@
 % pgmbentley, common
 
 # Apply the Bentley Effect on a PGM image
-pgmbentley <path_to_input_file.pgm> > <path_to_output_file.pgm>
+pgmbentley <path_to_input_file_pgm> > <path_to_output_file_pgm>

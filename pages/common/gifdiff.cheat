@@ -4,7 +4,7 @@
 % gifdiff, common
 
 # Check how GIFs differ
-gifdiff <path_to_first.gif> <path_to_second.gif>
+gifdiff <path_to_first_gif> <path_to_second_gif>
 
 # Check if GIFs differ
-gifdiff --brief <path_to_first.gif> <path_to_second.gif>
+gifdiff --brief <path_to_first_gif> <path_to_second_gif>

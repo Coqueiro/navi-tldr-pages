@@ -4,25 +4,25 @@
 % jbang, common
 
 # Initialize a simple Java class
-jbang init <path_to_file.java>
+jbang init <path_to_file_java>
 
 # Initialize a Java class (useful for scripting)
-jbang init --template=<cli> <path_to_file.java>
+jbang init --template=<___> <path_to_file_java>
 
 # Use `jshell` to explore and use a script and any dependencies in a REPL editor
 jbang run --interactive
 
 # Setup a temporary project to edit a script in an IDE
-jbang edit --open=<codium|code|eclipse|idea|netbeans|gitpod> <path_to_script.java>
+jbang edit --open=<codium_code_eclipse_idea_netbeans_gitpod> <path_to_script_java>
 
 # Run a Java code snippet (Java 9 and later)
-<echo 'Files.list(Paths.get("_etc")).forEach(System.out::println);'> | jbang -
+{{echo 'Files.list(Paths.get("/etc")).forEach(System.out::println);'}} | jbang -
 
 # Run command-line application
-jbang <path_to_file.java> <command> <arg1 arg2 ...>
+jbang <path_to_file_java> <command> {{arg1 arg2 ...}}
 
 # Install a script on the user's `$PATH`
-jbang app install --name <command_name> <path_to_script.java>
+jbang app install --name <command_name> <path_to_script_java>
 
 # Install a specific version of JDK to be used with `jbang`
 jbang jdk install <version>

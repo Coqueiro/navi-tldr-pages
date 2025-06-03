@@ -7,13 +7,13 @@
 calc
 
 # Perform a calculation in non-interactive mode
-calc '<85 * (36 _ 4)>'
+calc '{{85 * (36 / 4)}}'
 
 # Don't format the output (for use with [p]ipes)
-calc -p '<4_3 * pi() * 5^3>'
+calc -p '{{4/3 * pi() * 5^3}}'
 
 # Perform a calculation and then switch to [i]nteractive mode
-calc -i '<sqrt(2)>'
+calc -i '<sqrt_2_>'
 
 # Start `calc` in a specific permission [m]ode (0 to 7, defaults to 7)
 calc -m <mode>

@@ -4,16 +4,16 @@
 % aiac, osx
 
 # Generate Terraform for Azure storage account
-aiac get terraform <for an azure storage account>
+aiac get terraform {{for an azure storage account}}
 
 # Generate a Dockerfile for nginx
-aiac get dockerfile <for a secured nginx>
+aiac get dockerfile {{for a secured nginx}}
 
 # Generate GitHub action that applies Terraform
-aiac get github action <that plans and applies terraform>
+aiac get github action {{that plans and applies terraform}}
 
 # Generate a port scanner in Python
-aiac get python <code that scans all open ports in my network>
+aiac get python {{code that scans all open ports in my network}}
 
 # Generate a MongoDB query
-aiac get mongo <query that aggregates all documents by created date>
+aiac get mongo {{query that aggregates all documents by created date}}

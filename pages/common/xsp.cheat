@@ -7,4 +7,4 @@
 xsp
 
 # Listen on a specific IP address and port
-xsp --address <127.0.0.1> --port <8000>
+xsp --address <127_0_0_1> --port <8000>

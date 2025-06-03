@@ -4,10 +4,10 @@
 % usql, common
 
 # Connect to a specific database
-usql <sqlserver|mysql|postgres|sqlite3|...>://<username>:<password>@<host>:<port>/<database_name>
+usql <sqlserver_mysql_postgres_sqlite3____>://<username>:<password>@<host>:<port>/<database_name>
 
 # Execute commands from a file
-usql --file=<path_to_query.sql>
+usql --file=<path_to_query_sql>
 
 # Execute a specific SQL command
 usql --command="<sql_command>"
@@ -22,4 +22,4 @@ usql --command="<sql_command>"
 <prompt>=> \g <path_to_file_with_results>
 
 # Import data from a CSV file into a specific table
-<prompt>=> \copy <path_to_data.csv> <table_name>
+<prompt>=> \copy <path_to_data_csv> <table_name>

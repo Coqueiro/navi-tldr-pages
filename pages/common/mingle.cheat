@@ -4,10 +4,10 @@
 % mingle, common
 
 # Bundle the edges of one or more graph layouts (that already have layout information)
-mingle <path_to_layout1.gv> <path_to_layout2.gv ...> > <path_to_output.gv>
+mingle {{path/to/layout1.gv path/to/layout2.gv ...}} > <path_to_output_gv>
 
 # Perform layout, bundling, and output to a picture with one command
-dot <path_to_input.gv> | mingle | dot -T <png> > <path_to_output.png>
+dot <path_to_input_gv> | mingle | dot -T <___> > <path_to_output_png>
 
 # Display help
 mingle -?

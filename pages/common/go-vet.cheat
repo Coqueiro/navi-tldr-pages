@@ -15,8 +15,8 @@ go tool vet help
 # View details and flags for a particular check
 go tool vet help <check_name>
 
-# Display offending lines plus N lines of surrounding context
-go vet -c=<N>
+# Display offending lines plus `n` lines of surrounding context
+go vet -c=<n>
 
 # Output analysis and errors in JSON format
 go vet -json

@@ -10,7 +10,7 @@ kool create <preset> <project_name>
 kool run <script>
 
 # Start/stop services in the current directory
-kool <start|stop>
+kool <start_stop>
 
 # Display status of the services in the current directory
 kool status
@@ -19,4 +19,4 @@ kool status
 kool self-update
 
 # Print the completion script for the specified shell
-kool completion <bash|fish|powershell|zsh>
+kool completion <bash_fish_powershell_zsh>

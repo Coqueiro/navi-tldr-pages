@@ -4,10 +4,10 @@
 % keytool, common
 
 # Create a keystore
-keytool -genkeypair -v -keystore <path_to_file.keystore> -alias <key_name>
+keytool -genkeypair -v -keystore <path_to_file_keystore> -alias <key_name>
 
 # Change a keystore password
-keytool -storepasswd -keystore <path_to_file.keystore>
+keytool -storepasswd -keystore <path_to_file_keystore>
 
 # Change a key's password inside a specific keystore
-keytool -keypasswd -alias <key_name> -keystore <path_to_file.keystore>
+keytool -keypasswd -alias <key_name> -keystore <path_to_file_keystore>

@@ -4,7 +4,7 @@
 % pbmtobbnbg, common
 
 # Convert a PBM image to a BitGraph terminal Display Pixel Data sequence
-pbmtobbnbg < <path_to_image.pbm> > <path_to_output.dpd>
+pbmtobbnbg < <path_to_image_pbm> > <path_to_output_dpd>
 
 # Specify the rasterop
-pbmtobbnbg <3> < <path_to_image.pbm> > <path_to_output.dpd>
+pbmtobbnbg <3> < <path_to_image_pbm> > <path_to_output_dpd>

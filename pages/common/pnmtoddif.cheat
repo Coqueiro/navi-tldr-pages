@@ -4,7 +4,7 @@
 % pnmtoddif, common
 
 # Convert a PNM image to a DDIF image file
-pnmtoddif <path_to_image.pnm> > <path_to_image.ddif>
+pnmtoddif <path_to_image_pnm> > <path_to_image_ddif>
 
 # Explicitly specify the horizontal and vertical resolution of the output image
-pnmtoddif -resolution <horizontal_dpi> <vertical_dpi> <path_to_image.pnm> > <path_to_image.ddif>
+pnmtoddif {{[-r|-resolution]}} <horizontal_dpi> <vertical_dpi> <path_to_image_pnm> > <path_to_image_ddif>

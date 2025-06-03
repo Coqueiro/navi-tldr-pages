@@ -4,4 +4,4 @@
 % ppmdim, common
 
 # Dim the specified PPM image by dimfactor
-ppmdim <0.6> <path_to_input.ppm> > <path_to_output.ppm>
+ppmdim <0_6> <path_to_input_ppm> > <path_to_output_ppm>

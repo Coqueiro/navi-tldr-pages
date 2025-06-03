@@ -16,7 +16,7 @@ omz reload
 omz plugin list
 
 # Enable/Disable an Oh My Zsh plugin
-omz plugin <enable|disable> <plugin>
+omz plugin <enable_disable> <plugin>
 
 # List all available themes
 omz theme list

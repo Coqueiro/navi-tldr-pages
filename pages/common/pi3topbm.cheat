@@ -4,4 +4,4 @@
 % pi3topbm, common
 
 # Convert an Atari Degas PI3 image to PBM image
-pi1topbm <path_to_atari_image.pi3> > <path_to_output_image.pbm>
+pi1topbm <path_to_atari_image_pi3> > <path_to_output_image_pbm>

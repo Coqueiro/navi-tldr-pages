@@ -4,10 +4,10 @@
 % pamtogif, common
 
 # Convert a Netpbm image into an unanimated GIF image
-pamtogif <path_to_image.pam> > <path_to_output.gif>
+pamtogif <path_to_image_pam> > <path_to_output_gif>
 
 # Mark the specified color as transparent in the output GIF file
-pamtogif -transparent <color> <path_to_image.pam> > <path_to_output.gif>
+pamtogif {{[-t|-transparent]}} <color> <path_to_image_pam> > <path_to_output_gif>
 
 # Include the specified text as a comment in the output GIF file
-pamtogif -comment "<Hello World!>" <path_to_image.pam> > <path_to_output.gif>
+pamtogif {{[-c|-comment]}} "{{Hello World!}}" <path_to_image_pam> > <path_to_output_gif>

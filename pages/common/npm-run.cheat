@@ -7,7 +7,7 @@
 npm run <script_name>
 
 # Pass arguments to a script
-npm run <script_name> -- <argument> <--option>
+npm run <script_name> -- <argument> <__option>
 
 # Run a script named `start`
 npm start

@@ -10,7 +10,7 @@ ykman openpgp info
 ykman openpgp access set-retries <3> <3> <3>
 
 # Change the User PIN, Reset Code or Admin PIN
-ykman openpgp access change-<pin|reset-code|admin-pin>
+ykman openpgp access change-<pin_reset_code_admin_pin>
 
 # Factory reset the OpenPGP application (you have to do this after exceeding the number of Admin PIN retry attempts)
 ykman openpgp reset

@@ -7,7 +7,7 @@
 split -l 10 <path_to_file>
 
 # Split a file by a regular expression. The matching line will be the first line of the next output file
-split -p <cat|^[dh]og> <path_to_file>
+split -p {{cat|^[dh]og}} <path_to_file>
 
 # Split a file with 512 bytes in each split (except the last split; use 512k for kilobytes and 512m for megabytes)
 split -b 512 <path_to_file>

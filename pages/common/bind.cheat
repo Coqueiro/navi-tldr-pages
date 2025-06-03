@@ -4,7 +4,7 @@
 % bind, common
 
 # List all bound commands and their hotkeys
-bind <-p|-P>
+bind <_p__P>
 
 # Query a command for its hotkey
 bind -q <command>

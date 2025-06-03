@@ -3,8 +3,4 @@
 
 % nmblookup, common
 
-# Find hosts in the local network with SMB shares
-nmblookup -S '*'
 
-# Find hosts in the local network with SMB shares run by SAMBA
-nmblookup --status __SAMBA__

@@ -7,22 +7,22 @@
 most <path_to_file>
 
 # Open several files
-most <path_to_file1 path_to_file2 ...>
+most {{path/to/file1 path/to/file2 ...}}
 
 # Open a file at the first occurrence of "string"
 most <path_to_file> +/<string>
 
 # Move through opened files
-:O n
+<:><n><_ArrowUp___ArrowDown_>
 
 # Jump to the 100th line
-<100>j
+<j><100><Enter>
 
 # Edit current file
-e
+<e>
 
 # Split the current window in half
-<CTRL-x> o
+<CTRL x><o>
 
 # Exit
-Q
+<q>

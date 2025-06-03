@@ -3,7 +3,7 @@
 
 % kubeadm, common
 
-# Create a Kubernetes master node
+# Create a Kubernetes control plane
 kubeadm init
 
 # Bootstrap a Kubernetes worker node and join it to a cluster

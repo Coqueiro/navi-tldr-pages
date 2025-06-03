@@ -10,7 +10,7 @@ helm install <name> <repository_name>/<chart_name>
 helm install <name> <path_to_source_directory>
 
 # Install a helm chart from a URL
-helm install <package_name> <https:__example.com_charts_packagename-1.2.3.tgz>
+helm install <package_name> <https___example_com_charts_packagename_1_2_3_tgz>
 
 # Install a helm chart and generate a name
 helm install <repository_name>/<chart_name> --generate-name
@@ -22,4 +22,4 @@ helm install <name> <repository_name>/<chart_name> --dry-run
 helm install <name> <repository_name>/<chart_name> --set <parameter1>=<value1>,<parameter2>=<value2>
 
 # Install a helm chart passing a custom values file
-helm install <name> <repository_name>/<chart_name> --values <path_to_values.yaml>
+helm install <name> <repository_name>/<chart_name> --values <path_to_values_yaml>

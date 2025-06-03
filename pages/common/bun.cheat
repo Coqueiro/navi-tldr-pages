@@ -4,7 +4,7 @@
 % bun, common
 
 # Run a JavaScript file or a `package.json` script
-bun run <path_to_file|script_name>
+bun run <path_to_file_script_name>
 
 # Run unit tests
 bun test

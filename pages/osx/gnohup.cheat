@@ -4,4 +4,4 @@
 % gnohup, osx
 
 # View documentation for the original command
-tldr -p linux nohup
+tldr nohup

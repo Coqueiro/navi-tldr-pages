@@ -4,25 +4,25 @@
 % nping, common
 
 # Ping a specified host using ICMP if the user is allowed to, otherwise using TCP
-nping <example.com>
+nping <example_com>
 
 # Ping a specified host using ICMP assuming that the user is allowed to do so
-nping --icmp --privileged <example.com>
+nping --icmp --privileged <example_com>
 
 # Ping a specified host using UDP
-nping --udp <example.com>
+nping --udp <example_com>
 
 # Ping a specified host on a given port using TCP
-nping --tcp --dest-port <443> <example.com>
+nping --tcp --dest-port <443> <example_com>
 
 # Ping a certain number of times
-nping --count <10> <example.com>
+nping --count <10> <example_com>
 
 # Wait a certain amount of time between each ping
-nping --delay <5s> <example.com>
+nping --delay <5s> <example_com>
 
 # Send the request over a specified interface
-nping --interface <eth0> <example.com>
+nping --interface <eth0> <example_com>
 
 # Ping an IP range
-nping <10.0.0.1-10>
+nping <10_0_0_1_10>

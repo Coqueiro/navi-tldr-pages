@@ -4,4 +4,4 @@
 % gshred, osx
 
 # View documentation for the original command
-tldr -p linux shred
+tldr shred

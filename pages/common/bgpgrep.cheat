@@ -4,19 +4,19 @@
 % bgpgrep, common
 
 # List all routes
-bgpgrep <master6.mrt>
+bgpgrep <master6_mrt>
 
 # List routes received from a specific peer, determined by the peer's AS number
-bgpgrep <master4.mrt> -peer <64498>
+bgpgrep <master4_mrt> -peer <64498>
 
 # List routes received from a specific peer, determined by the peer's IP address
-bgpgrep <master4.mrt.bz2> -peer <2001:db8:dead:cafe:acd::19e>
+bgpgrep <master4_mrt_bz2> -peer <2001_db8_dead_cafe_acd__19e>
 
 # List routes which have certain ASNs in their AS path
-bgpgrep <master6.mrt.bz2> -aspath '<64498 64510>'
+bgpgrep <master6_mrt_bz2> -aspath '{{64498 64510}}'
 
 # List routes that lead to a specific address
-bgpgrep <master6.mrt.bz2> -supernet '<2001:db8:dead:cafe:aef::5>'
+bgpgrep <master6_mrt_bz2> -supernet '<2001_db8_dead_cafe_aef__5>'
 
 # List routes that have communities from a specific AS
-bgpgrep <master4.mrt> -communities \( '<64497>:*' \)
+bgpgrep <master4_mrt> -communities \( '<64497>:*' \)

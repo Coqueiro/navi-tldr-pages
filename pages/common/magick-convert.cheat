@@ -4,25 +4,25 @@
 % magick-convert, common
 
 # Convert an image from JPEG to PNG
-magick convert <path_to_input_image.jpg> <path_to_output_image.png>
+magick convert <path_to_input_image_jpg> <path_to_output_image_png>
 
 # Scale an image to 50% of its original size
-magick convert <path_to_input_image.png> -resize 50% <path_to_output_image.png>
+magick convert <path_to_input_image_png> -resize 50% <path_to_output_image_png>
 
 # Scale an image keeping the original aspect ratio to a maximum dimension of 640x480
-magick convert <path_to_input_image.png> -resize 640x480 <path_to_output_image.png>
+magick convert <path_to_input_image_png> -resize 640x480 <path_to_output_image_png>
 
 # Scale an image to have a specified file size
-magick convert <path_to_input_image.png> -define jpeg:extent=512kb <path_to_output_image.jpg>
+magick convert <path_to_input_image_png> -define jpeg:extent=512kb <path_to_output_image_jpg>
 
 # Vertically/horizontally append images
-magick convert <path_to_image1.png path_to_image2.png ...> <-append|+append> <path_to_output_image.png>
+magick convert {{path/to/image1.png path/to/image2.png ...}} <_append__append> <path_to_output_image_png>
 
 # Create a GIF from a series of images with 100ms delay between them
-magick convert <path_to_image1.png path_to_image2.png ...> -delay <10> <path_to_animation.gif>
+magick convert {{path/to/image1.png path/to/image2.png ...}} -delay <10> <path_to_animation_gif>
 
 # Create an image with nothing but a solid red background
-magick convert -size <800x600> "xc:<#ff0000>" <path_to_image.png>
+magick convert -size <800x600> "xc:<_ff0000>" <path_to_image_png>
 
 # Create a favicon from several images of different sizes
-magick convert <path_to_image1.png path_to_image2.png ...> <path_to_favicon.ico>
+magick convert {{path/to/image1.png path/to/image2.png ...}} <path_to_favicon_ico>

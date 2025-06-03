@@ -4,4 +4,4 @@
 % zstdless, common
 
 # Open a `zstd` compressed file
-zstdless <path_to_file.zst>
+zstdless <path_to_file_zst>

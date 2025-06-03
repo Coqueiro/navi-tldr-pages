@@ -6,5 +6,5 @@
 # Remove the first positional parameter
 shift
 
-# Remove the first `N` positional parameters
-shift <N>
+# Remove the first `n` positional parameters
+shift <n>

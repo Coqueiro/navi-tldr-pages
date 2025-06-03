@@ -4,4 +4,4 @@
 % wbmptopbm, common
 
 # Convert a WBMP file to a PBM image
-wbmptopbm <path_to_input_file.wbpm> > <path_to_output_file.pbm>
+wbmptopbm <path_to_input_file_wbpm> > <path_to_output_file_pbm>

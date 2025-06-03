@@ -4,25 +4,25 @@
 % v, common
 
 # Compile a file and output its executable
-v <path_to_file.v>
+v <path_to_file_v>
 
 # Compile the current project or directory
 v .
 
 # Compile a file and run it
-v run <path_to_file.v>
+v run <path_to_file_v>
 
 # Compile a file and run it, output its executable
-v crun <path_to_file.v>
+v crun <path_to_file_v>
 
 # Re-compile on every modification to a file
-v watch <path_to_file.v>
+v watch <path_to_file_v>
 
 # Re-run on every modification to a file
-v watch run <path_to_file.v>
+v watch run <path_to_file_v>
 
 # Open the v repl
 v repl
 
 # Format a file and [w]rite to it
-v fmt -w <path_to_file.v>
+v fmt -w <path_to_file_v>

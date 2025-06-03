@@ -4,4 +4,4 @@
 % god, osx
 
 # View documentation for the original command
-tldr -p linux od
+tldr od

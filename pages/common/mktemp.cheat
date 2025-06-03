@@ -7,13 +7,13 @@
 mktemp
 
 # Use a custom directory if `$TMPDIR` is not set (the default is platform-dependent, but usually `/tmp`)
-mktemp -p <path_to_tempdir>
+mktemp -p <_path_to_tempdir>
 
 # Use a custom path template (`X`s are replaced with random alphanumeric characters)
-mktemp <tmp_example.XXXXXXXX>
+mktemp <_tmp_example_XXXXXXXX>
 
 # Use a custom file name template
-mktemp -t <example.XXXXXXXX>
+mktemp -t <example_XXXXXXXX>
 
 # Create an empty temporary directory and print its absolute path
 mktemp -d

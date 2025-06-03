@@ -4,7 +4,7 @@
 % yabai, osx
 
 # Send a config [m]essage for setting the layout
-yabai -m config layout <bsp|stack|float>
+yabai -m config layout <bsp_stack_float>
 
 # Set the window gap in pt
 yabai -m config window_gap <10>

@@ -7,13 +7,13 @@
 mumble
 
 # Open Mumble and immediately connect to a server
-mumble mumble://<username>@<example.com>
+mumble mumble://<username>@<example_com>
 
 # Open Mumble and immediately connect to a password protected server
-mumble mumble://<username>:<password>@<example.com>
+mumble mumble://<username>:<password>@<example_com>
 
 # Mute/unmute the microphone in a running Mumble instance
-mumble rpc <mute|unmute>
+mumble rpc <mute_unmute>
 
 # Mute/unmute the microphone and the audio output of Mumble
-mumble rpc <deaf|undeaf>
+mumble rpc <deaf_undeaf>

@@ -4,7 +4,7 @@
 % composer-require-checker, common
 
 # Analyze a Composer JSON file
-composer-require-checker check <path_to_composer.json>
+composer-require-checker check <path_to_composer_json>
 
 # Analyze a Composer JSON file with a specific configuration
-composer-require-checker check --config-file <path_to_config.json> <path_to_composer.json>
+composer-require-checker check --config-file <path_to_config_json> <path_to_composer_json>

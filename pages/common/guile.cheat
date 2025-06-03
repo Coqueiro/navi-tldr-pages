@@ -7,7 +7,7 @@
 guile
 
 # Execute the script in a given Scheme file
-guile <script.scm>
+guile <script_scm>
 
 # Execute a Scheme expression
 guile -c "<expression>"

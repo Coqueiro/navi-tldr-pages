@@ -10,4 +10,4 @@ git cat-file -s HEAD
 git cat-file -t <8c442dc3>
 
 # Pretty-[p]rint the contents of a given Git object based on its type
-git cat-file -p <HEAD~2>
+git cat-file -p <HEAD_2>

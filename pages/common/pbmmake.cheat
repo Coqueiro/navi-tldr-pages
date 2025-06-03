@@ -4,7 +4,7 @@
 % pbmmake, common
 
 # Create a blank bitmap of the specified dimensions
-pbmmake <width> <height> > <path_to_output_file.pbm>
+pbmmake <width> <height> > <path_to_output_file_pbm>
 
 # Specify the color of the created bitmap
-pbmmake -<white|black|grey> <width> <height> > <path_to_output_file.pbm>
+pbmmake -<white_black_grey> <width> <height> > <path_to_output_file_pbm>

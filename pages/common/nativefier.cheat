@@ -10,4 +10,4 @@ nativefier <url>
 nativefier --name <name> <url>
 
 # Use a custom icon, should be a PNG
-nativefier --icon <path_to_icon.png> <url>
+nativefier --icon <path_to_icon_png> <url>

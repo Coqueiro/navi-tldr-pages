@@ -4,4 +4,4 @@
 % pnmtosir, common
 
 # Convert a PNM image to a SIR image
-pnmtosir <path_to_input.pnm> > <path_to_output.sir>
+pnmtosir <path_to_input_pnm> > <path_to_output_sir>

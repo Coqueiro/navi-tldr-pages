@@ -7,13 +7,13 @@
 doppler projects
 
 # Get info for a project
-doppler projects get <name|project_id>
+doppler projects get <name_project_id>
 
 # Create a project
 doppler projects create <name>
 
 # Update a project's name and description
-doppler projects update <name|project_id> --name "<new_name>" --description "<new_description>"
+doppler projects update <name_project_id> --name "<new_name>" --description "<new_description>"
 
 # Delete a project
-doppler projects delete <name|project_id>
+doppler projects delete <name_project_id>

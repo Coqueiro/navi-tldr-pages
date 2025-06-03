@@ -4,4 +4,4 @@
 % ppmtoneo, common
 
 # Convert a PPM image to a NEO file
-ppmtoneo <path_to_file.ppm> > <path_to_file.neo>
+ppmtoneo <path_to_file_ppm> > <path_to_file_neo>

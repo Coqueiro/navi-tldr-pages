@@ -7,7 +7,7 @@
 shotcut
 
 # Open audio/video files
-shotcut <path_to_file1 path_to_file2 ...>
+shotcut {{path/to/file1 path/to/file2 ...}}
 
 # Start with a specific audio driver
 shotcut --SDL_AUDIODRIVER "<pulseaudio>"

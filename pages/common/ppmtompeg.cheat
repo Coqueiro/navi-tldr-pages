@@ -7,10 +7,10 @@
 ppmtompeg <path_to_parameter_file>
 
 # Encode the GOP with the specified number only
-ppmtompeg -gop <gop_num> <path_to_parameter_file>
+ppmtompeg {{[-g|-gop]}} <gop_num> <path_to_parameter_file>
 
 # Specify the first and last frame to encode
-ppmtompeg -frames <first_frame> <last_frame> <path_to_parameter_file>
+ppmtompeg {{[-fr|-frames]}} <first_frame> <last_frame> <path_to_parameter_file>
 
 # Combine multiple MPEG frames into a single MPEG-1 stream
 ppmtompeg -combine_frames <path_to_parameter_file>

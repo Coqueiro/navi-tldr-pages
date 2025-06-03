@@ -4,4 +4,4 @@
 % gxargs, osx
 
 # View documentation for the original command
-tldr -p linux xargs
+tldr xargs

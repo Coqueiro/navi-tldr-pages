@@ -7,13 +7,13 @@
 fastmod <regex_pattern> <replacement>
 
 # Replace a regex pattern in case-insensitive mode in specific files or directories
-fastmod --ignore-case <regex_pattern> <replacement> -- <path_to_file path_to_directory ...>
+fastmod --ignore-case <regex_pattern> <replacement> -- {{path/to/file path/to/directory ...}}
 
 # Replace a regex pattern in a specific directory in files filtered with a case-insensitive glob pattern
 fastmod <regex> <replacement> --dir <path_to_directory> --iglob {{'**/*.{js,json}'}}
 
 # Replace for an exact string in `.js` or JSON files
-fastmod --fixed-strings <exact_string> <replacement> --extensions <json,js>
+fastmod --fixed-strings <exact_string> <replacement> --extensions <json_js>
 
 # Replace for an exact string without prompt for a confirmation (disables regular expressions)
 fastmod --accept-all --fixed-strings <exact_string> <replacement>

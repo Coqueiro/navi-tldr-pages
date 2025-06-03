@@ -4,4 +4,4 @@
 % escp2topbm, common
 
 # Convert a ESC/P2 printer file to a PBM image
-escp2topbm <path_to_image.escp2> > <path_to_output.pbm>
+escp2topbm <path_to_image_escp2> > <path_to_output_pbm>

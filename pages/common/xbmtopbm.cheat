@@ -4,4 +4,4 @@
 % xbmtopbm, common
 
 # Convert an XBM image to a PPM image
-xbmtopbm <path_to_input_file.xbm> > <path_to_output_file.pbm>
+xbmtopbm <path_to_input_file_xbm> > <path_to_output_file_pbm>

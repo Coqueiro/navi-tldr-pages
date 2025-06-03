@@ -7,16 +7,16 @@
 xz <path_to_file>
 
 # Decompress an XZ file
-xz --decompress <path_to_file.xz>
+xz --decompress <path_to_file_xz>
 
 # Compress a file using lzma
 xz --format=lzma <path_to_file>
 
 # Decompress an LZMA file
-xz --decompress --format=lzma <path_to_file.lzma>
+xz --decompress --format=lzma <path_to_file_lzma>
 
 # Decompress a file and write to `stdout` (implies `--keep`)
-xz --decompress --stdout <path_to_file.xz>
+xz --decompress --stdout <path_to_file_xz>
 
 # Compress a file, but don't delete the original
 xz --keep <path_to_file>

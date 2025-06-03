@@ -19,7 +19,7 @@ rustup-init.sh --default-toolchain <toolchain>
 rustup-init.sh --default-toolchain <none>
 
 # Run `rustup-init` and specify an installation profile
-rustup-init.sh --profile <minimal|default|complete>
+rustup-init.sh --profile <minimal_default_complete>
 
 # Run `rustup-init` without asking for confirmation
 rustup-init.sh -y

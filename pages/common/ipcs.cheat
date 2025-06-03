@@ -7,7 +7,7 @@
 ipcs -a
 
 # Show information about active shared [m]emory segments, message [q]ueues or [s]empahore sets
-ipcs <-m|-q|-s>
+ipcs <_m__q__s>
 
 # Show information on maximum allowable size in [b]ytes
 ipcs -b

@@ -4,13 +4,13 @@
 % llc, common
 
 # Compile a bitcode or IR file to an assembly file with the same base name
-llc <path_to_file.ll>
+llc <path_to_file_ll>
 
 # Enable all optimizations
-llc -O3 <path_to_input.ll>
+llc -O3 <path_to_input_ll>
 
 # Output assembly to a specific file
-llc --output <path_to_output.s>
+llc --output <path_to_output_s>
 
 # Emit fully relocatable, position independent code
-llc -relocation-model=pic <path_to_input.ll>
+llc -relocation-model=pic <path_to_input_ll>

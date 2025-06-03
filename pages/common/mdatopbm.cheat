@@ -4,10 +4,10 @@
 % mdatopbm, common
 
 # Convert a MDA file to a PBM image
-mdatopbm <path_to_image.mda> > <path_to_output.pbm>
+mdatopbm <path_to_image_mda> > <path_to_output_pbm>
 
 # Invert the colors in the input image
-mdatopbm -i <path_to_image.mda> > <path_to_output.pbm>
+mdatopbm -i <path_to_image_mda> > <path_to_output_pbm>
 
 # Double the input image's height
-mdatopbm -d <path_to_image.mda> > <path_to_output.pbm>
+mdatopbm -d <path_to_image_mda> > <path_to_output_pbm>

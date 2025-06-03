@@ -12,11 +12,11 @@ more +<line_number> <path_to_file>
 # Go to the next page
 <Space>
 
-# Search for a string (press `n` to go to the next match)
-/<something>
+# Search for a string (press `<n>` to go to the next match)
+</><something><Enter>
 
 # Exit
-q
+<q>
 
 # Display help about interactive commands
-h
+<h>

@@ -4,10 +4,10 @@
 % cadaver, common
 
 # Connect to the server <dav.example.com>, open the root collection
-cadaver <http:__dav.example.com_>
+cadaver <http___dav_example_com_>
 
 # Connect to a server using a specific port and open the collection `/foo/bar/`
-cadaver <http:__dav.example.com:8022_foo_bar_>
+cadaver <http___dav_example_com_8022_foo_bar_>
 
 # Connect to a server using SSL
-cadaver <https:__davs.example.com_>
+cadaver <https___davs_example_com_>

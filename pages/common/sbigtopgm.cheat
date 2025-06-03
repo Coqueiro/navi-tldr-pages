@@ -4,4 +4,4 @@
 % sbigtopgm, common
 
 # Convert an SBIG CCDOPS image file to PGM
-sbigtopgm <path_to_input_file.sbig> > <path_to_output.pgm>
+sbigtopgm <path_to_input_file_sbig> > <path_to_output_pgm>

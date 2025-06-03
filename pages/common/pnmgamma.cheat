@@ -4,13 +4,13 @@
 % pnmgamma, common
 
 # Convert the image from BT.709 luminance to radiance or sRGB luminance
-pnmgamma -<bt709tolinear|bt709tosrgb> <path_to_image.pnm> > <path_to_output.pnm>
+pnmgamma -<bt709tolinear_bt709tosrgb> <path_to_image_pnm> > <path_to_output_pnm>
 
 # Convert the image from radiance or sRGB luminance to BT.709 luminance
-pnmgamma -<lineartobt709|srgbtobt709> <path_to_image.pnm> > <path_to_output.pnm>
+pnmgamma -<lineartobt709_srgbtobt709> <path_to_image_pnm> > <path_to_output_pnm>
 
 # Specify the gamma value used for the gamma transfer function
-pnmgamma -gamma <value> <path_to_image.pnm> > <path_to_output.pnm>
+pnmgamma {{[-ga|-gamma]}} <value> <path_to_image_pnm> > <path_to_output_pnm>
 
 # Specify the gamma value used for the gamma transfer function per color component
-pnmgamma -rgamma <value> -ggamma <value> -bgamma <value> <path_to_image.pnm> > <path_to_output.pnm>
+pnmgamma {{[-rg|-rgamma]}} <value> {{[-gg|-ggamma]}} <value> {{[-bg|-bgamma]}} <value> <path_to_image_pnm> > <path_to_output_pnm>

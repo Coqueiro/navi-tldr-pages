@@ -3,14 +3,8 @@
 
 % jc, common
 
-# Convert command output to JSON via pipe
-<ifconfig> | jc <--ifconfig>
+# View documentation for the `JSON` serializer
+tldr jc.json
 
-# Convert command output to JSON via magic syntax
-jc <ifconfig>
-
-# Output pretty JSON via pipe
-<ifconfig> | jc <--ifconfig> -p
-
-# Output pretty JSON via magic syntax
-jc -p <ifconfig>
+# View documentation for the `autojump` alias
+tldr autojump

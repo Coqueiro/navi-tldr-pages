@@ -3,8 +3,4 @@
 
 % pulumi-version, common
 
-# Display version
-pulumi version
 
-# Display help
-pulumi version <-h|--help>
