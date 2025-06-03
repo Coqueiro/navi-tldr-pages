@@ -6,6 +6,9 @@
 # List all commands that you could run
 compgen -c
 
+# List all commands that you could run that start with a specified string
+compgen -c <str>
+
 # List all aliases
 compgen -a
 
@@ -17,3 +20,9 @@ compgen -k
 
 # See all available commands/aliases starting with 'ls'
 compgen -ac <ls>
+
+# List all users on the system
+compgen -u
+
+# Display help
+compgen --help

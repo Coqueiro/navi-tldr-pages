@@ -4,4 +4,4 @@
 % gfgrep, osx
 
 # View documentation for the original command
-tldr -p linux fgrep
+tldr fgrep

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tifftopnm.md
+
+% tifftopnm, common
+
+# Convert a TIFF to a PNM file
+tifftopnm <path_to_input_file_tiff> > <path_to_output_file_pnm>
+
+# Create a PGM file containing the alpha channel of the input image
+tifftopnm {{[-a|-alphaout]}} <path_to_alpha_file_pgm> <path_to_input_file_tiff> > <path_to_output_file_pnm>
+
+# Respect the `fillorder` tag in the input TIFF image
+tifftopnm {{[-r|-respectfillorder]}} <path_to_input_file_tiff> > <path_to_output_file_pnm>
+
+# Print TIFF header information to `stderr`
+tifftopnm {{[-h|-headerdump]}} <path_to_input_file_tiff> > <path_to_output_file_pnm>

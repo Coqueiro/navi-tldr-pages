@@ -4,4 +4,4 @@
 % gbasenc, osx
 
 # View documentation for the original command
-tldr -p linux basenc
+tldr basenc

@@ -3,11 +3,4 @@
 
 % goreload, common
 
-# Set the name of the binary file to watch (defaults to `.goreload`)
-goreload -b <path_to_binary> <path_to_file>.go
 
-# Set a custom log prefix (defaults to `goreload`)
-goreload --logPrefix <prefix> <path_to_file>.go
-
-# Reload whenever any file changes
-goreload --all

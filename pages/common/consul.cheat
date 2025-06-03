@@ -3,11 +3,11 @@
 
 % consul, common
 
-# Check the Consul version
-consul --version
-
-# Show general help
+# Display help
 consul --help
 
-# Show help for a sub-command
-consul <sub_command> --help
+# Display help for a subcommand
+consul <subcommand> --help
+
+# Display version
+consul --version

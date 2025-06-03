@@ -3,8 +3,4 @@
 
 % btop, common
 
-# Start `btop`
-btop
 
-# Start `btop` with the specified settings preset
-btop --preset <0__9>

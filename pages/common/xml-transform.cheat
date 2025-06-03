@@ -4,7 +4,7 @@
 % xml-transform, common
 
 # Transform an XML document using an XSL stylesheet, passing one XPATH parameter and one literal string parameter
-xml transform <path_to_stylesheet_xsl> -p "<Count__count__xml_table_rec__>" -s <Text__Count__> <path_to_input_xml_URI>
+xml {{[tr|transform]}} <path_to_stylesheet_xsl> -p "<Count__count__xml_table_rec__>" -s <Text__Count__> <path_to_input_xml_URI>
 
-# Display help for the `transform` subcommand
-xml transform --help
+# Display help
+xml {{[tr|transform]}} --help

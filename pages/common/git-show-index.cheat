@@ -7,4 +7,4 @@
 git show-index <path_to_file_idx>
 
 # Specify the hash algorithm for the index file (experimental)
-git show-index --object-format=<sha1_sha256> <path_to_file>
+git show-index --object-format <sha1_sha256> <path_to_file>

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-make-install.md
+
+% sfdk-make-install, common
+
+# Run make-install section of RPM SPEC file
+sfdk make-install

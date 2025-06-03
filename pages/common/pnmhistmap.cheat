@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pnmhistmap.md
+
+% pnmhistmap, common
+
+# Draw a histogram of a PNM image
+pnmhistmap <path_to_input_pnm> > <path_to_output_pnm>
+
+# Draw the histogram as dots instead of bars
+pnmhistmap {{[-d|-dots]}} <path_to_input_pnm> > <path_to_output_pnm>
+
+# Specify the range of intensity values to include
+pnmhistmap {{[-l|-lval]}} <minval> {{[-rv|-rval]}} <maxval> <path_to_input_pnm> > <path_to_output_pnm>

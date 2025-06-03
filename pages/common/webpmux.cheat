@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/webpmux.md
+
+% webpmux, common
+
+# Create a two-frame animation
+webpmux -frame <path_to_frame1_webp> +<500> -frame <path_to_frame2_webp> +<500> -loop <0> -o <path_to_output_webp>

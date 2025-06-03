@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/copr-cli.md
+
+% copr-cli, common
+
+# Show user logged in to copr
+copr-cli whoami
+
+# Build a local spec file on copr
+copr-cli build <repository> <path_to_spec_file>
+
+# Check status of builds
+copr-cli list-builds <repository>
+
+# Trigger a copr build of a spec-file from public (Git) repository
+copr-cli buildscm <repository> --clone-url <https___git_example_org_repo> --spec <spec_file_name>

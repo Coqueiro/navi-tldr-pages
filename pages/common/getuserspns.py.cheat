@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/getuserspns.py.md
+
+% getuserspns.py, common
+
+# Enumerate user accounts with an SPN and request their Kerberos TGS tickets
+GetUserSPNs.py <domain>/<username>:<password> -dc-ip <domain_controller_ip>
+
+# Use pass-the-hash authentication
+GetUserSPNs.py <domain>/<username> -hashes <LM_Hash>:<NT_Hash> -dc-ip <domain_controller_ip>
+
+# Save the output to a file
+GetUserSPNs.py <domain>/<username>:<password> -dc-ip <domain_controller_ip> -outputfile <path_to_output_file>
+
+# Request only TGS tickets
+GetUserSPNs.py <domain>/<username>:<password> -dc-ip <domain_controller_ip> -request
+
+# Request only TGS tickets using pass-the-hash authentication
+GetUserSPNs.py <domain>/<username> -dc-ip <domain_controller_ip> -hashes <LM_Hash>:<NT_Hash> -request

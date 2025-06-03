@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pgmhist.md
+
+% pgmhist, common
+
+# Display the histogram for human reading
+pgmhist <path_to_image_pgm>
+
+# Display the median grey value
+pgmhist {{[-me|-median]}} <path_to_image_pgm>
+
+# Display four quartile grey value
+pgmhist {{[-qua|-quartile]}} <path_to_image_pgm>
+
+# Report the existence of invalid grey values
+pgmhist {{[-f|-forensic]}} <path_to_image_pgm>
+
+# Display machine-readable output
+pgmhist {{[-ma|-machine]}} <path_to_image_pgm>

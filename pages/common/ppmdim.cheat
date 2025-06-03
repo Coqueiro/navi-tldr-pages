@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmdim.md
+
+% ppmdim, common
+
+# Dim the specified PPM image by dimfactor
+ppmdim <0_6> <path_to_input_ppm> > <path_to_output_ppm>

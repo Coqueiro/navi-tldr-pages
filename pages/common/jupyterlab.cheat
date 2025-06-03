@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jupyterlab.md
+
+% jupyterlab, common
+
+# View documentation for the original command
+tldr jupyter lab

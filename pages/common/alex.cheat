@@ -10,7 +10,7 @@ echo {{His network looks good}} | alex --stdin
 alex
 
 # Analyze a specific file
-alex <textfile_md>
+alex <path_to_file_md>
 
 # Analyze all Markdown files except `example.md`
 alex *.md !<example_md>

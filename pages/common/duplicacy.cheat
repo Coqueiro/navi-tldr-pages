@@ -4,7 +4,7 @@
 % duplicacy, common
 
 # Use current directory as the repository, initialize a SFTP storage and encrypt the storage with a password
-duplicacy init -e <snapshot_id> <sftp___user_192_168_2_100_path_to_storage_>
+duplicacy init {{[-e|-encrypt]}} <snapshot_id> <sftp___user_192_168_2_100_path_to_storage_>
 
 # Save a snapshot of the repository to the default storage
 duplicacy backup

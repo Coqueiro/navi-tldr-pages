@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/picotool.md
+
+% picotool, common
+
+# Display information about the currently loaded program on a Pico
+picotool info
+
+# Load a binary onto a Pico
+picotool load <path_to_binary>
+
+# Convert an ELF or BIN file to UF2
+picotool uf2 convert <path_to_elf_or_bin> <path_to_output>
+
+# Reboot a Pico
+picotool reboot
+
+# List all known registers
+picotool otp list
+
+# Display version
+picotool version
+
+# Display help
+picotool help

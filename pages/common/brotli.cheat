@@ -3,17 +3,4 @@
 
 % brotli, common
 
-# Compress a file, creating a compressed version next to the file
-brotli <path_to_file>
 
-# Decompress a file, creating an uncompressed version next to the file
-brotli -d <path_to_file_br>
-
-# Compress a file specifying the output filename
-brotli <path_to_file> -o <path_to_compressed_output_file_br>
-
-# Decompress a Brotli file specifying the output filename
-brotli -d <path_to_compressed_file_br> -o <path_to_output_file>
-
-# Specify the compression level [1=Fastest (Worst), 11=Slowest (Best)]
-brotli -q <11> <path_to_file> -o <path_to_compressed_output_file_br>

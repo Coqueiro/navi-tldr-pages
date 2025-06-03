@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/filecheck.md
+
+% filecheck, common
+
+# Match `input_file` content with pattern file `check_file`
+FileCheck --input-file=<path_to_input_file> <path_to_check_file>
+
+# Match input from the `stdin` with pattern file `check_file`
+echo "<some_text>" | FileCheck <path_to_check_file>
+
+# Match with the specified custom check `prefix` (Note: The default prefix is `CHECK`)
+echo "<some_text>" | FileCheck --check-prefix=<prefix> <path_to_check_file>
+
+# Print good directive pattern matches
+echo "<some_text>" | FileCheck -v <path_to_check_file>
+
+# Input `llvm_code.ll` into llvm-as, then pipe the output into FileCheck to match
+llvm-as <path_to_llvm_code_ll> | FileCheck <path_to_check_file>

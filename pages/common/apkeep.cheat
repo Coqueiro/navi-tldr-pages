@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/apkeep.md
+
+% apkeep, common
+
+# Download an APK file to the specified directory
+apkeep --app <com_example_application> <path_to_directory>
+
+# List all available versions for download
+apkeep --app <com_example_application> --list-versions <path_to_directory>
+
+# Specify a store to download from
+apkeep --app <com_example_application> --download-source <apk_pure_google_play_f_droid_huawei_app_gallery> <path_to_directory>

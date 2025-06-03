@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/darwin-rebuild.md
+
+% darwin-rebuild, osx
+
+# Rebuild and switch to the specified Darwin configuration
+darwin-rebuild switch --flake <path_to_flake>
+
+# Build the configuration but don't switch to it
+darwin-rebuild build --flake <path_to_flake>
+
+# Display help
+darwin-rebuild --help

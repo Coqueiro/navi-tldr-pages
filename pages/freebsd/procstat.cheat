@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/freebsd/procstat.md
+
+% procstat, freebsd
+
+# Display file descriptors of a specific process
+procstat fds <pid>
+
+# Show virtual memory mappings of a process
+procstat vm <pid>
+
+# Display process arguments
+procstat arguments <pid>
+
+# Show resource limits of a process
+procstat rlimit <pid>

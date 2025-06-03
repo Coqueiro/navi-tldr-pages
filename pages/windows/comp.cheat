@@ -1,28 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/windows/comp.md
-
-% comp, windows
-
-# Compare files interactively
-comp
-
-# Compare two specified files
-comp {{path	oile1}} {{path	oile2}}
-
-# Compare two sets of files
-comp {{path	o\directory1}}\* {{path	o\directory2}}\*
-
-# Display differences in decimal format
-comp /d {{path	oile1}} {{path	oile2}}
-
-# Display differences in ASCII format
-comp /a {{path	oile1}} {{path	oile2}}
-
-# Display line numbers for differences
-comp /l {{path	oile1}} {{path	oile2}}
-
-# Compare files case-insensitively
-comp /c {{path	oile1}} {{path	oile2}}
-
-# Compare only the first 5 lines of each file
-comp /n=<5> {{path	oile1}} {{path	oile2}}

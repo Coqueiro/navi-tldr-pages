@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pnmmercator.md
+
+% pnmmercator, common
+
+# Convert a rectangular projection worldmap to Mercator projection
+pnmmercator <path_to_image_pnm> > <path_to_output_pnm>
+
+# Convert a Mercator projection worldmap to rectangular projection
+pnmmercator {{[-i|-inverse]}} <path_to_image_pnm> > <path_to_output_pnm>

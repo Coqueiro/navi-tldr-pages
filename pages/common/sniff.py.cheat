@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sniff.py.md
+
+% sniff.py, common
+
+# List available network interfaces and select one to start capturing packets (requires `sudo`)
+sudo sniff.py
+
+# Capture packets and save output to a file while displaying it on the terminal
+sudo sniff.py | sudo tee <path_to_output_file>

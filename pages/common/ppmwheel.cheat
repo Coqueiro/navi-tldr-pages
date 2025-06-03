@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmwheel.md
+
+% ppmwheel, common
+
+# Generate a color wheel of type `Ppmcirc`
+ppmwheel <diameter> > <path_to_output_ppm>
+
+# Generate a color wheel of type `Hue-value`
+ppmwheel {{[-huev|-huevalue]}} <diameter> > <path_to_output_ppm>
+
+# Generate a color wheel of type `Hue-saturation`
+ppmwheel {{[-hues|-huesaturation]}} <diameter> > <path_to_output_ppm>

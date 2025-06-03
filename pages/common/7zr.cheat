@@ -21,5 +21,5 @@
 # [l]ist the contents of an archive
 7zr l <path_to_archive_7z>
 
-# List available archive types
-7zr i
+# Set the level of compression (higher means more compression, but slower)
+7zr a <path_to_archive_7z> -mx=<0_1_3_5_7_9> <path_to_file_or_directory>

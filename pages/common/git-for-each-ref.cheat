@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-for-each-ref.md
+
+% git-for-each-ref, common
+
+# List all refs (branches and tags)
+git for-each-ref
+
+# List only branches
+git for-each-ref refs/heads/
+
+# List only tags
+git for-each-ref refs/tags/
+
+# Show branches merged into HEAD
+git for-each-ref --merged HEAD refs/heads/
+
+# List short names of all refs
+git for-each-ref --format "%(refname:short)"
+
+# Sort refs by committer date (most recent first)
+git for-each-ref --sort -committerdate
+
+# Sort refs by committer date (oldest first)
+git for-each-ref --sort committerdate
+
+# Limit output to a specified number of refs
+git for-each-ref --count <count>

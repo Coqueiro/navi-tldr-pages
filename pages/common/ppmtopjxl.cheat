@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmtopjxl.md
+
+% ppmtopjxl, common
+
+# Convert a PPM image into an PJXL file
+ppmtopjxl <path_to_image_ppm> > <path_to_output_pjxl>
+
+# Resize the input image
+ppmtopjxl {{[-xsi|-xsize]}} <10cm> {{[-ysi|-ysize]}} <5cm> <path_to_image_ppm> > <path_to_output_pjxl>
+
+# Shift the input image
+ppmtopjxl {{[-xsh|-xshift]}} <10pt> {{[-ysh|-yshift]}} <5pt> <path_to_image_ppm> > <path_to_output_pjxl>
+
+# Do not use the normal TIFF 4.0 compression method
+ppmtopjxl {{[-n|-nopack]}} <path_to_image_ppm> > <path_to_output_pjxl>

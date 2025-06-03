@@ -3,6 +3,9 @@
 
 % bashmarks, common
 
+# Add the bashmark aliases to your shell
+source /usr/share/bashmarks/bashmarks.sh
+
 # List available bookmarks
 l
 

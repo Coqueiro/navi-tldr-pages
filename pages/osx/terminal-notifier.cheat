@@ -13,4 +13,4 @@ echo '{{Piped Message Data!}}' | terminal-notifier -sound <default>
 terminal-notifier -message '{{Check your Apple stock!}}' -open '<http___finance_yahoo_com_q_s_AAPL>'
 
 # Open an app when the notification is clicked
-terminal-notifier -message '{{Imported 42 contacts.}}'  -activate <com_apple_AddressBook>
+terminal-notifier -message '{{Imported 42 contacts.}}' -activate <com_apple_AddressBook>

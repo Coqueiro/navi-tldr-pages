@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/adb-uninstall.md
+
+% adb-uninstall, common
+
+# Uninstall a package
+adb uninstall <com_example_app>
+
+# Uninstall a package, but keep user data
+adb uninstall -k <com_example_app>

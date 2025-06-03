@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pamfunc.md
+
+% pamfunc, common
+
+# Apply the specified arithmetic function with `n` as the second argument to each sample in the specified PAM image
+pamfunc -<multiplier_divisor_adder_subtractor_min_max> <n> <path_to_input_pam> > <path_to_output_pam>
+
+# Apply the specified bit string function with `n` as the second argument to each sample in the specified PAM image
+pamfunc -<andmask_ormask_xormask_shiftleft_shiftright> <n> <path_to_input_pam> > <path_to_output_pam>

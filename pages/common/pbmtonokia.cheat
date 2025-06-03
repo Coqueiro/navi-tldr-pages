@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pbmtonokia.md
+
+% pbmtonokia, common
+
+# Convert a PBM image into a Nokia Operator Logo as hexcode
+pbmtonokia {{[-f|-fmt]}} NEX_NOL -net <network_operator_code> <path_to_image_pbm> > <path_to_output_hex>
+
+# Convert a PBM image into a Nokia Group Graphic as hexcode
+pbmtonokia {{[-f|-fmt]}} NEX_NGG <path_to_image_pbm> > <path_to_output_hex>
+
+# Convert a PBM image into a Nokia Picture Message with the specified text as hexcode
+pbmtonokia {{[-f|-fmt]}} NEX_NPM -txt <text_message> <path_to_image_pbm> > <path_to_output_hex>
+
+# Convert a PBM image into a Nokia Operator Logo as a NOL file
+pbmtonokia {{[-f|-fmt]}} NOL <path_to_image_pbm> > <path_to_output_nol>
+
+# Convert a PBM image into a Nokia Group Graphic as an NGG file
+pbmtonokia {{[-f|-fmt]}} NGG <path_to_image_pbm> > <path_to_output_ngg>
+
+# Convert a PBM image into a Nokia Picture Message as an NPM file
+pbmtonokia {{[-f|-fmt]}} NPM <path_to_image_pbm> > <path_to_output_npm>

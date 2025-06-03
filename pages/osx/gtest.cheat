@@ -4,4 +4,4 @@
 % gtest, osx
 
 # View documentation for the original command
-tldr -p linux test
+tldr test

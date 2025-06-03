@@ -25,4 +25,4 @@ if [[ -e <path_to_file_or_directory> ]]; then {{echo "Condition is true"}}; fi
 if [[ -n "$<variable>" ]]; then {{echo "Condition is true"}}; fi
 
 # List all possible conditions (`test` is an alias to `[`; both are commonly used with `if`)
-man [
+man test

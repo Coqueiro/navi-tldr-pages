@@ -3,11 +3,4 @@
 
 % pueue, common
 
-# Show general help and available subcommands
-pueue --help
 
-# Check the version of pueue
-pueue --version
-
-# Execute a pueue subcommand
-pueue <subcommand>

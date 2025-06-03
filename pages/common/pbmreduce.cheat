@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pbmreduce.md
+
+% pbmreduce, common
+
+# Reduce the specified image by the specified factor
+pbmreduce <n> <path_to_image_pbm> > <path_to_output_pbm>
+
+# Use simple thresholding when reducing
+pbmreduce {{[-t|-threshold]}} <n> <path_to_image_pbm> > <path_to_output_pbm>
+
+# Use the specified threshold for all quantizations
+pbmreduce {{[-va|-value]}} <0_6> <n> <path_to_image_pbm> > <path_to_output_pbm>

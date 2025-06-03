@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/patator.md
+
+% patator, common
+
+# Brute force ssh login with rate limit and timeout options (successful login will show login banner or something similar)
+patator ssh_login host=<ip_or_host> user=FILE0 password=FILE1 0=<path_to_users_txt> 1=<path_to_passwords_txt> --rate_limit=<seconds> --timeout=<seconds> -x ignore:mesg='Authentication failed.'
+
+# Brute force encrypted zip file
+patator unzip_pass zipfile=<path_to_file_zip> password=FILE0 0=<path_to_passwords_txt> -x ignore:code!=0
+
+# Brute force http basic auth (payload file `userpass.txt` should be in the format `username:password`)
+patator http_fuzz url=<http___host_port> auth_type=basic user_pass=COMBO00:COMBO01 0=<path_to_userpass_txt> -x ignore:code=401
+
+# Brute force FTP/FTPS login
+patator ftp_login host=<ip_or_host> user=FILE0 password=FILE1 0=<path_to_users_txt> 1=<path_to_passwords_txt> tls=<0_1> -x ignore:mesg='Login incorrect.' -x ignore,reset,retry:code=500
+
+# List all available modules
+patator --help
+
+# Show help for a particular module
+patator <module_name> --help

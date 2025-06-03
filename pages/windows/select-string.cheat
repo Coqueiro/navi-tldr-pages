@@ -1,19 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/windows/select-string.md
-
-% select-string, windows
-
-# Search for a pattern within a file
-Select-String -Path "{{path	oile}}" -Pattern '<search_pattern>'
-
-# Search for an exact string (disables regular expressions)
-Select-String -SimpleMatch "<exact_string>" {{path	oile}}
-
-# Search for pattern in all `.ext` files in current dir
-Select-String -Path "{{*.ext}}" -Pattern '<search_pattern>'
-
-# Capture the specified number of lines before and after the line that matches the pattern
-Select-String --Context <2_3> "<search_pattern>" {{path	oile}}
-
-# Search `stdin` for lines that do not match a pattern
-Get-Content {{path	oile}} | Select-String --NotMatch "<search_pattern>"

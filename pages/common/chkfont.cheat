@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/chkfont.md
+
+% chkfont, common
+
+# Check a font file for formatting errors
+chkfont <path_to_font_flf>
+
+# Check all `.flf` font files in a directory
+chkfont <path_to_fonts>/*.flf

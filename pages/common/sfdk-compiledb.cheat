@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-compiledb.md
+
+% sfdk-compiledb, common
+
+# Generate compilation database
+sfdk compiledb
+
+# Generate compilation database with extra `make` arguments
+sfdk compiledb <arguments>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sc_wartsfilter.md
+
+% sc_wartsfilter, common
+
+# Filter all data records that had specific destinations and write them to a separate file
+sc_wartsfilter -i <path_to_input_warts> -o <path_to_output_warts> -a <192_0_2_5> -a <192_0_2_6>
+
+# Filter all records that had certain destinations in a prefix and write them to a separate file
+sc_wartsfilter -i <path_to_input_warts> -o <path_to_output_warts> -a <2001_db8___32>
+
+# Filter all records that using a specific action and output them as JSON
+sc_wartsfilter -i <path_to_input_warts> -t <ping> | sc_warts2json

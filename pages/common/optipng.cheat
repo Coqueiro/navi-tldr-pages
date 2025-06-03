@@ -7,10 +7,10 @@
 optipng <path_to_file_png>
 
 # Compress a PNG with the best compression
-optipng -o<7> <path_to_file_png>
+optipng -o <7> <path_to_file_png>
 
 # Compress a PNG with the fastest compression
-optipng -o<0> <path_to_file_png>
+optipng -o <0> <path_to_file_png>
 
 # Compress a PNG and add interlacing
 optipng -i <1> <path_to_file_png>

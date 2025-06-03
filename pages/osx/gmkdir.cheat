@@ -4,4 +4,4 @@
 % gmkdir, osx
 
 # View documentation for the original command
-tldr -p linux mkdir
+tldr mkdir

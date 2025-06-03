@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/sntp.md
+
+% sntp, osx
+
+# Query a specified SNTP server and display the time
+sntp <pool_ntp_org>
+
+# Synchronize the system clock with a specified SNTP server
+sudo sntp -S <pool_ntp_org>
+
+# Enable debug logging
+sntp -d <pool_ntp_org>

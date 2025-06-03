@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/asnmap.md
+
+% asnmap, common
+
+# Lookup CIDR ranges for an ASN
+asnmap {{[-a|-asn]}} <AS5650> -silent
+
+# Lookup CIDR ranges for an IP address
+asnmap {{[-i|-ip]}} <100_19_12_21> -silent
+
+# Lookup CIDR ranges for a domain
+asnmap {{[-d|-domain]}} <example_com> -silent
+
+# Lookup CIDR ranges for an organization
+asnmap -org <GOOGLE> -silent
+
+# Lookup CIDR ranges from a file of targets
+asnmap {{[-f|-file]}} <targets_txt> -silent
+
+# Output results in JSON format
+asnmap {{[-d|-domain]}} <facebook_com> {{[-j|-json]}} -silent
+
+# Output results in CSV format
+asnmap {{[-a|-asn]}} <AS394161> {{[-c|-csv]}} -silent
+
+# Update asnmap to the latest version
+asnmap {{[-up|-update]}}

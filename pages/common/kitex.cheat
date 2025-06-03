@@ -7,7 +7,7 @@
 kitex <path_to_IDL_file_thrift>
 
 # Generate client codes when a project is not in `$GOPATH`
- kitex -module <github_com_xx_org_xx_name> <path_to_IDL_file_thrift>
+kitex -module <github_com_xx_org_xx_name> <path_to_IDL_file_thrift>
 
 # Generate client codes with protobuf IDL
 kitex -type protobuf <path_to_IDL_file_proto>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/busybox.md
+
+% busybox, common
+
+# Execute a BusyBox function
+busybox <ls_rm_mkdir_cat____> <args>
+
+# Display help and a list of functions
+busybox --help

@@ -1,28 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/windows/xcopy.md
-
-% xcopy, windows
-
-# Copy the file(s) to the specified destination
-xcopy {{path	oile_or_directory}} {{path	o\destination_directory}}
-
-# List files that will be copied before copying
-xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /p
-
-# Copy the directory structure only, excluding files
-xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /t
-
-# Include empty directories when copying
-xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /e
-
-# Keep the source ACL in the destination
-xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /o
-
-# Allow resuming when network connection is lost
-xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /z
-
-# Disable the prompt when the file exists in the destination
-xcopy {{path	oile_or_directory}} {{path	o\destination_directory}} /y
-
-# Display detailed usage information
-xcopy /?

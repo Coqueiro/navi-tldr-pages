@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pnmtopng.md
+
+% pnmtopng, common
+
+# Read a PNM image as input and produce a PNG image as output
+pnmtopng <path_to_file_pnm> > <path_to_file_png>
+
+# Display version
+pnmtopng {{[-vers|-version]}}

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pocount.md
+
+% pocount, common
+
+# Print a colorful table with the translation progress of a file
+pocount <path_to_file_file_po>
+
+# Print translation progress of various files, one line per file
+pocount --short {{translation_*.ts}}
+
+# Generate a CSV file with the translation progress of various files
+pocount --csv {{translation_*.ts}} > <path_to_translation_progress_csv>

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/openstack-server.md
+
+% openstack-server, common
+
+# List servers
+openstack server list
+
+# Start server(s)
+openstack server start {{instance_id1 instance_id2 ...}}
+
+# Stop server
+openstack server stop {{instance_id1 instance_id2 ...}}
+
+# Create new server
+openstack server create --image <image_id> --flavor <flavor_id> --network <network_id> --wait <server_name>
+
+# Delete server(s)
+openstack server delete {{instance_id1 instance_id2 ...}}
+
+# Migrate server to different host
+openstack server migrate --live <host_hostname> <__shared_migration___block_migration> --wait <instance_id>
+
+# Perform a soft or hard reset to the server
+openstack server reboot <__soft___hard> --wait <instance_id>

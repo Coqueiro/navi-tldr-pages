@@ -3,7 +3,7 @@
 
 % echo, common
 
-# Print a text message. Note: quotes are optional
+# Print a text message. Note: Quotes are optional
 echo "{{Hello World}}"
 
 # Print a message with environment variables
@@ -16,7 +16,7 @@ echo -n "{{Hello World}}"
 echo "{{Hello World}}" >> <file_txt>
 
 # Enable interpretation of backslash escapes (special characters)
-echo -e "{{Column 1	Column 2}}"
+echo -e "{{Column 1\tColumn 2}}"
 
 # Print the exit status of the last executed command (Note: In Windows Command Prompt and PowerShell the equivalent commands are `echo %errorlevel%` and `$lastexitcode` respectively)
 echo $?

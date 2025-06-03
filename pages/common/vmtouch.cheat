@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vmtouch.md
+
+% vmtouch, common
+
+# Print the cache status of a file
+vmtouch <path_to_file>
+
+# Load a file into cache
+vmtouch -t <path_to_file>
+
+# Evict a file from cache
+vmtouch -e <path_to_file>
+
+# Lock a file in cache to prevent eviction from memory
+vmtouch -l <path_to_file>
+
+# Lock a file and daemonize the program
+vmtouch -ld <path_to_file>

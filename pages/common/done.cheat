@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/done.md
+
+% done, common
+
+# View documentation for the `for` keyword
+tldr for
+
+# View documentation for the `while` keyword
+tldr while
+
+# View documentation for the `select` keyword
+tldr select
+
+# View documentation for the `until` keyword
+tldr until

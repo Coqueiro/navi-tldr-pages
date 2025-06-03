@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gitstats.md
+
+% gitstats, common
+
+# Generate statistics for a local repository
+gitstats <path_to_git_repo__git> <path_to_output_folder>
+
+# View generated statistics in a web browser on Windows (PowerShell)/macOS/Linux
+<Invoke_Item_open_xdg_open> <path_to_output_folder_index_html>

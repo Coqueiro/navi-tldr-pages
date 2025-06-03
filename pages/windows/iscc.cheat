@@ -1,13 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/windows/iscc.md
-
-% iscc, windows
-
-# Compile an Inno Setup script
-iscc {{path	oile.iss}}
-
-# Quietly compile an Inno Setup installer
-iscc /Q {{path	oile.iss}}
-
-# Compile a signed Inno Setup installer
-iscc /S=<name>=<command> {{path	oile.iss}}

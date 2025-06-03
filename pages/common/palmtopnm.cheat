@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/palmtopnm.md
+
+% palmtopnm, common
+
+# Convert a Palm bitmap to a PNM image
+palmtopnm <path_to_file_palm> > <path_to_file_pnm>
+
+# Display information about the input file
+palmtopnm {{[-verb|-verbose]}} <path_to_file_palm> > <path_to_file_pnm>
+
+# Convert the n'th rendition of the image contained in the input file
+palmtopnm {{[-r|-rendition]}} <__r__rendition_> <path_to_file_palm> > <path_to_file_pnm>
+
+# Write a histogram of the colors in the input file to `stdout`
+palmtopnm {{[-s|-showhist]}} <path_to_file_palm> > <path_to_file_pnm>
+
+# Output the transparent color of the input image if set
+palmtopnm {{[-t|-transparent]}} <path_to_file_palm>

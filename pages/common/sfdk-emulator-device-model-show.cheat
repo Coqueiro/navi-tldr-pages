@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-emulator-device-model-show.md
+
+% sfdk-emulator-device-model-show, common
+
+# Show a model properties
+sfdk emulator device-model-show <model>
+
+# Display available device models
+sfdk emulator device-model-list

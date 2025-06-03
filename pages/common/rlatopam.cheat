@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rlatopam.md
+
+% rlatopam, common
+
+# Convert the specified SPOT image to PGM format
+rlatopam <path_to_file> > <path_to_output_pam>

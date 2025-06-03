@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pangolin.md
+
+% pangolin, common
+
+# Run `pangolin` on the specified FASTA file
+pangolin <path_to_file_fa>
+
+# Use the specified analysis engine
+pangolin --analysis-mode <accurate_fast_pangolearn_usher>

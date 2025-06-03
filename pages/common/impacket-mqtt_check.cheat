@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/impacket-mqtt_check.md
+
+% impacket-mqtt_check, common
+
+# View documentation for the original command
+tldr mqtt_check.py

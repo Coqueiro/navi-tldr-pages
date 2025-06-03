@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmforge.md
+
+% ppmforge, common
+
+# Generate an image of a planet
+ppmforge > <path_to_image_ppm>
+
+# Generate an image of clouds or the night sky
+ppmforge -<night_clouds> > <path_to_image_ppm>
+
+# Use a custom mesh size and dimension for fractal generation and specify the dimensions of the output
+ppmforge {{[-m|-mesh]}} <512> {{[-d|-dimension]}} <2_5> {{[-x|-xsize]}} <1000> {{[-y|-ysize]}} <1000> > <path_to_image_ppm>
+
+# Control the tilt and the angle from which the generated planet is illuminated
+ppmforge {{[-t|-tilt]}} <_15> {{[-ho|-hour]}} <12> > <path_to_image_ppm>

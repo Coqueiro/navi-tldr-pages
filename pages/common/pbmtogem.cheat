@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pbmtogem.md
+
+% pbmtogem, common
+
+# Convert a PBM image into a GEM .img file
+pbmtogem <path_to_file_pbm> > <path_to_file_img>
+
+# Suppress all informational messages
+pbmtogem {{[-q|-quiet]}}
+
+# Display version
+pbmtogem {{[-v|-version]}}

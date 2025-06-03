@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-prepare.md
+
+% sfdk-prepare, common
+
+# Prepare sources using the recipe from RPM SPEC file
+sfdk prepare

@@ -4,4 +4,4 @@
 % gfind, osx
 
 # View documentation for the original command
-tldr -p linux find
+tldr find

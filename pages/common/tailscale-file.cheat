@@ -4,7 +4,7 @@
 % tailscale-file, common
 
 # Send a file to a specific node
-sudo tailscale file cp <path_to_file> <hostname_ip>:
+tailscale file cp <path_to_file> <hostname_ip>:
 
 # Store files that were sent to the current node into a specific directory
-sudo tailscale file get <path_to_directory>
+tailscale file get <path_to_directory>

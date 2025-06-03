@@ -6,11 +6,11 @@
 # Connect to a hypervisor session
 virsh connect <qemu____system>
 
+# Activate a network named `default`
+sudo virsh net-start <default>
+
 # List all domains
 virsh list --all
-
-# Dump guest configuration file
-virsh dumpxml <guest_id> > <path_to_guest_xml>
 
 # Create a guest from a configuration file
 virsh create <path_to_config_file_xml>

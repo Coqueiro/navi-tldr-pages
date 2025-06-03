@@ -10,19 +10,19 @@ nudoku
 nudoku -d <easy_normal_hard>
 
 # Navigate the board
-<h_j_k_l> OR <Left_Down_Up_Right> arrow key
+<_h___j___k___l___ArrowKeys_>
 
 # Delete a number
-<Backspace_x>
+<_Backspace___x_>
 
 # Get a hint
-H
+<H>
 
 # See the complete solution
-S
+<S>
 
 # Create a new puzzle
-N
+<N>
 
 # Quit the game
-Q
+<Q>

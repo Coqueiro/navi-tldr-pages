@@ -6,20 +6,17 @@
 # Open a file
 more <path_to_file>
 
-# Open a file displaying from a specific line
+# Display a specific line
 more +<line_number> <path_to_file>
-
-# Display help
-more --help
 
 # Go to the next page
 <Space>
 
-# Search for a string (press `n` to go to the next match)
-/<something>
+# Search for a string (press `<n>` to go to the next match)
+</><something><Enter>
 
 # Exit
-q
+<q>
 
 # Display help about interactive commands
-h
+<h>

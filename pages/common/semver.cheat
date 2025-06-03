@@ -13,7 +13,7 @@ semver --coerce <1_2>
 semver <1_2_3> --range "<_1_0>"
 
 # Test with multiple ranges
-semver <1_2_3> --range <___1_0_> <__2_0_>
+semver <1_2_3> --range "<__1_0>" "<_2_0>"
 
 # Test multiple version strings and return only the ones that match
 semver <1_2_3> <2_0_0> --range "<_1_0>"

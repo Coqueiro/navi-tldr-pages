@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-box.md
+
+% vagrant-box, common
+
+# List all installed boxes
+vagrant box list
+
+# Add a new box
+vagrant box add <hashicorp_bionic64>
+
+# Add a box from a custom URL
+vagrant box add <my_box> <https___example_com_my_box_box>
+
+# Remove an installed box
+vagrant box remove <hashicorp_bionic64>
+
+# Update all boxes that are in use in the current Vagrant environment
+vagrant box update
+
+# Update a specific box
+vagrant box update --box <bento_debian_12>
+
+# Check if there is a new version available for the box that you are using
+vagrant box outdated
+
+# Clean up old versions of installed boxes
+vagrant box prune

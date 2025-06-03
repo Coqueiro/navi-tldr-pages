@@ -17,3 +17,6 @@ testssl --vulnerable <example_com>
 
 # Only check HTTP security headers
 testssl --headers <example_com>
+
+# Test other STARTTLS enabled protocols
+testssl --starttls <ftp_smtp_pop3_imap_xmpp_sieve_xmpp_server_telnet_ldap_irc_lmtp_nntp_postgres_mysql> <example_com>:<port>

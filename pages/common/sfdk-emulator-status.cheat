@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-emulator-status.md
+
+% sfdk-emulator-status, common
+
+# View documentation for `sfdk emulator start`
+tldr sfdk emulator start

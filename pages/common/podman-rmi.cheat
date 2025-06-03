@@ -4,7 +4,7 @@
 % podman-rmi, common
 
 # Remove one or more images given their names
-podman rmi <image_tag> <image2_tag> <___>
+podman rmi {{image:tag image2:tag ...}}
 
 # Force remove an image
 podman rmi --force <image>

@@ -3,23 +3,4 @@
 
 % http, common
 
-# Download a URL to a file
-http --download <example_org>
 
-# Send form-encoded data
-http --form <example_org> <name__bob_> <profile_picture__bob_png_>
-
-# Send JSON object
-http <example_org> <name__bob_>
-
-# Specify an HTTP method
-http <HEAD> <example_org>
-
-# Include an extra header
-http <example_org> <X_MyHeader_123>
-
-# Pass a username and password for server authentication
-http --auth <username_password> <example_org>
-
-# Specify raw request body via `stdin`
-cat <data_txt> | http PUT <example_org>

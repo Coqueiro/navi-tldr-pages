@@ -4,7 +4,7 @@
 % warp-cli, common
 
 # Register the current device to WARP (must be run before first connection)
-warp-cli register
+warp-cli registration new
 
 # Connect to WARP
 warp-cli connect
@@ -14,6 +14,9 @@ warp-cli disconnect
 
 # Display the WARP connection status
 warp-cli status
+
+# Switch to a specific mode
+warp-cli set-mode <mode>
 
 # Display help
 warp-cli help

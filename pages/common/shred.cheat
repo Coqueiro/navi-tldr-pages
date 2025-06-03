@@ -3,14 +3,4 @@
 
 % shred, common
 
-# Overwrite a file
-shred <path_to_file>
 
-# Overwrite a file, leaving zeroes instead of random data
-shred --zero <path_to_file>
-
-# Overwrite a file 25 times
-shred -n25 <path_to_file>
-
-# Overwrite a file and remove it
-shred --remove <path_to_file>

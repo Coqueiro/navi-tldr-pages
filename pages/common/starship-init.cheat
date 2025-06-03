@@ -3,9 +3,6 @@
 
 % starship-init, common
 
-# Display the subcommand help
-starship init --help
-
 # Print the starship integration code for the specified shell
 starship init <bash_elvish_fish_ion_powershell_tcsh_zsh>
 
@@ -14,3 +11,6 @@ starship init <bash> >> <___bashrc>
 
 # Append the `starship` integration code to `~/.zshrc`
 starship init <zsh> >> <___zshrc>
+
+# Display help
+starship init --help

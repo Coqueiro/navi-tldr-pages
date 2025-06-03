@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/hash.md
+
+% hash, common
+
+# View cached command locations for the current shell
+hash
+
+# Clear the hash table
+hash -r
+
+# Delete a specific command from the hash table
+hash -d <command>
+
+# Print the full path of `command`
+hash -t <command>
+
+# Display help
+hash --help

@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/uv-add.md
+
+% uv-add, common
+
+# Add the latest version of a package
+uv add <package>
+
+# Add multiple packages
+uv add {{package1 package2 ...}}
+
+# Add a package with a version requirement
+uv add <package__1_2_3>
+
+# Add packages to an optional dependency group, which will be included when published
+uv add --optional <optional> {{package1 package2 ...}}
+
+# Add packages to a local group, which will not be included when published
+uv add --group <group> {{package1 package2 ...}}
+
+# Add packages to the dev group, shorthand for `--group dev`
+uv add --dev {{package1 package2 ...}}
+
+# Add package as editable
+uv add --editable <path_to_package_>
+
+# Enable an extra when installing package, may be provided multiple times
+uv add <package> --extra <extra_feature>

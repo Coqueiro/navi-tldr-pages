@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/freebsd/ipmitool.md
+
+% ipmitool, freebsd
+
+# Load the IPMI kernel module for local connections
+kldload ipmi.ko
+
+# Open IPMI shell on the local hardware
+ipmitool shell
+
+# Open IPMI shell on a remote host
+ipmitool -H <ip_address> -U <user_name> shell

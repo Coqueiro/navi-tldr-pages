@@ -19,5 +19,4 @@ rhash --sha3-256 --message '<message>'
 rhash --base64 --bsd <path_to_file>
 
 # Use custom output template
-rhash --printf '{{%p	%s	%{mtime}	%m
-}}' <path_to_file>
+rhash --printf '{{%p\t%s\t%{mtime}\t%m\n}}' <path_to_file>

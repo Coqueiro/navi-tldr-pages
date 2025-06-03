@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/openstack-help.md
+
+% openstack-help, common
+
+# Display a description of a particular command
+openstack help <command_name>
+
+# Get help for Identity v3
+openstack --os-identity-api-version 3 --help
+
+# Display help
+openstack --help

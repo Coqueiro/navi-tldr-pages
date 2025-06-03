@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubie.md
+
+% kubie, common
+
+# Display a selectable menu of contexts
+kubie ctx
+
+# Switch current shell to the given context
+kubie ctx <context>
+
+# Switch current shell to the given namespace
+kubie ns <namespace>
+
+# Switch current shell to the given context and namespace
+kubie ctx <context> -n <namespace>
+
+# Execute a command in the given context and namespace, without spawning a shell
+kubie exec <context> <namespace> <command>
+
+# Check the Kubernetes config files for issues
+kubie lint

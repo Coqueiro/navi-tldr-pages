@@ -15,7 +15,7 @@
 # Test if the specified variable has a [n]on-empty value
 [[ -n $<variable> ]]
 
-# Test if the specified variable has an empty value
+# Test if the specified variable has an empty value ([z]ero length)
 [[ -z $<variable> ]]
 
 # Test if the specified [f]ile exists

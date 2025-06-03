@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/htmlq.md
+
+% htmlq, common
+
+# Return all elements of class `card`
+cat <path_to_file_html> | htmlq '.card'
+
+# Get the text content of the first paragraph
+cat <path_to_file_html> | htmlq --text 'p:first-of-type'
+
+# Find all the links in a page
+cat <path_to_file_html> | htmlq --attribute href 'a'
+
+# Remove all images and SVGs from a page
+cat <path_to_file_html> | htmlq --remove-nodes 'img' --remove-nodes 'svg'
+
+# Pretty print and write the output to a file
+htmlq --pretty --filename <path_to_input_html> --output <path_to_output_html>

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bacon.md
+
+% bacon, common
+
+# Run `cargo check` whenever a change is detected in the current directory
+bacon
+
+# Run `cargo test` whenever a change is detected in the given directory
+bacon test <path_to_directory>
+
+# Run `cargo check` against all targets whenever a change is detected in the current directory
+bacon check-all
+
+# Run a specific job whenever a change is detected in the current directory
+bacon <run_test_clippy_doc____>
+
+# List all currently available jobs
+bacon --list-jobs
+
+# Initialize a `bacon.toml` configuration file in the current directory
+bacon --init

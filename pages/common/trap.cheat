@@ -3,14 +3,11 @@
 
 % trap, common
 
-# List available signals to set traps for
-trap -l
+# List the commands and the names of the expected events
+trap
 
-# List active traps for the current shell
-trap -p
+# Execute a command when a signal is received
+trap 'echo "Caught signal <SIGHUP>"' <HUP>
 
-# Set a trap to execute commands when one or more signals are detected
-trap 'echo "Caught signal <SIGHUP>"' <SIGHUP>
-
-# Remove active traps
-trap - <SIGHUP> <SIGINT>
+# Remove commands
+trap - <HUP> <INT>

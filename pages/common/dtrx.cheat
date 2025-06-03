@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dtrx.md
+
+% dtrx, common
+
+# Extract archive, guessing the extraction tool from extension
+dtrx <path_to_file>
+
+# Extract archive, overwrite any existing target output
+dtrx --overwrite <path_to_file>
+
+# Extract archive, put everything into current directory
+dtrx --flat <path_to_file>

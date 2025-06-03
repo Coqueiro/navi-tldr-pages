@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/alr.md
+
+% alr, common
+
+# Create a binary or library project
+alr init <__bin___lib> <project_name>
+
+# Add a dependency to the project
+alr add <crate>
+
+# Run the compiled binary (no need to do `build` before)
+alr run
+
+# Compile the project
+alr build <__release___development___validation>

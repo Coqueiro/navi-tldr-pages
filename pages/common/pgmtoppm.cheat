@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pgmtoppm.md
+
+% pgmtoppm, common
+
+# Map all greyscale values of the input image to all colors between the two specified colors
+pgmtoppm {{[-b|-black]}} <red> {{[-w|-white]}} <blue> <path_to_input_pgm> > <path_to_output_ppm>
+
+# Map all greyscale values of the input image to colors according to the specified colormap
+pgmtoppm {{[-m|-map]}} <path_to_colormap_ppm> <path_to_input_pgm> > <path_to_output_ppm>

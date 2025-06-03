@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmtopcx.md
+
+% ppmtopcx, common
+
+# Convert a PPM image to a PCX file
+ppmtopcx <path_to_file_ppm> > <path_to_file_pcx>
+
+# Produce a PCX file with the specified color depth
+ppmtopcx -<8bit_24bit> <path_to_file_ppm> > <path_to_file_pcx>

@@ -6,6 +6,9 @@
 # Download images from the specified URL
 gallery-dl "<url>"
 
+# Save images to a specific directory
+gallery-dl --destination <path_to_directory> "<url>"
+
 # Retrieve pre-existing cookies from your web browser (useful for sites that require login)
 gallery-dl --cookies-from-browser <browser> "<url>"
 

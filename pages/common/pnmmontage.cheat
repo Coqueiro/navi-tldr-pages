@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pnmmontage.md
+
+% pnmmontage, common
+
+# Produce a packing of the specified images
+pnmmontage {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
+
+# Specify the quality of the packing (Note: Larger values produce smaller packings but take longer to compute.)
+pnmmontage -<0__9> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
+
+# Produce a packing that is not larger than `p` percent of the optimal packing
+pnmmontage {{[-qua|-quality]}} <p> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
+
+# Write the positions of the input files within the packed image to a machine-readable file
+pnmmontage {{[-d|-data]}} <path_to_datafile> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>

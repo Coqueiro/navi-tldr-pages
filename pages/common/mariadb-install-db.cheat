@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mariadb-install-db.md
+
+% mariadb-install-db, common
+
+# Initialize a database
+sudo mariadb-install-db --user <user> --basedir <_usr> --datadir <_var_lib_mysql>
+
+# Display help
+mariadb-install-db --help

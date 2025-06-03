@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-package.md
+
+% sfdk-package, common
+
+# Create a package
+sfdk package
+
+# Create a package without executing the check section in RPM SPEC file
+sfdk package --no-check
+
+# Create and sign a package
+sfdk package --sign

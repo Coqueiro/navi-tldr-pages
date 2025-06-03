@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pnmtotiffcmyk.md
+
+% pnmtotiffcmyk, common
+
+# Convert a PNM image to a CMYK encoded TIFF
+pnmtotiffcmyk <path_to_input_file_pnm> > <path_to_output_file_tiff>
+
+# Specify the TIFF compression method
+pnmtotiffcmyk -<none_packbits_lzw> <path_to_input_file_pnm> > <path_to_output_file_tiff>
+
+# Control the fill order
+pnmtotiffcmyk -<msb2lsb_lsb2msb> <path_to_input_file_pnm> > <path_to_output_file_tiff>

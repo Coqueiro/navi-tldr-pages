@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/nhentai.md
+
+% nhentai, common
+
+# Set cookies
+nhentai --cookie "csrftoken=<TOKEN>; sessionid=<ID>"
+
+# Download a specific doujin
+nhentai --id <number>
+
+# Download the first page of your favorites
+nhentai --favorites --download --delay 1
+
+# Download specific pages of your favorites
+nhentai --favorites --pages <start_page>-<end_page> --download --delay 1

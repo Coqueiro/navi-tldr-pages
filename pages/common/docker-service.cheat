@@ -3,20 +3,20 @@
 
 % docker-service, common
 
-# List the services on a docker daemon
+# List the services on a Docker daemon
 docker service ls
 
 # Create a new service
-docker service create --name <service_name> <image>:<tag>
+docker service create --name <service_name> <image>:<___>
 
-# Display detailed information of a space-separated list of services
-docker service inspect <service_name_ID>
+# Display detailed information about one or more services
+docker service inspect {{service_name_or_ID1 service_name_or_ID2}}
 
-# List the tasks of a space-separated list of services
-docker service ps <service_name_ID>
+# List the tasks of one or more services
+docker service ps {{service_name_or_ID1 service_name_or_ID2 ...}}
 
 # Scale to a specific number of replicas for a space-separated list of services
 docker service scale <service_name>=<count_of_replicas>
 
-# Remove a space-separated list of services
-docker service rm <service_name_ID>
+# Remove one or more services
+docker service rm {{service_name_or_ID1 service_name_or_ID2}}

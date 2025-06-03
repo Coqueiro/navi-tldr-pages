@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/elasticsearch-syskeygen.md
+
+% elasticsearch-syskeygen, common
+
+# Generate the `system_key` file in the default `$ES_HOME/config` directory
+elasticsearch-syskeygen

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ximtoppm.md
+
+% ximtoppm, common
+
+# Convert an XIM image to a PPM image
+ximtoppm <path_to_input_file_xim> > <path_to_output_file_ppm>
+
+# Store the transparency mask of the input image in the specified file
+ximtoppm {{[-a|-alphaout]}} <path_to_alpha_file_pbm> <path_to_input_file_xim> > <path_to_output_file_ppm>

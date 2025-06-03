@@ -21,5 +21,5 @@ ls <path_to_videos> | mods --format "{{organize these by decade and summarize}}"
 # Read through raw HTML and summarize the contents, in markdown format
 curl "<https___api_open_meteo_com_v1_forecast_latitude_29_00_longitude__90_00_current_weather_true_hourly_temperature_2m_relativehumidity_2m_windspeed_10m>" | mods --format "{{summarize this weather data for a human}}"
 
-# Display help and exit
+# Display help
 mods --help

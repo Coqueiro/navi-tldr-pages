@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wkhtmltopdf.md
+
+% wkhtmltopdf, common
+
+# Convert a HTML document into PDF
+wkhtmltopdf <input_html> <output_pdf>
+
+# Specify the PDF page size (please see `PaperSize` of `QPrinter` for supported sizes)
+wkhtmltopdf --page-size <A4> <input_html> <output_pdf>
+
+# Set the PDF page margins
+wkhtmltopdf --margin-<top_bottom_left_right> <10mm> <input_html> <output_pdf>
+
+# Set the PDF page orientation
+wkhtmltopdf --orientation <Landscape_Portrait> <input_html> <output_pdf>
+
+# Generate a greyscale version of the PDF document
+wkhtmltopdf --grayscale <input_html> <output_pdf>

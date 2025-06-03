@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/herd-list.md
+
+% herd-list, osx
+
+# List all available commands
+herd list
+
+# List all available commands in a specific namespace
+herd list <namespace>
+
+# List all commands in raw format (useful for embedding a command runner)
+herd list --raw
+
+# Display the list in a specific output format
+herd list --format=<txt_xml_json_md>
+
+# List all commands without describing their arguments
+herd list --short

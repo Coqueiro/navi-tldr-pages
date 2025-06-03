@@ -7,16 +7,16 @@
 csslint <file_css>
 
 # Lint multiple CSS files
-csslint <file1_css> <file2_css> <file3_css>
+csslint {{file1.css file2.css ...}}
 
 # List all possible style rules
 csslint --list-rules
 
-# Specify certain rules as errors (which result in a non-zero exit code)
+# Treat certain rules as errors (which results in a non-zero exit code)
 csslint --errors=<errors_universal_selector_imports> <file_css>
 
-# Specify certain rules as warnings
+# Treat certain rules as warnings
 csslint --warnings=<box_sizing_selector_max_floats> <file_css>
 
-# Specify certain rules to ignore
+# Ignore specific rules
 csslint --ignore=<ids_rules_count_shorthand> <file_css>

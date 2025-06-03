@@ -7,4 +7,4 @@
 git ignore-io list
 
 # Generate a .gitignore template
-git ignore-io <item_a_item_b_item_n>
+git ignore-io <item_a_item_b____>

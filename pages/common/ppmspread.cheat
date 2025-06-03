@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmspread.md
+
+% ppmspread, common
+
+# Displace the pixels in a PPM image by a randomized amount that is at most a
+ppmspread <__r__randomseed_> <path_to_input_file_ppm> > <path_to_output_file_ppm>
+
+# Specify a seed to a the pseudo-random number generator
+ppmspread <__r__randomseed_> <path_to_input_file_ppm> {{[-r|-randomseed]}} <seed> > <path_to_output_file_ppm>

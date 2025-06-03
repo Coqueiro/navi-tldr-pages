@@ -3,14 +3,4 @@
 
 % grip, common
 
-# Start the server and serve the rendered `README` file of a current directory
-grip
 
-# Start the server and serve a specific Markdown file
-grip <path_to_file_md>
-
-# Start the server and open the `README` file of the current directory in the browser
-grip --browser
-
-# Start the server in the specified port and serve the rendered `README` file of the current directory
-grip <port>

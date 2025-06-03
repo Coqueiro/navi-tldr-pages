@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/adb-disconnect.md
+
+% adb-disconnect, common
+
+# View documentation for `adb disconnect`
+tldr adb connect

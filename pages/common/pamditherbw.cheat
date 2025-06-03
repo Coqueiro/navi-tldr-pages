@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pamditherbw.md
+
+% pamditherbw, common
+
+# Read a PGM image, apply dithering and save it to a file
+ppmditherbw <path_to_image_pgm> > <path_to_file_pgm>
+
+# Use the specified quantization method
+ppmditherbw -<floyd_fs_atkinson_threshold_hilbert____> <path_to_image_pgm> > <path_to_file_pgm>
+
+# Use the atkinson quantization method and the specified seed for a pseudo-random number generator
+ppmditherbw {{[-a|-atkinson]}} {{[-r|-randomseed]}} <1337> <path_to_image_pgm> > <path_to_file_pgm>
+
+# Specify the thresholding value for quantization methods that perform some sort of thresholding
+ppmditherbw -<fs_atkinson_thresholding> {{[-va|-value]}} <0_3> <path_to_image_pgm> > <path_to_file_pgm>

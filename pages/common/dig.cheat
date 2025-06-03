@@ -12,11 +12,8 @@ dig +noall +answer <example_com>
 # Query a specific DNS record type associated with a given domain name
 dig +short <example_com> <A_MX_TXT_CNAME_NS>
 
-# Get all types of records for a given domain name
-dig <example_com> ANY
-
-# Specify an alternate DNS server to query
-dig @<8_8_8_8> <example_com>
+# Specify an alternate DNS server to query and optionally use DNS over TLS (DoT)
+dig <_tls> @<1_1_1_1_8_8_8_8_9_9_9_9____> <example_com>
 
 # Perform a reverse DNS lookup on an IP address (PTR record)
 dig -x <8_8_8_8>
@@ -26,3 +23,6 @@ dig +nssearch <example_com>
 
 # Perform iterative queries and display the entire trace path to resolve a domain name
 dig +trace <example_com>
+
+# Query a DNS server over a non-standard [p]ort using the TCP protocol
+dig +tcp -p <port> @<dns_server_ip> <example_com>

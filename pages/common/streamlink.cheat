@@ -12,10 +12,10 @@ streamlink <example_com_stream> <720p60>
 # Select the highest or lowest available quality
 streamlink <example_com_stream> <best_worst>
 
-# Specify which player to use to feed stream data to (VLC is used by default if found)
+# Use a specific player to feed stream data to (VLC is used by default if found)
 streamlink --player=<mpv> <example_com_stream> <best>
 
-# Specify the amount of time to skip from the beginning of the stream. For live streams, this is a negative offset from the end of the stream (rewind)
+# Skip a specific amount of time from the beginning of the stream. For live streams, this is a negative offset from the end of the stream (rewind)
 streamlink --hls-start-offset {{[HH:]MM:SS}} <example_com_stream> <best>
 
 # Skip to the beginning of a live stream, or as far back as possible

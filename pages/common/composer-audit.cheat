@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/composer-audit.md
+
+% composer-audit, common
+
+# Check for security vulnerabilities in your current project
+composer audit
+
+# Omit dev dependencies in the audit
+composer audit --no-dev
+
+# Filter vulnerabilities by output format
+composer audit --format <table_plain_json_summary>
+
+# Output audit results to a file in JSON format
+composer audit --format json > audit_report.json
+
+# Verify whether a specific package in your project is affected by security issues
+composer audit <vendor>/<package>

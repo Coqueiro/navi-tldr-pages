@@ -22,7 +22,7 @@ nettop -l <10>
 nettop -d -s <5>
 
 # While running nettop, list interactive commands
-h
+<h>
 
 # Display help
 nettop -h

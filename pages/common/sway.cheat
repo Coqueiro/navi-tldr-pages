@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sway.md
+
+% sway, common
+
+# Start `sway`
+sway
+
+# View documentation for `i3` (`sway` uses the same default keybindings)
+tldr i3

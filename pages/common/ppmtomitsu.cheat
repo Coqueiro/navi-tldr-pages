@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmtomitsu.md
+
+% ppmtomitsu, common
+
+# Convert a PPM image to a MITSU file
+ppmtomitsu <path_to_file_ppm> > <path_to_file_mitsu>
+
+# Enlarge the image by the specified factor, use the specified sharpness and produce `n` copies
+ppmtomitsu {{[-e|-enlarge]}} <1_2_3> {{[-s|-sharpness]}} <1_2_3_4> {{[-c|-copy]}} <__e__enlarge_> <path_to_file_ppm> > <path_to_file_mitsu>
+
+# Use the given medium for the printing process
+ppmtomitsu {{[-m|-media]}} <A_A4_AS_A4S> <path_to_file_ppm> > <path_to_file_mitsu>

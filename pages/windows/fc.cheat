@@ -1,25 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/windows/fc.md
-
-% fc, windows
-
-# Compare 2 specified files
-fc {{path	oile1}} {{path	oile2}}
-
-# Perform a case-insensitive comparison
-fc /c {{path	oile1}} {{path	oile2}}
-
-# Compare files as Unicode text
-fc /u {{path	oile1}} {{path	oile2}}
-
-# Compare files as ASCII text
-fc /l {{path	oile1}} {{path	oile2}}
-
-# Compare files as binary
-fc /b {{path	oile1}} {{path	oile2}}
-
-# Disable tab-to-space expansion
-fc /t {{path	oile1}} {{path	oile2}}
-
-# Compress whitespace (tabs and spaces) for comparisons
-fc /w {{path	oile1}} {{path	oile2}}

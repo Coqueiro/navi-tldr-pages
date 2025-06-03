@@ -12,7 +12,7 @@ flite -t "<string>"
 # Convert the contents of a file to speech
 flite -f <path_to_file_txt>
 
-# Specify which voice to use
+# Use the specified voice
 flite -voice <file___path_to_filename_flitevox_url>
 
 # Store output into a wav file

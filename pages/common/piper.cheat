@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/piper.md
+
+% piper, common
+
+# Output a WAV [f]ile using a text-to-speech [m]odel (assuming a config file at model_path + .json)
+echo {{Thing to say}} | piper -m <path_to_model_onnx> -f <outputfile_wav>
+
+# Output a WAV [f]ile using a [m]odel and specifying its JSON [c]onfig file
+echo {{'Thing to say'}} | piper -m <path_to_model_onnx> -c <path_to_model_onnx_json> -f <outputfile_wav>
+
+# Select a particular speaker in a voice with multiple speakers by specifying the speaker's ID number
+echo <_Warum__> | piper -m <de_DE_thorsten_emotional_medium_onnx> --speaker <1> -f <angry_wav>
+
+# Stream the output to the mpv media player
+echo {{'Hello world'}} | piper -m <en_GB_northern_english_male_medium_onnx> --output-raw -f - | mpv -
+
+# Speak twice as fast, with huge gaps between sentences
+echo {{'Speaking twice the speed. With added drama!'}} | piper -m <foo_onnx> --length_scale <0_5> --sentence_silence <2> -f <drama_wav>

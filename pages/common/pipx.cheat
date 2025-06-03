@@ -20,3 +20,6 @@ pipx inject <package> {{dependency1 dependency2 ...}}
 
 # Install a package in a virtual environment with pip arguments
 pipx install --pip-args='<pip_args>' <package>
+
+# Upgrade/reinstall/uninstall all installed packages
+pipx <upgrade_all_uninstall_all_reinstall_all>

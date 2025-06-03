@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/openstack-image.md
+
+% openstack-image, common
+
+# List available images
+openstack image list <__private___shared___all>
+
+# Display image details
+openstack image show --human-readable <image_id>
+
+# Create/upload an image
+openstack image create --file <path_to_file> <__private___shared___all> <image_name>
+
+# Delete image(s)
+openstack image delete {{image_id1 image_id2 ...}}
+
+# Save an image locally
+openstack image save --file <filename> <image_id>

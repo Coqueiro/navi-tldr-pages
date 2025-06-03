@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/return.md
+
+% return, common
+
+# Exit a function prematurely
+<func_name>() { {{echo "This is reached"}}; return; {{echo "This is not"}}; }
+
+# Specify the function's return value
+<func_name>() { return <exit_code>; }

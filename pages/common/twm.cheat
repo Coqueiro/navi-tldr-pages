@@ -7,13 +7,13 @@
 twm
 
 # Connect to a specific X server
-twm -display <display>
+twm {{[-d|-display]}} <display>
 
 # Only manage the default screen
-twm -s
+twm {{[-s|-single]}}
 
 # Use a specific startup file
-twm -f <path_to_file>
+twm {{[-f|-file]}} <path_to_file>
 
 # Enable verbose mode and print unexpected errors in X
-twm -v
+twm {{[-v|-verbose]}}

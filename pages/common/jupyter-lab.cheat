@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jupyter-lab.md
+
+% jupyter-lab, common
+
+# Start JupyterLab
+jupyter lab
+
+# Open a specific notebook
+jupyter lab <path_to_notebook_ipynb>
+
+# Start JupyterLab in a specific directory
+jupyter lab --notebook-dir <path_to_directory>
+
+# Start JupyterLab in debug mode
+jupyter lab --debug

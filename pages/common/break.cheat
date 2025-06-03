@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/break.md
+
+% break, common
+
+# Break out of a single loop
+while :; do break; done
+
+# Break out of nested loops
+while :; do while :; do break 2; done; done

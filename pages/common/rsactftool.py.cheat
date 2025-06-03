@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rsactftool.py.md
+
+% rsactftool.py, common
+
+# Recover a private key from a public key file
+RsaCtfTool.py --publickey <path_to_key_pub> --private
+
+# Decrypt a file using a public key
+RsaCtfTool.py --publickey <path_to_key_pub> --decryptfile <path_to_ciphered_file>
+
+# Decrypt a specific ciphertext string
+RsaCtfTool.py --publickey <path_to_key_pub> --decrypt "<ciphertext>"
+
+# Dump RSA key components (e.g., modulus, exponent) from a key file
+RsaCtfTool.py --dumpkey --key <path_to_key_pub>
+
+# Run a specific attack (e.g., Fermat factorization) to recover the private key
+RsaCtfTool.py --publickey <path_to_key_pub> --private --attack fermat
+
+# Generate a public key from modulus (n) and exponent (e)
+RsaCtfTool.py --createpub -n <modulus> -e <exponent>
+
+# Attempt all available attacks to recover the private key
+RsaCtfTool.py --publickey <path_to_key_pub> --private --attack all

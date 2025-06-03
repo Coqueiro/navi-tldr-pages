@@ -13,7 +13,7 @@ nslookup -type=NS <example_com> <8_8_8_8>
 nslookup -type=PTR <54_240_162_118>
 
 # Query for ANY available records using TCP protocol
-nslookup -vc -type=ANY <example_com> 
+nslookup -vc -type=ANY <example_com>
 
 # Query a given name server for the whole zone file (zone transfer) of the domain using TCP protocol
 nslookup -vc -type=AXFR <example_com> <name_server>

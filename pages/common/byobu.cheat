@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/byobu.md
+
+% byobu, common
+
+# Start a new session
+byobu
+
+# Configuration and help
+byobu-config
+
+# Select tmux (default) or screen backend
+byobu-select-backend
+
+# Enable automatic startup after login into text console
+byobu-enable
+
+# Disable automatic startup after login into text console
+byobu-disable
+
+# Detach from `byobu`
+<F6>
+
+# Kill a window
+<Ctrl a><k>

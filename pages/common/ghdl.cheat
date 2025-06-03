@@ -6,7 +6,7 @@
 # Analyze a VHDL source file and produce an object file
 ghdl -a <filename_vhdl>
 
-# Elaborate a design (where `<design>` is the name of a configuration unit, entity unit or architecture unit)
+# Elaborate a design (where `design` is the name of a configuration unit, entity unit or architecture unit)
 ghdl -e <design>
 
 # Run an elaborated design
@@ -18,5 +18,5 @@ ghdl -r <design> --wave=<output_ghw>
 # Check the syntax of a VHDL source file
 ghdl -s <filename_vhdl>
 
-# Display the help page
+# Display help
 ghdl --help

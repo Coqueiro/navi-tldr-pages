@@ -4,4 +4,4 @@
 % gmkfifo, osx
 
 # View documentation for the original command
-tldr -p linux mkfifo
+tldr mkfifo
