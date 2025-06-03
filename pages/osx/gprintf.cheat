@@ -4,4 +4,4 @@
 % gprintf, osx
 
 # View documentation for the original command
-tldr printf
+tldr -p linux printf

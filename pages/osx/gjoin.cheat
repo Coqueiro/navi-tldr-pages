@@ -4,4 +4,4 @@
 % gjoin, osx
 
 # View documentation for the original command
-tldr join
+tldr -p linux join

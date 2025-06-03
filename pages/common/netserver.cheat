@@ -13,4 +13,4 @@ netserver -D
 netserver -p <port>
 
 # Force IPv[4] or IPv[6]
-netserver -<4_6>
+netserver -<4|6>

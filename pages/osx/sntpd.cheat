@@ -10,4 +10,4 @@ sntpd
 sntpd -L
 
 # Use a custom file for the SNTP state
-sntpd -z <path_to_state_bin>
+sntpd -z <path_to_state.bin>

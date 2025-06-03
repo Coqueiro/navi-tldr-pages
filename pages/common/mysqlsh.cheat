@@ -19,7 +19,7 @@ mysqlsh --js
 mysqlsh --py
 
 # Import JSON documents into a MySQL collection
-mysqlsh --import <path_to_file_json> --schema <schema_name> --collection <collection_name>
+mysqlsh --import <path_to_file.json> --schema <schema_name> --collection <collection_name>
 
 # Enable verbose output
 mysqlsh --verbose

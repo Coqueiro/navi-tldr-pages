@@ -7,7 +7,7 @@
 go tool
 
 # Run the go link tool
-go tool link <path_to_main_o>
+go tool link <path_to_main.o>
 
 # Print the command that would be executed, but do not execute it (similar to `whereis`)
 go tool -n <command> <arguments>

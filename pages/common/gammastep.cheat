@@ -10,7 +10,7 @@ gammastep -t <5700>:<3600>
 gammastep -l <latitude>:<longitude>
 
 # Turn on Gammastep with a specific screen [b]rightness during the day (e.g. 70%) and at night (e.g. 40%), with minimum brightness 10% and maximum brightness 100%
-gammastep -b <0_7>:<0_4>
+gammastep -b <0.7>:<0.4>
 
 # Turn on Gammastep with custom [g]amma levels (between 0 and 1)
 gammastep -g <red>:<green>:<blue>

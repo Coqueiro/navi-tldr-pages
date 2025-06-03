@@ -4,7 +4,7 @@
 % docker-context, common
 
 # Create a context using a specific Docker endpoint
-docker context create <my_context> --docker "host=<tcp___remote_host_2375>"
+docker context create <my_context> --docker "host=<tcp:__remote-host:2375>"
 
 # Create a context based on the `DOCKER_HOST` environment variable
 docker context create <my_context>

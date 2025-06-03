@@ -7,10 +7,10 @@
 docker swarm init
 
 # Display the token to join a manager or a worker
-docker swarm join-token <worker_manager>
+docker swarm join-token <worker|manager>
 
 # Join a new node to the cluster
-docker swarm join --token <token> <manager_node_url_2377>
+docker swarm join --token <token> <manager_node_url:2377>
 
 # Remove a worker from the swarm (run inside the worker node)
 docker swarm leave

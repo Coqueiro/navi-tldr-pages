@@ -3,4 +3,11 @@
 
 % crane-catalog, common
 
+# List the repositories in a registry
+crane catalog <registry_address>
 
+# Print the full image reference
+crane catalog <registry_address> --full-ref
+
+# Display help
+crane catalog <-h|--help>

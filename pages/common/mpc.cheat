@@ -19,4 +19,4 @@ mpc next
 mpc prev
 
 # Seek `n` seconds forward (`+`) or backward (`-`)
-mpc <_n__n>
+mpc <+n|-n>

@@ -7,7 +7,7 @@
 git show-ref
 
 # Show only heads references
-git show-ref --branches
+git show-ref --heads
 
 # Show only tags references
 git show-ref --tags

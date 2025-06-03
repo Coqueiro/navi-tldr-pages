@@ -4,10 +4,10 @@
 % pammixinterlace, common
 
 # Merge each row in an image with its two neighbours
-pammixinterlace <path_to_image_ppm> > <path_to_output_ppm>
+pammixinterlace <path_to_image.ppm> > <path_to_output.ppm>
 
 # Use the specified filtering mechanism
-pammixinterlace {{[-f|-filter]}} <linear_fir_ffmpeg> <path_to_image_ppm> > <path_to_output_ppm>
+pammixinterlace -filter <linear|fir|ffmpeg> <path_to_image.ppm> > <path_to_output.ppm>
 
 # Turn on adaptive filtering mode, i.e., only modify pixels that are obviously part of a comb pattern
-pammixinterlace {{[-a|-adaptive]}} <path_to_image_ppm> > <path_to_output_ppm>
+pammixinterlace -adaptive <path_to_image.ppm> > <path_to_output.ppm>

@@ -4,7 +4,7 @@
 % mcfly, common
 
 # Print the mcfly integration code for the specified shell
-mcfly init <bash_fish_zsh>
+mcfly init <bash|fish|zsh>
 
 # Search the history for a command, with 20 results
 mcfly search --results <20> "<search_terms>"

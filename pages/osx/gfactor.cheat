@@ -4,4 +4,4 @@
 % gfactor, osx
 
 # View documentation for the original command
-tldr factor
+tldr -p linux factor

@@ -7,4 +7,4 @@
 idevicescreenshot
 
 # Save a screenshot with a specific file name
-idevicescreenshot <path_to_file_tiff>
+idevicescreenshot <path_to_file.tiff>

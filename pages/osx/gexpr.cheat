@@ -4,4 +4,4 @@
 % gexpr, osx
 
 # View documentation for the original command
-tldr expr
+tldr -p linux expr

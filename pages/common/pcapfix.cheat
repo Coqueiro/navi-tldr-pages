@@ -3,17 +3,17 @@
 
 % pcapfix, common
 
-# Repair a PCAP/PCapNG file (Note: For PCAP files, only the first 262144 bytes of each packet are scanned)
-pcapfix <path_to_file_pcapng>
+# Repair a PCAP/PCapNG file (Note: for PCAP files, only the first 262144 bytes of each packet are scanned)
+pcapfix <path_to_file.pcapng>
 
 # Repair an entire PCAP file
-pcapfix --deep-scan <path_to_file_pcap>
+pcapfix --deep-scan <path_to_file.pcap>
 
 # Repair a PCAP/PcapNG file and write the repaired file to the specified location
-pcapfix --outfile <path_to_repaired_pcap> <path_to_file_pcap>
+pcapfix --outfile <path_to_repaired.pcap> <path_to_file.pcap>
 
 # Treat the specified file as a PcapNG file, ignoring automatic recognition
-pcapfix --pcapng <path_to_file_pcapng>
+pcapfix --pcapng <path_to_file.pcapng>
 
 # Repair a file and show the process in detail
-pcapfix --verbose <path_to_file_pcap>
+pcapfix --verbose <path_to_file.pcap>

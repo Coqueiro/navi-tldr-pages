@@ -7,7 +7,7 @@
 sbt
 
 # Create a new Scala project from an existing Giter8 template hosted on GitHub
-sbt new <scala_hello_world_g8>
+sbt new <scala_hello-world.g8>
 
 # Compile and run all tests
 sbt test

@@ -4,4 +4,4 @@
 % gexpand, osx
 
 # View documentation for the original command
-tldr expand
+tldr -p linux expand

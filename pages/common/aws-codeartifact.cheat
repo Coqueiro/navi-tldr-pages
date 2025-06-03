@@ -7,10 +7,10 @@
 aws codeartifact list-domains
 
 # Generate credentials for a specific package manager
-aws codeartifact login --tool <npm_pip_twine> --domain <your_domain> --repository <repository_name>
+aws codeartifact login --tool <npm|pip|twine> --domain <your_domain> --repository <repository_name>
 
 # Get the endpoint URL of a CodeArtifact repository
-aws codeartifact get-repository-endpoint --domain <your_domain> --repository <repository_name> --format <npm_pypi_maven_nuget_generic>
+aws codeartifact get-repository-endpoint --domain <your_domain> --repository <repository_name> --format <npm|pypi|maven|nuget|generic>
 
 # Display help
 aws codeartifact help

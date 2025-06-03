@@ -4,4 +4,4 @@
 % grealpath, osx
 
 # View documentation for the original command
-tldr realpath
+tldr -p linux realpath

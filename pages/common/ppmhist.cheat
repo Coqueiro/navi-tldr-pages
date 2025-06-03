@@ -4,10 +4,10 @@
 % ppmhist, common
 
 # Generate the histogram for human reading
-ppmhist {{[-nom|-nomap]}} <path_to_image_ppm>
+ppmhist -nomap <path_to_image.ppm>
 
 # Generate a PPM file of the colormap for the image, with the color histogram as comments
-ppmhist {{[-m|-map]}} <path_to_image_ppm>
+ppmhist -map <path_to_image.ppm>
 
 # Display version
-ppmhist {{[-v|-version]}}
+ppmhist -version

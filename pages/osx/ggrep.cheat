@@ -4,4 +4,4 @@
 % ggrep, osx
 
 # View documentation for the original command
-tldr grep
+tldr -p linux grep

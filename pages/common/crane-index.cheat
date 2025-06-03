@@ -3,4 +3,11 @@
 
 % crane-index, common
 
+# Modify an image index
+crane index
 
+# Modify an image index with subcommand
+crane index <subcommand>
+
+# Display help
+crane index <-h|--help>

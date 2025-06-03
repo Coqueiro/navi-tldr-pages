@@ -10,13 +10,13 @@ difft <path_to_file_or_directory1> <path_to_file_or_directory2>
 difft --check-only <path_to_file1> <path_to_file2>
 
 # Specify the display mode (default is `side-by-side`)
-difft --display <side_by_side_side_by_side_show_both_inline_json> <path_to_file1> <path_to_file2>
+difft --display <side-by-side|side-by-side-show-both|inline|json> <path_to_file1> <path_to_file2>
 
 # Ignore comments when comparing
 difft --ignore-comments <path_to_file1> <path_to_file2>
 
 # Enable/Disable syntax highlighting of source code (default is `on`)
-difft --syntax-highlight <on_off> <path_to_file1> <path_to_file2>
+difft --syntax-highlight <on|off> <path_to_file1> <path_to_file2>
 
 # Do not output anything at all if there are no differences between files
 difft --skip-unchanged <path_to_file_or_directory1> <path_to_file_or_directory2>

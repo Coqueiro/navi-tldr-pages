@@ -10,13 +10,13 @@ hardhat
 hardhat compile
 
 # Run a user-defined script after compiling the project
-hardhat run <path_to_script_js>
+hardhat run <path_to_script.js>
 
 # Run Mocha tests
 hardhat test
 
 # Run all given test files
-hardhat test <path_to_file1_js> <path_to_file2_js>
+hardhat test <path_to_file1.js> <path_to_file2.js>
 
 # Start a local Ethereum JSON-RPC node for development
 hardhat node

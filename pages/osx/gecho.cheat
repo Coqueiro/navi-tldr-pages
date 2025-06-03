@@ -4,4 +4,4 @@
 % gecho, osx
 
 # View documentation for the original command
-tldr echo
+tldr -p linux echo

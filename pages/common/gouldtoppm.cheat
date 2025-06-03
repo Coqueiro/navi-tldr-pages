@@ -4,4 +4,4 @@
 % gouldtoppm, common
 
 # Convert a Gould scanner file to a PPM image
-gouldtoppm <path_to_file_gould> > <path_to_output_ppm>
+gouldtoppm <path_to_file.gould> > <path_to_output.ppm>

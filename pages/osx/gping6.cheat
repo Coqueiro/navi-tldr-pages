@@ -4,4 +4,4 @@
 % gping6, osx
 
 # View documentation for the original command
-tldr ping6
+tldr -p linux ping6

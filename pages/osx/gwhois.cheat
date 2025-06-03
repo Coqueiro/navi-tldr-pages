@@ -4,4 +4,4 @@
 % gwhois, osx
 
 # View documentation for the original command
-tldr whois
+tldr -p linux whois

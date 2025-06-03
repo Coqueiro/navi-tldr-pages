@@ -4,4 +4,4 @@
 % ppmtopuzz, common
 
 # Convert a PPM image to an X11 puzzle file
-ppmtopuzz <path_to_file_ppm> > <path_to_file_puzz>
+ppmtopuzz <path_to_file.ppm> > <path_to_file.puzz>

@@ -4,4 +4,4 @@
 % gfalse, osx
 
 # View documentation for the original command
-tldr false
+tldr -p linux false

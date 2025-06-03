@@ -4,4 +4,4 @@
 % ghostid, osx
 
 # View documentation for the original command
-tldr hostid
+tldr -p linux hostid

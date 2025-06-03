@@ -4,4 +4,4 @@
 % gtouch, osx
 
 # View documentation for the original command
-tldr touch
+tldr -p linux touch

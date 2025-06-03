@@ -4,13 +4,13 @@
 % immich-go, common
 
 # Upload a Google Photos takeout file to Immich server
-immich-go -server=<server_url> -key=<server_key> upload <path_to_takeout_file_zip>
+immich-go -server=<server_url> -key=<server_key> upload <path_to_takeout_file.zip>
 
 # Import photos captured on June 2019, while auto-generating albums
-immich-go -server=<server_url> -key=<server_key> upload -create-albums -google-photos -date=<2019_06> <path_to_takeout_file_zip>
+immich-go -server=<server_url> -key=<server_key> upload -create-albums -google-photos -date=<2019-06> <path_to_takeout_file.zip>
 
 # Upload a takeout file using server and key from a config file
-immich-go -use-configuration=<___immich_go_immich_go_json> upload <path_to_takeout_file_zip>
+immich-go -use-configuration=<~/.immich-go/immich-go.json> upload <path_to_takeout_file.zip>
 
 # Examine Immich server content, remove less quality images, and preserve albums
 immich-go -server=<server_url> -key=<server_key> duplicate -yes

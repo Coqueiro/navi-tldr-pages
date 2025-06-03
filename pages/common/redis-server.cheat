@@ -13,7 +13,7 @@ redis-server --daemonize yes
 redis-server --port <port> --daemonize yes
 
 # Start Redis server with a custom configuration file
-redis-server <path_to_redis_conf>
+redis-server <path_to_redis.conf>
 
 # Start Redis server with verbose logging
-redis-server --loglevel <warning_notice_verbose_debug>
+redis-server --loglevel <warning|notice|verbose|debug>

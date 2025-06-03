@@ -4,4 +4,4 @@
 % ybmtopbm, common
 
 # Convert a YBM image file to PBM
-ybmtopbm <path_to_input_file_ybm> > <path_to_output_file_pbm>
+ybmtopbm <path_to_input_file.ybm> > <path_to_output_file.pbm>

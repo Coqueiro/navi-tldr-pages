@@ -4,25 +4,25 @@
 % find, common
 
 # Find files by extension
-find <root_path> -name '{{*.ext}}'
+find <root_path> -name '<*.ext>'
 
 # Find files matching multiple path/name patterns
-find <root_path> -path '{{*/path/*/*.ext}}' -or -name '{{*pattern*}}'
+find <root_path> -path '<**_path_**_*.ext>' -or -name '<*pattern*>'
 
 # Find directories matching a given name, in case-insensitive mode
-find <root_path> -type d -iname '{{*lib*}}'
+find <root_path> -type d -iname '<*lib*>'
 
 # Find files matching a given pattern, excluding specific paths
-find <root_path> -name '{{*.py}}' -not -path '{{*/site-packages/*}}'
+find <root_path> -name '<*.py>' -not -path '<*_site-packages_*>'
 
 # Find files matching a given size range, limiting the recursive depth to "1"
-find <root_path> -maxdepth 1 -size <_500k> -size <_10M>
+find <root_path> -maxdepth 1 -size <+500k> -size <-10M>
 
 # Run a command for each file (use `{}` within the command to access the filename)
-find <root_path> -name '{{*.ext}}' -exec {{wc -l}} {} \;
+find <root_path> -name '<*.ext>' -exec <wc -l> {} \;
 
 # Find all files modified today and pass the results to a single command as arguments
-find <root_path> -daystart -mtime <_1> -exec {{tar -cvf archive.tar}} {} \+
+find <root_path> -daystart -mtime <-1> -exec <tar -cvf archive.tar> {} \+
 
-# Search for either empty files or directories and delete them verbosely
-find <root_path> -type <f_d> -empty -delete -print
+# Find empty files (0 byte) or directories and delete them verbosely
+find <root_path> -type <f|d> -empty -delete -print

@@ -4,7 +4,7 @@
 % pipx, common
 
 # Run an app in a temporary virtual environment
-pipx run <pycowsay> <___>
+pipx run <pycowsay> <moo>
 
 # Install a package in a virtual environment and add entry points to path
 pipx install <package>
@@ -13,13 +13,13 @@ pipx install <package>
 pipx list
 
 # Run an app in a temporary virtual environment with a package name different from the executable
-pipx run --spec <httpx_cli> <httpx> <http___www_github_com>
+pipx run --spec <httpx-cli> <httpx> <http:__www.github.com>
 
 # Inject dependencies into an existing virtual environment
-pipx inject <package> {{dependency1 dependency2 ...}}
+pipx inject <package> <dependency1 dependency2 ...>
 
 # Install a package in a virtual environment with pip arguments
-pipx install --pip-args='<pip_args>' <package>
+pipx install --pip-args='<pip-args>' <package>
 
 # Upgrade/reinstall/uninstall all installed packages
-pipx <upgrade_all_uninstall_all_reinstall_all>
+pipx <upgrade-all|uninstall-all|reinstall-all>

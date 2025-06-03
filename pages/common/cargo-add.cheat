@@ -19,7 +19,7 @@ cargo add <dependency> --optional
 cargo add --path <path_to_crate_directory>
 
 # Add a development or build dependency
-cargo add <dependency> --<dev_build>
+cargo add <dependency> --<dev|build>
 
 # Add a dependency with all default features disabled
 cargo add <dependency> --no-default-features

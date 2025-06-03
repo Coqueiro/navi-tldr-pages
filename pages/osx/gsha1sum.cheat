@@ -4,4 +4,4 @@
 % gsha1sum, osx
 
 # View documentation for the original command
-tldr sha1sum
+tldr -p linux sha1sum

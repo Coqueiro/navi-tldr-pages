@@ -4,4 +4,4 @@
 % gtr, osx
 
 # View documentation for the original command
-tldr tr
+tldr -p linux tr

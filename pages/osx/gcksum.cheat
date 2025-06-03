@@ -4,4 +4,4 @@
 % gcksum, osx
 
 # View documentation for the original command
-tldr cksum
+tldr -p linux cksum

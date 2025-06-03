@@ -4,13 +4,13 @@
 % xml-canonic, common
 
 # Make an XML document canonical, preserving comments
-xml {{[c14n|canonic]}} <path_to_input_xml_URI> > <path_to_output_xml>
+xml canonic <path_to_input.xml|URI> > <path_to_output.xml>
 
 # Make an XML document canonical, removing comments
-xml {{[c14n|canonic]}} --without-comments <path_to_input_xml_URI> > <path_to_output_xml>
+xml canonic --without-comments <path_to_input.xml|URI> > <path_to_output.xml>
 
 # Make XML exclusively canonical, using an XPATH from a file, preserving comments
-xml {{[c14n|canonic]}} --exc-with-comments <path_to_input_xml_URI> <path_to_c14n_xpath>
+xml canonic --exc-with-comments <path_to_input.xml|URI> <path_to_c14n.xpath>
 
 # Display help
-xml {{[c14n|canonic]}} --help
+xml canonic --help

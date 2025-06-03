@@ -4,25 +4,25 @@
 % dig, common
 
 # Lookup the IP(s) associated with a hostname (A records)
-dig +short <example_com>
+dig +short <example.com>
 
 # Get a detailed answer for a given domain (A records)
-dig +noall +answer <example_com>
+dig +noall +answer <example.com>
 
 # Query a specific DNS record type associated with a given domain name
-dig +short <example_com> <A_MX_TXT_CNAME_NS>
+dig +short <example.com> <A|MX|TXT|CNAME|NS>
 
 # Specify an alternate DNS server to query and optionally use DNS over TLS (DoT)
-dig <_tls> @<1_1_1_1_8_8_8_8_9_9_9_9____> <example_com>
+dig <+tls> @<1.1.1.1|8.8.8.8|9.9.9.9|...> <example.com>
 
 # Perform a reverse DNS lookup on an IP address (PTR record)
-dig -x <8_8_8_8>
+dig -x <8.8.8.8>
 
 # Find authoritative name servers for the zone and display SOA records
-dig +nssearch <example_com>
+dig +nssearch <example.com>
 
 # Perform iterative queries and display the entire trace path to resolve a domain name
-dig +trace <example_com>
+dig +trace <example.com>
 
 # Query a DNS server over a non-standard [p]ort using the TCP protocol
-dig +tcp -p <port> @<dns_server_ip> <example_com>
+dig +tcp -p <port> @<dns_server_ip> <example.com>

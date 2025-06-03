@@ -13,4 +13,4 @@ log stream --process <process_id>
 log show --predicate "process == '<process_name>'"
 
 # Export all logs to disk for the past hour
-sudo log collect --last <1h> --output <path_to_file_logarchive>
+sudo log collect --last <1h> --output <path_to_file.logarchive>

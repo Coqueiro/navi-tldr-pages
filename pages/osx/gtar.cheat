@@ -4,4 +4,4 @@
 % gtar, osx
 
 # View documentation for the original command
-tldr tar
+tldr -p linux tar

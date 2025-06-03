@@ -16,7 +16,7 @@ upt info <package>
 upt install <package>
 
 # Remove a given package
-upt <remove_uninstall> <package>
+upt <remove|uninstall> <package>
 
 # Upgrade all installed packages
 upt upgrade

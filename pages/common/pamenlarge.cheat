@@ -4,7 +4,7 @@
 % pamenlarge, common
 
 # Enlarge the specified image by the specified factor
-pamenlarge {{[-s|-scale]}} <n> <path_to_image_pam> > <path_to_output_pam>
+pamenlarge -scale <N> <path_to_image.pam> > <path_to_output.pam>
 
 # Enlarge the specified image by the specified factors horizontally and vertically
-pamenlarge {{[-x|-xscale]}} <xn> {{[-y|-yscale]}} <yn> <path_to_image_pam> > <path_to_output_pam>
+pamenlarge -xscale <XN> -yscale <YN> <path_to_image.pam> > <path_to_output.pam>

@@ -3,4 +3,8 @@
 
 % mc, common
 
+# Start Midnight Commander
+mc
 
+# Start Midnight Commander in black and white
+mc -b

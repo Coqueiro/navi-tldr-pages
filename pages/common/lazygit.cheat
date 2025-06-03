@@ -10,7 +10,7 @@ lazygit
 lazygit --path <path_to_repository>
 
 # Start Lazygit with focus on a specific panel
-lazygit <status_branch_log_stash____>
+lazygit <status|branch|log|stash|...>
 
 # Print the default Lazygit configuration
 lazygit --config

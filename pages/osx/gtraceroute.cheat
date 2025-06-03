@@ -4,4 +4,4 @@
 % gtraceroute, osx
 
 # View documentation for the original command
-tldr traceroute
+tldr -p linux traceroute

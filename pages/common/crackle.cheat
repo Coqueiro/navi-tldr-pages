@@ -4,10 +4,10 @@
 % crackle, common
 
 # Check whether the recorded BLE communications contain the packets necessary for recovering temporary keys (TKs)
-crackle -i <path_to_input_pcap>
+crackle -i <path_to_input.pcap>
 
 # Use brute force to recover the TK of the recorded pairing events and use it to decrypt all subsequent communications
-crackle -i <path_to_input_pcap> -o <path_to_decrypted_pcap>
+crackle -i <path_to_input.pcap> -o <path_to_decrypted.pcap>
 
 # Use the specified long-term key (LTK) to decrypt the recorded communication
-crackle -i <path_to_input_pcap> -o <path_to_decrypted_pcap> -l <81b06facd90fe7a6e9bbd9cee59736a7>
+crackle -i <path_to_input.pcap> -o <path_to_decrypted.pcap> -l <81b06facd90fe7a6e9bbd9cee59736a7>

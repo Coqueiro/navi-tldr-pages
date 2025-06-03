@@ -19,10 +19,10 @@ corepack prepare <package_manager>@<version> --activate
 corepack prepare
 
 # Use a package manager without installing it as a global command
-corepack <npm_pnpm_yarn> <package_manager_arguments>
+corepack <npm|pnpm|yarn> <package_manager_arguments>
 
 # Install a package manager from the specified archive
-corepack hydrate <path_to_corepack_tgz>
+corepack hydrate <path_to_corepack.tgz>
 
 # Display help for a subcommand
 corepack <subcommand> --help

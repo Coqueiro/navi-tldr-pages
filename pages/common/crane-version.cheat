@@ -3,4 +3,8 @@
 
 % crane-version, common
 
+# Display version
+crane version
 
+# Display help
+crane version <-h|--help>

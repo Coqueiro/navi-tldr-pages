@@ -4,13 +4,13 @@
 % ilbmtoppm, common
 
 # Convert an ILBM file to a PPM image
-ilbmtoppm <path_to_file_ilbm> > <path_to_file_ppm>
+ilbmtoppm <path_to_file.ilbm> > <path_to_file.ppm>
 
 # Use the specified color to "show through" where the image is transparent
-ilbmtoppm {{[-t|-transparent]}} <color> <path_to_file_ilbm> > <path_to_file_ppm>
+ilbmtoppm -transparent <color> <path_to_file.ilbm> > <path_to_file.ppm>
 
 # Ignore the chunk with the specified chunk ID
-ilbmtoppm {{[-ig|-ignore]}} <chunkID> <path_to_file_ilbm> > <path_to_file_ppm>
+ilbmtoppm -ignore <chunkID> <path_to_file.ilbm> > <path_to_file.ppm>
 
 # Store the input's transparency information to the specified PBM file
-ilbmtoppm {{[-m|-maskfile]}} <path_to_maskfile_pbm> <path_to_file_ilbm> > <path_to_file_ppm>
+ilbmtoppm -maskfile <path_to_maskfile.pbm> <path_to_file.ilbm> > <path_to_file.ppm>

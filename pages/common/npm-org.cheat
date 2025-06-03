@@ -7,7 +7,7 @@
 npm org set <organization_name> <username>
 
 # Change a user's role in an organization
-npm org set <organization_name> <username> <developer_admin_owner>
+npm org set <organization_name> <username> <developer|admin|owner>
 
 # Remove a user from an organization
 npm org rm <organization_name> <username>

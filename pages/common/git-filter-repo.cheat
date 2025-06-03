@@ -13,4 +13,4 @@ git filter-repo --path <path_to_folder>
 git filter-repo --path <path_to_folder> --invert-paths
 
 # Move everything from sub-folder one level up
-git filter-repo --path-rename <path_to_folder__>
+git filter-repo --path-rename <path_to_folder_:>

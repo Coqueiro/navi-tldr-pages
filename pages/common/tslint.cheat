@@ -7,7 +7,7 @@
 tslint --init
 
 # Lint on a given set of files
-tslint {{path/to/file1.js path/to/file2.js ...}}
+tslint <path_to_file1.js path_to_file2.js ...>
 
 # Fix lint issues
 tslint --fix

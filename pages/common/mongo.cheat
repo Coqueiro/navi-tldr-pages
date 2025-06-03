@@ -13,4 +13,4 @@ mongo --host <host> --port <port> <db_name>
 mongo --host <host> --port <port> --username <username> --authenticationDatabase <authdb_name> <db_name>
 
 # Evaluate a JavaScript expression on a database
-mongo --eval '<JSON_stringify_db_foo_findOne___>' <db_name>
+mongo --eval '<JSON.stringify(db.foo.findOne())>' <db_name>

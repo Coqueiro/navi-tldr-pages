@@ -4,4 +4,4 @@
 % pbmtoybm, common
 
 # Convert a PBM image file to YBM
-pbmtoybm <path_to_input_file_pbm> > <path_to_output_file_ybm>
+pbmtoybm <path_to_input_file.pbm> > <path_to_output_file.ybm>

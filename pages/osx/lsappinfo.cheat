@@ -10,4 +10,4 @@ lsappinfo list
 lsappinfo front
 
 # Show the information for a specific application
-lsappinfo info <com_apple_calculator>
+lsappinfo info <com.apple.calculator>

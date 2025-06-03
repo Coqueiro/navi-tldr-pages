@@ -4,16 +4,16 @@
 % rawtoppm, common
 
 # Convert a raw RGB stream to a PPM image
-rawtoppm <width> <height> <path_to_image_raw> > <path_to_output_ppm>
+rawtoppm <width> <height> <path_to_image.raw> > <path_to_output.ppm>
 
 # Convert a raw RGB stream in which the pixels come bottom-first instead of top-first to a PPM image
-rawtoppm <width> <height> <path_to_image_raw> | pamflip {{[-tb|-topbottom]}} > <path_to_output_ppm>
+rawtoppm <width> <height> <path_to_image.raw> | pamflip -tb > <path_to_output.ppm>
 
 # Ignore the first n bytes of the specified file
-rawtoppm <width> <height> {{[-h|-headerskip]}} <n> <path_to_image_raw> > <path_to_output_ppm>
+rawtoppm <width> <height> -headerskip <n> <path_to_image.raw> > <path_to_output.ppm>
 
 # Ignore the last m bytes of each row in the specified file
-rawtoppm <width> <height> {{[-ro|-rowskip]}} <__tb__topbottom_> <path_to_image_raw> > <path_to_output_ppm>
+rawtoppm <width> <height> -rowskip <m> <path_to_image.raw> > <path_to_output.ppm>
 
 # Specify the order of color components for each pixel
-rawtoppm <width> <height> -<rgb_rbg_grb_gbr_brg_bgr> <path_to_image_raw> > <path_to_output_ppm>
+rawtoppm <width> <height> -<rgb|rbg|grb|gbr|brg|bgr> <path_to_image.raw> > <path_to_output.ppm>

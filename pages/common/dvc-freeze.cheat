@@ -4,4 +4,4 @@
 % dvc-freeze, common
 
 # Freeze one or more specified stages
-dvc freeze {{stage_name1 stage_name2 ...}}
+dvc freeze <stage_name1 stage_name2 ...>

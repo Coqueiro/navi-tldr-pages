@@ -16,7 +16,7 @@ expr match "<string>" '<pattern>'
 expr index "<string>" "<chars>"
 
 # Calculate a specific mathematic expression
-expr <expression1> {{+|-|*|/|%}} <expression2>
+expr <expression1> <+|-|*|_|%> <expression2>
 
 # Get the first expression if its value is non-zero and not null otherwise get the second one
 expr <expression1> \| <expression2>

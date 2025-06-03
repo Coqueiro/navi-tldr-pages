@@ -4,4 +4,4 @@
 % gvdir, osx
 
 # View documentation for the original command
-tldr vdir
+tldr -p linux vdir

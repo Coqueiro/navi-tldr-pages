@@ -4,4 +4,4 @@
 % sam2p, common
 
 # Concatenate all PDF files into one
-sam2p *.pdf <path_to_output_pdf>
+sam2p *.pdf <path_to_output.pdf>

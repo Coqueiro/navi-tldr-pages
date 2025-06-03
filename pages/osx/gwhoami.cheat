@@ -4,4 +4,4 @@
 % gwhoami, osx
 
 # View documentation for the original command
-tldr whoami
+tldr -p linux whoami

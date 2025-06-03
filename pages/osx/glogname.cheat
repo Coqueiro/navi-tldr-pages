@@ -4,4 +4,4 @@
 % glogname, osx
 
 # View documentation for the original command
-tldr logname
+tldr -p linux logname

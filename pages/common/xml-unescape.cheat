@@ -4,10 +4,10 @@
 % xml-unescape, common
 
 # Unescape special XML characters from a string
-xml {{[unesc|unescape]}} "<_lt_a1_gt_>"
+xml unescape "<&lt;a1&gt;>"
 
 # Unescape special XML characters from `stdin`
-echo "<_lt_a1_gt_>" | xml {{[unesc|unescape]}}
+echo "<&lt;a1&gt;>" | xml unescape
 
 # Display help
-xml {{[esc|escape]}} --help
+xml escape --help

@@ -4,10 +4,10 @@
 % xetex, common
 
 # Compile a PDF document
-xetex <source_tex>
+xetex <source.tex>
 
 # Compile a PDF document, specifying an output directory
-xetex -output-directory=<path_to_directory> <source_tex>
+xetex -output-directory=<path_to_directory> <source.tex>
 
 # Compile a PDF document, exiting if errors occur
-xetex -halt-on-error <source_tex>
+xetex -halt-on-error <source.tex>

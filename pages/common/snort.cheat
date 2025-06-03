@@ -16,4 +16,4 @@ sudo snort -ve -i <interface>
 sudo snort -i <interface> -l <path_to_directory>
 
 # Capture packets according to rules and save offending packets along with alerts
-sudo snort -i <interface> -c <path_to_rules_conf> -l <path_to_directory>
+sudo snort -i <interface> -c <path_to_rules.conf> -l <path_to_directory>

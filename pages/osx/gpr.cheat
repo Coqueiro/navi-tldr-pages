@@ -4,4 +4,4 @@
 % gpr, osx
 
 # View documentation for the original command
-tldr pr
+tldr -p linux pr

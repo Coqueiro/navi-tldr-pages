@@ -16,4 +16,4 @@ aspell dicts
 aspell --lang=<cs>
 
 # List misspelled words from `stdin` and ignore words from personal word list
-cat <path_to_file> | aspell --personal=<personal_word_list_pws> list
+cat <path_to_file> | aspell --personal=<personal-word-list.pws> list

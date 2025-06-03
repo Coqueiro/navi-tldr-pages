@@ -4,25 +4,25 @@
 % step, common
 
 # Inspect the contents of a certificate
-step certificate inspect <path_to_certificate_crt>
+step certificate inspect <path_to_certificate.crt>
 
 # Create a root CA certificate and a key (append `--no-password --insecure` to skip private key password protection)
-step certificate create "{{Example Root CA}}" <path_to_root_ca_crt> <path_to_root_ca_key> --profile root-ca
+step certificate create "<Example Root CA>" <path_to_root-ca.crt> <path_to_root-ca.key> --profile root-ca
 
 # Generate a certificate for a specific hostname and sign it with the root CA (generating a CSR can be skipped for simplification)
-step certificate create <hostname_example_com> <path_to_hostname_crt> <path_to_hostname_key> --profile leaf --ca <path_to_root_ca_crt> --ca-key <path_to_root_ca_key>
+step certificate create <hostname.example.com> <path_to_hostname.crt> <path_to_hostname.key> --profile leaf --ca <path_to_root-ca.crt> --ca-key <path_to_root-ca.key>
 
 # Verify a certificate chain
-step certificate verify <path_to_hostname_crt> --roots <path_to_root_ca_crt> --verbose
+step certificate verify <path_to_hostname.crt> --roots <path_to_root-ca.crt> --verbose
 
 # Convert a PEM format certificate to DER and write it to disk
-step certificate format <path_to_certificate_pem> --out <path_to_certificate_der>
+step certificate format <path_to_certificate.pem> --out <path_to_certificate.der>
 
 # Install or uninstall a root certificate in the system's default trust store
-step certificate <install_uninstall> <path_to_root_ca_crt>
+step certificate <install|uninstall> <path_to_root-ca.crt>
 
 # Create a RSA/EC private and public keypair (append `--no-password --insecure` to skip private key password protection)
-step crypto keypair <path_to_public_key> <path_to_private_key> --kty <RSA_EC>
+step crypto keypair <path_to_public_key> <path_to_private_key> --kty <RSA|EC>
 
 # Show help for subcommands
-step <path_base64_certificate_completion_context_crl_crypto_oauth_ca_beta_ssh> --help
+step <path|base64|certificate|completion|context|crl|crypto|oauth|ca|beta|ssh> --help

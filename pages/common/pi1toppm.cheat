@@ -4,4 +4,4 @@
 % pi1toppm, common
 
 # Convert an Atari Degas PI1 image into PPM image
-pi1toppm <path_to_atari_image_pi1> > <path_to_image_ppm>
+pi1toppm <path_to_atari_image.pi1> > <path_to_image.ppm>

@@ -4,4 +4,4 @@
 % gdircolors, osx
 
 # View documentation for the original command
-tldr dircolors
+tldr -p linux dircolors

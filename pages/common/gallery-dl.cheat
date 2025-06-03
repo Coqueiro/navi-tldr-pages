@@ -16,4 +16,4 @@ gallery-dl --cookies-from-browser <browser> "<url>"
 gallery-dl --get-urls --username <username> --password <password> "<url>"
 
 # Filter manga chapters by chapter number and language
-gallery-dl --chapter-filter "{{10 <= chapter < 20}}" --option "lang=<language_code>" "<url>"
+gallery-dl --chapter-filter "<10 <= chapter < 20>" --option "lang=<language_code>" "<url>"

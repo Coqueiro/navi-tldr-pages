@@ -10,19 +10,19 @@ emulator -avd <name>
 emulator -avd <name> -webcam-list
 
 # Start an emulator overriding the facing back camera setting (use `-camera-front` for front camera)
-emulator -avd <name> -camera-back <none_emulated_webcamN>
+emulator -avd <name> -camera-back <none|emulated|webcamN>
 
 # Start an emulator, with a maximum network speed
-emulator -avd <name> -netspeed <gsm_hscsd_gprs_edge_hsdpa_lte_evdo_full>
+emulator -avd <name> -netspeed <gsm|hscsd|gprs|edge|hsdpa|lte|evdo|full>
 
 # Start an emulator with network latency
-emulator -avd <name> -netdelay <gsm_hscsd_gprs_edge_hsdpa_lte_evdo_none>
+emulator -avd <name> -netdelay <gsm|hscsd|gprs|edge|hsdpa|lte|evdo|none>
 
 # Start an emulator, making all TCP connections through a specified HTTP/HTTPS proxy (port number is required)
-emulator -avd <name> -http-proxy <http___example_com_80>
+emulator -avd <name> -http-proxy <http:__example.com:80>
 
 # Start an emulator with a given SD card partition image file
-emulator -avd <name> -sdcard <path_to_sdcard_img>
+emulator -avd <name> -sdcard <path_to_sdcard.img>
 
 # Display help
 emulator -help

@@ -4,7 +4,7 @@
 % sequelize, common
 
 # Create a model with 3 fields and a migration file
-sequelize model:generate --name <table_name> --attributes <field1_integer_field2_string_field3_boolean>
+sequelize model:generate --name <table_name> --attributes <field1:integer,field2:string,field3:boolean>
 
 # Run the migration file
 sequelize db:migrate

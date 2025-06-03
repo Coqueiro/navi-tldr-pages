@@ -25,4 +25,4 @@ cs uninstall <application_name>
 cs list
 
 # Pass specific Java options to an installed application
-<application_name> {{-Jjava_option_name1=value1 -Jjava_option_name2=value2 ...}}
+<application_name> <-Jjava_option_name1=value1 -Jjava_option_name2=value2 ...>

@@ -4,4 +4,4 @@
 % gbasename, osx
 
 # View documentation for the original command
-tldr basename
+tldr -p linux basename

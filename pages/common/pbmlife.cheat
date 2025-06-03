@@ -4,7 +4,7 @@
 % pbmlife, common
 
 # Apply the Rules of Life to an input PBM image file for one generation and the output the result as a PBM image file
-pbmlife <path_to_file_pbm>
+pbmlife <path_to_file.pbm>
 
 # Display version
-pbmlife {{[-v|-version]}}
+pbmlife -version

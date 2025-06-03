@@ -4,4 +4,4 @@
 % genv, osx
 
 # View documentation for the original command
-tldr env
+tldr -p linux env

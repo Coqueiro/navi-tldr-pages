@@ -16,4 +16,4 @@ balena apps
 balena devices
 
 # Flash a balenaOS image to a local drive
-balena local flash <path_to_balenaos_img> --drive <drive_location>
+balena local flash <path_to_balenaos.img> --drive <drive_location>

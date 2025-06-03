@@ -10,10 +10,10 @@ su -c chpass
 chpass -s <path_to_shell>
 
 # Set a login [s]hell for a specific user
-chpass -s <path_to_shell> <username>
+chpass chsh -s <path_to_shell> <username>
 
 # Specify a user database entry in the `passwd` file format
-su -c 'chpass -a <username_encrypted_password_uid_gid____> -s <path_to_file>' <username>
+su -c 'chpass -a <username:encrypted_password:uid:gid:...> -s <path_to_file>' <username>
 
 # Only update the [l]ocal password file
 su -c 'chpass -l -s <path_to_shell>' <username>

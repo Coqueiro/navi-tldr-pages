@@ -13,7 +13,7 @@ pint -v
 pint --test
 
 # Execute code style fixes using a specific configuration file
-pint --config <path_to_pint_json>
+pint --config <path_to_pint.json>
 
 # Execute code style fixes using a specific preset
 pint --preset <psr12>

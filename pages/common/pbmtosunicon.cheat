@@ -4,4 +4,4 @@
 % pbmtosunicon, common
 
 # Convert a PBM image into a Sun icon
-pbmtosunicon <path_to_input_pbm> > <path_to_output_ico>
+pbmtosunicon <path_to_input.pbm> > <path_to_output.ico>

@@ -4,10 +4,10 @@
 % pnmpaste, common
 
 # Paste a PNM image into another PNM image at the specified coordinates
-pnmpaste <x> <y> <path_to_image1_pnm> <path_to_image2_pnm> > <path_to_output_pnm>
+pnmpaste <x> <y> <path_to_image1.pnm> <path_to_image2.pnm> > <path_to_output.pnm>
 
 # Paste the image read from `stdin` into the specified image
-<command> | pnmpaste <x> <y> <path_to_image_pnm> > <path_to_output_pnm>
+<command> | pnmpaste <x> <y> <path_to_image.pnm> > <path_to_output.pnm>
 
 # Combine the overlapping pixels by the specified boolean operation, where white pixels represent `true` while black pixels represent `false`
-pnmpaste -<and_nand_or_nor_xor_xnor> <x> <y> <path_to_image1_pnm> <path_to_image2_pnm> > <path_to_output_pnm>
+pnmpaste -<and|nand|or|nor|xor|xnor> <x> <y> <path_to_image1.pnm> <path_to_image2.pnm> > <path_to_output.pnm>

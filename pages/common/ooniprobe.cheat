@@ -16,10 +16,10 @@ ooniprobe run all
 ooniprobe run <performance>
 
 # Check the availability of a specific website
-ooniprobe run websites --input <https___ooni_org_>
+ooniprobe run websites --input <https:__ooni.org_>
 
 # Check the availability of all websites listed in a file
-ooniprobe run websites --input-file <path_to_my_websites_txt>
+ooniprobe run websites --input-file <path_to_my-websites.txt>
 
 # Display detailed information about a test in JSON format
 ooniprobe show <9>

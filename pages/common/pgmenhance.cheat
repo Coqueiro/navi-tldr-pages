@@ -4,7 +4,7 @@
 % pgmenhance, common
 
 # Edge-enhance a PGM image
-pgmenhance <path_to_image_pgm> > <path_to_output_pgm>
+pgmenhance <path_to_image.pgm> > <path_to_output.pgm>
 
 # Specify the level of enhancement
-pgmenhance -<1__9> <path_to_image_pgm> > <path_to_output_pgm>
+pgmenhance -<1..9> <path_to_image.pgm> > <path_to_output.pgm>

@@ -19,4 +19,4 @@ SafeEjectGPU gpuid <GPU_ID> status
 SafeEjectGPU gpuid <GPU_ID> Eject
 
 # Launch an app on a GPU
-SafeEjectGPU gpuid <GPU_ID> LaunchOnGPU <path_to_App_app>
+SafeEjectGPU gpuid <GPU_ID> LaunchOnGPU <path_to_App.app>

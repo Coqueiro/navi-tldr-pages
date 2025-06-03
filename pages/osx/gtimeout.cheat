@@ -4,4 +4,4 @@
 % gtimeout, osx
 
 # View documentation for the original command
-tldr timeout
+tldr -p linux timeout

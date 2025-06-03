@@ -13,4 +13,4 @@ catimg -r 2 <path_to_file>
 catimg -t <path_to_file>
 
 # Specify a custom [w]idth or [H]eight
-catimg <_w__H> <40> <path_to_file>
+catimg <-w|-H> <40> <path_to_file>

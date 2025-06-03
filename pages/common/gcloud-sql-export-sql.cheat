@@ -10,10 +10,10 @@ gcloud sql export sql <instance> gs://<bucket_name>/<file_name>
 gcloud sql export sql <instance> gs://<bucket_name>/<file_name> --async
 
 # Export data from specific databases within the Cloud SQL instance
-gcloud sql export sql <instance> gs://<bucket_name>/<file_name> --database=<database1_database2____>
+gcloud sql export sql <instance> gs://<bucket_name>/<file_name> --database=<database1,database2,...>
 
 # Export specific tables from a specified database within the Cloud SQL instance
-gcloud sql export sql <instance> gs://<bucket_name>/<file_name> --database=<database> --table=<table1_table2____>
+gcloud sql export sql <instance> gs://<bucket_name>/<file_name> --database=<database> --table=<table1,table2,...>
 
 # Export data while offloading the operation to a temporary instance to reduce strain on the source instance
 gcloud sql export sql <instance> gs://<bucket_name>/<file_name> --offload

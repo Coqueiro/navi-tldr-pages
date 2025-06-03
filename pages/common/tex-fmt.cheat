@@ -4,10 +4,10 @@
 % tex-fmt, common
 
 # Format a file, overwriting the original
-tex-fmt <path_to_file_tex>
+tex-fmt <path_to_file.tex>
 
 # Check if a file is correctly formatted
-tex-fmt --check <path_to_file_tex>
+tex-fmt --check <path_to_file.tex>
 
 # Format a file read from `stdin` and print to `stdout`
-cat <path_to_file_tex> | tex-fmt --stdin
+cat <path_to_file.tex> | tex-fmt --stdin
