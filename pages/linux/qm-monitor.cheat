@@ -4,4 +4,4 @@
 % qm-monitor, linux
 
 # Enter the QEMU Monitor interface of a specific virtual machine
-qm {{[mo|monitor]}} <100>
+qm <_mo_monitor_> <100>

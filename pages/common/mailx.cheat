@@ -3,4 +3,20 @@
 
 % mailx, common
 
+# Send mail (the content should be typed after the command, and ended with `<Ctrl d>`)
+mailx <__s___subject_> "<subject>" <to_addr>
 
+# Send mail with content passed from another command
+echo "<content>" | mailx <__s___subject_> "<subject>" <to_addr>
+
+# Send mail with content read from a file
+mailx < <content_txt> <__s___subject_> "<subject>" <to_addr>
+
+# Send mail to a recipient and CC to another address
+mailx <__s___subject_> "<subject>" <__c___cc_> <cc_addr> <to_addr>
+
+# Send mail specifying the sender address
+mailx <__s___subject_> "<subject>" <__r___from_address_> <from_addr> <to_addr>
+
+# Send mail with an attachment
+mailx <__a___attach_> <path_to_file> <__s___subject_> "<subject>" <to_addr>

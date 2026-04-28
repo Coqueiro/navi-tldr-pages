@@ -3,4 +3,23 @@
 
 % noseyparker, common
 
+# Scan a local file or directory for secrets
+noseyparker scan <path_to_file_or_directory> <__d___datastore_> <path_to_datastore_np>
 
+# Show a report from a previous scan
+noseyparker report <__d___datastore_> <path_to_datastore_np>
+
+# Show a report in different format (default is `human`)
+noseyparker report <__d___datastore_> <path_to_datastore_np> <__f___format_> <human_json_jsonl_sarif>
+
+# Scan a remote Git repo (and Git history) for secrets
+noseyparker scan --git-url <URL> <__d___datastore_> <path_to_datastore_np>
+
+# Scan all GitHub repositories of a user or organization for secrets
+noseyparker scan <__github_user___github_organization> <username_or_org_name> <__d___datastore_> <path_to_datastore_np>
+
+# List all scan rules
+noseyparker rules list
+
+# List all GitHub repositories of a user or organization
+noseyparker github repos list <__user___organization> <username_or_org_name>

@@ -4,16 +4,16 @@
 % jj-tag-delete, common
 
 # Delete a tag
-jj tag {{[d|delete]}} <tag_name>
+jj tag <_d_delete_> <tag_name>
 
 # Delete multiple tags
-jj tag {{[d|delete]}} {{tag1 tag2 ...}}
+jj tag <_d_delete_> {{tag1 tag2 ...}}
 
 # Delete tags matching a glob pattern
-jj tag {{[d|delete]}} "<glob_v1__>"
+jj tag <_d_delete_> "<glob_v1__>"
 
 # Delete tags matching a substring pattern
-jj tag {{[d|delete]}} "<substring_release>"
+jj tag <_d_delete_> "<substring_release>"
 
 # Delete a tag by exact name
-jj tag {{[d|delete]}} "<exact_v1_0_0>"
+jj tag <_d_delete_> "<exact_v1_0_0>"

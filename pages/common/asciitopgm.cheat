@@ -7,4 +7,4 @@
 asciitopgm <path_to_input_file> > <path_to_output_file_pgm>
 
 # Display version
-asciitopgm {{[-v|-version]}}
+asciitopgm <__v__version_>

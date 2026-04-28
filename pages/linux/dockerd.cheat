@@ -3,4 +3,17 @@
 
 % dockerd, linux
 
+# Run Docker daemon
+dockerd
 
+# Run Docker daemon and configure it to listen to specific sockets (UNIX and TCP)
+dockerd <__H___host_> unix://<path_to_tmp_sock> <__H___host_> tcp://<ip_address>
+
+# Run with specific daemon PID file
+dockerd <__p___pidfile_> <path_to_pid_file>
+
+# Run in debug mode
+dockerd <__D___debug_>
+
+# Run and set a specific log level
+dockerd <__l___log_level_> <debug_info_warn_error_fatal>

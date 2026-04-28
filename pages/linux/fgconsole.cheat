@@ -3,4 +3,8 @@
 
 % fgconsole, linux
 
+# Print current terminal number or `serial` if the terminal is serial
+fgconsole
 
+# Print the next unallocated virtual terminal
+fgconsole <__n___next_available_>

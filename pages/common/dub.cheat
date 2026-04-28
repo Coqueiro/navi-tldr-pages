@@ -3,4 +3,20 @@
 
 % dub, common
 
+# Interactively create a new D project
+dub init <project_name>
 
+# Non-interactively create a new D project
+dub init <project_name> <__n___non_interactive_>
+
+# Build and run a D project
+dub
+
+# Install dependencies specified in a D project's `dub.json` or `dub.sdl` file
+dub fetch
+
+# Update the dependencies in a D project
+dub upgrade
+
+# Display help
+dub <__h___help_>

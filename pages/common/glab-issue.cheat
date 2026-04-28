@@ -3,4 +3,20 @@
 
 % glab-issue, common
 
+# Display a specific issue
+glab issue view <issue_number>
 
+# Display a specific issue in the default web browser
+glab issue view <issue_number> <__w___web_>
+
+# Create a new issue in the default web browser
+glab issue create --web
+
+# List the last 10 issues with the `bug` label
+glab issue list <__P___per_page_> <10> <__l___label_> "<bug>"
+
+# List closed issues made by a specific user
+glab issue list <__c___closed_> --author <username>
+
+# Reopen a specific issue
+glab issue reopen <issue_number>

@@ -3,4 +3,20 @@
 
 % jupytext, common
 
+# Turn a notebook into a paired `.ipynb`/`.py` notebook
+jupytext --set-formats ipynb,py <path_to_notebook>.ipynb
 
+# Convert a notebook to a `.py` file
+jupytext --to py <path_to_notebook>.ipynb
+
+# Convert a `.py` file to a notebook with no outputs
+jupytext --to notebook <path_to_notebook>.py
+
+# Convert a `.md` file to a notebook and run it
+jupytext --to notebook --execute <path_to_notebook>.md
+
+# Update the input cells in a notebook and preserve outputs and metadata
+jupytext --update --to notebook <path_to_notebook>.py
+
+# Update all paired representations of a notebook
+jupytext <__s___sync_> <path_to_notebook>.ipynb

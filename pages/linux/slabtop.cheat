@@ -3,4 +3,20 @@
 
 % slabtop, linux
 
+# Start `slabtop`
+sudo slabtop
 
+# Sort by [c]ache size
+sudo slabtop <__s___sort_> c
+
+# Sort by number of [o]bjects
+sudo slabtop <__s___sort_> o
+
+# Sort by object [s]ize
+sudo slabtop <__s___sort_> s
+
+# Display once and then exit
+sudo slabtop <__o___once_>
+
+# Display help
+slabtop <__h___help_>

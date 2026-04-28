@@ -3,4 +3,26 @@
 
 % evil-winrm, common
 
+# Connect to a host and start an interactive session
+evil-winrm <__i___ip_> <ip_address> <__u___user_> <user> <__p___password_> <password>
 
+# Connect to a host using pass-the-hash authentication instead of a password
+evil-winrm <__i___ip_> <ip_address> <__u___user_> <user> <__H___hash_> <nt_hash>
+
+# Connect to a host, specifying directories for PowerShell scripts and executables
+evil-winrm <__i___ip_> <ip_address> <__u___user_> <user> <__p___password_> <password> <__s___scripts_> <path_to_scripts> <__e___executables_> <path_to_executables>
+
+# Connect to a host, using SSL
+evil-winrm <__i___ip_> <ip_address> <__u___user_> <user> <__p___password_> <password> <__S___ssl_> <__c___pub_key_> <path_to_pubkey> <__k___priv_key_> <path_to_privkey>
+
+# [Interactive] Upload a file to the host
+upload <path_to_local_file> <path_to_remote_file>
+
+# [Interactive] List all loaded PowerShell functions
+menu
+
+# [Interactive] Load a PowerShell script from the `--scripts` directory
+<script_ps1>
+
+# [Interactive] Invoke a binary on the host from the `--executables` directory
+Invoke-Binary <binary_exe>

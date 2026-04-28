@@ -3,4 +3,14 @@
 
 % mmv, common
 
+# Rename all files with a certain extension to a different extension
+mmv "*<_old_extension>" "#1<_new_extension>"
 
+# Copy `report6part4.txt` to `./french/rapport6partie4.txt` along with all similarly named files
+mmv <__c___copy_> "<report_part__txt>" "<__french_rapport_1partie_2_txt>"
+
+# Append all `.txt` files into one file
+mmv <__a___append_> "<__txt>" "<all_txt>"
+
+# Convert dates in filenames from "M-D-Y" format to "D-M-Y" format
+mmv "<_0_1__0_9___0_3__0_9___0_9__0_9__0_9__0_9__txt>" "<_3_4__1_2__5_6_7_8_txt>"

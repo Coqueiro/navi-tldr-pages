@@ -3,4 +3,20 @@
 
 % mpg321, common
 
+# Play an audio source exactly `n` times (0 means forever)
+mpg321 <__l___loop_> <n> {{path/to/file1|URL1 path/to/file2|URL2 ...}}
 
+# Play a directory recursively
+mpg321 -B <path_to_directory>
+
+# Enable Basic Keys ( `*` or `/` - Increase or decrease volume, `n` - Skip song, `m` - Mute/unmute.) while playing
+mpg321 -K {{path/to/file1|URL1 path/to/file2|URL2 ...}}
+
+# Play files randomly until interrupted
+mpg321 <__Z___random_> {{path/to/file1|URL1 path/to/file2|URL2 ...}}
+
+# Shuffle the files before playing them once
+mpg321 <__z___shuffle_> {{path/to/file1|URL1 path/to/file2|URL2 ...}}
+
+# Play all files in the current directory and subdirectories, randomly (until interrupted), with Basic Keys enabled
+mpg321 -B <__Z___random_> -K .

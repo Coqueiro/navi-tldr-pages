@@ -3,4 +3,14 @@
 
 % gh-completion, common
 
+# Print a completion script
+gh completion <__s___shell_> <bash_zsh_fish_powershell>
 
+# Append the `gh` completion script to `~/.bashrc`
+gh completion <__s___shell_> bash >> ~/.bashrc
+
+# Append the `gh` completion script to `~/.zshrc`
+gh completion <__s___shell_> zsh >> ~/.zshrc
+
+# Display the subcommand help
+gh completion

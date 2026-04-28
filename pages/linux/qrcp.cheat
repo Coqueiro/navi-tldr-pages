@@ -3,4 +3,20 @@
 
 % qrcp, linux
 
+# Send a file or directories
+qrcp send {{path/to/file_or_directory1 path/to/file_directory2 ...}}
 
+# Receive files
+qrcp receive
+
+# Compress content before transferring
+qrcp send --zip <path_to_file_or_directory>
+
+# Use a specific port
+qrcp <send_receive> <__p___port_> <port_number>
+
+# Use a specific network interface
+qrcp <send_receive> <__i___interface_> <interface>
+
+# Keep the server alive
+qrcp <send_receive> --keep-alive

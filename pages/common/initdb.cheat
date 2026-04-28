@@ -3,4 +3,5 @@
 
 % initdb, common
 
-
+# Create a database cluster at `/usr/local/var/postgres`
+initdb <__D___pgdata_> /usr/local/var/postgres

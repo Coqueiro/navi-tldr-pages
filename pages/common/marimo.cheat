@@ -3,4 +3,20 @@
 
 % marimo, common
 
+# Create or edit notebooks by starting a marimo server
+marimo edit
 
+# Start a marimo server on a specific port without launching a browser
+marimo edit <__p___port_> <port_number> --headless
+
+# Edit a specific notebook
+marimo edit <path_to_notebook_py>
+
+# Run a marimo notebook as an app in read-only mode
+marimo run <path_to_notebook_py>
+
+# Start an interactive tutorial to learn marimo
+marimo tutorial <intro_components_dataflow_io>
+
+# View command-specific help
+marimo <edit_run_tutorial_config_new____> --help

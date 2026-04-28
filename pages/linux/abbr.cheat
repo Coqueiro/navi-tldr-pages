@@ -3,4 +3,14 @@
 
 % abbr, linux
 
+# Add a new abbreviation
+abbr <__a___add_> <abbreviation_name> <command> <command_arguments>
 
+# Rename an existing abbreviation
+abbr --rename <old_name> <new_name>
+
+# Erase an existing abbreviation
+abbr <__e___erase_> <abbreviation_name>
+
+# Import the abbreviations defined on another host over SSH
+ssh <host_name> abbr <__s___show_> | source

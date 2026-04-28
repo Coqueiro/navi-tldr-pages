@@ -3,4 +3,20 @@
 
 % tabula, common
 
+# Extract all tables from a PDF to a CSV file
+tabula <__o___outfile_> <file_csv> <file_pdf>
 
+# Extract all tables from a PDF to a JSON file
+tabula <__f___format_> JSON <__o___outfile_> <file_json> <file_pdf>
+
+# Extract tables from pages 1, 2, 3, and 6 of a PDF
+tabula <__p___pages_> 1-3,6 <file_pdf>
+
+# Extract tables from page 1 of a PDF, guessing which portion of the page to examine
+tabula <__g___guess_> <__p___pages_> 1 <file_pdf>
+
+# Extract all tables from a PDF, using ruling lines to determine cell boundaries
+tabula <__r___spreadsheet_> <file_pdf>
+
+# Extract all tables from a PDF, using blank space to determine cell boundaries
+tabula <__n___no_spreadsheet_> <file_pdf>

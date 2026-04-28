@@ -3,4 +3,20 @@
 
 % msgcat, common
 
+# Combine multiple `.po` files into one
+msgcat {{file1.po file2.po ...}} <__o___output_file_> <combined_po>
 
+# Combine input files listed in a text file
+msgcat <__f___files_from_> <path_to_file_list_txt> <__o___output_file_> <combined_po>
+
+# Set the output encoding (e.g. UTF-8)
+msgcat <__t___to_code_> <UTF_8> <input_po> <__o___output_file_> <output_po>
+
+# Output only unique messages (appearing in one file only)
+msgcat <__u___unique_> {{file1.po file2.po ...}} <__o___output_file_> <unique_po>
+
+# Use the first available translation for duplicate entries
+msgcat --use-first {{file1.po file2.po ...}} <__o___output_file_> <output_po>
+
+# Display help
+msgcat <__h___help_>

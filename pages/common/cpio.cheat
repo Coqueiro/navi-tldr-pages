@@ -3,4 +3,11 @@
 
 % cpio, common
 
+# Take a list of file names from `stdin` and add them onto an archive (copy-[o]ut) in cpio's binary forma
+echo "{{path/to/file1 path/to/file2 ...}}" | cpio <__o___create_> > <archive_cpio>
 
+# Copy all files and directories in a directory and add them onto an archive (copy-[o]ut), in verbose mode
+find <path_to_directory> | cpio {{[-ov|--create --verbose]}} > <archive_cpio>
+
+# Pick all files from an archive (copy-[i]n), generating directories where needed, in verbose mode
+cpio < <archive_cpio> {{[-idv|--extract --make-directories --verbose]}}

@@ -3,4 +3,23 @@
 
 % az-vm, common
 
+# Display a table of available Virtual Machines
+az vm list --output table
 
+# Create a virtual machine using the default Ubuntu image and generate SSH keys
+az vm create <__g___resource_group_> <rg> <__n___name_> <vm_name> --image <UbuntuLTS> --admin-user <azureuser> --generate-ssh-keys
+
+# Stop a Virtual Machine
+az vm stop <__g___resource_group_> <rg> <__n___name_> <vm_name>
+
+# Deallocate a Virtual Machine
+az vm deallocate <__g___resource_group_> <rg> <__n___name_> <vm_name>
+
+# Start a Virtual Machine
+az vm start <__g___resource_group_> <rg> <__n___name_> <vm_name>
+
+# Restart a Virtual Machine
+az vm restart <__g___resource_group_> <rg> <__n___name_> <vm_name>
+
+# List VM images available in the Azure Marketplace
+az vm image list

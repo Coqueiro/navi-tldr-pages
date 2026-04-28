@@ -3,4 +3,20 @@
 
 % stern, common
 
+# Tail all pods within a current namespace
+stern .
 
+# Tail all pods with a specific status
+stern . --container-state <running_waiting_terminated>
+
+# Tail all pods that matches a given `regex`
+stern <pod_query>
+
+# Tail matched pods from all namespaces
+stern <pod_query> <__A___all_namespaces_>
+
+# Tail matched pods from 15 minutes ago
+stern <pod_query> <__s___since_> 15m
+
+# Tail matched pods with a specific label
+stern <pod_query> <__l___selector_> <release_canary>

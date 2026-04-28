@@ -3,4 +3,20 @@
 
 % rename.util, linux
 
+# Rename files using simple substitutions (substitute `foo` with `bar` wherever found)
+rename <foo> <bar> {{*}}
 
+# Dry-run - display which renames would occur without performing them
+rename {{[-vn|--verbose --no-act]}} <foo> <bar> {{*}}
+
+# Do not overwrite existing files
+rename <__o___no_overwrite_> <foo> <bar> {{*}}
+
+# Change file extensions
+rename <_ext> <_bak> <__ext>
+
+# Prepend "foo" to all filenames in the current directory
+rename '' '<foo>' {{*}}
+
+# Rename a group of increasingly numbered files zero-padding the numbers up to 3 digits
+rename <foo> <foo00> <foo_> && rename <foo> <foo0> <foo__>

@@ -3,4 +3,14 @@
 
 % pkginfo, linux
 
+# List installed packages and their versions
+pkginfo <__i___installed_>
 
+# List files owned by a package
+pkginfo <__l___list_> <package>
+
+# List the owner(s) of files matching a pattern
+pkginfo <__o___owner_> <pattern>
+
+# Print the footprint of a file
+pkginfo -f <path_to_file>

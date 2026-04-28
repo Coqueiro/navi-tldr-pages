@@ -3,4 +3,17 @@
 
 % chrt, linux
 
+# Display attributes of a process
+chrt <__p___pid_> <PID>
 
+# Display attributes of all threads of a process
+chrt <__a___all_tasks_> <__p___pid_> <PID>
+
+# Display the min/max priority values that can be used with `chrt`
+chrt <__m___max_>
+
+# Set the scheduling priority of a process
+chrt <__p___pid_> <priority> <PID>
+
+# Set the scheduling policy of a process
+chrt --<deadline_idle_batch_rr_fifo_other> <__p___pid_> <priority> <PID>

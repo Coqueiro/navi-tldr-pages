@@ -7,7 +7,7 @@
 pnmtopclxl {{path/to/input1.pnm path/to/input2.pnm ...}} > <path_to_output_pclxl>
 
 # Specify the resolution of the image as well as the location of the page from the upper left corner of each image
-pnmtopclxl -dpi <resolution> {{[-x|-xoffs]}} <x_offset> {{[-y|-yoffs]}} <y_offset> {{path/to/input1.pnm path/to/input2.pnm ...}} > <path_to_output_pclxl>
+pnmtopclxl -dpi <resolution> <__x__xoffs_> <x_offset> <__y__yoffs_> <y_offset> {{path/to/input1.pnm path/to/input2.pnm ...}} > <path_to_output_pclxl>
 
 # Generate a duplex printer stream for the specified paper format
-pnmtopclxl {{[-du|-duplex]}} <vertical_horizontal> {{[-fo|-format]}} <letter_legal_a3_a4_a5____> {{path/to/input1.pnm path/to/input2.pnm ...}} > <path_to_output_pclxl>
+pnmtopclxl <__du__duplex_> <vertical_horizontal> <__fo__format_> <letter_legal_a3_a4_a5____> {{path/to/input1.pnm path/to/input2.pnm ...}} > <path_to_output_pclxl>

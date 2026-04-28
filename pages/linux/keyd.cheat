@@ -7,7 +7,7 @@
 systemctl enable keyd --now
 
 # Display keypress information
-sudo keyd {{[-m|monitor]}}
+sudo keyd <__m_monitor_>
 
 # Reset bindings and reload the configuration files in `/etc/keyd`
 sudo keyd reload

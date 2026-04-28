@@ -3,4 +3,11 @@
 
 % fincore, linux
 
+# Display cache details for a file
+fincore <path_to_file>
 
+# Display all possible data columns
+fincore --output-all <path_to_file>
+
+# Display help
+fincore <__h___help_>

@@ -3,4 +3,17 @@
 
 % beep, linux
 
+# Play a beep
+beep
 
+# Play a beep that repeats
+beep -r <repetitions>
+
+# Play a beep at a specified frequency (Hz) and duration (milliseconds)
+beep -f <frequency> -l <duration>
+
+# Play each new frequency and duration as a distinct beep
+beep -f <frequency> -l <duration> <__n___new_> -f <frequency> -l <duration>
+
+# Play the C major scale
+beep -f <262> <__n___new_> -f <294> <__n___new_> -f <330> <__n___new_> -f <349> <__n___new_> -f <392> <__n___new_> -f <440> <__n___new_> -f <494> <__n___new_> -f <523>

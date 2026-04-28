@@ -3,4 +3,17 @@
 
 % dotnet-run, common
 
+# Run the project in the current directory
+dotnet run
 
+# Run a specific project
+dotnet run --project <path_to_file_csproj>
+
+# Run the project with specific arguments
+dotnet run -- {{arg1=foo arg2=bar ...}}
+
+# Run the project using a target framework moniker
+dotnet run <__f___framework_> <net7_0>
+
+# Specify architecture and OS, available since .NET 6 (Don't use `--runtime` with these options)
+dotnet run <__a___arch_> <x86_x64_arm_arm64> --os <win_win7_osx_linux_ios_android>

@@ -3,4 +3,17 @@
 
 % trunk.rs, common
 
+# Build the application in release mode and serve it locally
+trunk serve --release
 
+# Build the application and serve it on a specific port
+trunk serve <__p___port_> <port>
+
+# Build for production at a specific output directory
+trunk build --release <__d___dist_> <path_to_distribution>
+
+# Build with a specific public URL path for hosting in a subdirectory
+trunk build --release --public-url /<path_to_app_subdirectory>
+
+# Clean the output directory
+trunk clean

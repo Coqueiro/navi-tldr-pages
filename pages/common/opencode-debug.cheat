@@ -3,4 +3,20 @@
 
 % opencode-debug, common
 
+# Show resolved configuration
+opencode debug config
 
+# Show global paths (data, config, cache, state)
+opencode debug paths
+
+# List all known projects
+opencode debug scrap
+
+# List all available skills
+opencode debug skill
+
+# Show agent configuration details
+opencode debug agent <agent_name>
+
+# Display help
+opencode debug <__h___help_>

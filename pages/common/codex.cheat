@@ -3,4 +3,23 @@
 
 % codex, common
 
+# Start an interactive Codex session in the current directory
+codex
 
+# Run a single Codex command using a prompt
+codex "{{your prompt}}"
+
+# Run a prompt in full auto mode
+codex --full-auto "{{your prompt}}"
+
+# Use a specific model
+codex <__m___model_> <model_name> "{{your prompt}}"
+
+# Use a local open source model provider
+codex --oss --local-provider <lmstudio_ollama> "{{your prompt}}"
+
+# [Interactive] Show the resource usage for the current session
+/cost
+
+# Display help
+codex <__h___help_>

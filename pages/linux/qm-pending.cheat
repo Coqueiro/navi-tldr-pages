@@ -4,4 +4,4 @@
 % qm-pending, linux
 
 # Get the virtual machine configuration of a specific virtual machine
-qm {{[p|pending]}} <100>
+qm <_p_pending_> <100>

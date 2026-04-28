@@ -3,4 +3,14 @@
 
 % glab-auth, common
 
+# Log in with interactive prompt
+glab auth login
 
+# Log in with a token
+glab auth login <__t___token_> <token>
+
+# Check authentication status
+glab auth status
+
+# Log in to a specific GitLab instance
+glab auth login <__h___hostname_> <gitlab_example_com>

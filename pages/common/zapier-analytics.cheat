@@ -3,4 +3,11 @@
 
 % zapier-analytics, common
 
+# Show the status of collected analytics
+zapier analytics
 
+# Change how much information is collected
+zapier analytics <__m___mode_> <enabled_anonymous_disabled>
+
+# Show extra debugging output
+zapier analytics <__m___mode_> <enabled_anonymous_disabled> <__d___debug_>

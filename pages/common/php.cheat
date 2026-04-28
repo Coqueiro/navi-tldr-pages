@@ -3,4 +3,26 @@
 
 % php, common
 
+# Parse and execute a PHP script
+php <path_to_file>
 
+# Check syntax on (i.e. [l]int) a PHP script
+php <__l___syntax_check_> <path_to_file>
+
+# Run PHP inter[a]ctively
+php <__a___interactive_>
+
+# Run PHP code (Notes: Don't use `<? ?>` tags; escape double quotes with backslash)
+php <__r___run_> "<code>"
+
+# Start a PHP built-in web server in the current directory
+php <__S___server_> <host>:<port>
+
+# List installed PHP extensions
+php <__m___modules_>
+
+# Display information about the current PHP configuration
+php <__i___info_>
+
+# Display information about a specific function
+php <___rf___rfunction_> <function_name>

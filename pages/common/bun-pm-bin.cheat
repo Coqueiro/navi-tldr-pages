@@ -3,4 +3,8 @@
 
 % bun-pm-bin, common
 
+# Get the path to the local project's `bin` directory
+bun pm bin
 
+# Get the path to the global `bin` directory
+bun pm bin <__g___global_>

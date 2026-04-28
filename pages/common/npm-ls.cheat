@@ -3,4 +3,20 @@
 
 % npm-ls, common
 
+# Print all versions of direct dependencies in the current project to `stdout`
+npm <_ls_list_>
 
+# Print all installed packages including peer dependencies
+npm <_ls_list_> <__a___all_>
+
+# Print all globally installed packages
+npm <_ls_list_> <__g___global_>
+
+# Print dependencies with extended information
+npm <_ls_list_> <__l___long_>
+
+# Print dependencies in parseable format
+npm <_ls_list_> <__p___parseable_>
+
+# Print dependencies in JSON format
+npm <_ls_list_> --json

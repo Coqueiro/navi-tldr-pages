@@ -3,4 +3,17 @@
 
 % nxc-ssh, common
 
+# Spray the specified password against a list of usernames on the specified target
+nxc ssh <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <password>
 
+# Search for valid credentials by trying out every combination in the specified lists of usernames and passwords
+nxc ssh <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt>
+
+# Use the specified private key for authentication, using the supplied password as the key's passphrase
+nxc ssh <192_186_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <password> --key-file <path_to_id_rsa>
+
+# Try a combination of username and password on a number of targets
+nxc ssh <192_168_178_0_24> <__u___username_> <username> <__p___password_> <password>
+
+# Check for `sudo` privileges on a successful login
+nxc ssh <192_168_178_2> <__u___username_> <username> <__p___password_> <path_to_passwords_txt> --sudo-check

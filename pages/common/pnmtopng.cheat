@@ -7,4 +7,4 @@
 pnmtopng <path_to_file_pnm> > <path_to_file_png>
 
 # Display version
-pnmtopng {{[-vers|-version]}}
+pnmtopng <__vers__version_>

@@ -3,4 +3,23 @@
 
 % vhs, common
 
+# Create a tape file (add commands to the tape file using an editor)
+vhs new <path_to_file_tape>
 
+# Record inputs to a tape file
+vhs record > <path_to_file_tape>
+
+# Record inputs to a tape file using a specific shell
+vhs record <__s___shell_> <shell> > <path_to_file_tape>
+
+# Stop recording
+exit
+
+# Validate the syntax of a tape file
+vhs validate <path_to_file_tape>
+
+# Create a GIF from a tape file
+vhs <path_to_file_tape>
+
+# Publish a GIF to <https://vhs.charm.sh> and get a shareable URL
+vhs publish <path_to_file_gif>

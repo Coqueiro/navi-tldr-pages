@@ -3,4 +3,14 @@
 
 % kubetail, common
 
+# Tail the logs of multiple pods (whose name starts with `app_name`) in one go
+kubetail <app_name>
 
+# Tail only a specific container from multiple pods
+kubetail <app_name> <__c___container_> <container_name>
+
+# Tail multiple containers from multiple pods
+kubetail <app_name> <__c___container_> <container_name_1> <__c___container_> <container_name_2>
+
+# Tail multiple applications at the same time separate them by comma
+kubetail <app_name_1_app_name_2____>

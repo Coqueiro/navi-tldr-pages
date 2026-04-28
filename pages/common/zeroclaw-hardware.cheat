@@ -3,4 +3,8 @@
 
 % zeroclaw-hardware, common
 
+# List available USB hardware devices
+zeroclaw hardware discover
 
+# Display help
+zeroclaw hardware <__h___help_>

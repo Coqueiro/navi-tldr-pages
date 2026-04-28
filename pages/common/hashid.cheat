@@ -3,4 +3,20 @@
 
 % hashid, common
 
+# Identify hashes from `stdin` (through typing, copying and pasting, or piping the hash into the program)
+hashid
 
+# Identify one or more hashes
+hashid {{hash1 hash2 ...}}
+
+# Identify hashes on a file (one hash per line)
+hashid <path_to_hashes_txt>
+
+# Show all possible hash types (including salted hashes)
+hashid <__e___extended_> <hash>
+
+# Show `hashcat`'s mode number and `john`'s format string of the hash types
+hashid <__m___mode_> <__j___john_> <hash>
+
+# Save output to a file instead of printing to `stdout`
+hashid <__o___outfile_> <path_to_output_txt> <hash>

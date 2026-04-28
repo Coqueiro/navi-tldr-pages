@@ -4,10 +4,10 @@
 % bioradtopgm, common
 
 # Read a Biorad confocal file and store the n'th image contained in it to as a PGM file
-bioradtopgm -<__v__version_> <path_to_file_pic> > <path_to_file_pgm>
+bioradtopgm -<n> <path_to_file_pic> > <path_to_file_pgm>
 
 # Read a Biorad confocal file and print the number of images it contains
 bioradtopgm <path_to_file_pic>
 
 # Display version
-bioradtopgm {{[-v|-version]}}
+bioradtopgm <__v__version_>

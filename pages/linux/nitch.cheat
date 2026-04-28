@@ -3,4 +3,11 @@
 
 % nitch, linux
 
+# Display system information (hostname, kernel, uptime, etc.)
+nitch
 
+# Display help
+nitch <__h___help_>
+
+# Display version
+nitch <__v___version_>

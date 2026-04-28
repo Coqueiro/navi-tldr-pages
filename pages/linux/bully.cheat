@@ -3,4 +3,8 @@
 
 % bully, linux
 
+# Crack the password
+bully <__b___bssid_> "<mac>" <__c___channel_> "<channel>" <__B___bruteforce_> "<interface>"
 
+# Display help
+bully <__h___help_>

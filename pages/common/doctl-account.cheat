@@ -3,4 +3,11 @@
 
 % doctl-account, common
 
+# Display account info
+doctl account <_g_get_>
 
+# Show the hourly API limit, progress towards it, and when the rate limit resets
+doctl account <_rl_ratelimit_>
+
+# Display help
+doctl account <__h___help_>

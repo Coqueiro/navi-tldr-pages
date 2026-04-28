@@ -3,4 +3,20 @@
 
 % col, linux
 
+# Filter reverse line feeds from input
+<command> | col
 
+# Filter reverse line feeds and output with spaces instead of tabs
+<command> | col <__x___spaces_>
+
+# Remove backspaces, output only the last character written to each position
+<command> | col <__b___no_backspaces_>
+
+# Specify a buffer size with a specific number of lines
+<command> | col <__l___lines_> <num>
+
+# Format a manual page for viewing with `less`
+man ls | col <__b___no_backspaces_> | less
+
+# Process a file with reverse line feeds and save the cleaned output
+cat <path_to_input_file> | col <__x___spaces_> > <output_file>

@@ -3,4 +3,17 @@
 
 % euse, linux
 
+# List active global USE flags
+euse <__a___active_> <__g___global_>
 
+# List active local USE flags
+euse <__a___active_> <__l___local_>
+
+# Enable a global USE flag
+sudo euse <__E___enable_> <use_flag>
+
+# Disable a global USE flag (put a '-' sign in front of the USE flag)
+sudo euse <__D___disable_> <use_flag>
+
+# Remove a global USE flag
+sudo euse <__P___prune_> <use_flag>

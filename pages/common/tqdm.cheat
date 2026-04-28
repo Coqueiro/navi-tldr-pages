@@ -3,4 +3,14 @@
 
 % tqdm, common
 
+# Show iterations per second and use `stdout` afterwards
+{{seq 10000000}} | tqdm | <command>
 
+# Create a progress bar
+{{seq 10000000}} | tqdm --total <10000000> | <command>
+
+# Create an archive out of a directory and use the file count of that directory to create a progress bar
+zip <__r___recurse_paths_> <path_to_archive_zip> <path_to_directory> | tqdm --total $(find <path_to_directory> | wc <__l___lines_>) --unit files --null
+
+# Create an archive with tar and create a progress bar (system agnostic, GNU tar uses `stdout` while BSD tar uses `stderr`)
+tar vzcf <path_to_archive_tar_gz> <path_to_directory> 2>&1 | tqdm --total $(find <path_to_directory> | wc <__l___lines_>) --unit files --null

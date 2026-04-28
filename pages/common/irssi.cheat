@@ -3,4 +3,20 @@
 
 % irssi, common
 
+# Open Irssi and connect to a server with a nickname
+irssi <__n___nick_> <nickname> <__c___connect_> <irc_example_com>
 
+# Open Irssi and connect with a specific server on a given port
+irssi <__c___connect_> <irc_example_com> <__p___port_> <port>
+
+# [Interactive] Join a channel
+/join <_channelname>
+
+# [Interactive] Change active window (starts at 1)
+/win <window_number>
+
+# [Interactive] Exit the application cleanly and quitting any server(s)
+/quit
+
+# Display help
+irssi <______help_>

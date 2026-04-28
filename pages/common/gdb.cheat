@@ -3,4 +3,20 @@
 
 % gdb, common
 
+# Debug an executable
+gdb <path_to_executable>
 
+# Attach a process to `gdb`
+gdb <__p___pid_> <procID>
+
+# Debug with a core file
+gdb <__c___core_> <path_to_core> <path_to_executable>
+
+# Execute given GDB commands upon start
+gdb <__ex___eval_command_> "<commands>" <path_to_executable>
+
+# Start `gdb` and pass arguments to the executable
+gdb --args <path_to_executable> {{argument1 argument2 ...}}
+
+# Skip `debuginfod` and pagination prompts and then print the backtrace
+gdb <__c___core_> <path_to_core> <path_to_executable> -iex 'set debuginfod enabled on' -iex 'set pagination off' -ex bt

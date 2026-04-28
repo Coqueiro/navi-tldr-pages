@@ -3,4 +3,14 @@
 
 % npm-check, common
 
+# Display a report of outdated, incorrect, and unused dependencies
+npm-check
 
+# Interactively update out-of-date packages
+npm-check <__u___update_>
+
+# Update everything without prompting
+npm-check <__y___update_all_>
+
+# Don't check for unused packages
+npm-check <__s___skip_unused_>

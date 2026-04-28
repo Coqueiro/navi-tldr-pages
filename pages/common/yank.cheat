@@ -13,4 +13,4 @@
 {{echo hello=world}} | yank -d <_>
 
 # Only yank fields matching a specific pattern
-{{ps ux}} | yank -g "{{[0-9]+}}"
+{{ps ux}} | yank -g "<_0_9__>"

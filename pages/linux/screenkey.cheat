@@ -3,4 +3,23 @@
 
 % screenkey, linux
 
+# Display keys which are currently being pressed on the screen
+screenkey
 
+# Display keys and mouse buttons which are currently being pressed on the screen
+screenkey <__M___mouse_>
+
+# Launch the settings menu of screenkey
+screenkey --show-settings
+
+# Launch screenkey at a specific position
+screenkey <__p___position_> <top_center_bottom_fixed>
+
+# Change the format of the key modifiers displayed on screen
+screenkey --mods-mode <normal_emacs_mac_win_tux>
+
+# Change the appearance of screenkey
+screenkey --bg-color "<_a1b2c3>" <__f___font_> <Hack> --font-color <yellow> --opacity <0_8>
+
+# Drag and select a window on screen to display screenkey
+screenkey <__p___position_> fixed <__g___geometry_> {{$(slop --nodecorations --format '%g')}}

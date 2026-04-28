@@ -3,4 +3,11 @@
 
 % namcap, linux
 
+# Check a specific `PKGBUILD` file
+namcap <path_to_pkgbuild>
 
+# Check a specific package file
+namcap <path_to_package_pkg_tar_zst>
+
+# Check a file, printing extra informational messages
+namcap <__i___info_> <path_to_file>

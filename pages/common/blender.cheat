@@ -3,4 +3,23 @@
 
 % blender, common
 
+# Render all frames of an animation in the background, without loading the UI (output is saved to `/tmp`)
+blender <__b___background_> <path_to_file_blend> <__a___render_anim_>
 
+# Render an animation using a specific image naming pattern, in a path relative (`//`) to the `.blend` file
+blender <__b___background_> <path_to_file_blend> <__o___render_output_> //<render_frame_____png> <__a___render_anim_>
+
+# Render the 10th frame of an animation as a single image, saved to an existing directory (absolute path)
+blender <__b___background_> <path_to_file_blend> <__o___render_output_> /<path_to_output_directory> <__f___render_frame_> <10>
+
+# Render the second last frame in an animation as a JPEG image, saved to an existing directory (relative path)
+blender <__b___background_> <path_to_file_blend> <__o___render_output_> //<output_directory> <__f___render_frame_> <JPEG> <__f___render_frame_> <_2>
+
+# Render the animation of a specific scene, starting at frame 10 and ending at frame 500
+blender <__b___background_> <path_to_file_blend> <__S___scene_> <scene_name> <__s___frame_start_> <10> <__e___frame_end_> <500> <__a___render_anim_>
+
+# Render an animation at a specific resolution, by passing a Python expression
+blender <__b___background_> <path_to_file_blend> --python-expr '{{import bpy; bpy.data.scenes[0].render.resolution_percentage = 25}}' <__a___render_anim_>
+
+# Start an interactive Blender session in the terminal with a Python console (do `import bpy` after starting)
+blender <__b___background_> --python-console

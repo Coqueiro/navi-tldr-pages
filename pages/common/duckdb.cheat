@@ -13,7 +13,7 @@ duckdb <path_to_dbfile>
 duckdb -c "{{SELECT * FROM 'data_source.[csv|csv.gz|json|json.gz|parquet]'}}"
 
 # Directly query a CSV, JSON, or Parquet file using the `file` view
-duckdb {{data_source.[csv|csv.gz|json|json.gz|parquet]}} -c "{{ SELECT * FROM file }}"
+duckdb <data_source__csv_csv_gz_json_json_gz_parquet_> -c "{{ SELECT * FROM file }}"
 
 # Run an SQL script
 duckdb -f <path_to_script_sql>

@@ -3,4 +3,17 @@
 
 % split, common
 
+# Split a file, each split having 10 lines (except the last split)
+split <__l___lines_> 10 <path_to_file>
 
+# Split a file into 5 files. File is split such that each split has same size (except the last split)
+split <__n___number_> 5 <path_to_file>
+
+# Split a file with 512 bytes in each split (except the last split; use 512k for kilobytes and 512m for megabytes)
+split <__b___bytes_> 512 <path_to_file>
+
+# Split a file with at most 512 bytes in each split without breaking lines
+split <__C___line_bytes_> 512 <path_to_file>
+
+# Split into multiple files from `stdin`
+gzip {{[-cd|--stdout --decompress]}} <path_to_compressed_file_gz> | split <__l___lines_> <1000> - <path_to_output>

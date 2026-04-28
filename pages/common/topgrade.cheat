@@ -3,4 +3,20 @@
 
 % topgrade, common
 
+# Run updates
+topgrade
 
+# Say yes to all updates
+topgrade <__y___yes_>
+
+# Cleanup temporary/old files
+topgrade <__c___cleanup_>
+
+# Disable a certain update operation
+topgrade --disable <operation>
+
+# Only perform a certain update operation
+topgrade --only <operation>
+
+# Edit the configuration file with default editor
+topgrade --edit-config

@@ -3,4 +3,8 @@
 
 % brew-autoremove, common
 
+# Remove all unused formulae
+brew autoremove
 
+# Print what would be removed, but don't actually remove anything
+brew autoremove <__n___dry_run_>

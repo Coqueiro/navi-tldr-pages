@@ -3,4 +3,26 @@
 
 % apptainer-build, linux
 
+# Build a container from a definition file
+apptainer build <path_to_image_sif> <path_to_definition_def>
 
+# Build a container from Docker Hub
+apptainer build <path_to_image_sif> docker://<image>:<tag>
+
+# Build a container from the Container Library
+apptainer build <path_to_image_sif> library://<user_collection_container>:<tag>
+
+# Build a writable sandbox directory instead of an image file
+apptainer build <__s___sandbox_> <path_to_directory> docker://<image>:<tag>
+
+# Build a container without using the cache
+apptainer build --disable-cache <path_to_image_sif> docker://<image>:<tag>
+
+# Force overwrite an existing image file
+apptainer build <__F___force_> <path_to_image_sif> <path_to_definition_def>
+
+# Build using fakeroot for unprivileged builds
+apptainer build <__f___fakeroot_> <path_to_image_sif> <path_to_definition_def>
+
+# Display help
+apptainer build <__h___help_>

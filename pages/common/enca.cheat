@@ -3,4 +3,14 @@
 
 % enca, common
 
+# Detect file(s) encoding according to the system's locale
+enca {{path/to/file1 path/to/file2 ...}}
 
+# Detect file(s) encoding specifying a language in the POSIX/C locale format (e.g. zh_CN, en_US)
+enca <__L___language_> <language> {{path/to/file1 path/to/file2 ...}}
+
+# Convert file(s) to a specific encoding
+enca <__L___language_> <language> <__x___convert_to_> <to_encoding> {{path/to/file1 path/to/file2 ...}}
+
+# Create a copy of an existing file using a different encoding
+enca < <original_file> <__L___language_> <language> <__x___convert_to_> <to_encoding> > <new_file>

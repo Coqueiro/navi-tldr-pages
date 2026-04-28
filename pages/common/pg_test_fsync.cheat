@@ -3,4 +3,11 @@
 
 % pg_test_fsync, common
 
+# Run the default fsync benchmark (5 seconds)
+pg_test_fsync
 
+# Specify a custom test duration
+pg_test_fsync <__s___secs_per_test_> <seconds>
+
+# Use a specific filename (it must be in same filesystem that the pg_wal directory is or will be placed in)
+pg_test_fsync <__f___filename_> <path_to_file>

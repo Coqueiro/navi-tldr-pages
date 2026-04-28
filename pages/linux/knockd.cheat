@@ -3,4 +3,8 @@
 
 % knockd, linux
 
+# Start knockd system daemon
+knockd <__d___daemon_>
 
+# Use specified configuration file for knockd
+knockd <__c___config_> <path_to_file>.configuration

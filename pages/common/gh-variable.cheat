@@ -3,4 +3,26 @@
 
 % gh-variable, common
 
+# List variables for the current repository
+gh variable <_ls_list_>
 
+# List variables for a specific organization
+gh variable <_ls_list_> <__o___org_> <organization>
+
+# Get a variable for the current repository
+gh variable get <name>
+
+# Set a variable for the current repository (user will be prompted for the value)
+gh variable set <name>
+
+# Set a variable for a deployment environment in the current repository
+gh variable set <name> <__e___env_> <environment_name>
+
+# Set an organization variable visible to all repositories
+gh variable set <name> <__o___org_> <organization> <__v___visibility_> all
+
+# Set multiple variables from a dotenv file
+gh variable set <__f___env_file_> <path_to_file_env>
+
+# Delete a variable for the current repository
+gh variable delete <name>

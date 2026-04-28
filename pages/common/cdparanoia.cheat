@@ -3,4 +3,14 @@
 
 % cdparanoia, common
 
+# Extract all tracks and write them into separate WAV files named `track#.wav`
+cdparanoia <__B___batch_>
 
+# Print the CD's table of contents to the terminal
+cdparanoia <__Q___query_>
+
+# Extract tracks 2 to 5 and write them into a single WAV file
+cdparanoia 2-5
+
+# Extract track 3 and write it into a file called `path/to/file.wav`
+cdparanoia 3 '<path_to_file_wav>'

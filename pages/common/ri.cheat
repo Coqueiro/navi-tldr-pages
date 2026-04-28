@@ -3,4 +3,11 @@
 
 % ri, common
 
+# Start interactive shell
+ri
 
+# View documentation for a particular name
+ri <File_read>
+
+# List classes and modules for which `ri` has documentation
+ri <__l___list_>

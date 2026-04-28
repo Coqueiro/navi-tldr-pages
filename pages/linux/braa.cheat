@@ -7,7 +7,7 @@
 braa public@<ip_address>:<_1_3_6__>
 
 # Query the whole subnet `ip_range` for `system.sysLocation.0`
-braa public@<ip_range>:<_1_3_6__>
+braa public@<ip_range>:<_1_3_6_1_2_1_1_6_0>
 
 # Attempt to set the value of `system.sysLocation.0` to a specific workgroup
-braa private@<ip_address>:<_1_3_6__>'
+braa private@<ip_address>:<_1_3_6_1_2_1_1_6_0>=s'<workgroup>'

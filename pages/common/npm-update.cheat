@@ -3,4 +3,14 @@
 
 % npm-update, common
 
+# Update all packages in the current project
+npm <_up_update_>
 
+# Update a specific package in the current project
+npm <_up_update_> <package>
+
+# Update a package globally
+npm <_up_update_> <package> <__g___global_>
+
+# Update multiple packages at once
+npm <_up_update_> {{package1 package2 ...}}

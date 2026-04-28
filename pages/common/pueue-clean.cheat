@@ -3,4 +3,8 @@
 
 % pueue-clean, common
 
+# Remove finished tasks and clear logs
+pueue clean
 
+# Only clean commands that finished successfully
+pueue clean <__s___successful_only_>

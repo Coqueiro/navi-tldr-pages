@@ -3,4 +3,20 @@
 
 % jdupes, common
 
+# Search a single directory
+jdupes <path_to_directory>
 
+# Search multiple directories
+jdupes {{directory1 directory2 ...}}
+
+# Search all directories recursively
+jdupes <__r___recurse_> <path_to_directory>
+
+# Search directory recursively and let user choose files to preserve
+jdupes <__d___delete_> <__r___recurse_> <path_to_directory>
+
+# Search multiple directories and follow subdirectores under directory2, not directory1
+jdupes <directory1> <__R___recurse__> <directory2>
+
+# Search multiple directories and keep the directory order in result
+jdupes <__O___param_order_> {{directory1 directory2 directory3 ...}}

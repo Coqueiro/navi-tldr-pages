@@ -3,4 +3,14 @@
 
 % popeye, common
 
+# Scan the current Kubernetes cluster
+popeye
 
+# Scan a specific namespace
+popeye <__n___namespace_> <namespace>
+
+# Scan specific Kubernetes context
+popeye --context <context>
+
+# Use a spinach configuration file for scanning
+popeye <__f___file_> <spinach_yaml>

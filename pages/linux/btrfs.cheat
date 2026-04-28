@@ -4,16 +4,16 @@
 % btrfs, linux
 
 # Create subvolume
-sudo btrfs {{[su|subvolume]}} {{[c|create]}} <path_to_subvolume>
+sudo btrfs <_su_subvolume_> <_c_create_> <path_to_subvolume>
 
 # List subvolumes
-sudo btrfs {{[su|subvolume]}} {{[l|list]}} <path_to_mount_point>
+sudo btrfs <_su_subvolume_> <_l_list_> <path_to_mount_point>
 
 # Show space usage information
-sudo btrfs {{[f|filesystem]}} df <path_to_mount_point>
+sudo btrfs <_f_filesystem_> df <path_to_mount_point>
 
 # Enable quota
-sudo btrfs {{[qu|quota]}} {{[e|enable]}} <path_to_subvolume>
+sudo btrfs <_qu_quota_> <_e_enable_> <path_to_subvolume>
 
 # Show quota
-sudo btrfs {{[qg|qgroup]}} {{[s|show]}} <path_to_subvolume>
+sudo btrfs <_qg_qgroup_> <_s_show_> <path_to_subvolume>

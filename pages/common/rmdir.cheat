@@ -3,4 +3,11 @@
 
 % rmdir, common
 
+# Remove specific directories
+rmdir {{path/to/directory1 path/to/directory2 ...}}
 
+# Remove specific nested directories recursively
+rmdir <__p___parents_> {{path/to/directory1 path/to/directory2 ...}}
+
+# Clean a directory of empty directories
+rmdir *

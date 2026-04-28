@@ -3,4 +3,11 @@
 
 % kompose, common
 
+# Deploy a dockerized application to Kubernetes
+kompose up <__f___file_> <docker_compose_yml>
 
+# Delete instantiated services/deployments from Kubernetes
+kompose down <__f___file_> <docker_compose_yml>
+
+# Convert a docker-compose file into Kubernetes resources file
+kompose convert <__f___file_> <docker_compose_yml>

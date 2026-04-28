@@ -3,4 +3,14 @@
 
 % jmeter, common
 
+# Run a specific test plan in nongui mode
+jmeter <__n___nongui_> <__t___testfile_> <path_to_file_jmx>
 
+# Run a test plan in nongui mode using a specific log file
+jmeter <__n___nongui_> <__t___testfile_> <path_to_file_jmx> <__l___logfile_> <path_to_logfile_jtl>
+
+# Run a test plan in nongui mode using a specific proxy
+jmeter <__n___nongui_> <__t___testfile_> <path_to_file_jmx> <__H____proxyHost_> <127_0_0_1> <__P___proxyPort_> <8888>
+
+# Run a test plan in nongui mode using a specific JMeter property
+jmeter <__n___nongui_> <__t___testfile_> <path_to_file_jmx> <__J___jmeterproperty_> <key>='<value>'

@@ -3,4 +3,23 @@
 
 % systemctl-list-units, linux
 
+# List units which are active, have pending jobs, or have failed
+systemctl list-units
 
+# List all units, including inactive ones
+systemctl list-units <__a___all_>
+
+# Filter by unit type
+systemctl list-units <__t___type_> <service_socket_timer____>
+
+# Filter by state
+systemctl list-units --state <running_listening_dead____>
+
+# Filter by a name pattern
+systemctl list-units 'systemd*'
+
+# Print output directly to `stdout`
+systemctl list-units --no-pager
+
+# Print output without headers or footers (for scripts)
+systemctl list-units --no-legend

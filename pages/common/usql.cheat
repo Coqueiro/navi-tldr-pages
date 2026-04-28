@@ -3,4 +3,23 @@
 
 % usql, common
 
+# Connect to a specific database
+usql <sqlserver_mysql_postgres_sqlite3____>://<username>:<password>@<host>:<port>/<database_name>
 
+# Execute commands from a file
+usql <__f___file_> <path_to_query_sql>
+
+# Execute a specific SQL command
+usql <__c___command_> "<sql_command>"
+
+# [Interactive] Run an SQL command in the `usql` prompt
+<command>
+
+# [Interactive] Display the database schema
+\d
+
+# [Interactive] Export query results to a specific file
+\g <path_to_file_with_results>
+
+# [Interactive] Import data from a CSV file into a specific table
+\copy <path_to_data_csv> <table_name>

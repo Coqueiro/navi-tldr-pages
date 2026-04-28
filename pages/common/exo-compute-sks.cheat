@@ -3,4 +3,26 @@
 
 % exo-compute-sks, common
 
+# List the supported SKS cluster versions
+exo compute sks versions
 
+# Create a new SKS cluster
+exo compute sks create <cluster_name> <__z___zone_> <zone>
+
+# List all SKS clusters
+exo compute sks list
+
+# Generate a Kubernetes kubeconfig file for an SKS cluster that expires in 1800 seconds
+exo compute sks kubeconfig <cluster_name_id> <user> --ttl 1800 <__z___zone_> <zone>
+
+# Create and add a Nodepool containing 3 nodes to an SKS cluster
+exo compute sks nodepool add <cluster_name_id> <nodepool_name> --size 3 <__z___zone_> <zone>
+
+# Remove a Nodepool from an SKS cluster
+exo compute sks nodepool delete <cluster_name_id> <nodepool_name_id>
+
+# Evict a Node from a Nodepool in an SKS cluster
+exo compute sks nodepool evict <cluster_name_id> <nodepool_name_id> <node_name_id>
+
+# Enable the Exoscale CSI driver for an existing SKS cluster
+exo compute sks update <cluster_name_id> --enable-csi-addon <__z___zone_> <zone>

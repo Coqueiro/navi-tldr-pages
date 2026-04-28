@@ -3,4 +3,17 @@
 
 % slapt-src, linux
 
+# Update the list of available slackbuilds and versions
+slapt-src <__u___update_>
 
+# List all available slackbuilds
+slapt-src <__l___list_>
+
+# Fetch, build, and install the specified slackbuild(s)
+slapt-src <__i___install_> <slackbuild_name>
+
+# Locate slackbuilds by their name or description
+slapt-src <__s___search_> <search_term>
+
+# Display information about a slackbuild
+slapt-src <__w___show_> <slackbuild_name>

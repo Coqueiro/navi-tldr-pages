@@ -4,7 +4,7 @@
 % pamdice, common
 
 # Slice a Netpbm image such that the resulting tiles have the specified height and width
-pamdice {{[-o|-outstem]}} <path_to_filename_stem> {{[-he|-height]}} <value> {{[-w|-width]}} <value> <path_to_input_ppm>
+pamdice <__o__outstem_> <path_to_filename_stem> <__he__height_> <value> <__w__width_> <value> <path_to_input_ppm>
 
 # Make the produced pieces overlap by the specified amount horizontally and vertically
-pamdice {{[-o|-outstem]}} <path_to_filename_stem> {{[-he|-height]}} <value> {{[-w|-width]}} <value> {{[-ho|-hoverlap]}} <value> {{[-vo|-voverlap]}} <value> <path_to_input_ppm>
+pamdice <__o__outstem_> <path_to_filename_stem> <__he__height_> <value> <__w__width_> <value> <__ho__hoverlap_> <value> <__vo__voverlap_> <value> <path_to_input_ppm>

@@ -3,4 +3,17 @@
 
 % spa-resample, linux
 
+# Resample an audio file
+spa-resample <path_to_input_wav> <path_to_output_wav>
 
+# Resample an audio file to a specific sample rate
+spa-resample <__r___rate_> <48000> <path_to_input_wav> <path_to_output_wav>
+
+# Resample an audio file to a specific format
+spa-resample <__f___format_> <s8_s16_s32_f32_f64> <path_to_input_wav> <path_to_output_wav>
+
+# Resample an audio file with a specific quality (0 is lowest, 14 is highest)
+spa-resample <__q___quality_> <0__14> <path_to_input_wav> <path_to_output_wav>
+
+# Display help
+spa-resample -h

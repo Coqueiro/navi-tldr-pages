@@ -3,4 +3,11 @@
 
 % cec-ctl, linux
 
+# List CEC devices
+cec-ctl --list-devices
 
+# Monitor CEC traffic
+sudo cec-ctl <__m___monitor_>
+
+# Show CEC topology
+cec-ctl <__S___show_topology_>

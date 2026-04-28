@@ -3,4 +3,14 @@
 
 % nu, common
 
+# Start an interactive shell session
+nu
 
+# Execute specific commands
+nu <__c___commands_> "{{echo 'nu is executed'}}"
+
+# Execute a specific script
+nu <path_to_script_nu>
+
+# Execute a specific script with logging
+nu --log-level <error_warn_info_debug_trace> <path_to_script_nu>

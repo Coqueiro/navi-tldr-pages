@@ -7,13 +7,13 @@
 palmtopnm <path_to_file_palm> > <path_to_file_pnm>
 
 # Display information about the input file
-palmtopnm {{[-verb|-verbose]}} <path_to_file_palm> > <path_to_file_pnm>
+palmtopnm <__verb__verbose_> <path_to_file_palm> > <path_to_file_pnm>
 
 # Convert the n'th rendition of the image contained in the input file
-palmtopnm {{[-r|-rendition]}} <__r__rendition_> <path_to_file_palm> > <path_to_file_pnm>
+palmtopnm <__r__rendition_> <n> <path_to_file_palm> > <path_to_file_pnm>
 
 # Write a histogram of the colors in the input file to `stdout`
-palmtopnm {{[-s|-showhist]}} <path_to_file_palm> > <path_to_file_pnm>
+palmtopnm <__s__showhist_> <path_to_file_palm> > <path_to_file_pnm>
 
 # Output the transparent color of the input image if set
-palmtopnm {{[-t|-transparent]}} <path_to_file_palm>
+palmtopnm <__t__transparent_> <path_to_file_palm>

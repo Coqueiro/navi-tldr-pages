@@ -3,4 +3,23 @@
 
 % svgo, common
 
+# Optimize a file using the default plugins (overwrites the original file)
+svgo <test_svg>
 
+# Optimize a file and save the result to another file
+svgo <test_svg> <__o___output_> <test_min_svg>
+
+# Optimize all SVG files within a directory (overwrites the original files)
+svgo <__f___folder_> <path_to_directory_with_svg_files>
+
+# Optimize all SVG files within a directory and save the resulting files to another directory
+svgo <__f___folder_> <path_to_input_directory> <__o___output_> <path_to_output_directory>
+
+# Optimize SVG content passed from another command, and save the result to a file
+{{cat test.svg}} | svgo <__i___input_> - <__o___output_> <test_min_svg>
+
+# Optimize a file and print out the result
+svgo <test_svg> <__o___output_> -
+
+# Show available plugins
+svgo --show-plugins

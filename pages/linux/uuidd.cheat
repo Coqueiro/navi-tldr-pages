@@ -3,4 +3,11 @@
 
 % uuidd, linux
 
+# Generate a random UUID
+uuidd <__r___random_>
 
+# Generate a bulk number of random UUIDs
+uuidd <__r___random_> <__n___uuids_> <number_of_uuids>
+
+# Generate a time-based UUID, based on the current time and MAC address of the system
+uuidd <__t___time_>

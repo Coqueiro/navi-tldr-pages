@@ -3,4 +3,11 @@
 
 % eclean-kernel, linux
 
+# List all kernel files
+sudo eclean-kernel <__l___list_kernels_>
 
+# Remove all kernels except for the two newest ones
+sudo eclean-kernel <__n___num_> 2
+
+# Remove all kernels except for the two newest ones and ask before removal
+sudo eclean-kernel <__a___all_> <__n___num_> 2

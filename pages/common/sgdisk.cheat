@@ -3,4 +3,26 @@
 
 % sgdisk, common
 
+# Display basic GPT partition summary data for a device
+sudo sgdisk <__p___print_> <_dev_sdX>
 
+# Wipe both GPT and MBR data structures from a device (destroys all partition information)
+sudo sgdisk <__Z___zap_all_> <_dev_sdX>
+
+# Convert a GPT disk to MBR format using up to four partitions
+sudo sgdisk <__m___gpttombr_> <1_2_3_4> <_dev_sdX>
+
+# Delete a partition entry by number (data in sectors remains untouched)
+sudo sgdisk <__d___delete_> <1> <_dev_sdX>
+
+# Save the current in-memory GPT data (protective MBR, headers, and table) to a binary backup file
+sudo sgdisk <__b___backup_> <_path_to_backup_gpt> <_dev_sdX>
+
+# Load GPT data from a backup file (restoring from a non-original disk is not recommended)
+sudo sgdisk <__l___load_backup_> <_path_to_backup_gpt> <_dev_sdX>
+
+# Verify GPT structures for CRC errors, mismatches, or inconsistencies
+sudo sgdisk <__v___verify_> <_dev_sdX>
+
+# Display a summary of available partition type codes (no device required)
+sgdisk <__L___list_types_>

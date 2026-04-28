@@ -3,4 +3,26 @@
 
 % asciinema, common
 
+# Associate the local install of `asciinema` with an asciinema.org account
+asciinema <_a_auth_>
 
+# Make a new recording and save it to a local file (finish it with `<Ctrl d>` or type `exit`)
+asciinema <_r_record_> <path_to_recording_cast>
+
+# Replay a terminal recording from a local file
+asciinema <_p_play_> <path_to_recording_cast>
+
+# Replay a terminal recording hosted on <https://asciinema.org>
+asciinema <_p_play_> https://asciinema.org/a/<cast_id>
+
+# Make a new recording, limiting any idle time to at most 2.5 seconds
+asciinema <_r_record_> <__i___idle_time_limit_> 2.5
+
+# Print the full output of a locally saved recording
+asciinema <_ca_cat_> <path_to_recording_cast>
+
+# Upload a locally saved terminal session to asciinema.org
+asciinema <_u_upload_> <path_to_recording_cast>
+
+# Stream the current terminal on a local webpage
+asciinema <_st_stream_> --local

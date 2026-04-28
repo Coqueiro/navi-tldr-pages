@@ -3,4 +3,20 @@
 
 % ionice, linux
 
+# Run a command with the given scheduling class and priority
+ionice <__c___class_> <scheduling_class> <__n___classdata_> <priority> <command>
 
+# Set I/O scheduling class of a running process with a specific [p]id, [P]gid, or [u]id
+ionice <__c___class_> <scheduling_class> -<p_P_u> <id>
+
+# Run a command with custom I/O scheduling class and priority
+ionice <__c___class_> <scheduling_class> <__n___classdata_> <priority> <command>
+
+# Ignore failure to set the requested priority
+ionice <__t___ignore_> <__n___classdata_> <priority> <__p___pid_> <pid>
+
+# Run the command even in case it was not possible to set the desired priority (this can happen due to insufficient privileges or an old kernel version)
+ionice <__t___ignore_> <__n___classdata_> <priority> <__p___pid_> <pid>
+
+# Print the I/O scheduling class and priority of a running process
+ionice <__p___pid_> <pid>

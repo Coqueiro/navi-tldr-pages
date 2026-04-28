@@ -3,4 +3,26 @@
 
 % httpx, common
 
+# Run a probe against a [u]RL, host, IP Address or subnet (CIDR notation) showing probe status
+httpx -probe <__u__target_> <url_host_ipaddress_subnet_with_cidr>
 
+# Run a probe against multiple hosts showing status code with input from `subfinder`
+subfinder <__d__domain_> <example_com> | httpx <__sc__status_code_>
+
+# Run a rate limited probe against a list of hosts from a file showing technology detected and response time
+httpx <__rl__rate_limit_> <150> <__l__list_> <path_to_newline_separated_hosts_list> <__td__tech_detect_> <__rt__response_time_>
+
+# Run a probe against a [u]RL showing its webpage title, CDN/WAF in use, and page content hash
+httpx <__u__target_> <url> -title -cdn -hash <sha256>
+
+# Run a probe against a list of hosts with custom defined ports and timeout after certain seconds
+httpx -probe <__u__target_> <host1_host2____> <__p__ports_> http:<80_8000_8080>,https:<443_8443> -timeout <10>
+
+# Run a probe against a list of hosts filtering out codes of certain responses
+httpx <__u__target_> <host1_host2____> <__fc__filter_code_> <400_401_404>
+
+# Run a probe against a list of hosts matching codes of certain responses
+httpx <__u__target_> <host1_host2____> <__mc__match_code_> <200_301_304>
+
+# Run a probe against a URL saving screenshots of certain paths, with screenshot timeouts (assets are saved in `output`)
+httpx <__u__target_> <https___www_github_com> -path <_tldr_pages_tldr__projectdiscovery_httpx> <__ss__screenshot_> <__st__screenshot_timeout_> <10>

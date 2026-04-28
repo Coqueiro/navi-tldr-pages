@@ -3,4 +3,14 @@
 
 % mdp, common
 
+# Launch a presentation in the terminal from a Markdown file
+mdp <presentation_md>
 
+# Disable fading transitions
+mdp <__f___nofade_> <presentation_md>
+
+# Invert font colors to use in terminals with light background
+mdp <__i___invert_> <presentation_md>
+
+# Disable transparency in transparent terminals
+mdp <__t___notrans_> <presentation_md>

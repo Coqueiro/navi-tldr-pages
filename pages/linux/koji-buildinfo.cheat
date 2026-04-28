@@ -3,4 +3,11 @@
 
 % koji-buildinfo, linux
 
+# Print basic information
+koji buildinfo {{BuildID_or_NVR1 BuildID_or_NRV2 ...}}
 
+# Print basic information with changelog
+koji buildinfo {{BuildID_or_NVR1 BuildID_or_NRV2 ...}} --changelog
+
+# Display help
+koji buildinfo <__h___help_>

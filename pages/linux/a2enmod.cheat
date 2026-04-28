@@ -3,4 +3,8 @@
 
 % a2enmod, linux
 
+# Enable a module
+sudo a2enmod <module>
 
+# Don't show informative messages
+sudo a2enmod <__q___quiet_> <module>

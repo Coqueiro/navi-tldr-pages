@@ -4,25 +4,25 @@
 % dnf4, linux
 
 # Upgrade installed packages to the newest available versions
-sudo dnf4 {{[up|upgrade]}}
+sudo dnf4 <_up_upgrade_>
 
 # Search packages via keywords
-dnf4 {{[se|search]}} {{keyword1 keyword2 ...}}
+dnf4 <_se_search_> {{keyword1 keyword2 ...}}
 
 # Display details about a package
-dnf4 {{[if|info]}} <package>
+dnf4 <_if_info_> <package>
 
 # Install a new package (use `--assumeyes` to confirm all prompts automatically)
-sudo dnf4 {{[in|install]}} {{package1 package2 ...}}
+sudo dnf4 <_in_install_> {{package1 package2 ...}}
 
 # Remove a package
-sudo dnf4 {{[rm|remove]}} {{package1 package2 ...}}
+sudo dnf4 <_rm_remove_> {{package1 package2 ...}}
 
 # List installed packages
-dnf4 {{[ls|list]}} --installed
+dnf4 <_ls_list_> --installed
 
 # Find which packages provide a given command
-dnf4 {{[wp|provides]}} <command>
+dnf4 <_wp_provides_> <command>
 
 # View all past operations
-dnf4 {{[hist|history]}}
+dnf4 <_hist_history_>

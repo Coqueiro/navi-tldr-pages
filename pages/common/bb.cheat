@@ -3,4 +3,14 @@
 
 % bb, common
 
+# Evaluate an expression
+bb <__e___eval_> "(+ 1 2 3)"
 
+# Evaluate a script file
+bb <__f___file_> <path_to_script_clj>
+
+# Bind [i]nput to a sequence of lines from `stdin`
+printf "first\nsecond" | bb -i "(map clojure.string/capitalize *input*)"
+
+# Bind [I]nput to a sequence of EDN (Extensible Data Notation) values from `stdin`
+echo "{:key 'val}" | bb -I "(:key (first *input*))"

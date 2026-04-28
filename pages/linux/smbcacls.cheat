@@ -4,13 +4,13 @@
 % smbcacls, linux
 
 # Display the ACLs for a file or directory on a remote SMB share
-smbcacls //<server>/<share> <path_to_file_or_directory> --user {{domain\\username}}%<password>
+smbcacls //<server>/<share> <path_to_file_or_directory> --user <domain__username>%<password>
 
 # Set a new ACL for a file on a remote SMB share (replace `"ACL:..."` with a valid Windows ACL specification)
-smbcacls //<server>/<share> <path_to_file> --user {{domain\\username}}%<password> "ACL:<DACL>"
+smbcacls //<server>/<share> <path_to_file> --user <domain__username>%<password> "ACL:<DACL>"
 
 # Remove all existing ACL entries and set a new ACL
-smbcacls //<server>/<share> <path_to_file> --user {{domain\\username}}%<password> "RESET" "ACL:<DACL>"
+smbcacls //<server>/<share> <path_to_file> --user <domain__username>%<password> "RESET" "ACL:<DACL>"
 
 # Specify an alternative workgroup (or domain) and have the program prompt for a password interactively
 smbcacls //<server>/<share> <path_to_file> --user <username> --workgroup <workgroup>

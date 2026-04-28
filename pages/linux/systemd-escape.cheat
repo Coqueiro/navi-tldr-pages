@@ -3,4 +3,17 @@
 
 % systemd-escape, linux
 
+# Escape the given text
+systemd-escape <text>
 
+# Reverse the escaping process
+systemd-escape <__u___unescape_> <text>
+
+# Treat the given text as a path
+systemd-escape <__p___path_> <text>
+
+# Append the given suffix to the escaped text
+systemd-escape --suffix <suffix> <text>
+
+# Use a template and inject the escaped text
+systemd-escape --template <template> <text>

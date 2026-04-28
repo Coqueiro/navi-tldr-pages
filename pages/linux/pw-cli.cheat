@@ -3,4 +3,17 @@
 
 % pw-cli, linux
 
+# Print information of all object of a specific type
+pw-cli <_ls_list_objects_> <Node_Link_Port_Client_Device_Metadata_Factory_Module_Profiler_SecurityContext_Core>
 
+# Print information about an object with a specific ID
+pw-cli <_i_info_> <4>
+
+# Print all objects' information
+pw-cli <_i_info_> all
+
+# Monitor for object changes
+pw-cli <__m___monitor_>
+
+# Display help
+pw-cli <_h_help_>

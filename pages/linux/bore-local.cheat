@@ -3,4 +3,17 @@
 
 % bore-local, linux
 
+# Expose a local port to a remote Bore server
+bore local <__t___to_> <remote_server_address> <local_port>
 
+# Expose a specific local host instead of `localhost`
+bore local <__l___local_host_> <host> <__t___to_> <remote_server_address> <local_port>
+
+# Specify a remote server port explicitly
+bore local <__t___to_> <remote_server_address> <__p___port_> <remote_port> <local_port>
+
+# Use a secret for authentication
+bore local <__t___to_> <remote_server_address> <__s___secret_> <your_secret> <local_port>
+
+# Display help
+bore local <__h___help_>

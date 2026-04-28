@@ -3,4 +3,14 @@
 
 % unix2mac, linux
 
+# Change the line endings of a file
+unix2mac <path_to_file>
 
+# Create a copy with macOS-style line endings
+unix2mac <__n___newfile_> <path_to_file> <path_to_new_file>
+
+# Display file information
+unix2mac <__i___info_> <path_to_file>
+
+# Keep/add/remove Byte Order Mark
+unix2mac --<keep_bom_add_bom_remove_bom> <path_to_file>

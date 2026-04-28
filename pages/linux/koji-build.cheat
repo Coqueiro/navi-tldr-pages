@@ -3,4 +3,20 @@
 
 % koji-build, linux
 
+# Build a package from `src.rpm`
+koji build <target> <path_to_src_rpm>
 
+# Build a package from a SCM (Source Code Management) URL
+koji build <target> <git_https___src_fedoraproject_org_rpms_vim_git_e847a50297a216229050bf4db3d06a139104e7cf>
+
+# Perform a scratch build
+koji build <target> <path_to_src_rpm> --scratch
+
+# Wait on the build, even if it's running in the background
+koji build <target> <path_to_src_rpm> --wait
+
+# Don't wait on build
+koji build <target> <path_to_src_rpm> --nowait
+
+# Display help
+koji build <__h___help_>

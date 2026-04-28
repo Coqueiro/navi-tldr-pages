@@ -3,4 +3,11 @@
 
 % st-util, common
 
+# Run GDB server on port 4500
+st-util <__p___listen_port_> <4500>
 
+# [Interactive] Connect to GDB server within `gdb`
+target extended-remote <localhost>:<4500>
+
+# [Interactive] Write firmware to device
+load <firmware_elf>

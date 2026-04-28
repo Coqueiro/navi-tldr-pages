@@ -3,4 +3,23 @@
 
 % gh-attestation, common
 
+# Download attestations for a local file associated with a specific repository
+gh <_at_attestation_> download <path_to_artifact_bin> <__R___repo_> <owner>/<repository>
 
+# Download attestations for an OCI container image associated with an organization
+gh <_at_attestation_> download oci://<image_uri> <__o___owner_> <organization_name>
+
+# Verify a local artifact online against attestations from a specific repository
+gh <_at_attestation_> verify <path_to_artifact_bin> <__R___repo_> <owner>/<repository>
+
+# Verify an artifact, requiring it was signed by a specific reusable workflow for enhanced security
+gh <_at_attestation_> verify <path_to_artifact_bin> <__o___owner_> <organization_name> --signer-workflow <owner>/<repository>/<path_to_workflow_yml>
+
+# Verify an artifact and output the detailed verification results as JSON for use in policy engines
+gh <_at_attestation_> verify <path_to_artifact_bin> <__o___owner_> <organization_name> --format json
+
+# Perform a fully offline verification using a downloaded bundle and a custom trusted root file
+gh <_at_attestation_> verify <path_to_artifact_bin> <__b___bundle_> <path_to_bundle_jsonl> --custom-trusted-root <path_to_trusted_root_jsonl>
+
+# Save the trusted root of signing certificates to a file for offline verification
+gh <_at_attestation_> trusted-root > <path_to_trusted_root_jsonl>

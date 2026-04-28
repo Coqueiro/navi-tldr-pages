@@ -4,16 +4,16 @@
 % jj-config-set, common
 
 # Set the user name in the user-level config
-jj config {{[s|set]}} --user user.name "<name>"
+jj config <_s_set_> --user user.name "<name>"
 
 # Set the user email in the user-level config
-jj config {{[s|set]}} --user user.email "<email>"
+jj config <_s_set_> --user user.email "<email>"
 
 # Set a config option in the repo-level config
-jj config {{[s|set]}} --repo <name> <value>
+jj config <_s_set_> --repo <name> <value>
 
 # Set a config option in the workspace-level config
-jj config {{[s|set]}} --workspace <name> <value>
+jj config <_s_set_> --workspace <name> <value>
 
 # Set a boolean config option
-jj config {{[s|set]}} --user <name> <true_false>
+jj config <_s_set_> --user <name> <true_false>

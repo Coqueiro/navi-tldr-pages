@@ -3,4 +3,23 @@
 
 % owut, linux
 
+# List available OpenWrt versions for the current device
+owut versions
 
+# List user installed or removed packages
+owut list
+
+# Check for updates without performing an upgrade
+owut check
+
+# Automatically build, download, verify, and install the latest available firmware
+owut upgrade
+
+# Upgrade to a specific version and include additional packages
+owut upgrade <__V___version_to_> <version> <__a___add_> "{{htop vim}}"
+
+# Download and verify a specific image without installing it
+owut download <__V___version_to_> <25_12_0>
+
+# Verify the latest downloaded image and install it (device will reboot)
+owut install

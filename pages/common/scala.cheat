@@ -3,4 +3,17 @@
 
 % scala, common
 
+# Start a REPL (interactive shell)
+scala
 
+# Start the interpreter with a dependency in the [c]lass[p]ath
+scala <__cp___extra_jars_> <filename_jar> <command>
+
+# Execute a Scala script
+scala <script_scala>
+
+# Execute a `.jar` program
+scala <filename_jar>
+
+# Execute a single Scala command
+scala <__e___execute_script_> <command>

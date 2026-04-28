@@ -3,4 +3,11 @@
 
 % xkcdpass, common
 
+# Generate one passphrase with the default options
+xkcdpass
 
+# Generate one passphrase whose first letters of each word match the provided argument
+xkcdpass <__a___acrostic_> <acrostic>
+
+# Generate passwords interactively
+xkcdpass <__i___interactive_>

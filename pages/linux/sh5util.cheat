@@ -3,4 +3,11 @@
 
 % sh5util, linux
 
+# Merge HDF5 files produced on each allocated node for the specified job or step
+sh5util <__j___jobs_> <job_id_job_id_step_id>
 
+# Extract one or more data series from a merged job file
+sh5util <__j___jobs_> <job_id_job_id_step_id> <__E___extract_> <__i___input_> <path_to_file_h5> <__s___series_> <Energy_Filesystem_Network_Task>
+
+# Extract one data item from all nodes in a merged job file
+sh5util <__j___jobs_> <job_id_job_id_step_id> <__I___item_extract_> <__s___series_> <Energy_Filesystem_Network_Task> <__d___data_> <data_item>

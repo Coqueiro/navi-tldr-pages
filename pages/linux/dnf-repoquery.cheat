@@ -4,4 +4,4 @@
 % dnf-repoquery, linux
 
 # Query a package for its dependencies
-dnf {{[rq|repoquery]}} --deplist <package>
+dnf <_rq_repoquery_> --deplist <package>

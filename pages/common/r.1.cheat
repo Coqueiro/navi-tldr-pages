@@ -3,4 +3,23 @@
 
 % r.1, common
 
+# Start a REPL (interactive shell)
+R
 
+# Start R in vanilla mode (i.e. a blank session that doesn't save the workspace at the end)
+R --vanilla
+
+# Execute a file
+R <__f___file_> <path_to_file_R>
+
+# Execute an R expression and then exit
+R -e <expr>
+
+# Run R with a debugger
+R <__d___debugger_> <debugger>
+
+# Check R packages from package sources
+R CMD check <path_to_package_source>
+
+# Display version
+R --version

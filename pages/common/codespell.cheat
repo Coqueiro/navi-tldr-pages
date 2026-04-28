@@ -3,4 +3,26 @@
 
 % codespell, common
 
+# Check for typos in all text files in the current directory, recursively
+codespell
 
+# Correct all typos found in-place
+codespell <__w___write_changes_>
+
+# Skip files with names that match the specified pattern (accepts a comma-separated list of patterns using wildcards)
+codespell <__S___skip_> "<pattern>"
+
+# Use a custom dictionary file when checking (`--dictionary` can be used multiple times)
+codespell <__D___dictionary_> <path_to_file_txt>
+
+# Do not check words that are listed in the specified file
+codespell <__I___ignore_words_> <path_to_file_txt>
+
+# Do not check the specified words
+codespell <__L___ignore_words_list_> <ignored_word1_ignored_word2____>
+
+# Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match
+codespell <__context___before_context___after_context> 3
+
+# Check file names for typos, in addition to file contents
+codespell <__f___check_filenames_>

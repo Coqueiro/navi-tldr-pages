@@ -3,4 +3,17 @@
 
 % expand, common
 
+# Convert tabs in each file to spaces, writing to `stdout`
+expand <path_to_file>
 
+# Convert tabs to spaces, reading from `stdin`
+expand
+
+# Do not convert tabs after non blanks
+expand <__i___initial_> <path_to_file>
+
+# Have tabs a certain number of characters apart, not 8
+expand <__t___tabs_> <number> <path_to_file>
+
+# Use a comma separated list of explicit tab positions
+expand <__t___tabs_> <1_4_6>

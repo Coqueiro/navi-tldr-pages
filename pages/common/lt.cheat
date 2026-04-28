@@ -3,4 +3,17 @@
 
 % lt, common
 
+# Start tunnel from a specific port
+lt <__p___port_> <8000>
 
+# Specify the upstream server doing the forwarding
+lt <__p___port_> <8000> <__h___host_> <host>
+
+# Request a specific subdomain
+lt <__p___port_> <8000> <__s___subdomain_> <subdomain>
+
+# Print basic request info
+lt <__p___port_> <8000> --print-requests
+
+# Open the tunnel URL in the default web browser
+lt <__p___port_> <8000> <__o___open_>

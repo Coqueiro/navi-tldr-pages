@@ -3,4 +3,17 @@
 
 % nxc-ftp, common
 
+# Search for valid credentials by trying out every combination in the specified lists of usernames and passwords
+nxc ftp <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt>
 
+# Continue searching for valid credentials even after valid credentials have been found
+nxc ftp <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt> --continue-on-success
+
+# Perform directory listings on each FTP server the supplied credentials are valid on
+nxc ftp <192_168_178_0_24> <__u___username_> <username> <__p___password_> <password> --ls
+
+# Download the specified file from the target server
+nxc ftp <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --get <path_to_file>
+
+# Upload the specified file to the target server at the specified location
+nxc ftp <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --put <path_to_local_file> <path_to_remote_location>

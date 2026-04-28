@@ -3,4 +3,17 @@
 
 % hledger-add, common
 
+# Record new transactions, saving to the default journal file
+hledger add
 
+# Add transactions to `2024.journal`, but also load `2023.journal` for completions
+hledger add <__f___file_> <path_to_2024_journal> <__f___file_> <path_to_2023_journal>
+
+# Provide answers for the first four prompts
+hledger add <today> '{{best buy}}' <expenses_supplies> '<_20>'
+
+# Show `add`'s options and documentation with `$PAGER`
+hledger add <__h___help_>
+
+# Show `add`'s documentation with `info` or `man` if available
+hledger help add

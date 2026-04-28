@@ -3,4 +3,11 @@
 
 % zapier-login, common
 
+# Log in to a Zapier account
+zapier login
 
+# Log in to a Zapier account with a deploy key for SSO
+zapier login <__s___sso_>
+
+# Display additional debug output
+zapier login <__d___debug_>

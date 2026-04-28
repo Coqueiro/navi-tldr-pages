@@ -4,22 +4,22 @@
 % qm-disk, linux
 
 # Add `n` gigabytes to a virtual disk
-qm {{[di|disk]}} {{[resi|resize]}} <100> <disk_name> +<_resc_rescan_>G
+qm <_di_disk_> <_resi_resize_> <100> <disk_name> +<n>G
 
 # Move a virtual disk
-qm {{[di|disk]}} {{[m|move]}} <100> <destination> <index>
+qm <_di_disk_> <_m_move_> <100> <destination> <index>
 
 # Delete the previous copy of the virtual disk
-qm {{[di|disk]}} {{[m|move]}} --delete <100> <destination> <index>
+qm <_di_disk_> <_m_move_> --delete <100> <destination> <index>
 
 # Import a VMDK/`.qcow2`/raw disk image using a specific storage name
-qm {{[di|disk]}} {{[i|import]}} <100> <path_to_disk> <storage_name> --format <qcow2_raw_vmdk>
+qm <_di_disk_> <_i_import_> <100> <path_to_disk> <storage_name> --format <qcow2_raw_vmdk>
 
 # Rescan all storages and update disk sizes and unused disk images
-qm {{[di|disk]}} {{[resc|rescan]}}
+qm <_di_disk_> <_resc_rescan_>
 
 # Perform a dry-run of a rescan and do not write any changes to configurations
-qm {{[di|disk]}} {{[resc|rescan]}} --dryrun
+qm <_di_disk_> <_resc_rescan_> --dryrun
 
 # Specify a virtual machine by its ID
-qm {{[di|disk]}} {{[resc|rescan]}} --vmid <100>
+qm <_di_disk_> <_resc_rescan_> --vmid <100>

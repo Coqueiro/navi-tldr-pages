@@ -3,4 +3,17 @@
 
 % git-cliff, common
 
+# Generate a changelog from all commits in a Git repository and save it to `CHANGELOG.md`
+git cliff > <CHANGELOG_md>
 
+# Generate a changelog from commits starting from the latest tag and print it to `stdout`
+git cliff <__l___latest_>
+
+# Generate a changelog from commits that belong to the current tag (use `git checkout` on a tag before this)
+git cliff --current
+
+# Generate a changelog from commits that do not belong to a tag
+git cliff <__u___unreleased_>
+
+# Write the default config file to `cliff.toml` in the current directory
+git cliff <__i___init_>

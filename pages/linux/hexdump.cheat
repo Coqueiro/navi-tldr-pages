@@ -3,4 +3,14 @@
 
 % hexdump, linux
 
+# Print the hexadecimal representation of a file, replacing duplicate lines by '*'
+hexdump <path_to_file>
 
+# Display the input offset in hexadecimal and its ASCII representation in two columns
+hexdump <__C___canonical_> <path_to_file>
+
+# Display the hexadecimal representation of a file, but interpret only n bytes of the input
+hexdump <__C___canonical_> <__n___length_> <number_of_bytes> <path_to_file>
+
+# Don't replace duplicate lines with '*'
+hexdump <__v___no_squeezing_> <path_to_file>

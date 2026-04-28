@@ -4,13 +4,13 @@
 % ip-netconf, linux
 
 # Show network configuration for all interfaces
-ip {{[netc|netconf]}}
+ip <_netc_netconf_>
 
 # Show network configuration for a specific interface
-ip {{[netc|netconf]}} {{[s|show]}} dev <network_interface>
+ip <_netc_netconf_> <_s_show_> dev <network_interface>
 
 # Show only IPv4 network configuration
-ip -4 {{[netc|netconf]}}
+ip -4 <_netc_netconf_>
 
 # Show only IPv6 network configuration
-ip -6 {{[netc|netconf]}}
+ip -6 <_netc_netconf_>

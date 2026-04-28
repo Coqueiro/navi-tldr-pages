@@ -7,4 +7,4 @@
 rasttopnm <path_to_input_rast> > <path_to_output_pnm>
 
 # Use the color map indices in the raster if they are color values
-rasttopnm {{[-i|-index]}} <path_to_input_rast> > <path_to_output_pnm>
+rasttopnm <__i__index_> <path_to_input_rast> > <path_to_output_pnm>

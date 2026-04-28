@@ -3,4 +3,17 @@
 
 % sqlx, common
 
+# Create the database specified in the `$DATABASE_URL` environment variable
+sqlx database create
 
+# Drop the specified database
+sqlx database drop <__D___database_url_> <database_url>
+
+# Create a new pair of up and down migration files with the given description in the "migrations" directory
+sqlx migrate add -r <migration_description>
+
+# Run all pending migrations for the specified database
+sqlx migrate run <__D___database_url_> <database_url>
+
+# Revert the latest migration for the specified database
+sqlx migrate revert <__D___database_url_> <database_url>

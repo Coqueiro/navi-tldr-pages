@@ -3,4 +3,17 @@
 
 % id3v2, linux
 
+# List all genres
+id3v2 <__L___list_genres_>
 
+# List all tags of specific files
+id3v2 <__l___list_> {{path/to/file1 path/to/file2 ...}}
+
+# Delete all `id3v2` or `id3v1` tags of specific files
+id3v2 <__delete_v2___delete_v1> {{path/to/file1 path/to/file2 ...}}
+
+# Display help
+id3v2 <__h___help_>
+
+# Display version
+id3v2 <__v___version_>

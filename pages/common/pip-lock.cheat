@@ -3,4 +3,14 @@
 
 % pip-lock, common
 
+# Generate a `pylock.toml` for the current project
+pip lock <__e___editable_> .
 
+# Lock dependencies from a requirements file
+pip lock <__r___requirement_> <path_to_requirements_txt>
+
+# Specify a custom output file for the lock
+pip lock <__o___output_> <path_to_lockfile_toml>
+
+# Lock a specific package and its dependencies
+pip lock <package>

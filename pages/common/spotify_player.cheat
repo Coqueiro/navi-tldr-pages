@@ -3,4 +3,20 @@
 
 % spotify_player, common
 
+# Start a daemon that plays music in the background
+spotify_player <__d___daemon_>
 
+# Start the TUI (controls the daemon if available, otherwise starts its own client)
+spotify_player
+
+# Use the specified theme
+spotify_player <__t___theme_> <theme_name>
+
+# Use configuration files (`app.toml`, `keymap.toml` and `theme.toml`) in the specified directory
+spotify_player <__c___config_folder_> <path_to_directory>
+
+# Like the currently playing track
+spotify_player like
+
+# Display a list of keybindings
+<?>

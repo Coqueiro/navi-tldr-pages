@@ -3,4 +3,20 @@
 
 % kops, common
 
+# Create a cluster from the configuration specification
+kops create cluster <__f___filename_> <cluster_name_yaml>
 
+# Create a new SSH public key
+kops create sshpublickey <key_name> <__i___ssh_public_key_> <___ssh_id_rsa_pub>
+
+# Export the cluster configuration to the `~/.kube/config` file
+kops export kubecfg <cluster_name>
+
+# Get the cluster configuration as YAML
+kops get cluster <cluster_name> <__o___output_> yaml
+
+# Delete a cluster
+kops delete cluster <cluster_name> <__y___yes_>
+
+# Validate a cluster
+kops validate cluster <cluster_name> --wait <wait_time_until_ready> --count <num_required_validations>

@@ -3,4 +3,14 @@
 
 % plasmashell, linux
 
+# Restart `plasmashell`
+systemctl restart --user plasma-plasmashell
 
+# Restart `plasmashell` without systemd
+plasmashell --replace & disown
+
+# Display help
+plasmashell <__h___help_>
+
+# Display help, including Qt options
+plasmashell --help-all

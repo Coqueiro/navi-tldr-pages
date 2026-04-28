@@ -3,4 +3,23 @@
 
 % kubectl-delete, common
 
+# Delete a specific pod
+kubectl delete <_po_pods_> <pod_name>
 
+# Delete a specific deployment
+kubectl delete <_deploy_deployments_> <deployment_name>
+
+# Delete a specific node
+kubectl delete <_no_nodes_> <node_name>
+
+# Delete all pods in a specified namespace
+kubectl delete <_po_pods_> --all <__n___namespace_> <namespace>
+
+# Delete all deployments and services in a specified namespace
+kubectl delete <_deploy_deployments_>,<_svc_services_> --all <__n___namespace_> <namespace>
+
+# Delete all nodes
+kubectl delete <_no_nodes_> --all
+
+# Delete resources defined in a YAML manifest
+kubectl delete <__f___filename_> <path_to_manifest_yaml>

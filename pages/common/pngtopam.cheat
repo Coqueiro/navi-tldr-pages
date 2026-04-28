@@ -10,7 +10,7 @@ pngtopam <path_to_image_png> > <path_to_output_pam>
 pngtopam -alphapam <path_to_image_png> > <path_to_output_pam>
 
 # Replace transparent pixels by the specified color
-pngtopam {{[-m|-mix]}} {{[-ba|-background]}} <color> <path_to_image_png> > <path_to_output_pam>
+pngtopam <__m__mix_> <__ba__background_> <color> <path_to_image_png> > <path_to_output_pam>
 
 # Write tEXt chunks found in the input image to the specified text file
-pngtopam {{[-te|-text]}} <path_to_file_txt> <path_to_image_png> > <path_to_output_pam>
+pngtopam <__te__text_> <path_to_file_txt> <path_to_image_png> > <path_to_output_pam>

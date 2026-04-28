@@ -3,4 +3,17 @@
 
 % cewl, linux
 
+# Create a wordlist file from the given URL up to 2 links depth
+cewl <__d___depth_> 2 <__w___write_> <path_to_wordlist_txt> <url>
 
+# Output an alphanumeric wordlist from the given URL with words of minimum 5 characters
+cewl --with-numbers <__m___min_word_length_> 5 <url>
+
+# Output a wordlist from the given URL in debug mode including email addresses
+cewl --debug <__e___email_> <url>
+
+# Output a wordlist from the given URL using HTTP Basic or Digest authentication
+cewl --auth_type <basic_digest> --auth_user <username> --auth_pass <password> <url>
+
+# Output a wordlist from the given URL through a proxy
+cewl --proxy_host <host> --proxy_port <port> <url>

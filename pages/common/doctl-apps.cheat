@@ -3,4 +3,26 @@
 
 % doctl-apps, common
 
+# Create an app
+doctl <_a_apps_> <_c_create_>
 
+# Create a deployment for a specific app
+doctl <_a_apps_> <_cd_create_deployment_> <app_id>
+
+# Delete an app interactively
+doctl <_a_apps_> <_d_delete_> <app_id>
+
+# Get an app
+doctl <_a_apps_> <_g_get_>
+
+# List all apps
+doctl <_a_apps_> <_ls_list_>
+
+# List all deployments from a specific app
+doctl <_a_apps_> <_lsd_list_deployments_> <app_id>
+
+# Get logs from a specific app
+doctl <_a_apps_> <_l_logs_> <app_id>
+
+# Update a specific app with a given app spec
+doctl <_a_apps_> <_u_update_> <app_id> --spec <path_to_spec_yml>

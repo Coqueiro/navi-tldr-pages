@@ -3,4 +3,20 @@
 
 % hyperfine, common
 
+# Run a basic benchmark, performing at least 10 runs
+hyperfine '<make>'
 
+# Run a comparative benchmark
+hyperfine '{{make target1}}' '{{make target2}}'
+
+# Change minimum number of benchmarking runs
+hyperfine <__m___min_runs_> <7> '<make>'
+
+# Perform benchmark with warmup
+hyperfine <__w___warmup_> <5> '<make>'
+
+# Run a command before each benchmark run (to clear caches, etc.)
+hyperfine <__p___prepare_> '{{make clean}}' '<make>'
+
+# Run a benchmark where a single parameter changes for each run
+hyperfine <__p___prepare_> '{{make clean}}' <__P___parameter_scan_> <num_threads> <1> <10> '{{make --jobs {num_threads}}}'

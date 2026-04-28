@@ -4,19 +4,19 @@
 % zypper, linux
 
 # Synchronize list of packages and versions available
-sudo zypper {{[ref|refresh]}}
+sudo zypper <_ref_refresh_>
 
 # Install a new package
-sudo zypper {{[in|install]}} <package>
+sudo zypper <_in_install_> <package>
 
 # Remove a package
-sudo zypper {{[rm|remove]}} <package>
+sudo zypper <_rm_remove_> <package>
 
 # Upgrade installed packages to the newest available versions
-sudo zypper {{[up|update]}}
+sudo zypper <_up_update_>
 
 # Search package via keyword
-zypper {{[se|search]}} <keyword>
+zypper <_se_search_> <keyword>
 
 # Show information related to configured repositories
-zypper {{[lr|repos]}} --sort-by-priority
+zypper <_lr_repos_> --sort-by-priority

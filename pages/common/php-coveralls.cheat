@@ -3,4 +3,26 @@
 
 % php-coveralls, common
 
+# Send coverage information to Coveralls
+php-coveralls
 
+# Send coverage information to Coveralls for a specific directory
+php-coveralls <__r___root_dir_> <path_to_directory>
+
+# Send coverage information to Coveralls with a specific config
+php-coveralls <__c___config_> <path_to__coveralls_yml>
+
+# Send coverage information to Coveralls with verbose output
+php-coveralls <__v___verbose_>
+
+# Send coverage information to Coveralls excluding source files with no executable statements
+php-coveralls --exclude-no-stmt
+
+# Send coverage information to Coveralls with a specific environment name
+php-coveralls <__e___env_> <test_dev_prod>
+
+# Specify multiple Coverage Clover XML files to upload
+php-coveralls <__x___coverage_clover_> <path_to_first_clover_xml> --coverage_clover <path_to_second_clover_xml>
+
+# Output the JSON that will be sent to Coveralls to a specific file
+php-coveralls <__o___json_path_> <path_to_coveralls_upload_json>

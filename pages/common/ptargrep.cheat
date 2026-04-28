@@ -3,4 +3,11 @@
 
 % ptargrep, common
 
+# Search for a pattern within one or more `.tar` archives
+ptargrep "<search_pattern>" {{path/to/file1 path/to/file2 ...}}
 
+# Extract to the current directory using the basename of the file from the archive
+ptargrep <__b___basename_> "<search_pattern>" <path_to_file>
+
+# Search for a case-insensitive pattern matching within a `.tar` archive
+ptargrep <__i___ignore_case_> "<search_pattern>" <path_to_file>

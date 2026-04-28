@@ -4,10 +4,10 @@
 % qm-config, linux
 
 # Display the virtual machine configuration
-qm {{[co|config]}} <100>
+qm <_co_config_> <100>
 
 # Display the current configuration values instead of pending values for the virtual machine
-qm {{[co|config]}} --current <true> <100>
+qm <_co_config_> --current <true> <100>
 
 # Fetch the configuration values from the given snapshot
-qm {{[co|config]}} --snapshot <snapshot_name> <100>
+qm <_co_config_> --snapshot <snapshot_name> <100>

@@ -3,4 +3,14 @@
 
 % kdash, common
 
+# Show dashboard
+kdash
 
+# Show dashboard in debug mode and write logs to a file in the current directory
+kdash <__d___debug_>
+
+# Set the tick rate
+kdash <__t___tick_rate_> <100>
+
+# Set the polling rate (must be a multiple of the tick rate)
+kdash <__t___tick_rate_> <200> <__p___poll_rate_> <400>

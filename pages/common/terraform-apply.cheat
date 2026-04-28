@@ -19,10 +19,10 @@ terraform apply -var '<name1>=<value1>' -var '<name2>=<value2>'
 terraform apply -var-file <path_to_file_tfvars>
 
 # Apply changes to a specific resource
-terraform apply -target {{resource_type.resource_name[instance_index]}}
+terraform apply -target <resource_type_resource_name_instance_index_>
 
 # Replace a specific resource
-terraform apply -replace {{resource_type.resource_name[instance_index]}}
+terraform apply -replace <resource_type_resource_name_instance_index_>
 
 # Destroy Terraform-managed infrastructure
 terraform apply -destroy

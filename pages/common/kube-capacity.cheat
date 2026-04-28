@@ -3,4 +3,11 @@
 
 % kube-capacity, common
 
+# List nodes including the total CPU and Memory resource requests and limits
+kube-capacity
 
+# Include pods
+kube-capacity <__p___pods_>
+
+# Include utilization
+kube-capacity <__u___util_>

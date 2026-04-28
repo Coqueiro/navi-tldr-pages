@@ -3,4 +3,14 @@
 
 % markdown2pdf, common
 
+# Convert a Markdown file to a PDF
+markdown2pdf <__p___path_> <path_to_input_file_md>
 
+# Convert a Markdown file to a PDF with a specific path
+markdown2pdf <__p___path_> <path_to_input_file_md> <__o___output_> <path_to_output_file_pdf>
+
+# Convert Markdown content provided as a string
+markdown2pdf <__s___string_> <markdown_text> <__o___output_> <path_to_output_file_pdf>
+
+# Convert from URL (this will convert a Markdown file at that URL to a local PDF file)
+markdown2pdf <__u___url_> <URL> <__o___output_> <path_to_output_file_pdf>

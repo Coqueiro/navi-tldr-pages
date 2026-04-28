@@ -3,4 +3,26 @@
 
 % apptainer-run, linux
 
+# Run the default runscript of a container
+apptainer run <path_to_image_sif>
 
+# Run with arguments passed to the runscript
+apptainer run <path_to_image_sif> {{arg1 arg2 ...}}
+
+# Run with a bind mount from host to container
+apptainer run <__B___bind_> <path_to_source>:<path_to_destination> <path_to_image_sif>
+
+# Run with environment variables
+apptainer run --env <variable>=<value> <path_to_image_sif>
+
+# Run in fully isolated mode (contained filesystem, PID, IPC, and clean environment)
+apptainer run <__C___containall_> <path_to_image_sif>
+
+# Run with a writable temporary filesystem overlay
+apptainer run --writable-tmpfs <path_to_image_sif>
+
+# Run with NVIDIA GPU support
+apptainer run --nv <path_to_image_sif>
+
+# Display help
+apptainer run <__h___help_>

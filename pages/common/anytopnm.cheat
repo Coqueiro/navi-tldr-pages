@@ -7,4 +7,4 @@
 anytopnm <path_to_input> > <path_to_output_pnm>
 
 # Display version
-anytopnm {{[-v|-version]}}
+anytopnm <__v__version_>

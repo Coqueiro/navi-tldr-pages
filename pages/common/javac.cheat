@@ -10,7 +10,7 @@ javac <path_to_file_java>
 javac {{path/to/file1.java path/to/file2.java ...}}
 
 # Compile all `.java` files in current directory
-javac {{*.java}}
+javac <__java>
 
 # Compile a `.java` file and place the resulting class file in a specific directory
 javac -d <path_to_directory> <path_to_file_java>

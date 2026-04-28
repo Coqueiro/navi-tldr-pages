@@ -4,22 +4,22 @@
 % find, common
 
 # Find files by extension
-find <path_to_directory> -name '{{*.ext}}'
+find <path_to_directory> -name '<__ext>'
 
 # Find files matching multiple path/name patterns
-find <path_to_directory> -path '{{*/path/*/*.ext}}' -or -name '{{*pattern*}}'
+find <path_to_directory> -path '<__path_____ext>' -or -name '<_pattern_>'
 
 # Find directories matching a given name, in case-insensitive mode
-find <path_to_directory> -type d -iname '{{*lib*}}'
+find <path_to_directory> -type d -iname '<_lib_>'
 
 # Find files matching a given pattern, excluding specific paths
-find <path_to_directory> -name '{{*.py}}' -not -path '{{*/site-packages/*}}'
+find <path_to_directory> -name '<__py>' -not -path '<__site_packages__>'
 
 # Find files matching a given size range, limiting the recursive depth to "1"
 find <path_to_directory> -maxdepth 1 -size <_500k> -size <_10M>
 
 # Run a command for each file (use `{}` within the command to access the filename)
-find <path_to_directory> -name '{{*.ext}}' -exec {{wc -l}} {} \;
+find <path_to_directory> -name '<__ext>' -exec {{wc -l}} {} \;
 
 # Find all files modified today and pass the results to a single command as arguments
 find <path_to_directory> -daystart -mtime <_1> -exec {{tar -cvf archive.tar}} {} \+

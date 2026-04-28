@@ -3,4 +3,11 @@
 
 % ,, common
 
+# Run a command
+, {{command -with -flags}}
 
+# Add a command to a child shell
+, <__s___shell_> <command>
+
+# Clear the cache
+, <__e___empty_cache_>

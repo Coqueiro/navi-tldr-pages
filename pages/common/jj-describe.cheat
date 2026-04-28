@@ -3,4 +3,11 @@
 
 % jj-describe, common
 
+# Update the description of the current change
+jj <_desc_describe_>
 
+# Update the description of given revsets
+jj <_desc_describe_> <revsets>
+
+# Update the description to the given message
+jj <_desc_describe_> <__m___message_> <message>

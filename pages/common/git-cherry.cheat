@@ -3,4 +3,11 @@
 
 % git-cherry, common
 
+# Show commits (and their messages) with equivalent commits upstream
+git cherry <__v___verbose_>
 
+# Specify a different upstream and topic branch
+git cherry <origin> <topic>
+
+# Limit commits to those within a given limit
+git cherry <origin> <topic> <base>

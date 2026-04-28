@@ -3,4 +3,17 @@
 
 % doctl-databases-db, common
 
+# Run a `doctl databases db` command with an access token
+doctl <_d_databases_> db <command> <__t___access_token_> <access_token>
 
+# Retrieve the name of the given database hosted in the given database cluster
+doctl <_d_databases_> db <_g_get_> <database_id> <database_name>
+
+# List existing databases hosted within a given database cluster
+doctl <_d_databases_> db <_ls_list_> <database_id>
+
+# Create a database with the given name in the given database cluster
+doctl <_d_databases_> db <_c_create_> <database_id> <database_name>
+
+# Delete the database with the given name in the given database cluster
+doctl <_d_databases_> db <_rm_delete_> <database_id> <database_name>

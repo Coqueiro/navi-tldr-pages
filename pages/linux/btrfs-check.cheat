@@ -3,4 +3,23 @@
 
 % btrfs-check, linux
 
+# Check a btrfs filesystem
+sudo btrfs <_c_check_> <path_to_partition>
 
+# Check and repair a btrfs filesystem (dangerous)
+sudo btrfs <_c_check_> --repair <path_to_partition>
+
+# Show the progress of the check
+sudo btrfs <_c_check_> <__p___progress_> <path_to_partition>
+
+# Verify the checksum of each data block (if the filesystem is good)
+sudo btrfs <_c_check_> --check-data-csum <path_to_partition>
+
+# Use the `n`-th superblock (`n` can be 0, 1, or 2)
+sudo btrfs <_c_check_> <__s___super_> <n> <path_to_partition>
+
+# Rebuild the checksum tree
+sudo btrfs <_c_check_> --repair --init-csum-tree <path_to_partition>
+
+# Rebuild the extent tree
+sudo btrfs <_c_check_> --repair --init-extent-tree <path_to_partition>

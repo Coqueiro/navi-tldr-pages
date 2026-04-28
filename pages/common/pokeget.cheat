@@ -3,4 +3,20 @@
 
 % pokeget, common
 
+# Print a sprite of a given pokemon
+pokeget <pokemon_name>
 
+# Print Mr. Mime (note the use of `-` instead of spaces)
+pokeget mr-mime
+
+# Print Mega Gengar
+pokeget gengar <__m___mega_>
+
+# Print a random shiny Pokemon
+pokeget random <__s___shiny_>
+
+# Print Alolan Meowth, without printing the Pokemon's name
+pokeget meowth <__a___alolan_> --hide-name
+
+# Print a random Pokemon with 1/4096 chance to be shiny
+((RANDOM%4096 == 0)) && pokeget random --shiny || pokeget random

@@ -4,4 +4,4 @@
 % pct-template, linux
 
 # Convert a container into a template
-pct {{[t|template]}} <100>
+pct <_t_template_> <100>

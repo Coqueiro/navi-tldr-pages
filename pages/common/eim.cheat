@@ -3,4 +3,26 @@
 
 % eim, common
 
+# Install the default (latest) ESP-IDF version in the default location (`C:\esp` on Windows and `~/.espressif` on POSIX systems)
+eim install
 
+# Install a specific ESP-IDF version
+eim install <__i___idf_versions_> <v5_3_2>
+
+# Run the interactive, guided installation wizard
+eim wizard
+
+# Install a specific version to a custom path, forcing interactive mode (to prompt for choices)
+eim install <__i___idf_versions_> <v5_3_2> <__p___path_> <_opt_esp_idf> <__n___non_interactive_> false
+
+# List all currently installed ESP-IDF versions
+eim list
+
+# Remove a specific installed ESP-IDF version
+eim remove <v5_3_2>
+
+# Install in headless mode using all options defined in a TOML configuration file
+eim install <__c___config_> <path_to_config_toml>
+
+# Install offline using a pre-downloaded archive file
+eim install --use-local-archive <path_to_archive_zst>

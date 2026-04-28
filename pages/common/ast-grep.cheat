@@ -3,4 +3,20 @@
 
 % ast-grep, common
 
+# Search for a pattern in files
+ast-grep run <__p___pattern_> '<pattern>' <path_to_file>
 
+# Search for a pattern in a specific language
+ast-grep run <__p___pattern_> '<pattern>' <__l___lang_> <python> <path_to_directory>
+
+# Rewrite code matching a pattern
+ast-grep run <__p___pattern_> '<pattern>' <__r___rewrite_> '<replacement>' <path_to_file>
+
+# Run rules from a configuration file
+ast-grep scan <__r___rule_> <path_to_rule_yml> <path_to_directory>
+
+# Interactively search and rewrite code
+ast-grep run <__p___pattern_> '<pattern>' <__i___interactive_> <path_to_directory>
+
+# Display help for a subcommand
+ast-grep <run> <__h___help_>

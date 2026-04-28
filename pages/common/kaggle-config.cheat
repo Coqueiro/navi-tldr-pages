@@ -3,4 +3,11 @@
 
 % kaggle-config, common
 
+# View current configuration values
+kaggle config view
 
+# Set a configuration value
+kaggle config set <__n___name_> <configuration_parameter> <__v___value_> <parameter_value>
+
+# Clear a configuration value
+kaggle config unset <__n___name_> <configuration_parameter>

@@ -3,4 +3,26 @@
 
 % fuzzel, linux
 
+# Run applications
+fuzzel
 
+# Run `fuzzel` in dmenu mode
+fuzzel <__d___dmenu_>
+
+# Display a menu of the output of the `ls` command
+<ls> | fuzzel <__d___dmenu_>
+
+# Display a menu with custom items separated by a new line (`\n`)
+echo -e "<red>\n<green>\n<blue>" | fuzzel <__d___dmenu_>
+
+# Let the user choose between multiple items and save the selected one to a file
+echo -e "<red>\n<green>\n<blue>" | fuzzel <__d___dmenu_> > <color_txt>
+
+# Reset apps usage count (default cache directory: `$XDG_CACHE_HOME/fuzzel`)
+rm <__v___verbose_> $HOME/.cache/fuzzel
+
+# Launch `fuzzel` on a specific monitor, see `wlr-randr` or `swaymsg --type get_outputs`
+fuzzel <__o___output_> "<DP_1>"
+
+# Use `fuzzel` to do an online search
+fuzzel <__d___dmenu_> <__l___lines_> 0 --placeholder "{{Type your search}}" | sed 's/^/\"/g;s/$/\"/g' | xargs firefox --search

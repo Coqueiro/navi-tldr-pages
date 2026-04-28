@@ -3,4 +3,11 @@
 
 % msginit, common
 
+# Generate Portable Object files in system locale from `messages.pot`
+msginit
 
+# Define locale to generate from a specific template
+msginit <__l___locale_> <locale> <__i___input_> <path_to_messages_pot>
+
+# Display help
+msginit <__h___help_>

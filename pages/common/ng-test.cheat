@@ -3,4 +3,23 @@
 
 % ng-test, common
 
+# Run unit tests
+ng <_t_test_>
 
+# Run unit tests using a specific configuration
+ng <_t_test_> <__c___configuration_> <development_production____>
+
+# Specify the browsers to use for test execution
+ng <_t_test_> --browsers <firefox_webkit_chromium>
+
+# Enable code coverage
+ng <_t_test_> --coverage
+
+# Generate a coverage report in a specific format
+ng <_t_test_> --coverage --coverage-reporters <cobertura_html_json____>
+
+# Enable debug mode for tests
+ng <_t_test_> --debug
+
+# List all discovered test files without building or running tests
+ng <_t_test_> --list-tests

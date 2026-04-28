@@ -3,4 +3,20 @@
 
 % treemd, common
 
+# Open a markdown file in interactive TUI mode
+treemd <path_to_file_md>
 
+# List all headings in a markdown file
+treemd <__l___list_> <path_to_file_md>
+
+# Show the heading tree structure of a markdown file
+treemd --tree <path_to_file_md>
+
+# Extract a specific section by heading name
+treemd <__s___section_> <heading_name> <path_to_file_md>
+
+# Filter headings by a specific pattern
+treemd <__l___list_> --filter <pattern> <path_to_file_md>
+
+# Query and extract markdown structure using the treemd query language
+treemd <__q___query_> '{{.h2 | text}}' <path_to_file_md>

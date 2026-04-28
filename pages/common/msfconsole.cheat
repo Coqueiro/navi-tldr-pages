@@ -3,4 +3,26 @@
 
 % msfconsole, common
 
+# Launch the interactive console (append `--quiet` to suppress the startup banner)
+sudo msfconsole
 
+# Execute console commands (Note: Use `;` for passing multiple commands)
+sudo msfconsole <__x___execute_command_> "{{use auxiliary/scanner/portscan/tcp; set PORTS 80,443; set RHOSTS example.com; run; quit}}"
+
+# Run a specific resource file
+sudo msfconsole <__r___resource_> <path_to_file_rc>
+
+# [Interactive] Show specific type of modules
+show <auxiliary_encoders_evasion_exploits_nops_payloads_post>
+
+# [Interactive] Use a module
+use <auxiliary_scanner_portscan_syn>
+
+# [Interactive] Show module options (module needs to be loaded first)
+show options
+
+# [Interactive] Set value of variable
+set <variable_name> <value>
+
+# [Interactive] Run a module (module needs to be loaded and options need to be set first)
+<run_exploit>

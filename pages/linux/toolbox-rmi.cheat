@@ -3,4 +3,11 @@
 
 % toolbox-rmi, linux
 
+# Remove one or more Toolbx image
+toolbox rmi {{image_name1 image_name2 ...}}
 
+# Remove all Toolbx images
+toolbox rmi <__a___all_>
+
+# Force the removal of a Toolbx image which is currently being used by a container (the container will be removed as well)
+toolbox rmi <__f___force_> <image_name>

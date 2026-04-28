@@ -3,4 +3,11 @@
 
 % gh-org, common
 
+# List organizations for the authenticated user
+gh org <_ls_list_>
 
+# List a certain amount of organizations (defaults to 30)
+gh org <_ls_list_> <__L___limit_> <100>
+
+# Display help
+gh org --help

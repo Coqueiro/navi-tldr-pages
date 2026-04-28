@@ -3,4 +3,20 @@
 
 % base64, freebsd
 
+# Encode a file to `stdout`
+base64 <__i___input_> <path_to_file>
 
+# Encode a file to the specified output file
+base64 <__i___input_> <path_to_input_file> <__o___output_> <path_to_output_file>
+
+# Wrap encoded output at a specific width (`0` disables wrapping)
+base64 <__b___break_> <0_76____> <path_to_file>
+
+# Decode a file to `stdout`
+base64 <__d___decode_> <__i___input_> <path_to_file>
+
+# Encode from `stdin` to `stdout`
+<command> | base64
+
+# Decode from `stdin` to `stdout`
+<command> | base64 <__d___decode_>

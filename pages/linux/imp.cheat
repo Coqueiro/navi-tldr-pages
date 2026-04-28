@@ -3,4 +3,14 @@
 
 % imp, linux
 
+# Initialize the helper functions and keep WSL running until explicit shutdown (run once, at start)
+imp <__i___initialize_>
 
+# Run a shell inside a systemd user session
+imp <__s___shell_>
+
+# Run a specified command inside a systemd user session (preserves working directory)
+imp <__c___command_> <command>
+
+# Shut down systemd and the WSL instance
+imp <__u___shutdown_>

@@ -3,4 +3,23 @@
 
 % mktemp, linux
 
+# Create an empty temporary file and print its absolute path
+mktemp
 
+# Use a custom directory (defaults to `$TMPDIR`, or `/tmp`)
+mktemp {{[-p |--tmpdir=]}}/<path_to_temporary_directory>
+
+# Use a custom path template (`X`s are replaced with random alphanumeric characters)
+mktemp <_tmp_example_XXXXXXXX>
+
+# Use a custom file name template
+mktemp -t <example_XXXXXXXX>
+
+# Create an empty temporary file with the given suffix and print its absolute path
+mktemp --suffix <_ext>
+
+# Create an empty temporary directory and print its absolute path
+mktemp <__d___directory_>
+
+# Print the name of a temporary file or directory without actually creating it
+mktemp <__u___dry_run_>

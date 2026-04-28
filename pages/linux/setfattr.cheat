@@ -3,4 +3,11 @@
 
 % setfattr, linux
 
+# Set name of attribute for file
+setfattr <__n___name_> user.<attribute_name> <path_to_file>
 
+# Set a user-defined value of an extended attribute on a file
+setfattr <__n___name_> user.<attribute_name> <__v___value_> "<value>" <path_to_file>
+
+# Remove a specific attribute of a file
+setfattr <__x___remove_> user.<attribute_name> <path_to_file>

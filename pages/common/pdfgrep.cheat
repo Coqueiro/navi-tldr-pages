@@ -3,4 +3,17 @@
 
 % pdfgrep, common
 
+# Find lines that match pattern in a PDF
+pdfgrep <pattern> <file_pdf>
 
+# Include file name and page number for each matched line
+pdfgrep <__H___with_filename_> <__n___page_number_> <pattern> <file_pdf>
+
+# Do a case-insensitive search for lines that begin with `file_name` and return the first 3 matches
+pdfgrep <__m___max_count_> <3> <__i___ignore_case_> '<_file_name>' <file_pdf>
+
+# Find pattern in files with a `.pdf` extension in the current directory recursively
+pdfgrep <__r___recursive_> <pattern>
+
+# Find pattern on files that match a specific glob in the current directory recursively
+pdfgrep <__r___recursive_> --include '<_book_pdf>' <pattern>

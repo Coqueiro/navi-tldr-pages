@@ -4,4 +4,4 @@
 % qm-unlock, linux
 
 # Unlock a specific virtual machine
-qm {{[u|unlock]}} <100>
+qm <_u_unlock_> <100>

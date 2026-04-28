@@ -3,4 +3,8 @@
 
 % vagrant-validate, common
 
+# Validate the syntax of the Vagrantfile to ensure it is correctly structured and free of errors
+vagrant validate
 
+# Ensure that the Vagrantfile is correctly structured while ignoring provider-specific configuration options
+vagrant validate <__p___ignore_provider_> <docker_hypervlibvirt_parallels_qemu_virtualbox_vmware_desktop>

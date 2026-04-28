@@ -3,4 +3,17 @@
 
 % pvremove, linux
 
+# Remove a LVM label from a physical volume
+sudo pvremove <_dev_sdXY>
 
+# Display detailed output during the operation
+sudo pvremove <__v___verbose_> <_dev_sdXY>
+
+# Remove a LVM label without asking for confirmation
+sudo pvremove <__y___yes_> <_dev_sdXY>
+
+# Forcefully remove a LVM label
+sudo pvremove <__f___force_> <_dev_sdXY>
+
+# Display output in JSON format
+sudo pvremove --reportformat json <_dev_sdXY>

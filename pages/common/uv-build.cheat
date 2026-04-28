@@ -3,4 +3,26 @@
 
 % uv-build, common
 
+# Build a package in the current directory
+uv build
 
+# Build a package from a specific directory
+uv build <path_to_directory>
+
+# Build only a wheel (skip source distribution)
+uv build --wheel
+
+# Build only a source distribution (skip wheel)
+uv build --sdist
+
+# Build and output to a specific directory
+uv build <__o___out_dir_> <path_to_output>
+
+# Build a specific package in a workspace
+uv build --package <package_name>
+
+# Build all packages in the workspace
+uv build <___all___all_packages_>
+
+# Build with a specific Python interpreter
+uv build <__p___python_> <python3_11>

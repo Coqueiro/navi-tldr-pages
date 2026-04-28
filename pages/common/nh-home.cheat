@@ -3,4 +3,11 @@
 
 % nh-home, common
 
+# Build and switch to a specified Home Manager flake configuration
+nh home switch <path_to_flake>
 
+# Update all the flake inputs of the specified Home Manager flake configuration and build it
+nh home build <path_to_flake> <__u___update_>
+
+# Load a specified Home Manager flake configuration in Nix REPL (Nix evaluation environment)
+nh home repl <path_to_flake>

@@ -3,4 +3,20 @@
 
 % wc, common
 
+# Count all lines in a file
+wc <__l___lines_> <path_to_file>
 
+# Count all words in a file
+wc <__w___words_> <path_to_file>
+
+# Count all bytes in a file
+wc <__c___bytes_> <path_to_file>
+
+# Count all characters in a file (taking multi-byte characters into account)
+wc <__m___chars_> <path_to_file>
+
+# Count all lines, words, and bytes from `stdin`
+{{find .}} | wc
+
+# Count the length of the longest line in number of characters
+wc <__L___max_line_length_> <path_to_file>

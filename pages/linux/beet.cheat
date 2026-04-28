@@ -3,4 +3,17 @@
 
 % beet, linux
 
+# Add music from a specific directory to the library, attempting to get correct tags for it from MusicBrainz
+beet import <path_to_directory>
 
+# Add a single song to the library, attempting to get correct tags for it from MusicBrainz
+beet import <__s___singletons_> <path_to_file>
+
+# Query library
+beet list <query>
+
+# Show entire library statistics
+beet stats
+
+# Show statistics for a specific query
+beet stats <query>

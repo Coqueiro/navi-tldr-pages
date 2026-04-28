@@ -3,4 +3,20 @@
 
 % shred, common
 
+# Overwrite a file
+shred <path_to_file>
 
+# Overwrite a file and show progress on the screen
+shred <__v___verbose_> <path_to_file>
+
+# Overwrite a file, leaving zeros instead of random data
+shred <__z___zero_> <path_to_file>
+
+# Overwrite a file a specific number of times
+shred <__n___iterations_> <25> <path_to_file>
+
+# Overwrite a file and remove it
+shred <__u___remove_> <path_to_file>
+
+# Overwrite a file 100 times, add a final overwrite with zeros, remove the file after overwriting it, and show verbose progress on the screen
+shred {{[-vzu|--verbose --zero --remove]}} <__n___iterations_> 100 <path_to_file>

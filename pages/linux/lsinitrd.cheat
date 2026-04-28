@@ -3,4 +3,17 @@
 
 % lsinitrd, linux
 
+# Show the contents of the initramfs image for the current kernel
+lsinitrd
 
+# Show the contents of the initramfs image for the specified kernel
+lsinitrd <__k___kver_> <kernel_version>
+
+# Show the contents of the specified initramfs image
+lsinitrd <path_to_initramfs_img>
+
+# List modules included in the initramfs image
+lsinitrd <__m___mod_>
+
+# Unpack the initramfs to the current directory
+lsinitrd --unpack

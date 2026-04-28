@@ -3,4 +3,14 @@
 
 % openclaw-agent, common
 
+# Send a single message to the assistant
+openclaw agent <__m___message_> "{{Hello, what is the weather?}}"
 
+# Start interactive chat mode
+openclaw agent
+
+# Send a message with configurable thinking level
+openclaw agent <__m___message_> "{{Analyze this}}" --thinking <off_minimal_low_medium_high>
+
+# Display help
+openclaw agent <__h___help_>

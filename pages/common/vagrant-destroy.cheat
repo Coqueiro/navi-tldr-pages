@@ -3,4 +3,14 @@
 
 % vagrant-destroy, common
 
+# Destroy the currently running machine
+vagrant destroy
 
+# Target a machine by name or ID
+vagrant destroy <name_id>
+
+# Do not ask for confirmation before destroying
+vagrant destroy <__f___force_>
+
+# Shut down the machine gracefully
+vagrant destroy <__g___graceful_>

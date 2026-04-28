@@ -16,4 +16,4 @@ ncdu <path_to_directory>
 ncdu -o <path_to_file>
 
 # Exclude files that match a pattern, argument can be given multiple times to add more patterns
-ncdu --exclude '{{*.txt}}'
+ncdu --exclude '<__txt>'

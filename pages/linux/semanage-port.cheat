@@ -3,4 +3,17 @@
 
 % semanage-port, linux
 
+# List all port labeling rules
+sudo semanage port <__l___list_>
 
+# List all user-defined port labeling rules without headings
+sudo semanage port <__l___list_> <__C___locallist_> <__n___noheading_>
+
+# Add a user-defined rule that assigns a label to a protocol-port pair
+sudo semanage port <__a___add_> <__t___type_> <ssh_port_t> <__p___proto_> <tcp> <22000>
+
+# Add a user-defined rule that assigns a label to a protocol-port-range pair
+sudo semanage port <__a___add_> <__t___type_> <http_port_t> <__p___proto_> <tcp> <80_88>
+
+# Delete a user-defined rule using its protocol-port pair
+sudo semanage port <__d___delete_> <__p___proto_> <udp> <11940>

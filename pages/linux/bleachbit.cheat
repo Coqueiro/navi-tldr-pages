@@ -3,4 +3,17 @@
 
 % bleachbit, linux
 
+# Start the graphical user interface (GUI) version of Bleachbit
+bleachbit --gui
 
+# Shred a file
+bleachbit <__s___shred_> <path_to_file>
+
+# List available cleaner options
+bleachbit <__l___list_cleaners_>
+
+# Preview the files that will be deleted and other changes that will be made before actually performing the clean-up operation
+bleachbit <__p___preview_> --preset {{cleaner1.option1 cleaner2.option2 ...}}
+
+# Perform the clean-up operation and delete files
+bleachbit <__c___clean_> --preset {{cleaner1.option1 cleaner2.option2 ...}}

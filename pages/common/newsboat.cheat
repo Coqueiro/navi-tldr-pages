@@ -3,4 +3,17 @@
 
 % newsboat, common
 
+# First import feed URLs from an OPML file
+newsboat <__i___import_from_opml_> <my_feeds_xml>
 
+# Alternatively, add feeds manually
+echo <http___example_com_path_to_feed> >> "${HOME}/.newsboat/urls"
+
+# Start Newsboat and refresh all feeds on startup
+newsboat <__r___refresh_on_start_>
+
+# Execute one or more commands in non-interactive mode
+newsboat <__x___execute_> <reload_print_unread____>
+
+# See keyboard shortcuts (the most relevant are visible in the status line)
+<?>

@@ -7,7 +7,7 @@
 pamfile {{path/to/file1 path/to/file2 ...}}
 
 # Describe every image in each input file (as opposed to only the first image in each file) in a machine-readable format
-pamfile {{[-a|-allimages]}} -machine <path_to_file>
+pamfile <__a__allimages_> -machine <path_to_file>
 
 # Display a count on how many images the input files contain
-pamfile {{[-cou|-count]}} <path_to_file>
+pamfile <__cou__count_> <path_to_file>

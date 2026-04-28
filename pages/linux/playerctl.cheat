@@ -3,4 +3,23 @@
 
 % playerctl, linux
 
+# Toggle play
+playerctl play-pause
 
+# Skip to the next track
+playerctl next
+
+# Go back to the previous track
+playerctl previous
+
+# List all players
+playerctl <__l___list_all_>
+
+# Send a command to a specific player
+playerctl <__p___player_> <player_name> <play_pause_next_previous____>
+
+# Send a command to all players
+playerctl <__a___all_players_> <play_pause_next_previous____>
+
+# Display metadata about the current track
+playerctl metadata <__f___format_> "{{Now playing: \{\{artist\}\} - \{\{album\}\} - \{\{title\}\}}}"

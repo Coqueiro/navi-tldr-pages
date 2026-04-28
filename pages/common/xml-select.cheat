@@ -3,4 +3,17 @@
 
 % xml-select, common
 
+# Select all elements matching "XPATH1" and print the value of their sub-element "XPATH2"
+xml <_sel_select_> <__t___template_> <__m___match_> "<XPATH1>" <__v___value_of_> "<XPATH2>" <path_to_input_xml_URI>
 
+# Match "XPATH1" and print the value of "XPATH2" as text with new-lines
+xml <_sel_select_> <__T___text_> <__t___template_> <__m___match_> "<XPATH1>" <__v___value_of_> "<XPATH2>" <__n___nl_> <path_to_input_xml_URI>
+
+# Count the elements of "XPATH1"
+xml <_sel_select_> <__t___template_> <__v___value_of_> "count(<XPATH1>)" <path_to_input_xml_URI>
+
+# Count all nodes in one or more XML documents
+xml <_sel_select_> <__T___text_> <__t___template_> <__f___inp_name_> <__o___output_> " " <__v___value_of_> "count(node())" <__n___nl_> <path_to_input1_xml_URI> <path_to_input2_xml_URI>
+
+# Display help
+xml <_sel_select_> --help

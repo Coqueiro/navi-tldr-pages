@@ -13,7 +13,7 @@ cat <index_html> | pup '<tag>'
 cat <index_html> | pup '<div_id>'
 
 # Filter HTML by attribute value
-cat <index_html> | pup '{{input[type="text"]}}'
+cat <index_html> | pup '<input_type__text__>'
 
 # Print all text from the filtered HTML elements and their children
 cat <index_html> | pup '<div> text{}'

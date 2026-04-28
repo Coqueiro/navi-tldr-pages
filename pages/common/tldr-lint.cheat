@@ -3,4 +3,14 @@
 
 % tldr-lint, common
 
+# Lint a single page or all pages in a directory
+tldr-lint <path_to_page_or_directory>
 
+# Ignore specific `tldr-lint` error codes while linting
+tldr-lint <__I___ignore_> <TLDR001_TLDR002____>
+
+# Format a specific page to `stdout`
+tldr-lint <__f___format_> <path_to_page_md>
+
+# Format a page in place
+tldr-lint <__f___format_> <__i___in_place_> <path_to_page_md>

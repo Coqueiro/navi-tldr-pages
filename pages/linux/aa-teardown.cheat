@@ -3,4 +3,8 @@
 
 % aa-teardown, linux
 
+# Disable all AppArmor profiles and stop enforcement
+sudo aa-teardown
 
+# Display help
+aa-teardown <__h___help_>

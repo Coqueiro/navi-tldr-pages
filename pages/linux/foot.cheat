@@ -3,4 +3,17 @@
 
 % foot, linux
 
+# Spawn a terminal
+foot
 
+# Verify your config
+foot <__C___check_config_>
+
+# Start the server (use `footclient` to start terminal windows that connect to the server)
+foot <__s___server_>
+
+# Display help
+foot <__h___help_>
+
+# Display version
+foot <__v___version_>

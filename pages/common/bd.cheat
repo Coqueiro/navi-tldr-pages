@@ -3,4 +3,26 @@
 
 % bd, common
 
+# Initialize a project database
+bd init
 
+# Create a new issue with description, priority, and type
+bd create <issue_title> <__d___description_> <description> <__p___priority_> <1> <__t___type_> <bug_feature_task_epic_chore>
+
+# List all issues
+bd list
+
+# Show issues ready to work on (no blockers)
+bd ready
+
+# Display details of a specific issue
+bd show <issue_id>
+
+# Update an issue status
+bd update <issue_id> <__s___status_> <open_in_progress_blocked_closed>
+
+# Manually sync changes and import latest from Git
+bd sync
+
+# Display help
+bd <__h___help_>

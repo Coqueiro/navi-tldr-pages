@@ -7,13 +7,13 @@
 python -m venv <path_to_virtual_environment>
 
 # Activate the virtual environment (Linux and macOS)
-{{[.|source]}} <path_to_virtual_environment>/bin/activate
+<___source_> <path_to_virtual_environment>/bin/activate
 
 # Activate the virtual environment (Windows)
-{{path\to\virtual_environment}}\Scripts\activate.bat
+<path_to_virtual_environment>\Scripts\activate.bat
 
 # Deactivate the virtual environment
 deactivate
 
 # Create an alias that generates a `venv` folder and automatically activates it
-alias venv='python -m venv .venv && source {{.venv/bin/activate|.venv\Scripts\activate.bat}}'
+alias venv='python -m venv .venv && source <_venv_bin_activate__venv_Scripts_activate_bat>'

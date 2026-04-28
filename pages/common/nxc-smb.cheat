@@ -3,4 +3,20 @@
 
 % nxc-smb, common
 
+# Search for valid domain credentials by trying out every combination in the specified lists of usernames and passwords
+nxc smb <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt>
 
+# Search for valid credentials for local accounts instead of domain accounts
+nxc smb <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt> --local-auth
+
+# Enumerate SMB shares and the specified users' access rights to them on the target hosts
+nxc smb <192_168_178_0_24> <__u___username_> <username> <__p___password_> <password> --shares
+
+# Enumerate network interfaces on the target hosts, performing authentication via pass-the-hash
+nxc smb <192_168_178_30_45> <__u___username_> <username> <__H___hash_> <NTLM_hash> --interfaces
+
+# Scan the target hosts for common vulnerabilities
+nxc smb <path_to_target_list_txt> <__u___username_> '' <__p___password_> '' <__M___module_> zerologon <__M___module_> petitpotam
+
+# Attempt to execute a command on the target hosts
+nxc smb <192_168_178_2> <__u___username_> <username> <__p___password_> <password> -x <command>

@@ -3,4 +3,26 @@
 
 % vercel, common
 
+# Deploy the current directory
+vercel
 
+# Deploy the current directory to production
+vercel --prod
+
+# Deploy a directory
+vercel <path_to_project>
+
+# Initialize an example project
+vercel init
+
+# Deploy with environment variables
+vercel <__e___env_> <ENV>=<var>
+
+# Build with environment variables
+vercel <__b___build_env_> <ENV>=<var>
+
+# Set default regions to enable the deployment on
+vercel --regions <region_id>
+
+# Remove a deployment
+vercel remove <project_name>

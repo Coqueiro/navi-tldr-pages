@@ -3,4 +3,14 @@
 
 % pw-mididump, linux
 
+# Listen for and dump all incoming MIDI events
+pw-mididump
 
+# Dump MIDI events from a specific file
+pw-mididump <path_to_file_mid>
+
+# Connect to a specific remote PipeWire instance
+pw-mididump <__r___remote_> <remote_instance_name>
+
+# Display help
+pw-mididump <__h___help_>

@@ -3,4 +3,17 @@
 
 % lsusb, linux
 
+# List all the USB devices available
+lsusb
 
+# List the USB hierarchy as a tree
+lsusb <__t___tree_>
+
+# List verbose information about USB devices
+sudo lsusb <__v___verbose_>
+
+# List detailed information about a USB device
+sudo lsusb <__v___verbose_> -s <bus>:{{device number}}
+
+# List devices with a specified vendor and product ID only
+lsusb -d <vendor>:<product>

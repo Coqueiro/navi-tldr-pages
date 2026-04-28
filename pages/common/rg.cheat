@@ -3,4 +3,26 @@
 
 % rg, common
 
+# Recursively search current directory for a pattern (`regex`)
+rg <pattern>
 
+# Recursively search for a pattern in a file or directory
+rg <pattern> <path_to_file_or_directory>
+
+# Search for a literal string pattern
+rg <__F___fixed_strings_> -- <string>
+
+# Include hidden files and entries listed in `.gitignore`
+rg <______hidden_> --no-ignore <pattern>
+
+# Only search the files whose names match the glob pattern(s) (e.g. `README.*`)
+rg <pattern> <__g___glob_> <filename_glob_pattern>
+
+# Recursively list filenames in the current directory that match a pattern
+rg --files | rg <pattern>
+
+# Only list matched files (useful when piping to other commands)
+rg <__l___files_with_matches_> <pattern>
+
+# Show lines that do not match the pattern
+rg <__v___invert_match_> <pattern>

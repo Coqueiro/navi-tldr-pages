@@ -3,4 +3,8 @@
 
 % hub-ci-status, common
 
+# Check the CI status for this branch
+hub ci-status <__v___verbose_>
 
+# Display status of GitHub checks for a commit
+hub ci-status <__v___verbose_> <commit_SHA>

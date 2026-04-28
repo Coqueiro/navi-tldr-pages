@@ -3,4 +3,8 @@
 
 % git-root, common
 
+# Print the absolute path of the current Git repository
+git root
 
+# Print the current working directory relative to the root of the current Git repository
+git root <__r___relative_>

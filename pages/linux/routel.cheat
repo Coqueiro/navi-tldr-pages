@@ -3,4 +3,14 @@
 
 % routel, linux
 
+# Display the default routing table
+routel
 
+# Display a specific routing table
+routel <table_number_main_local_default>
+
+# Display only IPv4 routes
+routel {{[-4|--family inet]}}
+
+# Display only IPv6 routes
+routel {{[-6|--family inet6]}}

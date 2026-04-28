@@ -3,4 +3,14 @@
 
 % nth, common
 
+# Name a hash
+nth <__t___text_> <5f4dcc3b5aa765d61d8327deb882cf99>
 
+# Name hashes in a file
+nth <__f___file_> <path_to_hashes>
+
+# Print in JSON format
+nth <__t___text_> <5f4dcc3b5aa765d61d8327deb882cf99> <__g___greppable_>
+
+# Decode hash in Base64 before naming it
+nth <__t___text_> <NWY0ZGNjM2I1YWE3NjVkNjFkODMyN2RlYjg4MmNmOTkK> <__b64___base64_>

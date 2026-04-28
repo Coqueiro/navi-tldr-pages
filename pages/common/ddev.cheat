@@ -3,4 +3,23 @@
 
 % ddev, common
 
+# Start up a project
+ddev start
 
+# Configure a project's type and docroot
+ddev config
+
+# Follow the log trail
+ddev logs <__f___follow_>
+
+# Run composer within the container
+ddev composer
+
+# Install a specific Node.js version
+ddev nvm install <version>
+
+# Export a database
+ddev export-db <__f___file_> <_tmp_db_sql_gz>
+
+# Run a specific command within a container
+ddev exec {{echo 1}}

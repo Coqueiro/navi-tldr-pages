@@ -3,4 +3,23 @@
 
 % gitleaks, common
 
+# Scan a remote repository
+gitleaks detect --repo-url <https___github_com_username_repository_git>
 
+# Scan a local directory
+gitleaks detect <__s___source_> <path_to_repository>
+
+# Output scan results to a JSON file
+gitleaks detect <__s___source_> <path_to_repository> --report <path_to_report_json>
+
+# Use a custom rules file
+gitleaks detect <__s___source_> <path_to_repository> --config-path <path_to_config_toml>
+
+# Start scanning from a specific commit
+gitleaks detect <__s___source_> <path_to_repository> --log-opts <__since_commit_id>
+
+# Scan uncommitted changes before a commit
+gitleaks protect --staged
+
+# Display verbose output indicating which parts were identified as leaks during the scan
+gitleaks protect --staged --verbose

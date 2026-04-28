@@ -3,4 +3,23 @@
 
 % vagrant-init, common
 
+# Create a `Vagrantfile`
+vagrant init
 
+# Create a `Vagrantfile` without instructional comments
+vagrant init <__m___minimal_>
+
+# Specify the box name and URL
+vagrant init <box_name> <box_url>
+
+# Create a `Vagrantfile` with a specific box version
+vagrant init --box-version <version> <box_name>
+
+# Send the `Vagrantfile` to `stdout`
+vagrant init <__o___output_> -
+
+# Overwrite an existing `Vagrantfile`
+vagrant init <__f___force_>
+
+# Provide a custom ERB template for generating the `Vagrantfile`
+vagrant init --template <path_to_file_erb>

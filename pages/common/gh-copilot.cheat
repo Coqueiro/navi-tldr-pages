@@ -3,4 +3,20 @@
 
 % gh-copilot, common
 
+# Suggest a command, given a description
+gh copilot suggest "{{Install git}}"
 
+# Suggest a Git command
+gh copilot suggest <__t___target_> git "{{Undo the most recent local commits}}"
+
+# Explain a command
+gh copilot explain "{{traceroute example.com}}"
+
+# Generate shell-specific aliases for Bash
+echo 'eval "$(gh copilot alias -- bash)"' >> ~/.bashrc
+
+# Generate shell-specific aliases for Zsh
+echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
+
+# Configure options
+gh copilot config

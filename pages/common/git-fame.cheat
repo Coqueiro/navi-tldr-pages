@@ -3,4 +3,26 @@
 
 % git-fame, common
 
+# Calculate contributions for the current Git repository
+git fame
 
+# Exclude files/directories that match the specified `regex`
+git fame --excl "<regex>"
+
+# Calculate contributions made after the specified date
+git fame --since "{{3 weeks ago|2021-05-13}}"
+
+# Display contributions in the specified format
+git fame --format <pipe_yaml_json_csv_tsv>
+
+# Display contributions per file extension
+git fame <__t___bytype_>
+
+# Ignore whitespace changes
+git fame <__w___ignore_whitespace_>
+
+# Detect inter-file line moves and copies
+git fame -C
+
+# Detect intra-file line moves and copies
+git fame -M

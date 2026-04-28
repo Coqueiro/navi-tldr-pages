@@ -3,4 +3,14 @@
 
 % wasm-objdump, common
 
+# Display the section headers of a given binary
+wasm-objdump <__h___headers_> <file_wasm>
 
+# Display the entire disassembled output of a given binary
+wasm-objdump <__d___disassemble_> <file_wasm>
+
+# Display the details of each section
+wasm-objdump <__x___details_> <file_wasm>
+
+# Display the details of a given section
+wasm-objdump <__j___section_> '<import>' <__x___details_> <file_wasm>

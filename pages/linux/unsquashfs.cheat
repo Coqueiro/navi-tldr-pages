@@ -7,16 +7,16 @@
 unsquashfs <filesystem_squashfs>
 
 # Extract a squashfs filesystem to the specified directory
-unsquashfs {{[-d|-dest]}} <path_to_directory> <filesystem_squashfs>
+unsquashfs <__d__dest_> <path_to_directory> <filesystem_squashfs>
 
 # Display the names of files as they are extracted
-unsquashfs {{[-i|-info]}} <filesystem_squashfs>
+unsquashfs <__i__info_> <filesystem_squashfs>
 
 # Display the names of files and their attributes as they are extracted
-unsquashfs {{[-li|-linfo]}} <filesystem_squashfs>
+unsquashfs <__li__linfo_> <filesystem_squashfs>
 
 # List files inside the squashfs filesystem (without extracting)
-unsquashfs {{[-l|-ls]}} <filesystem_squashfs>
+unsquashfs <__l__ls_> <filesystem_squashfs>
 
 # List files and their attributes inside the squashfs filesystem (without extracting)
-unsquashfs {{[-ll|-lls]}} <filesystem_squashfs>
+unsquashfs <__ll__lls_> <filesystem_squashfs>

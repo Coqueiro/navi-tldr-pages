@@ -3,4 +3,20 @@
 
 % shfmt, common
 
+# Print a formatted version of a shell script
+shfmt <path_to_file>
 
+# List unformatted files
+shfmt <__l___list_> <path_to_directory>
+
+# Write the result to the file instead of printing it to the terminal
+shfmt <__w___write_> <path_to_file>
+
+# Simplify the code, removing redundant pieces of syntax (e.g. removing "$" from vars in expressions)
+shfmt <__s___simplify_> <path_to_file>
+
+# Specify the amount of spaces to use for indentation (0 for tabs, which is also the default)
+shfmt <__i___indent_> <4> <path_to_file>
+
+# Format the code according to Google's style guide
+shfmt <__i___indent_> 2 <__ci___case_indent_> <__w___write_> <path_to_file>

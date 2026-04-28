@@ -3,4 +3,17 @@
 
 % jj-prev, common
 
+# Move the working-copy commit to the previous parent revision
+jj prev
 
+# Move the working-copy commit a number of revisions backward
+jj prev <offset>
+
+# Edit the parent revision directly, instead of creating a new working-copy commit
+jj prev <__e___edit_>
+
+# Create a new working-copy commit instead of editing the parent revision directly
+jj prev <__n___no_edit_>
+
+# Jump to the previous conflicted parent
+jj prev --conflict

@@ -3,4 +3,17 @@
 
 % doctl-databases-replica, common
 
+# Run a `doctl databases replica` command with an access token
+doctl <_d_databases_> <_r_replica_> <command> <__t___access_token_> <access_token>
 
+# Retrieve information about a read-only database replica
+doctl <_d_databases_> <_r_replica_> <_g_get_> <database_id> <replica_name>
+
+# Retrieve list of read-only database replicas
+doctl <_d_databases_> <_r_replica_> <_ls_list_> <database_id>
+
+# Create a read-only database replica
+doctl <_d_databases_> <_r_replica_> <_c_create_> <database_id> <replica_name>
+
+# Delete a read-only database replica
+doctl <_d_databases_> <_r_replica_> <_rm_delete_> <database_id> <replica_name>

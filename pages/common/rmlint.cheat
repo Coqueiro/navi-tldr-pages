@@ -3,4 +3,26 @@
 
 % rmlint, common
 
+# Check directories for duplicated, empty, and broken files
+rmlint {{path/to/directory1 path/to/directory2 ...}}
 
+# Check for duplicates bigger than a specific size, preferably keeping files in tagged directories (after the double slash)
+rmlint <__s___size_> <1MB> <path_to_directory> // <path_to_original_directory>
+
+# Check for space wasters, keeping everything in the untagged directories
+rmlint <__k___keep_all_untagged_> <path_to_directory> // <path_to_original_directory>
+
+# Delete duplicate files found by an execution of `rmlint`
+./rmlint.sh
+
+# Find duplicate directory trees based on data, ignoring names
+rmlint <__D___merge_directories_> <path_to_directory>
+
+# Mark files at lower path [d]epth as originals, on tie choose shorter [l]ength
+rmlint <__S___rank_by_> <dl> <path_to_directory>
+
+# Find files with identical filename and contents, and link rather than delete the duplicates
+rmlint <__c___config_> sh:link <__b___match_basename_> <path_to_directory>
+
+# Use `data` as master directory. Find only duplicates in backup that are also in `data`. Do not delete any files in `data`
+rmlint <path_to_backup> // <path_to_data> <__k___keep_all_tagged_> <__m___must_match_tagged_>

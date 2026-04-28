@@ -3,4 +3,17 @@
 
 % az-advisor, common
 
+# List Azure Advisor configuration for the entire subscription
+az advisor configuration list
 
+# Show Azure Advisor configuration for the given subscription or resource group
+az advisor configuration show <__g___resource_group_> <resource_group>
+
+# List Azure Advisor recommendations
+az advisor recommendation list
+
+# Enable Azure Advisor recommendations
+az advisor recommendation enable <__g___resource_group_> <resource_group>
+
+# Disable Azure Advisor recommendations
+az advisor recommendation disable <__g___resource_group_> <resource_group>

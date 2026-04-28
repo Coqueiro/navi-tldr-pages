@@ -3,4 +3,5 @@
 
 % fc-match, common
 
-
+# Return a sorted list of best matching fonts
+fc-match <__s___sort_> '{{DejaVu Serif}}'

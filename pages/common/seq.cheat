@@ -3,4 +3,20 @@
 
 % seq, common
 
+# Print a sequence from 1 to 10
+seq 10
 
+# Print a sequence from 10 to 20
+seq 10 20
+
+# Print every 3rd number from 5 to 20
+seq 5 3 20
+
+# Separate the output with a space instead of a newline
+seq <__s___separator_> " " {{5 3 20}}
+
+# Format output width to a minimum of 4 digits padding with zeros as necessary
+seq <__f___format_> "%04g" {{5 3 20}}
+
+# Print all numbers with the same width
+seq <__w___equal_width_> {{5 3 20}}

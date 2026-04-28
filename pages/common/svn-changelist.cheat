@@ -3,4 +3,17 @@
 
 % svn-changelist, common
 
+# Add files to a changelist, creating the changelist if it does not exist
+svn <_cl_changelist_> <changelist_name> {{path/to/file1 path/to/file2 ...}}
 
+# Remove files from a changelist
+svn <_cl_changelist_> --remove {{path/to/file1 path/to/file2 ...}}
+
+# Remove the whole changelist at once
+svn <_cl_changelist_> --remove <__R___recursive_> --changelist <changelist_name> .
+
+# Add the contents of a space-separated list of directories to a changelist
+svn <_cl_changelist_> <__R___recursive_> <changelist_name> {{path/to/directory1 path/to/directory2 ...}}
+
+# Commit a changelist
+svn commit --changelist <changelist_name>

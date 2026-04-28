@@ -3,4 +3,23 @@
 
 % kernelstub, linux
 
+# Configure the current kernel with default options
+sudo kernelstub
 
+# Add custom kernel options
+sudo kernelstub <__o___options_> "{{quiet splash mitigations=off}}"
+
+# Run in verbose mode with `systemd-boot` configuration
+sudo kernelstub <__v___verbose_> <__l___loader_>
+
+# Copy kernel only to ESP without NVRAM changes
+sudo kernelstub <__m___manage_only_>
+
+# Run a simulation without making any changes (dry-run)
+sudo kernelstub <__c___dry_run_>
+
+# Specify paths manually
+sudo kernelstub <__k___kernel_path_> /<path_to_vmlinuz> <__i___initrd_path_> /<path_to_initrd_img> <__e___esp_path_> /<path_to_efi_partition>
+
+# Show current configuration
+sudo kernelstub <__p___print_config_>

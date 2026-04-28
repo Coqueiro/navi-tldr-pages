@@ -3,4 +3,17 @@
 
 % psql, common
 
+# Connect to the database. By default, it connects to the local socket using port 5432 with the currently logged in user
+psql <database>
 
+# Connect to the database on given server host running on given port with given username, without a password prompt
+psql <__h___host_> <host> <__p___port_> <port> <__U___username_> <username> <database>
+
+# Connect to the database; user will be prompted for password
+psql <__h___host_> <host> <__p___port_> <port> <__U___username_> <username> <__W___password_> <database>
+
+# Execute a single SQL query or PostgreSQL command on the given database (useful in shell scripts)
+psql <__c___command_> '<query>' <database>
+
+# Execute commands from a file on the given database
+psql <database> <__f___file_> <path_to_file_sql>

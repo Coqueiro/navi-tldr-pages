@@ -3,4 +3,23 @@
 
 % jj-git-push, common
 
+# Push a bookmark to the given remote (defaults to `git.push` setting)
+jj git push <__b___bookmark_> <bookmark> --remote <remote>
 
+# Push a new bookmark
+jj git push <__b___bookmark_> <bookmark> <__N___allow_new_>
+
+# Push all tracked bookmarks
+jj git push --tracked
+
+# Push all bookmarks (including new bookmarks)
+jj git push --all
+
+# Push all bookmarks pointing to given revisions
+jj git push <__r___revisions_> <revset>
+
+# Push changes/commits by creating new bookmarks (Name format is as per `templates.git_push_bookmark` setting, defaults to `"push-" ++ change_id.short()`)
+jj git push <__c___change_> <revset>
+
+# Push a revision with the given name
+jj git push --named <name>=<revision>

@@ -3,4 +3,17 @@
 
 % git-help, common
 
+# Display help about a specific Git subcommand
+git help <subcommand>
 
+# Display help about a specific Git subcommand in a web browser
+git help <__w___web_> <subcommand>
+
+# Display a list of all available Git subcommands
+git help <__a___all_>
+
+# List the available guides
+git help <__g___guides_>
+
+# List all possible configuration variables
+git help <__c___config_>

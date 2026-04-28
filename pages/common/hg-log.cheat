@@ -3,4 +3,26 @@
 
 % hg-log, common
 
+# Display the entire revision history of the repository
+hg log
 
+# Display the revision history with an ASCII graph
+hg log <__G___graph_>
+
+# Display the revision history with file names matching a specified pattern
+hg log <__I___include_> <pattern>
+
+# Display the revision history, excluding file names that match a specified pattern
+hg log <__X___exclude_> <pattern>
+
+# Display the log information for a specific revision
+hg log <__r___rev_> <revision>
+
+# Display the revision history for a specific branch
+hg log <__b___branch_> <branch>
+
+# Display the revision history for a specific date
+hg log <__d___date_> <date>
+
+# Display revisions committed by a specific user
+hg log <__u___user_> <user>

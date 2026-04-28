@@ -3,4 +3,20 @@
 
 % pr, common
 
+# Print multiple files with a default header and footer
+pr {{path/to/file1 path/to/file2 ...}}
 
+# Print with a custom centered header
+pr <__h___header_> "<header>" {{path/to/file1 path/to/file2 ...}}
+
+# Print with numbered lines and a custom date format
+pr <__n___number_lines_> <__D___date_format_> "<format>" {{path/to/file1 path/to/file2 ...}}
+
+# Print all files together, one in each column, without a header or footer
+pr <__m___merge_> <__T___omit_pagination_> {{path/to/file1 path/to/file2 ...}}
+
+# Print, beginning at page 2 up to page 5, with a given page length (including header and footer)
+pr +2:5 <__l___length_> <page_length> {{path/to/file1 path/to/file2 ...}}
+
+# Print with an offset for each line and a truncating custom page width
+pr <__o___indent_> <offset> <__W___page_width_> <width> {{path/to/file1 path/to/file2 ...}}

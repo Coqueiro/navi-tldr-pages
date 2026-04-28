@@ -3,4 +3,17 @@
 
 % factorio, linux
 
+# Create a new save file
+<path_to>/factorio --create <path_to_save_file_zip>
 
+# Start a Factorio server
+<path_to>/factorio --start-server <path_to_save_file_zip>
+
+# Create a new save file with specific settings
+<path_to>/factorio --create <path_to_save_zip> --map-gen-settings <path_to_map_gen_settings_json> --map-settings <path_to_map_settings_json>
+
+# [Interactive] Shut the server gracefully
+/quit
+
+# Display help
+<path_to>/factorio <__h___help_>

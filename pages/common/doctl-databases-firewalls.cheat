@@ -3,4 +3,14 @@
 
 % doctl-databases-firewalls, common
 
+# Run a `doctl databases firewalls` command with an access token
+doctl <_d_databases_> <_fw_firewalls_> <command> <__t___access_token_> <access_token>
 
+# Retrieve a list of firewall rules for a given database
+doctl <_d_databases_> <_fw_firewalls_> <_ls_list_>
+
+# Add a database firewall rule to a given database
+doctl <_d_databases_> <_fw_firewalls_> <_a_append_> <database_id> --rule <droplet_k8s_ip_addr_tag_app>:<value>
+
+# Remove a firewall rule for a given database
+doctl <_d_databases_> <_fw_firewalls_> <_rm_remove_> <database_id> <rule_uuid>

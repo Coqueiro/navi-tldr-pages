@@ -3,4 +3,14 @@
 
 % csvsort, common
 
+# Sort a CSV file by column 9
+csvsort <__c___columns_> <9> <data_csv>
 
+# Sort a CSV file by the "name" column in descending order
+csvsort <__r___reverse_> <__c___columns_> <name> <data_csv>
+
+# Sort a CSV file by column 2, then by column 4
+csvsort <__c___columns_> <2_4> <data_csv>
+
+# Sort a CSV file without inferring data types
+csvsort <__I___no_inference_> <__c___columns_> <columns> <data_csv>

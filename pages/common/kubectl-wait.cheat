@@ -3,4 +3,14 @@
 
 % kubectl-wait, common
 
+# Wait for a deployment to become available
+kubectl wait --for condition=available deployment/<deployment_name>
 
+# Wait for all pods with a certain [l]abel to be ready
+kubectl wait --for condition=ready <_po_pods_> <__l___selector_> <label_key>=<label_value>
+
+# Wait for a pod to be deleted
+kubectl wait --for delete <_po_pods_> <pod_name>
+
+# Wait for a job to complete, within 120 seconds (if the condition isn't met on time, the exit status will be unsuccessful)
+kubectl wait --for condition=complete job/<job_name> --timeout 120s

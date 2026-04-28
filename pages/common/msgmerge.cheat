@@ -3,4 +3,8 @@
 
 % msgmerge, common
 
+# Update a translation file
+msgmerge <__U___update_> <path_to_file_po> <path_to_messages_pot>
 
+# Display help
+msgmerge <__h___help_>

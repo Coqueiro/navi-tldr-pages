@@ -13,7 +13,7 @@ kubectl explain <pod_spec_containers>
 kubectl explain <ingress_v1_networking_k8s_io>
 
 # Show all fields recursively for a resource
-kubectl explain {{[po|pods]}} --recursive
+kubectl explain <_po_pods_> --recursive
 
 # Display help
 kubectl explain --help

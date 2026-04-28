@@ -3,4 +3,20 @@
 
 % jj-operation, common
 
+# Show operation log
+jj <_op_operation_> log
 
+# Undo the last operation
+jj <_op_operation_> undo
+
+# Undo a given operation
+jj <_op_operation_> undo <operation>
+
+# Restore the repository to its state at a given operation
+jj <_op_operation_> restore <operation>
+
+# Show changes to the repository in an operation
+jj <_op_operation_> show <operation>
+
+# Show stat, summary, and patch of modifications of an operation
+jj <_op_operation_> show <__stat> <__s___summary_> <__p___patch_> <operation>

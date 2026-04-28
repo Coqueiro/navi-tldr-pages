@@ -4,19 +4,19 @@
 % npm-search, common
 
 # Search for a package by name
-npm {{[s|search]}} <package>
+npm <_s_search_> <package>
 
 # Search for packages by a specific keyword
-npm {{[s|search]}} <keyword>
+npm <_s_search_> <keyword>
 
 # Search for packages, including detailed information (e.g., description, author, version)
-npm {{[s|search]}} <package> --long
+npm <_s_search_> <package> --long
 
 # Search for packages maintained by a specific author
-npm {{[s|search]}} --author <author>
+npm <_s_search_> --author <author>
 
 # Search for packages with a specific organization
-npm {{[s|search]}} --scope <organization>
+npm <_s_search_> --scope <organization>
 
 # Search for packages with a specific combination of terms
-npm {{[s|search]}} {{term1 term2 ...}}
+npm <_s_search_> {{term1 term2 ...}}

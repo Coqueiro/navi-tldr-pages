@@ -3,4 +3,26 @@
 
 % eject, linux
 
+# Display the default device
+eject <__d___default_>
 
+# Eject the default device
+eject
+
+# Eject a specific device (the default order is cd-rom, scsi, floppy, and tape)
+eject <_dev_cdrom>
+
+# Toggle whether a device's tray is open or closed
+eject <__T___traytoggle_> <_dev_cdrom>
+
+# Eject a cd drive
+eject <__r___cdrom_> <_dev_cdrom>
+
+# Eject a floppy drive
+eject <__f___floppy_> <_mnt_floppy>
+
+# Eject a tape drive
+eject <__q___tape_> <_mnt_tape>
+
+# Set whether the physical eject button is [i]gnored (`on` prevents ejecting)
+eject <__i___manualeject_> <on_off>

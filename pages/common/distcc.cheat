@@ -3,4 +3,20 @@
 
 % distcc, common
 
+# Compile a source file using a compiler like `gcc`
+distcc <gcc> -c <path_to_source_c> -o <path_to_output_o>
 
+# Set remote hosts to distribute compilation
+export DISTCC_HOSTS="localhost {{ip1 ip2 ...}}"
+
+# Compile a project with `make` using `distcc`
+make <__j___jobs_> <parallel_jobs> CC="distcc <gcc>"
+
+# Show the list of current `distcc` hosts
+distcc --show-hosts
+
+# Display help
+distcc --help
+
+# Display version
+distcc --version

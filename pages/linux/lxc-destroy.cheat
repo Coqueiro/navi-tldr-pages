@@ -3,4 +3,8 @@
 
 % lxc-destroy, linux
 
+# Delete a container
+sudo lxc-destroy <container_name>
 
+# Display help
+lxc-destroy <______help_>

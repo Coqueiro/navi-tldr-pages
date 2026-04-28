@@ -3,4 +3,20 @@
 
 % systemctl-list-unit-files, linux
 
+# List installed unit files and their states
+systemctl list-unit-files
 
+# Filter by state
+systemctl list-unit-files --state <enabled_disabled_static____>
+
+# Filter by unit type
+systemctl list-unit-files <__t___type_> <service_socket_timer____>
+
+# Filter by a name pattern
+systemctl list-unit-files '<sshd_>'
+
+# Print output directly to `stdout`
+systemctl list-unit-files --no-pager
+
+# Print output without headers or footers
+systemctl list-unit-files --no-legend

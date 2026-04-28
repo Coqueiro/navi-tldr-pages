@@ -3,4 +3,11 @@
 
 % cargo-info, common
 
+# Display information about a package on <https://crates.io>
+cargo info <package>
 
+# Display information about a specific version of a package
+cargo info <package>@<version>
+
+# Display additional information about a package
+cargo info <__v___verbose_> <package>

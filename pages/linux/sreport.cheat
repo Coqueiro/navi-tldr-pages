@@ -3,4 +3,11 @@
 
 % sreport, linux
 
+# Show pipe delimited cluster utilization data
+sreport <__p___parsable_> cluster utilization
 
+# Show number of jobs run
+sreport job sizes printjobcount
+
+# Show users with the highest CPU time use
+sreport user topuser

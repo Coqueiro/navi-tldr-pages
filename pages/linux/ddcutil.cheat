@@ -3,4 +3,20 @@
 
 % ddcutil, linux
 
+# List all compatible displays
+ddcutil <_det_detect_>
 
+# Query the first compatible display for capabilities
+ddcutil <_cap_capabilities_>
+
+# Change the brightness (option `10`) of display 1 to 50%
+ddcutil <__d___display_> 1 <_set_setvcp_> 10 50
+
+# Increase the contrast (option `12`) of display 1 by 5%
+ddcutil <__d___display_> 1 <_set_setvcp_> 12 + 5
+
+# Change the display source (option `60`) of a display
+ddcutil <__d___display_> <1> <_set_setvcp_> 60 0x<0f>
+
+# Read the settings of display 1
+ddcutil <__d___display_> 1 <_get_getvcp_> ALL

@@ -4,10 +4,10 @@
 % gh-project, common
 
 # List projects owned by the currently authenticated user
-gh project {{[ls|list]}}
+gh project <_ls_list_>
 
 # List projects owned by a specific user or organization
-gh project {{[ls|list]}} --owner <owner>
+gh project <_ls_list_> --owner <owner>
 
 # View a project by number
 gh project view <number> --owner <owner>

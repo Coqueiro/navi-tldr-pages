@@ -3,4 +3,26 @@
 
 % kiterunner-brute, common
 
+# Bruteforce a target with an Assetnote wordlist (e.g., first 20,000 API routes)
+kiterunner brute <https___example_com> <__A___assetnote_wordlist_> <apiroutes_210328_20000>
 
+# Bruteforce a target with a custom wordlist
+kiterunner brute <https___example_com> <__w___wordlist_> <path_to_wordlist_txt>
+
+# Bruteforce using a dirsearch-style wordlist with extension substitution
+kiterunner brute <https___example_com> <__w___wordlist_> <path_to_dirsearch_txt> <__D___dirsearch_compat_> <__e___extensions_> <json_txt>
+
+# Bruteforce with specific file extensions appended and output in JSON format
+kiterunner brute <https___example_com> <__w___wordlist_> <path_to_wordlist_txt> <__e___extensions_> <aspx_ashx> <__o___output_> <json>
+
+# Bruteforce a list of targets from a file with custom concurrency settings for performance
+kiterunner brute <path_to_targets_txt> <__w___wordlist_> <path_to_wordlist_txt> <__x___max_connection_per_host_> <5> <__j___max_parallel_hosts_> <100>
+
+# Bruteforce and ignore specific content length responses
+kiterunner brute <https___example_com> <__w___wordlist_> <path_to_wordlist_txt> --ignore-length <100_105>
+
+# Bruteforce with custom HTTP headers
+kiterunner brute <https___example_com> <__w___wordlist_> <path_to_wordlist_txt> <__H___header_> "{{Authorization: Bearer token}}"
+
+# Bruteforce a list of targets from a file with fail status code filtering
+kiterunner brute <path_to_targets_txt> <__w___wordlist_> <path_to_wordlist_txt> --fail-status-codes <400_401_404>

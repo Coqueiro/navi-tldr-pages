@@ -3,4 +3,20 @@
 
 % pssh, common
 
+# Run a command on two hosts, and print its output on each server inline
+pssh <__i___inline_> <__H___host_> "<host1> <host2>" {{hostname --ip-addresses}}
 
+# Run a command and save the output to separate files
+pssh <__H___host_> <host1> <__H___host_> <host2> <__o___outdir_> <path_to_output_directory> {{hostname --ip-addresses}}
+
+# Run a command on multiple hosts, specified in a new-line separated file
+pssh <__i___inline_> <__h___hosts_> <path_to_hosts_file> {{hostname --ip-addresses}}
+
+# Run a command as root (this asks for the root password)
+pssh <__i___inline_> <__h___hosts_> <path_to_hosts_file> <__A___askpass_> <__l___user_> <root_username> {{hostname --ip-addresses}}
+
+# Run a command with extra SSH arguments
+pssh <__i___inline_> <__h___hosts_> <path_to_hosts_file> <__x___extra_arg_> "{{-O VisualHostKey=yes}}" {{hostname --ip-addresses}}
+
+# Run a command limiting the number of parallel connections to 10
+pssh <__i___inline_> <__h___hosts_> <path_to_hosts_file> <__p__par_> <10> '{{cd dir; ./script.sh; exit}}'

@@ -4,7 +4,7 @@
 % pipx, common
 
 # Run an app in a temporary virtual environment
-pipx run <pycowsay> <___>
+pipx run <pycowsay> <moo>
 
 # Install a package in a virtual environment and add entry points to path
 pipx install <package>

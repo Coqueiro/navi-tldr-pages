@@ -7,4 +7,4 @@
 brushtopbm <path_to_file_brush>
 
 # Display version
-brushtopbm {{[-v|-version]}}
+brushtopbm <__v__version_>

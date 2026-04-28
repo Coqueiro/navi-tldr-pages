@@ -3,4 +3,26 @@
 
 % hledger-balance, common
 
+# Show the balance change in all accounts from all postings over all time
+hledger <_bal_balance_>
 
+# Show the balance change in accounts whose name contains `expenses`, as a tree, summarising the top two levels only
+hledger <_bal_balance_> <expenses> <__t___tree_> {{[-2|--depth 2]}}
+
+# Show expenses each month, and their totals and averages, sorted by total; and their monthly budget goals
+hledger <_bal_balance_> <expenses> <__M___monthly_> <__T___row_total_> <__A___average_> <__S___sort_amount_> --budget
+
+# Similar to the above, matching accounts by `Expense` type, as a two level tree without squashing boring accounts
+hledger <_bal_balance_> type:<X> {{[-MTAS|--monthly --row-total --average --sort-amount]}} --budget <__t___tree_> {{[-2|--depth 2]}} --no-elide
+
+# Show end balances (including from postings before the start date), quarterly in 2024, in accounts whose name contains `assets` or `liabilities`
+hledger <_bal_balance_> <__H___historical_> <__p___period_> '{{quarterly in 2024}}' <assets> <liabilities>
+
+# Similar to the above, also show zero balances, sort by total and summarise to three levels
+hledger <_bal_balance_> {{[-HQ|--historical --quarterly]}} date:<2024> type:<AL> {{[-ES|--empty --sort-amount]}} {{[-3|--depth 3]}}
+
+# Show investment assets' market [V]alue in base currency at the end of each quarter
+hledger <_bal_balance_> {{[-HVQ|--historical --market --quarterly]}} <assets_investments>
+
+# Show unrealised capital gains/losses from market price changes in each quarter, for non-cryptocurrency investment assets
+hledger <_bal_balance_> --gain <__Q___quarterly_> <assets_investments> not:<cryptocurrency>

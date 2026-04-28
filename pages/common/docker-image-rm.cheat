@@ -3,4 +3,14 @@
 
 % docker-image-rm, common
 
+# Remove one or more images given their names
+docker {{[rmi|image rm]}} {{image1 image2 ...}}
 
+# Force remove an image
+docker {{[rmi|image rm]}} <__f___force_> <image>
+
+# Remove an image without deleting untagged parents
+docker {{[rmi|image rm]}} --no-prune <image>
+
+# Display help
+docker {{[rmi|image rm]}} --help

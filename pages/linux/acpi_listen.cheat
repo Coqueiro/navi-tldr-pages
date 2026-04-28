@@ -3,4 +3,8 @@
 
 % acpi_listen, linux
 
+# Listen to any ACPI event while the daemon is running
+acpi_listen
 
+# Display help
+acpi_listen <__h___help_>

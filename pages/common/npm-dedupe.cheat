@@ -4,19 +4,19 @@
 % npm-dedupe, common
 
 # Deduplicate packages in `node_modules`
-npm {{[ddp|dedupe]}}
+npm <_ddp_dedupe_>
 
 # Follow `package-lock.json` or `npm-shrinkwrap.json` during deduplication
-npm {{[ddp|dedupe]}} --lock
+npm <_ddp_dedupe_> --lock
 
 # Run deduplication in strict mode
-npm {{[ddp|dedupe]}} --strict
+npm <_ddp_dedupe_> --strict
 
 # Skip optional/peer dependencies during deduplication
-npm {{[ddp|dedupe]}} --omit <optional_peer>
+npm <_ddp_dedupe_> --omit <optional_peer>
 
 # Enable detailed logging for troubleshooting
-npm {{[ddp|dedupe]}} --loglevel verbose
+npm <_ddp_dedupe_> --loglevel verbose
 
 # Limit deduplication to a specific package
-npm {{[ddp|dedupe]}} <package_name>
+npm <_ddp_dedupe_> <package_name>

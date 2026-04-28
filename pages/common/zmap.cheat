@@ -3,4 +3,26 @@
 
 % zmap, common
 
+# Scan a subnet or full IPv4 space for a specific TCP port (default: 80)
+zmap <SUBNETS> <__p___target_ports_> <port>
 
+# Scan specific ports or port ranges across a subnet
+zmap <__p___target_ports_> <port1_port2_port3____> <SUBNETS>
+
+# Output results to a CSV file with custom fields
+zmap <__o___output_file_> <path_to_output_file_csv> <__f___output_fields_> "<saddr_daddr_sport_dport>" <SUBNETS>
+
+# Limit the scan rate to a specific number of packets per second
+zmap <__r___rate_> <packets_per_second> <SUBNETS>
+
+# Perform a dry run without sending packets
+zmap <__d___dryrun_> <SUBNETS>
+
+# Exclude subnets using a blocklist file in CIDR notation
+zmap <__b___blocklist_file_> <path_to_blocklist_txt> <SUBNETS>
+
+# Set a specific source IP for scan packets
+zmap <__S___source_ip_> <source_ip> <SUBNETS>
+
+# Cap the number/percentage of targets to probe (e.g. 1000 IP/port pairs)
+zmap <__n___max_targets_> <1000> <SUBNETS> <__p___target_ports_> <port1_port2_port3>

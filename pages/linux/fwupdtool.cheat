@@ -3,4 +3,11 @@
 
 % fwupdtool, linux
 
+# Display all devices detected by `fwupd`
+fwupdtool get-devices
 
+# Install firmware from a file
+fwupdtool install <path_to_firmware>
+
+# Display help
+fwupdtool <__h___help_>

@@ -1,7 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cgexec.md
-
-% cgexec, linux
-
-# Execute a process in a given c[g]roup with given controller
-cgexec -g <controller>:<cgroup_name> <process_name>

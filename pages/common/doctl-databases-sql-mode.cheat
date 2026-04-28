@@ -3,4 +3,11 @@
 
 % doctl-databases-sql-mode, common
 
+# Run a `doctl databases sql-mode` command with an access token
+doctl <_d_databases_> <_sm_sql_mode_> <command> <__t___access_token_> <access_token>
 
+# Get a MySQL database cluster's SQL modes
+doctl <_d_databases_> <_sm_sql_mode_> <_g_get_> <database_id>
+
+# Overwrite a MySQL database cluster's SQL modes to the specified modes
+doctl <_d_databases_> <_sm_sql_mode_> <_s_set_> <database_id> {{sql_mode_1 sql_mode_2 ...}}

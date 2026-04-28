@@ -3,4 +3,20 @@
 
 % ipcalc, common
 
+# Display network info for an IP address
+ipcalc <192_168_0_1>
 
+# Display network info using CIDR notation
+ipcalc <192_168_0_1>/<24>
+
+# Display network info using a dotted decimal netmask
+ipcalc <192_168_0_1> <255_255_255_0>
+
+# Suppress bitwise output
+ipcalc <__b___nobinary_> <192_168_0_1>
+
+# Split a network into specified sized blocks
+ipcalc <__s___split_> {{size1 size2 size3 ...}} <192_168_0_1>
+
+# Display version
+ipcalc <__v___version_>

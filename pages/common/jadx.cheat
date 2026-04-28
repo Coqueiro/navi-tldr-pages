@@ -3,4 +3,8 @@
 
 % jadx, common
 
+# Decompile a Dex file into a directory
+jadx <path_to_file>
 
+# Decompile a Dex file into a specific directory
+jadx <__d___output_dir_> <path_to_directory> <path_to_file>

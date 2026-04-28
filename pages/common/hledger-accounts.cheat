@@ -3,4 +3,23 @@
 
 % hledger-accounts, common
 
+# Show all accounts used or declared in the default journal file
+hledger <_acc_accounts_>
 
+# Show accounts used by transactions
+hledger <_acc_accounts_> <__u___used_>
+
+# Show accounts declared with account directives
+hledger <_acc_accounts_> <__d___declared_>
+
+# Add new account directives, for accounts used but not declared, to the journal
+hledger <_acc_accounts_> --undeclared --directives >> <2024_accounts_journal>
+
+# Show accounts with `asset` in their name, and their declared/inferred types
+hledger <_acc_accounts_> asset --types
+
+# Show accounts of the `Asset` type
+hledger <_acc_accounts_> type:A
+
+# Show the first two levels of the accounts hierarchy
+hledger <_acc_accounts_> <__t___tree_> {{[-2|--depth 2]}}

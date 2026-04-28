@@ -3,4 +3,26 @@
 
 % qgis, common
 
+# Launch QGIS
+qgis
 
+# Open a specific project file
+qgis <__p___project_> <path_to_project_qgz>
+
+# Open one or more raster or vector files directly
+qgis {{path/to/file1.tif path/to/file2.shp ...}}
+
+# Hide the splash screen on startup
+qgis <__n___nologo_>
+
+# Set the initial map extent
+qgis <__e___extent_> <xmin_ymin_xmax_ymax>
+
+# Run a Python script on load
+qgis <__f___code_> <path_to_script_py>
+
+# Launch QGIS without restoring plugins
+qgis <__P___noplugins_>
+
+# Skip prompts for missing layers when opening a project
+qgis <__B___skipbadlayers_> <__p___project_> <path_to_project_qgz>

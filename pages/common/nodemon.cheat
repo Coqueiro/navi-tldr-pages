@@ -3,4 +3,23 @@
 
 % nodemon, common
 
+# Execute the specified file and watch a specific file for changes
+nodemon <path_to_file_js>
 
+# Manually restart nodemon (note nodemon must already be active for this to work)
+rs
+
+# Ignore specific files
+nodemon <__i___ignore_> <path_to_file_or_directory>
+
+# Pass arguments to the node application
+nodemon <path_to_file_js> <arguments>
+
+# Pass arguments to node itself if they're not nodemon arguments already (e.g. `--inspect`)
+nodemon <arguments> <path_to_file_js>
+
+# Run an arbitrary non-node script
+nodemon <__x___exec_> "<command_to_run_script> <options>" <path_to_script>
+
+# Run a Python script
+nodemon <__x___exec_> "python <options>" <path_to_file_py>

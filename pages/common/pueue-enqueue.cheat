@@ -3,4 +3,20 @@
 
 % pueue-enqueue, common
 
+# Enqueue multiple stashed tasks at once
+pueue enqueue <task_id> <task_id>
 
+# Enqueue a stashed task after 60 seconds
+pueue enqueue <__d___delay_> <60> <task_id>
+
+# Enqueue a stashed task next Wednesday
+pueue enqueue <__d___delay_> <wednesday> <task_id>
+
+# Enqueue a stashed task after four months
+pueue enqueue <__d___delay_> "4 months" <task_id>
+
+# Enqueue a stashed task on 2021-02-19
+pueue enqueue <__d___delay_> <2021_02_19> <task_id>
+
+# List all available date/time formats
+pueue enqueue <__h___help_>

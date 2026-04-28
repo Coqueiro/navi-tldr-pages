@@ -3,4 +3,20 @@
 
 % conda-clean, common
 
+# Delete all temporary or unused files verbosely and say yes to all confirmations
+conda clean {{[-avy|--all --verbose --yes]}}
 
+# Delete only index cache, tarballs, and log files
+conda clean {{[-itl|--index-cache --tarballs --logfiles]}}
+
+# Delete only temporary [c]ache files that could not be deleted earlier due to being in use
+conda clean <__c___tempfiles_> <path_to_tempfiles>
+
+# Delete only unused packages. Might delete packages installed with softlinks
+conda clean <__p___packages_>
+
+# Force delete all writable packages. More broad than the `--all` option. Will delete packages installed with softlinks
+conda clean <__f___force_pkgs_dirs_>
+
+# Display help
+conda clean <__h___help_>

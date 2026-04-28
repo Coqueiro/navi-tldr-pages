@@ -3,4 +3,14 @@
 
 % opencode-upgrade, common
 
+# Upgrade to the latest version
+opencode upgrade
 
+# Upgrade/downgrade to a specific version
+opencode upgrade <1_1_10>
+
+# Upgrade using a specific installation method
+opencode upgrade <__m___method_> <curl_npm_pnpm_bun_brew_choco_scoop>
+
+# Display help
+opencode upgrade <__h___help_>

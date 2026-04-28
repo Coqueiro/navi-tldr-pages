@@ -3,4 +3,17 @@
 
 % viu, common
 
+# Render an image or animated GIF
+viu <path_to_file>
 
+# Render an image or GIF from the internet using `curl`
+curl <__s___silent_> <https___example_com_image_png> | viu -
+
+# Render an image with a transparent background
+viu <__t___transparent_> <path_to_file>
+
+# Render an image with a specific width and height in pixels
+viu <__w___width_> <width> <__h___height_> <height> <path_to_file>
+
+# Render an image or GIF and display its file name
+viu <__n___name_> <path_to_file>

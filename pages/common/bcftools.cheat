@@ -3,4 +3,26 @@
 
 % bcftools, common
 
+# View BCF file and convert to [v]CF on `stdout`
+bcftools view <path_to_input_bcf> <__O___output_type_> v
 
+# Sort a VCF file variants by chromosome and position, output to a [b]CF file, and index the sorted output
+bcftools sort <path_to_input_vcf_gz> <__O___output_type_> b <__o___output_> <path_to_sorted_bcf> <__W___write_index_>
+
+# Concatenate sorted VCF files that share the same samples to [z]ipped VCF on `stdout`
+bcftools concat {{path/to/chr1.vcf.gz path/to/chr2.vcf.gz ...}} <__O___output_type_> z
+
+# Filter for low quality variants and annotate with "LowQual" tag in the FILTER column
+bcftools filter <__e___exclude_> 'QUAL<20' <__s___soft_filter_> LowQual <path_to_input_vcf_gz>
+
+# Add annotated columns from a tabix-indexed table on `stdout`
+bcftools annotate <__a___annotations_> <path_to_annotations_tsv_gz> <__c___columns_> CHROM,POS,REF,ALT,INFO/AF <path_to_input_vcf_gz>
+
+# Output variant [i]nter[sec]tion between VCF files using 4 threads
+bcftools isec {{path/to/a.vcf.gz path/to/b.vcf.gz ...}} --threads 4 <__o___output_> <path_to_intersection_vcf>
+
+# Merge non-overlapping samples from VCF files without indices on `stdout`
+bcftools merge <path_to_cohort1_vcf_gz> <path_to_cohort2_vcf_gz> --no-index
+
+# Create index for a bgzipped VCF file
+bcftools index <path_to_input_vcf_gz>

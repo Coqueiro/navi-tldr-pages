@@ -3,4 +3,26 @@
 
 % poetry-show, common
 
+# Display all packages
+poetry show
 
+# Show details of a specific package
+poetry show <package_name>
+
+# Show details as a dependency tree
+poetry show <__t___tree_>
+
+# Only show top-level packages (those explicitly defined in `pyproject.toml`)
+poetry show <__T___top_level_>
+
+# Show outdated packages
+poetry show <__o___outdated_>
+
+# Show the latest versions for all packages
+poetry show <__l___latest_>
+
+# Exclude a specific dependency group/s
+poetry show --without <group1_group2____>
+
+# Only show a specific dependency group/s
+poetry show --only <group1_group2____>

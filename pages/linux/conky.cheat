@@ -3,4 +3,20 @@
 
 % conky, linux
 
+# Launch with default, built-in config
+conky
 
+# Create a new default config
+conky <__C___print_config_> > ~/.conkyrc
+
+# Launch Conky with a given configuration file
+conky <__c___config_> <path_to_config>
+
+# Start in the background (daemonize)
+conky <__d___daemonize_>
+
+# Align Conky on the desktop
+conky <__a___alignment_> <top_bottom_middle>_<left_right_middle>
+
+# Pause for 5 seconds at startup before launching
+conky <__p___pause_> <5>

@@ -3,4 +3,11 @@
 
 % git-prune, common
 
+# Report what would be removed by Git prune without removing it
+git prune <__n___dry_run_>
 
+# Prune unreachable objects and display what has been pruned to `stdout`
+git prune <__v___verbose_>
+
+# Prune unreachable objects while showing progress
+git prune --progress

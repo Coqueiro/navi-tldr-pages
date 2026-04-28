@@ -3,4 +3,20 @@
 
 % envycontrol, linux
 
+# Switch between different GPU modes
+sudo envycontrol <__s___switch_> <nvidia_integrated_hybrid>
 
+# Specify your [d]isplay [m]anager manually
+envycontrol --dm <gdm_gdm3_sddm_lightdm>
+
+# Check current GPU mode
+sudo envycontrol <__q___query_>
+
+# Reset settings
+sudo envycontrol --reset
+
+# Display help
+envycontrol <__h___help_>
+
+# Display version
+envycontrol <__v___version_>

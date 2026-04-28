@@ -3,4 +3,14 @@
 
 % sdiag, linux
 
+# Show all performance counters related to the execution of `slurmctld`
+sdiag <__a___all_>
 
+# Reset performance counters related to the execution of `slurmctld`
+sdiag <__r___reset_>
+
+# Specify the output format
+sdiag <__a___all_> --<json_yaml>
+
+# Specify the cluster to send commands to
+sdiag <__a___all_> <__M___cluster_> <cluster_name>

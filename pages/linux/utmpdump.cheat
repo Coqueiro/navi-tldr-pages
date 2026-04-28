@@ -3,4 +3,8 @@
 
 % utmpdump, linux
 
+# Dump the `/var/log/wtmp` file to `stdout` as plain text
+utmpdump <_var_log_wtmp>
 
+# Load a previously dumped file into `/var/log/wtmp`
+utmpdump <__r___reverse_> <dumpfile> > <_var_log_wtmp>

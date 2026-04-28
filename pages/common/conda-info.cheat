@@ -3,4 +3,17 @@
 
 % conda-info, common
 
+# Show all information
+conda info <__a___all_>
 
+# Display base environment path
+conda info --base
+
+# List all conda environments
+conda info <__e___envs_>
+
+# List environment variables
+conda info <__s___system_>
+
+# Display list of channels with tokens exposed
+conda info --unsafe-channels

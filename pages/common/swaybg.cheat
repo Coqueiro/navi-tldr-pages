@@ -3,4 +3,11 @@
 
 % swaybg, common
 
+# Set the wallpaper to an image
+swaybg <__i___image_> <path_to_image>
 
+# Set the wallpaper mode
+swaybg <__i___image_> <path_to_image> <__m___mode_> <stretch_fit_fill_center_tile_solid_color>
+
+# Set the wallpaper to a static color
+swaybg <__c___color_> "<_rrggbb>"

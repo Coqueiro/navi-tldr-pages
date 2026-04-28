@@ -3,4 +3,8 @@
 
 % nix-build.2, common
 
+# Build a Nix expression
+nix-build '<nixpkgs>' <__A___attr_> <firefox>
 
+# Build a sandboxed Nix expression (on non-NixOS)
+nix-build '<nixpkgs>' <__A___attr_> <firefox> --option sandbox true

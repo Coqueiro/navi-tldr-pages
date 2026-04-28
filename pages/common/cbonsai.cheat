@@ -3,4 +3,26 @@
 
 % cbonsai, common
 
+# Generate a bonsai in live mode
+cbonsai <__l___live_>
 
+# Generate a bonsai in infinite mode
+cbonsai <__i___infinite_>
+
+# Set the growth factor of the tree (default: 32)
+cbonsai <__L___life_> <0__200>
+
+# Set the branching factor of the tree (default: 5)
+cbonsai <__M___multiplier_> <0__20>
+
+# Run in screensaver mode (equivalent to `--live --infinite` but any keypress exits)
+cbonsai <__S___screensaver_>
+
+# Append a message to the bonsai
+cbonsai <__m___message_> "<message>"
+
+# Display extra information about the bonsai
+cbonsai <__v___verbose_>
+
+# Display help
+cbonsai <__h___help_>

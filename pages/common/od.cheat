@@ -3,4 +3,20 @@
 
 % od, common
 
+# Display file using default settings: octal format, 8 bytes per line, byte offsets in octal, and duplicate lines replaced with `*`
+od <path_to_file>
 
+# Display file in verbose mode, i.e. without replacing duplicate lines with `*`
+od <__v___output_duplicates_> <path_to_file>
+
+# Display file in hexadecimal format (2-byte units), with byte offsets in decimal format
+od <__t___format_> <x> <__A___address_radix_> <d> <__v___output_duplicates_> <path_to_file>
+
+# Display file in hexadecimal format (1-byte units), and 4 bytes per line
+od <__t___format_> <x1> <__w___width__>4 <__v___output_duplicates_> <path_to_file>
+
+# Display file in hexadecimal format along with its character representation, and do not print byte offsets
+od <__t___format_> <xz> <__A___address_radix_> <n> <__v___output_duplicates_> <path_to_file>
+
+# Read only 100 bytes of a file starting from the 500th byte
+od <__N___read_bytes_> 100 <__j___skip_bytes_> 500 <__v___output_duplicates_> <path_to_file>

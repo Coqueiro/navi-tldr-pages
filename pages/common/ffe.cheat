@@ -3,4 +3,20 @@
 
 % ffe, common
 
+# Display all input data using the specified data configuration
+ffe <__c___configuration_> <path_to_config_ffe> <path_to_input>
 
+# Convert an input file to an output file in a new format
+ffe --output=<path_to_output> <__c___configuration_> <path_to_config_ffe> <path_to_input>
+
+# Select input structure and print format from definitions in `~/.fferc` configuration file
+ffe <__s___structure_> <structure> <__p___print_> <format> <path_to_input>
+
+# Write only the selected fields
+ffe <__f___field_list_> "<FirstName_LastName_Age>" <__c___configuration_> <path_to_config_ffe> <path_to_input>
+
+# Write only the records that match an expression
+ffe <__e___expression_> "<LastName_Smith>" <__c___configuration_> <path_to_config_ffe> <path_to_input>
+
+# Display help
+ffe <______help_>

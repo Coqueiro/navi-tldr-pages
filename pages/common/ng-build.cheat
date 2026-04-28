@@ -4,22 +4,22 @@
 % ng-build, common
 
 # Build an Angular application or library
-ng {{[b|build]}}
+ng <_b_build_>
 
 # Specify the output path relative to the workspace root
-ng {{[b|build]}} --output-path <path_to_directory>
+ng <_b_build_> --output-path <path_to_directory>
 
 # Enable Ahead-of-Time (AOT) compilation
-ng {{[b|build]}} --aot
+ng <_b_build_> --aot
 
 # Show build progress in the console
-ng {{[b|build]}} --progress
+ng <_b_build_> --progress
 
 # Display additional verbose output during the build
-ng {{[b|build]}} --verbose
+ng <_b_build_> --verbose
 
 # Automatically clear the terminal screen during rebuilds
-ng {{[b|build]}} --clear-screen
+ng <_b_build_> --clear-screen
 
 # Rebuild automatically when source files change
-ng {{[b|build]}} --watch
+ng <_b_build_> --watch

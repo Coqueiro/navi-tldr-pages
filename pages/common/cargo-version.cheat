@@ -3,4 +3,8 @@
 
 % cargo-version, common
 
+# Display version
+cargo version
 
+# Display additional build information
+cargo version <__v___verbose_>

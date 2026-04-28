@@ -3,4 +3,20 @@
 
 % tio, common
 
+# Open a serial port with default settings
+tio <_dev_ttyUSB0>
 
+# Open a serial port with a specific baud rate
+tio <__b___baudrate_> <9600> <_dev_ttyUSB0>
+
+# Open a serial port and log output to a file
+tio <__L___log_> --log-file <log_file> <_dev_ttyUSB0>
+
+# Open a serial port and enable hexadecimal output
+tio --output-mode hex <_dev_ttyUSB0>
+
+# List available serial ports
+tio <__l___list_>
+
+# Exit `tio` session
+<Ctrl t><q>

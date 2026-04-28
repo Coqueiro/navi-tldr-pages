@@ -3,4 +3,14 @@
 
 % nicotine, common
 
+# Start Nicotine+
+nicotine
 
+# Start Nicotine+ in headless ([n]) mode
+nicotine <__n___headless_>
+
+# Rescan shared files
+nicotine <__r___rescan_>
+
+# Display help
+nicotine <__h___help_>

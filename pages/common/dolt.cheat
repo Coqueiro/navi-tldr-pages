@@ -3,4 +3,23 @@
 
 % dolt, common
 
+# Initialize a new Dolt data repository
+dolt init
 
+# Show the current working tree status
+dolt status
+
+# Add a remote Dolt repository
+dolt remote add <repository_name> <url>
+
+# Stage changes to tables
+dolt add <table_name>
+
+# Record staged changes to the repository
+dolt commit <__m___message_> "<commit_message>"
+
+# Push local changes to a remote
+dolt push
+
+# Pull changes from a remote
+dolt pull

@@ -3,4 +3,17 @@
 
 % opencode-web, common
 
+# Start the web interface on the default port
+opencode web
 
+# Start on a specific port
+opencode web --port <8080>
+
+# Start on a specific hostname
+opencode web --hostname <0_0_0_0>
+
+# Enable mDNS service discovery
+opencode web --mdns
+
+# Display help
+opencode web <__h___help_>

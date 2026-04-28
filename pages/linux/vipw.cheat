@@ -3,4 +3,8 @@
 
 % vipw, linux
 
+# Edit the password file
+vipw
 
+# Display version
+vipw <__V___version_>

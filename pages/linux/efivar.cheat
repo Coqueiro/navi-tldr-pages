@@ -3,4 +3,8 @@
 
 % efivar, linux
 
+# List all UEFI variables
+efivar <__l___list_>
 
+# Print the contents of a variable
+efivar <__n___name_> <146b234d_4052_4e07_b326_11220f8e1fe8_lBoot0000> <__p___print_>

@@ -3,4 +3,20 @@
 
 % smartctl, common
 
+# Display SMART health summary
+sudo smartctl <__H___health_> <_dev_sdX>
 
+# Display device information
+sudo smartctl <__i___info_> <_dev_sdX>
+
+# Start a short/long self-test in the background
+sudo smartctl <__t___test_> <short_long> <_dev_sdX>
+
+# Display the self-test log
+sudo smartctl <__l___log_> selftest
+
+# Display current/last self-test status and other SMART capabilities
+sudo smartctl <__c___capabilities_> <_dev_sdX>
+
+# Display exhaustive SMART data
+sudo smartctl <__a___all_> <_dev_sdX>

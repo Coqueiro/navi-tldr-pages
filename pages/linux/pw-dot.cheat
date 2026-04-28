@@ -3,4 +3,26 @@
 
 % pw-dot, linux
 
+# Generate a graph to `pw.dot` file
+pw-dot
 
+# Read objects from `pw-dump` JSON file
+pw-dot <__j___json_> <path_to_file_json>
+
+# Specify an output file, showing all object types
+pw-dot <__o___output_> <path_to_file_dot> <__a___all_>
+
+# Print `.dot` graph to `stdout`, showing all object properties
+pw-dot <__o___output_> - <__d___detail_>
+
+# Generate a graph from a remote instance, showing only linked objects
+pw-dot <__r___remote_> <remote_name> <__s___smart_>
+
+# Lay the graph from left to right, instead of dot's default top to bottom
+pw-dot <__L___lr_>
+
+# Lay the graph using 90-degree angles in edges
+pw-dot <__9___90_>
+
+# Display help
+pw-dot <__h___help_>

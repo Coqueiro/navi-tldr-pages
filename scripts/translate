@@ -17,7 +17,8 @@ sanitize_variables() {
 
     for v in $vars; do
         sanitized_v="$(echo "$v" | sed 's/[^a-zA-Z0-9_]/_/g')"
-        txt="$(echo "$txt" | sed "s${ESCAPE_CHAR}{{${v}}}${ESCAPE_CHAR}<${sanitized_v}>${ESCAPE_CHAR}g")"        
+        escaped_v="$(printf '%s\n' "$v" | sed 's/[][\/*.^$|]/\\&/g')"
+        txt="$(echo "$txt" | sed "s${ESCAPE_CHAR}{{${escaped_v}}}${ESCAPE_CHAR}<${sanitized_v}>${ESCAPE_CHAR}g")"        
     done
     
     echo "$txt"

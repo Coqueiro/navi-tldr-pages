@@ -3,4 +3,17 @@
 
 % xmake, common
 
+# Create an Xmake C project, consisting of a hello world and `xmake.lua`
+xmake create <__l___language_> <_c_clean_> <__P___project_> <project_name>
 
+# Build and run an Xmake project
+xmake <_b_build_> <_r_run_>
+
+# Run a compiled Xmake target directly
+xmake <_r_run_> <target_name>
+
+# Configure a project's build targets
+xmake <_f_config_> {{[-p |--plat=]}}<macosx_linux_iphoneos____> {{[-a |--arch=]}}<x86_64_i386_arm64____> {{[-m |--mode=]}}<debug_release>
+
+# Install the compiled target to a directory
+xmake <_i_install_> {{[-o |--installdir=]}}<path_to_directory>

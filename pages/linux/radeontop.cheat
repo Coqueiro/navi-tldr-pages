@@ -3,4 +3,14 @@
 
 % radeontop, linux
 
+# Show the utilization of the default AMD GPU
+radeontop
 
+# Enable colored output
+radeontop <__c___color_>
+
+# Select a specific GPU (the bus number is the first number in the output of `lspci`)
+radeontop <__b___bus_> <bus_number>
+
+# Specify the display refresh rate (higher means more GPU overhead)
+radeontop <__t___ticks_> <samples_per_second>

@@ -3,4 +3,23 @@
 
 % az-container, common
 
+# Create a container in a container group
+az container create <__g___resource_group_> <resource_group> <__n___name_> <name> --image <image_name> <__os___os_type_> <windows_linux> --cpu <number_of_CPU_cores> --memory <memory_in_GB>
 
+# Execute a command from within a running container of a container group
+az container exec <__g___resource_group_> <resource_group> <__n___name_> <container_group_name> --exec-command "<command>"
+
+# Examine the logs of a container in a container group
+az container logs <__n___name_> <name> <__g___resource_group_> <resource_group>
+
+# Get the details of a container group
+az container show <__n___name_> <name> <__g___resource_group_> <resource_group>
+
+# Start all containers in a container group
+az container start <__n___name_> <name> <__g___resource_group_> <resource_group>
+
+# Stop all containers in a container group
+az container stop <__n___name_> <name> <__g___resource_group_> <resource_group>
+
+# Delete a container group
+az container delete <__n___name_> <name> <__g___resource_group_> <resource_group>

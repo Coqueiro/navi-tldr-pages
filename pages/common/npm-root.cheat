@@ -3,4 +3,8 @@
 
 % npm-root, common
 
+# Display path to the local `node_modules` directory
+npm root
 
+# Display path to the global `node_modules` directory
+npm root <__g___global_>

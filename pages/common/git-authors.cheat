@@ -3,4 +3,11 @@
 
 % git-authors, common
 
+# Print a full list of committers to `stdout` instead of to the `AUTHORS` file
+git authors <__l___list_>
 
+# Append the list of committers to the `AUTHORS` file and open it in the default editor
+git authors
+
+# Append the list of committers, excluding emails, to the `AUTHORS` file and open it in the default editor
+git authors --no-email

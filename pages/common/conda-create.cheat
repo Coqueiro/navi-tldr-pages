@@ -3,4 +3,17 @@
 
 % conda-create, common
 
+# Create a new environment named `py39`, install Python 3.9, NumPy v1.11 or above in it, and the latest stable version of SciPy. Say yes to all confirmations
+conda create {{[-ny|--name --yes]}} py39 python=3.9 "numpy>=1.11 scipy"
 
+# Create a new environment named `myenv` and install packages listed in files
+conda create <__n___name_> myenv --file <file1_yml> --file <file2_yml>
+
+# Create a new environment at a custom path (i.e. prefix)
+conda create <__p___prefix_> <path_to_myenv>
+
+# Make exact copy of an environment named `py39`
+conda create --clone py39 <__n___name_> <py39_copy>
+
+# Display help
+conda create <__h___help_>

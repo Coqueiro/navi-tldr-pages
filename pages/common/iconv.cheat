@@ -3,4 +3,11 @@
 
 % iconv, common
 
+# Convert file to a specific encoding, and print to `stdout`
+iconv <__f___from_code_> <from_encoding> <__t___to_code_> <to_encoding> <input_file>
 
+# Convert file to the current locale's encoding, and output to a file
+iconv <__f___from_code_> <from_encoding> <input_file> > <output_file>
+
+# List supported encodings
+iconv <__l___list_>

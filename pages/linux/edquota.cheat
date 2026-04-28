@@ -3,4 +3,20 @@
 
 % edquota, linux
 
+# Edit quota of the current user
+edquota <__u___user_> $(whoami)
 
+# Edit quota of a specific user
+sudo edquota <__u___user_> <username>
+
+# Edit quota for a group
+sudo edquota <__g___group_> <group>
+
+# Restrict operations to a given filesystem (by default edquota operates on all filesystems with quotas)
+sudo edquota <__f___file_system_> <filesystem>
+
+# Edit the default grace period
+sudo edquota <__t___edit_period_>
+
+# Duplicate a quota to other users
+sudo edquota <__p___prototype_> <reference_user> {{destination_user1 destination_user2 ...}}

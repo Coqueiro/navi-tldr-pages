@@ -3,4 +3,23 @@
 
 % udisksctl, linux
 
+# Show high-level information about disk drives and block devices
+udisksctl status
 
+# Show detailed information about a device
+udisksctl info <__b___block_device_> <_dev_sdX>
+
+# Show detailed information about a device partition
+udisksctl info <__b___block_device_> <_dev_sdXN>
+
+# Mount a device partition and prints the mount point
+udisksctl mount <__b___block_device_> <_dev_sdXN>
+
+# Unmount a device partition
+udisksctl unmount <__b___block_device_> <_dev_sdXN>
+
+# Power off a device to safely remove it
+udisksctl power-off <__b___block_device_> <_dev_sdX>
+
+# Monitor the daemon for events
+udisksctl monitor

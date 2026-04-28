@@ -3,4 +3,8 @@
 
 % krdpserver, linux
 
+# Start an RDP server with a username and password
+krdpserver <__u___username_> <user_name> <__p___password_> <password>
 
+# Share a specific monitor marked by its index
+krdpserver <__u___username_> <user_name> <__p___password_> <password> --monitor <n>

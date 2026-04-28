@@ -3,4 +3,17 @@
 
 % speaker-test, linux
 
+# Test the default speakers with pink noise
+speaker-test
 
+# Test the default speakers with a predefined WAV file
+speaker-test <__t___test_> wav
+
+# Test multichannel speaker configurations
+speaker-test <__t___test_> wav <__c___channels_> <1__8>
+
+# Test the default speakers with a specific WAV file
+speaker-test <__t___test_> wav <__w___wavfile_> <path_to_file_wav>
+
+# Test the default speakers with a sine wave
+speaker-test <__t___test_> sine <__f___frequency_> <frequency>

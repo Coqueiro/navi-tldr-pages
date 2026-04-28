@@ -3,4 +3,14 @@
 
 % nsenter, linux
 
+# Run a specific command using the same namespaces as an existing process
+nsenter <__t___target_> <pid> <__a___all_> <command> <command_arguments>
 
+# Run a specific command in an existing process's mount|UTS|IPC|network|PID|user|cgroup|time namespace
+nsenter <__t___target_> <pid> --<mount_uts_ipc_net_pid_user_cgroup> <command> <command_arguments>
+
+# Run a specific command in an existing process's UTS, time, and IPC namespaces
+nsenter <__t___target_> <pid> <__u___uts_> <__T___time_> <__i___ipc_> -- <command> <command_arguments>
+
+# Run a specific command in an existing process's namespace by referencing procfs
+nsenter <__p___pid__>/proc/<pid>/pid/net -- <command> <command_arguments>

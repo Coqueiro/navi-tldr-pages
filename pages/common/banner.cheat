@@ -3,4 +3,11 @@
 
 % banner, common
 
+# Print the text message as a large banner (quotes are optional)
+banner "{{Hello World}}"
 
+# Use a banner width of 50 characters
+banner <__w___width_> 50 "{{Hello World}}"
+
+# Read text from `stdin`
+banner

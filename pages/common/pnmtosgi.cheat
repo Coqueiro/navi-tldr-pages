@@ -10,4 +10,4 @@ pnmtosgi <path_to_input_pnm> > <path_to_output_sgi>
 pnmtosgi -<verbatim_rle> <path_to_input_pnm> > <path_to_output_sgi>
 
 # Write the specified string into the SGI image header's `imagename` field
-pnmtosgi {{[-i|-imagename]}} <string> <path_to_input_pnm> > <path_to_output_sgi>
+pnmtosgi <__i__imagename_> <string> <path_to_input_pnm> > <path_to_output_sgi>

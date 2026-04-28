@@ -3,4 +3,20 @@
 
 % nmcli-device, linux
 
+# Print the statuses of all network interfaces
+nmcli <_d_device_>
 
+# Print the available Wi-Fi access points
+nmcli <_d_device_> <_w_wifi_>
+
+# Connect to a Wi-Fi network with the specified SSID (you will be prompted for a password)
+nmcli <_d_device_> <_w_wifi_> <_c_connect_> <ssid> <__a___ask_>
+
+# Create a Wi-Fi hotspot
+nmcli <_d_device_> <_w_wifi_> <_ho_hotspot_> ifname <wlan0> ssid "<hotspot_ssid>" password "<password>"
+
+# Print the password and QR code for the current Wi-Fi network
+nmcli <_d_device_> <_w_wifi_> <_s_show_password_>
+
+# Print detailed information about a device
+nmcli <_d_device_> <_sh_show_> <wlan0>

@@ -3,4 +3,26 @@
 
 % nix-env, common
 
+# List all installed packages
+nix-env <__q___query_>
 
+# Query installed packages (`regex` is supported)
+nix-env <__q___query_> <search_pattern>
+
+# Query available packages from the Nixpkgs registry
+nix-env {{[-qa|--query --available]}} <search_pattern>
+
+# Install a package from the Nixpkgs registry
+nix-env {{[-iA|--install --attr]}} nixpkgs.<pkg_name>
+
+# Install a package from a custom URL
+nix-env <__i___install_> <pkg_name> <__f___file_> <example_com>
+
+# Uninstall a package
+nix-env <__e___uninstall_> <pkg_name>
+
+# Upgrade a package
+nix-env <__u___upgrade_> <pkg_name>
+
+# Get usage help for a specific operation (`--install`, `--upgrade`, etc.)
+nix-env --help --<option_name>

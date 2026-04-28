@@ -3,4 +3,20 @@
 
 % apptainer-sign, linux
 
+# Sign a container image using the default PGP key
+apptainer sign <path_to_image_sif>
 
+# Sign a container image using a specific private key file
+apptainer sign --key <path_to_private_pem> <path_to_image_sif>
+
+# Sign a container image using a specific PGP key index
+apptainer sign <__k___keyidx_> <key_index> <path_to_image_sif>
+
+# Sign a specific object group within the image
+apptainer sign <__g___group_id_> <group_id> <path_to_image_sif>
+
+# Sign a specific object by ID within the image
+apptainer sign <__i___sif_id_> <object_id> <path_to_image_sif>
+
+# Display help
+apptainer sign <__h___help_>

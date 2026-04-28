@@ -16,4 +16,4 @@ ffmpeg -i <path_to_file> -c <copy> -f <media_format> - | ffplay -
 ffplay -flags2 +export_mvs -vf codecview=mv=pf+bf+bb <path_to_file>
 
 # Show only video keyframes
-ffplay -vf select="{{eq(pict_type\,PICT_TYPE_I)}}" <path_to_file>
+ffplay -vf select="<eq_pict_type__PICT_TYPE_I_>" <path_to_file>

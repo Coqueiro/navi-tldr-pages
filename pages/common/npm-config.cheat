@@ -4,22 +4,22 @@
 % npm-config, common
 
 # Show all configuration settings
-npm {{[c|config]}} list
+npm <_c_config_> list
 
 # List all configuration settings as `JSON`
-npm {{[c|config]}} list --json
+npm <_c_config_> list --json
 
 # Get the value of a specific configuration key
-npm {{[c|config]}} get <key>
+npm <_c_config_> get <key>
 
 # Set a configuration key to a specific value
-npm {{[c|config]}} set <key> <value>
+npm <_c_config_> set <key> <value>
 
 # Delete a configuration key
-npm {{[c|config]}} delete <key>
+npm <_c_config_> delete <key>
 
 # Edit the global npm configuration file in the default editor
-npm {{[c|config]}} edit
+npm <_c_config_> edit
 
 # Attempt to repair invalid configuration items
-npm {{[c|config]}} fix
+npm <_c_config_> fix

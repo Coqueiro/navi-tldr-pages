@@ -3,4 +3,8 @@
 
 % rlogin, linux
 
+# Log in to a remote host
+rlogin <remote_host>
 
+# Log in to a remote host with a specific username
+rlogin <__l___user_> <username> <remote_host>

@@ -3,4 +3,17 @@
 
 % az-tag, common
 
+# Create a tag value
+az tag add-value <__n___name_> <tag_name> --value <tag_value>
 
+# Create a tag in the subscription
+az tag create <__n___name_> <tag_name>
+
+# Delete a tag from the subscription
+az tag delete <__n___name_> <tag_name>
+
+# List all tags on a subscription
+az tag list --resource-id /subscriptions/<subscription_id>
+
+# Delete a tag value for a specific tag name
+az tag remove-value <__n___name_> <tag_name> --value <tag_value>

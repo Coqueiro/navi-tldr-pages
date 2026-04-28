@@ -3,4 +3,17 @@
 
 % buku, common
 
+# Display all bookmarks matching "keyword" and with "privacy" tag
+buku <keyword> <__t___stag_> <privacy>
 
+# Add bookmark with tags "search engine" and "privacy"
+buku <__a___add_> <https___example_com> {{search engine}}, <privacy>
+
+# Delete a bookmark
+buku <__d___delete_> <bookmark_id>
+
+# Open editor to edit a bookmark
+buku <__w___write_> <bookmark_id>
+
+# Remove "search engine" tag from a bookmark
+buku <__u___update_> <bookmark_id> --tag - {{search engine}}

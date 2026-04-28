@@ -3,4 +3,11 @@
 
 % lci, linux
 
+# Run a LOLCODE file
+lci <path_to_file>
 
+# Display help
+lci <__h___help_>
+
+# Display version
+lci <__v___version_>

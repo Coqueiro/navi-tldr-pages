@@ -3,4 +3,23 @@
 
 % kate, common
 
+# Open specific files
+kate {{path/to/file1 path/to/file2 ...}}
 
+# Open specific remote files
+kate {{https://example.com/path/to/file1 https://example.com/path/to/file2 ...}}
+
+# Create a new editor instance even if one is already open
+kate <__n___new_>
+
+# Open a file with the cursor at the specific line
+kate <__l___line_> <line_number> <path_to_file>
+
+# Open a file with the cursor at the specific line and column
+kate <__l___line_> <line_number> <__c___column_> <column_number> <path_to_file>
+
+# Create a file from `stdin`
+cat <path_to_file> | kate <__i___stdin_>
+
+# Display help
+kate <__h___help_>

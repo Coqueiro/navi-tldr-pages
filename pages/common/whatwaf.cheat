@@ -3,4 +3,23 @@
 
 % whatwaf, common
 
+# Detect protection on a single URL, optionally use verbose output
+whatwaf <__u___url_> <https___example_com> --verbose
 
+# Detect protection on a list of URLs in parallel from a file (one URL per line)
+whatwaf <__t___threads_> <number> <__l___list_> <path_to_file>
+
+# Send requests through a proxy and use custom payload list from a file (one payload per line)
+whatwaf --proxy <http___127_0_0_1_8080> --pl <path_to_file> <__u___url_> <https___example_com>
+
+# Send requests through Tor (Tor must be installed) using custom payloads (comma-separated)
+whatwaf --tor <__p___payloads_> '<payload1_payload2____>' <__u___url_> <https___example_com>
+
+# Use a random user-agent, set throttling and timeout, send a POST request, and force HTTPS connection
+whatwaf --ra --throttle <seconds> --timeout <seconds> <__P___post_> --force-ssl <__u___url_> <http___example_com>
+
+# List all WAFs that can be detected
+whatwaf --wafs
+
+# List all available tamper scripts
+whatwaf --tampers

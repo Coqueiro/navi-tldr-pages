@@ -3,4 +3,14 @@
 
 % gradle-clean, common
 
+# Clean the build directory
+gradle clean
 
+# Clean and then build the project
+gradle clean build
+
+# Clean a specific subproject in a multi-project build
+gradle :<subproject>:clean
+
+# Clean with more detailed logging
+gradle clean <__i___info_>

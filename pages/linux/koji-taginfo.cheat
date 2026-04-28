@@ -3,4 +3,8 @@
 
 % koji-taginfo, linux
 
+# Print basic information
+koji taginfo {{tag1 tag2 ...}}
 
+# Display help
+koji taginfo <__h___help_>

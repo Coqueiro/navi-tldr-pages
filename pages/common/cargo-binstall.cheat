@@ -3,4 +3,11 @@
 
 % cargo-binstall, common
 
+# Install a package from <https://crates.io>
+cargo binstall <package>
 
+# Install a specific version of a package (latest by default)
+cargo binstall <package>@<version>
+
+# Install a package and disable confirmation prompts
+cargo binstall <__y___no_confirm_> <package>

@@ -3,4 +3,26 @@
 
 % loft, common
 
+# Install or upgrade Loft in the current Kubernetes cluster
+loft start
 
+# Authenticate to a remote Loft instance
+loft login <https___loft_example_com>
+
+# Create a virtual cluster with a specific space and cluster
+loft create vcluster <vcluster_name> <__s___space_> <space_name> <__c___cluster_> <cluster_name>
+
+# List all virtual clusters
+loft list vclusters
+
+# Switch context to a specific virtual cluster
+loft use vcluster <vcluster_name>
+
+# Delete a virtual cluster
+loft delete vcluster <vcluster_name>
+
+# Show the current Loft username
+loft vars username
+
+# Uninstall Loft from the cluster
+loft uninstall

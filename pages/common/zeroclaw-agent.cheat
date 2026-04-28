@@ -3,4 +3,23 @@
 
 % zeroclaw-agent, common
 
+# Send a single message to the AI agent
+zeroclaw agent <__m___message_> "{{Hello, ZeroClaw!}}"
 
+# Start interactive chat mode
+zeroclaw agent
+
+# Send a message with a specific provider
+zeroclaw agent <__m___message_> "<Hello>" <__p___provider_> <anthropic>
+
+# Send a message with a specific model
+zeroclaw agent <__m___message_> "<Hello>" --model <anthropic_claude_sonnet_4_20250514>
+
+# Send a message with custom temperature
+zeroclaw agent <__m___message_> "<Hello>" <__t___temperature_> <0_5>
+
+# Send a message and attach a hardware peripheral
+zeroclaw agent <__m___message_> "<Hello>" --peripheral <nucleo_f401re__dev_ttyACM0>
+
+# Display help
+zeroclaw agent <__h___help_>

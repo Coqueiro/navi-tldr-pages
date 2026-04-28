@@ -3,4 +3,14 @@
 
 % scanimage, linux
 
+# List available scanners to ensure the target device is connected and recognized
+scanimage <__L___list_devices_>
 
+# Scan an image and save it to a file
+scanimage --format <pnm_tiff_png_jpeg_pdf____> > <path_to_new_image>
+
+# Specify the device to scan from
+scanimage <__d___device_> <device_name> > <path_to_new_image>
+
+# Specify resolution for the scanned image (default resolution is 75dpi)
+scanimage --resolution <300> > <path_to_new_image>

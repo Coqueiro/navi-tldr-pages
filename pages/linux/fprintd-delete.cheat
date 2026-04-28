@@ -3,4 +3,11 @@
 
 % fprintd-delete, linux
 
+# Remove all fingerprints for a specific user
+fprintd-delete <username>
 
+# Remove a specific fingerprints for a specific user
+fprintd-delete <username> <__f___finger_> <left_thumb_left_index_finger_left_middle_finger_left_ring_finger_left_little_finger_right_thumb____>
+
+# Display help
+fprintd-delete

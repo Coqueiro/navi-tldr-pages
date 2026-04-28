@@ -3,4 +3,17 @@
 
 % lsns, linux
 
+# List all namespaces
+lsns
 
+# List namespaces in JSON format
+lsns <__J___json_>
+
+# List namespaces associated with the specified process
+lsns <__p___task_> <pid>
+
+# List the specified type of namespaces only
+lsns <__t___type_> <mnt_net_ipc_user_pid_uts_cgroup_time>
+
+# List namespaces, only showing the namespace ID, type, PID, and command
+lsns <__o___output_> <NS_TYPE_PID_COMMAND>

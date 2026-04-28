@@ -3,4 +3,20 @@
 
 % hledger-import, common
 
+# Import new transactions from `bank.csv`, using `bank.csv.rules` to convert
+hledger import <path_to_bank_csv>
 
+# Show what would be imported from these two files, without doing anything
+hledger import <path_to_bank1_csv> <path_to_bank2_csv> --dry-run
+
+# Import new transactions from all CSV files, using the same rules for all
+hledger import --rules-file <common_rules> *.csv
+
+# Show conversion errors or results while editing `bank.csv.rules`
+watchexec -- hledger <__f___file_> <path_to_bank_csv> print
+
+# Mark `bank.csv`'s current data as seen, as if already imported
+hledger import --catchup <path_to_bank_csv>
+
+# Mark `bank.csv` as all new, as if not yet imported
+rm <__f___force_> .latest.bank.csv

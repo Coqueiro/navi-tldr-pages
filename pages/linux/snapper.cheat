@@ -3,4 +3,20 @@
 
 % snapper, linux
 
+# List snapshot configs
+snapper list-configs
 
+# Create snapper config
+snapper <__c___config_> <config> create-config <path_to_directory>
+
+# Create a snapshot with a description
+snapper <__c___config_> <config> create <__d___description_> "<snapshot_description>"
+
+# List snapshots for a config
+snapper <__c___config_> <config> list
+
+# Delete a snapshot
+snapper <__c___config_> <config> delete <snapshot_number>
+
+# Delete a range of snapshots
+snapper <__c___config_> <config> delete <snapshot1>-<snapshot2>

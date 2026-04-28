@@ -3,4 +3,26 @@
 
 % fabric, common
 
+# Run the setup to configure fabric
+fabric <__S___setup_>
 
+# List all available patterns
+fabric <__l___listpatterns_>
+
+# Run a pattern with input from a file
+fabric < <path_to_input_file> <__p___pattern_> <pattern_name>
+
+# Run a pattern on a YouTube video URL
+fabric <__y___youtube_> "<https___www_youtube_com_watch_v_video_id>" <__p___pattern_> <pattern_name>
+
+# Chain patterns together by piping output from one to another
+fabric <__p___pattern_> <pattern1> | fabric <__p___pattern_> <pattern2>
+
+# Run a custom user-defined pattern
+fabric <__p___pattern_> <custom_pattern_name>
+
+# Run a pattern and save the output to a file
+fabric <__p___pattern_> <pattern_name> <__o___output_> <path_to_output_file>
+
+# Run a pattern with the specified variables
+fabric <__p___pattern_> <pattern_name> <__v___variable_> "<variable_name>:<value>"

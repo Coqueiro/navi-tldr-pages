@@ -3,4 +3,17 @@
 
 % mkswap, linux
 
+# Set up a given swap area
+sudo mkswap <path_to_file>
 
+# Check a partition for bad blocks before creating the swap area
+sudo mkswap <__c___check_> <path_to_file>
+
+# Specify a label for the partition (to allow `swapon` to use the label)
+sudo mkswap <__L___label_> <label> <_dev_sdXY>
+
+# Use the specified UUID
+sudo mkswap <__U___uuid_> <clear_random_time_UUID_value>
+
+# Set up a swap file (for btrfs, see `tldr btrfs filesystem` instead)
+sudo mkswap <__s___size_> <file_size> <__F___file_> <path_to_swapfile>

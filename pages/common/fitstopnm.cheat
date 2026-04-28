@@ -7,4 +7,4 @@
 fitstopnm <path_to_file_fits> > <path_to_output_pnm>
 
 # Convert the image on the specified position of the third axis in the FITS file
-fitstopnm {{[-i|-image]}} <z_position> <path_to_file_fits> > <path_to_output_pnm>
+fitstopnm <__i__image_> <z_position> <path_to_file_fits> > <path_to_output_pnm>

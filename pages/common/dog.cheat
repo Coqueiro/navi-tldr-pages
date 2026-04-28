@@ -3,4 +3,20 @@
 
 % dog, common
 
+# Lookup the IP(s) associated with a hostname (A records)
+dog <example_com>
 
+# Query the MX records type associated with a given domain name
+dog <example_com> MX
+
+# Specify a specific DNS server to query (e.g. Cloudflare)
+dog <example_com> MX @<1_1_1_1>
+
+# Query over TCP rather than UDP
+dog <example_com> MX @<1_1_1_1> <__T___tcp_>
+
+# Query the MX records type associated with a given domain name over TCP using explicit arguments
+dog <__q___query_> <example_com> <__t___type_> MX <__n___nameserver_> <1_1_1_1> <__T___tcp_>
+
+# Lookup the IP(s) associated with a hostname (A records) using DNS over HTTPS (DoH)
+dog <example_com> <__H___https_> @<https___cloudflare_dns_com_dns_query>

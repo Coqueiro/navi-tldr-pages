@@ -3,4 +3,17 @@
 
 % mkfs.btrfs, linux
 
+# Create a Btrfs filesystem on an empty partition
+sudo mkfs.btrfs <_dev_sdXY>
 
+# Create a btrfs filesystem on a single device
+sudo mkfs.btrfs <__m___metadata_> single <__d___data_> single <_dev_sdX>
+
+# Create a btrfs filesystem on multiple devices with raid1
+sudo mkfs.btrfs <__m___metadata_> raid1 <__d___data_> raid1 {{/dev/sdX /dev/sdY /dev/sdZ ...}}
+
+# Set a label for the filesystem
+sudo mkfs.btrfs <__L___label_> "<label>" {{/dev/sdX /dev/sdY ...}}
+
+# Overwrite existing filesystem if one is detected
+sudo mkfs.btrfs <__f___force_> <_dev_sdX>

@@ -3,4 +3,20 @@
 
 % lxc-ls, linux
 
+# List all containers
+sudo lxc-ls
 
+# List active containers (including frozen and running)
+sudo lxc-ls --active
+
+# List only frozen containers
+sudo lxc-ls --frozen
+
+# List only stopped containers
+sudo lxc-ls --stopped
+
+# List containers in a fancy, column-based output
+sudo lxc-ls <__f___fancy_>
+
+# Display help
+lxc-ls <______help_>

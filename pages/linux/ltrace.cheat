@@ -3,4 +3,14 @@
 
 % ltrace, linux
 
+# Print (trace) library calls of a program binary
+ltrace <path_to_program>
 
+# Count library calls. Print a handy summary at the bottom
+ltrace -c <path_to_program>
+
+# Trace calls to malloc and free, omit those done by libc
+ltrace -e malloc+free-@libc.so* <path_to_program>
+
+# Write to file instead of terminal
+ltrace <__o___output_> <file> <path_to_program>

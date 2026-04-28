@@ -4,19 +4,19 @@
 % brew-list, common
 
 # List all installed formulae and casks
-brew {{[ls|list]}}
+brew <_ls_list_>
 
 # List files belonging to an installed formula
-brew {{[ls|list]}} <formula>
+brew <_ls_list_> <formula>
 
 # List artifacts of a cask
-brew {{[ls|list]}} <cask>
+brew <_ls_list_> <cask>
 
 # List only formulae
-brew {{[ls|list]}} --formula
+brew <_ls_list_> --formula
 
 # List only casks
-brew {{[ls|list]}} --cask
+brew <_ls_list_> --cask
 
 # List only pinned formulae
-brew {{[ls|list]}} --pinned
+brew <_ls_list_> --pinned

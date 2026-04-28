@@ -3,4 +3,20 @@
 
 % losetup, linux
 
+# List loop devices with detailed info
+losetup <__a___all_>
 
+# Attach a file to a given loop device
+sudo losetup <_dev_loop> /<path_to_file>
+
+# Attach a file to a new free loop device and scan the device for partitions
+sudo losetup --show <__P___partscan_> <__f___find_> /<path_to_file>
+
+# Attach a file to a read-only loop device
+sudo losetup <__r___read_only_> <_dev_loop> /<path_to_file>
+
+# Detach all loop devices
+sudo losetup <__D___detach_all_>
+
+# Detach a given loop device
+sudo losetup <__d___detach_> <_dev_loop>

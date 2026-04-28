@@ -3,4 +3,14 @@
 
 % size, linux
 
+# Display the size of sections in a given object or executable file
+size <path_to_file>
 
+# Display the size of sections in a given object or executable file in [o]ctal
+size <__o___radix_8_> <path_to_file>
+
+# Display the size of sections in a given object or executable file in [d]ecimal
+size <__d___radix_10_> <path_to_file>
+
+# Display the size of sections in a given object or executable file in he[x]adecimal
+size <__x___radix_16_> <path_to_file>

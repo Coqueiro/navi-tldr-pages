@@ -4,25 +4,25 @@
 % ip-route-list, linux
 
 # Display the `main` routing table
-ip {{[r|route]}} {{[l|list]}}
+ip <_r_route_> <_l_list_>
 
 # Display the main routing table (same as first example)
-ip {{[r|route]}} {{[l|list]}} {{[t|table]}} <main_254>
+ip <_r_route_> <_l_list_> <_t_table_> <main_254>
 
 # Display the local routing table
-ip {{[r|route]}} {{[l|list]}} {{[t|table]}} <local_255>
+ip <_r_route_> <_l_list_> <_t_table_> <local_255>
 
 # Display all routing tables
-ip {{[r|route]}} {{[l|list]}} {{[t|table]}} <all_unspec_0>
+ip <_r_route_> <_l_list_> <_t_table_> <all_unspec_0>
 
 # List routes from a given device only
-ip {{[r|route]}} {{[l|list]}} dev <ethX>
+ip <_r_route_> <_l_list_> dev <ethX>
 
 # List routes within a given scope
-ip {{[r|route]}} {{[l|list]}} {{[s|scope]}} link
+ip <_r_route_> <_l_list_> <_s_scope_> link
 
 # Display the routing cache
-ip {{[r|route]}} {{[l|list]}} {{[c|cache]}}
+ip <_r_route_> <_l_list_> <_c_cache_>
 
 # Display only IPv6 or IPv4 routes
-ip <_6__4> {{[r|route]}}
+ip <_6__4> <_r_route_>

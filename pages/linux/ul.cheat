@@ -3,4 +3,8 @@
 
 % ul, linux
 
+# Display the contents of the file with underlines where applicable
+ul <file_txt>
 
+# Display the contents of the file with underlines made of dashes `-`
+ul <__i___indicated_> <file_txt>

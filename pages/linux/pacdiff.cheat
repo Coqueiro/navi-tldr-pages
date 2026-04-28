@@ -3,4 +3,20 @@
 
 % pacdiff, linux
 
+# Review files that need maintenance in interactive mode
+pacdiff
 
+# Use sudo and sudoedit to remove and merge files
+pacdiff <__s___sudo_>
+
+# Review files needing maintenance, creating `.bak`ups of the original if you `(O)verwrite`
+pacdiff <__s___sudo_> <__b___backup_>
+
+# Use a specific editor to view and merge configuration files (default is `vim -d`)
+DIFFPROG=<editor> pacdiff
+
+# Scan for configuration files with `locate` instead of using `pacman` database
+pacdiff <__l___locate_>
+
+# Display help
+pacdiff <__h___help_>

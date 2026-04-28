@@ -3,4 +3,17 @@
 
 % chafa, common
 
+# Render an image directly in the terminal
+chafa <path_to_file>
 
+# Render an image with 24-bit color
+chafa <__c___colors_> full <path_to_file>
+
+# Improve image rendering with small color palettes using dithering
+chafa <__c___colors_> 16 --dither ordered <path_to_file>
+
+# Render an image, making it appear pixelated
+chafa --symbols vhalf <path_to_file>
+
+# Render a monochrome image with only braille characters
+chafa <__c___colors_> none --symbols braille <path_to_file>

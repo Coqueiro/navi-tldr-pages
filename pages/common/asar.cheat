@@ -3,4 +3,14 @@
 
 % asar, common
 
+# Archive a file or directory
+asar <_p_pack_> <path_to_input_file_or_directory> <path_to_output_archive_asar>
 
+# Extract an archive
+asar <_e_extract_> <path_to_archive_asar>
+
+# Extract a specific file from an archive
+asar <_ef_extract_file_> <path_to_archive_asar> <file>
+
+# List the contents of an archive file
+asar <_l_list_> <path_to_archive_asar>

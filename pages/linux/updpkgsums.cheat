@@ -3,4 +3,11 @@
 
 % updpkgsums, linux
 
+# Update the checksums in a `PKGBUILD`
+updpkgsums
 
+# Display help
+updpkgsums <__h___help_>
+
+# Display version
+updpkgsums <__v___version_>

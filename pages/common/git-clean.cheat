@@ -3,4 +3,23 @@
 
 % git-clean, common
 
+# Interactively delete untracked files
+git clean <__i___interactive_>
 
+# Show which files would be deleted without actually deleting them
+git clean <__n___dry_run_>
+
+# Immediately force deletion of all untracked files
+git clean <__f___force_>
+
+# Delete untracked [d]irectories
+git clean <__f___force_> -d
+
+# Delete only untracked files matching specific paths or glob patterns
+git clean <__f___force_> -- <path_to_directory> '<__ext>'
+
+# Delete untracked files except those matching the given patterns
+git clean <__f___force_> <__e___exclude_> '<__ext>' <__e___exclude_> <path_to_directory>/
+
+# Delete untracked files and e[x]cluded files (those listed in `.gitignore` and `.git/info/exclude`)
+git clean <__f___force_> -x

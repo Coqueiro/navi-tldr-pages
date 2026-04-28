@@ -7,7 +7,7 @@
 pammixinterlace <path_to_image_ppm> > <path_to_output_ppm>
 
 # Use the specified filtering mechanism
-pammixinterlace {{[-f|-filter]}} <linear_fir_ffmpeg> <path_to_image_ppm> > <path_to_output_ppm>
+pammixinterlace <__f__filter_> <linear_fir_ffmpeg> <path_to_image_ppm> > <path_to_output_ppm>
 
 # Turn on adaptive filtering mode, i.e., only modify pixels that are obviously part of a comb pattern
-pammixinterlace {{[-a|-adaptive]}} <path_to_image_ppm> > <path_to_output_ppm>
+pammixinterlace <__a__adaptive_> <path_to_image_ppm> > <path_to_output_ppm>

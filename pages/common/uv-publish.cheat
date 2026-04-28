@@ -3,4 +3,20 @@
 
 % uv-publish, common
 
+# Publish packages from `dist/` directory (default behavior)
+uv publish
 
+# Publish to a specific repository URL
+uv publish --publish-url <https___upload_pypi_org_legacy_>
+
+# Publish using a specific username and password
+uv publish <__u___username_> <username> <__p___password_> <password>
+
+# Publish using an API token
+uv publish <__t___token_> <your_api_token>
+
+# Publish specific distribution files
+uv publish <path_to_dist___whl> <path_to_dist___tar_gz>
+
+# Publish to TestPyPI for testing
+uv publish --publish-url https://test.pypi.org/legacy/

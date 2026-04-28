@@ -3,4 +3,11 @@
 
 % crane-flatten, common
 
+# Flatten an image
+crane flatten
 
+# Apply new tag to flattened image
+crane flatten <__t___tag_> <tag_name>
+
+# Display help
+crane flatten <__h___help_>

@@ -3,4 +3,20 @@
 
 % toolbox, linux
 
+# Enter a Toolbx container to use it interactively
+toolbox enter <container>
 
+# Remove one or more containers
+toolbox rm {{container1 container2 ...}}
+
+# Remove one or more images
+toolbox rmi {{image1 image2 ...}}
+
+# Display help for a specific subcommand (such as `create`, `enter`, `rm`, etc.)
+toolbox help <subcommand>
+
+# Display help
+toolbox <__h___help_>
+
+# Display version
+toolbox --version

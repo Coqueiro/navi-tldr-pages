@@ -3,4 +3,11 @@
 
 % nh-search, common
 
+# Search for a package in Nixpkgs, limiting results
+nh search <__l___limit_> <number> <name>
 
+# Search for a package in a specified Nixpkgs channel
+nh search <__c___channel_> <nixos_unstable> <name>
+
+# Search for a package in Nixpkgs, showing supported platforms for each package
+nh search <__P___platforms_> <name>

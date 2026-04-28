@@ -3,4 +3,11 @@
 
 % biber, common
 
+# Generate bibliography data using a BibLaTeX Control File
+biber <path_to_file_bcf>
 
+# Generate bibliography data using a configuration file
+biber <path_to_file_bcf> <__g___configfile_> <path_to_config_file>
+
+# Enable debugging
+biber <path_to_file_bcf> <__D___debug_>

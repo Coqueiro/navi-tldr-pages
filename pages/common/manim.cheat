@@ -3,4 +3,23 @@
 
 % manim, common
 
+# Render a scene from a Python script using the default settings
+manim <path_to_file_py> <SceneName>
 
+# Render with live preview (auto-opens the video file after rendering)
+manim {{[-pql|--preview --quality low]}} <path_to_file_py> <SceneName>
+
+# Render at high quality (1080p 60fps)
+manim {{[-pqh|--preview --quality high]}} <path_to_file_py> <SceneName>
+
+# Specify a custom output file name
+manim <__o___output_file_> <output_file_name> <path_to_file_py> <SceneName>
+
+# Render using a specific resolution and frame rate
+manim <__r___resolution_> <1920_1080> --fps <60> <path_to_file_py> <SceneName>
+
+# List available scenes in a file without rendering
+manim --list_scenes <path_to_file_py>
+
+# Display help
+manim --help

@@ -3,4 +3,26 @@
 
 % gphoto2, linux
 
+# List connected cameras
+gphoto2 --auto-detect
 
+# List files on the camera
+gphoto2 <__L___list_files_>
+
+# Download all images
+gphoto2 <__P___get_all_files_>
+
+# Download only new images (skip existing)
+gphoto2 <__P___get_all_files_> --new
+
+# Download files 1 through 5
+gphoto2 <__p___get_file_> 1-5
+
+# Delete all files on the camera
+gphoto2 <__D___delete_all_files_>
+
+# Capture an image and download it
+gphoto2 --capture-image-and-download
+
+# Show camera information
+gphoto2 --summary

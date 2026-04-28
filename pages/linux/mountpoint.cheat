@@ -3,4 +3,11 @@
 
 % mountpoint, linux
 
+# Check if a directory is a mountpoint
+mountpoint <path_to_directory>
 
+# Check if a directory is a mountpoint without showing any output
+mountpoint <__q___quiet_> <path_to_directory>
+
+# Show major/minor numbers of a mountpoint's filesystem
+mountpoint <__d___fs_devno_> <path_to_directory>

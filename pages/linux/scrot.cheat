@@ -3,4 +3,23 @@
 
 % scrot, linux
 
+# Capture a screenshot and save it to the current directory with the current date as the filename
+scrot
 
+# Capture a screenshot and save it as `capture.png`
+scrot capture.png
+
+# Capture a screenshot interactively
+scrot <__s___select_>
+
+# Capture a screenshot interactively without exiting on keyboard input, press `<Esc>` to exit
+scrot {{[-is|--ignorekeyboard --select]}}
+
+# Capture a screenshot interactively delimiting the region with a colored line
+scrot <__s___select_> <__l___line_> color=<x11_color_rgb_color>
+
+# Capture a screenshot from the currently focused window
+scrot <__u___focused_>
+
+# Display a countdown of 10 seconds before taking a screenshot
+scrot <__c___count_> <__d___delay_> 10

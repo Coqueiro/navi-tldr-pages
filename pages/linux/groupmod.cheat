@@ -3,4 +3,8 @@
 
 % groupmod, linux
 
+# Change the group name
+sudo groupmod <__n___new_name_> <new_group> <group_name>
 
+# Change the group ID
+sudo groupmod <__g___gid_> <new_id> <group_name>

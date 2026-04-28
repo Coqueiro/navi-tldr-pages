@@ -3,4 +3,8 @@
 
 % supervisord, common
 
+# Start `supervisord` with specified configuration file
+supervisord <__c___configuration_> <path_to_file>
 
+# Run supervisord in the foreground
+supervisord <__n___nodaemon_>

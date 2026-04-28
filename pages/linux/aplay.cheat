@@ -3,4 +3,14 @@
 
 % aplay, linux
 
+# Play a specific file (sampling rate, bit depth, etc. will be automatically determined for the file format)
+aplay <path_to_file>
 
+# Play the first 10 seconds of a specific file at 2500 Hz
+aplay <__d___duration_> <10> <__r___rate_> <2500> <path_to_file>
+
+# Play the raw file as a 22050 Hz, mono, 8-bit, Mu-Law `.au` file
+aplay <__c___channels_> <1> <__t___file_type_> <raw> <__r___rate_> <22050> <__f___format_> <mu_law> <path_to_file>
+
+# List available audio devices
+aplay <__l___list_devices_>

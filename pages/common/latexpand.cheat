@@ -3,4 +3,17 @@
 
 % latexpand, common
 
+# Simplify the specified source file and save the result to the specified output file
+latexpand <__o___output_> <path_to_output_tex> <path_to_file_tex>
 
+# Do not remove comments
+latexpand --keep-comments <__o___output_> <path_to_output_tex> <path_to_file_tex>
+
+# Do not expand `\include`s, `\input`s etc.
+latexpand --keep-includes <__o___output_> <path_to_output_tex> <path_to_file_tex>
+
+# Expand `\usepackage`s as far as the corresponding STY files can be found
+latexpand --expand-usepackage <__o___output_> <path_to_output_tex> <path_to_file_tex>
+
+# Inline the specified BBL file
+latexpand --expand-bbl <path_to_bibliography_bbl> <__o___output_> <path_to_output_tex> <path_to_file_tex>

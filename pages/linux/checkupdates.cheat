@@ -3,4 +3,20 @@
 
 % checkupdates, linux
 
+# Synchronize the database and list pending updates
+checkupdates
 
+# List pending updates without syncing the database
+checkupdates <__n___nosync_>
+
+# Display the list of pending updates if it differs from the last time this option was used
+checkupdates <__c___change_>
+
+# List pending updates and download the packages to the `pacman` cache (`/var/cache/pacman/pkg`)
+checkupdates <__d___download_>
+
+# List pending updates using a specific `pacman` database
+CHECKUPDATES_DB=<path_to_directory> checkupdates
+
+# Display help
+checkupdates <__h___help_>

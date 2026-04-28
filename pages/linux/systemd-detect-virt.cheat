@@ -3,4 +3,20 @@
 
 % systemd-detect-virt, linux
 
+# List detectable virtualization technologies
+systemd-detect-virt --list
 
+# Detect virtualization, print the result and return a zero status code when running in a VM or a container, and a non-zero code otherwise
+systemd-detect-virt
+
+# Silently check without printing anything
+systemd-detect-virt <__q___quiet_>
+
+# Only detect container virtualization
+systemd-detect-virt <__c___container_>
+
+# Only detect hardware virtualization
+systemd-detect-virt <__v___vm_>
+
+# Detect whether in a `chroot` environment
+systemd-detect-virt <__r___chroot_>

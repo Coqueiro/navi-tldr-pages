@@ -3,4 +3,14 @@
 
 % anki, common
 
+# Launch the GUI
+anki
 
+# Use a specific profile
+anki <__p___profile_> <profile_name>
+
+# Use a specific language
+anki <__l___lang_> <language>
+
+# Use a non-default directory (`~/Anki` for default)
+anki <__b___base_> <path_to_directory>

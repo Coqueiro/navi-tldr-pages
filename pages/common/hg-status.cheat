@@ -3,4 +3,26 @@
 
 % hg-status, common
 
+# Display the status of changed files
+hg status
 
+# Display only modified files
+hg status <__m___modified_>
+
+# Display only added files
+hg status <__a___added_>
+
+# Display only removed files
+hg status <__r___removed_>
+
+# Display only deleted (but tracked) files
+hg status <__d___deleted_>
+
+# Display changes in the working directory compared to a specified changeset
+hg status --rev <revision>
+
+# Display only files matching a specified glob pattern
+hg status <__I___include_> <pattern>
+
+# Display files, excluding those that match a specified glob pattern
+hg status <__X___exclude_> <pattern>

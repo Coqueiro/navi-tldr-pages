@@ -3,4 +3,26 @@
 
 % smbmap, common
 
+# Enumerate hosts with NULL sessions enabled and open shares
+smbmap --host-file <path_to_file>
 
+# Display SMB shares and permissions on a [H]ost, prompting for user's password or NTLM hash
+smbmap <__u___username_> <username> --prompt -H <ip_address>
+
+# Execute a shell command on a remote system
+smbmap <__u___username_> <username> --prompt -H <ip_address> -x <command>
+
+# Enumerate hosts and check SMB file permissions
+smbmap --host-file <path_to_file> <__u___username_> <username> <__p___password_> <password> -q
+
+# Connect to an ip or hostname through smb using a username and password
+smbmap <__u___username_> <username> <__p___password_> <password> -d <domain> -H <ip_or_hostname>
+
+# Locate and download files [R]ecursively up to `n` levels depth, searching for filename pattern (`regex`), and excluding certain shares
+smbmap --host-file <path_to_file> <__u___username_> <username> <__p___password_> <password> -q -R --depth <n> --exclude <sharename> -A <filepattern>
+
+# Upload file through smb using username and password
+smbmap <__u___username_> <username> <__p___password_> <password> -d <domain> -H <ip_or_hostname> --upload <path_to_file> '<_share_name_remote_filename>'
+
+# Display SMB shares and recursively list directories and files, searching for file content matching a `regex`
+smbmap <__u___username_> <username> --prompt -H <ip_address> -R -F <pattern>

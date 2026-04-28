@@ -3,4 +3,11 @@
 
 % git-reflog, common
 
+# Show the reflog for `HEAD`
+git reflog
 
+# Show the reflog for a given branch
+git reflog <branch_name>
+
+# Show only the 5 latest entries in the reflog
+git reflog <__n___max_count_> 5

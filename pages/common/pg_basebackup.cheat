@@ -3,4 +3,26 @@
 
 % pg_basebackup, common
 
+# Take a base backup from a remote PostgreSQL server
+pg_basebackup <__h___host_> <host> <__D___pgdata_> <path_to_backup_dir>
 
+# Take a backup with progress shown
+pg_basebackup <__h___host_> <host> <__D___pgdata_> <path_to_backup_dir> <__P___progress_>
+
+# Create a compressed backup (`gzip`) in tar format
+pg_basebackup <__D___pgdata_> <path_to_backup_dir> <__F___format_> <_t_tar_> <__z___gzip_>
+
+# Create an incremental backup using a previous manifest file
+pg_basebackup <__D___pgdata_> <path_to_backup_dir> <__i___incremental_> <path_to_old_manifest>
+
+# Write a recovery configuration for setting up a standby
+pg_basebackup <__D___pgdata_> <path_to_backup_dir> <__R___write_recovery_conf_>
+
+# Relocate a tablespace during backup
+pg_basebackup <__D___pgdata_> <path_to_backup_dir> <__T___tablespace_mapping_> <path_to_old_tablespace>=<path_to_new_tablespace>
+
+# Limit transfer rate to reduce server load
+pg_basebackup <__D___pgdata_> <path_to_backup_dir> <__r___max_rate_> <100M>
+
+# Stream WAL logs while taking the backup
+pg_basebackup <__D___pgdata_> <path_to_backup_dir> <__X___wal_method_> stream

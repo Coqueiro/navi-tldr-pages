@@ -3,4 +3,14 @@
 
 % sealert, linux
 
+# Analyze all recent SELinux denials
+sudo sealert <__a___analyze_> <_var_log_audit_audit_log>
 
+# Analyze a specific alert ID from system logs
+sudo sealert <__l___lookupid_> <alert_id>
+
+# Display a summary of recent SELinux alerts
+sudo sealert <__b___browser_>
+
+# Monitor audit log in real-time for new alerts
+sudo tail <__f___follow_> <_var_log_audit_audit_log> | sealert <__l___lookupid_> -

@@ -3,4 +3,8 @@
 
 % vigr, linux
 
+# Edit the group file
+vigr
 
+# Display version
+vigr <__V___version_>

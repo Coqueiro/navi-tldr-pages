@@ -3,4 +3,11 @@
 
 % gh-status, common
 
+# Print information about all repositories you're subscribed to (issues, pull requests, reviews, mentions, activity, etc.)
+gh status
 
+# Exclude certain repositories
+gh status <__e___exclude_> <repositories>
+
+# Print status of repositories belonging to an organization
+gh status <__o___org_> <organization>

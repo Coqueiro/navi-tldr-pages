@@ -3,4 +3,8 @@
 
 % gst-transcoder-1.0, common
 
+# List available transcoding targets
+gst-transcoder-1.0 <__l___list_targets_>
 
+# Convert from one media type to another
+gst-transcoder-1.0 <path_to_input_file_webm> <path_to_output_file_mp4>

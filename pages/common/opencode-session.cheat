@@ -3,4 +3,14 @@
 
 % opencode-session, common
 
+# List sessions
+opencode session list
 
+# List the last N sessions in a specific format
+opencode session list <__n___max_count_> <10> --format <table_json>
+
+# Delete a specific session
+opencode session delete <session_id>
+
+# Display help
+opencode session <__h___help_>

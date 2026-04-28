@@ -3,4 +3,14 @@
 
 % crane-ls, common
 
+# List the tags
+crane ls <repository>
 
+# Print the full image reference
+crane ls <repository> --full-ref
+
+# Omit digest tags
+crane ls <__o___omit_digest_tags_>
+
+# Display help
+crane ls <__h___help_>

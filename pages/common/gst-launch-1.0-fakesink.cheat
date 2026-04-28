@@ -3,4 +3,8 @@
 
 % gst-launch-1.0-fakesink, common
 
+# Consume data from a pipeline without outputting it
+gst-launch-1.0 <pipeline> ! fakesink
 
+# Print information on the received data
+gst-launch-1.0 <__v___verbose_> <pipeline> ! fakesink silent=false

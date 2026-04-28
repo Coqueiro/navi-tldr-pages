@@ -3,4 +3,17 @@
 
 % awww, linux
 
+# Set wallpaper
+awww img <path_to_image>
 
+# Set wallpaper to specified outputs
+awww img <__o___outputs_> <output1_output2____> <path_to_image>
+
+# Restore last wallpaper
+awww restore
+
+# Kill daemon
+awww kill
+
+# Display output information
+awww query

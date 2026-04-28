@@ -3,4 +3,11 @@
 
 % addr2line, linux
 
+# Display the filename and line number of the source code from an instruction address of an executable
+addr2line <__e___exe_> <path_to_executable> <address>
 
+# Display the function name, filename, and line number
+addr2line <__e___exe_> <path_to_executable> <__f___functions_> <address>
+
+# Demangle the function name for C++ code
+addr2line <__e___exe_> <path_to_executable> <__f___functions_> <__C___demangle_> <address>

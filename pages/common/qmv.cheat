@@ -3,4 +3,20 @@
 
 % qmv, common
 
+# Move a single file (open an editor with the source filename on the left and the target filename on the right)
+qmv <source_file>
 
+# Move multiple JPEG files
+qmv <__jpg>
+
+# Move multiple directories
+qmv <__d___directory_> {{path/to/directory1 path/to/directory2 path/to/directory3 ...}}
+
+# Move all files and directories inside a directory
+qmv <__R___recursive_> <path_to_directory>
+
+# Move files, but swap the positions of the source and the target filenames in the editor
+qmv <__o___option_> swap <__jpg>
+
+# Rename all files and folders in the current directory, but show only target filenames in the editor (you can think of it as a kind of simple mode)
+qmv <__f___format_> do .

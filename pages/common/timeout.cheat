@@ -3,4 +3,17 @@
 
 % timeout, common
 
+# Run `sleep 10` and terminate it after 3 seconds
+timeout 3s sleep 10
 
+# Send a signal to the command after the time limit expires (`TERM` by default, `kill -l` to list all signals)
+timeout <__s___signal_> <INT_HUP_KILL____> <5s> {{sleep 10}}
+
+# Send verbose output to `stderr` showing signal sent upon timeout
+timeout <__v___verbose_> <0_5s_1m_1h_1d____> <command>
+
+# Preserve the exit status of the command regardless of timing out
+timeout <__p___preserve_status_> <1s_1m_1h_1d____> <command>
+
+# Send a forceful `KILL` signal after certain duration if the command ignores initial signal upon timeout
+timeout <__k___kill_after_> <5m> <30s> <command>

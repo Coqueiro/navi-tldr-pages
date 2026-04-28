@@ -3,4 +3,17 @@
 
 % unar, common
 
+# Extract an archive to the current directory
+unar <path_to_archive>
 
+# Extract an archive to the specified directory
+unar <__o__output_directory_> <path_to_directory> <path_to_archive>
+
+# Force overwrite if files to be unpacked already exist
+unar <__f__force_overwrite_> <path_to_archive>
+
+# Force rename if files to be unpacked already exist
+unar <__r__force_rename_> <path_to_archive>
+
+# Force skip if files to be unpacked already exist
+unar <__s__force_skip_> <path_to_archive>

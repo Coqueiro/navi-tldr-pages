@@ -3,4 +3,8 @@
 
 % mvn-deploy, common
 
+# Copy the final artifact into the remote repository configured in the `settings.xml` file
+mvn deploy
 
+# Copy an artifact, that is not built using Maven to the remote repository
+mvn deploy:deploy-file <__D___define_> url=<URLOfTheRemoteRepository> <__D___define_> repositoryId=<ServerIdFromSettingsXML> <__D___define_> file=<FileToBeDeployed>

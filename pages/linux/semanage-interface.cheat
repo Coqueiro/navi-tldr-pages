@@ -3,4 +3,17 @@
 
 % semanage-interface, linux
 
+# List all interface type definitions
+sudo semanage interface <__l___list_>
 
+# Add a network interface type definition
+sudo semanage interface <__a___add_> <__t___type_> <type_name> <interface_name>
+
+# Delete a network interface type definition
+sudo semanage interface <__d___delete_> <interface_name>
+
+# Modify a network interface type definition
+sudo semanage interface <__m___modify_> <__t___type_> <type_name> <interface_name>
+
+# List interface type definitions in a customized format
+sudo semanage interface <__l___list_> <__C___locallist_>

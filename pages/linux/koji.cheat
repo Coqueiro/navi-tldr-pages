@@ -3,4 +3,20 @@
 
 % koji, linux
 
+# Execute a koji subcommand
+koji <subcommand>
 
+# Introduce yourself to test connectivity with koijhub
+koji moshimoshi
+
+# Display help about global options
+koji <__h___help_>
+
+# Display help to get all available commands
+koji help
+
+# Display help for a specific subcommand (like `build`, `tag-build`, `download-build`, `buildinfo`,`call`, etc.)
+koji <subcommand> <__h___help_>
+
+# Display version
+koji version

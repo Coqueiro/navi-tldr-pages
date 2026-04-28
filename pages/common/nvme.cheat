@@ -3,4 +3,11 @@
 
 % nvme, common
 
+# List all NVMe devices
+sudo nvme list
 
+# Show device information
+sudo nvme smart-log <device>
+
+# Secure erase user data on NVMe device
+sudo nvme format <__s___ses_> 1 <__r___reset_> <device>

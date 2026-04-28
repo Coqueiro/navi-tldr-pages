@@ -3,4 +3,20 @@
 
 % boxxy, common
 
+# Run a program with file redirections defined in `~/.config/boxxy/boxxy.yaml`
+boxxy <program>
 
+# Scan your home directory for rule suggestions
+boxxy scan
+
+# Trace what files a program touches and save a report in `boxxy-report.txt` in the current directory
+boxxy <__t___trace_> <program>
+
+# Pass a redirection rule directly on the terminal
+boxxy <__r___rule_> <path_to_file_or_directory>:<path_to_redirection>:<file_directory> <program>
+
+# View the config file
+boxxy config
+
+# Display help
+boxxy -h

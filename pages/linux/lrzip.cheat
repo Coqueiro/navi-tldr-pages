@@ -3,4 +3,20 @@
 
 % lrzip, linux
 
+# Compress a file with LZMA - slow compression, fast decompression
+lrzip <path_to_file>
 
+# Compress a file with BZIP2 - good middle ground for compression/speed
+lrzip <__b___bzip2_> <path_to_file>
+
+# Compress with ZPAQ - extreme compression, but very slow
+lrzip <__z___zpaq_> <path_to_file>
+
+# Compress with LZO - light compression, extremely fast decompression
+lrzip <__l___lzo_> <path_to_file>
+
+# Compress a file and password protect/encrypt it
+lrzip <__e___encrypt_> <path_to_file>
+
+# Override the number of processor threads to use
+lrzip <__p___threads_> <8> <path_to_file>

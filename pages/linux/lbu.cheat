@@ -3,4 +3,26 @@
 
 % lbu, linux
 
+# Commit changes to persistent storage (only files in `/etc` by default)
+lbu <_ci_commit_>
 
+# List files that would be saved using `commit`
+lbu <_st_status_>
+
+# Display changes in tracked files that would be saved using `commit`
+lbu diff
+
+# Include a specific file or directory in the `apk` overlay
+lbu <_inc_include_> <path_to_file_or_directory>
+
+# Exclude a specific file or directory in `/etc` from the `apk` overlay
+lbu <_ex_exclude_> <path_to_file_or_directory>
+
+# Display the list of manually included/excluded files
+lbu <include_exclude> -l
+
+# List backups (previously created overlays)
+lbu <_lb_list_backup_>
+
+# Revert to a backup overlay
+lbu revert <overlay_filename_tar_gz>

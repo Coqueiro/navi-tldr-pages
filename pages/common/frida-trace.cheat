@@ -3,4 +3,17 @@
 
 % frida-trace, common
 
+# Trace all functions matching a pattern in a process
+frida-trace <__i___include_> "<wildcard>" <process_name>
 
+# Trace a specific function in a process
+frida-trace <__i___include_> "<function_name>" <process_name>
+
+# Trace all functions in a specific module
+frida-trace <__I___include_module_> "<module_name>" <process_name>
+
+# Trace a function on a USB-connected device
+frida-trace <__U___usb_> <__i___include_> "<function_name>" <process_name>
+
+# Spawn a process and trace a function
+frida-trace <__f___file_> <path_to_executable> <__i___include_> "<function_name>"

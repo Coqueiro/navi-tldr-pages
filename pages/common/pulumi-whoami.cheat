@@ -3,4 +3,14 @@
 
 % pulumi-whoami, common
 
+# Print the username of the currently logged in user
+pulumi whoami
 
+# Print detailed information about the currently logged in user
+pulumi whoami <__v___verbose_>
+
+# Print detailed information about the currently logged in user as JSON
+pulumi whoami <__j___json_>
+
+# Display help
+pulumi whoami <__h___help_>

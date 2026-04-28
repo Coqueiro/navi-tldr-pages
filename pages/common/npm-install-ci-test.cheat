@@ -3,4 +3,8 @@
 
 % npm-install-ci-test, common
 
+# Install dependencies and run tests
+npm <_cit_install_ci_test_>
 
+# Display detailed logs during installation and testing
+npm <_cit_install_ci_test_> --verbose

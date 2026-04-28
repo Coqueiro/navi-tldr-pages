@@ -4,19 +4,19 @@
 % zpaq, common
 
 # Add a file or directory to a new or existing archive
-zpaq {{[a|add]}} <path_to_archive_zpaq> <path_to_file_or_directory>
+zpaq <_a_add_> <path_to_archive_zpaq> <path_to_file_or_directory>
 
 # Create or add to an encrypted archive
-zpaq {{[a|add]}} -k<password> <path_to_archive_zpaq> <path_to_file_or_directory>
+zpaq <_a_add_> -k<password> <path_to_archive_zpaq> <path_to_file_or_directory>
 
 # Extract the most recent versions of files
-zpaq {{[x|extract]}} <path_to_archive_zpaq>
+zpaq <_x_extract_> <path_to_archive_zpaq>
 
 # List the archive contents
-zpaq {{[l|list]}} <path_to_archive_zpaq>
+zpaq <_l_list_> <path_to_archive_zpaq>
 
 # Set the level of compression (higher means more compression but slower)
-zpaq {{[a|add]}} <path_to_archive_zpaq> -m<1_2_3_4_5> <path_to_file_or_directory>
+zpaq <_a_add_> <path_to_archive_zpaq> -m<1_2_3_4_5> <path_to_file_or_directory>
 
 # Extract the specified files from the archive that are not newer than the specified date
-zpaq {{[x|extract]}} <path_to_archive_zpaq> <path_in_archive_to_extract> -to <path_to_output> -until <YYYY_MM_DD>
+zpaq <_x_extract_> <path_to_archive_zpaq> <path_in_archive_to_extract> -to <path_to_output> -until <YYYY_MM_DD>

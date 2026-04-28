@@ -3,4 +3,17 @@
 
 % conda-list, common
 
+# List all packages in the current environment
+conda list
 
+# List packages in the named environment
+conda list <__n___name_> <environment>
+
+# List packages installed in a given path
+conda list <__p___prefix_> <path_to_environment>
+
+# Filter installed packages using `regex`
+conda list <regex>
+
+# Save packages for future use
+conda list <__e___export_> > <path_to_package_list_txt>

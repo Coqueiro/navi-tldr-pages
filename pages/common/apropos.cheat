@@ -3,4 +3,11 @@
 
 % apropos, common
 
+# Search for a keyword using a `regex`
+apropos <regex>
 
+# Search without restricting the output to the terminal width (long output)
+apropos <__l___long_> <regex>
+
+# Search for pages that match all the `regex` given
+apropos <regex_1> <__a___and_> <regex_2> <__a___and_> <regex_3>

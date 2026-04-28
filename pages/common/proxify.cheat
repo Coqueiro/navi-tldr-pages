@@ -3,4 +3,14 @@
 
 % proxify, common
 
+# Start a HTTP proxy (on the loopback network interface `127.0.0.1` and port `8888`)
+proxify
 
+# Start a HTTP proxy on a custom network interface and port (may require `sudo` for a port number lower than `1024`)
+proxify <__ha__http_addr_> "<ip_address>:<port_number>"
+
+# Specify output format and output file
+proxify <__of__output_format_> <jsonl_yaml> <__o__output_> <path_to_file>
+
+# Display help
+proxify -h

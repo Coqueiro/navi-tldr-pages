@@ -3,4 +3,26 @@
 
 % pandoc, common
 
+# Convert a Markdown file to PDF using `pdflatex` (the formats are determined by file extensions)
+pandoc <path_to_input_md> <__o___output_> <path_to_output_pdf>
 
+# Convert the output from another command to PDF, using a specific PDF engine
+<command> | pandoc <__f___from_> <input_format> --pdf-engine <tectonic_weasyprint_typst____> <__o___output_> <path_to_output_pdf>
+
+# Convert to a standalone file with the appropriate headers/footers (for LaTeX, HTML, etc.)
+pandoc <path_to_input_md> <__s___standalone_> <__o___output_> <path_to_output_html>
+
+# Manually specify formats (overriding automatic format detection using the filename extension, or when there is no extension)
+pandoc <__f___from_> <docx____> <path_to_input> <__t___to_> <pdf____> <__o___output_> <path_to_output>
+
+# Transform a document using a Lua script (see <https://pandoc.org/lua-filters.html> for more information)
+pandoc <path_to_input> <__L___lua_filter_> <path_to_filter_lua> <__o___output_> <path_to_output>
+
+# Convert a remote HTML file to markdown and print the result to `stdout`
+pandoc <__f___from_> html <__t___to_> markdown <https___example_com>
+
+# List all supported input formats
+pandoc --list-input-formats
+
+# List all supported output formats
+pandoc --list-output-formats

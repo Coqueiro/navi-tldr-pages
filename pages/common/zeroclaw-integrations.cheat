@@ -3,4 +3,8 @@
 
 % zeroclaw-integrations, common
 
+# Show details about a specific integration
+zeroclaw integrations info <Telegram_Discord_Slack_WhatsApp_Matrix____>
 
+# Display help
+zeroclaw integrations <__h___help_>

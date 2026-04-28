@@ -3,4 +3,17 @@
 
 % bluebuild, linux
 
+# Build a recipe
+bluebuild build <path_to_recipe_yml>
 
+# Validate a recipe
+bluebuild validate <path_to_recipe_yml>
+
+# Generate a Containerfile
+bluebuild generate <__o___output_> <Containerfile> <path_to_recipe_yml>
+
+# Generate an ISO from a recipe
+bluebuild generate-iso --output-dir <path_to_output_directory> --iso-name <iso_name_iso> recipe <path_to_recipe_yml>
+
+# Display help
+bluebuild <__h___help_>

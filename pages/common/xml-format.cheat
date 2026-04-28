@@ -3,4 +3,20 @@
 
 % xml-format, common
 
+# Format an XML document, indenting with tabs
+xml <_fo_format_> <__t___indent_tab_> <path_to_input_xml_URI> > <path_to_output_xml>
 
+# Format an HTML document, indenting with 4 spaces
+xml <_fo_format_> <__H___html_> <__s___indent_spaces_> <4> <path_to_input_html_URI> > <path_to_output_html>
+
+# Recover parsable parts of a malformed XML document, without indenting
+xml <_fo_format_> <__R___recover_> <__n___noindent_> <path_to_malformed_xml_URI> > <path_to_recovered_xml>
+
+# Format an XML document from `stdin`, removing the `DOCTYPE` declaration
+cat <path_to_input_xml> | xml <_fo_format_> <__D___dropdtd_> > <path_to_output_xml>
+
+# Format an XML document, omitting the XML declaration
+xml <_fo_format_> <__o___omit_decl_> <path_to_input_xml_URI> > <path_to_output_xml>
+
+# Display help
+xml <_fo_format_> --help

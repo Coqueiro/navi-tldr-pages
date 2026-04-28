@@ -3,4 +3,11 @@
 
 % systemctl-is-system-running, linux
 
+# Check whether the system is operational and print the current state
+systemctl is-system-running
 
+# Check and print the current state quietly (no output, only exit status)
+systemctl is-system-running <__q___quiet_>
+
+# Wait until the boot process is completed before printing the current state
+systemctl is-system-running --wait

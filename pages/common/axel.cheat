@@ -3,4 +3,23 @@
 
 % axel, common
 
+# Download a URL to a file
+axel <url>
 
+# Download and specify an output file
+axel <url> <__o___output_> <path_to_file>
+
+# Download with a specific number connections
+axel <__n___num_connections_> <number> <url>
+
+# Use a specific number of mirrors for searching and downloading
+axel <__S___search__><number> <url>
+
+# Limit download speed (bytes per second)
+axel <__s___max_speed_> <speed> <url>
+
+# Use the IPv4 protocol only when connecting to the host
+axel <__4___ipv4_> <url>
+
+# Limit output to `stdout` and use a custom user-agent when downloading
+axel <__q___quiet_> <__U___user_agent_> <_Mozilla_5_0_> <url>

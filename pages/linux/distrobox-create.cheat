@@ -3,4 +3,8 @@
 
 % distrobox-create, linux
 
+# Create a Distrobox container using the Ubuntu image
+distrobox-create <container_name> <__i___image_> <ubuntu_latest>
 
+# Clone a Distrobox container
+distrobox-create <__c___clone_> <container_name> <cloned_container_name>

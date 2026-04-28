@@ -3,4 +3,26 @@
 
 % monolith, common
 
+# Save a webpage as a single HTML file
+monolith <url>
 
+# Save a webpage as a single HTML file, excluding audio
+monolith <url> <__a___no_audio_>
+
+# Save a webpage as a single HTML file, excluding CSS
+monolith <url> <__c___no_css_>
+
+# Save a webpage as a single HTML file, excluding images
+monolith <url> <__i___no_images_>
+
+# Save a webpage as a single HTML file, excluding videos
+monolith <url> <__v___no_video_>
+
+# Save a webpage as a single HTML file, excluding JavaScript
+monolith <url> <__j___no_js_>
+
+# Save a webpage as a single HTML file, accepting invalid TLS certificates
+monolith <url> <__k___insecure_>
+
+# Save a webpage as a single HTML file, specifying a specific output file
+monolith <url> <__o___output_> <path_to_file_html>

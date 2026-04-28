@@ -3,4 +3,20 @@
 
 % r2e, common
 
+# Create a new feed database that sends email to an email address
+r2e new <email_address>
 
+# Subscribe to a feed
+r2e add <feed_name> <feed_URI>
+
+# Send new stories to an email address
+r2e run
+
+# List all feeds
+r2e list
+
+# Delete a feed at a specified index
+r2e delete <index>
+
+# Display help
+r2e <__h___help_>

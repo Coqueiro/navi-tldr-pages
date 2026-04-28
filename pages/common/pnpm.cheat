@@ -3,4 +3,26 @@
 
 % pnpm, common
 
+# Create a `package.json` file
+pnpm init
 
+# Download all the packages listed as dependencies in `package.json`
+pnpm <_i_install_>
+
+# Download a specific version of a package and add it to the list of dependencies in `package.json`
+pnpm add <module_name>@<version>
+
+# Download a package and add it to the list of dev dependencies in `package.json`
+pnpm add <module_name> <__D___save_dev_>
+
+# Download a package and install it globally
+pnpm add <module_name> <__g___global_>
+
+# Uninstall a package and remove it from the list of dependencies in `package.json`
+pnpm <_rm_remove_> <module_name>
+
+# Print a tree of locally installed modules
+pnpm <_ls_list_>
+
+# List top-level globally installed modules
+pnpm <_ls_list_> <__g___global_> --depth <0>

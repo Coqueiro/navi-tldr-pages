@@ -3,4 +3,17 @@
 
 % kubectl-cordon, common
 
+# Mark a node as unschedulable
+kubectl cordon <node_name>
 
+# Mark multiple nodes as unschedulable
+kubectl cordon {{node_name1 node_name2 ...}}
+
+# Mark a node as unschedulable in a specific context
+kubectl cordon <node_name> --context <context_name>
+
+# Mark nodes matching a label selector as unschedulable
+kubectl cordon <__l___selector_> <label_key>=<label_value>
+
+# Preview the changes without actually cordoning the nodes (dry run)
+kubectl cordon <node_name> --dry-run=<none_server_client>

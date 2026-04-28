@@ -3,4 +3,14 @@
 
 % csvcut, common
 
+# Print indices and names of all columns
+csvcut <__n___names_> <data_csv>
 
+# Extract the first and third columns
+csvcut <__c___columns_> <1_3> <data_csv>
+
+# Extract all columns except the fourth one
+csvcut <__C___not_columns_> <4> <data_csv>
+
+# Extract the columns named "id" and "first name" (in that order)
+csvcut <__c___columns_> {{id,"first name"}} <data_csv>

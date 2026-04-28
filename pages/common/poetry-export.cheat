@@ -3,4 +3,20 @@
 
 % poetry-export, common
 
+# Export dependencies to a `requirements.txt` file
+poetry export <__o___output_> <requirements_txt>
 
+# Export dependencies including development dependencies
+poetry export <__o___output_> <requirements_dev_txt> --dev
+
+# Export dependencies without hashes
+poetry export <__o___output_> <requirements_txt> --without-hashes
+
+# Export dependencies for a specific format
+poetry export <__o___output_> <requirements_txt> <__f___format_> <requirements_txt>
+
+# Export only specific dependency groups
+poetry export <__o___output_> <requirements_txt> --only <main>
+
+# Display help
+poetry export <__h___help_>

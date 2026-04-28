@@ -3,4 +3,26 @@
 
 % youtube-dl, common
 
+# Download a video or playlist
+youtube-dl '<https___www_youtube_com_watch_v_oHg5SJYRHA0>'
 
+# List all formats that a video or playlist is available in
+youtube-dl <__F___list_formats_> '<https___www_youtube_com_watch_v_Mwa0_nE9H7A>'
+
+# Download a video or playlist at a specific quality
+youtube-dl <__f___format_> "<best_height__480_>" '<https___www_youtube_com_watch_v_oHg5SJYRHA0>'
+
+# Download the audio from a video and convert it to an MP3
+youtube-dl <__x___extract_audio_> --audio-format <mp3> '<url>'
+
+# Download the best quality audio and video and merge them
+youtube-dl <__f___format_> bestvideo+bestaudio '<url>'
+
+# Download video(s) as MP4 files with custom filenames
+youtube-dl <__f___format_> <mp4> <__o___output_> "{{%(playlist_index)s-%(title)s by %(uploader)s on %(upload_date)s in %(playlist)s.%(ext)s}}" '<url>'
+
+# Download a particular language's subtitles along with the video
+youtube-dl --sub-lang <en> --write-sub '<https___www_youtube_com_watch_v_Mwa0_nE9H7A>'
+
+# Download a playlist and extract MP3s from it
+youtube-dl <__f___format_> "bestaudio" <__c___continue_> <__w___no_overwrites_> <__i___ignore_errors_> <__x___extract_audio_> --audio-format mp3 <__o___output_> "%(title)s.%(ext)s" '<url_to_playlist>'

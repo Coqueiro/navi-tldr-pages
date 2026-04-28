@@ -3,4 +3,11 @@
 
 % hardinfo, linux
 
+# Start `hardinfo`
+hardinfo
 
+# Print report to `stdout`
+hardinfo <__r___generate_report_>
+
+# Save report to HTML file
+hardinfo <__r___generate_report_> <__f___report_format_> html > hardinfo.html

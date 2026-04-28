@@ -3,4 +3,23 @@
 
 % mtr, common
 
+# Traceroute to a host and continuously ping all intermediary hops
+mtr <example_com>
 
+# Disable IP address and host name mapping
+mtr <__n___no_dns_> <example_com>
+
+# Generate output after pinging each hop 10 times
+mtr <__w___report_wide_> <example_com>
+
+# Force IPv4 or IPv6
+mtr -4 <example_com>
+
+# Wait for a given time (in seconds) before sending another packet to the same hop
+mtr <__i___interval_> <10> <example_com>
+
+# Display the Autonomous System Number (ASN) for each hop
+mtr <__z___aslookup_> <example_com>
+
+# Display both IP address and reverse DNS name
+mtr <__b___show_ips_> <example_com>

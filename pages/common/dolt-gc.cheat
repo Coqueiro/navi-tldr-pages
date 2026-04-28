@@ -3,4 +3,8 @@
 
 % dolt-gc, common
 
+# Clean up unreferenced data from the repository
+dolt gc
 
+# Initiate a faster but less thorough garbage collection process
+dolt gc <__s___shallow_>

@@ -3,4 +3,20 @@
 
 % gcov, linux
 
+# Generate a coverage report named `file.cpp.gcov`
+gcov <path_to_file_cpp>
 
+# Write individual execution counts for every basic block
+gcov <__a___all_blocks_> <path_to_file_cpp>
+
+# Write branch frequencies to the output file and print summary information to `stdout` as a percentage
+gcov <__b___branch_probabilities_> <path_to_file_cpp>
+
+# Write branch frequencies as the number of branches taken, rather than the percentage
+gcov <__c___branch_counts_> <path_to_file_cpp>
+
+# Do not create a `gcov` output file
+gcov <__n___no_output_> <path_to_file_cpp>
+
+# Write file level as well as function level summaries
+gcov <__f___function_summaries_> <path_to_file_cpp>

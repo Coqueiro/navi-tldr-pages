@@ -3,4 +3,14 @@
 
 % look, freebsd
 
+# Search for lines beginning with a specific prefix in a specific file
+look <prefix> <path_to_file>
 
+# Case-insensitively search only on alphanumeric characters
+look <__f___ignore_case_> <__d___alphanum_> <prefix> <path_to_file>
+
+# Specify a string termination character (space by default)
+look <__t___terminate_> <_>
+
+# Search in `/usr/share/dict/words` (`--ignore-case` and `--alphanum` are assumed)
+look <prefix>

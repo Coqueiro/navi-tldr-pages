@@ -3,4 +3,14 @@
 
 % docker-container-rm, common
 
+# Remove containers
+docker {{[rm|container rm]}} {{container1 container2 ...}}
 
+# Force remove a container
+docker {{[rm|container rm]}} <__f___force_> {{container1 container2 ...}}
+
+# Remove a container and its volumes
+docker {{[rm|container rm]}} <__v___volumes_> <container>
+
+# Display help
+docker {{[rm|container rm]}} --help

@@ -3,4 +3,5 @@
 
 % pip-search, common
 
-
+# Search for packages using a custom package index
+pip search <__i___index_> <example_com> <query>

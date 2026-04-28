@@ -3,4 +3,17 @@
 
 % iperf3, common
 
+# Run iperf3 as a server
+iperf3 <__s___server_>
 
+# Run an iperf3 server on a specific port
+iperf3 <__s___server_> <__p___port_> <port>
+
+# Start bandwidth test
+iperf3 <__c___client_> <server>
+
+# Run iperf3 in multiple parallel streams
+iperf3 <__c___client_> <server> <__P___parallel_> <streams>
+
+# Reverse direction of the test. Server sends data to the client
+iperf3 <__c___client_> <server> <__R___reverse_>

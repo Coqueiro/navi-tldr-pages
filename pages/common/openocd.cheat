@@ -3,4 +3,20 @@
 
 % openocd, common
 
+# Attach OpenOCD session to a board with a configuration file
+openocd <__f___file_> <config_file_cfg>
 
+# Attach OpenOCD session to a board with multiple configuration files
+openocd <__f___file_> <config_file1_cfg> <__f___file_> <config_file2_cfg>
+
+# Attach OpenOCD session to a board with configuration files and a list of commands to be executed on server startup
+openocd <__f___file_> <config_file_cfg> <__c___command_> "<command>"
+
+# Use configuration files in the specified path
+openocd <__s___search_> <path_to_search> <__f___file_> <config_file_cfg>
+
+# [Interactive] After OpenOCD startup, connect GDB to OpenOCD default port 3333
+target extended-remote localhost
+
+# List site-wide script library
+ls /usr/local/share/openocd/scripts

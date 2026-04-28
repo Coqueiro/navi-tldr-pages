@@ -13,7 +13,7 @@ handlr open <path_to_file_pdf>
 handlr set <_png> <imv_desktop>
 
 # Set MPV as the default application for all audio files
-handlr set '{{audio/*}}' <mpv_desktop>
+handlr set '<audio__>' <mpv_desktop>
 
 # List all default apps
 handlr list

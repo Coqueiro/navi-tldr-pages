@@ -3,4 +3,14 @@
 
 % run_init, linux
 
+# Run a script in the init script context
+sudo run_init <path_to_script>
 
+# Run a script with arguments
+sudo run_init <path_to_script> <start_stop_restart>
+
+# Run a script and specify the init script context explicitly
+sudo run_init <__t___type_> <context_type> <path_to_script>
+
+# Display the context that would be used without running the script
+sudo run_init <__n___dry_run_> <path_to_script>

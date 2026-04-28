@@ -3,4 +3,14 @@
 
 % ioping, common
 
+# Show disk I/O latency using the default values and the current directory
+ioping .
 
+# Measure latency on `/tmp` using 10 requests of 1 megabyte each
+ioping <__c__count_> 10 <__s__size_> 1M /tmp
+
+# Measure disk seek rate on `/dev/sdX`
+ioping <__R__rapid_> <_dev_sdX>
+
+# Measure disk sequential speed on `/dev/sdX`
+ioping {{[-RL|-rapid -linear]}} <_dev_sdX>

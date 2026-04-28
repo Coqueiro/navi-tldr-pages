@@ -3,4 +3,8 @@
 
 % lvreduce, linux
 
+# Reduce a volume's size to 120 GB
+sudo lvreduce <__L___size_> <120G> <logical_volume>
 
+# Reduce a volume's size by 40 GB as well as the underlying filesystem
+sudo lvreduce <__L___size_> -<40G> <__r___resizefs_> <logical_volume>

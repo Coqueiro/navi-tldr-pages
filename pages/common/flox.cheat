@@ -13,13 +13,13 @@ flox activate
 flox search <package>
 
 # Install a package into the current environment
-flox {{[i|install]}} <package>
+flox <_i_install_> <package>
 
 # Uninstall a package from the current environment
 flox uninstall <package>
 
 # View a list of all packages installed in the current environment
-flox {{[l|list]}}
+flox <_l_list_>
 
 # Push a local environment to FloxHub to share with others
 flox push

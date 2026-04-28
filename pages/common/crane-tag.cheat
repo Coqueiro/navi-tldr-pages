@@ -3,4 +3,8 @@
 
 % crane-tag, common
 
+# Tag remote image
+crane tag <image_name> <tag_name>
 
+# Display help
+crane tag <__h___help_>

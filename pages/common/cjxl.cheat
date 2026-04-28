@@ -3,4 +3,11 @@
 
 % cjxl, common
 
+# Convert an image to JPEG XL
+cjxl <path_to_image_ext> <path_to_output_jxl>
 
+# Set quality to lossless and maximize compression of the resulting image
+cjxl --distance 0 --effort 9 <path_to_image_ext> <path_to_output_jxl>
+
+# Display an extremely detailed help
+cjxl {{[-h -v -v -v -v|--help --verbose --verbose --verbose --verbose]}}

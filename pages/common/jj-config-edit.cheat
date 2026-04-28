@@ -4,10 +4,10 @@
 % jj-config-edit, common
 
 # Start an editor on the user-level config file
-jj config {{[e|edit]}} --user
+jj config <_e_edit_> --user
 
 # Start an editor on the repo-level config file
-jj config {{[e|edit]}} --repo
+jj config <_e_edit_> --repo
 
 # Start an editor on the workspace-level config file
-jj config {{[e|edit]}} --workspace
+jj config <_e_edit_> --workspace

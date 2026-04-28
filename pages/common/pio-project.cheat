@@ -3,4 +3,17 @@
 
 % pio-project, common
 
+# Initialize a new PlatformIO project
+pio project init
 
+# Initialize a new PlatformIO project in a specific directory
+pio project init <__d___project_dir_> <path_to_project_directory>
+
+# Initialize a new PlatformIO project, specifying a board ID
+pio project init <__b___board_> <ATmega328P_uno____>
+
+# Initialize a new PlatformIO based project, specifying one or more project options
+pio project init <__O___project_option_> "<option>=<value>" <__O___project_option_> "<option>=<value>"
+
+# Print the configuration of a project
+pio project config

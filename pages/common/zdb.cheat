@@ -3,4 +3,11 @@
 
 % zdb, common
 
+# Show detailed configuration of all mounted ZFS zpools
+zdb
 
+# Show detailed configuration for a specific ZFS pool
+zdb <__C___config_> <poolname>
+
+# Show statistics about number, size, and deduplication of blocks
+zdb <__b___block_stats_> <poolname>

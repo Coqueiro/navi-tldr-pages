@@ -3,4 +3,17 @@
 
 % flock, linux
 
+# Run a command with a file lock as soon as the lock is available
+flock <path_to_lock_lock> <command>
 
+# Run a command with a file lock, or exit if the lock is currently being held (with exit code 1)
+flock <__n___nonblock_> <path_to_lock_lock> <command>
+
+# Run a command with a file lock, or exit with a specific error code if the lock is currently being held
+flock <__n___nonblock_> <__E___conflict_exit_code_> <123> <path_to_lock_lock> <command>
+
+# Run a command with a file lock, waiting up to 10 seconds for the lock to be available before giving up
+flock <__w___timeout_> 10 <path_to_lock_lock> <command>
+
+# Backup a bunch of files, waiting for the previous `tar` command to finish if it's still running elsewhere and holding the same lock file (can be used in a `cron` job that runs often)
+flock <path_to_backup_lock> {{tar -cvf path/to/backup.tar path/to/data/}}

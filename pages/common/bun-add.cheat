@@ -3,4 +3,23 @@
 
 % bun-add, common
 
+# Install a single package
+bun <_a_add_> <package>
 
+# Install multiple packages
+bun <_a_add_> {{package1 package2 ...}}
+
+# Install from a Git repository
+bun <_a_add_> <git_url>
+
+# Install a specific version
+bun <_a_add_> <package>@<version>
+
+# Install from local file or directory
+bun <_a_add_> file:<path_to_file_or_directory>
+
+# Add a dev dependency
+bun <_a_add_> <__d___dev_> <package>
+
+# Add a package globally
+bun <_a_add_> <__g___global_> <package>

@@ -7,10 +7,10 @@
 macptopbm <path_to_file_macp> > <path_to_output_pbm>
 
 # Skip over `n` bytes when reading the file
-macptopbm {{[-e|-extraskip]}} <__v__version_> > <path_to_output_pbm>
+macptopbm <__e__extraskip_> <n> > <path_to_output_pbm>
 
 # Suppress all informational messages
-macptopbm {{[-q|-quiet]}} > <path_to_output_pbm>
+macptopbm <__q__quiet_> > <path_to_output_pbm>
 
 # Display version
-macptopbm {{[-v|-version]}}
+macptopbm <__v__version_>

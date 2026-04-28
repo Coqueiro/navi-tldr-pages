@@ -3,4 +3,14 @@
 
 % dalfox, common
 
+# Scan a single URL for XSS vulnerabilities
+dalfox url <https___example_com>
 
+# Scan a URL using a header for authentication
+dalfox url <https___example_com> <__H___header_> '{{X-My-Header: 123}}'
+
+# Scan a list of URLs from a file
+dalfox file <path_to_file>
+
+# Start Dalfox as a REST API server
+dalfox server --host <0_0_0_0> --port <8080>

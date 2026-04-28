@@ -3,4 +3,8 @@
 
 % chcpu, linux
 
+# Disable one or more CPUs by their IDs
+chcpu <__d___disable_> <1_3>
 
+# Enable one or more ranges of CPUs by their IDs
+chcpu <__e___enable_> <1_3_5_7>

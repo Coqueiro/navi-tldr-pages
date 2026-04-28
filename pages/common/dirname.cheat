@@ -3,4 +3,11 @@
 
 % dirname, common
 
+# Calculate the parent directory of a given path
+dirname <path_to_file_or_directory>
 
+# Calculate the parent directory of multiple paths
+dirname {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+
+# Delimit output with a NUL character instead of a newline (useful when combining with `xargs`)
+dirname <__z___zero_> {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}

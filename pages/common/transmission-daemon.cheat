@@ -3,4 +3,14 @@
 
 % transmission-daemon, common
 
+# Start a headless `transmission` session
+transmission-daemon
 
+# Start and watch a specific directory for new torrents
+transmission-daemon <__c___watch_dir_> <path_to_directory>
+
+# Dump daemon settings in JSON format
+transmission-daemon <__d___dump_settings_> > <path_to_file_json>
+
+# Start with specific settings for the web interface
+transmission-daemon <__t___auth_> <__u___username_> <username> <__v___password_> <password> <__p___port_> <9091> <__a___allowed_> <127_0_0_1>

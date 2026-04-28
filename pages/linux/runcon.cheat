@@ -3,4 +3,14 @@
 
 % runcon, linux
 
+# Print the security context of the current execution context
+runcon
 
+# Specify the domain to run a command in
+runcon <__t___type_> <domain>_t <command>
+
+# Specify the context role to run a command with
+runcon <__r___role_> <role>_r <command>
+
+# Specify the full context to run a command with
+runcon <user>_u:<role>_r:<domain>_t <command>

@@ -3,4 +3,26 @@
 
 % biff, common
 
+# Print the current time in a format of your choosing
+biff time fmt <__f___format_> rfc3339 now
 
+# Print multiple relative times in one command
+biff time fmt <__f___format_> '%c' now -1d 'next sat' 'last monday' '9pm last mon'
+
+# Print the current time in another time zone and round it the nearest 15 minute increment
+biff time in Asia/Bangkok now | biff time round <__i___increment_> 15 <__s___smallest_> minute
+
+# Convert a time between two different time zone
+TZ='Japan' biff time in America/New_York 02:30
+
+# Print a past or future time relative to current time
+biff time add <_1d_1d_1w__1m_1y____> now
+
+# Add a complex duration to the current time
+biff time add '1 week, 12 hours ago' now
+
+# Find the duration since a date in the past and round it to the desired precision
+biff span since 2025-01-20T12:00 <__l___largest_> year
+
+# Find timestamps in a log file and reformat them into your local time in place
+biff tag lines /tmp/access.log | biff time in system | biff time fmt <__f___format_> '%c' | head <__n___lines_> 3 | biff untag <__s___substitute_>

@@ -3,4 +3,14 @@
 
 % openrgb, common
 
+# Start the OpenRGB GUI
+openrgb
 
+# List devices supported by OpenRGB
+openrgb --noautoconnect <__l___list_devices_>
+
+# Set the mode and color of a device
+openrgb <__m___mode_> <off_static_breathing_rainbow_flashing____> <__c___color_> <random_red_00AAFF____>
+
+# Display help
+openrgb <__h___help_>

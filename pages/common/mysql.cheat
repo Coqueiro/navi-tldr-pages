@@ -3,4 +3,23 @@
 
 % mysql, common
 
+# Connect to a database
+mysql <database_name>
 
+# Connect to a database, user will be prompted for a password
+mysql <__u___user_> <user> <__p___password_> <database_name>
+
+# Connect to a database on another host
+mysql <__h___host_> <database_host> <database_name>
+
+# Connect to a database through a Unix socket
+mysql <__S___socket_> <path_to_socket_sock>
+
+# Execute SQL statements in a script file (batch file)
+mysql <__e___execute_> "source <filename_sql>" <database_name>
+
+# Restore a database from a backup created with `mysqldump` (user will be prompted for a password)
+mysql < <path_to_backup_sql> <__u___user_> <user> <__p___password_> <database_name>
+
+# Restore all databases from a backup (user will be prompted for a password)
+mysql < <path_to_backup_sql> <__u___user_> <user> <__p___password_>

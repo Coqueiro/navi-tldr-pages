@@ -3,4 +3,8 @@
 
 % docker-container-diff, common
 
+# Inspect the changes to a container since it was created
+docker {{[diff|container diff]}} <container>
 
+# Display help
+docker {{[diff|container diff]}} --help

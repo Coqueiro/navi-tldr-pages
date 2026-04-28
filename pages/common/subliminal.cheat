@@ -3,4 +3,5 @@
 
 % subliminal, common
 
-
+# Download English subtitles for a video
+subliminal download <__l___language_> <en> <video_ext>

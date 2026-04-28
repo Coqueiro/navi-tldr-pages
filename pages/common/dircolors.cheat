@@ -3,4 +3,20 @@
 
 % dircolors, common
 
+# Output commands to set `$LS_COLOR` using default colors
+dircolors
 
+# Display each filetype with the color they would appear in `ls`
+dircolors --print-ls-colors
+
+# Output commands to set `$LS_COLOR` using colors from a file
+dircolors <path_to_file>
+
+# Output commands for Bourne shell
+dircolors <__b___bourne_shell_>
+
+# Output commands for C shell
+dircolors <__c___c_shell_>
+
+# View the default colors for file types and extensions
+dircolors <__p___print_database_>

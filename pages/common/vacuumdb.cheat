@@ -3,4 +3,23 @@
 
 % vacuumdb, common
 
+# Vacuum a specific database
+vacuumdb <database_name>
 
+# Vacuum all databases
+vacuumdb <__a___all_>
+
+# Vacuum a specific table in a database
+vacuumdb <__t___table_> <table_name> <database_name>
+
+# Vacuum and update statistics for the query planner
+vacuumdb <__z___analyze_> <database_name>
+
+# Perform a full vacuum (more aggressive, locks tables, rewrites the whole table)
+vacuumdb <__f___full_> <database_name>
+
+# Vacuum with verbose output
+vacuumdb <__v___verbose_> <database_name>
+
+# Vacuum a database using multiple parallel jobs
+vacuumdb --jobs <number_of_jobs> <database_name>

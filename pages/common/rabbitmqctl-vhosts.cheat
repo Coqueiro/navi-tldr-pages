@@ -3,4 +3,17 @@
 
 % rabbitmqctl-vhosts, common
 
+# List all virtual hosts
+rabbitmqctl list_vhosts
 
+# Add a new virtual host
+rabbitmqctl add_vhost <vhost_name>
+
+# Delete a virtual host
+rabbitmqctl delete_vhost <vhost_name>
+
+# Set permissions for a user on a specific virtual host
+rabbitmqctl set_permissions <__p___vhost_> <vhost_name> <username> <read> <write> <configure>
+
+# Clear permissions for a user on a specific virtual host
+rabbitmqctl clear_permissions <__p___vhost_> <vhost_name> <username>

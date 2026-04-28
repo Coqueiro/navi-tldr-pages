@@ -3,4 +3,26 @@
 
 % wpctl, linux
 
+# List all objects managed by WirePlumber
+wpctl status
 
+# Print all properties of an object
+wpctl inspect <id>
+
+# Set an object to be the default in its group
+wpctl set-default <id>
+
+# Get the volume of a sink
+wpctl get-volume <id>
+
+# Set the volume of a sink to `n` percent
+wpctl set-volume <id> <n>%
+
+# Increase/Decrease the volume of a sink by `n` percent
+wpctl set-volume <id> <n>%<___>
+
+# Increase the volume of a sink by `n` percent but limit the volume below 100%
+wpctl set-volume <__l___limit_> 1 <id> <n>%-
+
+# Mute/Unmute the default audio sink or source (1 is mute, 0 is unmute)
+wpctl set-mute @DEFAULT_<SINK_SOURCE>@ <1_0_toggle>

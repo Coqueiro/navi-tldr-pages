@@ -3,4 +3,26 @@
 
 % exa, common
 
+# List files one per line
+exa <__1___oneline_>
 
+# List all files, including hidden files
+exa <__a___all_>
+
+# Long format list (permissions, ownership, size, and modification date) of all files
+exa <__l___long_> <__a___all_>
+
+# List files with the largest at the top
+exa <__r___reverse_> <__s___sort_> <size>
+
+# Display a tree of files, three levels deep
+exa <__l___long_> <__T___tree_> <__L___level_> <3>
+
+# List files sorted by modification date (oldest first)
+exa <__l___long_> <__s___sort_> <modified>
+
+# List files with their headers, icons, and Git statuses
+exa <__l___long_> <__h___header_> --icons --git
+
+# Don't list files mentioned in `.gitignore`
+exa --git-ignore

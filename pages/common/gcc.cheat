@@ -3,4 +3,26 @@
 
 % gcc, common
 
+# Compile multiple source files into an executable
+gcc {{path/to/source1.c path/to/source2.c ...}} <__o___output_> <path_to_output_executable>
 
+# Activate output of all errors and warnings
+gcc <path_to_source_c> -Wall <__o___output_> <output_executable>
+
+# Show common warnings, debug symbols in output, and optimize without affecting debugging
+gcc <path_to_source_c> -Wall <__g___debug_> -Og <__o___output_> <path_to_output_executable>
+
+# Include libraries from a different path
+gcc <path_to_source_c> <__o___output_> <path_to_output_executable> -I<path_to_header> -L<path_to_library> -l<library_name>
+
+# Compile source code into Assembler instructions
+gcc <__S___assemble_> <path_to_source_c>
+
+# Compile source code into an object file without linking
+gcc <__c___compile_> <path_to_source_c>
+
+# Optimize the compiled program for performance
+gcc <path_to_source_c> -O<1_2_3_fast> <__o___output_> <path_to_output_executable>
+
+# Display version
+gcc --version

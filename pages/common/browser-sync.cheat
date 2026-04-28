@@ -7,7 +7,7 @@
 browser-sync start --server <path_to_directory> --files <path_to_directory>
 
 # Start a server from local directory, watching all CSS files in a directory
-browser-sync start --server --files '{{path/to/directory/*.css}}'
+browser-sync start --server --files '<path_to_directory___css>'
 
 # Create configuration file
 browser-sync init

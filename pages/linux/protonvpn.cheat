@@ -3,4 +3,20 @@
 
 % protonvpn, linux
 
+# Initialize Proton VPN profile
+protonvpn signin
 
+# Remove account credentials
+protonvpn signout
+
+# Display Proton VPN account information
+protonvpn info
+
+# Connect to Proton VPN interactively
+protonvpn connect
+
+# Disconnect from Proton VPN
+protonvpn disconnect
+
+# Display help
+protonvpn <__h___help_>

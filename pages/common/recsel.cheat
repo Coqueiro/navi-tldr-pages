@@ -3,4 +3,11 @@
 
 % recsel, common
 
+# Extract name and version field
+recsel <__p___print_> name,version <data_rec>
 
+# Use "~" to match a string with a given `regex`
+recsel <__e___expression_> "<field_name> ~ '<regex>' <data_rec>"
+
+# Use a predicate to match a name and a version
+recsel <__e___expression_> "name ~ '<regex>' && version ~ '<regex>'" <data_rec>

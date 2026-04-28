@@ -4,13 +4,13 @@
 % fnm, common
 
 # Install a specific version of Node.js
-fnm {{[i|install]}} <node_version>
+fnm <_i_install_> <node_version>
 
 # Install Node.js LTS
-fnm {{[i|install]}} --lts
+fnm <_i_install_> --lts
 
 # List all available Node.js versions and highlight the default one
-fnm {{[ls|list]}}
+fnm <_ls_list_>
 
 # Use a specific version of Node.js in the current shell
 fnm use <node_version>
@@ -19,4 +19,4 @@ fnm use <node_version>
 fnm default <node_version>
 
 # Uninstall a given Node.js version
-fnm {{[uni|uninstall]}} <node_version>
+fnm <_uni_uninstall_> <node_version>

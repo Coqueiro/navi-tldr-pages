@@ -3,4 +3,8 @@
 
 % rapper, common
 
+# Convert an RDF/XML document to Turtle
+rapper <__i___input_> rdfxml <__o___output_> turtle <path_to_file>
 
+# Count the number of triples in a Turtle file
+rapper <__i___input_> turtle <__c___count_> <path_to_file>

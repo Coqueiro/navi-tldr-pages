@@ -4,19 +4,19 @@
 % kaggle-models, common
 
 # Get a model
-kaggle {{[m|models]}} get "<model_name>"
+kaggle <_m_models_> get "<model_name>"
 
 # List all models
-kaggle {{[m|models]}} list
+kaggle <_m_models_> list
 
 # Initialize metadata file for model creation
-kaggle {{[m|models]}} init
+kaggle <_m_models_> init
 
 # Create a new model
-kaggle {{[m|models]}} create
+kaggle <_m_models_> create
 
 # Delete a model
-kaggle {{[m|models]}} delete "<model_name>"
+kaggle <_m_models_> delete "<model_name>"
 
 # Update a model
-kaggle {{[m|models]}} update
+kaggle <_m_models_> update

@@ -3,4 +3,11 @@
 
 % mosquitto_sub, common
 
+# Subscribe to the topic `sensors/temperature` information with Quality of Service (`QoS`) set to 1. (The default hostname is `localhost` and port 1883)
+mosquitto_sub <__t___topic_> <sensors_temperature> <__q___qos_> <1>
 
+# Subscribe to all broker status messages publishing on `iot.eclipse.org` port 1885 and print published messages verbosely
+mosquitto_sub <__v___verbose_> <__h___host_> "iot.eclipse.org" <__p___port_> 1885 <__t___topic_> <__SYS__>
+
+# Subscribe to multiple topics matching a given pattern. (+ takes any metric name)
+mosquitto_sub <__t___topic_> <sensors_machines___temperature__>

@@ -3,4 +3,17 @@
 
 % pactree, linux
 
+# Print the dependency tree of a specific package
+pactree <package>
 
+# Print what packages depend on a specific package
+pactree <__r___reverse_> <package>
+
+# Dump dependencies one per line, skipping duplicates
+pactree <__u___unique_> <package>
+
+# Include optional dependencies of a specific package and colorize the output
+pactree {{[-co|--color --optional]}} <package>
+
+# Display help
+pactree

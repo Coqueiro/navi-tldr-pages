@@ -3,4 +3,23 @@
 
 % devpod, common
 
+# Add a provider such as Docker or Kubernetes
+devpod provider add <provider_name>
 
+# List all available providers
+devpod provider list-available
+
+# Start a workspace from a GitHub repository with a specific IDE
+devpod up <github_com_user_repo> <__i___ide_> <vscode>
+
+# Start a workspace from a local directory
+devpod up <path_to_project>
+
+# Recreate an existing workspace
+devpod up <workspace_name> <__r___recreate_>
+
+# Reset a workspace to a clean state
+devpod up <workspace_name> <__x___reset_>
+
+# Add a custom provider from a GitHub repository
+devpod provider add <org_provider_repo>

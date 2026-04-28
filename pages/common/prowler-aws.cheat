@@ -3,4 +3,17 @@
 
 % prowler-aws, common
 
+# Run the default set of checks on the AWS account
+prowler aws
 
+# Use a custom AWS profile and filter audited regions
+prowler aws <__p___profile_> <custom_profile> <__f___filter_region_> {{us-east-1 eu-south-2 ...}}
+
+# Run checks for selected AWS services
+prowler aws <__s___services_> <s3_ec2____>
+
+# Run a specific AWS check
+prowler aws <__c___checks_> <s3_bucket_public_access>
+
+# Exclude specific checks or services
+prowler aws <__e___excluded_checks_> <s3_bucket_public_access> --exclude-services <s3_ec2____>

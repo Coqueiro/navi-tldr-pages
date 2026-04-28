@@ -3,4 +3,20 @@
 
 % siege, common
 
+# Test a URL with default settings
+siege <https___example_com>
 
+# Test a list of URLs
+siege <__f___file_> <path_to_url_list_txt>
+
+# Test list of URLs in a random order (Simulates internet traffic)
+siege <__i___internet_> <__f___file_> <path_to_url_list_txt>
+
+# Benchmark a list of URLs (without waiting between requests)
+siege <__b___benchmark_> <__f___file_> <path_to_url_list_txt>
+
+# Set the amount of concurrent connections
+siege <__c___concurrent_> <50> <__f___file_> <path_to_url_list_txt>
+
+# Set how long for the siege to run for
+siege <__t___time_> <30s> <__f___file_> <path_to_url_list_txt>

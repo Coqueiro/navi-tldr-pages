@@ -3,4 +3,17 @@
 
 % ac, linux
 
+# Print how long the current user has been connected in hours
+ac
 
+# Print how long users have been connected in hours
+ac <__p___individual_totals_>
+
+# Print how long a particular user has been connected in hours
+ac <__p___individual_totals_> <username>
+
+# Print how long a particular user has been connected in hours per day (with total)
+ac <__d___daily_totals_> <__p___individual_totals_> <username>
+
+# Also display additional details
+ac --compatibility

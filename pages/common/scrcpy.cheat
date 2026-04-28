@@ -3,4 +3,26 @@
 
 % scrcpy, common
 
+# Display a mirror of a connected device
+scrcpy
 
+# Turn the device screen off and prevent it from sleeping while mirroring
+scrcpy <__S___turn_screen_off_> <__w___stay_awake_>
+
+# Display a mirror of a specific device based on its ID or IP address (find it under the `adb devices` command)
+scrcpy <__s___serial_> <0123456789abcdef_192_168_0_1_5555>
+
+# Show touches on physical device
+scrcpy <__t___show_touches_>
+
+# Record display screen
+scrcpy <__r___record_> <path_to_file_mp4>
+
+# Specify the target directory for pushing files to device by drag and drop (non-APK)
+scrcpy --push-target <path_to_directory>
+
+# View the phone's camera (requires Android 12 or newer)
+scrcpy --video-source camera
+
+# Create a Video4Linux2 device from the phone's camera (`v4l2loopback` must be installed)
+scrcpy --video-source camera --camera-size <1920x1080> --v4l2-sink <_dev_video0> --no-playback

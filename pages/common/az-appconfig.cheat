@@ -3,4 +3,20 @@
 
 % az-appconfig, common
 
+# Create an App Configuration
+az appconfig create <__n___name_> <name> <__g___resource_group_> <group_name> <__l___location_> <location>
 
+# Delete a specific App Configuration
+az appconfig delete <__g___resource_group_> <rg_name> <__n___name_> <appconfig_name>
+
+# List all App Configurations under the current subscription
+az appconfig list
+
+# List all App Configurations under a specific resource group
+az appconfig list <__g___resource_group_> <rg_name>
+
+# Show properties of an App Configuration
+az appconfig show <__n___name_> <appconfig_name>
+
+# Update a specific App Configuration
+az appconfig update <__g___resource_group_> <rg_name> <__n___name_> <appconfig_name>

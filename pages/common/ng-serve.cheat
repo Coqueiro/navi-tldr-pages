@@ -3,4 +3,23 @@
 
 % ng-serve, common
 
+# Start the application
+ng <_s_serve_>
 
+# Start the application and open it in a browser
+ng <_s_serve_> <__o___open_>
+
+# Start the application on port `4201`
+ng <_s_serve_> --port 4201
+
+# Start the application and listen on all network interfaces
+ng <_s_serve_> --host <0_0_0_0>
+
+# Start the application using HTTPS
+ng <_s_serve_> --ssl
+
+# Start the application with verbose logging
+ng <_s_serve_> --verbose
+
+# Rebuild the application when files change
+ng <_s_serve_> --watch

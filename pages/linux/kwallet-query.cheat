@@ -3,4 +3,14 @@
 
 % kwallet-query, linux
 
+# List all entries in the `Passwords` folder of `kdewallet`
+kwallet-query <kdewallet> <__l___list_entries_>
 
+# List all entries in a specific folder
+kwallet-query <kdewallet> <__l___list_entries_> <__f___folder_> <folder_name>
+
+# List all available folders
+kwallet-query <kdewallet> <__l___list_entries_> <__f___folder_> ""
+
+# Display help
+kwallet-query <__h___help_>

@@ -4,10 +4,10 @@
 % qm-showcmd, linux
 
 # Show command-line for a specific virtual machine
-qm {{[sho|showcmd]}} <100>
+qm <_sho_showcmd_> <100>
 
 # Put each option on a new line to enhance human readability
-qm {{[sho|showcmd]}} <100> --pretty <true>
+qm <_sho_showcmd_> <100> --pretty <true>
 
 # Fetch configuration values from a specific snapshot
-qm {{[sho|showcmd]}} <100> --snapshot <string>
+qm <_sho_showcmd_> <100> --snapshot <string>

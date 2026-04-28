@@ -3,4 +3,17 @@
 
 % daps, common
 
+# Check if a DocBook XML file is valid
+daps <__d___docconfig_> <path_to_file_xml> validate
 
+# Convert a DocBook XML file into PDF
+daps <__d___docconfig_> <path_to_file_xml> pdf
+
+# Convert a DocBook XML file into a single HTML file
+daps <__d___docconfig_> <path_to_file_xml> html --single
+
+# Display help
+daps <__h___help_>
+
+# Display version
+daps --version

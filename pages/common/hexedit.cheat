@@ -3,4 +3,14 @@
 
 % hexedit, common
 
+# Open file
+hexedit <path_to_file>
 
+# Display file with sectors
+hexedit <__s___sector_> <path_to_file>
+
+# Maximize file display
+hexedit <__m___maximize_> <path_to_file>
+
+# Display help
+hexedit <__h___help_>

@@ -3,4 +3,14 @@
 
 % column, linux
 
+# Format the output of a command for a 30 characters wide display
+printf "header1 header2\nbar foo\n" | column <__c___output_width_> <30>
 
+# Split columns automatically and auto-align them in a tabular format
+printf "header1 header2\nbar foo\n" | column <__t___table_>
+
+# Specify the column delimiter character for the `--table` option (e.g. "," for CSV) (defaults to whitespace)
+printf "header1,header2\nbar,foo\n" | column <__t___table_> <__s___separator_> <_>
+
+# Fill rows before filling columns
+printf "header1\nbar\nfoobar\n" | column <__c___output_width_> <30> <__x___fillrows_>

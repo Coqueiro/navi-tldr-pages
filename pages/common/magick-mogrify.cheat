@@ -4,13 +4,13 @@
 % magick-mogrify, common
 
 # Resize all JPEG images in the directory to 50% of their initial size
-magick mogrify -resize <50_> {{*.jpg}}
+magick mogrify -resize <50_> <__jpg>
 
 # Resize all images starting with `DSC` to 800x600
-magick mogrify -resize <800x600> {{DSC*}}
+magick mogrify -resize <800x600> <DSC_>
 
 # Convert all PNGs in the directory to JPEG
-magick mogrify -format <__jpg> {{*.png}}
+magick mogrify -format <jpg> <__png>
 
 # Halve the saturation of all image files in the current directory
 magick mogrify -modulate <100_50> {{*}}
@@ -19,7 +19,7 @@ magick mogrify -modulate <100_50> {{*}}
 magick mogrify -modulate <200> {{*}}
 
 # Reduce file sizes of all GIF images in the current directory by reducing quality
-magick mogrify -layers 'optimize' -fuzz <7_> {{*.gif}}
+magick mogrify -layers 'optimize' -fuzz <7_> <__gif>
 
 # Display help
 magick mogrify -help

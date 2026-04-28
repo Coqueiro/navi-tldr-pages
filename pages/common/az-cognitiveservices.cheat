@@ -3,4 +3,17 @@
 
 % az-cognitiveservices, common
 
+# Create an API Cognitive Services account in a specific location without confirmation required
+az cognitiveservices account create <__n___name_> <account_name> <__g___resource_group_> <resource_group> --kind <API_name> <__l___location_> <location> --sku <sku_name> --yes
 
+# List usages for Azure Cognitive Services account
+az cognitiveservices account list-usage <__n___name_> <account_name> <__g___resource_group_> <resource_group>
+
+# Create a deployment for Azure Cognitive Services account
+az cognitiveservices account deployment create <__n___name_> <account_name> <__g___resource_group_> <resource_group> --deployment-name <deploy_name> --model-name <model_name> --model-version "<model_version>" --model-format <format_name>
+
+# Create a commitment plan for Azure Cognitive Services account
+az cognitiveservices account commitment-plan create <__n___name_> <account_name> <__g___resource_group_> <resource_group> --commitment-plan-name "<plan_name>" --hosting-model "<hosting_model>" --plan-type "<plan_type>" --auto-renew <false_true>
+
+# Delete a commitment plan from Azure Cognitive Services account
+az cognitiveservices account commitment-plan delete <__g___resource_group_> <resource_group> <__n___name_> <account_name> --commitment-plan-name "<plan_name>"

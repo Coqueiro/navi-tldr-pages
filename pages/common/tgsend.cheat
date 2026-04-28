@@ -3,4 +3,8 @@
 
 % tgsend, common
 
+# Send a message to a chat
+tgsend <__n___name_> <session_name> <__u___username_> <chat_id> "<message>"
 
+# Send a message to chat with silent notification
+tgsend <__n___name_> <session_name> <__u___username_> <chat_id> --silent "<message>"

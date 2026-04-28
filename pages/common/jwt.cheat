@@ -3,4 +3,14 @@
 
 % jwt, common
 
+# Decode a JWT
+jwt decode <jwt_string>
 
+# Decode a JWT as a JSON string
+jwt decode <__j___json_> <jwt_string>
+
+# Encode a JSON string to a JWT
+jwt encode <__A___alg_> <HS256> <__S___secret_> <1234567890> '<json_string>'
+
+# Encode key pair payload to JWT
+jwt encode <__A___alg_> <HS256> <__S___secret_> <1234567890> <__P___payload_> <key_value>

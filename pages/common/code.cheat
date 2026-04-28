@@ -3,4 +3,26 @@
 
 % code, common
 
+# Start Visual Studio Code
+code
 
+# Open specific files/directories
+code {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+
+# Compare two specific files
+code <__d___diff_> <path_to_file1> <path_to_file2>
+
+# Open specific files/directories in a new window
+code <__n___new_window_> {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+
+# Install/uninstall a specific extension
+code --<install_uninstall>-extension <publisher_extension>
+
+# Display diagnostic and process information about the running code window
+code <__s___status_>
+
+# Print installed extensions with their versions
+code --list-extensions --show-versions
+
+# Start the editor as a superuser (root) while storing user data in a specific directory
+sudo code --user-data-dir <path_to_directory>

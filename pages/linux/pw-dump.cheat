@@ -3,4 +3,20 @@
 
 % pw-dump, linux
 
+# Print a JSON representation of the default PipeWire instance's current state
+pw-dump
 
+# Print a JSON representation of an object
+pw-dump <object_id>
+
+# Dump the current state monitoring changes, printing it again
+pw-dump <__m___monitor_>
+
+# Dump the current state of a remote instance to a file
+pw-dump <__r___remote_> <remote_name> > <path_to_dump_file_json>
+
+# Set a color configuration
+pw-dump <__C___color_> <never_always_auto>
+
+# Display help
+pw-dump <__h___help_>

@@ -4,7 +4,7 @@
 % podman-machine, common
 
 # List existing machines
-podman machine {{[ls|list]}}
+podman machine <_ls_list_>
 
 # Create a new default machine
 podman machine init

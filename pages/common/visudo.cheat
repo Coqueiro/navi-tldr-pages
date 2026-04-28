@@ -3,4 +3,14 @@
 
 % visudo, common
 
+# Edit the sudoers file
+sudo visudo
 
+# Check the sudoers file for errors
+sudo visudo <__c___check_>
+
+# Edit the sudoers file using a specific editor
+sudo EDITOR=<editor> visudo
+
+# Display version
+visudo <__V___version_>

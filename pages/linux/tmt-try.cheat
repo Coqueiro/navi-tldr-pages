@@ -3,4 +3,26 @@
 
 % tmt-try, linux
 
+# Quickly experiment with the default provision method (no tests in the CWD)
+tmt try
 
+# Run a test in the current working directory
+cd <path_to_test_directory> && tmt try
+
+# Use a specific operating system
+tmt try <rhel_9>
+
+# Select both custom image and provision method
+tmt try <fedora_container>
+
+# Select tests with custom filter
+tmt try <__t___test_> <feature>
+
+# Provision guest and wait for instructions
+tmt try <__a___ask_>
+
+# Directly log into the guest without asking
+tmt try <__l___login_>
+
+# Display help
+tmt try --help

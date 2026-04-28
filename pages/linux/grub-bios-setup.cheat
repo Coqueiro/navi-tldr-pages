@@ -3,4 +3,11 @@
 
 % grub-bios-setup, linux
 
+# Set up a device to boot with GRUB
+grub-bios-setup <_dev_sdX>
 
+# Install even if problems are detected
+grub-bios-setup <__f___force_> <_dev_sdX>
+
+# Install GRUB in a specific directory
+grub-bios-setup <__d___directory_> <_boot_grub> <_dev_sdX>

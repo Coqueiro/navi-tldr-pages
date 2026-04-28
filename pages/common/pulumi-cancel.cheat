@@ -3,4 +3,11 @@
 
 % pulumi-cancel, common
 
+# Cancel a stack's currently running update, if any
+pulumi cancel <stack_name>
 
+# Skip confirmation prompts, and proceed with cancellation anyway
+pulumi cancel <__y___yes_>
+
+# Display help
+pulumi cancel <__h___help_>

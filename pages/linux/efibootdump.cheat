@@ -3,4 +3,5 @@
 
 % efibootdump, linux
 
-
+# Dump boot entries from a file
+efibootdump <__f___file_> <_sys_firmware_efi_efivars_Boot0000_8be4df61_93ca_11d2_aa0d_00e098032b8c>

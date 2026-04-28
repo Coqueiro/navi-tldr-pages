@@ -19,4 +19,4 @@ qemu-system-i386 -hda <image_name_img> -m <4096> -nographic
 <Ctrl a><x>
 
 # List the supported machine types
-qemu-system-i386 {{[-M|-machine]}} help
+qemu-system-i386 <__M__machine_> help

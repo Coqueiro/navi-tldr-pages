@@ -3,4 +3,23 @@
 
 % doxx, common
 
+# View a `.docx` file in the terminal
+doxx <path_to_file>.docx
 
+# View a `.docx` file in the terminal with color support
+doxx <path_to_file>.docx --color
+
+# View a `.docx` file in the terminal with image support
+doxx <path_to_file>.docx --images
+
+# View a `.docx` file in the terminal and jump to a specific page
+doxx <path_to_file>.docx <__p___page_> <page_number>
+
+# Search for a pattern in a `.docx` file
+doxx <path_to_file>.docx <__s___search_> <pattern>
+
+# Search for a pattern while viewing a document
+<s><pattern>
+
+# Exit document
+<q>

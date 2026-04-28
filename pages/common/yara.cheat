@@ -3,4 +3,23 @@
 
 % yara, common
 
+# Scan a specific file with a rule file
+yara <path_to_rule_yar> <path_to_file>
 
+# Recursively scan a directory and subdirectories containing possible threats
+yara <path_to_rule_yar> <__r___recursive_> <path_to_directory>
+
+# Scan a running process by its PID using multiple rules
+yara {{path/to/rule1.yar path/to/rule2.yar ...}} <PID>
+
+# Print metadata associated with the matching rules
+yara <__m___print_meta_> <path_to_rule_yar> <path_to_file>
+
+# Print the strings that caused the rule to match
+yara <__s___print_strings_> <path_to_rule_yar> <path_to_file>
+
+# Use a specific number of threads for parallel scanning
+yara <__p___threads_> <number_of_threads> <path_to_rule_yar> <path_to_directory>
+
+# Use compiled YARA rules file to scan a directory recursively
+yara <__C___compiled_rules_> <path_to_rules_bin> <__r___recursive_> <path_to_directory>

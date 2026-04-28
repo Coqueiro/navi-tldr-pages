@@ -3,4 +3,17 @@
 
 % quota, common
 
+# Show disk quotas in human-readable units for the current user
+quota <__s___human_readable_>
 
+# Verbose output (also display quotas on filesystems where no storage is allocated)
+quota <__v___verbose_>
+
+# Quiet output (only display quotas on filesystems where usage is over quota)
+quota <__q___quiet_>
+
+# Print quotas for the groups of which the current user is a member
+quota <__g___group_>
+
+# Show disk quotas for another user
+sudo quota <__u___user_> <username>

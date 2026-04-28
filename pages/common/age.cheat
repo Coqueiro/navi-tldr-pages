@@ -3,4 +3,17 @@
 
 % age, common
 
+# Generate an encrypted file that can be decrypted with a passphrase
+age <__p___passphrase_> <__o___output_> <path_to_encrypted_file_age> <path_to_unencrypted_file>
 
+# Encrypt a file with one or more public keys entered as literals (repeat the `--recipient` flag to specify multiple public keys)
+age <__r___recipient_> <public_key> <__o___output_> <path_to_encrypted_file_age> <path_to_unencrypted_file>
+
+# Encrypt a file to one or more recipients with their public keys specified in a file (one per line)
+age <__R___recipients_file_> <path_to_recipients_file_txt> <__o___output_> <path_to_encrypted_file_age> <path_to_unencrypted_file>
+
+# Decrypt a file with a passphrase
+age <__d___decrypt_> <__o___output_> <path_to_decrypted_file> <path_to_encrypted_file_age>
+
+# Decrypt a file with a private key file
+age <__d___decrypt_> <__i___identity_> <path_to_private_key_file> <__o___output_> <path_to_decrypted_file> <path_to_encrypted_file_age>

@@ -3,4 +3,20 @@
 
 % showmount, common
 
+# Show clients currently mounting from the server
+showmount <hostname>
 
+# Show the NFS server's export list
+showmount <__e___exports_> <hostname>
+
+# Show all clients and their mounted directories
+showmount <__a___all_> <hostname>
+
+# Show only the directories mounted by clients
+showmount <__d___directories_> <hostname>
+
+# Show the export list without headers
+showmount <__e___exports_> --no-headers <hostname>
+
+# Display help
+showmount <__h___help_>

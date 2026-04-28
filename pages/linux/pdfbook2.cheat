@@ -3,4 +3,14 @@
 
 % pdfbook2, linux
 
+# Create a booklet named `file-book.pdf` with sane defaults
+pdfbook2 <path_to_file_pdf>
 
+# Create a booklet with the paper size set to A4
+pdfbook2 <__p___paper_> a4paper <path_to_file_pdf>
+
+# Create a booklet that has the inner margin reduced to 50 pixels (default = 150px)
+pdfbook2 <__p___paper_> a4paper <__i___inner_margin_> 50 <path_to_file_pdf>
+
+# Organize a large file with print signatures for binding into a larger booklet (signatures must be divisible by 4)
+pdfbook2 <__p___paper_> a4paper --signature <24> <path_to_file_pdf>

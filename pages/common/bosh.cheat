@@ -3,4 +3,26 @@
 
 % bosh, common
 
+# Create local alias for director in a specific environment
+bosh alias-env <environment_name> <__e___environment_> <ip_address_URL> --ca-cert <ca_certificate>
 
+# List environments
+bosh environments
+
+# Log in to the director
+bosh login <__e___environment_> <environment>
+
+# List deployments
+bosh <__e___environment_> <environment> deployments
+
+# List environment virtual machines in a deployment
+bosh <__e___environment_> <environment> vms <__d___deployment_> <deployment>
+
+# SSH into virtual machine
+bosh <__e___environment_> <environment> ssh <virtual_machine> <__d___deployment_> <deployment>
+
+# Upload stemcell
+bosh <__e___environment_> <environment> upload-stemcell <stemcell_file_url>
+
+# Show current cloud config
+bosh <__e___environment_> <environment> cloud-config

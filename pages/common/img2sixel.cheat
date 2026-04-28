@@ -3,4 +3,8 @@
 
 % img2sixel, common
 
+# Display an image in the terminal
+img2sixel <path_to_image>
 
+# Resize the image to the specified width and height before displaying it
+img2sixel <__w___width_> <number> <__h___height_> <number> <path_to_image>

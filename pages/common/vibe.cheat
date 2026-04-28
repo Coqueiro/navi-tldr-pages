@@ -3,4 +3,17 @@
 
 % vibe, common
 
+# Start an interactive Mistral Vibe session in the current directory
+vibe
 
+# Resume the most recent Vibe session in the current directory
+vibe <__c___continue_>
+
+# Start an interactive Vibe session to setup an API key then exit
+vibe --setup
+
+# Run a single Vibe prompt in the terminal with automatic approval of file edits and commands
+vibe <__p___prompt_> "<your_prompt>"
+
+# Run a single Vibe prompt in the terminal with the specified output format
+vibe --output <json_text_streaming> <__p___prompt_> "<your_prompt>"

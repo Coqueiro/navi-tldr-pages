@@ -3,4 +3,14 @@
 
 % rails-routes, common
 
+# List all routes
+rails routes
 
+# List all routes in an expanded format
+rails routes <__E___expanded_>
+
+# List routes partially matching URL helper method name, HTTP verb, or URL path
+rails routes <__g___grep_> <posts_path_GET__posts>
+
+# List routes that map to a specified controller
+rails routes <__c___controller_> <posts_Posts_Blogs__PostsController>

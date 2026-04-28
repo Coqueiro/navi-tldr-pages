@@ -3,4 +3,23 @@
 
 % git-restore, common
 
+# Restore an unstaged file to the staged version
+git restore <path_to_file>
 
+# Restore an unstaged file to the version of a specific commit
+git restore <__s___source_> <commit> <path_to_file>
+
+# Discard all unstaged changes to tracked files
+git restore :/
+
+# Unstage a file
+git restore <__S___staged_> <path_to_file>
+
+# Unstage all files
+git restore <__S___staged_> :/
+
+# Discard all changes to files, both staged and unstaged
+git restore <__W___worktree_> <__S___staged_> :/
+
+# Interactively select sections of files to restore
+git restore <__p___patch_>

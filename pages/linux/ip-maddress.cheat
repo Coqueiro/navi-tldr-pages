@@ -4,16 +4,16 @@
 % ip-maddress, linux
 
 # List multicast addresses and how many programs are subscribed to them
-ip {{[m|maddress]}}
+ip <_m_maddress_>
 
 # List device specific addresses
-ip {{[m|maddress]}} {{[s|show]}} dev <ethX>
+ip <_m_maddress_> <_s_show_> dev <ethX>
 
 # Join a multicast group statically
-sudo ip {{[m|maddress]}} {{[a|add]}} <33_33_00_00_00_02> dev <ethX>
+sudo ip <_m_maddress_> <_a_add_> <33_33_00_00_00_02> dev <ethX>
 
 # Leave a static multicast group
-sudo ip {{[m|maddress]}} {{[d|delete]}} <33_33_00_00_00_02> dev <ethX>
+sudo ip <_m_maddress_> <_d_delete_> <33_33_00_00_00_02> dev <ethX>
 
 # Display help
-ip {{[m|maddress]}} {{[h|help]}}
+ip <_m_maddress_> <_h_help_>

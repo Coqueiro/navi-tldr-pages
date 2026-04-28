@@ -3,4 +3,11 @@
 
 % git-stripspace, common
 
+# Trim whitespace from a file
+cat <path_to_file> | git stripspace
 
+# Trim whitespace and Git comments from a file
+cat <path_to_file> | git stripspace <__s___strip_comments_>
+
+# Convert all lines in a file into Git comments
+git < <path_to_file> stripspace <__c___comment_lines_>

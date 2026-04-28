@@ -3,4 +3,8 @@
 
 % systemctl-suspend-then-hibernate, linux
 
+# Suspend the system and hibernate after the configured delay
+systemctl suspend-then-hibernate
 
+# Force suspend-then-hibernate (bypass inhibitor locks)
+systemctl suspend-then-hibernate <__f___force_>

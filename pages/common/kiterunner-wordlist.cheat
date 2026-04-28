@@ -3,4 +3,23 @@
 
 % kiterunner-wordlist, common
 
+# List all cached and available Assetnote wordlists
+kiterunner wordlist list
 
+# List wordlists with JSON output
+kiterunner wordlist list <__o___output_> <json>
+
+# List wordlists with verbose debug output
+kiterunner wordlist list <__v___verbose_> <debug>
+
+# Save a specific Assetnote wordlist by alias
+kiterunner wordlist save <apiroutes_210328>
+
+# Save a specific Assetnote wordlist by full filename
+kiterunner wordlist save <path_to_httparchive_apiroutes_2024_05_28_txt>
+
+# Save multiple wordlists by alias
+kiterunner wordlist save <apiroutes_210328_aspx_210328>
+
+# Save a wordlist with quiet mode to suppress output
+kiterunner wordlist save <apiroutes_210328> <__q___quiet_>

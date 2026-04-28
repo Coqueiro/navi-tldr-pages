@@ -4,19 +4,19 @@
 % pikman, linux
 
 # Install a package
-pikman {{[i|install]}} <package>
+pikman <_i_install_> <package>
 
 # List installed packages
-pikman {{[l|list]}}
+pikman <_l_list_>
 
 # Search for a package
-pikman {{[s|search]}} <package>
+pikman <_s_search_> <package>
 
 # Update the list of available packages
 pikman update
 
 # Remove a package
-pikman {{[r|remove]}} <package>
+pikman <_r_remove_> <package>
 
 # Remove all unused packages
 pikman autoremove

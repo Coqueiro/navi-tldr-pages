@@ -4,10 +4,10 @@
 % jj-config-path, common
 
 # Print the path to the user-level config file
-jj config {{[p|path]}} --user
+jj config <_p_path_> --user
 
 # Print the path to the repo-level config file
-jj config {{[p|path]}} --repo
+jj config <_p_path_> --repo
 
 # Print the path to the workspace-level config file
-jj config {{[p|path]}} --workspace
+jj config <_p_path_> --workspace

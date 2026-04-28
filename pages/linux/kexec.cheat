@@ -3,4 +3,14 @@
 
 % kexec, linux
 
+# Load a new kernel
+kexec <__l___load_> <path_to_kernel> --initrd=<path_to_initrd> --command-line=<arguments>
 
+# Load a new kernel with current boot parameters
+kexec <__l___load_> <path_to_kernel> --initrd=<path_to_initrd> --reuse-cmdline
+
+# Execute a currently loaded kernel
+kexec <__e___exec_>
+
+# Unload current kexec target kernel
+kexec <__u___unload_>

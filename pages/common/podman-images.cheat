@@ -3,4 +3,17 @@
 
 % podman-images, common
 
+# List all container images
+podman images
 
+# List all container images including intermediates
+podman images <__a___all_>
+
+# List the output in quiet mode (only numeric IDs)
+podman images <__q___quiet_>
+
+# List all images not used by any container
+podman images <__f___filter_> dangling=true
+
+# List images that contain a substring in their name
+podman images "<_image_image_>"

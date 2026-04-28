@@ -3,4 +3,8 @@
 
 % ifup, linux
 
+# Enable interface eth0
+ifup <eth0>
 
+# Enable all the interfaces defined with "auto" in `/etc/network/interfaces`
+ifup <__a___all_>

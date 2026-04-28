@@ -3,4 +3,20 @@
 
 % jj-resolve, common
 
+# Resolve all conflicts
+jj resolve
 
+# List all conflicts
+jj resolve <__l___list_>
+
+# Resolve conflicts in a given revision
+jj resolve <__r___revision_> <revset>
+
+# Resolve conflicts in given files
+jj resolve {{file1 file2 ...}}
+
+# Resolve accepting the incoming versions
+jj resolve --tool :theirs
+
+# Resolve accepting the outgoing versions
+jj resolve --tool :ours

@@ -3,4 +3,11 @@
 
 % sstat, linux
 
+# Display status information of a comma-separated list of jobs
+sstat <__j___jobs_> <job_id>
 
+# Display job ID, average CPU and average virtual memory size of a comma-separated list of jobs, with pipes as column delimiters
+sstat <__p___parsable_> <__j___jobs_> <job_id> <__o___format_> <JobID_AveCPU_AveVMSize>
+
+# Display list of fields available
+sstat <__e___helpformat_>

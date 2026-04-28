@@ -3,4 +3,14 @@
 
 % s, common
 
+# Search for a query on Google (default provider)
+s <query>
 
+# List all providers
+s <__l___list_providers_>
+
+# Search for a query with a given provider
+s <__p___provider_> <provider> <query>
+
+# Use a specified binary to perform the search query
+s <__b___binary_> "<binary> <arguments>" <query>

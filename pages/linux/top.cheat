@@ -3,4 +3,23 @@
 
 % top, linux
 
+# Start `top`
+top
 
+# Do not show any idle or zombie processes
+top <__i___idle_toggle_>
+
+# Show only processes owned by given user
+top <__u___filter_only_euser_> <username>
+
+# Sort processes by a field
+top <__o___sort_override_> <field_name>
+
+# Show the individual threads of a given process
+top {{[-Hp|--threads-show --pid]}} <process_id>
+
+# Show only the processes with the given PID(s), passed as a comma-separated list. (Normally you wouldn't know PIDs off hand. This example picks the PIDs from the process name)
+top <__p___pid_> $(pgrep <__d___delimiter_> ',' <process_name>)
+
+# Display help about interactive commands
+<?>

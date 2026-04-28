@@ -3,4 +3,26 @@
 
 % dnsx, common
 
+# Query the A record of a (sub)domain and show [re]sponse received
+echo <example_com> | dnsx -a <__re__resp_>
 
+# Query all the DNS records (A, AAAA, CNAME, NS, TXT, SRV, PTR, MX, SOA, AXFR, CAA)
+dnsx <<< <example_com> -recon <__re__resp_>
+
+# Query a specific type of DNS record
+echo <example_com> | dnsx <__re__resp_> -<a_aaaa_cname_ns_txt_srv_ptr_mx_soa_any_axfr_caa>
+
+# Output response only (do not show the queried domain or subdomain)
+echo <example_com> | dnsx <__ro__resp_only_>
+
+# Display raw response of a query, specifying resolvers to use and retry attempts for failures
+echo <example_com> | dnsx -<debug_raw> <__r__resolver_> <1_1_1_1_8_8_8_8____> -retry <number>
+
+# Brute force DNS records using a placeholder
+dnsx <__d__domain_> <FUZZ_example_com> <__w__wordlist_> <path_to_wordlist_txt> <__re__resp_>
+
+# Brute force DNS records from a list of domains and wordlists, appending output to a file with no color codes
+dnsx <__d__domain_> <path_to_domain_txt> <__w__wordlist_> <path_to_wordlist_txt> <__re__resp_> <__o__output_> <path_to_output_txt> <__nc__no_color_>
+
+# Extract `CNAME` records for the given list of subdomains, with rate limiting DNS queries per second
+subfinder -silent <__d__domain_> <example_com> | dnsx -cname <__re__resp_> <__rl__rate_limit_> <number>

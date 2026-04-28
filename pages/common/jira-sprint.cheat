@@ -3,4 +3,17 @@
 
 % jira-sprint, common
 
+# List sprints and their issues in an explorer view
+jira sprint <_ls_list_>
 
+# List issues from the current sprint
+jira sprint <_ls_list_> --current
+
+# List issues from the current sprint, assigned to me
+jira sprint <_ls_list_> --current <__a___assignee_> $(jira me)
+
+# List high priority issues from the current sprint assigned to me
+jira sprint <_ls_list_> --current <__a___assignee_> $(jira me) <__y___priority_> High
+
+# Add issues to a sprint using an interactive prompt
+jira sprint add

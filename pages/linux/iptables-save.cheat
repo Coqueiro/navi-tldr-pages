@@ -3,4 +3,11 @@
 
 % iptables-save, linux
 
+# Print the `iptables` configuration
+sudo iptables-save
 
+# Print the `iptables` configuration of a specific table
+sudo iptables-save <__t___table_> <table>
+
+# Save the `iptables` configuration to a file
+sudo iptables-save <__f___file_> <path_to_file>

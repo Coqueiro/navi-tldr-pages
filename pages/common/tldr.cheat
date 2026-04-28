@@ -3,4 +3,26 @@
 
 % tldr, common
 
+# Print the tldr page for a specific command (hint: this is how you got here!)
+tldr <command>
 
+# Print the tldr page for a specific subcommand
+tldr <command> <subcommand>
+
+# Print the tldr page for a command in the given language (if available, otherwise fall back to English)
+tldr <__L___language_> <language_code> <command>
+
+# Print the tldr page for a command from a specific platform
+tldr <__p___platform_> <android_cisco_ios_common_dos_freebsd_linux_netbsd_openbsd_osx_sunos_windows> <command>
+
+# Update the local cache of tldr pages
+tldr <__u___update_>
+
+# List all pages for the current platform and `common`
+tldr <__l___list_>
+
+# Browse tldr pages in a terminal window (`fzf` must be available)
+tldr <__l___list_> | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr
+
+# Print the tldr page for a random command
+tldr <__l___list_> | shuf <__n___head_count_> 1 | xargs tldr

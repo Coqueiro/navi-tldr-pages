@@ -3,4 +3,20 @@
 
 % apx-subsystems, linux
 
+# Interactively create a new subsystem
+apx subsystems new
 
+# List all available subsystems
+apx subsystems list
+
+# Reset a specific subsystem to its initial state
+apx subsystems reset <__n___name_> <string>
+
+# Force reset a specific subsystem
+apx subsystems reset <__n___name_> <string> <__f___force_>
+
+# Remove a specific subsystem
+apx subsystems rm <__n___name_> <string>
+
+# Force remove a specific subsystem
+apx subsystems rm <__n___name_> <string> <__f___force_>

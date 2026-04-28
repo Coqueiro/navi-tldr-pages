@@ -3,4 +3,11 @@
 
 % gpg-zip, common
 
+# Encrypt a directory into `archive.gpg` using a passphrase
+gpg-zip <__c___symmetric_> <__o___output_> <archive_gpg> <path_to_directory>
 
+# Decrypt `archive.gpg` into a directory of the same name
+gpg-zip <__d___decrypt_> <path_to_archive_gpg>
+
+# List the contents of the encrypted `archive.gpg`
+gpg-zip --list-archive <path_to_archive_gpg>

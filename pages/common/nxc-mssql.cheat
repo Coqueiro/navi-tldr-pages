@@ -3,4 +3,20 @@
 
 % nxc-mssql, common
 
+# Search for valid credentials by trying out every combination in the specified lists of usernames and passwords
+nxc mssql <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt>
 
+# Execute the specified SQL query on the target server
+nxc mssql <192_168_178_2> <__u___username_> <username> <__p___password_> <password> <__q___query_> '{{SELECT * FROM sys.databases;}}'
+
+# Execute the specified shell command on the target server through MSSQL
+nxc mssql <192_168_178_2> <__u___username_> <username> <__p___password_> <password> -x <whoami>
+
+# Execute the specified PowerShell command on the target server through MSSQL without retrieving output
+nxc mssql <192_168_178_2> <__u___username_> <username> <__p___password_> <password> -X <whoami> --no-output
+
+# Download a remote file from the target server and store it in the specified location
+nxc mssql <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --get-file <C__path_to_remote_file> <path_to_local_file>
+
+# Upload a local file to the specified location on the target server
+nxc mssql <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --put-file <path_to_local_file> <C__path_to_remote_file>

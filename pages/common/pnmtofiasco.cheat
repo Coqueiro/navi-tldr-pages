@@ -3,4 +3,14 @@
 
 % pnmtofiasco, common
 
+# Convert a PNM image to a compressed FIASCO file
+pnmtofiasco <path_to_file_pnm> > <path_to_file_fiasco>
 
+# Specify the input files through a pattern
+pnmtofiasco <__i___image_name_> "<img_01_09_1__pnm>" > <path_to_file_fiasco>
+
+# Specify the compression quality
+pnmtofiasco <__q___quality_> <quality_level> <path_to_file_pnm> > <path_to_file_fiasco>
+
+# Load the options to be used from the specified configuration file
+pnmtofiasco <__f___config_> <path_to_fiascorc> <path_to_file_pnm> > <path_to_file_fiasco>

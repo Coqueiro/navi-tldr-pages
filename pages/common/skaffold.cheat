@@ -3,4 +3,17 @@
 
 % skaffold, common
 
+# Build the artifacts
+skaffold build <__f___filename_> <skaffold_yaml>
 
+# Build and deploy your app every time your code changes
+skaffold dev <__f___filename_> <skaffold_yaml>
+
+# Run a pipeline file
+skaffold run <__f___filename_> <skaffold_yaml>
+
+# Run a diagnostic on Skaffold
+skaffold diagnose <__f___filename_> <skaffold_yaml>
+
+# Deploy the artifacts
+skaffold deploy <__f___filename_> <skaffold_yaml>

@@ -3,4 +3,20 @@
 
 % mhwd, linux
 
+# List available drivers
+mhwd <__l___list_>
 
+# List installed drivers
+mhwd <__li___listinstalled_>
+
+# Install a driver
+mhwd <__i___install_> <pci_usb> <driver_name>
+
+# Remove a driver
+mhwd <__r___remove_> <pci_usb> <driver_name>
+
+# Display detailed information about detected hardware
+mhwd <__l___list_> <__d___detail_>
+
+# Automatically install best available driver for the detected graphics card
+mhwd <__a___auto_> pci <free_nonfree> 0300

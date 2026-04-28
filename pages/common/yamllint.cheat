@@ -3,4 +3,26 @@
 
 % yamllint, common
 
+# Lint a file
+yamllint <path_to_file_yaml>
 
+# Lint all YAML files in a directory recursively
+yamllint <path_to_directory>
+
+# Lint a file with a specific config file
+yamllint <__c___config_file_> <path_to_config_yaml> <path_to_file_yaml>
+
+# Lint a file using a preset config (`default` or `relaxed`)
+yamllint <__d___config_data_> "{{extends: relaxed}}" <path_to_file_yaml>
+
+# Output in a parsable format (for CI integration)
+yamllint <__f___format_> parsable <path_to_file_yaml>
+
+# Lint a file with strict mode (return 2 for warnings)
+yamllint <__s___strict_> <path_to_file_yaml>
+
+# Read from `stdin`
+cat <path_to_file_yaml> | yamllint -
+
+# Display help
+yamllint <__h___help_>

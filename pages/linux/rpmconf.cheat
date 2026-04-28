@@ -3,4 +3,8 @@
 
 % rpmconf, linux
 
+# List leftover files and interactively choose what to do with each of them
+sudo rpmconf <__a___all_>
 
+# Delete orphaned `.rpmnew` and `.rpmsave` files
+sudo rpmconf <__a___all_> <__c___clean_>

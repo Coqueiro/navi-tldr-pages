@@ -3,4 +3,23 @@
 
 % hledger-print, common
 
+# Show all transactions in the default journal file
+hledger print
 
+# Show transactions, with any implied amounts or costs made explicit
+hledger print <__x___explicit_> --infer-costs
+
+# Show transactions from two specified files, with amounts converted to cost
+hledger print <__f___file_> <path_to_2023_journal> <__f___file_> <path_to_2024_journal> <__B___cost_>
+
+# Show `$` transactions this month in accounts whose name contains `food` but not `groceries`
+hledger print cur:\\$ food not:groceries date:thismonth
+
+# Show transactions of amount 50 or more, with `whole foods` in their description
+hledger print amt:'>50' desc:'whole foods'
+
+# Show cleared transactions, with `EUR` amounts rounded and with decimal commas
+hledger print <__C___cleared_> --commodity '1000, EUR' --round hard
+
+# Write transactions from `foo.journal` as a CSV file
+hledger print <__f___file_> <path_to_foo_journal> <__o___output_file_> <path_to_output_file_csv>

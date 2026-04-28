@@ -3,4 +3,26 @@
 
 % lambo-new, common
 
+# Create a new Laravel application
+lambo new <app_name>
 
+# Install the application in a specific path
+lambo new <__p___path_> <path_to_directory> <app_name>
+
+# Include authentication scaffolding
+lambo new --auth <app_name>
+
+# Include a specific frontend
+lambo new --<vue_bootstrap_react> <app_name>
+
+# Install `npm` dependencies after the project has been created
+lambo new --node <app_name>
+
+# Create a Valet site after the project has been created
+lambo new <__l___link_> <app_name>
+
+# Create a new MySQL database with the same name as the project
+lambo new --create-db --dbuser=<user> --dbpassword=<password> <app_name>
+
+# Open a specific editor after the project has been created
+lambo new <__e___editor_> "<editor>" <app_name>

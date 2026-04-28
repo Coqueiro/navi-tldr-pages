@@ -3,4 +3,17 @@
 
 % apptainer-push, linux
 
+# Push a container to the Container Library
+apptainer push <path_to_image_sif> library://<user_collection_container>:<tag>
 
+# Push a container to an OCI registry
+apptainer push <path_to_image_sif> oras://<registry_namespace_image>:<tag>
+
+# Push an unsigned container (skip signature verification)
+apptainer push <__U___allow_unsigned_> <path_to_image_sif> library://<user_collection_container>:<tag>
+
+# Push a container with a description (library only)
+apptainer push <__D___description_> "<description>" <path_to_image_sif> library://<user_collection_container>:<tag>
+
+# Display help
+apptainer push <__h___help_>

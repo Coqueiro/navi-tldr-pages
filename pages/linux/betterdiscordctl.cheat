@@ -3,4 +3,17 @@
 
 % betterdiscordctl, linux
 
+# Install BetterDiscord on Discord Stable
+sudo betterdiscordctl install
 
+# Install BetterDiscord on Discord Canary
+sudo betterdiscordctl <__f___d_flavors_> canary install
+
+# Install BetterDiscord on Discord PTB
+sudo betterdiscordctl <__f___d_flavors_> ptb install
+
+# Install BetterDiscord on Discord installed with Flatpak
+sudo betterdiscordctl <__i___d_install_> flatpak install
+
+# Install BetterDiscord on Discord installed with Snap
+sudo betterdiscordctl <__i___d_install_> snap install

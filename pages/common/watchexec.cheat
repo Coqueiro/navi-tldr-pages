@@ -3,4 +3,17 @@
 
 % watchexec, common
 
+# Call `ls -la` when any file in the current directory changes
+watchexec {{ls -la}}
 
+# Run `make` when any JavaScript, CSS, and HTML file in the current directory changes
+watchexec <__e___exts_> <js_css_html> make
+
+# Run `make` when any file in the `lib` or `src` directory changes
+watchexec <__w___watch_> <lib> <__w___watch_> <src> <make>
+
+# Call/restart `my_server` when any file in the current directory changes, sending `SIGKILL` to stop the child process
+watchexec <__r___restart_> --stop-signal <SIGKILL> <my_server>
+
+# Restart the execution of a command when any Java source file in the current directory changes, sending `SIGKILL` and only checking for updates every `10000` ms
+watchexec <__r___restart_> --stop-signal <SIGKILL> --poll 10000 <__e___exts_> <java> <command>

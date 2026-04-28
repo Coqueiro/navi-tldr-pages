@@ -3,4 +3,20 @@
 
 % alacritty, common
 
+# Start a new Alacritty process and create a window
+alacritty
 
+# Start the Alacritty daemon (without creating a window)
+alacritty --daemon
+
+# Create a new window using the already running Alacritty process
+alacritty msg create-window
+
+# Start the shell in a specific directory (also works with `alacritty msg create-window`)
+alacritty --working-directory <path_to_directory>
+
+# Execute a command in a new Alacritty window (also works with `alacritty msg create-window`)
+alacritty <__e___command_> <command>
+
+# Use an alternative configuration file (defaults to `$XDG_CONFIG_HOME/alacritty/alacritty.toml`)
+alacritty --config-file <path_to_config_toml>

@@ -3,4 +3,26 @@
 
 % sg_raw, common
 
+# Send a command to an optical SCSI device assigned to `sr0` to load the media in its tray
+sg_raw /dev/sr0 EA 00 00 00 00 01
 
+# Read data from `IFILE` instead of `stdin`
+sg_raw <__i___infile_> <path_to_IFILE> <_dev_sgX> <SCSI_command>
+
+# Skip the first `LEN` bytes of input data
+sg_raw <__k___skip_> <LEN> <_dev_sgX> <SCSI_command>
+
+# Read `SLEN` bytes of data and send to the device
+sg_raw <__s___send_> <SLEN> <_dev_sgX> <SCSI_command>
+
+# Wait up to `SEC` seconds for `sg_raw` to finish processing
+sg_raw <__t___timeout_> <SEC> <_dev_sgX> <SCSI_command>
+
+# Increase verbosity level by 1
+sg_raw <__v___verbose_> <_dev_sgX> <SCSI_command>
+
+# Dump returned data in binary form
+sg_raw <__b___binary_> <_dev_sgX> <SCSI_command>
+
+# Write data received from the specified device to an `OFILE`
+sg_raw <__o___outfile_> <path_to_OFILE> <_dev_sgX> <SCSI_command>

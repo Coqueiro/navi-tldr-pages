@@ -3,4 +3,14 @@
 
 % openclaw-doctor, common
 
+# Run diagnostics
+openclaw doctor
 
+# Run diagnostics with automatic fixes
+openclaw doctor --fix
+
+# Run diagnostics non-interactively
+openclaw doctor --non-interactive
+
+# Display help
+openclaw doctor <__h___help_>

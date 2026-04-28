@@ -3,4 +3,23 @@
 
 % lazygit, common
 
+# Open Lazygit in the current repository
+lazygit
 
+# Open Lazygit for a specific Git repository
+lazygit <__p___path_> <path_to_repository>
+
+# Start Lazygit with focus on a specific panel
+lazygit <status_branch_log_stash____>
+
+# Print the default Lazygit configuration
+lazygit <__c___config_>
+
+# Tail the Lazygit logs (useful with debug mode in another terminal)
+lazygit <__l___logs_>
+
+# Run Lazygit in debug mode
+lazygit <__d___debug_>
+
+# Print the configuration directory
+lazygit <__cd___print_config_dir_>

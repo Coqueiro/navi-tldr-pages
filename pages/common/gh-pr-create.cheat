@@ -3,4 +3,17 @@
 
 % gh-pr-create, common
 
+# Interactively create a pull request
+gh pr <_new_create_>
 
+# Create a pull request, determining the title and description from the commit messages of the current branch
+gh pr <_new_create_> <__f___fill_>
+
+# Create a draft pull request
+gh pr <_new_create_> <__d___draft_>
+
+# Create a pull request specifying the base branch, title, and description
+gh pr <_new_create_> <__B___base_> <base_branch> <__t___title_> "<title>" <__b___body_> "<body>"
+
+# Start opening a pull request in the default web browser
+gh pr <_new_create_> <__w___web_>

@@ -3,4 +3,23 @@
 
 % ansible-playbook, common
 
+# Run tasks in playbook
+ansible-playbook <playbook>
 
+# Run tasks in playbook with custom host inventory
+ansible-playbook <playbook> <__i___inventory_> <inventory_file>
+
+# Run tasks in playbook with extra variables defined via the command-line
+ansible-playbook <playbook> <__e___extra_vars_> "<variable1>=<value1> <variable2>=<value2>"
+
+# Run tasks in playbook with extra variables defined in a JSON file
+ansible-playbook <playbook> <__e___extra_vars_> "@<variables_json>"
+
+# Run tasks in playbook for the given tags
+ansible-playbook <playbook> <__t___tags_> <tag1_tag2>
+
+# Run tasks in a playbook starting at a specific task
+ansible-playbook <playbook> --start-at <task_name>
+
+# Run tasks in a playbook without making any changes (dry-run)
+ansible-playbook <playbook> <__C___check_> <__D___diff_>

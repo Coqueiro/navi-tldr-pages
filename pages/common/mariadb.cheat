@@ -3,4 +3,26 @@
 
 % mariadb, common
 
+# Connect to MariaDB as the current user
+mariadb
 
+# Connect to a specific MariaDB database
+mariadb <db_name>
+
+# Connect to a specific MariaDB database using username and password
+mariadb <__u___user_> <user_name> <__p___password_> <your_password> <db_name>
+
+# Show warnings after every statement in interactive and batch mode
+mariadb --show-warning
+
+# Display less verbose outputs (can be used multiple times to produce less output)
+mariadb <_s__ss__sss___silent>
+
+# Execute SQL statements from a script file
+mariadb < <path_to_script_sql> <db_name> > <path_to_output_tab>
+
+# Check memory and open file usage at exit
+mariadb --debug-check
+
+# Connect using a socket file for local connections
+mariadb <__S___socket_> <path_to_socket_name>

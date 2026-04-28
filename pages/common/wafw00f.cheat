@@ -3,4 +3,23 @@
 
 % wafw00f, common
 
+# Check if a website is using any WAF
+wafw00f <https___www_example_com>
 
+# Test for all detectable WAFs without stopping at the first match
+wafw00f <__a___findall_> <https___www_example_com>
+
+# Pass requests through a proxy (such as BurpSuite)
+wafw00f <__p___proxy_> <http___localhost_8080> <https___www_example_com>
+
+# Test for a specific WAF product (run `wafw00f --list` to get list of all supported WAFs)
+wafw00f <__t___test_> <Cloudflare_Cloudfront_Fastly_ZScaler____> <https___www_example_com>
+
+# Pass custom headers from a file
+wafw00f <__H___headers_> <path_to_headers_txt> <https___www_example_com>
+
+# Read target inputs from a file and show verbose output (multiple `v` for more verbosity)
+wafw00f <__i___input_> <path_to_urls_txt> -<vv>
+
+# List all WAFs that can be detected
+wafw00f <__l___list_>

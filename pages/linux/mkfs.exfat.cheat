@@ -3,4 +3,11 @@
 
 % mkfs.exfat, linux
 
+# Create an exfat filesystem inside partition Y on device X
+sudo mkfs.exfat <_dev_sdXY>
 
+# Create filesystem with a volume-name
+sudo mkfs.exfat <__L___volume_label_> <volume_name> <_dev_sdXY>
+
+# Create filesystem with a volume-id
+sudo mkfs.exfat <__U___volume_guid_> <volume_id> <_dev_sdXY>

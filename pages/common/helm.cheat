@@ -10,13 +10,13 @@ helm create <chart_name>
 helm repo add <repository_name>
 
 # List helm repositories
-helm repo {{[ls|list]}}
+helm repo <_ls_list_>
 
 # Update helm repositories
-helm repo {{[up|update]}}
+helm repo <_up_update_>
 
 # Delete a helm repository
-helm repo {{[rm|remove]}} <repository_name>
+helm repo <_rm_remove_> <repository_name>
 
 # Install a helm chart
 helm install <name> <repository_name>/<chart_name>
@@ -25,4 +25,4 @@ helm install <name> <repository_name>/<chart_name>
 helm get <chart_release_name>
 
 # Update helm dependencies
-helm {{[dep|dependency]}} {{[up|update]}}
+helm <_dep_dependency_> <_up_update_>

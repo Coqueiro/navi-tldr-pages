@@ -3,4 +3,26 @@
 
 % docker-compose-up, common
 
+# Start all services defined in the docker-compose file
+docker compose up
 
+# Start services in the background (detached mode)
+docker compose up <__d___detach_>
+
+# Start services and rebuild images before starting
+docker compose up --build
+
+# Start specific services only
+docker compose up {{service1 service2 ...}}
+
+# Start services with custom compose file
+docker compose <__f___file_> <path_to_config> up
+
+# Start services and remove orphaned containers
+docker compose up --remove-orphans
+
+# Start services with scaled instances
+docker compose up --scale <service>=<count>
+
+# Start services and show logs with timestamps
+docker compose up --timestamps

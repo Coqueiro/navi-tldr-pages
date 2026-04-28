@@ -3,4 +3,17 @@
 
 % memray, common
 
+# Run a Python file and track memory usage
+memray run <path_to_file>.py
 
+# Run a [m]odule and track memory usage
+memray run -m <module_name>
+
+# Specify an output name
+memray run <__o___output_> <path_to_output_file>.bin <path_to_file>.py
+
+# Display a summary of memory usage
+memray summary <path_to_file>.bin
+
+# Generate an HTML flamegraph
+memray flamegraph <path_to_file>.bin

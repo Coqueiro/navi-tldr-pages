@@ -16,7 +16,7 @@ terraform plan -refresh-only
 terraform plan -var '<name1>=<value1>' -var '<name2>=<value2>'
 
 # Focus Terraform's attention on only a subset of resources
-terraform plan -target {{resource_type.resource_name[instance_index]}}
+terraform plan -target <resource_type_resource_name_instance_index_>
 
 # Output a plan as JSON
 terraform plan -json

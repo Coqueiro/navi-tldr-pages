@@ -3,4 +3,11 @@
 
 % hollywood, linux
 
+# Fill the console
+hollywood
 
+# Exit `hollywood`
+<Ctrl c><Ctrl c>
+
+# Display help
+hollywood <__h___help_>

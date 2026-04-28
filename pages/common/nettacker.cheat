@@ -3,4 +3,14 @@
 
 % nettacker, common
 
+# List all available modules
+nettacker --show-all-modules
 
+# Run a port scan on targets
+nettacker <__m___modules_> port_scan <__i___targets_> <192_168_0_1_24_owasp_org_scanme_org____>
+
+# Run a port scan on specific ports and targets listed in a file (newline separated)
+nettacker <__m___modules_> port_scan <__g___ports_> <22_80_443____> <__l___targets_list_> <path_to_targets_txt>
+
+# Run ping test before scan and then run multiple scan types on target
+nettacker --ping-before-scan <__m___modules_> <port_scan_subdomain_scan_waf_scan____> <__g___ports_> <80_443> <__i___targets_> <owasp_org>

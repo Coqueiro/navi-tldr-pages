@@ -3,4 +3,26 @@
 
 % repomix, common
 
+# Output custom format
+repomix <__o___output_> <path_to_file> --style <xml_markdown_plain>
 
+# Send output to `stdout`
+repomix --stdout > <path_to_file>
+
+# Send output to `stdout`, then pipe into another program
+repomix --stdout | <less>
+
+# Output with compression
+repomix --compress
+
+# Process specific files
+repomix --include "<src______ts>" --ignore "<_____test_ts>"
+
+# Pack a repository from a branch
+repomix --remote <https___github_com_user_repo_tree_main>
+
+# Pack a repository at a specific commit
+repomix --remote <https___github_com_user_repo_commit_836abcd7335137228ad77feb28655d85712680f1>
+
+# Pack repository using shorthand
+repomix --remote <user_repo>

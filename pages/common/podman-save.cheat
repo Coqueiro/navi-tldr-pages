@@ -3,4 +3,14 @@
 
 % podman-save, common
 
+# Save an image to a `.tar` file
+podman save <__o___output_> <path_to_file_tar> <image_tag>
 
+# Save an image to `stdout`
+podman save <image_tag> > <path_to_file_tar>
+
+# Save an image with compression
+podman save <image_tag> | <_gzip_bzip2_xz_zstd_zstdchunked_> > <path_to_file_tar__gz__bz2__xz__zst__zst_>
+
+# Transfer an image to remote system with on-the-fly compression and progress bar
+podman save <image_tag> | zstd <__T___threads_> 0 --ultra | pv | ssh <username>@<remote_host> podman load

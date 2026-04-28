@@ -3,4 +3,17 @@
 
 % rbac-lookup, common
 
+# View all RBAC bindings
+rbac-lookup
 
+# View RBAC bindings that match a given expression
+rbac-lookup <search_term>
+
+# View all RBAC bindings along with the source role binding
+rbac-lookup <__o___output_> wide
+
+# View all RBAC bindings filtered by subject
+rbac-lookup <__k___kind_> <user_group_serviceaccount>
+
+# View all RBAC bindings along with IAM roles (if you are using GKE)
+rbac-lookup --gke

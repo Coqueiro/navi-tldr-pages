@@ -3,4 +3,26 @@
 
 % lsblk, linux
 
+# List all storage devices in a tree-like format
+lsblk
 
+# Also list empty devices
+lsblk <__a___all_>
+
+# Print the SIZE column in bytes rather than in a human-readable format
+lsblk <__b___bytes_>
+
+# Output info about filesystems
+lsblk <__f___fs_>
+
+# Use ASCII characters for tree formatting
+lsblk <__i___ascii_>
+
+# Output info about block-device topology
+lsblk <__t___topology_>
+
+# Exclude the devices specified by the comma-separated list of major device numbers
+lsblk <__e___exclude_> <1_7____>
+
+# Add extra information to the output using a comma-separated list of columns (omit the `+` sign to only display the specified columns)
+lsblk <__o___output_> +<NAME_ROTA_SERIAL_MODEL_TRAN_TYPE_SIZE_FSTYPE_MOUNTPOINT____>

@@ -3,4 +3,20 @@
 
 % crane-auth, common
 
+# Execute `crane auth` subcommand
+crane auth <subcommand>
 
+# Implement credential helper
+crane auth get <registry_address> <__h___help_>
+
+# Log in to a registry
+crane auth login <registry_address> <__h___help_> <__p___password_> <password> <_password_stdin> <__u___username_> <username>
+
+# Log out of a registry
+crane auth logout <registry_address> <__h___help_>
+
+# Retrieve a token for a remote repository
+crane auth token <registry_address> <__H___header_> <__h___help_> <__m___mount_> {{scope1 scope2 ...}} --push
+
+# Display help
+crane auth <__h___help_>

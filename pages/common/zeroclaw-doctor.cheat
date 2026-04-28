@@ -3,4 +3,8 @@
 
 % zeroclaw-doctor, common
 
+# Run diagnostics
+zeroclaw doctor
 
+# Display help
+zeroclaw doctor <__h___help_>

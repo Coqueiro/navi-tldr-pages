@@ -3,4 +3,23 @@
 
 % cargo-run, common
 
+# Run the default binary target
+cargo <_r_run_>
 
+# Run the specified binary
+cargo <_r_run_> --bin <name>
+
+# Run the specified example
+cargo <_r_run_> --example <name>
+
+# Activate a space or comma separated list of features
+cargo <_r_run_> <__F___features_> "{{feature1 feature2 ...}}"
+
+# Disable the default features
+cargo <_r_run_> --no-default-features
+
+# Activate all available features
+cargo <_r_run_> --all-features
+
+# Run with the given profile
+cargo <_r_run_> --profile <name>

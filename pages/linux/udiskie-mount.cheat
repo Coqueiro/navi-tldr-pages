@@ -3,4 +3,14 @@
 
 % udiskie-mount, linux
 
+# Mount all handleable devices
+udiskie-mount <__a___all_>
 
+# Mount a specific device
+udiskie-mount <_dev_sdX1>
+
+# Mount a device with verbose output
+udiskie-mount --verbose <_dev_sdX1>
+
+# Display help
+udiskie-mount --help

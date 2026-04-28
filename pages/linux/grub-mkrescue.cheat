@@ -3,4 +3,26 @@
 
 % grub-mkrescue, linux
 
+# Create a bootable ISO from the current directory and save it as `grub.iso`
+grub-mkrescue --output <grub_iso> .
 
+# Create an ISO using GRUB files from a custom directory
+grub-mkrescue --directory <_usr_lib_grub_i386_pc> --output <grub_iso> <path_to_source>
+
+# Use compression for GRUB files when building the image, setting `no` disables compression
+grub-mkrescue --compress <no_xz_gz_lzo> --output <grub_iso> <path_to_source>
+
+# Disable the GRUB command-line interface in the generated image
+grub-mkrescue --disable-cli --output <grub_iso> <path_to_source>
+
+# Preload specific GRUB modules into the image
+grub-mkrescue --modules "{{part_gpt iso9660}}" --output <grub_iso> <path_to_source>
+
+# Pass additional options directly to `xorriso`
+grub-mkrescue --output <grub_iso> -- <_volid> <volume_name> <path_to_source>
+
+# Display help
+grub-mkrescue <______help_>
+
+# Display version
+grub-mkrescue --version

@@ -3,4 +3,26 @@
 
 % apptainer, linux
 
+# Download a container from Docker Hub
+apptainer pull <path_to_image_sif> docker://<image>:<tag>
 
+# Download a container from the Container Library
+apptainer pull <path_to_image_sif> library://<user_collection_container>:<tag>
+
+# Build a container from a definition file
+apptainer build <path_to_image_sif> <path_to_definition_def>
+
+# Start an interactive shell inside a container
+apptainer shell <path_to_image_sif>
+
+# Execute a command inside a container
+apptainer exec <path_to_image_sif> <command>
+
+# Run the default runscript of a container
+apptainer run <path_to_image_sif>
+
+# Inspect a container's metadata
+apptainer inspect <path_to_image_sif>
+
+# Display help
+apptainer <__h___help_>

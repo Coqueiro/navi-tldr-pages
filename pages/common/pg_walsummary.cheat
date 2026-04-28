@@ -3,4 +3,11 @@
 
 % pg_walsummary, common
 
+# Convert a WAL summary file to text
+pg_walsummary <path_to_file>
 
+# Print one line per individual modified block (rather than ranges)
+pg_walsummary <__i___individual_> <path_to_file>
+
+# Suppress normal output (only errors)
+pg_walsummary <__q___quiet_> <path_to_file>

@@ -3,4 +3,26 @@
 
 % hashcat, common
 
+# Perform a brute-force attack (mode 3) with the default hashcat mask
+hashcat <__m___hash_type_> <hash_type_id> <__a___attack_mode_> 3 <hash_value>
 
+# Perform a brute-force attack (mode 3) with a known pattern of 4 digits
+hashcat <__m___hash_type_> <hash_type_id> <__a___attack_mode_> 3 <hash_value> "<_d_d_d_d>"
+
+# Perform a brute-force attack (mode 3) using at most 8 of all printable ASCII characters
+hashcat <__m___hash_type_> <hash_type_id> <__a___attack_mode_> 3 --increment <hash_value> "<_a_a_a_a_a_a_a_a>"
+
+# Perform a dictionary attack (mode 0) using a wordlist
+hashcat <__m___hash_type_> <hash_type_id> <__a___attack_mode_> 0 <hash_value> <path_to_wordlist_txt>
+
+# Run a dictionary attack (mode 0) using the specified wordlist, applying rule-based transformations to mutate candidate passwords
+hashcat <__m___hash_type_> <hash_type_id> <__a___attack_mode_> 0 <__r___rules_file_> <path_to_file_rule> <hash_value> <path_to_wordlist_txt>
+
+# Perform a combination attack (mode 1) using the concatenation of words from two different custom dictionaries
+hashcat <__m___hash_type_> <hash_type_id> <__a___attack_mode_> 1 <hash_value> <path_to_dictionary1_txt> <path_to_dictionary2_txt>
+
+# Show result of an already cracked hash
+hashcat --show <hash_value>
+
+# Show all example hashes
+hashcat --example-hashes

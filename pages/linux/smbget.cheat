@@ -3,4 +3,14 @@
 
 % smbget, linux
 
+# Download a file from a server
+smbget <smb___server_share_file>
 
+# Download a share or directory recursively
+smbget --recursive <smb___server_share>
+
+# Connect with a username and password
+smbget <smb___server_share_file> <__U___user_> <username_password>
+
+# Require encrypted transfers
+smbget <smb___server_share_file> <__e___encrypt_>

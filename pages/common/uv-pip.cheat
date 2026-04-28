@@ -3,4 +3,26 @@
 
 % uv-pip, common
 
+# Install a package
+uv pip install <package>
 
+# Install packages from a requirements file
+uv pip install <__r___requirements_> <requirements_txt>
+
+# Install a package with a specific version
+uv pip install <package__1_2_3>
+
+# Uninstall a package
+uv pip uninstall <package>
+
+# Lock dependencies from `pyproject.toml` to `requirements.txt`
+uv pip compile pyproject.toml <__o___output_file_> requirements.txt
+
+# List installed packages
+uv pip list
+
+# Show information about an installed package
+uv pip show <package>
+
+# Sync environment with a requirements file (install/uninstall to match exactly)
+uv pip sync <requirements_txt>

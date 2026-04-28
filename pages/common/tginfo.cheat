@@ -3,4 +3,8 @@
 
 % tginfo, common
 
+# Search for all files inside a Telegram conversation based on their filename or caption
+tginfo <__n___name_> <session_name> <__u___username_> <chat_id> <__s___search_> "<query>"
 
+# Get info for all media inside a Telegram chat
+tginfo <__n___name_> <session_name> <__u___username_> <chat_id>

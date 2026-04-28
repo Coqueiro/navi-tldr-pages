@@ -3,4 +3,11 @@
 
 % conda-run, common
 
+# Run a command in the currently active environment
+conda run <command>
 
+# Target an environment by name
+conda run <__n___name_> <environment_name> <command>
+
+# Target an environment by its path (i.e. prefix)
+conda run <__p___prefix_> <path_to_env> <command>

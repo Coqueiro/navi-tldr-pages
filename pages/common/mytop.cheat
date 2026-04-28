@@ -7,10 +7,10 @@
 mytop
 
 # Connect with a specified username and password
-mytop {{[-u|-user]}} <user> {{[-p|-password]}} <password>
+mytop <__u__user_> <user> <__p__password_> <password>
 
 # Connect with a specified username (the user will be prompted for a password)
-mytop {{[-u|-user]}} <user> -prompt
+mytop <__u__user_> <user> -prompt
 
 # Do not show any idle (sleeping) threads
-mytop {{[-u|-user]}} <user> {{[-p|-password]}} <password> --noidle
+mytop <__u__user_> <user> <__p__password_> <password> --noidle

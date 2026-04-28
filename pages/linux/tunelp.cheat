@@ -3,4 +3,17 @@
 
 % tunelp, linux
 
+# Check the status of a parallel port device
+tunelp <__s___status_> <_dev_lp0>
 
+# Reset a given parallel port
+tunelp <__r___reset_> <_dev_lp0>
+
+# Use a given IRQ for a device, each one representing an interrupt line
+tunelp <__i___irq_> 5 <_dev_lp0>
+
+# Try a given number of times to output a character to the printer before sleeping for a given time
+tunelp <__c___chars_> <times> <__t___time_> <time_in_centiseconds> <_dev_lp0>
+
+# Enable or disable aborting on error (disabled by default)
+tunelp <__a___abort_> <on_off>

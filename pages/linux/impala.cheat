@@ -3,4 +3,17 @@
 
 % impala, linux
 
+# Launch `impala` in station mode
+impala
 
+# Launch `impala` in Access Point mode
+impala <__m___mode_> ap
+
+# Switch between different sections
+{{<Tab>|<Shift Tab>}}
+
+# Select a network to connect to
+<Space>
+
+# Display hotkeys
+<?>

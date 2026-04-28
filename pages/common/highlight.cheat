@@ -3,4 +3,17 @@
 
 % highlight, common
 
+# Produce a complete HTML document from a source code file
+highlight <__o___out_format_> <html> <__s___style_> <theme_name> <__S___syntax_> <language> <path_to_source_code>
 
+# Produce an HTML fragment, suitable for inclusion in a larger document
+highlight <__o___out_format_> <html> <__f___fragment_> <__S___syntax_> <language> <source_file>
+
+# Inline the CSS styling in every tag
+highlight <__o___out_format_> <html> --inline-css <__S___syntax_> <language> <source_file>
+
+# List all supported languages, themes, or plugins
+highlight --list-scripts <langs_themes_plugins>
+
+# Print a CSS stylesheet for a theme
+highlight <__o___out_format_> <html> --print-style <__s___style_> <theme_name> <__S___syntax_> <language> --stdout

@@ -3,4 +3,17 @@
 
 % doggo, common
 
+# Perform a simple DNS lookup
+doggo <example_com>
 
+# Query MX records using a specific nameserver
+doggo MX <codeberg_org> @<1_1_1_2>
+
+# Use DNS over HTTPS
+doggo <example_com> @<https___dns_quad9_net_dns_query>
+
+# Output in the JSON format
+doggo <example_com> <__J___json_> | jq '<_responses_0__answers___address>'
+
+# Perform a reverse DNS lookup
+doggo <__x___reverse_> <8_8_4_4> --short

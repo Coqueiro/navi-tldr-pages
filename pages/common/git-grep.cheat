@@ -7,7 +7,7 @@
 git grep "<search_string>"
 
 # Search for a string in files matching a glob pattern in the current `HEAD`
-git grep "<search_string>" -- "{{*.ext}}"
+git grep "<search_string>" -- "<__ext>"
 
 # Search for a string, including submodules
 git grep --recurse-submodules "<search_string>"

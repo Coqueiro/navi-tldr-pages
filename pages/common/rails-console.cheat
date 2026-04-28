@@ -3,4 +3,14 @@
 
 % rails-console, common
 
+# Start the Rails console
+rails console
 
+# Start the Rails console and roll back all data modifications on exit
+rails console <__s___sandbox_>
+
+# Start the Rails console on a specified environment
+rails console <__e___environment_> <dev_test_production____>
+
+# Display help
+rails console <__h___help_>

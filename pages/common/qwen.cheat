@@ -3,4 +3,23 @@
 
 % qwen, common
 
+# Start a REPL session to chat interactively
+qwen
 
+# Send the output of another command to Qwen and exit immediately
+{{echo "Summarize the history of Rome"}} | qwen <__p___prompt_>
+
+# Override the default model (default: qwen3-coder-max)
+qwen <__m___model_> <model_name>
+
+# Run inside a sandbox container
+qwen <__s___sandbox_>
+
+# Execute a prompt then stay in interactive mode
+qwen <__i___prompt_interactive_> "{{Give me an example of recursion in Python}}"
+
+# Include all files in context
+qwen <__a___all_files_>
+
+# Show memory usage in status bar
+qwen --show-memory-usage

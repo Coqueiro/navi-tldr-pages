@@ -3,4 +3,8 @@
 
 % cfdisk, linux
 
+# Start the partition manipulator with a specific device
+sudo cfdisk <_dev_sdX>
 
+# Create a new partition table for a specific device and manage it
+sudo cfdisk <__z___zero_> <_dev_sdX>

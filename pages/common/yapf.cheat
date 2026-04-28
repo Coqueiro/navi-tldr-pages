@@ -3,4 +3,8 @@
 
 % yapf, common
 
+# Display a diff of the changes that would be made, without making them (dry-run)
+yapf <__d___diff_> <path_to_file>
 
+# Recursively format all Python files in a directory, concurrently
+yapf {{[-ri|--recursive --in-place]}} --style <pep8> <__p___parallel_> <path_to_directory>

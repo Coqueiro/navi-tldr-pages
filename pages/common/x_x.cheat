@@ -3,4 +3,11 @@
 
 % x_x, common
 
+# View an XLSX or CSV file
+x_x <file_xlsx_file_csv>
 
+# View an XLSX or CSV file, using the first row as table headers
+x_x <__h___heading_> <0> <file_xlsx_file_csv>
+
+# View a CSV file with unconventional delimiters
+x_x <__d___delimiter_> '<_>' <__q___quotechar_> '<_>' <file_csv>

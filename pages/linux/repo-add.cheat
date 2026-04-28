@@ -3,4 +3,17 @@
 
 % repo-add, linux
 
+# Create an empty repository
+repo-add <path_to_database_db_tar_gz>
 
+# Add packages to the repository
+repo-add <path_to_database_db_tar_gz> {{package1.pkg.tar.zst package2.pkg.tar.zst ...}}
+
+# Add all package binaries in the current directory and remove any outdated package files
+repo-add <__R___remove_> <path_to_database_db_tar_gz> <__pkg_tar_zst>
+
+# Add all package binaries in the current directory in silent mode except for warning and error messages
+repo-add <__q___quiet_> <path_to_database_db_tar_gz> <__pkg_tar_zst>
+
+# Add all package binaries in the current directory without showing color
+repo-add --nocolor <path_to_database_db_tar_gz> <__pkg_tar_zst>

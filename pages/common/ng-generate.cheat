@@ -4,25 +4,25 @@
 % ng-generate, common
 
 # Generate AI configuration files for Angular project
-ng {{[g|generate]}} ai-config
+ng <_g_generate_> ai-config
 
 # Create a new service
-ng {{[g|generate]}} {{[s|service]}} <service_name>
+ng <_g_generate_> <_s_service_> <service_name>
 
 # Generate a new application within the workspace
-ng {{[g|generate]}} {{[app|application]}} <app_name>
+ng <_g_generate_> <_app_application_> <app_name>
 
 # Create a new class
-ng {{[g|generate]}} {{[cl|class]}} <class_name>
+ng <_g_generate_> <_cl_class_> <class_name>
 
 # Create a new component
-ng {{[g|generate]}} {{[c|component]}} <component_name>
+ng <_g_generate_> <_c_component_> <component_name>
 
 # Create a new directive
-ng {{[g|generate]}} {{[d|directive]}} <directive_name>
+ng <_g_generate_> <_d_directive_> <directive_name>
 
 # Create a new enum
-ng {{[g|generate]}} {{[e|enum]}} <enum_name>
+ng <_g_generate_> <_e_enum_> <enum_name>
 
 # Create a new pipe
-ng {{[g|generate]}} {{[p|pipe]}} <pipe_name>
+ng <_g_generate_> <_p_pipe_> <pipe_name>

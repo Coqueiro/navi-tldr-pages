@@ -3,4 +3,17 @@
 
 % docker-container-logs, common
 
+# Print logs from a container
+docker {{[logs|container logs]}} <name_id>
 
+# Print logs and follow them
+docker {{[logs|container logs]}} <name_id> <__f___follow_>
+
+# Print last 5 lines
+docker {{[logs|container logs]}} <name_id> <__n___tail_> 5
+
+# Print logs and append them with timestamps
+docker {{[logs|container logs]}} <name_id> <__t___timestamps_>
+
+# Print logs from a certain point in time of container execution (i.e. 23m, 10s, 2013-01-02T13:23:37)
+docker {{[logs|container logs]}} <name_id> --until <time>

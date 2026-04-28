@@ -3,4 +3,8 @@
 
 % switch_root, linux
 
+# Move `/proc`, `/dev`, `/sys`, and `/run` to the specified filesystem, use this filesystem as the new root and start the specified init process
+switch_root <new_root> <_sbin_init>
 
+# Display help
+switch_root <__h___help_>

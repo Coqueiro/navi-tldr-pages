@@ -3,4 +3,20 @@
 
 % pio-run, common
 
+# List all available project targets
+pio run --list-targets
 
+# List all available project targets of a specific environment
+pio run --list-targets <__e___environment_> <environment>
+
+# Run all targets
+pio run
+
+# Run all targets of specified environments
+pio run <__e___environment_> <environment1> <__e___environment_> <environment2>
+
+# Run specified targets
+pio run <__t___target_> <target1> <__t___target_> <target2>
+
+# Run the targets of a specified configuration file
+pio run <__c___project_conf_> <path_to_platformio_ini>

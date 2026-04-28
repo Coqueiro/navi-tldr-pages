@@ -3,4 +3,14 @@
 
 % nxc-rdp, common
 
+# Search for valid credentials by trying out every combination in the specified lists of usernames and passwords
+nxc rdp <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt>
 
+# Take a screenshot after waiting the for specified number of seconds
+nxc rdp <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --screenshot --screentime <10>
+
+# Take a screenshot in the specified resolution
+nxc rdp <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --screenshot --res <1024x768>
+
+# Take a screenshot of the RDP login prompt if Network Level Authentication is disabled
+nxc rdp <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --nla-screenshot

@@ -3,4 +3,26 @@
 
 % tar, common
 
+# [c]reate an archive and write it to a [f]ile
+tar cf <path_to_target_tar> {{path/to/file1 path/to/file2 ...}}
 
+# [c]reate a g[z]ipped archive and write it to a [f]ile
+tar czf <path_to_target_tar_gz> {{path/to/file1 path/to/file2 ...}}
+
+# [c]reate a g[z]ipped (compressed) archive from a directory using relative paths
+tar czf <path_to_target_tar_gz> <__C___directory_> <path_to_directory> .
+
+# E[x]tract a (compressed) archive [f]ile into the current directory [v]erbosely
+tar xvf <path_to_source_tar__gz__bz2__xz_>
+
+# E[x]tract a (compressed) archive [f]ile into the target directory
+tar xf <path_to_source_tar__gz__bz2__xz_> <__C___directory_> <path_to_directory>
+
+# [c]reate a compressed archive and write it to a [f]ile, using the file extension to [a]utomatically determine the compression program
+tar caf <path_to_target_tar_xz> {{path/to/file1 path/to/file2 ...}}
+
+# Lis[t] the contents of a tar [f]ile [v]erbosely
+tar tvf <path_to_source_tar>
+
+# E[x]tract files matching a pattern from an archive [f]ile
+tar xf <path_to_source_tar> --wildcards "<__html>"

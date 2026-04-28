@@ -3,4 +3,8 @@
 
 % a2dismod, linux
 
+# Disable a module
+sudo a2dismod <module>
 
+# Don't show informative messages
+sudo a2dismod <__q___quiet_> <module>

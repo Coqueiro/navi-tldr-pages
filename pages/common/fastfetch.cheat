@@ -3,4 +3,23 @@
 
 % fastfetch, common
 
+# Display system information
+fastfetch
 
+# Display full system information with all the modules enabled
+fastfetch <__c___config_> all
+
+# Load a custom configuration file
+fastfetch <__c___config_> <path_to_config_file>
+
+# Fetch a specific structure
+fastfetch <__s___structure_> <os_kernel_de_cpu_gpu>
+
+# Use a specific logo
+fastfetch <__l___logo_> <logo>
+
+# Display system information without a logo
+fastfetch <__l___logo_> none
+
+# Use a specific color for the keys and title
+fastfetch --color <blue>

@@ -3,4 +3,14 @@
 
 % pulumi-login, common
 
+# Log in to the managed Pulumi Cloud backend, defaults to <https://api.pulumi.com>
+pulumi login
 
+# Log in to a self-hosted Pulumi Cloud backend on a specified URL
+pulumi login <url>
+
+# Use Pulumi locally, independent of a cloud backend
+pulumi login <__l___local_>
+
+# Display help
+pulumi login <__h___help_>

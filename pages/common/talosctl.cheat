@@ -3,4 +3,20 @@
 
 % talosctl, common
 
+# Apply a config to a fresh node
+talosctl apply-config <__i___insecture_> <__n___nodes_> <control_plane_ip> <__f___file_> <path_to_control_plane_yaml>
 
+# Bootstrap the `etcd` cluster on a node
+talosctl bootstrap <__n___nodes_> <node_ip>
+
+# Edit an API resource
+talosctl edit <resource_to_edit> <__n___nodes_> <node_ip>
+
+# Get resources
+talosctl get <resource_to_get> <__n___nodes_> <node_ip>
+
+# Download the admin kube configuration from a node
+talosctl kubeconfig <__n___nodes_> <node_ip>
+
+# Reset a node
+talosctl reset <__n___nodes_> <node_ip>

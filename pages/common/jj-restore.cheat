@@ -3,4 +3,11 @@
 
 % jj-restore, common
 
+# Restore files from a revision into another revision
+jj restore <__f___from_> <revset> <__t___into_> <revset> <filesets>
 
+# Undo the changes in a revision as compared to the merge of its parents
+jj restore <__c___changes_in_> <revset> <filesets>
+
+# Interactively choose what parts to restore
+jj restore <__f___from_> <revset> <__t___into_> <revset> <__i___interactive_>

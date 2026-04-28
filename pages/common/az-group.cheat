@@ -3,4 +3,14 @@
 
 % az-group, common
 
+# Create a new resource group
+az group create <__n___name_> <name> <__l___location_> <location>
 
+# Check if a resource group exists
+az group exists <__n___name_> <name>
+
+# Delete a resource group
+az group delete <__n___name_> <name>
+
+# Wait until a condition of the resource group is met
+az group wait <__n___name_> <name> --<created_deleted_exists_updated>

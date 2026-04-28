@@ -3,4 +3,20 @@
 
 % jj-tag-list, common
 
+# List all tags
+jj tag <_l_list_>
 
+# List tags matching a pattern
+jj tag <_l_list_> "<pattern>"
+
+# List tags matching a substring pattern
+jj tag <_l_list_> "<substring_release>"
+
+# List tags sorted by committer date (newest first)
+jj tag <_l_list_> --sort committer-date-
+
+# List tags sorted by name in descending order
+jj tag <_l_list_> --sort name-
+
+# List tags with a custom template
+jj tag <_l_list_> <__T___template_> "<template>"

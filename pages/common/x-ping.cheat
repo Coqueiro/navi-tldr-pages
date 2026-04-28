@@ -3,4 +3,17 @@
 
 % x-ping, common
 
+# Ping a specific host (defaults to bing.com if omitted)
+x ping <host>
 
+# Show ping results as a heatmap
+x ping <__m___heatmap_> <host>
+
+# Show ping results as a bar graph
+x ping <__b___bar_> <host>
+
+# Process ping results and display as heatmap
+ping <host> | x ping vis <__m___heatmap_>
+
+# Display help
+x ping <__h___help_>

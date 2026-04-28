@@ -3,4 +3,20 @@
 
 % docker-search, common
 
+# Search for Docker images by name or keyword
+docker search <keyword>
 
+# Search for images and only show official ones
+docker search <__f___filter_> is-official=true <keyword>
+
+# Search for images and only show automated builds
+docker search <__f___filter_> is-automated=true <keyword>
+
+# Search for images with a minimum number of stars
+docker search <__f___filter_> stars=<number> <keyword>
+
+# Limit the number of results
+docker search --limit <number> <keyword>
+
+# Customize the output format
+docker search <__f___format_> "<_Name>: <_Description>" <keyword>

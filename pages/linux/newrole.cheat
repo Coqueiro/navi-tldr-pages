@@ -3,4 +3,17 @@
 
 % newrole, linux
 
+# Start a new shell with a specific SELinux role
+newrole <__r___role_> <role_name>
 
+# Start a new shell with a specific SELinux type
+newrole <__t___type_> <type_name>
+
+# Start a new shell with a specific SELinux level (format: `s0-s0:c0.c1023` where levels range from `s0` to `s15`, `-` indicates level range, categories start with `c`, `:` separates level from categories, `.` indicates category range)
+newrole <__l___level_> <s0_s0_c0_c1023>
+
+# Display the current SELinux context
+id <__Z___context_>
+
+# Start a new shell with both role and type
+newrole <__r___role_> <role_name> <__t___type_> <type_name>

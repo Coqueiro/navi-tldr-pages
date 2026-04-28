@@ -3,4 +3,23 @@
 
 % nextclade, common
 
+# Align sequences to user provided reference, outputting the alignment to a file
+nextclade run <path_to_sequences_fa> <__r___input_ref_> <path_to_reference_fa> <__o___output_fasta_> <path_to_alignment_fa>
 
+# Create a TSV report, auto-downloading the latest dataset
+nextclade run <path_to_fasta> <__d___dataset_name_> <dataset_name> <__t___output_tsv_> <path_to_report_tsv>
+
+# List all available datasets
+nextclade dataset list
+
+# Download the latest SARS-CoV-2 dataset
+nextclade dataset get <__n___name_> sars-cov-2 <__o___output_dir_> <path_to_directory>
+
+# Use a downloaded dataset, producing all outputs
+nextclade run <__D___input_dataset_> <path_to_dataset_directory> <__O___output_all_> <path_to_output_directory> <path_to_sequences_fasta>
+
+# Run on multiple files
+nextclade run <__d___dataset_name_> <dataset_name> <__t___output_tsv_> <path_to_output_tsv> -- {{path/to/input_fasta_1 path/to/input_fasta_2 ...}}
+
+# Try reverse complement if sequence does not align
+nextclade run --retry-reverse-complement <__d___dataset_name_> <dataset_name> <__t___output_tsv_> <path_to_output_tsv> <path_to_input_fasta>

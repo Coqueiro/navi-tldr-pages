@@ -3,4 +3,11 @@
 
 % fadvise, linux
 
+# Preload a file or directory into cache
+fadvise <__a___advice_> willneeded <path_to_file_or_directory>
 
+# Suggest dropping a file from cache
+fadvise <path_to_file>
+
+# Display help
+fadvise <__h___help_>

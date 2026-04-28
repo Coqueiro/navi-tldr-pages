@@ -4,4 +4,4 @@
 % qm-rollback, linux
 
 # Rollback the state of a specific VM to a specified snapshot
-qm {{[ro|rollback]}} <100> <snap_name>
+qm <_ro_rollback_> <100> <snap_name>

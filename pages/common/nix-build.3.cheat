@@ -3,4 +3,14 @@
 
 % nix-build.3, common
 
+# Build a package from nixpkgs, symlinking the result to `./result`
+nix build <nixpkgs_pkg>
 
+# Build a package from a flake in the current directory, showing the build logs in the process
+nix build <__L___print_build_logs_> <__pkg>
+
+# Build the default package from a flake in some directory
+nix build <path_to_directory>
+
+# Build a package without making the `result` symlink, instead printing the store path to the `stdout`
+nix build --no-link --print-out-paths

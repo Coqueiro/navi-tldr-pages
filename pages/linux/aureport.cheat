@@ -3,4 +3,23 @@
 
 % aureport, linux
 
+# Display a summary of auditd events
+sudo aureport
 
+# Generate a summary of login events
+sudo aureport <__l___login_>
+
+# List all syscall reports
+sudo aureport <__s___syscall_>
+
+# Generate a summary of executable events
+sudo aureport <__x___executable_>
+
+# Show a summary of events for a specific time range
+sudo aureport <__ts___start_> <start_time> <__te___end_> <end_time>
+
+# List all audit files and the time range of events they cover
+sudo aureport <__t___log_time_>
+
+# Display help
+aureport --help

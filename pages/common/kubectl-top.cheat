@@ -3,4 +3,23 @@
 
 % kubectl-top, common
 
+# Get the resource consumption of all nodes
+kubectl top <_no_nodes_>
 
+# Get resource consumption of a specific node
+kubectl top <_no_nodes_> <node_name>
+
+# Get resource consumption of all pods
+kubectl top <_po_pods_>
+
+# Get resource consumption of a specific pod
+kubectl top <_po_pods_> <pod_name>
+
+# Get resource consumption of all pods in a namespace
+kubectl top <_po_pods_> <__n___namespace_> <namespace_name>
+
+# Get resource consumption of all containers in a pod
+kubectl top <_po_pods_> --containers
+
+# Get resource consumption of all pods with the specified label
+kubectl top <_po_pods_> <__l___selector_> <key_value>

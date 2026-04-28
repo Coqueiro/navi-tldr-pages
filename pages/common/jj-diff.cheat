@@ -3,4 +3,17 @@
 
 % jj-diff, common
 
+# Show changes of current revision
+jj diff
 
+# Show changes of given revsets (e.g. `B::D`, `A..D`, `B|C|D`, etc.)
+jj diff <__r___revisions_> <revsets>
+
+# Show changes from given revision to given revision
+jj diff <__f___from_> <from_revset> <__t___to_> <to_revset>
+
+# Show diff statistics
+jj diff --stat
+
+# Show a Git-format diff
+jj diff --git

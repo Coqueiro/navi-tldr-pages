@@ -3,4 +3,14 @@
 
 % dumpcap, common
 
+# Display available interfaces
+dumpcap <__D___list_interfaces_>
 
+# Capture packets on a specific interface
+dumpcap <__i___interface_> <1>
+
+# Capture packets to a specific location
+dumpcap <__i___interface_> <1> -w <path_to_output_file_pcapng>
+
+# Write to a ring buffer with a specific max file limit of a specific size
+dumpcap <__i___interface_> <1> -w <path_to_output_file_pcapng> <__b___ring_buffer_> filesize:<500000> <__b___ring_buffer_> files:<10>

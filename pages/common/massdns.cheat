@@ -3,4 +3,20 @@
 
 % massdns, common
 
+# Resolve `A` records for domains in a file using specified resolvers
+massdns <__r___resolvers_> <path_to_resolvers_txt> <path_to_domains_txt>
 
+# Resolve a specific record type and write results to a file
+massdns <__r___resolvers_> <path_to_resolvers_txt> <__t___type_> <A_AAAA_NS_MX_TXT> <__w___outfile_> <path_to_output_txt> <path_to_domains_txt>
+
+# Resolve domains with simple text output format
+massdns <__r___resolvers_> <path_to_resolvers_txt> <__o___output_> S <path_to_domains_txt>
+
+# Resolve domains with JSON output format
+massdns <__r___resolvers_> <path_to_resolvers_txt> <__o___output_> J <path_to_domains_txt>
+
+# Resolve domains with a custom number of concurrent lookups
+massdns <__r___resolvers_> <path_to_resolvers_txt> <__s___hashmap_size_> <10000> <path_to_domains_txt>
+
+# Resolve domains in quiet mode, suppressing status output
+massdns <__r___resolvers_> <path_to_resolvers_txt> <__q___quiet_> <path_to_domains_txt>

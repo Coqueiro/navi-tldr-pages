@@ -3,4 +3,26 @@
 
 % mocp, linux
 
+# Launch the MOC terminal UI
+mocp
 
+# Launch the MOC terminal UI in a specific directory
+mocp <path_to_directory>
+
+# Start the MOC server in the background, without launching the MOC terminal UI
+mocp <__S___server_>
+
+# Add a specific song to the play queue while MOC is in the background
+mocp <__q___enqueue_> <path_to_audio_file>
+
+# Add songs recursively to the play queue while MOC is in the background
+mocp <__a___append_> <path_to_directory>
+
+# Clear the play queue while MOC is in the background
+mocp <__c___clear_>
+
+# Play or stop the currently queued song while MOC is in the background
+mocp --<play_stop>
+
+# Stop the MOC server while it's in the background
+mocp <__x___exit_>

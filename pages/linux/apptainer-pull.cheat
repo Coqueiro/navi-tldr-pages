@@ -3,4 +3,26 @@
 
 % apptainer-pull, linux
 
+# Pull a container from Docker Hub
+apptainer pull <path_to_image_sif> docker://<image>:<tag>
 
+# Pull a container from the Container Library
+apptainer pull <path_to_image_sif> library://<user_collection_container>:<tag>
+
+# Pull a container from an OCI registry
+apptainer pull <path_to_image_sif> oras://<registry_namespace_image>:<tag>
+
+# Pull a container for a specific architecture
+apptainer pull --arch <amd64_arm64_ppc64le> <path_to_image_sif> library://<image>:<tag>
+
+# Force overwrite an existing image file
+apptainer pull <__F___force_> <path_to_image_sif> docker://<image>:<tag>
+
+# Pull a container as a writable sandbox directory
+apptainer pull --sandbox <path_to_directory> docker://<image>:<tag>
+
+# Pull a container without using the cache
+apptainer pull --disable-cache <path_to_image_sif> docker://<image>:<tag>
+
+# Display help
+apptainer pull <__h___help_>

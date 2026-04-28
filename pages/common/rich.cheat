@@ -3,4 +3,23 @@
 
 % rich, common
 
+# Display a file with syntax highlighting
+rich <path_to_file_py>
 
+# Add line numbers, and indentation guides
+rich <path_to_file_py> --line-numbers --guides
+
+# Apply a theme
+rich <path_to_file_py> --theme <monokai>
+
+# Display a file in an interactive pager
+rich <path_to_file_py> --pager
+
+# Display contents from a URL
+rich <https___raw_githubusercontent_com_Textualize_rich_cli_main_README_md> --markdown --pager
+
+# Export a file as HTML
+rich <path_to_file_md> --export-html <path_to_file_html>
+
+# Display text with formatting tags, custom alignment, and line width
+rich --print "{{Hello [green on black]Stylized[/green on black] [bold]World[/bold]}}" --<left_center_right> --width <10>

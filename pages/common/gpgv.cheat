@@ -3,4 +3,14 @@
 
 % gpgv, common
 
+# Verify a clearsigned or inline-signed file (the signature is embedded in the file itself)
+gpgv <path_to_file_asc>
 
+# Verify a detached signature (`.asc` or `.sig`) against its corresponding data file
+gpgv <path_to_signature_asc> <path_to_data_file>
+
+# Verify a detached signature using a specific public keyring or exported public key file (`.gpg` or `.kbx`)
+gpgv --keyring <path_to_pubkey_or_keyring_gpg> <path_to_signature_asc> <path_to_data_file>
+
+# Verify a detached signature using a specific public key file in plain text format (`.txt`)
+gpg --dearmor <__o___output_> <path_to_pubkey_gpg> <path_to_pubkey_txt> && gpgv --keyring <path_to_pubkey_gpg> <path_to_signature_asc> <path_to_data_file>

@@ -3,4 +3,17 @@
 
 % whatis, linux
 
+# Display a description from a man page
+whatis <command>
 
+# Don't cut the description off at the end of the line
+whatis <__l___long_> <command>
+
+# Display descriptions for all commands matching a glob
+whatis <__w___wildcard_> <net_>
+
+# Search man page descriptions with a `regex`
+whatis <__r___regex_> '<wish_0_9____0_9_>'
+
+# Display descriptions in a specific language
+whatis <__L___locale_> <en> <command>

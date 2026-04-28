@@ -3,4 +3,26 @@
 
 % virsh, common
 
+# Connect to a hypervisor session interactively
+virsh <__c___connect_> <qemu____system_qemu____session_xen____system_lxc____system____>
 
+# List all domains
+virsh <__c___connect_> <URI> list --all
+
+# Activate a network named `default`
+virsh net-start <default>
+
+# Create a domain from a configuration file
+virsh create <path_to_config_file_xml>
+
+# Edit a domain's configuration file (editor can be changed with `$EDITOR` or `$VISUAL`)
+virsh edit <domain>
+
+# Start/reboot/reset/shutdown/destroy/suspend/resume a domain
+virsh <start_reboot_reset_shutdown_destroy_suspend_resume> <domain>
+
+# Save the current running state of a domain (RAM, but not disk state) to a state file (domain will be powered off)
+virsh save <domain> <path_to_state_file>
+
+# Remove storage and snapshots of a stopped domain
+virsh undefine <domain> --remove-all-storage --snapshots-metadata

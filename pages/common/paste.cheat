@@ -3,4 +3,17 @@
 
 % paste, common
 
+# Join all the lines into a single line, using `TAB` as delimiter
+paste <__s___serial_> <path_to_file>
 
+# Join all the lines into a single line, using the specified delimiter
+paste <__s___serial_> <__d___delimiters_> <delimiter> <path_to_file>
+
+# Merge two files side by side, each in its column, using `TAB` as delimiter
+paste <path_to_file1> <path_to_file2>
+
+# Merge two files side by side, each in its column, using the specified delimiter
+paste <__d___delimiters_> <delimiter> <path_to_file1> <path_to_file2>
+
+# Merge two files, with lines added alternatively
+paste <__d___delimiters_> '\n' <path_to_file1> <path_to_file2>

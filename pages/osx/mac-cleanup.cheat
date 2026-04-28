@@ -3,4 +3,17 @@
 
 % mac-cleanup, osx
 
+# Start the cleanup process
+mac-cleanup
 
+# Open the module configuration screen
+mac-cleanup <__c___configure_>
+
+# Perform a dry-run, showing what will be removed without actually deleting it
+mac-cleanup <__n___dry_run_>
+
+# Specify the directory with custom cleanup modules
+mac-cleanup <__p___custom_path_> <path_to_directory>
+
+# Automatically acknowledge all warnings and continue with force
+mac-cleanup <__f___force_>

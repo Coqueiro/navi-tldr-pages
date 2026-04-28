@@ -3,4 +3,11 @@
 
 % pulumi-console, common
 
+# Open the current stack
+pulumi console
 
+# Open the console for a specific stack
+pulumi console <__s___stack_> <stack_name>
+
+# Display help
+pulumi console <__h___help_>

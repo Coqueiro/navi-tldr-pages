@@ -3,4 +3,11 @@
 
 % wrk, common
 
+# Run a benchmark for `30` seconds, using `12` threads, and keeping `400` HTTP connections open
+wrk <__t___threads_> <12> <__c___connections_> <400> <__d___duration_> <30s> "<http___127_0_0_1_8080_index_html>"
 
+# Run a benchmark with a custom header
+wrk <__t___threads_> <2> <__c___connections_> <5> <__d___duration_> <5s> <__H___header_> "{{Host: example.com}}" "<http___example_com_index_html>"
+
+# Run a benchmark with a request timeout of `2` seconds
+wrk <__t___threads_> <2> <__c___connections_> <5> <__d___duration_> <5s> --timeout <2s> "<http___example_com_index_html>"

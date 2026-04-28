@@ -3,4 +3,11 @@
 
 % elasticsearch-saml-metadata, common
 
+# Generate SAML metadata for a specific realm and print it to `stdout`
+elasticsearch-saml-metadata --realm <realm_name>
 
+# Generate SAML metadata and write it to a specific file
+elasticsearch-saml-metadata --realm <realm_name> --out <path_to_file_xml>
+
+# Display help
+elasticsearch-saml-metadata <__h___help_>

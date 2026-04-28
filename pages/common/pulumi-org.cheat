@@ -3,4 +3,17 @@
 
 % pulumi-org, common
 
+# Display the default organization and current backend
+pulumi org
 
+# Display the default organization
+pulumi org get-default
+
+# Set the default organization
+pulumi org set-default <organization_name>
+
+# Search for resources in Pulumi Cloud using Pulumi AI with a plaintext natural language query
+pulumi org search ai <__q___query_> "{{show me all load balancers in my organization}}"
+
+# Display help
+pulumi org <__h___help_>

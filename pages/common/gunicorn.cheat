@@ -3,4 +3,20 @@
 
 % gunicorn, common
 
+# Run Python web app
+gunicorn <import_path_app_object>
 
+# Listen on port 8080 on localhost
+gunicorn <__b___bind_> <localhost>:<8080> <import_path_app_object>
+
+# Turn on live reload
+gunicorn --reload <import_path_app_object>
+
+# Use 4 worker processes for handling requests
+gunicorn <__w___workers_> <4> <import_path_app_object>
+
+# Use 4 worker threads for handling requests
+gunicorn --threads <4> <import_path_app_object>
+
+# Run app over HTTPS
+gunicorn --certfile <cert_pem> --keyfile <key_pem> <import_path_app_object>

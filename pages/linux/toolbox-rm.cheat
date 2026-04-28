@@ -3,4 +3,11 @@
 
 % toolbox-rm, linux
 
+# Remove a Toolbx container
+toolbox rm <container_name>
 
+# Remove all Toolbx containers
+toolbox rm <__a___all_>
+
+# Force the removal of a currently active Toolbx container
+toolbox rm <__f___force_> <container_name>

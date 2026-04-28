@@ -3,4 +3,20 @@
 
 % rm, common
 
+# Remove specific files
+rm {{path/to/file1 path/to/file2 ...}}
 
+# Remove specific files ignoring nonexistent ones
+rm <__f___force_> {{path/to/file1 path/to/file2 ...}}
+
+# Remove specific files interactively prompting before each removal
+rm <__i___interactive_> {{path/to/file1 path/to/file2 ...}}
+
+# Remove specific files printing info about each removal
+rm <__v___verbose_> {{path/to/file1 path/to/file2 ...}}
+
+# Remove specific files and directories recursively
+rm <__r___recursive_> {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+
+# Remove empty directories (this is considered the safe method)
+rm <__d___dir_> <path_to_directory>

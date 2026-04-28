@@ -4,16 +4,16 @@
 % dnf-install, linux
 
 # Install packages by name
-sudo dnf {{[in|install]}} {{package1 package2 ...}}
+sudo dnf <_in_install_> {{package1 package2 ...}}
 
 # Install a package from a local file
-sudo dnf {{[in|install]}} <path_to_file>
+sudo dnf <_in_install_> <path_to_file>
 
 # Install a package from the internet
-sudo dnf {{[in|install]}} <https___example_com_package_rpm>
+sudo dnf <_in_install_> <https___example_com_package_rpm>
 
 # Add the Extra Packages for Enterprise Linux (EPEL) repositories
-sudo dnf {{[in|install]}} https://dl.fedoraproject.org/pub/epel/epel-release-latest-<10>.noarch.rpm
+sudo dnf <_in_install_> https://dl.fedoraproject.org/pub/epel/epel-release-latest-<10>.noarch.rpm
 
 # Add Remi's RPM repository
-sudo dnf {{[in|install]}} https://rpms.remirepo.net/enterprise/remi-release-<8>.rpm
+sudo dnf <_in_install_> https://rpms.remirepo.net/enterprise/remi-release-<8>.rpm

@@ -3,4 +3,20 @@
 
 % nix-classic, common
 
+# Search for a package in nixpkgs via its name
+nix-env {{[-qaP|--query --available --attr-path]}} <search_term_regex>
 
+# Start a shell with the specified packages available
+nix-shell <__p___packages_> {{pkg1 pkg2 pkg3 ...}}
+
+# Install some packages permanently
+nix-env {{[-iA|--install --attr]}} {{nixpkgs.pkg1 nixpkgs.pkg2 ...}}
+
+# Show all dependencies of a store path (package), in a tree format
+nix-store <__q___query_> --tree /nix/store/<checksum_package_version_ext>
+
+# Update the channels (repositories)
+nix-channel --update
+
+# Remove unused paths from Nix store
+nix-collect-garbage

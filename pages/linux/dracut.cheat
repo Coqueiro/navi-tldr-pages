@@ -3,4 +3,14 @@
 
 % dracut, linux
 
+# Generate an initramfs image for the current kernel without overriding any options
+dracut
 
+# Generate an initramfs image for the current kernel and overwrite the existing one
+dracut <__f___force_>
+
+# Generate an initramfs image for a specific kernel
+dracut --kver <kernel_version>
+
+# List available modules
+dracut --list-modules

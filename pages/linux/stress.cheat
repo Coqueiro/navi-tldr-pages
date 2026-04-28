@@ -3,4 +3,14 @@
 
 % stress, linux
 
+# Spawn 4 workers to stress test CPU
+stress <__c___cpu_> <4>
 
+# Spawn 2 workers to stress test IO and timeout after 5 seconds
+stress <__i___io_> <2> <__t___timeout_> <5>
+
+# Spawn 2 workers to stress test memory (each worker allocates 256M bytes)
+stress <__m___vm_> <2> --vm-bytes <256M>
+
+# Spawn 2 workers spinning on write()/unlink() (each worker writes 1G bytes)
+stress <__d___hdd_> <2> --hdd-bytes <1GB>

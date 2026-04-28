@@ -3,4 +3,17 @@
 
 % rails-new, common
 
+# Create a Rails app named `blog` in the current directory
+rails new blog
 
+# Create a Rails app with API-only configuration
+rails new <app_name> --api
+
+# Create a Rails app with `postgresql` as the database
+rails new <app_name> <__d___database_> postgresql
+
+# Create a Rails app without generating JavaScript files
+rails new <app_name> <__J___skip_javascript_>
+
+# Display help
+rails new <__h___help_>

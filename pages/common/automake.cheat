@@ -3,4 +3,17 @@
 
 % automake, common
 
+# Run automake to regenerate Makefiles after editing `Makefile.am`
+automake
 
+# Generate `Makefile.in` for a non-GNU project (foreign mode)
+automake --foreign
+
+# Add verbose output for debugging
+automake <__v___verbose_>
+
+# Add missing standard files (INSTALL, COPYING, depcomp, etc.)
+automake <__a___add_missing_>
+
+# Display help
+automake --help

@@ -3,4 +3,17 @@
 
 % sysctl, linux
 
+# Show all available variables and their values
+sysctl <__a___all_>
 
+# Set a changeable kernel state variable
+sysctl <__w___write_> <section_tunable>=<value>
+
+# Get currently open file handlers
+sysctl fs.file-nr
+
+# Get limit for simultaneous open files
+sysctl fs.file-max
+
+# Apply changes from `/etc/sysctl.conf`
+sysctl <__p___load_>

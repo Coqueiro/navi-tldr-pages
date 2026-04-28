@@ -3,4 +3,11 @@
 
 % git-verify-pack, common
 
+# Verify a packed Git archive file
+git verify-pack <path_to_pack_file>
 
+# Verify a packed Git archive file and show verbose details
+git verify-pack <__v___verbose_> <path_to_pack_file>
+
+# Verify a packed Git archive file and only display the statistics
+git verify-pack <__s___stat_only_> <path_to_pack_file>

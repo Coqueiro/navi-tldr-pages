@@ -3,4 +3,17 @@
 
 % ldd, linux
 
+# Display shared library dependencies of a binary
+ldd <path_to_binary>
 
+# Display all information about dependencies
+ldd <__v___verbose_> <path_to_binary>
+
+# Display unused direct dependencies
+ldd <__u___unused_> <path_to_binary>
+
+# Report missing data objects and perform data relocations
+ldd <__d___data_relocs_> <path_to_binary>
+
+# Report missing data objects and functions, and perform relocations for both
+ldd <__r___function_relocs_> <path_to_binary>

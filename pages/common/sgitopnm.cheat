@@ -7,7 +7,7 @@
 sgitopnm <path_to_input_sgi> > <path_to_output_pnm>
 
 # Display information about the SGI file
-sgitopnm {{[-verb|-verbose]}} <path_to_input_sgi> > <path_to_output_pnm>
+sgitopnm <__verb__verbose_> <path_to_input_sgi> > <path_to_output_pnm>
 
 # Extract channel n of the SGI file
-sgitopnm {{[-c|-channel]}} <__c__channel_> <path_to_input_sgi> > <path_to_output_pnm>
+sgitopnm <__c__channel_> <n> <path_to_input_sgi> > <path_to_output_pnm>

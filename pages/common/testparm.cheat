@@ -3,4 +3,11 @@
 
 % testparm, common
 
+# Check `/etc/samba/smb.conf` for correctness
+testparm
 
+# Check a specific configuration file for correctness
+testparm <path_to_file>
+
+# Display help
+testparm <______help_>

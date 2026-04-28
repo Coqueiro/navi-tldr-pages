@@ -4,16 +4,16 @@
 % tlmgr-platform, common
 
 # List all available platforms in the package repository
-tlmgr {{[arch|platform]}} list
+tlmgr <_arch_platform_> list
 
 # Add the executables for a specific platform
-sudo tlmgr {{[arch|platform]}} add <platform>
+sudo tlmgr <_arch_platform_> add <platform>
 
 # Remove the executables for a specific platform
-sudo tlmgr {{[arch|platform]}} remove <platform>
+sudo tlmgr <_arch_platform_> remove <platform>
 
 # Auto-detect and switch to the current platform
-sudo tlmgr {{[arch|platform]}} set auto
+sudo tlmgr <_arch_platform_> set auto
 
 # Switch to a specific platform
-sudo tlmgr {{[arch|platform]}} set <platform>
+sudo tlmgr <_arch_platform_> set <platform>

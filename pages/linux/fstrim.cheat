@@ -3,4 +3,11 @@
 
 % fstrim, linux
 
+# Trim unused blocks on all mounted partitions that support it
+sudo fstrim <__a___all_>
 
+# Trim unused blocks on a specified partition
+sudo fstrim <_>
+
+# Display statistics after trimming
+sudo fstrim <__v___verbose_> <_>

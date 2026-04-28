@@ -3,4 +3,14 @@
 
 % ansible-pull, common
 
+# Pull a playbook from a VCS and execute a default `local.yml` playbook
+ansible-pull <__U___url_> <repository_url>
 
+# Pull a playbook from a VCS and execute a specific playbook
+ansible-pull <__U___url_> <repository_url> <playbook>
+
+# Pull a playbook from a VCS at a specific branch and execute a specific playbook
+ansible-pull <__U___url_> <repository_url> <__C___checkout_> <branch> <playbook>
+
+# Pull a playbook from a VCS, specify hosts file and execute a specific playbook
+ansible-pull <__U___url_> <repository_url> <__i___inventory_> <hosts_file> <playbook>

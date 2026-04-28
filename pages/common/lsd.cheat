@@ -3,4 +3,26 @@
 
 % lsd, common
 
+# List files and directories, one per line
+lsd <__1___oneline_>
 
+# List all files and directories, including hidden ones, in the current directory
+lsd <__a___all_>
+
+# List files and directories with trailing `/` added to directory names
+lsd <__F___classify_>
+
+# List all files and directories in long format (permissions, ownership, size in human-readable format, and modification date)
+lsd {{[-lha|--long --human-readable --all]}}
+
+# List files and directories in long format, sorted by size (descending)
+lsd {{[-lS|--long --sizesort]}}
+
+# List files and directories in long format, sorted by modification date (oldest first)
+lsd {{[-ltr|--long --timesort --reverse]}}
+
+# Only list directories
+lsd <__d___directory_only_> {{*/}}
+
+# Recursively list all directories in a tree format
+lsd --tree <__d___directory_only_>

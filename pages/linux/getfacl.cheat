@@ -3,4 +3,11 @@
 
 % getfacl, linux
 
+# Display the file access control list
+getfacl <path_to_file_or_directory>
 
+# Display the file access control list with numeric user and group IDs
+getfacl <__n___numeric_> <path_to_file_or_directory>
+
+# Display the file access control list with tabular output format
+getfacl <__t___tabular_> <path_to_file_or_directory>

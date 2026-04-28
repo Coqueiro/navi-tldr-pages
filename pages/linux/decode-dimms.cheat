@@ -3,4 +3,8 @@
 
 % decode-dimms, linux
 
+# Display DIMM information
+decode-dimms
 
+# Display help
+decode-dimms <__h___help_>

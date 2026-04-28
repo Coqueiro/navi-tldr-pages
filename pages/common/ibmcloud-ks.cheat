@@ -3,4 +3,17 @@
 
 % ibmcloud-ks, common
 
+# View the details of a cluster
+ibmcloud ks cluster get <__c___cluster_> <cluster_id>
 
+# View the rotation status of Cluster Authority certificates for a cluster
+ibmcloud ks cluster ca status <__c___cluster_> <cluster_id>
+
+# View worker pools of a cluster
+ibmcloud ks worker-pool ls <__c___cluster_> <cluster_id>
+
+# Delete a worker node and replace it with a new one in the same worker pool
+ibmcloud ks worker replace <__c___cluster_> <cluster_id> <__w___worker_> <worker_id>
+
+# List all actions available under this command
+ibmcloud ks help

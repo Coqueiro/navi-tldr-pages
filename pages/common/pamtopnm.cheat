@@ -7,4 +7,4 @@
 pamtopnm <path_to_image_pam> > <path_to_output_pbm_pgm_ppm>
 
 # Display version
-pamtopnm {{[-v|-version]}}
+pamtopnm <__v__version_>

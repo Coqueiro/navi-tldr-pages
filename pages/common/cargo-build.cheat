@@ -3,4 +3,23 @@
 
 % cargo-build, common
 
+# Build the package or packages defined by the `Cargo.toml` manifest file in the local path
+cargo <_b_build_>
 
+# Build artifacts in release mode, with optimizations
+cargo <_b_build_> <__r___release_>
+
+# Require that `Cargo.lock` is up to date
+cargo <_b_build_> --locked
+
+# Build all packages in the workspace
+cargo <_b_build_> --workspace
+
+# Build a specific package
+cargo <_b_build_> <__p___package_> <package>
+
+# Build only the specified binary
+cargo <_b_build_> --bin <name>
+
+# Build only the specified test target
+cargo <_b_build_> --test <test_name>

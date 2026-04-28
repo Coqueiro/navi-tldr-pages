@@ -3,4 +3,14 @@
 
 % cython, common
 
+# Compile into C code
+cython <path_to_file>
 
+# Compile into C++ code
+cython --cplus <path_to_file>
+
+# Specify an output file
+cython <__o___output_file_> <path_to_output_file> <path_to_file>
+
+# Display version
+cython <__V___version_>

@@ -3,4 +3,14 @@
 
 % systemd-stdio-bridge, linux
 
+# Forward `stdin`/`stdout` to the local system bus
+systemd-stdio-bridge
 
+# Forward `stdin`/`stdout` to a specific user's D-Bus
+systemd-stdio-bridge --<user>
+
+# Forward `stdin`/`stdout` to the local system bus within a specific container
+systemd-stdio-bridge <__M___machine_> <mycontainer>
+
+# Forward `stdin`/`stdout` to a custom D-Bus address
+systemd-stdio-bridge <__p___bus_path_> unix:path=/<path_to_dbus_socket>

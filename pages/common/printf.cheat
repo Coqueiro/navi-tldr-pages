@@ -3,4 +3,20 @@
 
 % printf, common
 
+# Print a text message
+printf "<_s_n>" "{{Hello world}}"
 
+# Print an integer in bold blue
+printf "<_e_1_34m__3d_e_0m_n>" <42>
+
+# Print a float number with the Unicode Euro sign
+printf "{{\u20AC %.2f\n}}" <123_4>
+
+# Print a text message composed with environment variables
+printf "{{var1: %s\tvar2: %s\n}}" "<_VAR1>" "<_VAR2>"
+
+# Store a formatted message in a variable (does not work on Zsh)
+printf -v <myvar> {{"This is %s = %d\n" "a year" 2016}}
+
+# Print a hexadecimal, octal, and scientific number
+printf "{{hex=%x octal=%o scientific=%e\n}}" 0x<FF> 0<377> <100000>

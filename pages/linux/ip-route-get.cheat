@@ -4,19 +4,19 @@
 % ip-route-get, linux
 
 # Print route to a destination
-ip {{[r|route]}} {{[g|get]}} <1_1_1_1>
+ip <_r_route_> <_g_get_> <1_1_1_1>
 
 # Print route to a destination from a specific source address
-ip {{[r|route]}} {{[g|get]}} <destination> from <source>
+ip <_r_route_> <_g_get_> <destination> from <source>
 
 # Print route to a destination for packets arriving on a specific interface
-ip {{[r|route]}} {{[g|get]}} <destination> iif <ethX>
+ip <_r_route_> <_g_get_> <destination> iif <ethX>
 
 # Print route to a destination, forcing output through a specific interface
-ip {{[r|route]}} {{[g|get]}} <destination> oif <ethX>
+ip <_r_route_> <_g_get_> <destination> oif <ethX>
 
 # Print route to a destination with a specified Type of Service (ToS)
-ip {{[r|route]}} {{[g|get]}} <destination> tos <0x10>
+ip <_r_route_> <_g_get_> <destination> tos <0x10>
 
 # Print route to a destination using a specific VRF (Virtual Routing and Forwarding) instance
-ip {{[r|route]}} {{[g|get]}} <destination> vrf <myvrf>
+ip <_r_route_> <_g_get_> <destination> vrf <myvrf>

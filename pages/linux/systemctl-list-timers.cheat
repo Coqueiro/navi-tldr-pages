@@ -3,4 +3,14 @@
 
 % systemctl-list-timers, linux
 
+# List all active timers
+systemctl list-timers
 
+# List all timers, including inactive ones
+systemctl list-timers <__a___all_>
+
+# List timers matching a pattern
+systemctl list-timers <pattern>
+
+# List timers matching a specific state
+systemctl list-timers --state <active_inactive_failed____>

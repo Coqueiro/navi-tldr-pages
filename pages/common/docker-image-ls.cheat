@@ -3,4 +3,20 @@
 
 % docker-image-ls, common
 
+# List all Docker images
+docker {{[images|image ls]}}
 
+# List all Docker images including intermediates
+docker {{[images|image ls]}} <__a___all_>
+
+# List the output in quiet mode (only numeric IDs)
+docker {{[images|image ls]}} <__q___quiet_>
+
+# List all Docker images not used by any container
+docker {{[images|image ls]}} <__f___filter_> dangling=true
+
+# List images that contain a substring in their name
+docker {{[images|image ls]}} "<_name_>"
+
+# Sort images by size
+docker {{[images|image ls]}} --format "\{\{.ID\}\}\t\{\{.Size\}\}\t\{\{.Repository\}\}:\{\{.Tag\}\}" | sort <__k___key_> 2 <__h___human_numeric_sort_>

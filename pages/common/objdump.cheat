@@ -3,4 +3,23 @@
 
 % objdump, common
 
+# Display the file header information
+objdump <__f___file_headers_> <path_to_binary>
 
+# Display all header information
+objdump <__x___all_headers_> <path_to_binary>
+
+# Display the disassembled output of executable sections
+objdump <__d___disassemble_> <path_to_binary>
+
+# Display the disassembled executable sections in Intel syntax
+objdump <__d___disassemble_> <path_to_binary> <__M___disassembler_options_> intel
+
+# Display the disassembled executable sections with jump visualizations and syntax highlighting
+objdump <__d___disassemble_> <path_to_binary> --visualize-jumps=<color_extended_color> --disassembler-color=<color_extended_color>
+
+# Display the symbol [t]able
+objdump <__t___syms_> <path_to_binary>
+
+# Display a complete binary hex dump of all sections
+objdump <__s___full_contents_> <path_to_binary>

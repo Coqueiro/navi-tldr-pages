@@ -3,4 +3,14 @@
 
 % locale, linux
 
+# List all global environment variables describing the user's locale
+locale
 
+# List all available locales
+locale <__a___all_locales_>
+
+# Display all available locales and the associated metadata
+locale <__a___all_locales_> <__v___verbose_>
+
+# Display the current date format
+locale date_fmt

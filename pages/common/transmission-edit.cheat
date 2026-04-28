@@ -3,4 +3,11 @@
 
 % transmission-edit, common
 
+# Add a URL to a torrent's announce list
+transmission-edit <__a___add_> <http___example_com> <path_to_file_torrent>
 
+# Remove a URL from a torrent's announce list
+transmission-edit <__d___delete_> <http___example_com> <path_to_file_torrent>
+
+# Update a tracker's passcode in a torrent file
+transmission-edit <__r___replace_> <old_passcode> <new_passcode> <path_to_file_torrent>

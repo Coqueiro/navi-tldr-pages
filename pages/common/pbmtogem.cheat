@@ -7,7 +7,7 @@
 pbmtogem <path_to_file_pbm> > <path_to_file_img>
 
 # Suppress all informational messages
-pbmtogem {{[-q|-quiet]}}
+pbmtogem <__q__quiet_>
 
 # Display version
-pbmtogem {{[-v|-version]}}
+pbmtogem <__v__version_>

@@ -3,4 +3,11 @@
 
 % semanage-boolean, linux
 
+# List all booleans settings
+sudo semanage boolean <__l___list_>
 
+# List all user-defined boolean settings without headings
+sudo semanage boolean <__l___list_> <__C___locallist_> <__n___noheading_>
+
+# Set or unset a boolean persistently
+sudo semanage boolean <__m___modify_> <_1___on__0___off> <haproxy_connect_any>

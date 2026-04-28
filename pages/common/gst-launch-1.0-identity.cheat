@@ -3,4 +3,5 @@
 
 % gst-launch-1.0-identity, common
 
-
+# Print information on the passed through data
+gst-launch-1.0 <__v___verbose_> <source> ! identity silent=false ! <sink>

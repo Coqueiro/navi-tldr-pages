@@ -3,4 +3,26 @@
 
 % pg_receivewal, common
 
+# Stream WAL to a local directory (minimum required)
+pg_receivewal <__D___directory_> <directory>
 
+# Same as above, specify host, port, username including verbose output
+pg_receivewal <__v___verbose_> <__h___host_> <host> <__p___port_> <port> <__U___username_> <username> <__D___directory_> <directory>
+
+# Use replication slot (create-if-needed)
+pg_receivewal <__S___slot_> <slot_name> --create-slot <__h___host_> <host> <__p___port_> <port> <__U___username_> <username> <__D___directory_> <directory>
+
+# Stop at a given WAL position (LSN)
+pg_receivewal <__E___endpos_> <lsn> <__D___directory_> <directory> <__h___host_> <host> <__p___port_> <port> <__U___username_> <username>
+
+# Control looping on failure
+pg_receivewal <__n___no_loop_> <__D___directory_> <directory> <__h___host_> <host> <__p___port_> <port> <__U___username_> <username>
+
+# Flush data synchronously (force WAL writes immediately)
+pg_receivewal --synchronous <__D___directory_> <directory> <__h___host_> <host> <__p___port_> <port> <__U___username_> <username>
+
+# Compress WAL output (`gzip`, level 0-9)
+pg_receivewal <__Z___compress_> <level_method> <__D___directory_> <directory> <__h___host_> <host> <__p___port_> <port> <__U___username_> <username>
+
+# Set status reporting interval
+pg_receivewal <__s___status_interval_> <seconds> <__D___directory_> <directory> <__h___host_> <host> <__p___port_> <port> <__U___username_> <username>

@@ -3,4 +3,17 @@
 
 % podman-build, common
 
+# Create an image using a `Dockerfile` or `Containerfile` in the specified directory
+podman build <path_to_directory>
 
+# Create an image with a specified tag
+podman build <__t___tag_> <image_name_version> <path_to_directory>
+
+# Create an image from a non-standard file
+podman build <__f___file_> <Containerfile_different> .
+
+# Create an image without using any previously cached images
+podman build --no-cache <path_to_directory>
+
+# Create an image suppressing all output
+podman build <__q___quiet_> <path_to_directory>

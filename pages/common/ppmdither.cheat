@@ -7,7 +7,7 @@
 ppmdither <path_to_image_ppm> > <path_to_file_ppm>
 
 # Specify the desired number of shades for each primary color
-ppmdither {{[-r|-red]}} <2> {{[-g|-green]}} <3> {{[-b|-blue]}} <2> <path_to_image_ppm> > <path_to_file_ppm>
+ppmdither <__r__red_> <2> <__g__green_> <3> <__b__blue_> <2> <path_to_image_ppm> > <path_to_file_ppm>
 
 # Specify the dimensions of the dithering matrix
-ppmdither {{[-d|-dim]}} <2> <path_to_image_ppm> > <path_to_file_ppm>
+ppmdither <__d__dim_> <2> <path_to_image_ppm> > <path_to_file_ppm>

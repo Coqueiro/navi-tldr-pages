@@ -3,4 +3,26 @@
 
 % jj-tag, common
 
+# Create a tag pointing to the current working copy revision
+jj tag <_s_set_> <tag_name>
 
+# Create a tag pointing to a specific revision
+jj tag <_s_set_> <tag_name> <__r___revision_> <revision>
+
+# List all tags
+jj tag <_l_list_>
+
+# List tags matching a pattern, sorted by committer date (newest first)
+jj tag <_l_list_> --sort committer-date- "<pattern>"
+
+# Move an existing tag to a different revision
+jj tag <_s_set_> <tag_name> <__r___revision_> <revision> --allow-move
+
+# Delete a tag
+jj tag <_d_delete_> <tag_name>
+
+# Delete tags matching a glob pattern
+jj tag <_d_delete_> "<glob_v1__>"
+
+# Display help
+jj tag <__h___help_>

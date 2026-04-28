@@ -3,4 +3,14 @@
 
 % sfdk-emulator-install, common
 
+# Install an emulator
+sfdk emulator install <name>
 
+# Remove an emulator
+sfdk emulator remove <name>
+
+# Display the available emulators
+sfdk emulator list <__a___available_>
+
+# Display the installed emulators
+sfdk emulator list

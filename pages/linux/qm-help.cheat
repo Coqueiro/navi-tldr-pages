@@ -4,7 +4,7 @@
 % qm-help, linux
 
 # Display help for a specific command
-qm {{[h|help]}} <command>
+qm <_h_help_> <command>
 
 # Display help for a specific command with detailed information
-qm {{[h|help]}} <command> --verbose <true_false>
+qm <_h_help_> <command> --verbose <true_false>

@@ -3,4 +3,14 @@
 
 % zeroclaw-models, common
 
+# Refresh and cache models for the default provider
+zeroclaw models refresh
 
+# Refresh models for a specific provider
+zeroclaw models refresh --provider <openrouter>
+
+# Force live refresh ignoring cached models
+zeroclaw models refresh --force
+
+# Display help
+zeroclaw models <__h___help_>

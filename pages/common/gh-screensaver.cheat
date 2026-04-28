@@ -3,4 +3,17 @@
 
 % gh-screensaver, common
 
+# Run a random screensaver
+gh screensaver
 
+# Run a specific screensaver
+gh screensaver <__s___saver_> <fireworks_life_marquee_pipes_pollock_starfield>
+
+# Run the "marquee" screensaver with a specific text and font
+gh screensaver <__s___saver_> marquee -- --message="<message>" --font=<font_name>
+
+# Run the "starfield" screensaver with a specific density and speed
+gh screensaver <__s___saver_> starfield -- --density <500> --speed <10>
+
+# List available screensavers
+gh screensaver <__l___list_>

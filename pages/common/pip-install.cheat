@@ -3,4 +3,26 @@
 
 % pip-install, common
 
+# Install one or more packages
+pip install {{package1 package2 ...}}
 
+# Upgrade all specified packages to the latest version, installing any that are not already present
+pip install {{package1 package2 ...}} <__U___upgrade_>
+
+# Install a specific version of a package
+pip install <package>==<version>
+
+# Install packages listed in a file
+pip install <__r___requirement_> <path_to_requirements_txt>
+
+# Install a package from a local archive or directory
+pip install <path_to_file_whl_path_to_file_tar_gz_path_to_directory>
+
+# Install a package from a Git repository
+pip install git+https://<example_com>/<user>/<repository>.git
+
+# Install a package from an alternative source (URL or directory) instead of PyPI
+pip install <__f___find_links_> <url_path_to_directory> <package>
+
+# Install the local package in the current directory in develop (editable) mode
+pip install <__e___editable_> .

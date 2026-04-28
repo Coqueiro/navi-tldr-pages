@@ -3,4 +3,20 @@
 
 % pg_checksums, common
 
+# Check data checksums in a database cluster
+pg_checksums <__D___pgdata_> <path_to_data>
 
+# Enable data checksums in a database cluster
+pg_checksums <__e___enable_> <__D___pgdata_> <path_to_data>
+
+# Disable data checksums in a database cluster
+pg_checksums <__d___disable_> <__D___pgdata_> <path_to_data>
+
+# Check data checksums with verbose output
+pg_checksums <__v___verbose_> <__D___pgdata_> <path_to_data>
+
+# Check data checksums showing progress
+pg_checksums <__P___progress_> <__D___pgdata_> <path_to_data>
+
+# Display help
+pg_checksums <______help_>

@@ -3,4 +3,23 @@
 
 % jj-config-list, common
 
+# List all config variables and their values
+jj config <_l_list_>
 
+# List a specific config option
+jj config <_l_list_> <name>
+
+# List user-level config variables
+jj config <_l_list_> --user
+
+# List repo-level config variables
+jj config <_l_list_> --repo
+
+# List config variables including built-in default values
+jj config <_l_list_> --include-defaults
+
+# List config variables including overridden values
+jj config <_l_list_> --include-overridden
+
+# List config variables with a custom template
+jj config <_l_list_> <__T___template_> <template>

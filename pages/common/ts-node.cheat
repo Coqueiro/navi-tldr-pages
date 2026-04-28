@@ -3,4 +3,20 @@
 
 % ts-node, common
 
+# Execute a TypeScript file without compiling (Node + `tsc`)
+ts-node <path_to_file_ts>
 
+# Execute a TypeScript file without loading `tsconfig.json`
+ts-node --skipProject <path_to_file_ts>
+
+# Evaluate TypeScript code passed as a literal
+ts-node <__e___eval_> '{{console.log("Hello World")}}'
+
+# Execute a TypeScript file in script mode
+ts-node --script-mode <path_to_file_ts>
+
+# Transpile a TypeScript file to JavaScript without executing it
+ts-node <__T___transpileOnly_> <path_to_file_ts>
+
+# Display help
+ts-node <__h___help_>

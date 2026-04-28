@@ -16,7 +16,7 @@ sleep 1d 3h
 sleep 20m && <command>
 
 # Delay forever
-sleep {{[inf|infinity]}}
+sleep <_inf_infinity_>
 
 # Display help
 sleep --help

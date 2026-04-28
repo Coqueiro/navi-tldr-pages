@@ -3,4 +3,20 @@
 
 % nano-ffmpeg, common
 
+# Start `nano-ffmpeg`
+nano-ffmpeg
 
+# Open the file picker at a specific directory
+nano-ffmpeg <__d___dir_> <path_to_directory>
+
+# Open a specific file directly
+nano-ffmpeg <__d___dir_> <path_to_file_ext>
+
+# Override the theme for the current session
+nano-ffmpeg <__t___theme_> <dark_light>
+
+# Exit `nano-ffmpeg`
+<q>
+
+# Display help
+nano-ffmpeg <__h___help_>

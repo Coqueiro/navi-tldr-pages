@@ -3,4 +3,17 @@
 
 % pg_rewind, common
 
+# Synchronize target directory with source directory
+pg_rewind <__D___target_pgdata_> <path_to_target_data> --source-pgdata <path_to_source_data>
 
+# Synchronize target with source server using connection string
+pg_rewind <__D___target_pgdata_> <path_to_target_data> --source-server <connstr>
+
+# Perform a dry run
+pg_rewind <__D___target_pgdata_> <path_to_target_data> --source-pgdata <path_to_source_data> <__n___dry_run_>
+
+# Show progress during synchronization
+pg_rewind <__D___target_pgdata_> <path_to_target_data> --source-pgdata <path_to_source_data> <__P___progress_>
+
+# Display help
+pg_rewind <______help_>

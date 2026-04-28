@@ -3,4 +3,8 @@
 
 % rpicam-hello, linux
 
+# Display a camera preview stream for a specific amount of time (in milliseconds)
+rpicam-hello <__t___timeout_> <time>
 
+# Tune the configuration for a particular camera sensor
+rpicam-hello --tuning-file <_usr_share_libcamera_ipa_rpi_path_to_config_json>

@@ -3,4 +3,26 @@
 
 % fs_cli, linux
 
+# Connect to the local FreeSWITCH instance with an interactive session
+fs_cli
 
+# Connect to a remote FreeSWITCH server
+fs_cli <__H___host_> <host> <__P___port_> <port> <__p___password_> <password>
+
+# Execute a single FreeSWITCH command and exit
+fs_cli <__x___execute_> "<command>"
+
+# Show FreeSWITCH system status
+fs_cli <__x___execute_> "status"
+
+# Reload FreeSWITCH XML configuration
+fs_cli <__x___execute_> "reloadxml"
+
+# Check if a module is loaded
+fs_cli <__x___execute_> "module_exists <module_name>"
+
+# Show active calls
+fs_cli <__x___execute_> "show calls"
+
+# Retry connection on failure
+fs_cli <__r___retry_>

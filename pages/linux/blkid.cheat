@@ -3,4 +3,11 @@
 
 % blkid, linux
 
+# List all partitions
+sudo blkid
 
+# List all partitions in a table, including current mountpoints
+sudo blkid <__o___output_> list
+
+# Get the UUID of the filesystem on a partition
+sudo blkid <__s___match_tag_> UUID <__o___output_> value <_dev_sdXY>

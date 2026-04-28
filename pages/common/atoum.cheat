@@ -3,4 +3,26 @@
 
 % atoum, common
 
+# Initialize a configuration file
+atoum --init
 
+# Run all tests
+atoum
+
+# Run tests using the specified configuration file
+atoum <__c___configuration_> <path_to_file>
+
+# Run a specific test file
+atoum <__f___files_> <path_to_file>
+
+# Run a specific directory of tests
+atoum <__d___directories_> <path_to_directory>
+
+# Run all tests under a specific namespace
+atoum <__ns___namespaces_> <namespace>
+
+# Run all tests with a specific tag
+atoum <__t___tags_> <tag>
+
+# Load a custom bootstrap file before running tests
+atoum <__bf___bootstrap_file_> <path_to_file>

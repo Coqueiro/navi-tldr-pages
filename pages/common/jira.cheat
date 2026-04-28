@@ -3,4 +3,20 @@
 
 % jira, common
 
+# Create a configuration file (required before using `jira`)
+jira init
 
+# List recent issues
+jira issue <_ls_list_>
+
+# List unassigned issues with high priority
+jira issue <_ls_list_> <__a___assignee_> x <__y___priority_> High
+
+# List issues from the current sprint, assigned to me
+jira sprint <_ls_list_> --current <__a___assignee_> $(jira me)
+
+# Create a new issue with a parent issue
+jira issue create <__P___parent_> <parent>
+
+# Open an issue in the browser
+jira open <123>

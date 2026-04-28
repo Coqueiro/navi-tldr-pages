@@ -3,4 +3,8 @@
 
 % getfattr, linux
 
+# Retrieve all extended attributes of a file and display them in a detailed format
+getfattr <__d___dump_> <path_to_file>
 
+# Get a specific attribute of a file
+getfattr <__n___name_> user.<attribute_name> <path_to_file>

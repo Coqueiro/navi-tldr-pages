@@ -7,4 +7,4 @@
 noglob curl <https___example_com_a_1>
 
 # Open a file named with a literal asterisk
-noglob less {{*.txt}}
+noglob less <__txt>

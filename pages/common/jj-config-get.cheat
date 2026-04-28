@@ -4,13 +4,13 @@
 % jj-config-get, common
 
 # Get the value of a config option
-jj config {{[g|get]}} <name>
+jj config <_g_get_> <name>
 
 # Get the configured user name
-jj config {{[g|get]}} user.name
+jj config <_g_get_> user.name
 
 # Get the configured user email
-jj config {{[g|get]}} user.email
+jj config <_g_get_> user.email
 
 # Get the default revset for the log command
-jj config {{[g|get]}} revsets.log
+jj config <_g_get_> revsets.log

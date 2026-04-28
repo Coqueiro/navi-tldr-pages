@@ -3,4 +3,17 @@
 
 % shar, linux
 
+# Create a shell script that when executed extracts the given files from itself
+shar <__V___vanilla_operation_> {{path/to/file1 path/to/file2 ...}} > <path_to_archive_sh>
 
+# Compress the files in the archive
+shar <__C___compactor_> <xz> {{path/to/file1 path/to/file2 ...}} > <path_to_archive_sh>
+
+# Treat all files as binary (i.e. `uuencode` everything)
+shar <__B___uuencode_> {{path/to/file1 path/to/file2 ...}} > <path_to_archive_sh>
+
+# Treat all files as text (i.e. `uuencode` nothing)
+shar <__T___text_files_> {{path/to/file1 path/to/file2 ...}} > <path_to_archive_sh>
+
+# Include a name and cut mark in the header comment of the archive
+shar <__n___archive_name_> "{{My files}}" <__c___cut_mark_> {{path/to/file1 path/to/file2 ...}} > <path_to_archive_sh>

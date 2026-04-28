@@ -3,4 +3,8 @@
 
 % a2enconf, linux
 
+# Enable a configuration file
+sudo a2enconf <configuration_file>
 
+# Don't show informative messages
+sudo a2enconf <__q___quiet_> <configuration_file>

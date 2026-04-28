@@ -3,4 +3,23 @@
 
 % exo-compute-block-storage, common
 
+# Create a 20GB Block Storage Volume
+exo compute block-storage create <volume_name> --size 20 <__z___zone_> <zone>
 
+# List Block Storage Volumes
+exo compute block-storage list
+
+# Attach a Block Storage Volume to a Compute instance
+exo compute block-storage attach <volume_name_id> <instance_name_id> <__z___zone_> <zone>
+
+# Forcefully detach a Block Storage Volume (does not require confirmation)
+exo compute block-storage detach <volume_name_id> <__z___zone_> <zone> <__f___force_>
+
+# Create a snapshot of a Block Storage Volume
+exo compute block-storage snapshot create <volume_name_id> --name <snapshot_name> <__z___zone_> <zone>
+
+# Create a Block Storage Volume from a snapshot
+exo compute block-storage create <volume_name> --snapshot <snapshot_name_id> <__z___zone_> <zone>
+
+# Update an existing Block Storage Volume with a new name and a new volume size of 30GB
+exo compute block-storage update <volume_name_id> --size 30 --name <new_name>

@@ -3,4 +3,14 @@
 
 % qrencode, common
 
+# Convert a string to a QR code and save to an output file
+qrencode <__o___output_> <path_to_output_file_png> <string>
 
+# Convert an input file to a QR code and save to an output file
+qrencode <__o___output_> <path_to_output_file_png> <__r___read_from_> <path_to_input_file>
+
+# Convert a string to a QR code and print it in terminal
+qrencode <__t___type_> ansiutf8 <string>
+
+# Convert input from pipe to a QR code and print it in terminal
+echo <string> | qrencode <__t___type_> utf8

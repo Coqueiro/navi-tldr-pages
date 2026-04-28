@@ -3,4 +3,14 @@
 
 % salt-key, common
 
+# List all accepted, unaccepted, and rejected minion keys
+salt-key <__L___list_all_>
 
+# Accept a minion key by name
+salt-key <__a___accept_all_> <minion_id>
+
+# Reject a minion key by name
+salt-key <__r___reject_> <minion_id>
+
+# Print fingerprints of all public keys
+salt-key <__F___finger_all_>

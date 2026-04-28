@@ -3,4 +3,8 @@
 
 % openrc, linux
 
+# Change to a specific runlevel
+sudo openrc <runlevel_name>
 
+# Change to a specific runlevel, but don't stop any existing services
+sudo openrc <__n___no_stop_> <runlevel_name>

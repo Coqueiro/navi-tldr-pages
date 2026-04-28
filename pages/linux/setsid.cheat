@@ -3,4 +3,17 @@
 
 % setsid, linux
 
+# Run a program in a new session
+setsid <program>
 
+# Run a program in a new session discarding the resulting output and error
+setsid <program> > /dev/null 2>&1
+
+# Run a program creating a new process
+setsid <__f___fork_> <program>
+
+# Return the exit code of a program as the exit code of setsid when the program exits
+setsid <__w___wait_> <program>
+
+# Run a program in a new session setting the current terminal as the controlling terminal
+setsid <__c___ctty_> <program>

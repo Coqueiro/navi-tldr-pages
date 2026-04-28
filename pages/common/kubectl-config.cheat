@@ -3,4 +3,23 @@
 
 % kubectl-config, common
 
+# Get all contexts in the default kubeconfig file
+kubectl config get-contexts
 
+# Get all clusters/contexts/users in a custom kubeconfig file
+kubectl config <get_clusters_get_contexts_get_users> --kubeconfig <path_to_kubeconfig_yaml>
+
+# Get the current context
+kubectl config current-context
+
+# Set the default namespace of the current context
+kubectl config set-context --current --namespace <namespace>
+
+# Switch to another context
+kubectl config <_use_use_context_> <context_name>
+
+# Delete clusters/contexts/users
+kubectl config <delete_cluster_delete_context_delete_user> <cluster_context_user>
+
+# Permanently add custom kubeconfig files
+export KUBECONFIG="<path_to_kubeconfig1_yaml>:<path_to_kubeconfig2_yaml>"

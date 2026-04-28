@@ -3,4 +3,14 @@
 
 % podman-image, common
 
+# List local container images
+podman image <_ls_list_>
 
+# Delete unused local container images
+podman image prune
+
+# Delete all unused images (not just those without a tag)
+podman image prune <__a___all_>
+
+# Show the history of a local container image
+podman image history <image>

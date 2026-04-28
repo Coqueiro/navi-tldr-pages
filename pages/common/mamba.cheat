@@ -3,4 +3,26 @@
 
 % mamba, common
 
+# Create a new environment, installing the specified packages into it
+mamba create <__n___name_> <environment_name> {{python=3.10 matplotlib}}
 
+# Install packages into the current environment, specifying the package channel
+mamba install <__c___channel_> <conda_forge> {{python=3.6 numpy}}
+
+# Update all packages in the current environment
+mamba update <__a___all_>
+
+# Search for a specific package across repositories
+mamba repoquery search <numpy>
+
+# List all environments
+mamba info <__e___envs_>
+
+# Remove unused packages and tarballs from the cache
+mamba clean {{[-pt|--packages --tarballs]}}
+
+# Activate an environment
+mamba activate <environment_name>
+
+# List all installed packages in the currently activated environment
+mamba list

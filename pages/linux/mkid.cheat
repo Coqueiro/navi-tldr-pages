@@ -3,4 +3,20 @@
 
 % mkid, linux
 
+# Build an ID database for the current directory
+mkid
 
+# Build an ID database for specific directories
+mkid {{path/to/directory1 path/to/directory2 ...}}
+
+# Build an ID database and save it to a specific file
+mkid <__o___output_> <path_to_database_id>
+
+# Include only specific languages
+mkid <__i___include_> "{{language1 language2 ...}}"
+
+# Exclude specific directories from indexing
+mkid <__p___prune_> <path_to_excluded_directory>
+
+# Display statistics after building the database
+mkid <__s___statistics_>

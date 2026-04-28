@@ -3,4 +3,11 @@
 
 % zeroclaw-migrate, common
 
+# Preview migration from OpenClaw without writing data
+zeroclaw migrate openclaw --dry-run
 
+# Migrate memory from OpenClaw workspace
+zeroclaw migrate openclaw
+
+# Display help
+zeroclaw migrate <__h___help_>

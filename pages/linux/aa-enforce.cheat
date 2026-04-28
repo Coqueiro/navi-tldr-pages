@@ -3,4 +3,8 @@
 
 % aa-enforce, linux
 
+# Enable profile
+sudo aa-enforce <__d___dir_> <path_to_profile>
 
+# Enable profiles
+sudo aa-enforce {{path/to/profile1 path/to/profile2 ...}}

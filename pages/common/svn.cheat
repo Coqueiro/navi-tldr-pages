@@ -3,4 +3,20 @@
 
 % svn, common
 
+# Check out a working copy from a repository
+svn <_co_checkout_> <file____path_to_repository>
 
+# Bring changes from the repository into the working copy
+svn <_up_update_>
+
+# Put files and directories under version control, scheduling them for addition to repository. They will be added in next commit
+svn add <PATH>
+
+# Send changes from your working copy to the repository
+svn <_ci_commit_> <__m___message_> <commit_log_message> [<PATH>]
+
+# Display changes from the last 10 revisions, showing modified files for each revision
+svn log {{[-vl|--verbose --limit]}} <10>
+
+# Display help
+svn <_h_help_>

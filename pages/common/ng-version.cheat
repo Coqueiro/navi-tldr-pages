@@ -4,7 +4,7 @@
 % ng-version, common
 
 # Display version
-ng {{[v|version]}}
+ng <_v_version_>
 
 # Display the CLI, framework, system, and project dependency versions in JSON format
-ng {{[v|version]}} --json
+ng <_v_version_> --json

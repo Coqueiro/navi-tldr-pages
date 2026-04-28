@@ -3,4 +3,20 @@
 
 % nix-store.2, common
 
+# Collect garbage, such as removing unused paths
+nix-store --gc
 
+# Hard-link identical files together to reduce space usage
+nix-store --optimise
+
+# Delete a specific store path (must be unused)
+nix-store --delete /nix/store/<checksum_package_version_ext>
+
+# Show all dependencies of a store path (package), in a tree format
+nix-store <__q___query_> --tree /nix/store/<checksum_package_version_ext>
+
+# Calculate the total size of a certain store path with all the dependencies
+du {{[-cLsh|--total --dereference --summarize --human-readable]}} $(nix-store <__q___query_> --references /nix/store/<checksum_package_version_ext>)
+
+# Show all dependents of a particular store path
+nix-store <__q___query_> --referrers /nix/store/<checksum_package_version_ext>

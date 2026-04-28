@@ -7,7 +7,7 @@
 hipstopgm <path_to_file_hips>
 
 # Suppress all informational messages
-hipstopgm {{[-q|-quiet]}}
+hipstopgm <__q__quiet_>
 
 # Display version
-hipstopgm {{[-v|-version]}}
+hipstopgm <__v__version_>

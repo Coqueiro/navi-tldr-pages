@@ -3,4 +3,8 @@
 
 % xpmtoppm, common
 
+# Convert an XPM image to a PPM image
+xpmtoppm <path_to_input_file_xpm> > <path_to_output_file_ppm>
 
+# Store the transparency mask of the input image in the specified file
+xpmtoppm <__a___alphaout_> <path_to_alpha_file_pbm> <path_to_input_file_xpm> > <path_to_output_file_ppm>

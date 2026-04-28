@@ -3,4 +3,11 @@
 
 % hello, common
 
+# Print "Hello, world!"
+hello
 
+# Print "hello, world", the traditional type
+hello <__t___traditional_>
+
+# Print a text message
+hello <__g___greeting_> "<greeting_text>"

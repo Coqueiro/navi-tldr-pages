@@ -7,7 +7,7 @@
 cdrecord --devices
 
 # Record ("burn") an audio-only disc
-cdrecord dev=<_dev_optical_drive> -audio {{track*.cdaudio}}
+cdrecord dev=<_dev_optical_drive> -audio <track__cdaudio>
 
 # Burn a file to a disc, ejecting the disc once done (some recorders require this)
 cdrecord -eject dev=<_dev_optical_drive> -data <file_iso>

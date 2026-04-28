@@ -3,4 +3,17 @@
 
 % dropuser, common
 
+# Prompt for confirmation and the username before user removal
+dropuser <__i___interactive_>
 
+# Remove user instantly
+dropuser <username>
+
+# No error if the user to be removed doesn't exist
+dropuser --if-exists <username>
+
+# Remove a user on the server with address 127.0.0.1 on port 4321
+dropuser <__h___host_> 127.0.0.1 <__p___port_> 4321 <username>
+
+# Remove a user on the server with address 127.0.0.1 on port 4321 as user "admin"
+dropuser <__U___username_> admin <__h___host_> 127.0.0.1 <__p___port_> 4321 <username>

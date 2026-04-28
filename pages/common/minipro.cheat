@@ -3,4 +3,26 @@
 
 % minipro, common
 
+# List all supported devices
+minipro <__l___list_>
 
+# Search for a specific device
+minipro <__L___search_> <device_name>
+
+# Read chip ID
+minipro <__p___device_> <chip_name> <__D___read_id_>
+
+# Read chip contents to a file
+minipro <__p___device_> <chip_name> <__r___read_> <path_to_output_file_bin>
+
+# Write a file to chip
+minipro <__p___device_> <chip_name> <__w___write_> <path_to_input_file_bin>
+
+# Verify chip contents against a file
+minipro <__p___device_> <chip_name> <__m___verify_> <path_to_file_bin>
+
+# Erase a chip
+minipro <__p___device_> <chip_name> <__E___erase_>
+
+# Display help
+minipro <__h___help_>

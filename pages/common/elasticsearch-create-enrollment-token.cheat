@@ -3,4 +3,17 @@
 
 % elasticsearch-create-enrollment-token, common
 
+# Create an enrollment token for adding a new Elasticsearch node
+elasticsearch-create-enrollment-token <__s___scope_> node
 
+# Create an enrollment token for adding a new Kibana instance
+elasticsearch-create-enrollment-token <__s___scope_> kibana
+
+# Create an enrollment token and display verbose output
+elasticsearch-create-enrollment-token <__s___scope_> node --verbose
+
+# Create an enrollment token for a Kibana instance with a custom Elasticsearch URL
+elasticsearch-create-enrollment-token <__s___scope_> kibana --url "<IP>"
+
+# Display help
+elasticsearch-create-enrollment-token <__h___help_>

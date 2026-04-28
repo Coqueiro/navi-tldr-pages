@@ -3,4 +3,11 @@
 
 % wifi-menu, linux
 
+# Set up a wireless connection interactively
+wifi-menu
 
+# Interactively set up a connection to a network and obscure the password
+wifi-menu <__o___obscure_>
+
+# Display help
+wifi-menu <__h___help_>

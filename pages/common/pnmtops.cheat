@@ -7,7 +7,7 @@
 pnmtops <path_to_file_pnm> > <path_to_file_ps>
 
 # Specify the dimensions of the output image in inches
-pnmtops {{[-imagew|-imagewidth]}} <imagewidth> {{[-imageh|-imageheight]}} <imageheight> <path_to_file_pnm> > <path_to_file_ps>
+pnmtops <__imagew__imagewidth_> <imagewidth> <__imageh__imageheight_> <imageheight> <path_to_file_pnm> > <path_to_file_ps>
 
 # Specify the dimensions of the page the output image resides on in inches
-pnmtops {{[-w|-width]}} <width> {{[-h|-height]}} <height> <path_to_file_pnm> > <path_to_file_ps>
+pnmtops <__w__width_> <width> <__h__height_> <height> <path_to_file_pnm> > <path_to_file_ps>

@@ -3,4 +3,17 @@
 
 % elasticsearch-croneval, common
 
+# Evaluate a `cron` expression and display the next 10 trigger times (default behavior)
+elasticsearch-croneval "<cron_expression>"
 
+# Evaluate a `cron` expression and display a specific number of future trigger times
+elasticsearch-croneval "<cron_expression>" <__c___count_> <integer>
+
+# Display detailed information (including stack trace) for an invalid `cron` expression
+elasticsearch-croneval "<invalid_cron_expression>" <__d___detail_>
+
+# Display minimal output (silent mode)
+elasticsearch-croneval "<cron_expression>" <__s___silent_>
+
+# Display verbose output
+elasticsearch-croneval "<cron_expression>" <__v___verbose_>

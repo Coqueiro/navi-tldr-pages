@@ -3,4 +3,8 @@
 
 % dhcpwn, common
 
+# Flood the network with IP requests
+dhcpwn <__i___interface_> <network_interface> flood <__c___count_> <number_of_requests>
 
+# Sniff local DHCP traffic
+dhcpwn <__i___interface_> <network_interface> sniff

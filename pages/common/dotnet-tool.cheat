@@ -3,4 +3,23 @@
 
 % dotnet-tool, common
 
+# Install a global tool (don't use `--global` for local tools)
+dotnet tool install <__g___global_> <dotnetsay>
 
+# Install tools defined in the local tool manifest
+dotnet tool restore
+
+# Update a specific global tool (don't use `--global` for local tools)
+dotnet tool update <__g___global_> <tool_name>
+
+# Uninstall a global tool (don't use `--global` for local tools)
+dotnet tool uninstall <__g___global_> <tool_name>
+
+# List installed global tools (don't use `--global` for local tools)
+dotnet tool list <__g___global_>
+
+# Search tools in NuGet
+dotnet tool search <search_term>
+
+# Display help
+dotnet tool <__h___help_>

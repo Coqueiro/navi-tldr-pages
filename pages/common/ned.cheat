@@ -3,4 +3,26 @@
 
 % ned, common
 
+# Recursively search starting in the current directory, ignoring case
+ned <__i___ignore_case_> <__R___recursive_> '<__dl_og>' <_>
 
+# Search always showing colored output
+ned --colors '<__dl_og>' <_>
+
+# Search never showing colored output
+ned --colors never '<__dl_og>' <_>
+
+# Search ignoring certain files
+ned <__R___recursive_> --exclude '<__htm>' '<__dl_og>' <_>
+
+# Simple replace
+ned '<dog>' <__r___replace_> '<cat>' <_>
+
+# Replace using numbered group references
+ned '{{the ([a-z]+) dog and the ([a-z]+) dog}}' <__r___replace_> '{{the $2 dog and the $1 dog}}' <_>
+
+# Replace changing case
+ned '{{([a-z]+) dog}}' --case-replacements <__r___replace_> '{{\U$1\E! dog}}' --stdout <_>
+
+# Preview results of a find and replace without updating the target files
+ned '<__sb_ad>' <__r___replace_> '<happy>' --stdout <_>

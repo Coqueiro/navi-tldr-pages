@@ -3,4 +3,26 @@
 
 % tspin, common
 
+# View a log file using the default pager (`less`)
+tspin <path_to_file_log>
 
+# Read from another command and print to `stdout`
+<command> | tspin
+
+# Read from a file and print to `stdout` without paging
+tspin <path_to_file_log> <__p___print_>
+
+# Follow a file (mimics `tail -f`) and highlight new entries
+tspin <__f___follow_> <path_to_file_log>
+
+# Highlight specific groups only (possible values: `numbers`, `urls`, `pointers`, `dates`, `paths`, `quotes`, `key-value-pairs`, `uuids`, `ip-addresses`, `processes`, `json`)
+tspin --enable <urls_ip_addresses____> <path_to_file_log>
+
+# Use a custom pager (the `[FILE]` string is a required literal placeholder)
+tspin --pager "{{bat -p}} [FILE]" <path_to_file_log>
+
+# Highlight custom strings with custom colors
+tspin --highlight <red>:<ERROR_WARNING____> <path_to_file_log>
+
+# Run the provided command and view the output in `less`
+tspin --exec='<command>'

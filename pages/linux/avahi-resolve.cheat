@@ -3,4 +3,8 @@
 
 % avahi-resolve, linux
 
+# Resolve a local service to its IPv4
+avahi-resolve -4 <__n___name_> <service_local>
 
+# Resolve an IP to a hostname, verbosely
+avahi-resolve <__v___verbose_> <__a___address_> <IP>

@@ -3,4 +3,8 @@
 
 % sphinx-build, common
 
+# Build documentation
+sphinx-build <__b___builder_> <html_epub_text_latex_man____> <path_to_source_directory> <path_to_build_directory>
 
+# Build documentations intended for readthedocs.io (requires the sphinx-rtd-theme pip package)
+sphinx-build <__b___builder_> <html> <path_to_docs_directory> <path_to_build_directory>

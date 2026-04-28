@@ -3,4 +3,20 @@
 
 % binwalk, common
 
+# Scan a binary file
+binwalk <path_to_binary>
 
+# Extract files from a binary, specifying the output directory
+binwalk <__e___extract_> <__C___directory_> <output_directory> <path_to_binary>
+
+# Recursively extract files from a binary limiting the recursion depth to 2
+binwalk <__e___extract_> <__M___matryoshka_> <__d___depth_> <2> <path_to_binary>
+
+# Extract files from a binary with the specified file signature
+binwalk <__D___dd_> '{{png image:png}}' <path_to_binary>
+
+# Analyze the entropy of a binary, saving the plot with the same name as the binary and `.png` extension appended
+binwalk <__E___entropy_> <__J___save_> <path_to_binary>
+
+# Combine entropy, signature, and opcodes analysis in a single command
+binwalk <__E___entropy_> <__B___signature_> <__A___opcodes_> <path_to_binary>

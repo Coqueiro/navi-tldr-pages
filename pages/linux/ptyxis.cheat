@@ -3,4 +3,17 @@
 
 % ptyxis, linux
 
+# Open a new Ptyxis window
+ptyxis --new-window
 
+# Execute a specific command in a new terminal window
+ptyxis <__x___execute_> <command>
+
+# Open new tab in the last opened window
+ptyxis --tab
+
+# Set the title for a new
+ptyxis --tab <__T___title_> <title>
+
+# Specify the working directory for a new tab, window, or command execution
+ptyxis <__d___working_directory_> <path_to_directory> --tab

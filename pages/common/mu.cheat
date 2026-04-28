@@ -19,7 +19,7 @@ mu find to:<alice> subject:<jellyfish> <apples> OR <oranges>
 mu find 'subject:<soc>*' flag:<unread> maildir:'/{{Sent Items}}'
 
 # Find messages from Sam with attached images, between 2 KiB and 2 MiB, written in 2021
-mu find 'mime:{{image/*}} size:<2k__2m> date:<20210101__20211231> from:<sam>
+mu find 'mime:<image__> size:<2k__2m> date:<20210101__20211231> from:<sam>
 
 # List contacts with `Bob` in either name or email address
 mu cfind <Bob>

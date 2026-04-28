@@ -3,4 +3,14 @@
 
 % sg, common
 
+# Scan for possible queries using interactive mode
+sg scan --interactive
 
+# Rewrite code in the current directory using patterns
+sg run --pattern '<foo>' --rewrite '<bar>' --lang <python>
+
+# Visualize possible changes without applying them
+sg run --pattern '<useState_number___A_>' --rewrite '<useState__A_>' --lang <typescript>
+
+# Output results as JSON, extract information using `jq` and interactively view it using `jless`
+sg run --pattern '<Some__A_>' --rewrite '<None>' --json | jq '<____replacement>' | jless

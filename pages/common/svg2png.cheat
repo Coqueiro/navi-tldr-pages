@@ -3,4 +3,23 @@
 
 % svg2png, common
 
+# Convert an SVG file to PNG
+svg2png <path_to_file_svg> <path_to_output_png>
 
+# Convert an SVG file to PNG with a specific width (preserving aspect ratio)
+svg2png <__w___width_> <800> <path_to_file_svg> <path_to_output_png>
+
+# Convert an SVG file to PNG with a specific height (preserving aspect ratio)
+svg2png <__h___height_> <600> <path_to_file_svg> <path_to_output_png>
+
+# Convert an SVG file to PNG with both width and height (image centered in space)
+svg2png <__w___width_> <800> <__h___height_> <600> <path_to_file_svg> <path_to_output_png>
+
+# Convert an SVG file to PNG scaled by a factor
+svg2png <__s___scale_> <2_0> <path_to_file_svg> <path_to_output_png>
+
+# Convert an SVG from `stdin` to PNG on `stdout`
+cat <path_to_file_svg> | svg2png - - > <path_to_output_png>
+
+# Flip the output image horizontally or vertically
+svg2png --flipx <path_to_file_svg> <path_to_output_png>

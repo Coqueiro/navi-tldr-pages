@@ -3,4 +3,14 @@
 
 % agg, common
 
+# Create a GIF
+agg <path_to_demo_cast> <path_to_demo_gif>
 
+# Create a GIF that is 80 columns wide and 25 rows in height
+agg --cols 80 --rows 25 <path_to_demo_cast> <path_to_demo_gif>
+
+# Create a GIF with a font size of 24 pixels
+agg --font-size 24 <path_to_demo_cast> <path_to_demo_gif>
+
+# Display help
+agg <__h___help_>

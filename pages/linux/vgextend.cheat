@@ -4,7 +4,7 @@
 % vgextend, linux
 
 # Add a physical volume to an existing volume group
-sudo vgextend <___> <_dev_sda1>
+sudo vgextend <vg1> <_dev_sda1>
 
 # Add multiple physical volumes to an existing volume group
-sudo vgextend <___> {{/dev/sda1 /dev/sda2 ...}}
+sudo vgextend <vg1> {{/dev/sda1 /dev/sda2 ...}}

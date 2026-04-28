@@ -3,4 +3,20 @@
 
 % daemon, linux
 
+# Run a command as a daemon
+daemon <__n___name_> "<name>" <command>
 
+# Run a command as a daemon which will restart if the command crashes
+daemon <__n___name_> "<name>" <__r___respawn_> <command>
+
+# Run a command as a daemon which will restart if it crashes, with two attempts every 10 seconds
+daemon <__n___name_> "<name>" <__r___respawn_> <__A___attempts_> 2 <__L___delay_> 10 <command>
+
+# Run a command as a daemon, writing logs to a specific file
+daemon <__n___name_> "<name>" <__l___errlog_> <path_to_file_log> <command>
+
+# Kill a daemon (SIGTERM)
+daemon <__n___name_> "<name>" --stop
+
+# List daemons
+daemon --list

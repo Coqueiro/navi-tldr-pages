@@ -3,4 +3,17 @@
 
 % pulumi-preview, common
 
+# Show a preview of updates to a stack's resources
+pulumi preview
 
+# Show a preview of updates to a stack's resources in JSON format
+pulumi preview <__j___json_>
+
+# Preview updates as a rich diff showing overall changes
+pulumi preview --diff
+
+# Preview updates using a Policy Pack (without Pulumi Cloud, best on CI/CD)
+pulumi preview --policy-pack <path_to_directory>
+
+# Display help
+pulumi preview <__h___help_>

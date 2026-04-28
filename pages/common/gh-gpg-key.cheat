@@ -3,4 +3,14 @@
 
 % gh-gpg-key, common
 
+# List GPG keys in the authorized GitHub account
+gh gpg-key <_ls_list_>
 
+# Add a GPG key to the authorized GitHub account by specifying the key file
+gh gpg-key add <path_to_key_file>
+
+# Add a GPG key to the authorized GitHub account by specifying the key ID
+gpg <__a___armor_> --export <key_id> | gh gpg-key add -
+
+# Delete a GPG key from the authorized GitHub account
+gh gpg-key delete <key_id>

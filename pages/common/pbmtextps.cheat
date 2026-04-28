@@ -10,7 +10,7 @@ pbmtextps "{{Hello World!}}" > <path_to_output_pbm>
 pbmtextps -font <Times_Roman> -fontsize <30> "{{Hello World!}}" > <path_to_output_pbm>
 
 # Specify the desired left and top margins
-pbmtextps {{[-l|-leftmargin]}} <70> {{[-t|-topmargin]}} <162> "{{Hello World!}}" > <path_to_output_pbm>
+pbmtextps <__l__leftmargin_> <70> <__t__topmargin_> <162> "{{Hello World!}}" > <path_to_output_pbm>
 
 # Do not output the rendered text as a PBM image, but a PostScript program that would create this image
-pbmtextps {{[-du|-dump-ps]}} "{{Hello World!}}" > <path_to_output_ps>
+pbmtextps <__du__dump_ps_> "{{Hello World!}}" > <path_to_output_ps>

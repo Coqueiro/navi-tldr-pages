@@ -3,4 +3,17 @@
 
 % vainfo, common
 
+# Show version and supported entrypoints
+vainfo
 
+# Test a specific display protocol
+vainfo --display <wayland_x11_drm____>
+
+# Show available display protocols
+vainfo --display help
+
+# Show all supported entrypoints
+vainfo <__a___all_>
+
+# Display help
+vainfo --help

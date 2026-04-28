@@ -3,4 +3,14 @@
 
 % az-webapp, common
 
+# List available runtimes for a web application
+az webapp list-runtimes <__os___os_type_> <windows_linux>
 
+# Create a web application
+az webapp up <__n___name_> <name> <__l___location_> <location> <__r___runtime_> <runtime>
+
+# List all web applications
+az webapp list
+
+# Delete a specific web application
+az webapp delete <__n___name_> <name> <__g___resource_group_> <resource_group>

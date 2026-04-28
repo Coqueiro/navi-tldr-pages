@@ -3,4 +3,17 @@
 
 % rc-update, linux
 
+# List enabled services and the runlevels they are added to
+rc-update
 
+# List all services
+rc-update <__v___verbose_>
+
+# Add a service to a runlevel
+sudo rc-update add <service_name> <runlevel>
+
+# Delete a service from a runlevel
+sudo rc-update <_del_delete_> <service_name> <runlevel>
+
+# Delete a service from all runlevels
+sudo rc-update <__a___all_> <_del_delete_> <service_name>

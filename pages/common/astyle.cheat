@@ -3,4 +3,17 @@
 
 % astyle, common
 
+# Apply the default style of 4 spaces per indent and no formatting changes
+astyle <source_file>
 
+# Apply the Java style with attached braces
+astyle <__A2___style_java_> <path_to_file>
+
+# Apply the allman style with broken braces
+astyle <__A1___style_allman_> <path_to_file>
+
+# Apply a custom indent using spaces. Choose between 2 and 20 spaces
+astyle <__s___indent_spaces__><number_of_spaces> <path_to_file>
+
+# Apply a custom indent using tabs. Choose between 2 and 20 tabs
+astyle <__t___indent_tab__><number_of_tabs> <path_to_file>

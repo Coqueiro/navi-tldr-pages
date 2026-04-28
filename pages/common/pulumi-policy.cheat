@@ -3,4 +3,23 @@
 
 % pulumi-policy, common
 
+# Create a new Pulumi Policy Pack from a template or URL
+pulumi policy new --dir <path_to_directory> <template_url>
 
+# Validate syntax of a policy. To check a policy against a project use `pulumi preview`
+pulumi policy validate-config <organization_name>/<policy_pack_name> <version>
+
+# List all policies for an organization
+pulumi policy ls <__j___json_> <organization_name>
+
+# Publish a policy to the Pulumi Cloud
+pulumi policy publish <organization_name>
+
+# Enable a policy with a specific version
+pulumi policy enable <organization_name>/<policy_pack_name> <latest_version>
+
+# Disable a policy with a specific version (defaults to all versions)
+pulumi policy disable <organization_name>/<policy_pack_name> --version <version>
+
+# Display help
+pulumi policy <__h___help_>

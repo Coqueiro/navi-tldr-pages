@@ -13,4 +13,4 @@ dunst -startup_notification
 dunst -print
 
 # Use the specified configuration file (default: `$XDG_CONFIG_HOME/dunst/dunstrc`)
-dunst {{[-conf|-config]}} <path_to_file>
+dunst <__conf__config_> <path_to_file>

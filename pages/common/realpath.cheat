@@ -3,4 +3,17 @@
 
 % realpath, common
 
+# Display the absolute path for a file or directory
+realpath <path_to_file_or_directory>
 
+# Require all path components to exist
+realpath <__e___canonicalize_existing_> <path_to_file_or_directory>
+
+# Resolve `..` components before symlinks
+realpath <__L___logical_> <path_to_file_or_directory>
+
+# Disable symlink expansion
+realpath <__s___no_symlinks_> <path_to_file_or_directory>
+
+# Suppress error messages
+realpath <__q___quiet_> <path_to_file_or_directory>

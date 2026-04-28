@@ -3,4 +3,20 @@
 
 % agetty, linux
 
+# Connect `stdin` to a port (relative to `/dev`) and optionally specify a baud rate (defaults to 9600)
+agetty <tty> <115200>
 
+# Assume `stdin` is already connected to a `tty` and set a timeout for the login
+agetty <__t___timeout_> <timeout_in_seconds> -
+
+# Assume the `tty` is 8-bit, overriding the `$TERM` environment variable set by `init`
+agetty <__8___8bits_> - <term_var>
+
+# Skip the login (no login) and invoke, as root, another login program instead of `/bin/login`
+agetty <__n___skip_login_> <__l___login_program_> <login_program> <tty>
+
+# Do not display the pre-login (issue) file (`/etc/issue` by default) before writing the login prompt
+agetty <__i___noissue_> -
+
+# Change the root directory and write a specific fake host into the `utmp` file
+agetty <__r___chroot_> /<path_to_root_directory> <__H___host_> <fake_host> -

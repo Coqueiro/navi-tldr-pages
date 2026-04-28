@@ -3,4 +3,23 @@
 
 % semanage-user, linux
 
+# List all SELinux users
+sudo semanage user <__l___list_>
 
+# Add a new SELinux user
+sudo semanage user <__a___add_> <__R___roles_> <role_name> <selinux_user>
+
+# Delete a SELinux user
+sudo semanage user <__d___delete_> <selinux_user>
+
+# Modify an existing SELinux user's roles
+sudo semanage user <__m___modify_> <__R___roles_> <role_name> <selinux_user>
+
+# Add a SELinux user with a specific default level
+sudo semanage user <__a___add_> <__R___roles_> <role_name> <__L___level_> <s0> <selinux_user>
+
+# Add a SELinux user with a specific MLS/MCS range
+sudo semanage user <__a___add_> <__R___roles_> <role_name> <__r___range_> <s0_s0_c0_c1023> <selinux_user>
+
+# List only customized SELinux users
+sudo semanage user <__l___list_> <__C___locallist_>

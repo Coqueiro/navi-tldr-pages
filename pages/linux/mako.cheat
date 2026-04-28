@@ -3,4 +3,20 @@
 
 % mako, linux
 
+# Start the `mako` notification daemon
+mako
 
+# Start with a custom configuration file
+mako <__c___config_> <path_to_config>
+
+# Set maximum number of visible notifications
+mako --max-visible <5>
+
+# Set default timeout in milliseconds (0 to disable)
+mako --default-timeout <2000>
+
+# Group notifications by application name
+mako --group-by <app_name>
+
+# Display help
+mako <__h___help_>

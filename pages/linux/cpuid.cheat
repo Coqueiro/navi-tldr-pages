@@ -3,4 +3,11 @@
 
 % cpuid, linux
 
+# Display information for all CPUs
+cpuid
 
+# Display information only for the current CPU
+cpuid <__1___one_cpu_>
+
+# Display raw hex information with no decoding
+cpuid <__r___raw_>

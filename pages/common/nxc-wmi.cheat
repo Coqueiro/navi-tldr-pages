@@ -3,4 +3,14 @@
 
 % nxc-wmi, common
 
+# Search for valid credentials by trying out every combination in the specified lists of usernames and passwords
+nxc wmi <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt>
 
+# Authenticate via local authentication (as opposed to authenticating to the domain)
+nxc wmi <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --local-auth
+
+# Issue the specified WMI query
+nxc wmi <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --wmi <wmi_query>
+
+# Execute the specified command on the targeted host
+nxc wmi <192_168_178_2> <__u___username_> <username> <__p___password_> <password> -x <command>

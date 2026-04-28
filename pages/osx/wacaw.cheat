@@ -3,4 +3,17 @@
 
 % wacaw, osx
 
+# Take a picture from webcam
+wacaw <filename>
 
+# Record a video
+wacaw --video <filename> <__D___duration_> <10>
+
+# Take a picture with custom resolution
+wacaw <__x___width_> <width> <__y___height_> <100> <filename>
+
+# Copy image just taken to clipboard
+wacaw --to-clipboard
+
+# List the devices available
+wacaw <__L___list_devices_>

@@ -3,4 +3,11 @@
 
 % toolbox-list, linux
 
+# List all Toolbx containers and images
+toolbox list
 
+# List only Toolbx containers
+toolbox list <__c___containers_>
+
+# List only Toolbx images
+toolbox list <__i___images_>

@@ -13,16 +13,16 @@ cli53 create <example_com> --comment "<comment>"
 cli53 export <example_com>
 
 # Create a `www` subdomain pointing to a relative record in the same zone
-cli53 {{[rc|rrcreate]}} <example_com> '{{www 300 CNAME lb}}'
+cli53 <_rc_rrcreate_> <example_com> '{{www 300 CNAME lb}}'
 
 # Create a `www` subdomain pointing to an external address (must end with a dot)
-cli53 {{[rc|rrcreate]}} <example_com> '{{www 300 CNAME lb.example.com.}}'
+cli53 <_rc_rrcreate_> <example_com> '{{www 300 CNAME lb.example.com.}}'
 
 # Create a `www` subdomain pointing to an IP address
-cli53 {{[rc|rrcreate]}} <example_com> '{{www 300 A 150.130.110.1}}'
+cli53 <_rc_rrcreate_> <example_com> '{{www 300 A 150.130.110.1}}'
 
 # Replace a `www` subdomain pointing to a different IP
-cli53 {{[rc|rrcreate]}} --replace '{{www 300 A 150.130.110.2}}'
+cli53 <_rc_rrcreate_> --replace '{{www 300 A 150.130.110.2}}'
 
 # Delete a record A
-cli53 {{[rd|rrdelete]}} <example_com> <www> <A>
+cli53 <_rd_rrdelete_> <example_com> <www> <A>

@@ -3,4 +3,17 @@
 
 % sfdk-scrape, common
 
+# Save source modifications as patches
+sfdk scrape
 
+# Preview the list of commits to be scrapped
+sfdk scrape <__n___dry_run_>
+
+# Scrape while preserving the original patches file names
+sfdk scrape --stable
+
+# Scrape while saving patches to a specified output directory
+sfdk scrape <__o___output_dir_> <directory>
+
+# Scrape without removing commits from submodules after creating patches
+sfdk scrape --keep

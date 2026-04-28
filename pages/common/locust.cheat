@@ -3,4 +3,20 @@
 
 % locust, common
 
+# Load-test "example.com" with web interface using locustfile.py
+locust <__H___host_> <http___example_com>
 
+# Use a different test file
+locust <__H___host_> <http___example_com> <__f___locustfile_> <test_file_py>
+
+# Run test without web interface, spawning 1 user a second until there are 100 users
+locust <__H___host_> <http___example_com> --headless <__u___users_> 100 <__r___spawn_rate_> 1
+
+# Start Locust in master mode
+locust <__H___host_> <http___example_com> --master
+
+# Connect Locust worker to master
+locust <__H___host_> <http___example_com> --worker
+
+# Connect Locust worker to master on a different machine
+locust <__H___host_> <http___example_com> --worker --master-host <master_hostname>

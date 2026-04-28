@@ -3,4 +3,11 @@
 
 % hwclock, linux
 
+# Display the current time as reported by the hardware clock
+sudo hwclock
 
+# Write the current software clock time to the hardware clock (sometimes used during system setup)
+sudo hwclock <__w___systohc_>
+
+# Write the current hardware clock time to the software clock
+sudo hwclock <__s___hctosys_>

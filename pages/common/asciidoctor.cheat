@@ -3,4 +3,14 @@
 
 % asciidoctor, common
 
+# Convert a specific `.adoc` file to HTML (the default output format)
+asciidoctor <path_to_file_adoc>
 
+# Convert a specific `.adoc` file to HTML and link a CSS stylesheet
+asciidoctor <__a___attribute_> stylesheet=<path_to_stylesheet_css> <path_to_file_adoc>
+
+# Convert a specific `.adoc` file to embeddable HTML, removing everything except the body
+asciidoctor <__e___embedded_> <path_to_file_adoc>
+
+# Convert a specific `.adoc` file to a PDF using the `asciidoctor-pdf` library
+asciidoctor <__b___backend_> pdf <__r___require_> asciidoctor-pdf <path_to_file_adoc>

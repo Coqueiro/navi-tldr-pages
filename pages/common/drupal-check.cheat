@@ -3,4 +3,14 @@
 
 % drupal-check, common
 
+# Check the code in a specific directory for deprecations
+drupal-check <path_to_directory>
 
+# Check the code excluding a comma-separated list of directories
+drupal-check <__e___exclude_dir_> <path_to_excluded_directory>,<path_to_excluded_files___php> <path_to_directory>
+
+# Don't show a progress bar
+drupal-check --no-progress <path_to_directory>
+
+# Perform static analysis to detect bad coding practices
+drupal-check <__a___analysis_> <path_to_directory>

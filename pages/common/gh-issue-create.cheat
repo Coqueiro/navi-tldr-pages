@@ -3,4 +3,23 @@
 
 % gh-issue-create, common
 
+# Create a new issue against the current repository interactively
+gh issue <_new_create_>
 
+# Create a new issue with the `bug` label interactively
+gh issue <_new_create_> <__l___label_> "bug"
+
+# Create a new issue interactively and assign it to the specified users
+gh issue <_new_create_> <__a___assignee_> <user1_user2____>
+
+# Create a new issue with a title and body, and assign it to the current user
+gh issue <_new_create_> <__t___title_> "<title>" <__b___body_> "<body>" <__a___assignee_> "@me"
+
+# Create a new issue interactively, reading the body text from a file
+gh issue <_new_create_> <__F___body_file_> <path_to_file>
+
+# Create a new issue in the default web browser
+gh issue <_new_create_> <__w___web_>
+
+# Display help
+gh issue <_new_create_> <__h___help_>

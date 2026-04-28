@@ -3,4 +3,17 @@
 
 % conda-update, common
 
+# Update all packages in the current environment
+conda update <___all___update_all_>
 
+# Update a specific package in the current environment
+conda update <package_name>
+
+# Update conda itself in the base environment
+conda update <__n___name_> base conda
+
+# Update packages while ignoring pinned packages
+conda update --no-pin
+
+# Update packages in offline mode
+conda update --offline

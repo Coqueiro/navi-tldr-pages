@@ -3,4 +3,26 @@
 
 % aurman, linux
 
+# Synchronize and update all packages
+aurman <__S___sync_> <__y___refresh_> <__u___sysupgrade_>
 
+# Synchronize and update all packages without show changes of `PKGBUILD` files
+aurman <__S___sync_> <__y___refresh_> <__u___sysupgrade_> --noedit
+
+# Install a new package
+aurman <__S___sync_> <package>
+
+# Install a new package without show changes of `PKGBUILD` files
+aurman <__S___sync_> --noedit <package>
+
+# Install a new package without prompting
+aurman <__S___sync_> --noedit --noconfirm <package>
+
+# Search the package database for a keyword from the official repositories and AUR
+aurman <__S___sync_> <__s___search_> <keyword>
+
+# Remove a package and its dependencies
+aurman --remove --recursive --nosave <package>
+
+# Clear the package cache (use two `--clean` flags to clean all packages)
+aurman <__S___sync_> <__c___clean_>

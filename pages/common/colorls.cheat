@@ -3,4 +3,14 @@
 
 % colorls, common
 
+# List files one per line
+colorls -1
 
+# List all files, including hidden files
+colorls <__a___all_>
+
+# Long format list (permissions, ownership, size, and modification date) of all files
+colorls <__l___long_> <__a___all_>
+
+# Only list directories
+colorls <__d___dirs_>

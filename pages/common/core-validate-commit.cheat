@@ -3,4 +3,23 @@
 
 % core-validate-commit, common
 
+# Validate the current commit
+core-validate-commit
 
+# Validate a specific commit
+core-validate-commit <commit_hash>
+
+# Validate a range of commits
+git rev-list <commit_hash>..HEAD | xargs core-validate-commit
+
+# List all validation rules
+core-validate-commit <__l___list_>
+
+# List all valid Node.js subsystems
+core-validate-commit <__ls___list_subsystem_>
+
+# Validate the current commit formatting the output in tap format
+core-validate-commit <__t___tap_>
+
+# Display help
+core-validate-commit <__h___help_>

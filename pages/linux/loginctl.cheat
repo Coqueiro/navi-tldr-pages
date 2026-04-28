@@ -3,4 +3,23 @@
 
 % loginctl, linux
 
+# Print all current sessions
+loginctl
 
+# Print all properties of a specific session
+loginctl show-session <session_id> <__a___all_>
+
+# Print all properties of a specific user
+loginctl show-user <username>
+
+# Print a specific property of a user
+loginctl show-user <username> <__p___property_> <property_name>
+
+# Execute a `loginctl` operation on a remote host
+loginctl list-users <__H___host_> <hostname>
+
+# Log a user out on all of their sessions
+loginctl terminate-user <username>
+
+# Display help
+loginctl <__h___help_>

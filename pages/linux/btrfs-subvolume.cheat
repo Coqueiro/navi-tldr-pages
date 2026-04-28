@@ -4,19 +4,19 @@
 % btrfs-subvolume, linux
 
 # Create a new empty subvolume
-sudo btrfs {{[su|subvolume]}} {{[c|create]}} <path_to_new_subvolume>
+sudo btrfs <_su_subvolume_> <_c_create_> <path_to_new_subvolume>
 
 # List all subvolumes and snapshots in the specified filesystem
-sudo btrfs {{[su|subvolume]}} {{[l|list]}} <path_to_btrfs_filesystem>
+sudo btrfs <_su_subvolume_> <_l_list_> <path_to_btrfs_filesystem>
 
 # Delete a subvolume
-sudo btrfs {{[su|subvolume]}} {{[d|delete]}} <path_to_subvolume>
+sudo btrfs <_su_subvolume_> <_d_delete_> <path_to_subvolume>
 
 # Create a [r]ead-only snapshot of an existing subvolume
-sudo btrfs {{[su|subvolume]}} {{[sn|snapshot]}} -r <path_to_source_subvolume> <path_to_target>
+sudo btrfs <_su_subvolume_> <_sn_snapshot_> -r <path_to_source_subvolume> <path_to_target>
 
 # Create a read-write snapshot of an existing subvolume
-sudo btrfs {{[su|subvolume]}} {{[sn|snapshot]}} <path_to_source_subvolume> <path_to_target>
+sudo btrfs <_su_subvolume_> <_sn_snapshot_> <path_to_source_subvolume> <path_to_target>
 
 # Show detailed information about a subvolume
-sudo btrfs {{[su|subvolume]}} {{[sh|show]}} <path_to_subvolume>
+sudo btrfs <_su_subvolume_> <_sh_show_> <path_to_subvolume>

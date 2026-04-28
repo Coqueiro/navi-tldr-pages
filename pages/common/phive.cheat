@@ -3,4 +3,26 @@
 
 % phive, common
 
+# Display a list of available aliased Phars
+phive list
 
+# Install a specified Phar to the local directory
+phive install <alias_url>
+
+# Install a specified Phar globally
+phive install <alias_url> <__g___global_>
+
+# Install a specified Phar to a target directory
+phive install <alias_url> <__t___target_> <path_to_directory>
+
+# Update all Phar files to the latest version
+phive update
+
+# Remove a specified Phar file
+phive remove <alias_url>
+
+# Remove unused Phar files
+phive purge
+
+# List all available commands
+phive help

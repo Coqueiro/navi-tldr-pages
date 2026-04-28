@@ -3,4 +3,17 @@
 
 % sprof, linux
 
+# Generate a flat profile and call graph (default output)
+sprof <path_to_library_so> <path_to_library_so_profile>
 
+# Generate a flat profile with counts and ticks
+sprof <__p___flat_profile_> <path_to_library_so> <path_to_library_so_profile>
+
+# Generate a call graph
+sprof <__q___graph_> <path_to_library_so> <path_to_library_so_profile>
+
+# Print call pairs and their usage counts
+sprof <__c___call_pairs_> <path_to_library_so> <path_to_library_so_profile>
+
+# Use profile data from current directory (auto-detected by soname)
+sprof <path_to_library_so>

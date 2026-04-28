@@ -3,4 +3,14 @@
 
 % npm-install-test, common
 
+# Install all dependencies and then run tests
+npm <_it_install_test_>
 
+# Install a specific package and then run tests
+npm <_it_install_test_> <package_name>
+
+# Install a package and save it as a dependency before running tests
+npm <_it_install_test_> <package_name> <__S___save_>
+
+# Install dependencies globally and then run tests
+npm <_it_install_test_> <__g___global_>

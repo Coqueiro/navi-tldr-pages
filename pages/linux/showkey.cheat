@@ -3,4 +3,17 @@
 
 % showkey, linux
 
+# View keycodes in decimal
+sudo showkey
 
+# Display scancodes in hexadecimal
+sudo showkey <__s___scancodes_>
+
+# Display keycodes in decimal (default)
+sudo showkey <__k___keycodes_>
+
+# Display keycodes in ASCII, decimal, and hexadecimal
+sudo showkey <__a___ascii_>
+
+# Exit the program
+<Ctrl d>

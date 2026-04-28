@@ -3,4 +3,26 @@
 
 % pacstall, linux
 
+# Search the package database for a package name
+pacstall <__S___search_> <query>
 
+# Install a package
+pacstall <__I___install_> <package>
+
+# Remove a package
+pacstall <__R___remove_> <package>
+
+# Add a repository to the database (only GitHub and GitLab are supported)
+pacstall <__A___add_repo_> <remote_repository_location>
+
+# Update pacstall's scripts
+pacstall <__U___update_>
+
+# Update all packages
+pacstall <__Up___upgrade_>
+
+# Display information about a package
+pacstall <__Ci___cache_info_> <package>
+
+# List all installed packages
+pacstall <__L___list_>

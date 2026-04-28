@@ -3,4 +3,14 @@
 
 % cpufreq-aperf, linux
 
+# Start calculating, defaulting to all CPU cores and 1 second refresh interval
+sudo cpufreq-aperf
 
+# Start calculating for CPU 1 only
+sudo cpufreq-aperf <__c___cpu_> <1>
+
+# Start calculating with a 3 second refresh interval for all CPU cores
+sudo cpufreq-aperf <__i___interval_> <3>
+
+# Calculate only once
+sudo cpufreq-aperf <__o___once_>

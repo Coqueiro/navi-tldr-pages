@@ -3,4 +3,23 @@
 
 % resticprofile, common
 
+# List all saved snapshots
+resticprofile
 
+# Run a backup on the default profile
+resticprofile backup
+
+# Run a backup with a specific profile (default profile is "default")
+resticprofile <__n___name_> "<profile_name>" backup
+
+# Run in dry-run mode and show the underlying restic commands
+resticprofile --dry-run backup
+
+# Display the names of all profiles from the configuration file
+resticprofile profiles
+
+# Generate shell completions
+resticprofile generate <__bash_completion___zsh_completion>
+
+# Show all details of a profile
+resticprofile show <__n___name_> "<profile_name>"

@@ -4,4 +4,4 @@
 % qm-cleanup, linux
 
 # Clean up resources
-qm {{[cl|cleanup]}} <100> <clean_shutdown> <guest_requested>
+qm <_cl_cleanup_> <100> <clean_shutdown> <guest_requested>

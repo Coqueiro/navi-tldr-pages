@@ -3,4 +3,11 @@
 
 % wf-recorder, linux
 
+# Record storing to an MP4 file
+wf-recorder <__f___file_> <output_mp4>
 
+# Record including audio, both with mic and system sounds
+wf-recorder <__a___audio_> <__f___file_> /<path_to_file_with_audio_webm>
+
+# Select and record a portion of the screen using `slurp`, outputting to default `recording.mp4`
+wf-recorder <__g___geometry_> "$(slurp)"

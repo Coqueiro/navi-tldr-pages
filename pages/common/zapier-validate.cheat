@@ -3,4 +3,17 @@
 
 % zapier-validate, common
 
+# Validate an integration
+zapier validate
 
+# Validate an integration without style checks
+zapier validate --without-style
+
+# Validate an integration without running the build script
+zapier validate --skip-build
+
+# Validate an integration with additional debug output
+zapier validate <__d___debug_>
+
+# Validate an integration with a different output structure
+zapier validate <__f___format_> <plain_json_raw_row_table>

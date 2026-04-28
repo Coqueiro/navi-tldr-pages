@@ -3,4 +3,26 @@
 
 % nl, linux
 
+# Number non-blank lines in a file
+nl <path_to_file>
 
+# Read from `stdin`
+<command> | nl
+
+# Number [a]ll body lines including blank lines or do [n]ot number body lines
+nl <__b___body_numbering_> <a_n> <path_to_file>
+
+# Number only the body lines that match a basic `regex` (BRE) [p]attern
+nl <__b___body_numbering_> p'FooBar[0-9]' <path_to_file>
+
+# Use a specific increment for line numbering
+nl <__i___line_increment_> <increment> <path_to_file>
+
+# Specify the line numbering format to [r]ight or [l]eft justified, keeping leading [z]eros or [n]ot
+nl <__n___number_format_> <rz_ln_rn>
+
+# Specify the line numbering's width (6 by default)
+nl <__w___number_width_> <col_width> <path_to_file>
+
+# Use a specific string to separate the line numbers from the lines (`TAB` by default)
+nl <__s___number_separator_> <separator> <path_to_file>

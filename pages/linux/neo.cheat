@@ -3,4 +3,26 @@
 
 % neo, linux
 
+# Set scroll speed and asynchronous columns
+neo <__S___speed_> <12> <__a___async_>
 
+# Change text color and colormode
+neo <__c___color_> <green> --colormode <256>
+
+# Display a centered message
+neo <__m___message_> "{{Hello World}}"
+
+# Set droplet density and glitch percentage
+neo <__d___density_> <2_0> <__G___glitchpct_> <20_0>
+
+# Use a specific charset
+neo --charset <ascii_greek_cyrillic_arabic_braille_runic____>
+
+# Clear the screen
+<Space>
+
+# Exit neo
+<_Esc___q_>
+
+# Display help
+neo <__h___help_>

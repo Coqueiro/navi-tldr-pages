@@ -3,4 +3,11 @@
 
 % gettext, common
 
+# Get the translation of a string as specified in the domain file (falls back to given `msgid` if no translation exists)
+LANGUAGE=<locale> gettext <__d___domain_> <domain> "<msgid>"
 
+# Display help
+gettext <__h___help_>
+
+# Display version
+gettext <__V___version_>

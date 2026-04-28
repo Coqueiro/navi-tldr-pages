@@ -3,4 +3,26 @@
 
 % loadkeys, linux
 
+# Load a specific keyboard layout for the current console
+sudo loadkeys <en_de_fi_dvorak_defkeymap____>
 
+# Load a default keymap
+sudo loadkeys <__d___default_>
+
+# Print the kernel source table of a keymap to `stdout`
+loadkeys <__m___mktable_> <en_de_fi____>
+
+# Print the binary format of a keymap to `stdout`
+loadkeys <__b___bkeymap_> <en_de_fi____>
+
+# Search and parse keymap without action
+loadkeys <__p___parse_> <en_de_fi____>
+
+# Load a keymap from `stdin`, suppressing all output
+<command> | sudo loadkeys <__q___quiet_>
+
+# Set a keymap for a specific console
+sudo loadkeys <__C___console_> <_dev_ttyN> <uk>
+
+# Load a keymap from the specified file for the console
+sudo loadkeys <__C___console_> <_dev_ttyN> /<path_to_file>

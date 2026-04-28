@@ -3,4 +3,14 @@
 
 % cargo-doc, common
 
+# Build the documentation for the current project and all dependencies
+cargo <_d_doc_>
 
+# Do not build documentation for dependencies
+cargo <_d_doc_> --no-deps
+
+# Build and open the documentation in a browser
+cargo <_d_doc_> --open
+
+# Build and view the documentation of a particular package
+cargo <_d_doc_> --open <__p___package_> <package>

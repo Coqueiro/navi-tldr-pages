@@ -4,19 +4,19 @@
 % bridge, linux
 
 # List all bridges and their interfaces
-bridge {{[l|link]}}
+bridge <_l_link_>
 
 # Show port vlan information
-bridge {{[v|vlan]}}
+bridge <_v_vlan_>
 
 # Assign a VLAN to a port
-sudo bridge {{[v|vlan]}} {{[a|add]}} dev <lanX> vid <vlan_id> pvid <tagged_untagged>
+sudo bridge <_v_vlan_> <_a_add_> dev <lanX> vid <vlan_id> pvid <tagged_untagged>
 
 # Remove a VLAN from a port
-sudo bridge {{[v|vlan]}} {{[d|delete]}} dev <lanX> vid <vlan_id>
+sudo bridge <_v_vlan_> <_d_delete_> dev <lanX> vid <vlan_id>
 
 # Watch for changes in bridge interfaces
-bridge {{[mo|monitor]}}
+bridge <_mo_monitor_>
 
 # Display help
-bridge {{[h|help]}}
+bridge <_h_help_>

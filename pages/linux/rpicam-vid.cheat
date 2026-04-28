@@ -3,4 +3,5 @@
 
 % rpicam-vid, linux
 
-
+# Capture a 10 second video
+rpicam-vid <__t___timeout_> 10000 <__o___output_> <path_to_file_h264>

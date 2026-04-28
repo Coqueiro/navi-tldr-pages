@@ -3,4 +3,17 @@
 
 % swaymsg, common
 
+# Run a Sway command
+swaymsg <command>
 
+# Display a list of workspaces
+swaymsg <__t___type_> get_workspaces
+
+# Display a list of input devices
+swaymsg <__t___type_> get_inputs
+
+# Display a list of output devices
+swaymsg <__t___type_> get_outputs
+
+# Display a layout tree of all open windows, containers, outputs, and workspaces
+swaymsg <__t___type_> get_tree

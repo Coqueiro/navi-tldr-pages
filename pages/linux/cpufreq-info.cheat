@@ -3,4 +3,23 @@
 
 % cpufreq-info, linux
 
+# Show CPU frequency information for all CPUs
+cpufreq-info
 
+# Show CPU frequency information for the specified CPU
+cpufreq-info <__c___cpu_> <cpu_number>
+
+# Show the allowed minimum and maximum CPU frequency
+cpufreq-info <__l___hwlimits_>
+
+# Show the current minimum and maximum CPU frequency and policy in table format
+cpufreq-info <__o___proc_>
+
+# Show available CPU frequency policies
+cpufreq-info <__g___governors_>
+
+# Show current CPU work frequency in a human-readable format, according to the cpufreq kernel module
+cpufreq-info <__f___freq_> <__m___human_>
+
+# Show current CPU work frequency in a human-readable format, by reading it from hardware (only available to root)
+sudo cpufreq-info <__w___hwfreq_> <__m___human_>

@@ -3,4 +3,20 @@
 
 % fastd, common
 
+# Start `fastd` with a specific configuration file
+fastd <__c___config_> <path_to_fastd_conf>
 
+# Start a Layer 3 VPN with an MTU of 1400, loading the rest of the configuration parameters from a file
+fastd <__m___mode_> <tap> <__M___mtu_> <1400> <__c___config_> <path_to_fastd_conf>
+
+# Validate a configuration file
+fastd --verify-config <__c___config_> <path_to_fastd_conf>
+
+# Generate a new keypair
+fastd --generate-key
+
+# Show the public key to a private key in a configuration file
+fastd --show-key <__c___config_> <path_to_fastd_conf>
+
+# Display version
+fastd <__v___version_>

@@ -3,4 +3,17 @@
 
 % kpackagetool5, linux
 
+# List all known package types that can be installed
+kpackagetool5 --list-types
 
+# Install the package from a directory
+kpackagetool5 <__t___type_> <package_type> <__i___install_> <path_to_directory>
+
+# Update installed package from a directory
+kpackagetool5 <__t___type_> <package_type> <__u___upgrade_> <path_to_directory>
+
+# List installed plasmoids (`--global` for all users)
+kpackagetool5 <__t___type_> Plasma/Applet <__l___list_> <__g___global_>
+
+# Remove a plasmoid by name
+kpackagetool5 <__t___type_> Plasma/Applet <__r___remove_> "<name>"

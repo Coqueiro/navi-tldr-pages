@@ -3,4 +3,11 @@
 
 % ykman-config, common
 
+# Enable an application over USB or NFC (`--enable` can be used multiple times to specify more applications)
+ykman config <usb_nfc> <__e___enable_> <otp_u2f_fido2_oath_piv_openpgp_hsmauth>
 
+# Disable an application over USB or NFC (`--disable` can be used multiple times to specify more applications)
+ykman config <usb_nfc> <__d___disable_> <otp_u2f_fido2_oath_piv_openpgp_hsmauth>
+
+# Disable all applications over NFC
+ykman config nfc <__D___disable_all_>

@@ -3,4 +3,14 @@
 
 % mvn-install, common
 
+# Compile, test, package, and install the project into the local repository
+mvn install
 
+# Skip tests during installation
+mvn install <__D___define_> skipTests
+
+# Force update of dependencies before installing
+mvn install <__U___update_snapshots_>
+
+# Skip test compilation and execution
+mvn install <__D___define_> maven.test.skip=true

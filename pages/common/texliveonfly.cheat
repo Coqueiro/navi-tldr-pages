@@ -3,4 +3,11 @@
 
 % texliveonfly, common
 
+# Download missing packages while compiling
+texliveonfly <source_tex>
 
+# Use a specific compiler (defaults to `pdflatex`)
+texliveonfly <__c___compiler_> <compiler> <source_tex>
+
+# Use a custom TeX Live `bin` folder
+texliveonfly --texlive_bin=<path_to_texlive_bin> <source_tex>

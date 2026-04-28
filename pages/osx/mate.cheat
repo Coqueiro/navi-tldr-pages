@@ -3,4 +3,17 @@
 
 % mate, osx
 
+# Start TextMate
+mate
 
+# Open specific files
+mate {{path/to/file1 path/to/file2 ...}}
+
+# Specify the filetype of a file
+mate <__t___type_> <filetype> <path_to_file>
+
+# Open and wait until finished editing a specific file
+mate <__w___wait_> <path_to_file>
+
+# Open a file with the cursor at a specific line and column
+mate <__l___line_> <line_number>:<column_number> <path_to_file>

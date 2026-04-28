@@ -3,4 +3,23 @@
 
 % pulumi-up, common
 
+# Preview and deploy changes to a program and/or infrastructure
+pulumi up
 
+# Automatically approve and perform the update after previewing it
+pulumi up <__y___yes_>
+
+# Preview and deploy changes in a specific stack
+pulumi up <__s___stack_> <stack>
+
+# Refresh the state of the stack's resources before updating
+pulumi up <__r___refresh_>
+
+# Don't display stack outputs
+pulumi up --suppress-outputs
+
+# Continue updating the resources, even if an error is encountered
+pulumi up --continue-on-error
+
+# Display help
+pulumi up <__h___help_>

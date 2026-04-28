@@ -3,4 +3,17 @@
 
 % cargo-deb, common
 
+# Create a Debian package from a project
+cargo deb
 
+# Write the `.deb` file to the specified file or directory
+cargo deb <__o___output_> <path_to_file_or_directory>
+
+# Compile for the specified Rust target triple
+cargo deb --target <x86_64_unknown_linux_gnu>
+
+# Select which package to use in a Cargo workspace
+cargo deb <__p___package_> <package_name>
+
+# Immediately install the created package
+cargo deb --install

@@ -3,4 +3,17 @@
 
 % gnomon, common
 
+# Use UNIX (or DOS) pipes to pipe `stdout` of any command through gnomon
+{{npm test}} | gnomon
 
+# Show number of seconds since the start of the process
+{{npm test}} | gnomon <__t___type_> elapsed-total
+
+# Show an absolute timestamp in UTC
+{{npm test}} | gnomon <__t___type_> absolute
+
+# Use a high threshold of 0.5 seconds, exceeding which the timestamp will be colored bright red
+{{npm test}} | gnomon <__h___high_> 0.5
+
+# Use a medium threshold of 0.2 seconds, exceeding which the timestamp will be colored bright yellow
+{{npm test}} | gnomon <__m___medium_> 0.2

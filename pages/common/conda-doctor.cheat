@@ -3,4 +3,14 @@
 
 % conda-doctor, common
 
+# View report for the currently active environment
+conda doctor
 
+# Specify an environment by name
+conda doctor <__n___name_> <environment_name>
+
+# Specify an environment by its path
+conda doctor <__p___prefix_> <path_to_environment>
+
+# Enable verbose output (Note: the `-v` flag can be repeated to increase verbosity)
+conda doctor <__v___verbose_>

@@ -3,4 +3,11 @@
 
 % zipcloak, common
 
+# Encrypt the contents of a Zip archive
+zipcloak <path_to_archive_zip>
 
+# Decrypt the contents of a Zip archive
+zipcloak <__d___decrypt_> <path_to_archive_zip>
+
+# Output the encrypted contents into a new Zip archive
+zipcloak <path_to_archive_zip> <__O___output_file_> <path_to_encrypted_zip>

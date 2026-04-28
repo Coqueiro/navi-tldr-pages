@@ -3,4 +3,11 @@
 
 % git-extras, common
 
+# Install or upgrade `git-extras` commands
+git extras update
 
+# Display help
+git extras <__h___help_>
+
+# Display version
+git extras <__v___version_>

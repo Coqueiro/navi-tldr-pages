@@ -19,7 +19,7 @@ open .
 open -R <path_to_file>
 
 # Open all the files of a given extension in the current directory with the associated application
-open {{*.ext}}
+open <__ext>
 
 # Open a [n]ew instance of an application specified via [b]undle identifier
 open -n -b <com_domain_application>

@@ -3,4 +3,17 @@
 
 % cmd-wrapped, common
 
+# Fetch current statistics
+cmd-wrapped
 
+# Fetch statistics from a specific year
+cmd-wrapped <year>
+
+# Specify a shell
+cmd-wrapped <__s___shell_> <shell>
+
+# Display help
+cmd-wrapped <__h___help_>
+
+# Display version
+cmd-wrapped <__V___version_>

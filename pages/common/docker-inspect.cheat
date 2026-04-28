@@ -3,4 +3,23 @@
 
 % docker-inspect, common
 
+# Display information about a container, image, or volume using a name or ID
+docker inspect <container_image_ID>
 
+# Display a container's IP address
+docker inspect <__f___format_> '\{\{range.NetworkSettings.Networks\}\}\{\{.IPAddress\}\}\{\{end\}\}' <container>
+
+# Display the path to the container's log file
+docker inspect <__f___format_> '\{\{.LogPath\}\}' <container>
+
+# Display the image name of the container
+docker inspect <__f___format_> '\{\{.Config.Image\}\}' <container>
+
+# Display the configuration information as JSON
+docker inspect <__f___format_> '\{\{json .Config\}\}' <container>
+
+# Display all port bindings
+docker inspect <__f___format_> '\{\{range $p, $conf := .NetworkSettings.Ports\}\} \{\{$p\}\} -> \{\{(index $conf 0).HostPort\}\} \{\{end\}\}' <container>
+
+# Display help
+docker inspect

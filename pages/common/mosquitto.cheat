@@ -3,4 +3,14 @@
 
 % mosquitto, common
 
+# Start Mosquitto
+mosquitto
 
+# Specify a configuration file to use
+mosquitto <__c___config_file_> <path_to_file_conf>
+
+# Listen on a specific port
+mosquitto <__p___port_> <8883>
+
+# Daemonize by forking into the background
+mosquitto <__d___daemon_>

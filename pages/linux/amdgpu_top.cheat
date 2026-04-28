@@ -3,4 +3,20 @@
 
 % amdgpu_top, linux
 
+# Display a list of AMDGPU devices
+amdgpu_top --list
 
+# Dump all GPU processes and per-process memory usage
+amdgpu_top <__p___process_>
+
+# Select a specific GPU by PCI bus
+amdgpu_top --pci "<0000_01_00_0>"
+
+# Launch the interactive TUI monitor
+amdgpu_top
+
+# Launch the GUI monitor
+amdgpu_top --gui
+
+# Launch a simple SMI-like TUI view
+amdgpu_top --smi

@@ -3,4 +3,14 @@
 
 % gh-pr-view, common
 
+# View the pull request associated with the current branch
+gh pr view
 
+# View a specific pull request
+gh pr view <123>
+
+# Open the pull request in the default web browser
+gh pr view <__w___web_>
+
+# Show comments in the terminal
+gh pr view <123> <__c___comments_>

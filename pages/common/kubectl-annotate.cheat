@@ -3,4 +3,17 @@
 
 % kubectl-annotate, common
 
+# Annotate a pod
+kubectl annotate <_po_pods_> <pod_name> <key>=<value>
 
+# Update a pod annotation by overwriting the existing value
+kubectl annotate <_po_pods_> <pod_name> <key>=<value> --overwrite
+
+# Annotate all pods in a namespace with a specific label selector
+kubectl annotate <_po_pods_> <key>=<value> <__l___selector_> <label_key>=<label_value>
+
+# List all annotations a pod has
+kubectl annotate <_po_pods_> <pod_name> --list
+
+# Remove the annotation from a pod
+kubectl annotate <_po_pods_> <pod_name> <key>-

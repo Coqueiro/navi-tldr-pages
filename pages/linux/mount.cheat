@@ -3,4 +3,26 @@
 
 % mount, linux
 
+# Show all mounted filesystems
+mount
 
+# Mount a device to a directory
+mount <path_to_device_file> <path_to_target_directory>
+
+# Create a specific directory if it does not exist and mount a device to it
+mount <__m___mkdir_> <path_to_device_file> <path_to_target_directory>
+
+# Mount a device to a directory for a specific user
+mount <__o___options_> uid=<user_id>,gid=<group_id> <path_to_device_file> <path_to_target_directory>
+
+# Mount a CD-ROM device (with the filetype ISO9660) to `/cdrom` (readonly)
+mount <__t___types_> iso9660 <__o___options_> ro <_dev_cdrom> /cdrom
+
+# Mount all the filesystems defined in `/etc/fstab`
+mount <__a___all_>
+
+# Mount a specific filesystem described in `/etc/fstab` (e.g. `/dev/sda1 /path/to/mount_point ext2 defaults 0 2`)
+mount <path_to_mount_point>
+
+# Mount a directory to another directory
+mount <__B___bind_> <path_to_old_directory> <path_to_new_directory>

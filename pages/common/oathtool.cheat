@@ -3,4 +3,11 @@
 
 % oathtool, common
 
+# Generate TOTP token (behaves like Google Authenticator)
+oathtool --totp <__b___base32_> "<secret>"
 
+# Generate a TOTP token for a specific time
+oathtool --totp <__N___now_> "{{2004-02-29 16:21:42}}" <__b___base32_> "<secret>"
+
+# Validate a TOTP token
+oathtool --totp <__b___base32_> "<secret>" "<token>"

@@ -13,7 +13,7 @@ mpv <url_path_to_file>
 <_ArrowDown___ArrowUp_>
 
 # Decrease or increase playback speed by 10%
-{{<[>|<]>}}
+<_______>
 
 # Add subtitles from a file
 mpv --sub-file=<path_to_file>

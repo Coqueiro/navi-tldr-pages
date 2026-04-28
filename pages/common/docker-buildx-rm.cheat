@@ -3,4 +3,11 @@
 
 % docker-buildx-rm, common
 
+# Remove a builder instance
+docker buildx rm <builder_name>
 
+# Remove all inactive builders
+docker buildx rm --all-inactive
+
+# Remove all inactive builders without prompting for confirmation
+docker buildx rm --all-inactive <__f___force_>

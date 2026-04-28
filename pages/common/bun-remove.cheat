@@ -3,4 +3,17 @@
 
 % bun-remove, common
 
+# Remove a dependency
+bun <_rm_remove_> <package_name>
 
+# Remove multiple dependencies
+bun <_rm_remove_> {{package_name1 package_name2 ...}}
+
+# Remove a globally installed package
+bun <_rm_remove_> <__g___global_> <package_name>
+
+# Remove a dependency without updating the `package.json` file
+bun <_rm_remove_> --no-save <package_name>
+
+# Run the command without actually removing packages (simulate the removal)
+bun <_rm_remove_> --dry-run <package_name>

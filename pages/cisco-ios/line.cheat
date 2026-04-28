@@ -1,7 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/cisco-ios/line.md
-
-% line, cisco-ios
-
-# Configure lines from 0 to 15
-line vty 0 15

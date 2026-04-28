@@ -3,4 +3,8 @@
 
 % pinout, linux
 
+# View the pinout information and GPIO header diagram for the current Raspberry Pi
+pinout
 
+# Open <https://pinout.xyz/> in the default browser
+pinout <__x___xyz_>

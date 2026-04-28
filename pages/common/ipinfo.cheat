@@ -3,4 +3,26 @@
 
 % ipinfo, common
 
+# Display details for your current IP address
+ipinfo myip
 
+# Display details for a specific IP address
+ipinfo <ip_address>
+
+# Display details for multiple IP addresses in bulk from a file
+ipinfo bulk <path_to_ips_txt>
+
+# Display details for a CIDR or IP range
+ipinfo bulk <cidr_range>
+
+# Display only specific fields from IP lookup results
+ipinfo <ip_address> <__f___field_> <hostname_country_org>
+
+# Summarize details for a group of IP addresses
+ipinfo summarize <path_to_ips_txt>
+
+# Extract IP addresses from text and highlight them
+ipinfo grepip <path_to_file_txt>
+
+# Display help
+ipinfo <__h___help_>

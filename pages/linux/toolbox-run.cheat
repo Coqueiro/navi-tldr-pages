@@ -3,4 +3,11 @@
 
 % toolbox-run, linux
 
+# Run a command inside a specific Toolbx container
+toolbox run <__c___container_> <container_name> <command>
 
+# Run a command inside a Toolbx container for a specific release of a distribution
+toolbox run <__d___distro_> <distribution> <__r___release_> <release> <command>
+
+# Run `emacs` inside a Toolbx container using the default image for a specific Fedora release
+toolbox run <__d___distro_> <fedora> <__r___release_> f<version> <emacs>

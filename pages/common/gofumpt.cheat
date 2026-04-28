@@ -3,4 +3,23 @@
 
 % gofumpt, common
 
+# Format Go files
+gofumpt -w <path_to_directory>
 
+# [l]ist files whose formatting differs from `gofumpt`
+gofumpt -l <path_to_directory>
+
+# Report all [e]rrors
+gofumpt -e <path_to_directory>
+
+# Display [d]iffs
+gofumpt -d <path_to_directory>
+
+# Format Go files with stricter rules
+gofumpt -extra <path_to_directory>
+
+# Display [d]iffs with stricter rules
+gofumpt -extra -d <path_to_directory>
+
+# Display help
+gofumpt <__h___help_>

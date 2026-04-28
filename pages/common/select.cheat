@@ -13,4 +13,4 @@ select <line> in $(<command>); do echo $<line>; done
 PS3="{{Select a file: }}"; select <file> in *; do echo $<file>; done
 
 # Create a menu from a Bash array
-<fruits>=({{apple orange pear banana}}); select <word> in ${{{fruits[@]}}}; do echo $<word>; done
+<fruits>=({{apple orange pear banana}}); select <word> in $<_fruits___>}; do echo $<word>; done

@@ -4,13 +4,13 @@
 % npm-explain, common
 
 # Explain why a specific package is installed
-npm {{[why|explain]}} <package_name>
+npm <_why_explain_> <package_name>
 
 # Show explanation in JSON format
-npm {{[why|explain]}} <package_name> --json
+npm <_why_explain_> <package_name> --json
 
 # Include peer dependencies in the explanation
-npm {{[why|explain]}} <package_name> --include peer
+npm <_why_explain_> <package_name> --include peer
 
 # Limit explanation depth to 2 levels deep
-npm {{[why|explain]}} <package_name> --depth 2
+npm <_why_explain_> <package_name> --depth 2

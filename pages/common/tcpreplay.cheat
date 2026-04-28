@@ -3,4 +3,20 @@
 
 % tcpreplay, common
 
+# List available network interfaces
+tcpreplay --listnics
 
+# Replay traffic to interface
+tcpreplay <__i___intf1_> <eth0> <traffic_pcap>
+
+# Replay traffic to interface and `stdout`
+tcpreplay <__i___intf1_> <eth0> <__v___verbose_> <traffic_pcap>
+
+# Replay traffic to interface as fast as possible
+tcpreplay <__i___intf1_> <eth0> <__t___topspeed_> <traffic_pcap>
+
+# Replay traffic to interface at given Mbps
+tcpreplay <__i___intf1_> <eth0> <__M___mbps_> <10> <traffic_pcap>
+
+# Replay traffic to interface several times
+tcpreplay <__i___intf1_> <eth0> <__l___loop_> <num_times> <traffic_pcap>

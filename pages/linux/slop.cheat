@@ -3,4 +3,17 @@
 
 % slop, linux
 
+# Wait for the user to make a selection and output its geometry to `stdout`
+slop
 
+# Double click, rather than click and drag, to draw a selection
+slop <__D___nodrag_>
+
+# Highlight the selection rather than outlining it
+slop <__l___highlight_>
+
+# Specify the output format
+slop <__f___format_> <format_string>
+
+# Specify the selection rectangle's color
+slop <__c___color_> <red>,<green>,<blue>,<alpha>

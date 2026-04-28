@@ -3,4 +3,23 @@
 
 % xzgrep, common
 
+# Search for a pattern within a file
+xzgrep "<search_pattern>" <path_to_file>
 
+# Search for an exact string (disables `regex`)
+xzgrep <__F___fixed_strings_> "<exact_string>" <path_to_file>
+
+# Search for a pattern in all files showing line numbers of matches
+xzgrep <__n___line_number_> "<search_pattern>" <path_to_file>
+
+# Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match
+xzgrep <__context___before_context___after_context> 3 "<search_pattern>" <path_to_file>
+
+# Print file name and line number for each match with color output
+xzgrep <__H___with_filename_> <__n___line_number_> --color=always "<search_pattern>" <path_to_file>
+
+# Search for lines matching a pattern, printing only the matched text
+xzgrep <__o___only_matching_> "<search_pattern>" <path_to_file>
+
+# Use extended `regex` (supports `?`, `+`, `{}`, `()`, and `|`), in case-insensitive mode
+xzgrep <__E___extended_regexp_> <__i___ignore_case_> "<search_pattern>" <path_to_file>

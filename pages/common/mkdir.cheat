@@ -3,4 +3,14 @@
 
 % mkdir, common
 
+# Create specific directories
+mkdir {{path/to/directory1 path/to/directory2 ...}}
 
+# Create specific directories and their parents if needed
+mkdir <__p___parents_> {{path/to/directory1 path/to/directory2 ...}}
+
+# Create directories with specific permissions
+mkdir <__m___mode_> <rwxrw_r__> {{path/to/directory1 path/to/directory2 ...}}
+
+# Create multiple nested directories recursively
+mkdir <__p___parents_> {{path/to/{a,b}/{x,y,z}/{h,i,j}}}

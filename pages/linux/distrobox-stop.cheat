@@ -3,4 +3,8 @@
 
 % distrobox-stop, linux
 
+# Stop a Distrobox container
+distrobox-stop <container_name>
 
+# Stop a Distrobox container non-interactively (without confirmation)
+distrobox-stop <container_name> <__Y___yes_>

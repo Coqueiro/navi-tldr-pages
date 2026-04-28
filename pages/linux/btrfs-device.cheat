@@ -3,4 +3,17 @@
 
 % btrfs-device, linux
 
+# Add one or more devices to a btrfs filesystem
+sudo btrfs <_d_device_> <_a_add_> {{path/to/block_device1 path/to/block_device2 ...}} <path_to_btrfs_filesystem>
 
+# Remove a device from a btrfs filesystem
+sudo btrfs <_d_device_> <_rem_remove_> {{path/to/device1|device_id1 path/to/device2|device_id2 ...}}
+
+# Display error statistics
+sudo btrfs <_d_device_> <_st_stats_> <path_to_btrfs_filesystem>
+
+# Scan all disks and inform the kernel of all detected btrfs filesystems
+sudo btrfs <_d_device_> <_sc_scan_> <__d___all_devices_>
+
+# Display detailed per-disk allocation statistics
+sudo btrfs <_d_device_> <_u_usage_> <path_to_btrfs_filesystem>

@@ -3,4 +3,23 @@
 
 % tlsx, common
 
+# Display TLS version and cipher of one or more hosts
+tlsx <__u__host_> <host1_host2____> <__tv__tls_version_> -cipher
 
+# Enumerate and display supported TLS versions and ciphers of a host
+tlsx <__u__host_> <host> <__ve__version_enum_> <__ce__cipher_enum_>
+
+# Scan a list of hosts from a file and mark hosts with expired/self-signed/mismatched/revoked/untrusted certificates
+tlsx <__l__list_> <path_to_hosts_txt> <__ex__expired_> <__ss__self_signed_> <__mm__mismatched_> <__re__revoked_> <__un__untrusted_>
+
+# Adjust per host concurrency, timeout, retry, and delay parameters when scanning a list of hosts for wildcard SSL certificates
+tlsx <__l__list_> <path_to_hosts_txt> <__c__concurrency_> <300> -timeout <5> -retry <3> -delay <200ms> <__wc__wildcard_cert_>
+
+# Display unique hostname(s) from SSL certificate response
+tlsx <__u__host_> <host> -dns
+
+# Display Subject Alternative Names (SANs) from the TLS certificate of a host, with JSON output written to a file
+tlsx <__u__host_> <host> -san <__j__json_> <__o__output_> <path_to_file_json>
+
+# Perform a self health-check of `tlsx` itself
+tlsx <__hc__health_check_>

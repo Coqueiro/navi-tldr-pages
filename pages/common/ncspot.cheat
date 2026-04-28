@@ -3,4 +3,17 @@
 
 % ncspot, common
 
+# Start `ncspot`
+ncspot
 
+# Enable logging to the specified file
+ncspot <__d___debug_> <path_to_file>
+
+# Display paths to the configuration and cache
+ncspot info
+
+# Use a different configuration file (in the directory reported by `ncspot info`; default: `config.toml`)
+ncspot <__c___config_> <file_name>
+
+# Display a list of keybindings
+<?>

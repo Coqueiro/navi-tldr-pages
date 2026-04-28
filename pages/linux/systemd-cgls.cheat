@@ -3,4 +3,11 @@
 
 % systemd-cgls, linux
 
+# Display the whole control group hierarchy on your system
+systemd-cgls
 
+# Display a control group tree of a specific resource controller
+systemd-cgls <cpu_memory_io>
+
+# Display the control group hierarchy of one or more systemd units
+systemd-cgls <__u___unit_> {{unit1 unit2 ...}}

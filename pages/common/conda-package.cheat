@@ -3,4 +3,20 @@
 
 % conda-package, common
 
+# Get conda package from file
+conda package <__w___which_> <path_to_file>
 
+# Remove all untracked files
+conda package <__r___reset_>
+
+# Display all untracked files
+conda package <__u___untracked_>
+
+# Designate package name of the package being created
+conda package --pkg-name <name>
+
+# Designate package version of the package being created
+conda package --pkg-version <version>
+
+# Designate package build number of the package being created
+conda package --pkg-build <build_number>

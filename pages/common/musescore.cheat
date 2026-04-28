@@ -3,4 +3,20 @@
 
 % musescore, common
 
+# Set the MP3 output bitrate in kbit/s
+musescore <__b___bitrate_> <bitrate>
 
+# Start MuseScore in debug mode
+musescore <__d___debug_>
+
+# Enable experimental features, such as layers
+musescore <__e___experimental_>
+
+# Export the given file to the specified output file. The file type depends on the given extension
+musescore <__o___export_to_> <output_file> <input_file>
+
+# Print a diff between the given scores
+musescore --diff <path_to_file1> <path_to_file2>
+
+# Specify a MIDI import operations file
+musescore <__M___midi_operations_> <path_to_file>

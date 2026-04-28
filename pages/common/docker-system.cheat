@@ -3,4 +3,26 @@
 
 % docker-system, common
 
+# Show Docker disk usage
+docker system df
 
+# Show detailed information on disk usage
+docker system df <__v___verbose_>
+
+# Remove unused data (append `--volumes` to remove unused volumes as well)
+docker system prune
+
+# Remove unused data created more than a specified amount of time in the past
+docker system prune --filter "until=<hours>h<minutes>m"
+
+# Remove all unused data
+docker system prune <__a___all_> --volumes
+
+# Display real-time events from the Docker daemon
+docker system events
+
+# Display real-time events from containers streamed as valid JSON Lines
+docker system events <__f___filter_> 'type=container' --format '{{json .}}'
+
+# Display system-wide information
+docker system info

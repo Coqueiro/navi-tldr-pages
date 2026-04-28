@@ -3,4 +3,17 @@
 
 % gnuchess, common
 
+# Start an interactive chess game
+gnuchess
 
+# [Interactive] Play a move using algebraic notation
+<e4>
+
+# Enable graphic mode, showing chess pieces instead of letters
+gnuchess <__g___graphic_>
+
+# Display engine output
+gnuchess <__p___post_>
+
+# [Interactive] Exit `gnuchess`
+quit

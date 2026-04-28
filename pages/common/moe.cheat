@@ -3,4 +3,17 @@
 
 % moe, common
 
+# Open moe and create a backup file (file~) when saving edits
+moe <path_to_file>
 
+# Open a file as read-only
+moe <__o___read_only_> <path_to_file>
+
+# Edit a file without creating backups
+moe <__B___no_backup_> <path_to_file>
+
+# Edit a file ignoring case in searches
+moe <__i___ignore_case_> <path_to_file>
+
+# Save and Quit
+<Ctrl x>

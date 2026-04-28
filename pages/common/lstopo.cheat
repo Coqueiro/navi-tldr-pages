@@ -3,4 +3,17 @@
 
 % lstopo, common
 
+# Show the summarized system topology in a graphical window (or print to console if no graphical display is available)
+lstopo
 
+# Show the full system topology without summarizations
+lstopo --no-factorize
+
+# Show the summarized system topology with only physical indices (i.e. as seen by the OS)
+lstopo <__p___physical_>
+
+# Write the full system topology to a file in the specified format
+lstopo --no-factorize <___of___output_format_> <console_ascii_tex_fig_svg_pdf_ps_png_xml> <path_to_file>
+
+# Output in monochrome or greyscale
+lstopo --palette <none_grey>

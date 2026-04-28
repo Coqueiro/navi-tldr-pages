@@ -3,4 +3,26 @@
 
 % pacgraph, linux
 
+# Produce an SVG and PNG graph
+pacgraph
 
+# Produce an SVG graph
+pacgraph <__s___svg_>
+
+# Print summary to console
+pacgraph <__c___console_>
+
+# Override the default filename/location (Note: Do not specify the file extension)
+pacgraph <__f___file_> <path_to_file>
+
+# Change the color of packages that are not dependencies
+pacgraph <__t___top_> <color>
+
+# Change the color of package dependencies
+pacgraph <__d___dep_> <color>
+
+# Change the background color of a graph
+pacgraph <__b___background_> <color>
+
+# Change the color of links between packages
+pacgraph <__l___link_> <color>

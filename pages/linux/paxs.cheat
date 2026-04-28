@@ -3,4 +3,20 @@
 
 % paxs, linux
 
+# Search for a package
+paxs <search_term>
 
+# Upgrade all packages
+paxs <__u___upgrade_all_>
+
+# Install a package (prompting for the source)
+paxs <__i___install_> <package>
+
+# Remove a package (prompting for the source)
+paxs <__r___remove_> <package>
+
+# Check for updates across all package managers
+paxs <__c___check_update_>
+
+# Display help
+paxs <__h___help_>

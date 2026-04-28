@@ -3,4 +3,14 @@
 
 % llvd, common
 
+# Download a course using cookie-based authentication
+llvd <__c___course_> <course_slug> --cookies
 
+# Download a course at a specific resolution
+llvd <__c___course_> <course_slug> <__r___resolution_> 720
+
+# Download a course with captions (subtitles)
+llvd <__c___course_> <course_slug> <__ca___caption_>
+
+# Download a course path with throttling between 10 to 30 seconds
+llvd <__p___path_> <path_slug> <__t___throttle_> <10_30> --cookies

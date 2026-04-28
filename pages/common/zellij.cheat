@@ -3,4 +3,17 @@
 
 % zellij, common
 
+# Start a new named session
+zellij <__s___session_> <name>
 
+# List existing sessions
+zellij <_ls_list_sessions_>
+
+# Attach to the most recently used session
+zellij <_a_attach_>
+
+# Open a new pane (inside a zellij session)
+<Alt n>
+
+# Detach from the current session (inside a zellij session)
+<Ctrl o><d>

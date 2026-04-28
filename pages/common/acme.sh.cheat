@@ -3,4 +3,23 @@
 
 % acme.sh, common
 
+# Issue a certificate using webroot mode
+acme.sh --issue <__d___domain_> <example_com> <__w___webroot_> /<path_to_webroot>
 
+# Issue a certificate for multiple domains using standalone mode using port 80
+acme.sh --issue --standalone <__d___domain_> <example_com> <__d___domain_> <www_example_com>
+
+# Issue a certificate using standalone TLS mode using port 443
+acme.sh --issue --alpn <__d___domain_> <example_com>
+
+# Issue a certificate using a working `nginx` configuration
+acme.sh --issue --nginx <__d___domain_> <example_com>
+
+# Issue a certificate using a working Apache configuration
+acme.sh --issue --apache <__d___domain_> <example_com>
+
+# Issue a wildcard (\*) certificate using an automatic DNS API mode
+acme.sh --issue --dns <dns_cf> <__d___domain_> <__example_com>
+
+# Install certificate files into the specified locations (useful for automatic certificate renewal)
+acme.sh <__i___install_cert_> <__d___domain_> <example_com> --key-file /<path_to_example_com_key> --fullchain-file /<path_to_example_com_cer> --reloadcmd "{{systemctl force-reload nginx}}"

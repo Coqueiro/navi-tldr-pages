@@ -1,7 +1,0 @@
-; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/linux/zforce.md
-
-% zforce, linux
-
-# Add a `.gz` extension to the supplied Gzip files (Note: Other files are ignored)
-zforce {{path/to/file1 path/to/file2 ...}}

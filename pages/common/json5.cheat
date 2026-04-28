@@ -3,4 +3,20 @@
 
 % json5, common
 
+# Convert JSON5 `stdin` to JSON `stdout`
+echo <input> | json5
 
+# Convert a JSON5 file to JSON and output to `stdout`
+json5 <path_to_input_file_json5>
+
+# Convert a JSON5 file to the specified JSON file
+json5 <path_to_input_file_json5> <__o___out_file_> <path_to_output_file_json>
+
+# Validate a JSON5 file
+json5 <path_to_input_file_json5> <__v___validate_>
+
+# Specify the number of spaces to indent by (or "t" for tabs)
+json5 <__s___space_> <indent_amount>
+
+# Display help
+json5 <__h___help_>

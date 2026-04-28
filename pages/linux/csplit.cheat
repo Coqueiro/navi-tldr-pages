@@ -3,4 +3,20 @@
 
 % csplit, linux
 
+# Split a file in two parts, starting the second one at line 10
+csplit <path_to_file> 10
 
+# Split a file in three parts, starting the latter parts in lines 7 and 23
+csplit <path_to_file> 7 23
+
+# Start a new part at every 5th line (will fail if number of lines is not divisible by 5)
+csplit <path_to_file> 5 {*}
+
+# Start a new part at every 5th line, ignoring exact-division error
+csplit <__k___keep_files_> <path_to_file> 5 {*}
+
+# Split a file above line 5 and use a custom prefix for the output files (default is `xx`)
+csplit <path_to_file> 5 <__f___prefix_> <prefix>
+
+# Split a file above the first line matching a `regex` pattern
+csplit <path_to_file> /<regex>/

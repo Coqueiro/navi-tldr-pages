@@ -3,4 +3,20 @@
 
 % apptainer-overlay, linux
 
+# Add a writable overlay to an existing SIF image
+apptainer overlay create <__s___size_> <size> <path_to_image_sif>
 
+# Create a standalone EXT3 writable overlay image
+apptainer overlay create <__s___size_> <size> <path_to_overlay_img>
+
+# Create a sparse overlay image
+apptainer overlay create <__s___size_> <size> <__S___sparse_> <path_to_overlay_img>
+
+# Create an overlay for use with fakeroot
+apptainer overlay create <__f___fakeroot_> <__s___size_> <size> <path_to_overlay_img>
+
+# Create an overlay with a specific directory in the layout
+apptainer overlay create --create-dir <path_to_directory> <path_to_overlay_img>
+
+# Display help
+apptainer overlay <__h___help_>

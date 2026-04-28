@@ -3,4 +3,11 @@
 
 % pip-show, common
 
+# Show information about a package
+pip show <package>
 
+# Show all information about a package
+pip show <__v___verbose_> <package>
+
+# Show all installed files for a package
+pip show <__f___files_> <package>

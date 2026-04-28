@@ -3,4 +3,17 @@
 
 % notify-send, common
 
+# Show a notification with the title "Test" and the content "This is a test"
+notify-send "Test" "This is a test"
 
+# Show a notification with a custom icon
+notify-send <__i___icon_> <icon_png> "<Test>" "{{This is a test}}"
+
+# Show a notification for 5 seconds
+notify-send <__t___expire_time_> 5000 "<Test>" "{{This is a test}}"
+
+# Show a notification with the specified urgency level (default: normal)
+notify-send <__u___urgency_> <low_normal_critical> "<Test>" "{{This is a test}}"
+
+# Show a notification with an app's icon and name
+notify-send "<Test>" <__i___icon_> <google_chrome> <__a___app_name_> "{{Google Chrome}}"

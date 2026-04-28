@@ -10,13 +10,13 @@ tlmgr repository list
 tlmgr repository list <path_url_tag>
 
 # Add a new repository with a specific tag (the tag is not required)
-sudo tlmgr repository add <path_url> <___>
+sudo tlmgr repository add <path_url> <tag>
 
 # Remove a specific repository
 sudo tlmgr repository remove <path_url_tag>
 
 # Set a new list of repositories, overwriting the previous list
-sudo tlmgr repository set <path_url_tag>#<___> <path_url_tag>#<___> <___>
+sudo tlmgr repository set <path_url_tag>#<tag> <path_url_tag>#<tag> <___>
 
 # Show the verification status of all configured repositories
 tlmgr repository status

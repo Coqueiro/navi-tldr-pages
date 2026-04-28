@@ -3,4 +3,14 @@
 
 % nhentai, common
 
+# Set cookies
+nhentai --cookie "csrftoken=<TOKEN>; sessionid=<ID>"
 
+# Download a specific doujin
+nhentai --id <number>
+
+# Download the first page of your favorites
+nhentai <__F___favorites_> <__D___download_> <__d___delay_> 1
+
+# Download specific pages of your favorites
+nhentai <__F___favorites_> --pages <start_page>-<end_page> <__D___download_> <__d___delay_> 1

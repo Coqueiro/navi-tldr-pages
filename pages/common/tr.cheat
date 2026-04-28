@@ -3,4 +3,23 @@
 
 % tr, common
 
+# Replace all occurrences of a character in a file, and print the result
+tr < <path_to_file> <find_character> <replace_character>
 
+# Replace all occurrences of a character from another command's output
+echo <text> | tr <find_character> <replace_character>
+
+# Map each character of the first set to the corresponding character of the second set
+tr < <path_to_file> '<abcd>' '<jkmn>'
+
+# Delete all occurrences of the specified set of characters from the input
+tr < <path_to_file> <__d___delete_> '<input_characters>'
+
+# Compress a series of identical characters to a single character
+tr < <path_to_file> <__s___squeeze_repeats_> '<input_characters>'
+
+# Translate the contents of a file to upper-case
+tr < <path_to_file> "[:lower:]" "[:upper:]"
+
+# Strip out non-printable characters from a file
+tr < <path_to_file> {{[-cd|--complement --delete]}} "[:print:]"

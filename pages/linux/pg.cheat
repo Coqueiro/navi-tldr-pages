@@ -3,4 +3,8 @@
 
 % pg, linux
 
+# View a file
+pg <path_to_file>
 
+# Display help
+pg <__h___help_>

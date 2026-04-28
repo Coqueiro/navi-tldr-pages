@@ -3,4 +3,11 @@
 
 % partclone, linux
 
+# Copy a partition into an image
+sudo partclone.<ext4_btrfs_fat32_xfs____> <__c___clone_> <__s___source_> <_dev_sdXY> <__o___output_> <path_to_backup_img>
 
+# Restore a partition from an image
+sudo partclone.<ext4_btrfs_fat32_xfs____> <__c___clone_> <__s___source_> <path_to_backup_img> <__o___output_> <_dev_sdXY>
+
+# Display help
+partclone.<ext4_btrfs_fat32_xfs____> <__h___help_>

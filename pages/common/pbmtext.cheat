@@ -7,10 +7,10 @@
 pbmtext "{{Hello World!}}" > <path_to_output_pbm>
 
 # Render multiple lines of text as a PBM image
-echo "{{Hello\nWorld!}}" | pbmtext > <path_to_output_pbm>
+echo "<Hello_nWorld_>" | pbmtext > <path_to_output_pbm>
 
 # Render text using a custom font supplied as a PBM file
-pbmtext {{[-f|-font]}} <path_to_font_pbm> "{{Hello World!}}" > <path_to_output_pbm>
+pbmtext <__f__font_> <path_to_font_pbm> "{{Hello World!}}" > <path_to_output_pbm>
 
 # Specify the number of pixels between characters and lines
-echo "{{Hello\nWorld!}}" | pbmtext {{[-s|-space]}} <3> {{[-ls|-lspace]}} <10> > <path_to_output_pbm>
+echo "<Hello_nWorld_>" | pbmtext <__s__space_> <3> <__ls__lspace_> <10> > <path_to_output_pbm>

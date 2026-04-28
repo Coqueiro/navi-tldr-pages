@@ -3,4 +3,26 @@
 
 % dropdb, common
 
+# Destroy a database
+dropdb <database_name>
 
+# Request a verification prompt before any destructive actions
+dropdb <__i___interactive_> <database_name>
+
+# Connect with a specific username and destroy a database
+dropdb <__U___username_> <username> <database_name>
+
+# Force a password prompt before connecting to the database
+dropdb <__W___password_> <database_name>
+
+# Suppress a password prompt before connecting to the database
+dropdb <__w___no_password_> <database_name>
+
+# Specify the server host name
+dropdb <__h___host_> <host> <database_name>
+
+# Specify the server port
+dropdb <__p___port_> <port> <database_name>
+
+# Attempt to terminate existing connections before destroying the database
+dropdb <__f___force_> <database_name>

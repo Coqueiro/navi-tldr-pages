@@ -3,4 +3,20 @@
 
 % findmnt, linux
 
+# List all mounted filesystems
+findmnt
 
+# Search for a device
+findmnt <_dev_sdb1>
+
+# Search for a mountpoint
+findmnt <_>
+
+# Find filesystems in specific type
+findmnt <__t___types_> <ext4_virtiofs_btrfs____>
+
+# Find filesystems with specific label
+findmnt LABEL=<BigStorage>
+
+# Check mount table content in detail and verify `/etc/fstab`
+findmnt <__x___verify_> --verbose

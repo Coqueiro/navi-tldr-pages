@@ -3,4 +3,20 @@
 
 % iwctl, linux
 
+# Run `iwctl` in interactive mode
+iwctl
 
+# Display Wi-Fi stations
+iwctl station list
+
+# Look for networks with a station
+iwctl station <station> scan
+
+# Display the networks found by a station
+iwctl station <station> get-networks
+
+# Connect to a network with a station, if credentials are needed they will be asked
+iwctl station <station> connect <network_name>
+
+# Display help
+iwctl <__h___help_>

@@ -3,4 +3,23 @@
 
 % pvchange, linux
 
+# Allow allocation on a physical volume
+sudo pvchange <__x___allocatable_> y <_dev_sdXN>
 
+# Disallow allocation on a physical volume
+sudo pvchange <__x___allocatable_> n <_dev_sdXN>
+
+# Ignore metadata areas on a physical volume
+sudo pvchange --metadataignore y <_dev_sdXN>
+
+# Stop ignoring metadata areas on a physical volume
+sudo pvchange --metadataignore n <_dev_sdXN>
+
+# Add a tag to a physical volume
+sudo pvchange --addtag <tag> <_dev_sdXN>
+
+# Generate a new UUID for a physical volume (use with care)
+sudo pvchange --uuid <_dev_sdXN>
+
+# Change all visible physical volumes (combine with other options such as allocatable)
+sudo pvchange <__a___all_> <__x___allocatable_> y

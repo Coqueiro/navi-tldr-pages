@@ -3,4 +3,23 @@
 
 % vgs, linux
 
+# Display information about volume groups
+sudo vgs
 
+# Display all volume groups
+sudo vgs <__a___all_>
+
+# Change default display to show more details
+sudo vgs <__v___verbose_>
+
+# Display only specific fields
+sudo vgs <__o___options_> <field_name_1_field_name_2____>
+
+# Append field to default display
+sudo vgs <__o___options_> +<field_name>
+
+# Suppress heading line
+sudo vgs --noheadings
+
+# Use separator to separate fields
+sudo vgs --separator =

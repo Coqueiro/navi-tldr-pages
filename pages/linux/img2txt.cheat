@@ -3,4 +3,17 @@
 
 % img2txt, linux
 
+# Set output column count to a specific value
+img2txt <__W___width_> <10> <path_to_image>
 
+# Set output line count to a specific value
+img2txt <__H___height_> <5> <path_to_image>
+
+# Set output font width to a specific value
+img2txt <__x___font_width_> <12> <path_to_image>
+
+# Set output font height to a specific value
+img2txt <__y___font_height_> <14> <path_to_image>
+
+# Set image brightness to a specific value
+img2txt <__b___brightness_> <2> <path_to_image>

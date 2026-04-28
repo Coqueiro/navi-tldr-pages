@@ -4,7 +4,7 @@
 % fselect, common
 
 # Select full path and size from temporary or configuration files in a given directory
-fselect size, path from <path_to_directory> where name = '{{*.cfg}}' or name = '{{*.tmp}}'
+fselect size, path from <path_to_directory> where name = '<__cfg>' or name = '<__tmp>'
 
 # Find square images
 fselect path from <path_to_directory> where width = height

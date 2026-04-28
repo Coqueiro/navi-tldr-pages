@@ -3,4 +3,17 @@
 
 % gradle-test, common
 
+# Run all tests
+gradle test
 
+# Run tests with detailed output
+gradle test <__i___info_>
+
+# Run a specific test class
+gradle test --tests <class_name>
+
+# Run tests matching a pattern
+gradle test --tests "<pattern>"
+
+# Rerun tests even if up-to-date
+gradle test --rerun

@@ -3,4 +3,23 @@
 
 % uvcdynctrl, linux
 
+# List all available cameras
+uvcdynctrl <__l___list_>
 
+# Use a specific device (defaults to `video0`)
+uvcdynctrl <__d___device_> <device_name>
+
+# List available controls
+uvcdynctrl <__c___clist_>
+
+# Set a new control value (for negative values, use `-- -value`)
+uvcdynctrl <__s___set_> <control_name> <value>
+
+# Get the current control value
+uvcdynctrl <__g___get_> <control_name>
+
+# Save the state of the current controls to a file
+uvcdynctrl <__W___save_> <filename>
+
+# Load the state of the controls from a file
+uvcdynctrl <__L___load_> <filename>

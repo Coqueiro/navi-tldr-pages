@@ -3,4 +3,17 @@
 
 % doctl-databases-pool, common
 
+# Run a `doctl databases pool` command with an access token
+doctl <_d_databases_> <_p_pool_> <command> <__t___access_token_> <access_token>
 
+# Retrieve information about a database connection pool
+doctl <_d_databases_> <_p_pool_> <_g_get_> <database_id> <pool_name>
+
+# List connection pools for a database cluster
+doctl <_d_databases_> <_p_pool_> <_ls_list_> <database_id>
+
+# Create a connection pool for a database
+doctl <_d_databases_> <_p_pool_> <_c_create_> <database_id> <pool_name> --db <new_pool_name> --size <pool_size>
+
+# Delete a connection pool for a database
+doctl <_d_databases_> <_p_pool_> <_rm_delete_> <database_id> <pool_name>

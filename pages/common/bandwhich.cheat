@@ -3,4 +3,17 @@
 
 % bandwhich, common
 
+# Show the remote addresses table only
+bandwhich <__a___addresses_>
 
+# Show DNS queries
+bandwhich <__s___show_dns_>
+
+# Show total (cumulative) usage
+bandwhich <__t___total_utilization_>
+
+# Show the network utilization for a specific network interface
+bandwhich <__i___interface_> <eth0>
+
+# Show DNS queries with a given DNS server
+bandwhich <__s___show_dns_> <__d___dns_server_> <dns_server_ip>

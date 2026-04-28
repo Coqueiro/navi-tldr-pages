@@ -3,4 +3,14 @@
 
 % gradle-build, common
 
+# Build the project
+gradle build
 
+# Perform a clean build
+gradle clean build
+
+# Build the project while skipping tests
+gradle build <__x___exclude_task_> test
+
+# Build with more detailed logging
+gradle build <__i___info_>

@@ -3,4 +3,23 @@
 
 % apptainer-inspect, linux
 
+# Show the labels of an image (default)
+apptainer inspect <path_to_image_sif>
 
+# Show the definition file used to build the image
+apptainer inspect <__d___deffile_> <path_to_image_sif>
+
+# Show the runscript for the image
+apptainer inspect <__r___runscript_> <path_to_image_sif>
+
+# Show the environment variables of the image
+apptainer inspect <__e___environment_> <path_to_image_sif>
+
+# List all apps in the container
+apptainer inspect --list-apps <path_to_image_sif>
+
+# Show all available data in JSON format
+apptainer inspect --all <path_to_image_sif>
+
+# Display help
+apptainer inspect <__h___help_>

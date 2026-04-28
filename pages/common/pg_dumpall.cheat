@@ -3,4 +3,17 @@
 
 % pg_dumpall, common
 
+# Dump all databases
+pg_dumpall > <path_to_file_sql>
 
+# Dump all databases using a specific username
+pg_dumpall <__U___username_> <username> > <path_to_file_sql>
+
+# Same as above, customize host and port
+pg_dumpall <__h___host_> <host> <__p___port_> <port> > <output_file_sql>
+
+# Dump only database data into an SQL-script file
+pg_dumpall <__a___data_only_> > <path_to_file_sql>
+
+# Dump only schema (data definitions) into an SQL-script file
+pg_dumpall <__s___schema_only_> > <output_file_sql>

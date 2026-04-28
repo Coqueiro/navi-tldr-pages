@@ -3,4 +3,11 @@
 
 % isosize, linux
 
+# Display the size of an ISO file
+isosize <path_to_file_iso>
 
+# Display the block count and block size of an ISO file
+isosize <__x___sectors_> <path_to_file_iso>
+
+# Display the size of an ISO file divided by a given number (only usable when --sectors is not given)
+isosize <__d___divisor_> <number> <path_to_file_iso>

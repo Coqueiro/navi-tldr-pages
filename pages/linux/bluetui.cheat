@@ -3,4 +3,8 @@
 
 % bluetui, linux
 
+# Start the program
+bluetui
 
+# Display help
+bluetui <__h___help_>

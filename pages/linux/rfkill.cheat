@@ -3,4 +3,17 @@
 
 % rfkill, linux
 
+# List devices
+rfkill
 
+# Filter by columns
+rfkill <__o___output_> <ID_TYPE_DEVICE____>
+
+# Block devices by type
+rfkill block <bluetooth_wifi_gps_nfc____>
+
+# Unblock devices by type
+rfkill unblock <bluetooth_wifi_gps_nfc____>
+
+# Output in JSON format
+rfkill <__J___json_>

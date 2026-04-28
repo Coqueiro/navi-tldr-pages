@@ -10,7 +10,7 @@ simplehttpserver -verbose
 sudo simplehttpserver -basic-auth <username>:<password> -path <_var_www_html> -listen 0.0.0.0:80
 
 # Start the HTTP server, enabling HTTPS using a self-signed certificate with custom SAN on all interfaces
-sudo simplehttpserver -https -domain {{*.selfsigned.com}} -listen 0.0.0.0:443
+sudo simplehttpserver -https -domain <__selfsigned_com> -listen 0.0.0.0:443
 
 # Start the HTTP server with custom response headers and upload capability
 simplehttpserver -upload -header '{{X-Powered-By: Go}}' -header '{{Server: SimpleHTTPServer}}'

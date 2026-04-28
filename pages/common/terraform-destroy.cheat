@@ -10,7 +10,7 @@ terraform destroy
 terraform destroy -auto-approve
 
 # Destroy a specific resource
-terraform destroy -target {{resource_type.resource_name[instance_index]}}
+terraform destroy -target <resource_type_resource_name_instance_index_>
 
 # Specify values for input variables
 terraform destroy -var '<name1>=<value1>' -var '<name2>=<value2>'

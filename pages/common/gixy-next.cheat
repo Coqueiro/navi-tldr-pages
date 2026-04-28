@@ -3,4 +3,20 @@
 
 % gixy-next, common
 
+# Analyze `nginx` configuration (default path: `/etc/nginx/nginx.conf`)
+gixy-next <path_to_nginx_conf>
 
+# Analyze a rendered configuration dump via `stdin` (`-`)
+cat <path_to_nginx_dump_conf> | gixy-next -
+
+# Run only specific checks (comma-separated)
+gixy-next --tests <http_splitting_ssrf_version_disclosure> <path_to_nginx_conf>
+
+# Skip specific checks (comma-separated)
+gixy-next --skips <low_keepalive_requests_worker_rlimit_nofile_vs_connections> <path_to_nginx_conf>
+
+# Only report issues at a given severity or higher
+gixy-next <_l__ll__lll> <path_to_nginx_conf>
+
+# Output as uncolored text or machine-readable JSON
+gixy-next <__f___format_> <text_json> <path_to_nginx_conf>

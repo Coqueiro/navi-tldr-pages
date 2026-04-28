@@ -3,4 +3,11 @@
 
 % uuidgen, linux
 
+# Create a random UUIDv4
+uuidgen <__r___random_>
 
+# Create a UUIDv1 based on the current time
+uuidgen <__t___time_>
+
+# Create a UUIDv5 of the name with a specified namespace prefix
+uuidgen <__s___sha1_> <__n___namespace_> <_dns__url__oid__x500> <__N___name_> <object_name>

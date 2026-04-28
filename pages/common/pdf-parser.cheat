@@ -3,4 +3,11 @@
 
 % pdf-parser, common
 
+# Display statistics for a PDF file
+pdf-parser <__a___stats_> <path_to_file_pdf>
 
+# Display objects of a specific type (`/Font`, `/URI`, ...) in a PDF file
+pdf-parser <__t___type_> <_object_type> <path_to_file_pdf>
+
+# Search for strings in indirect objects
+pdf-parser <__s___search_> <search_string> <path_to_file_pdf>

@@ -3,4 +3,26 @@
 
 % gzip, common
 
+# Compress a file, replacing it with a `gzip` archive
+gzip <path_to_file>
 
+# Decompress a file, replacing it with the original uncompressed version
+gzip <__d___decompress_> <path_to_file_gz>
+
+# Display the name and reduction percentage for each file compressed
+gzip <__v___verbose_> <path_to_file_gz>
+
+# Compress a file, keeping the original file
+gzip <__k___keep_> <path_to_file>
+
+# Compress a file, specifying the output filename
+gzip <__c___stdout_> <path_to_file> > <path_to_compressed_file_gz>
+
+# Decompress a `gzip` archive specifying the output filename
+gzip {{[-cd|--stdout --decompress]}} <path_to_file_gz> > <path_to_uncompressed_file>
+
+# Specify the compression level. 1 is the fastest (low compression), 9 is the slowest (high compression), 6 is the default
+gzip -<1__9> <__c___stdout_> <path_to_file> > <path_to_compressed_file_gz>
+
+# List the contents of a compressed file
+gzip <__l___list_> <path_to_file_txt_gz>

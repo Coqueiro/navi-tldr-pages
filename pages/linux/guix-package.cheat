@@ -3,4 +3,20 @@
 
 % guix-package, linux
 
+# Install a new package
+guix package <__i___install_> <package>
 
+# Remove a package
+guix package <__r___remove_> <package>
+
+# Search the package database for a `regex`
+guix package <__s___search_> "<search_pattern>"
+
+# List installed packages
+guix package <__I___list_installed_>
+
+# List generations
+guix package <__l___list_generations_>
+
+# Roll back to the previous generation
+guix package --roll-back

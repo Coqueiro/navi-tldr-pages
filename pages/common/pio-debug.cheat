@@ -3,4 +3,17 @@
 
 % pio-debug, common
 
+# Debug the PlatformIO project in the current directory
+pio debug
 
+# Debug a specific PlatformIO project
+pio debug <__d___project_dir_> <path_to_platformio_project>
+
+# Debug a specific environment
+pio debug <__e___environment_> <environment>
+
+# Debug a PlatformIO project using a specific configuration file
+pio debug <__c___project_conf_> <path_to_platformio_ini>
+
+# Debug a PlatformIO project using the `gdb` debugger
+pio debug --interface <gdb> <gdb_options>

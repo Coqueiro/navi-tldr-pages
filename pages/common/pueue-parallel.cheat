@@ -3,4 +3,8 @@
 
 % pueue-parallel, common
 
+# Set the maximum number of tasks allowed to run in parallel, in the default group
+pueue parallel <max_number_of_parallel_tasks>
 
+# Set the maximum number of tasks allowed to run in parallel, in a specific group
+pueue parallel <__g___group_> <group_name> <maximum_number_of_parallel_tasks>

@@ -3,4 +3,26 @@
 
 % systemctl, linux
 
+# Show all running services
+systemctl status
 
+# List failed units
+systemctl --failed
+
+# Start/Stop/Restart/Reload/Show the status of a service
+systemctl <start_stop_restart_reload_status> <unit>
+
+# Enable/Disable a unit to be started on bootup
+systemctl <enable_disable> <unit>
+
+# Reload systemd, scan for new or changed units
+systemctl daemon-reload
+
+# Check if a unit is active/enabled/failed
+systemctl <is_active_is_enabled_is_failed> <unit>
+
+# List all service/socket/automount units filtering by running/failed state
+systemctl list-units <__t___type_> <service_socket_automount____> --state <failed_running>
+
+# Show the contents & absolute path of a unit file or edit it
+systemctl <cat_edit> <unit>

@@ -3,4 +3,8 @@
 
 % tgcloud, common
 
+# Upload a file to a chat with a caption
+tgcloud <__m___mode_> upload <__n___name_> <session_name> <__u___username_> <chat_id> <__p___path_> <path_of_the_file> <__c___caption_> <caption>
 
+# Download a file from a chat and store it in `path/to/store` with a caption
+tgcloud <__m___mode_> download <__n___name_> <session_name> <__u___username_> <chat_id> <__p___path_> <path_to_store> <__c___caption_> <caption>

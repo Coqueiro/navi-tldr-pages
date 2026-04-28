@@ -3,4 +3,20 @@
 
 % podman-pull, common
 
+# Pull a specific container image
+podman pull <image>:<tag>
 
+# Pull a container image in quiet mode
+podman pull <__q___quiet_> <image>:<tag>
+
+# Pull all tags of a container image
+podman pull <__a___all_tags_> <image>
+
+# Pull a container image for a specific platform
+podman pull --platform <linux_arm64> <image>:<tag>
+
+# Pull a container image without TLS verification
+podman pull --tls-verify=false <image>:<tag>
+
+# Display help
+podman pull <__h___help_>

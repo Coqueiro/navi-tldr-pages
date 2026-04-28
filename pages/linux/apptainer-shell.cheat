@@ -3,4 +3,26 @@
 
 % apptainer-shell, linux
 
+# Start an interactive shell inside a container
+apptainer shell <path_to_image_sif>
 
+# Start a shell with a bind mount from host to container
+apptainer shell <__B___bind_> <path_to_source>:<path_to_destination> <path_to_image_sif>
+
+# Start a shell with environment variables
+apptainer shell --env <variable>=<value> <path_to_image_sif>
+
+# Start a shell in fully isolated mode (contained filesystem, PID, IPC, and clean environment)
+apptainer shell <__C___containall_> <path_to_image_sif>
+
+# Start a shell with a writable temporary filesystem overlay
+apptainer shell --writable-tmpfs <path_to_image_sif>
+
+# Start a shell with NVIDIA GPU support
+apptainer shell --nv <path_to_image_sif>
+
+# Start a shell using a specific shell program
+apptainer shell <__s___shell_> <path_to_shell> <path_to_image_sif>
+
+# Display help
+apptainer shell <__h___help_>

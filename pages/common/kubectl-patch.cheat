@@ -3,4 +3,14 @@
 
 % kubectl-patch, common
 
+# Partially patch a secret using a strategic merge JSON patch to remove the finalizer
+kubectl patch secrets <secret_name> <__p___patch_> '{"metadata":{"finalizers": []\}\}' --type merge
 
+# Partially patch a secret using a strategic merge YAML patch to remove the finalizer
+kubectl patch secrets <secret_name> <__p___patch_> $'metadata:\n finalizers: []' --type merge
+
+# Partially patch a pod's container using a JSON patch with positional arrays
+kubectl patch <_po_pods_> <pod_name> --type 'json' <__p___patch_> '[{"op": "replace", "path": "/spec/containers/0/image", "value":"<new_image_value>"}]'
+
+# Update a deployment's replicas through the scale subresource using a strategic merge JSON patch
+kubectl patch <_deploy_deployments_> <deployment_name> --subresource 'scale' --type 'merge' <__p___patch_> '{"spec":{"replicas":<number_of_replicas>\}\}'

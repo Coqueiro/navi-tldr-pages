@@ -3,4 +3,11 @@
 
 % apptainer-run-help, linux
 
+# Display help for a container
+apptainer run-help <path_to_image_sif>
 
+# Display help for a specific app within a container
+apptainer run-help --app <app_name> <path_to_image_sif>
+
+# Display help
+apptainer run-help <__h___help_>

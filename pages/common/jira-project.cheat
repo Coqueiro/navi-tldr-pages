@@ -3,4 +3,8 @@
 
 % jira-project, common
 
+# List all projects
+jira project <_ls_list_>
 
+# Display help
+jira project <__h___help_>

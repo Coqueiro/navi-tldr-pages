@@ -7,7 +7,7 @@
 pnmhistmap <path_to_input_pnm> > <path_to_output_pnm>
 
 # Draw the histogram as dots instead of bars
-pnmhistmap {{[-d|-dots]}} <path_to_input_pnm> > <path_to_output_pnm>
+pnmhistmap <__d__dots_> <path_to_input_pnm> > <path_to_output_pnm>
 
 # Specify the range of intensity values to include
-pnmhistmap {{[-l|-lval]}} <minval> {{[-rv|-rval]}} <maxval> <path_to_input_pnm> > <path_to_output_pnm>
+pnmhistmap <__l__lval_> <minval> <__rv__rval_> <maxval> <path_to_input_pnm> > <path_to_output_pnm>

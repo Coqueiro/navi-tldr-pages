@@ -3,4 +3,20 @@
 
 % rename, common
 
+# Replace `from` with `to` in the filenames of the specified files
+rename 's/<from>/<to>/' <__txt>
 
+# Dry-run - display which changes would occur without performing them
+rename -n 's/<from>/<to>/' <__txt>
+
+# Change the extension
+rename 's/\.<old>$/\.<new>/' <__txt>
+
+# Change to lowercase (use `-f` in case-insensitive filesystems)
+rename <__f___force_> 'y/A-Z/a-z/' <__txt>
+
+# Capitalize first letter of every word in the name
+rename <__f___force_> 's/\b(\w)/\U$1/g' <__txt>
+
+# Replace spaces with underscores
+rename 's/\s+/_/g' <__txt>

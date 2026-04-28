@@ -10,7 +10,7 @@ esbuild --bundle <path_to_file_js>
 esbuild < <path_to_file_jsx> --bundle --outfile=<path_to_out_js>
 
 # Bundle and minify a JSX application with source maps in `production` mode
-esbuild --bundle --define:{{process.env.NODE_ENV=\"production\"}} --minify --sourcemap <path_to_file_js>
+esbuild --bundle --define:<process_env_NODE_ENV___production__> --minify --sourcemap <path_to_file_js>
 
 # Bundle a JSX application for a comma-separated list of browsers
 esbuild --bundle --minify --sourcemap --target=<chrome58_firefox57_safari11_edge16> <path_to_file_jsx>

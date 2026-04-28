@@ -3,4 +3,17 @@
 
 % base32, common
 
+# Encode a file
+base32 <path_to_file>
 
+# Wrap encoded output at a specific width (`0` disables wrapping)
+base32 <__w___wrap_> <0_76____> <path_to_file>
+
+# Decode a file
+base32 <__d___decode_> <path_to_file>
+
+# Encode from `stdin`
+<command> | base32
+
+# Decode from `stdin`
+<command> | base32 <__d___decode_>

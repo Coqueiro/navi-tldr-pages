@@ -3,4 +3,20 @@
 
 % spi, linux
 
+# Update the list of available packages and slackbuilds
+spi <__u___update_>
 
+# Install a package or slackbuild
+spi <__i___install_> <package_slackbuild_name>
+
+# Upgrade all installed packages to the latest versions available
+spi <__U___upgrade_>
+
+# Locate packages or slackbuilds by package name or description
+spi <search_terms>
+
+# Display information about a package or slackbuild
+spi --show <package_slackbuild_name>
+
+# Purge the local package and slackbuild caches
+spi --clean

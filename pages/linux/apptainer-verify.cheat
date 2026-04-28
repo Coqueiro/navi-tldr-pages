@@ -3,4 +3,26 @@
 
 % apptainer-verify, linux
 
+# Verify a container image using the default PGP keyring
+apptainer verify <path_to_image_sif>
 
+# Verify a container image using a specific public key file
+apptainer verify --key <path_to_public_pem> <path_to_image_sif>
+
+# Verify a container image using a certificate file
+apptainer verify --certificate <path_to_certificate_pem> <path_to_image_sif>
+
+# Verify all objects in the image
+apptainer verify <__a___all_> <path_to_image_sif>
+
+# Verify a specific object group within the image
+apptainer verify <__g___group_id_> <group_id> <path_to_image_sif>
+
+# Verify a specific object by ID within the image
+apptainer verify <__i___sif_id_> <object_id> <path_to_image_sif>
+
+# Output verification results in JSON format
+apptainer verify <__j___json_> <path_to_image_sif>
+
+# Display help
+apptainer verify <__h___help_>

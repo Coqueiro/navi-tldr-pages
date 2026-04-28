@@ -3,4 +3,14 @@
 
 % mitmdump, common
 
+# Start a proxy and save all output to a file
+mitmdump <__w___wfile_> <path_to_file>
 
+# Filter a saved traffic file to just POST requests
+mitmdump {{[-nr|--no-server --read-flows]}} <input_filename> <__w___wfile_> <output_filename> "{{~m post}}"
+
+# Replay a saved traffic file
+mitmdump {{[-nc|--no-server --client-replay]}} <path_to_file>
+
+# Intercept DNS traffic (starts an intercepting DNS server on 127.0.0.1:53)
+sudo mitmdump <__m___mode_> dns

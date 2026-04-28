@@ -3,4 +3,20 @@
 
 % kubectl-create, common
 
+# Create a resource using the resource definition file
+kubectl create <__f___filename_> <path_to_file_yml>
 
+# Create a resource from `stdin`
+kubectl create <__f___filename_> -
+
+# Create a deployment
+kubectl create <_deploy_deployment_> <deployment_name> --image <image>
+
+# Create a deployment with replicas
+kubectl create <_deploy_deployment_> <deployment_name> --image <image> --replicas <number_of_replicas>
+
+# Create a service
+kubectl create <_svc_service_> <service_type> <service_name> --tcp <port>:<target_port>
+
+# Create a namespace
+kubectl create <_ns_namespace_> <namespace_name>

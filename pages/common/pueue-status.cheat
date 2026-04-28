@@ -3,4 +3,8 @@
 
 % pueue-status, common
 
+# Show the status of all tasks
+pueue status
 
+# Show the status of a specific group
+pueue status <__g___group_> <group_name>

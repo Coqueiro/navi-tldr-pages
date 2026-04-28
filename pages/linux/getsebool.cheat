@@ -3,4 +3,11 @@
 
 % getsebool, linux
 
+# Show the current setting of a boolean
+getsebool <httpd_can_connect_ftp>
 
+# Show the current setting of [a]ll booleans
+getsebool -a
+
+# Show the current setting of all booleans with explanations
+sudo semanage boolean <__l___list_>

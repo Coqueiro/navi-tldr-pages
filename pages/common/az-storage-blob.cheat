@@ -3,4 +3,17 @@
 
 % az-storage-blob, common
 
+# Download a blob to a file path specifying a source container
+az storage blob download --account-name <account_name> --account-key <account_key> <__c___container_name_> <container_name> <__n___name_> <blob_name> <__f___file_> <path_to_file>
 
+# Download blobs from a blob container recursively
+az storage blob download-batch --account-name <account_name> --account-key <account_key> <__s___source_> <container_name> --pattern <filename_regex> <__d___destination_> <path_to_destination>
+
+# Upload a local file to blob storage
+az storage blob upload --account-name <account_name> --account-key <account_key> <__c___container_name_> <container_name> <__n___name_> <blob_name> <__f___file_> <path_to_file>
+
+# Delete a blob object
+az storage blob delete --account-name <account_name> --account-key <account_key> <__c___container_name_> <container_name> <__n___name_> <blob_name>
+
+# Generate a shared access signature for a blob
+az storage blob generate-sas --account-name <account_name> --account-key <account_key> <__c___container_name_> <container_name> <__n___name_> <blob_name> --permissions <permission_set> --expiry <Y_m_d_T_H_M_Z_> --https-only

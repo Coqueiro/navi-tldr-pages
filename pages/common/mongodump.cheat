@@ -3,4 +3,23 @@
 
 % mongodump, common
 
+# Create a dump of all databases (this will place the files inside a directory called "dump")
+mongodump
 
+# Specify an output location for the dump
+mongodump <__o___out_> <path_to_directory>
+
+# Create a dump of a given database
+mongodump <__d___db_> <database_name>
+
+# Create a dump of a given collection within a given database
+mongodump <__c___collection_> <collection_name> <__d___db_> <database_name>
+
+# Connect to a given host running on a given port and create a dump
+mongodump <__h___host_> <host> --port <port>
+
+# Create a dump of a given database with a given username; user will be prompted for password
+mongodump <__u___username_> <username> <database> <__p___password_>
+
+# Create a dump from a specific instance; host, user, password, and database will be defined in the connection string
+mongodump --uri <connection_string>

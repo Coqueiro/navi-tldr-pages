@@ -3,4 +3,17 @@
 
 % dpigs, linux
 
+# Display the `n` largest packages on the system
+dpigs <__n___lines_> <n>
 
+# Use the specified file instead of the default dpkg status file
+dpigs <__s___status_> <path_to_file>
+
+# Display the largest source packages of binary packages installed on the system
+dpigs <__S___source_>
+
+# Display package sizes in human-readable format
+dpigs <__H___human_readable_>
+
+# Display help
+dpigs <__h___help_>

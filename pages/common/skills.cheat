@@ -3,4 +3,23 @@
 
 % skills, common
 
+# Search for skills interactively or by keyword
+skills <_f_find_> <keyword>
 
+# List all installed skills
+skills <_ls_list_>
+
+# Install all skills from a repository
+skills <_a_add_> <owner>/<repo>
+
+# Install specific skills to particular agents
+skills <_a_add_> <owner>/<repo> <__s___skill_> <skill_name> <__a___agent_> <agent_name>
+
+# Remove installed skills
+skills <_rm_remove_> <skill_name>
+
+# Update all installed skills
+skills update
+
+# Create a new `SKILL.md` template
+skills init <_skill_name_>

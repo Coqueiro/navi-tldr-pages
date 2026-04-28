@@ -3,4 +3,17 @@
 
 % lslocks, linux
 
+# List all local system locks
+lslocks
 
+# List locks with defined column headers
+lslocks <__o___output_> <PID>,<COMMAND>,<PATH>
+
+# List locks producing a raw output (no columns), and without column headers
+lslocks <__r___raw_> <__n___noheadings_>
+
+# List locks by PID input
+lslocks <__p___pid_> <PID>
+
+# List locks with JSON output to `stdout`
+lslocks <__J___json_>

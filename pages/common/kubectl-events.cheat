@@ -3,4 +3,23 @@
 
 % kubectl-events, common
 
+# Show events in the default namespace
+kubectl events
 
+# Show events in all namespaces
+kubectl events <__A___all_namespaces_>
+
+# Watch events in a specific namespace
+kubectl events <__w___watch_> <__n___namespace_> <namespace>
+
+# Show events for a pod in a specific namespace
+kubectl events --for <pod>/<pod_name> <__n___namespace_> <namespace>
+
+# Show events for a resource in a specific namespace
+kubectl events --for <resource>/<resource_name> <__n___namespace_> <namespace>
+
+# Show events for type `Warning` or `Normal`
+kubectl events --types Warning,Normal
+
+# Output events in YAML format
+kubectl events <__o___output_> yaml

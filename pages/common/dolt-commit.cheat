@@ -3,4 +3,23 @@
 
 % dolt-commit, common
 
+# Commit all staged changes, opening the editor specified by `$EDITOR` to enter the commit message
+dolt commit
 
+# Commit all staged changes with the specified message
+dolt commit <__m___message_> "<commit_message>"
+
+# Stage all unstaged changes to tables before committing
+dolt commit <__a___all_>
+
+# Use the specified ISO 8601 commit date (defaults to current date and time)
+dolt commit --date "<2021_12_31T00_00_00>"
+
+# Use the specified author for the commit
+dolt commit --author "<author_name> <<author_email>>"
+
+# Allow creating an empty commit, with no changes
+dolt commit --allow-empty
+
+# Ignore foreign key warnings
+dolt commit <__f___force_>

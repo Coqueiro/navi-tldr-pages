@@ -3,4 +3,23 @@
 
 % flask-unsign, common
 
+# Decode a Flask session cookie
+flask-unsign <__d___decode_> <__c___cookie_> <cookie>
 
+# Decode a session cookie fetched from a URL which returns a `Set-Cookie` header
+flask-unsign <__d___decode_> --server <URL>
+
+# Brute-force a secret key using the default flask-unsign-wordlist (requires `flask-unsign-wordlist`)
+flask-unsign <__u___unsign_> <__c___cookie_> <cookie>
+
+# Brute-force a secret key with a custom wordlist (use `--no-literal-eval` for unquoted entries)
+flask-unsign <__u___unsign_> <__c___cookie_> <cookie> <__w___wordlist_> <path_to_wordlist_txt>
+
+# Sign a new session cookie with a secret key
+flask-unsign <__s___sign_> <__c___cookie_> "{{{'logged_in': False}}}" <__S___secret_> <secret>
+
+# Sign a session cookie using legacy timestamp (useful for old versions)
+flask-unsign <__s___sign_> <__c___cookie_> "{{{'logged_in': False}}}" <__S___secret_> <secret> <__l___legacy_>
+
+# Brute-force a session cookie with custom threads and no literal evaluation
+flask-unsign <__u___unsign_> <__c___cookie_> <cookie> <__w___wordlist_> <path_to_wordlist_txt> <__t___threads_> <threads> <__nE___no_literal_eval_>

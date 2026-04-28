@@ -3,4 +3,14 @@
 
 % czkawka_cli, common
 
+# List duplicate in specific directories and write the results into a file
+czkawka_cli dup <__d___directories_> <path_to_directory1> <__d___directories_> <path_to_directory2> <__f___file_to_save_> <path_to_results_txt>
 
+# Find duplicate files in specific directories and delete them (default: `NONE`)
+czkawka_cli dup <__d___directories_> <path_to_directory> <__D___delete_method_> <AEN_AEO_ON_OO_HARD_NONE>
+
+# Find similar looking image with a specific similarity level (default: `High`)
+czkawka_cli image <__d___directories_> <path_to_directory> <__s___similarity_preset_> <Minimal_VerySmall_Small_Medium_High_VeryHigh_Original> <__f___file_to_save_> <path_to_results_txt>
+
+# Display help
+czkawka_cli <__h___help_>

@@ -3,4 +3,17 @@
 
 % gnmic, common
 
+# Request device capabilities
+gnmic <__a___address_> <ip_port> capabilities
 
+# Provide a username and password to fetch device capabilities
+gnmic <__a___address_> <ip_port> <__u___username_> <username> <__p___password_> <password> capabilities
+
+# Get a snapshot of the device state at a specific path
+gnmic <__a___address_> <ip_port> get --path <path>
+
+# Update device state at a specific path
+gnmic <__a___address_> <ip_port> set --update-path <path> --update-value <value>
+
+# Subscribe to target state updates under the subtree at a specific path
+gnmic <__a___address_> <ip_port> <_sub_subscribe_> --path <path>

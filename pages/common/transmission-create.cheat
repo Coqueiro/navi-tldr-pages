@@ -3,4 +3,17 @@
 
 % transmission-create, common
 
+# Create a torrent with a specific piece size (in KB)
+transmission-create <__o___outfile_> <path_to_example_torrent> <__t___tracker_> <tracker_announce_url> <__s___piecesize_> <2048> <path_to_file_or_directory>
 
+# Create a private torrent with a specific piece size (in KB)
+transmission-create <__p___private_> <__o___outfile_> <path_to_example_torrent> <__t___tracker_> <tracker_announce_url> <__s___piecesize_> <2048> <path_to_file_or_directory>
+
+# Create a torrent with a comment
+transmission-create <__o___outfile_> <path_to_example_torrent> <__t___tracker_> <tracker_url1> <__c___comment_> <comment> <path_to_file_or_directory>
+
+# Create a torrent with multiple trackers
+transmission-create <__o___outfile_> <path_to_example_torrent> <__t___tracker_> <tracker_url1> <__t___tracker_> <tracker_url2> <path_to_file_or_directory>
+
+# Display help
+transmission-create <__h___help_>

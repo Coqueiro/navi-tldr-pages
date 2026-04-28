@@ -3,4 +3,11 @@
 
 % systemctl-hibernate, linux
 
+# Hibernate the system immediately
+systemctl hibernate
 
+# Force hibernation even if inhibitors are present
+systemctl hibernate <__f___force_>
+
+# Hibernate the system without sending a message to logged-in users
+systemctl hibernate --no-wall

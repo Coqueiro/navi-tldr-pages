@@ -3,4 +3,20 @@
 
 % imv, linux
 
+# View multiple images
+imv {{path/to/image1.ext path/to/image2.ext ...}}
 
+# View in fullscreen mode
+imv -f <path_to_image_ext>
+
+# View images [r]ecursively from a path
+imv -r --slideshow <path_to_directory>
+
+# Open multiple images via `stdin`
+find . -type f -name "<__svg>" | imv
+
+# Make a slideshow from a directory showing each image for 10 seconds
+imv -t 10 <path_to_directory>
+
+# View multiple images from the web
+curl {{[-Osw|--remote-name --silent --write-out]}} '%{filename_effective}\n' '<http___www_example_com__1_10__jpg>' | imv

@@ -3,4 +3,20 @@
 
 % lscpu, linux
 
+# Display information about all CPUs
+lscpu
 
+# Display information in a table
+lscpu <__e___extended_>
+
+# Display only information about online CPUs in a table
+lscpu <__e___extended_> <__b___online_>
+
+# Display only information about offline CPUs in a table
+lscpu <__e___extended_> <__c___offline_>
+
+# Display details about CPU caches
+lscpu <__C___caches_>
+
+# Display information in JSON format
+lscpu <__J___json_>

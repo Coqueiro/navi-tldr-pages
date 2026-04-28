@@ -3,4 +3,23 @@
 
 % gcrane, common
 
+# Login to a registry
+gcrane auth login <registry> <__u___username_> <user> <__p___password_> <password>
 
+# List tags, manifests, and sub-repostiories
+gcrane ls <registry>/<project_id>
+
+# Copy images from one registry to another
+gcrane cp <__r___recursive_> <source_registry>/<project_id>/<repository> <target_registry>/<project_id>/<repository>
+
+# Print images that can be garbage collected
+gcrane gc <registry>/<project_id>/<repository>
+
+# Delete images that can be garbage collected
+gcrane gc <registry>/<project_id>/<repository> | xargs <__n___max_args_> 1 gcrane delete
+
+# List a specific registry with specific ID
+gcrane ls <gcr_io>/<my_project_id>
+
+# Migrate all images from US registry to EU registry
+gcrane cp <__r___recursive_> <gcr_io>/<my_project_id>/<repository> <eu_gcr_io>/<my_project_id>/<repository>

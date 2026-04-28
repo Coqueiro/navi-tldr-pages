@@ -3,4 +3,26 @@
 
 % gh-cache, common
 
+# List caches for the current repository
+gh cache <_ls_list_>
 
+# List caches for a specific repository
+gh cache <_ls_list_> <__R___repo_> <owner>/<repository>
+
+# List caches with a specific cache key prefix
+gh cache <_ls_list_> <__k___key_> <key_prefix>
+
+# List caches for a specific branch
+gh cache <_ls_list_> <__r___ref_> refs/heads/<branch_name>
+
+# List caches sorted by least recently accessed
+gh cache <_ls_list_> <__S___sort_> last_accessed_at <__O___order_> asc
+
+# Delete a cache by id
+gh cache delete <cache_id>
+
+# Delete a cache by key
+gh cache delete <cache_key>
+
+# Delete all caches
+gh cache delete <__a___all_>

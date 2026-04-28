@@ -3,4 +3,23 @@
 
 % electrum, common
 
+# Create a new wallet
+electrum <__w___wallet_> <path_to_new_wallet_dat> create
 
+# Restore an existing wallet from seed offline
+electrum <__w___wallet_> <path_to_recovery_wallet_dat> restore <__o___offline_>
+
+# Create a signed transaction offline
+electrum mktx <recipient> <amount> <__f___fee_> 0.0000001 <__F___from_addr_> <from> <__o___offline_>
+
+# Display all wallet receiving addresses
+electrum listaddresses -a
+
+# Sign a message
+electrum signmessage <address> <message>
+
+# Verify a message
+electrum verifymessage <address> <signature> <message>
+
+# Connect only to a specific electrum-server instance
+electrum <__p___proxy_> socks5:<127_0_0_1>:9050 <__s___server_> <56ckl5obj37gypcu_onion>:50001:t <__1___oneserver_>

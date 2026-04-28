@@ -3,4 +3,17 @@
 
 % pg_recvlogical, common
 
+# Create a new logical replication slot
+pg_recvlogical <__d___dbname_> <dbname> <__S___slot_> <slot_name> --create-slot
 
+# Start streaming changes from a logical replication slot to a file
+pg_recvlogical <__d___dbname_> <dbname> <__S___slot_> <slot_name> --start <__f___file_> <filename>
+
+# Drop a logical replication slot
+pg_recvlogical <__d___dbname_> <dbname> <__S___slot_> <slot_name> --drop-slot
+
+# Create a slot with two-phase commit enabled
+pg_recvlogical <__d___dbname_> <dbname> <__S___slot_> <slot_name> --create-slot <__t___enable_two_phase_>
+
+# Display help
+pg_recvlogical <______help_>

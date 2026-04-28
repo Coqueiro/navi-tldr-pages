@@ -3,4 +3,23 @@
 
 % zstd, common
 
+# Compress a file into a new file with the `.zst` suffix
+zstd <path_to_file>
 
+# Decompress a file
+zstd <__d___decompress_> <path_to_file_zst>
+
+# Decompress to `stdout`
+zstd <__d___decompress_> <__c___stdout_> <path_to_file_zst>
+
+# Compress a file specifying the compression level, where 1=fastest, 19=slowest, and 3=default
+zstd -<level> <path_to_file>
+
+# Compress a file using an ultra-fast compression level, where 1=default
+zstd --fast=<level> <path_to_file>
+
+# Unlock higher compression levels (up to 22) using more memory (both for compression and decompression)
+zstd --ultra -<level> <path_to_file>
+
+# Set the number of working threads to the number of physical CPU cores
+zstd <__T___threads_> 0

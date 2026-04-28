@@ -3,4 +3,20 @@
 
 % gh-pr-merge, common
 
+# Merge the pull request associated with the current branch interactively
+gh pr merge
 
+# Merge the current branch into the specified pull request
+gh pr merge <pr_number> <__m___merge_>
+
+# Squash and merge a pull request, then delete the branch
+gh pr merge <pr_number> {{[-sd|--squash --delete-branch]}}
+
+# Rebase and merge
+gh pr merge <pr_number> <__r___rebase_>
+
+# Enable auto-merge (squash)
+gh pr merge <pr_number> --auto <__s___squash_>
+
+# Merge with admin privileges (if allowed)
+gh pr merge <pr_number> --admin

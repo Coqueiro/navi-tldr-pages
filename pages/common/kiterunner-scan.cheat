@@ -3,4 +3,26 @@
 
 % kiterunner-scan, common
 
+# Scan a target with an Assetnote wordlist (e.g., first 5000 API routes)
+kiterunner scan <https___example_com> <__A___assetnote_wordlist_> <apiroutes_210228_5000>
 
+# Scan a target with a kitebuilder wordlist
+kiterunner scan <https___example_com> <__w___kitebuilder_list_> <path_to_wordlist_kite>
+
+# Scan multiple hosts from a file with a kitebuilder wordlist
+kiterunner scan <path_to_hosts_txt> <__w___kitebuilder_list_> <path_to_wordlist_kite>
+
+# Scan with an Assetnote wordlist and JSON output
+kiterunner scan <https___example_com> <__A___assetnote_wordlist_> <apiroutes_210228_5000> -o <json>
+
+# Scan with custom concurrency settings for performance
+kiterunner scan <https___example_com> <__w___kitebuilder_list_> <path_to_wordlist_kite> <__x___max_connection_per_host_> <5> <__j___max_parallel_hosts_> <100>
+
+# Scan with a wordlist as a normal wordlist, disabling depth scanning
+kiterunner scan <https___example_com> <__w___kitebuilder_list_> <path_to_rafter_txt> <__d___preflight_depth_> <0>
+
+# Scan with custom headers and ignore specific content length responses
+kiterunner scan <https___example_com> <__w___kitebuilder_list_> <path_to_wordlist_kite> <__H___header_> "{{Authorization: Bearer token}}" --ignore-length <100_105>
+
+# Perform a full kitebuilder scan without phase scanning
+kiterunner scan <https___example_com> <__w___kitebuilder_list_> <path_to_wordlist_kite> --kitebuilder-full-scan

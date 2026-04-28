@@ -3,4 +3,23 @@
 
 % puppet, common
 
+# Apply a Puppet manifest file to configure the system
+puppet apply <path_to_file_pp>
 
+# Apply a manifest in no operation (dry-run) mode to preview changes
+puppet apply --noop <path_to_file_pp>
+
+# Validate the syntax of a Puppet manifest
+puppet parser validate <path_to_file_pp>
+
+# Run the Puppet agent to fetch and apply configurations from the master
+puppet agent <__t___test_>
+
+# Display help for a specific subcommand
+puppet help <subcommand>
+
+# Display general help
+puppet <__h___help_>
+
+# Display version
+puppet <__V___version_>

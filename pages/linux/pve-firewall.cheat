@@ -4,13 +4,13 @@
 % pve-firewall, linux
 
 # Compile and print all firewall rules
-pve-firewall {{[c|compile]}}
+pve-firewall <_c_compile_>
 
 # Show information about the local network
-pve-firewall {{[l|localnet]}}
+pve-firewall <_l_localnet_>
 
 # Restart the Proxmox VE Firewall service
-pve-firewall {{[r|restart]}}
+pve-firewall <_r_restart_>
 
 # Start the Proxmox VE Firewall service
 pve-firewall start
@@ -19,7 +19,7 @@ pve-firewall start
 pve-firewall stop
 
 # Simulate all firewall rules
-pve-firewall {{[si|simulate]}}
+pve-firewall <_si_simulate_>
 
 # Show the status of Proxmox VE Firewall
 pve-firewall status

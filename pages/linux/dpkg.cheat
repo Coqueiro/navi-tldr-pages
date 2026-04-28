@@ -3,4 +3,23 @@
 
 % dpkg, linux
 
+# Install a package
+sudo dpkg <__i___install_> <path_to_file_deb>
 
+# Remove a package
+sudo dpkg <__r___remove_> <package>
+
+# List installed packages
+dpkg <__l___list_> <pattern>
+
+# List a package's contents
+dpkg <__L___listfiles_> <package>
+
+# List contents of a local package file
+dpkg <__c___contents_> <path_to_file_deb>
+
+# Find out which package owns a file
+dpkg <__S___search_> <path_to_file>
+
+# Purge an installed or already removed package, including configuration
+sudo dpkg <__P___purge_> <package>

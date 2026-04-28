@@ -3,4 +3,17 @@
 
 % in-toto-sign, common
 
+# Sign 'unsigned.layout' with two keys and write it to 'root.layout'
+in-toto-sign <__f___file_> <unsigned_layout> <__k___keep_> <priv_key1> <priv_key2> <__o___output_> <root_layout>
 
+# Replace signature in link file and write to default filename
+in-toto-sign <__f___file_> <package_2f89b927_link> <__k___keep_> <priv_key>
+
+# Verify a layout signed with 3 keys
+in-toto-sign <__f___file_> <root_layout> <__k___keep_> <pub_key0> <pub_key1> <pub_key2> --verify
+
+# Sign a layout with the default GPG key in default GPG keyring
+in-toto-sign <__f___file_> <root_layout> <__g___gpg_>
+
+# Verify a layout with a GPG key identified by keyid '...439F3C2'
+in-toto-sign <__f___file_> <root_layout> --verify <__g___gpg_> <___439F3C2>

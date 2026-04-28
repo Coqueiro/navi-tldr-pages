@@ -3,4 +3,17 @@
 
 % crane-copy, common
 
+# Copy an image from source to target
+crane <_cp_copy_> <source> <target>
 
+# Copy all tags
+crane <_cp_copy_> <source> <target> <__a___all_tags_>
+
+# Set the maximum number of concurrent copies, defaults to GOMAXPROCS
+crane <_cp_copy_> <source> <target> <__j___jobs_> <int>
+
+# Avoid overwriting existing tags in target
+crane <_cp_copy_> <source> <target> <__n___no_clobber_>
+
+# Display help
+crane <_cp_copy_> <__h___help_>

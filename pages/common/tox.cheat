@@ -3,4 +3,17 @@
 
 % tox, common
 
+# Run tests on all test environments
+tox
 
+# Create a `tox.ini` configuration
+tox-quickstart
+
+# List the available environments
+tox <__a___listenvs_all_>
+
+# Run tests on a specific environment (e.g. Python 3.6)
+tox -e <py36>
+
+# Force the virtual environment to be recreated
+tox <__r___recreate_> -e <py27>

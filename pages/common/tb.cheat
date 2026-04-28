@@ -3,4 +3,20 @@
 
 % tb, common
 
+# Add a new task to a board
+tb <__t___task_> <task_description> @<board_name>
 
+# Add a new note to a board
+tb <__n___note_> <note_description> @<board_name>
+
+# Edit item's priority
+tb <__p___priority_> @<item_id> <priority>
+
+# Check/uncheck item
+tb <__c___check_> <item_id>
+
+# Archive all checked items
+tb --clear
+
+# Move item to a board
+tb <__m___move_> @<item_id> <board_name>

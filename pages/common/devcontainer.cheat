@@ -3,4 +3,17 @@
 
 % devcontainer, common
 
+# Create and run a Dev Container
+devcontainer up
 
+# Apply a Dev Container Template to a workspace
+devcontainer templates apply <__t___template_id_> <template_id> <__a___template_args_> <template_args> <__w___workspace_folder_> <path_to_workspace>
+
+# Execute a command on a running Dev Container in the current workspace
+devcontainer exec <command>
+
+# Build a Dev Container image from `devcontainer.json`
+devcontainer build <path_to_workspace>
+
+# Read and print the configuration of a Dev Container from `devcontainer.json`
+devcontainer read-configuration

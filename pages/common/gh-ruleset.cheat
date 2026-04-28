@@ -3,4 +3,26 @@
 
 % gh-ruleset, common
 
+# List all rulesets for the current repository
+gh <_rs_ruleset_> <_ls_list_>
 
+# List all rulesets for a specific organization
+gh <_rs_ruleset_> <_ls_list_> <__o___org_> <organization_name>
+
+# Check the rules that apply to the current branch
+gh <_rs_ruleset_> check
+
+# Check the rules that apply to a specific branch in another repository
+gh <_rs_ruleset_> check <branch_name> <__R___repo_> <owner>/<repository>
+
+# Interactively select and view a ruleset for the current repository
+gh <_rs_ruleset_> view
+
+# View a specific ruleset by its ID
+gh <_rs_ruleset_> view <ruleset_id>
+
+# View an organization-level ruleset by its ID
+gh <_rs_ruleset_> view <ruleset_id> <__o___org_> <organization_name>
+
+# Open the list of rulesets for a specific repository in the browser
+gh <_rs_ruleset_> <_ls_list_> <__R___repo_> <owner>/<repository> <__w___web_>

@@ -3,4 +3,14 @@
 
 % lxc-console, linux
 
+# Start a console in a container
+agetty <__L___local_line_> <38400> tty1
 
+# Connect to an lxc console
+sudo lxc-console <container_name>
+
+# Exit `lxc-console`
+<Ctrl a><q>
+
+# Display help
+lxc-console <______help_>

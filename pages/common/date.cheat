@@ -3,4 +3,26 @@
 
 % date, common
 
+# Display the current date using the default locale's format
+date +%c
 
+# Display the current date in UTC, using the ISO 8601 format
+date <__u___utc_> +%Y-%m-%dT%H:%M:%S%Z
+
+# Display the current date as a Unix timestamp (seconds since the Unix epoch)
+date +%s
+
+# Convert a date specified as a Unix timestamp to the default format
+date <__d___date_> @<1473305798>
+
+# Convert a given date to the Unix timestamp format
+date <__d___date_> "{{2018-09-01 00:00}}" +%s <__u___utc_>
+
+# Display the current date using the RFC-3339 format (`YYYY-MM-DD hh:mm:ss TZ`) and specify its precision
+date --rfc-3339 <date_seconds_ns>
+
+# Set the current date using the format `MMDDhhmmYYYY.ss` (`YYYY` and `.ss` are optional)
+sudo date <093023592021_59>
+
+# Display the current ISO week number
+date +%V

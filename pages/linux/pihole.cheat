@@ -7,7 +7,7 @@
 pihole status
 
 # Update Pi-hole and Gravity
-sudo pihole {{[-up|updatePihole]}}
+sudo pihole <__up_updatePihole_>
 
 # Start or stop the daemon
 pihole <enable_disable>
@@ -16,13 +16,13 @@ pihole <enable_disable>
 pihole reloaddns
 
 # Update the list of ad-serving domains
-pihole {{[-g|updateGravity]}}
+pihole <__g_updateGravity_>
 
 # Allow or deny the specified domain
 pihole <allow_deny> <example_com>
 
 # Search the lists for a domain
-pihole {{[-q|query]}} <example_com>
+pihole <__q_query_> <example_com>
 
 # Open a real-time log of connections
-pihole {{[-t|tail]}}
+pihole <__t_tail_>

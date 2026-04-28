@@ -3,4 +3,14 @@
 
 % head, osx
 
+# Output the first 10 lines of a file
+head <path_to_file>
 
+# Output the first 5 lines of multiple files
+head {{[-5|--lines 5]}} {{path/to/file1 path/to/file2 ...}}
+
+# Output the first `n` lines of a file
+head <__n___lines_> <n> <path_to_file>
+
+# Output the first `n` bytes of a file
+head <__c___bytes_> <n> <path_to_file>

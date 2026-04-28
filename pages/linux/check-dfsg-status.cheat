@@ -3,4 +3,8 @@
 
 % check-dfsg-status, linux
 
+# List non-free and contrib packages (and their description)
+check-dfsg-status
 
+# Only output the package names
+check-dfsg-status <__s___sparse_>

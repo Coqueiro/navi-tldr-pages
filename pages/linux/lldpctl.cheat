@@ -3,4 +3,11 @@
 
 % lldpctl, linux
 
+# Start the lldp daemon
+systemctl start lldpd
 
+# Display collected neighbor data
+sudo lldpctl
+
+# Display help
+lldpctl <__h___help_>

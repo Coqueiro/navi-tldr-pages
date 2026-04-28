@@ -3,4 +3,14 @@
 
 % add-apt-repository, linux
 
+# Add a new `apt` repository
+add-apt-repository <repository_spec>
 
+# Remove an `apt` repository
+add-apt-repository <__r___remove_> <repository_spec>
+
+# Update the package cache after adding a repository
+add-apt-repository --update <repository_spec>
+
+# Allow source packages to be downloaded from the repository
+add-apt-repository <__s___enable_source_> <repository_spec>

@@ -3,4 +3,20 @@
 
 % stat, common
 
+# Display properties about a specific file such as size, permissions, creation date, and access date among others
+stat <path_to_file>
 
+# Display properties about a specific file, only showing the raw result data without labels
+stat <__t___terse_> <path_to_file>
+
+# Display information about the filesystem where a specific file is located
+stat <__f___file_system_> <path_to_file>
+
+# Show only octal file permissions
+stat <__c___format_> "%a %n" <path_to_file>
+
+# Show the owner and group of a specific file
+stat <__c___format_> "%U %G" <path_to_file>
+
+# Show the size of a specific file in bytes
+stat <__c___format_> "%s %n" <path_to_file>

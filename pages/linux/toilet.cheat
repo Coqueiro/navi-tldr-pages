@@ -3,4 +3,14 @@
 
 % toilet, linux
 
+# Generate ASCII art for a given text
+toilet <input_text>
 
+# Generate ASCII art using a custom font file
+toilet <input_text> <__f___font_> <font_filename>
+
+# Generate ASCII art using a filter
+toilet <input_text> <__F___filter_> <filter_name>
+
+# Show available toilet filters
+toilet <__F___filter_> list

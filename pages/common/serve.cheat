@@ -3,4 +3,23 @@
 
 % serve, common
 
+# Start an HTTP server listening on the default port to serve the current directory
+serve
 
+# Start an HTTP server on a specific [p]ort to serve a specific directory
+serve -p <port> <path_to_directory>
+
+# Start an HTTP server with CORS enabled by including the `Access-Control-Allow-Origin: *` header in all responses
+serve <__C___cors_>
+
+# Start an HTTP server on the default port rewriting all not-found requests to the `index.html` file
+serve <__s___single_>
+
+# Start an HTTPS server on the default port using the specified certificate
+serve --ssl-cert <path_to_cert_pem> --ssl-key <path_to_key_pem>
+
+# Start an HTTP server on the default port using a specific configuration file
+serve <__c___config_> <path_to_serve_json>
+
+# Display help
+serve --help

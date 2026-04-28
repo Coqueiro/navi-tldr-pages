@@ -3,4 +3,17 @@
 
 % systemd-cgtop, linux
 
+# Start an interactive view
+systemd-cgtop
 
+# Change the sort order
+systemd-cgtop --order <cpu_memory_path_tasks_io>
+
+# Show the CPU usage by time instead of percentage
+systemd-cgtop --cpu=percentage
+
+# Change the update interval in seconds (or one of these time units: `ms`, `us`, `min`)
+systemd-cgtop <__d___delay_> <interval>
+
+# Only count userspace processes (without kernel threads)
+systemd-cgtop -P

@@ -3,4 +3,23 @@
 
 % kaggle-kernels, common
 
+# List all kernels
+kaggle <_k_kernels_> list
 
+# List kernel output files
+kaggle <_k_kernels_> files <kernel_name>
+
+# Initialize metadata file for a kernel (defaults to current directory)
+kaggle <_k_kernels_> init <__p___path_> <path_to_directory>
+
+# Push new code to a kernel and run the kernel
+kaggle <_k_kernels_> push <__p___path_> <path_to_directory>
+
+# Pull a kernel
+kaggle <_k_kernels_> pull <kernel_name> <__p___path_> <path_to_directory>
+
+# Get data output from the latest kernel run
+kaggle <_k_kernels_> output <kernel_name>
+
+# Display the status of the latest kernel run
+kaggle <_k_kernels_> status <kernel_name>

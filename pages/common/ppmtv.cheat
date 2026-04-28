@@ -7,7 +7,7 @@
 ppmtv <dim_factor> <path_to_file_ppm> > <path_to_output_ppm>
 
 # Suppress all informational messages
-ppmtv {{[-q|-quiet]}}
+ppmtv <__q__quiet_>
 
 # Display version
-ppmtv {{[-v|-version]}}
+ppmtv <__v__version_>

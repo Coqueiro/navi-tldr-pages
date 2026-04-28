@@ -3,4 +3,14 @@
 
 % spectacle, common
 
+# Capture a screenshot of the entire desktop
+spectacle
 
+# Capture a screenshot of the active window
+spectacle <__a___activewindow_>
+
+# Capture a screenshot of a specific region
+spectacle <__r___region_>
+
+# Start another Spectacle instance so that you can screenshot Spectacle itself
+spectacle <__i___new_instance_>

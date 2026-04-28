@@ -3,4 +3,11 @@
 
 % jj-evolog, common
 
+# Show how a revision has evolved over time
+jj evolog <__r___revisions_> <revsets>
 
+# Show diff statistics in the evolution log
+jj evolog <__r___revisions_> <revsets> --stat
+
+# Show summary of each change in the evolution log
+jj evolog <__r___revisions_> <revsets> <__s___summary_>

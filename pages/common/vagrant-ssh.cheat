@@ -3,4 +3,14 @@
 
 % vagrant-ssh, common
 
+# SSH into the machine running in the current directory
+vagrant ssh
 
+# Target a running machine by name or ID
+vagrant ssh <name_id>
+
+# Execute an SSH command and exit
+vagrant ssh <__c___command_> <ssh_command>
+
+# SSH without authentication, leaving authentication up to the user
+vagrant ssh <__p___plain_>

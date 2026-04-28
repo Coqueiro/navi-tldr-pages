@@ -3,4 +3,26 @@
 
 % pg_waldump, common
 
+# Display WAL records from a specific segment
+pg_waldump <start_segment>
 
+# Display WAL records between two segments
+pg_waldump <start_segment> <end_segment>
+
+# Specify the WAL file directory
+pg_waldump <start_segment> <end_segment> <__p___path_> <path>
+
+# Follow new WAL entries as they arrive
+pg_waldump <start_segment> <end_segment> <__f___follow_>
+
+# Limit number of records shown
+pg_waldump <start_segment> <end_segment> <__n___limit_> <count>
+
+# Display summary statistics instead of individual records
+pg_waldump <start_segment> <end_segment> <__z___stats_>
+
+# Filter by resource manager
+pg_waldump <start_segment> <end_segment> <__r___rmgr_> <rmgr_name>
+
+# Display help
+pg_waldump <______help_>

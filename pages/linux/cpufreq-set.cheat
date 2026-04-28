@@ -3,4 +3,14 @@
 
 % cpufreq-set, linux
 
+# Set the CPU frequency policy of CPU 1 to "userspace"
+sudo cpufreq-set <__c___cpu_> <1> <__g___governor_> <userspace>
 
+# Set the current minimum CPU frequency of CPU 1
+sudo cpufreq-set <__c___cpu_> <1> <__d___min_> <min_frequency>
+
+# Set the current maximum CPU frequency of CPU 1
+sudo cpufreq-set <__c___cpu_> <1> <__u___max_> <max_frequency>
+
+# Set the current work frequency of CPU 1
+sudo cpufreq-set <__c___cpu_> <1> <__f___freq_> <work_frequency>

@@ -7,4 +7,4 @@
 ppmglobe <number_of_strips> <path_to_image_ppm> > <path_to_output_ppm>
 
 # Use the specified color for the areas between the strips
-ppmglobe {{[-b|-background]}} <red> <number_of_strips> <path_to_image_ppm> > <path_to_output_ppm>
+ppmglobe <__b__background_> <red> <number_of_strips> <path_to_image_ppm> > <path_to_output_ppm>

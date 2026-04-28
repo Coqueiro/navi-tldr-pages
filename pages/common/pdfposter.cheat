@@ -3,4 +3,8 @@
 
 % pdfposter, common
 
+# Convert an A2 poster into 4 A4 pages
+pdfposter <__p___poster_size_> a2 <input_file_pdf> <output_file_pdf>
 
+# Scale an A4 poster to A3 and then generate 2 A4 pages
+pdfposter <__s___scale_> 2 <input_file_pdf> <output_file_pdf>

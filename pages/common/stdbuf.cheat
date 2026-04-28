@@ -3,4 +3,11 @@
 
 % stdbuf, common
 
+# Change `stdin` buffer size to 512 KiB
+stdbuf <__i___input_> 512K <command>
 
+# Change `stdout` buffer to line-buffered
+stdbuf <__o___output_> L <command>
+
+# Change `stderr` buffer to unbuffered
+stdbuf <__e___error_> 0 <command>

@@ -10,7 +10,7 @@ pamditherbw <path_to_image_pgm> > <path_to_file_pgm>
 pamditherbw -<floyd_fs_atkinson_threshold_hilbert____> <path_to_image_pgm> > <path_to_file_pgm>
 
 # Use the atkinson quantization method and the specified seed for a pseudo-random number generator
-pamditherbw {{[-a|-atkinson]}} {{[-r|-randomseed]}} <1337> <path_to_image_pgm> > <path_to_file_pgm>
+pamditherbw <__a__atkinson_> <__r__randomseed_> <1337> <path_to_image_pgm> > <path_to_file_pgm>
 
 # Specify the thresholding value for quantization methods that perform some sort of thresholding
-pamditherbw -<fs_atkinson_thresholding> {{[-va|-value]}} <0_3> <path_to_image_pgm> > <path_to_file_pgm>
+pamditherbw -<fs_atkinson_thresholding> <__va__value_> <0_3> <path_to_image_pgm> > <path_to_file_pgm>

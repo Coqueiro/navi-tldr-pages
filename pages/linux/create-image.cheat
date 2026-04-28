@@ -3,4 +3,8 @@
 
 % create-image, linux
 
+# Create a CPIO archive from the current directory
+create-image <__o___output_> <path_to_output_cpio>
 
+# Display help
+create-image <__h___help_>

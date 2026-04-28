@@ -3,4 +3,26 @@
 
 % freeze, common
 
+# Generate an image of code based on a file
+freeze <path_to_file>
 
+# Specify the output path
+freeze <path_to_file> <__o___output_> <path_to_output_image_png>
+
+# Generate an image of terminal output
+freeze <__x___execute_> <command>
+
+# Interactively customize the output image
+freeze <path_to_file> <__i___interactive_>
+
+# Select a theme for syntax highlighting
+freeze <path_to_file> <__t___theme_> <dracula>
+
+# Use a base configuration template
+freeze <path_to_file> <__c___config_> <base_full_user>
+
+# Capture a specific range of line numbers
+freeze <path_to_file> --lines <start>,<end>
+
+# Show line numbers
+freeze <path_to_file> --show-line-numbers

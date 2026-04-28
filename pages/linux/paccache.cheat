@@ -3,4 +3,14 @@
 
 % paccache, linux
 
+# Remove all but the 3 most recent package versions from the `pacman` cache
+paccache <__r___remove_>
 
+# Set the number of package versions to keep
+paccache {{[-rk|--remove --keep]}} <num_versions>
+
+# Perform a dry-run and show the number of candidate packages for deletion
+paccache <__d___dryrun_>
+
+# Move candidate packages to a directory instead of deleting them
+paccache <__m___move_> <path_to_directory>

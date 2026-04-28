@@ -3,4 +3,26 @@
 
 % bfs, common
 
+# Find files by extension
+bfs <path_to_directory> -name '<__ext>'
 
+# Find files matching multiple path/name patterns
+bfs <path_to_directory> -path '<___path______ext>' -or -name '<_pattern_>'
+
+# Find directories matching a given name, in case-insensitive mode
+bfs <path_to_directory> -type d -iname '<_lib_>'
+
+# Find files matching a given pattern, excluding specific paths
+bfs <path_to_directory> -name '<__py>' -not -path '<__site_packages__>'
+
+# Find files matching a given size range, limiting the recursive depth to "1"
+bfs <path_to_directory> -maxdepth 1 -size <_500k> -size <_10M>
+
+# Run a command for each file (use `{}` within the command to access the filename)
+bfs <path_to_directory> -name '<__ext>' -exec {{wc -l}} {} \;
+
+# Find all files modified today and pass the results to a single command as arguments
+bfs <path_to_directory> -daystart -mtime <_1> -exec {{tar -cvf archive.tar}} {} \+
+
+# Find empty files (0 byte) or directories and delete them verbosely
+bfs <path_to_directory> -type <f_d> -empty -delete -print

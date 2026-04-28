@@ -4,13 +4,13 @@
 % pvesm, linux
 
 # Get status for all datastores
-pvesm {{[st|status]}}
+pvesm <_st_status_>
 
 # List storage contents
-pvesm {{[l|list]}} <storage_name>
+pvesm <_l_list_> <storage_name>
 
 # Add a directory storage
-pvesm add {{[d|dir]}} <storage_name> --path <path_to_directory>
+pvesm add <_d_dir_> <storage_name> --path <path_to_directory>
 
 # Set a storage to contain specific content
 pvesm set <storage_name> --content <iso_images_backup_vztmpl____>
@@ -19,4 +19,4 @@ pvesm set <storage_name> --content <iso_images_backup_vztmpl____>
 pvesm free <local_iso_archlinux_2025_08_01_x86_64_iso>
 
 # Remove a storage
-pvesm {{[r|remove]}} <storage_name>
+pvesm <_r_remove_> <storage_name>

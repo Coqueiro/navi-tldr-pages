@@ -3,4 +3,11 @@
 
 % confettysh, common
 
+# Start a local `confettysh` server
+confettysh
 
+# Run the server on a custom port
+confettysh <__p___port_> <2323>
+
+# Connect to the local server and show fireworks
+ssh <__p___port_> <2222> localhost -t fireworks

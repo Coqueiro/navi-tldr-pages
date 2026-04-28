@@ -3,4 +3,26 @@
 
 % kaggle, common
 
+# View current configuration values
+kaggle config view
 
+# Download a specific file from a competition dataset
+kaggle <_c_competitions_> download <competition> <__f___file_> <path_to_file>
+
+# List competitions matching a search term
+kaggle <_c_competitions_> list <__s___search_> <search_term>
+
+# List files available for a specific competition
+kaggle <_c_competitions_> files <competition>
+
+# Submit a file to a competition with a message
+kaggle <_c_competitions_> submit <competition> <__f___file_> <path_to_submission_csv> <__m___message_> "<message>"
+
+# List datasets matching a search term
+kaggle <_d_datasets_> list <__s___search_> <search_term>
+
+# Download all files from a dataset
+kaggle <_d_datasets_> download <owner>/<dataset_name>
+
+# List kernels (notebooks) matching a search term
+kaggle <_k_kernels_> list <__s___search_> <search_term>

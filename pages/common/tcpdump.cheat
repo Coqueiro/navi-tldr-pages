@@ -3,4 +3,26 @@
 
 % tcpdump, common
 
+# List available network interfaces
+tcpdump <__D___list_interfaces_>
 
+# Capture the traffic of a specific interface
+sudo tcpdump <__i___interface_> <eth0>
+
+# Capture all TCP traffic showing contents ([A]SCII) in console
+sudo tcpdump -A tcp
+
+# Capture the traffic from or to a host
+sudo tcpdump host <www_example_com>
+
+# Capture the traffic from a specific interface, source, destination, and destination port
+sudo tcpdump <__i___interface_> <eth0> src <192_168_1_1> and dst <192_168_1_2> and dst port <80>
+
+# Capture the traffic of a network
+sudo tcpdump net <192_168_1_0_24>
+
+# Capture all traffic except traffic over port 22 and [w]rite to a dump file
+sudo tcpdump -w <path_to_dumpfile_pcap> port not 22
+
+# [r]ead from a given dump file
+tcpdump -r <path_to_dumpfile_pcap>

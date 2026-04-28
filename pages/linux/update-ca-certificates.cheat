@@ -3,4 +3,14 @@
 
 % update-ca-certificates, linux
 
+# Update certificates
+sudo update-ca-certificates
 
+# Update certificates in verbose mode
+sudo update-ca-certificates <__v___verbose_>
+
+# Perform a fresh update (remove all symlinks and regenerate)
+sudo update-ca-certificates <__f___fresh_>
+
+# Add a custom certificate (copy it first, then update)
+sudo cp <path_to_certificate_crt> /usr/local/share/ca-certificates/ && sudo update-ca-certificates

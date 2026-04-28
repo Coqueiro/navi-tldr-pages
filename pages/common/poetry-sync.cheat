@@ -3,4 +3,26 @@
 
 % poetry-sync, common
 
+# Sync your project's environment with the `poetry.lock` file
+poetry sync
 
+# Exclude one or more dependency groups for the installation
+poetry sync --without <test_docs____>
+
+# Select optional dependency groups
+poetry sync --with <test_docs____>
+
+# Install all dependency groups including optional groups
+poetry sync --all-groups
+
+# Install specific dependency groups
+poetry sync --only <test_docs____>
+
+# Install project without dependencies
+poetry sync --only-root
+
+# Specify extras to install
+poetry sync <__E___extras_>
+
+# Skip the defaulted package installation for your project
+poetry sync --no-root

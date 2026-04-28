@@ -4,25 +4,25 @@
 % ip-link, linux
 
 # Show information about all network interfaces
-ip {{[l|link]}}
+ip <_l_link_>
 
 # Show information about a specific network interface
-ip {{[l|link]}} {{[sh|show]}} <ethX>
+ip <_l_link_> <_sh_show_> <ethX>
 
 # Bring a network interface up or down
-sudo ip {{[l|link]}} {{[s|set]}} <ethX> <up_down>
+sudo ip <_l_link_> <_s_set_> <ethX> <up_down>
 
 # Give a meaningful name to a network interface
-sudo ip {{[l|link]}} {{[s|set]}} <ethX> {{[al|alias]}} "{{LAN Interface}}"
+sudo ip <_l_link_> <_s_set_> <ethX> <_al_alias_> "{{LAN Interface}}"
 
 # Change the MAC address of a network interface
-sudo ip {{[l|link]}} {{[s|set]}} <ethX> {{[a|address]}} <ff_ff_ff_ff_ff_ff>
+sudo ip <_l_link_> <_s_set_> <ethX> <_a_address_> <ff_ff_ff_ff_ff_ff>
 
 # Change the MTU size for a network interface to use jumbo frames
-sudo ip {{[l|link]}} {{[s|set]}} <ethX> mtu <9000>
+sudo ip <_l_link_> <_s_set_> <ethX> mtu <9000>
 
 # Set the promisc mode status of a device
-sudo ip {{[l|link]}} {{[s|set]}} <ethX> promisc <on_off>
+sudo ip <_l_link_> <_s_set_> <ethX> promisc <on_off>
 
 # Delete a device
-sudo ip {{[l|link]}} {{[d|delete]}} <ethX>
+sudo ip <_l_link_> <_d_delete_> <ethX>

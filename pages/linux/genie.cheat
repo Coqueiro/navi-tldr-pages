@@ -3,4 +3,11 @@
 
 % genie, linux
 
+# Initialize the bottle (run once, at start)
+genie <__i___initialize_>
 
+# Run a login shell inside the bottle
+genie <__s___shell_>
+
+# Run a specified command inside the bottle
+genie <__c___command_> <command>

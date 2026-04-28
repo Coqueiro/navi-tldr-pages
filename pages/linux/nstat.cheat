@@ -3,4 +3,11 @@
 
 % nstat, linux
 
+# View network statistics since last time `nstat` was run
+nstat
 
+# View all-time network statistics
+nstat <__a___ignore_>
+
+# Display help
+nstat <__h___help_>

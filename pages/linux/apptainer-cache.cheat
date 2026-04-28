@@ -3,4 +3,26 @@
 
 % apptainer-cache, linux
 
+# List all cached container images
+apptainer cache list
 
+# List cached container images with detailed information
+apptainer cache list <__v___verbose_>
+
+# List only a specific cache type
+apptainer cache list <__T___type_> <library_oci_shub_blob____>
+
+# Clean the entire cache
+apptainer cache clean
+
+# Clean only a specific cache type
+apptainer cache clean <__T___type_> <library_oci_shub_blob____>
+
+# Clean cache entries older than a specific number of days
+apptainer cache clean <__D___days_> <days>
+
+# Preview what would be cleaned without removing anything
+apptainer cache clean <__n___dry_run_>
+
+# Force clean without confirmation
+apptainer cache clean <__f___force_>

@@ -3,4 +3,17 @@
 
 % picocom, common
 
+# Connect to a serial console with the default baud rate of 9600
+sudo picocom <_dev_ttyXYZ>
 
+# Connect to a serial console with a specified baud rate
+sudo picocom <_dev_ttyXYZ> <__b___baud_> <baud_rate>
+
+# Map special characters (e.g. `LF` to `CRLF`)
+sudo picocom <_dev_ttyXYZ> --imap <lfcrlf>
+
+# Exit picocom
+<Ctrl a><Ctrl x>
+
+# Display help
+picocom <__h___help_>

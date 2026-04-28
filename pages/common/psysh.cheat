@@ -3,4 +3,11 @@
 
 % psysh, common
 
+# Open a shell in the current directory
+psysh
 
+# Open a shell in a specific directory
+psysh --cwd <path_to_directory>
+
+# Use a specific configuration file
+psysh <__c___config_> <path_to_file>

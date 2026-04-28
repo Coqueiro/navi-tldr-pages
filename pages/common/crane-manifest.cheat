@@ -3,4 +3,8 @@
 
 % crane-manifest, common
 
+# Get the manifest
+crane manifest <image_name>
 
+# Display help
+crane manifest <__h___help_>

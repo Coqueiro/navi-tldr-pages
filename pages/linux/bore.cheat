@@ -3,4 +3,11 @@
 
 % bore, linux
 
+# Expose a local port to a remote Bore server
+bore local <__t___to_> <remote_server_address> <local_port>
 
+# Start a Bore server
+bore server
+
+# Display help
+bore <__h___help_>

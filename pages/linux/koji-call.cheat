@@ -3,4 +3,14 @@
 
 % koji-call, linux
 
+# Call build function with scratch option
+koji call build '"<git_https___src_fedoraproject_org_rpms_vim_git_e847a50297a216229050bf4db3d06a139104e7cf>"' \"<target>\" --kwargs '{"opts":{"scratch": True}}'
 
+# Call build function with arch_override option
+koji call build '"<git_https___src_fedoraproject_org_rpms_vim_git_e847a50297a216229050bf4db3d06a139104e7cf>"' \"<target>\" --kwargs '{"opts":{"arch_override":"sw_64"}}'
+
+# Call build function on `default` channel
+koji call build '"<git_https___src_fedoraproject_org_rpms_vim_git_e847a50297a216229050bf4db3d06a139104e7cf>"' \"<target>\" --kwargs '{"channel":"default"}'
+
+# Display help
+koji call <__h___help_>

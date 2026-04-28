@@ -3,4 +3,11 @@
 
 % mycli, common
 
+# Connect to a local database on port 3306, using the current user's username
+mycli <database_name>
 
+# Connect to a database (user will be prompted for a password)
+mycli <__u___user_> <username> <database_name>
+
+# Connect to a database on another host
+mycli <__h___host_> <database_host> <__P___port_> <port> <__u___user_> <username> <database_name>

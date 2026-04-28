@@ -3,4 +3,17 @@
 
 % ptx, linux
 
+# Generate a permuted index where the first field of each line is an index reference
+ptx <__r___references_> <path_to_file>
 
+# Generate a permuted index with automatically generated index references
+ptx <__A___auto_reference_> <path_to_file>
+
+# Generate a permuted index with a fixed width
+ptx <__w___width_> <width_in_columns> <path_to_file>
+
+# Generate a permuted index with a list of filtered words
+ptx <__o___only_file_> <path_to_filter> <path_to_file>
+
+# Generate a permuted index with SYSV-style behaviors
+ptx <__G___traditional_> <path_to_file>

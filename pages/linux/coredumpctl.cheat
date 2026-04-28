@@ -3,4 +3,23 @@
 
 % coredumpctl, linux
 
+# List all captured core dumps
+coredumpctl
 
+# List captured core dumps for a program
+coredumpctl list <program>
+
+# Show information about the core dumps matching a program with PID
+coredumpctl info <PID>
+
+# Invoke debugger using the last core dump
+coredumpctl debug
+
+# Invoke debugger using the last core dump of a program
+coredumpctl debug <program>
+
+# Extract the last core dump of a program to a file
+coredumpctl <__o___output_> <path_to_file> dump <program>
+
+# Skip debuginfod and pagination prompts and then print the backtrace when using `gdb`
+coredumpctl debug <__A___debugger_arguments_> "-iex 'set debuginfod enabled on' -iex 'set pagination off' -ex bt"

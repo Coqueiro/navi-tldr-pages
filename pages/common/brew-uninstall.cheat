@@ -4,7 +4,7 @@
 % brew-uninstall, common
 
 # Uninstall a formula/cask
-brew {{[rm|uninstall]}} <formula_cask>
+brew <_rm_uninstall_> <formula_cask>
 
 # Uninstall a cask and remove all associated files
-brew {{[rm|uninstall]}} --zap <cask>
+brew <_rm_uninstall_> --zap <cask>

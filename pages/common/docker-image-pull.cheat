@@ -3,4 +3,17 @@
 
 % docker-image-pull, common
 
+# Download a specific Docker image
+docker {{[pull|image pull]}} <image>:<tag>
 
+# Download a specific Docker image in quiet mode
+docker {{[pull|image pull]}} <__q___quiet_> <image>:<tag>
+
+# Download all tags of a specific Docker image
+docker {{[pull|image pull]}} <__a___all_tags_> <image>
+
+# Download a Docker images for a specific platform
+docker {{[pull|image pull]}} --platform <linux_amd64> <image>:<tag>
+
+# Display help
+docker {{[pull|image pull]}} --help

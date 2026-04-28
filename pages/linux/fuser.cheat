@@ -3,4 +3,20 @@
 
 % fuser, linux
 
+# Find which processes are accessing a file or directory
+fuser <path_to_file_or_directory>
 
+# Show more fields (`USER`, `PID`, `ACCESS`, and `COMMAND`)
+fuser <__v___verbose_> <path_to_file_or_directory>
+
+# Identify processes using a TCP socket
+fuser <port>/tcp
+
+# Kill all processes accessing a file or directory (sends the `SIGKILL` signal)
+fuser <__k___kill_> <path_to_file_or_directory>
+
+# Find which processes are accessing the filesystem containing a specific file or directory
+fuser <__m___mount_> <path_to_file_or_directory>
+
+# Kill all processes with a TCP connection on a specific port
+fuser <__k___kill_> <port>/tcp

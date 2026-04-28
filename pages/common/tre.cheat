@@ -3,4 +3,26 @@
 
 % tre, common
 
+# Print directories only
+tre <__d___directories_>
 
+# Print JSON containing files in the tree hierarchy instead of the normal tree diagram
+tre <__j___json_>
+
+# Print files and directories up to the specified depth limit (where 1 means the current directory)
+tre <__l___limit_> <depth>
+
+# Print all hidden files and directories using the specified colorization mode
+tre <__a___all_> <__c___color_> <automatic_always_never>
+
+# Print files within the tree hierarchy, assigning a shell alias to each file that, when called, will open the associated file using the provided `command` (or in `$EDITOR` by default)
+tre <__e___editor_> <command>
+
+# Print files within the tree hierarchy, excluding all paths that match the provided `regex`
+tre <__E___exclude_> <regex>
+
+# Display help
+tre <__h___help_>
+
+# Display version
+tre <__V___version_>

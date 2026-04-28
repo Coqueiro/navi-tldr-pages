@@ -3,4 +3,17 @@
 
 % cmus-remote, common
 
+# [Q]uery player status information
+cmus-remote -Q
 
+# Toggle playback
+cmus-remote <__u___pause_>
+
+# Skip to the next song
+cmus-remote <__n___next_>
+
+# Skip back to the previous song
+cmus-remote <__r___prev_>
+
+# Execute a `cmus` command
+cmus-remote <__C___raw_> "{{set repeat?}}"

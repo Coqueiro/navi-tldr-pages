@@ -3,4 +3,11 @@
 
 % wdctl, linux
 
+# Display the watchdog status
+wdctl
 
+# Display the watchdog status in a single line in key-value pairs
+wdctl <__O___oneline_>
+
+# Display only specific watchdog flags (list is driver specific)
+wdctl <__f___flags_> <flag_list>

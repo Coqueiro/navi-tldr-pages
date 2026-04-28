@@ -3,4 +3,14 @@
 
 % ipcmk, linux
 
+# Create a shared memory segment
+ipcmk <__M___shmem_> <segment_size_in_bytes>
 
+# Create a semaphore
+ipcmk <__S___semaphore_> <element_size>
+
+# Create a message queue
+ipcmk <__Q___queue_>
+
+# Create a shared memory segment with specific permissions (default is 0644)
+ipcmk <__M___shmem_> <segment_size_in_bytes> <octal_permissions>

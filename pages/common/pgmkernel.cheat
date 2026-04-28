@@ -10,4 +10,4 @@ pgmkernel <width> <height> > <path_to_output_pgm>
 pgmkernel <size> > <path_to_output_pgm>
 
 # Specify the weight of the center in the generated kernel
-pgmkernel {{[-w|-weight]}} <value> <width> <height> > <path_to_output_pgm>
+pgmkernel <__w__weight_> <value> <width> <height> > <path_to_output_pgm>

@@ -3,4 +3,14 @@
 
 % tdf, common
 
+# Open a specific file
+tdf <path_to_file>.pdf
 
+# Open in fullscreen mode
+tdf <__f___fullscreen_> <path_to_file>.pdf
+
+# Set a custom white color
+tdf <__w___white_color_> <ffffff> <path_to_file>.pdf
+
+# Set a custom black color
+tdf <__b___black_color_> "rgb(<0>, <0>, <0>)" <path_to_file>.pdf

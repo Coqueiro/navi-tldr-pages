@@ -3,4 +3,8 @@
 
 % mssh, linux
 
+# Open a new window and connect to multiple SSH servers
+mssh {{user@host1 user@host2 ...}}
 
+# Open a new window and connect to a group of servers predefined in `~/.mssh_clusters`
+mssh <__a___alias_> <alias_name>

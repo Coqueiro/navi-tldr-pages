@@ -3,4 +3,26 @@
 
 % git-commit, common
 
+# Open an editor to write a message and commit staged files to the repository
+git commit
 
+# Commit staged files to the repository with the specified message
+git commit <__m___message_> "<message>"
+
+# Commit staged files with a message read from a file
+git commit <__F___file_> <path_to_commit_message_file>
+
+# Auto stage all modified and deleted files and commit
+git commit <__a___all_> <__m___message_> "<message>"
+
+# Commit staged files and sign them with the specified GPG key (or the one defined in the configuration file if no `key_id` is specified)
+git commit <__S___gpg_sign_> <key_id> <__m___message_> "<message>"
+
+# Update the last commit by adding the currently staged changes, changing the commit's hash and open an editor to change the message
+git commit --amend
+
+# Commit only specific (already staged) files
+git commit {{path/to/file1 path/to/file2 ...}}
+
+# Create a commit with the specified message and description
+git commit <__m___message_> "<message>" <__m___message_> "<description>"

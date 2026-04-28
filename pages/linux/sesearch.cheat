@@ -3,4 +3,20 @@
 
 % sesearch, linux
 
+# Search for all allow rules
+sesearch --allow
 
+# Search for rules related to a specific type
+sesearch --allow <__t___target_> <type_name>
+
+# Search for rules related to a specific source type
+sesearch --allow <__s___source_> <source_type>
+
+# Search for rules that allow a specific class and permission
+sesearch --allow <__c___class_> <class_name> <__p___perm_> <permission>
+
+# Search for rules with a specific target type and class
+sesearch --allow <__t___target_> <type_name> <__c___class_> <class_name>
+
+# Display more detailed information about matched rules
+sesearch --allow <__t___target_> <type_name> <__v___verbose_>

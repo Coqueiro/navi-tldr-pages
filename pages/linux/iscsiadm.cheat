@@ -3,4 +3,23 @@
 
 % iscsiadm, linux
 
+# Show active iSCSI sessions
+sudo iscsiadm <__m___mode_> session
 
+# List all known iSCSI nodes
+sudo iscsiadm <__m___mode_> node
+
+# Discover available iSCSI targets on a portal (no authentication)
+sudo iscsiadm <__m___mode_> discovery <__t___type_> sendtargets <__p___portal_> <ip_address>
+
+# Log in to a specific iSCSI target without authentication
+sudo iscsiadm <__m___mode_> node <__T___targetname_> <iqn> <__p___portal_> <ip_address>:3260 <__l___login_>
+
+# Log out from a specific iSCSI target
+sudo iscsiadm <__m___mode_> node <__T___targetname_> <iqn> <__p___portal_> <ip_address>:3260 <__u___logout_>
+
+# Create an iSCSI node when discovery is blocked (for CHAP authentication)
+sudo iscsiadm <__m___mode_> node <__o___op_> new <__T___targetname_> <iqn> <__p___portal_> <ip_address>:3260
+
+# Configure CHAP authentication for an iSCSI target
+sudo iscsiadm <__m___mode_> node <__T___targetname_> <iqn> <__p___portal_> <ip_address>:3260 <__o___op_> update <__n___name_> node.session.auth.authmethod <__v___value_> CHAP

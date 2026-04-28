@@ -3,4 +3,17 @@
 
 % gpgconf, common
 
+# List all components
+gpgconf --list-components
 
+# List the directories used by gpgconf
+gpgconf <__L___list_dirs_>
+
+# List all options of a component
+gpgconf --list-options <component>
+
+# List programs and test whether they are runnable
+gpgconf --check-programs
+
+# Reload a component
+gpgconf --reload <component>

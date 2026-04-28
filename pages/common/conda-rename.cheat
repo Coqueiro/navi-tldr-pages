@@ -3,4 +3,8 @@
 
 % conda-rename, common
 
+# Rename an environment via its name
+conda rename <__n___name_> <current_name> <new_name>
 
+# Rename an environment via its full path (i.e. prefix)
+conda rename <__p___prefix_> <path_to_env> <new_name>

@@ -4,4 +4,4 @@
 % qm-cloudinit, linux
 
 # Generate a cloudinit file for a specific configuration type
-qm {{[clou|cloudinit]}} {{[d|dump]}} <100> <meta_network_user>
+qm <_clou_cloudinit_> <_d_dump_> <100> <meta_network_user>

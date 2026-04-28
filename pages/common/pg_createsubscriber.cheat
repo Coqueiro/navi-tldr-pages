@@ -3,4 +3,17 @@
 
 % pg_createsubscriber, common
 
+# Convert a physical replica to a logical replica for a specific database
+pg_createsubscriber <__d___database_> <dbname> <__D___pgdata_> <path_to_data> <__P___publisher_server_> <connstr>
 
+# Perform a dry run without modifying the target directory
+pg_createsubscriber <__n___dry_run_> <__d___database_> <dbname> <__D___pgdata_> <path_to_data> <__P___publisher_server_> <connstr>
+
+# Enable two-phase commit for the subscription
+pg_createsubscriber <__T___enable_two_phase_> <__d___database_> <dbname> <__D___pgdata_> <path_to_data> <__P___publisher_server_> <connstr>
+
+# Convert with verbose output
+pg_createsubscriber <__v___verbose_> <__d___database_> <dbname> <__D___pgdata_> <path_to_data> <__P___publisher_server_> <connstr>
+
+# Display help
+pg_createsubscriber <______help_>

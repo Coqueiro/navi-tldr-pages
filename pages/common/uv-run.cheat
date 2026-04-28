@@ -3,4 +3,20 @@
 
 % uv-run, common
 
+# Run a Python script
+uv run <path_to_script_py>
 
+# Run a Python module
+uv run <__m___module_> <module_name>
+
+# Run a command with additional packages installed temporarily
+uv run <__w___with_> <package> <command>
+
+# Run a script with packages from a requirements file
+uv run --with-requirements <path_to_requirements_txt> <path_to_script_py>
+
+# Run in an isolated environment (no project dependencies)
+uv run --isolated <path_to_script_py>
+
+# Run without syncing the environment first
+uv run --no-sync <command>

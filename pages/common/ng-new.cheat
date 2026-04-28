@@ -3,4 +3,23 @@
 
 % ng-new, common
 
+# Create a new Angular application
+ng <_n_new_> <app_name>
 
+# Preview the actions without creating files
+ng <_n_new_> <app_name> <__d___dry_run_>
+
+# Skip generating unit test (`spec.ts`) files
+ng <_n_new_> <app_name> <__S___skip_tests_>
+
+# Skip automatic package installation
+ng <_n_new_> <app_name> --skip-install
+
+# Skip Git repository initialization
+ng <_n_new_> <app_name> <__g___skip_git_>
+
+# Configure AI tooling for the project
+ng <_n_new_> <app_name> --ai-config <claude_copilot_cursor_gemini_jetbrains_none_windsurf>
+
+# Disable interactive prompts
+ng <_n_new_> <app_name> --interactive false

@@ -3,4 +3,11 @@
 
 % semanage-permissive, linux
 
+# List all process types (a.k.a domains) that are in permissive mode
+sudo semanage permissive <__l___list_>
 
+# Set permissive mode for a domain
+sudo semanage permissive <__a___add_> <httpd_t>
+
+# Unset permissive mode for a domain
+sudo semanage permissive <__d___delete_> <httpd_t>

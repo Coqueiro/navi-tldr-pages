@@ -3,4 +3,14 @@
 
 % setfont, linux
 
+# Change the terminal font
+setfont <font>.gz
 
+# Change the terminal font by specifying a path
+setfont /usr/share/kbd/<mapping>/<font_ext>
+
+# Double font size
+setfont <__d___double_>
+
+# Reset to the default font
+setfont

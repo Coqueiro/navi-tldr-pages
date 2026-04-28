@@ -3,4 +3,17 @@
 
 % dvc-fetch, common
 
+# Fetch the latest changes from the default remote upstream repository (if set)
+dvc fetch
 
+# Fetch changes from a specific remote upstream repository
+dvc fetch <__r___remote_> <remote_name>
+
+# Fetch the latest changes for a specific target/s
+dvc fetch <target_s>
+
+# Fetch changes for all branch and tags
+dvc fetch <__a___all_branches_> <__T___all_tags_>
+
+# Fetch changes for all commits
+dvc fetch <__A___all_commits_>

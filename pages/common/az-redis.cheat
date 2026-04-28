@@ -3,4 +3,14 @@
 
 % az-redis, common
 
+# Create a new Redis cache instance
+az redis create --location <location> <__n___name_> <name> <__g___resource_group_> <resource_group> --sku <Basic_Premium_Standard> --vm-size <c0_c1_c2_c3_c4_c5_c6_p1_p2_p3_p4_p5>
 
+# Update a Redis cache
+az redis update <__n___name_> <name> <__g___resource_group_> <resource_group> --sku <Basic_Premium_Standard> --vm-size <c0_c1_c2_c3_c4_c5_c6_p1_p2_p3_p4_p5>
+
+# Export data stored in a Redis cache
+az redis export --container <container> --file-format <file_format> <__n___name_> <name> --prefix <prefix> <__g___resource_group_> <resource_group>
+
+# Delete a Redis cache
+az redis delete <__n___name_> <name> <__g___resource_group_> <resource_group> <__y___yes_>

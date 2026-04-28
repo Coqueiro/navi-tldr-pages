@@ -3,4 +3,26 @@
 
 % inotifywait, linux
 
+# Watch a specific file for events, exiting after the first one
+inotifywait <path_to_file>
 
+# Continuously watch a specific file for events without exiting
+inotifywait <__m___monitor_> <path_to_file>
+
+# Watch a directory recursively for events
+inotifywait <__m___monitor_> <__r___recursive_> <path_to_directory>
+
+# Watch a directory for changes, excluding files, whose names match a `regex`
+inotifywait <__m___monitor_> <__r___recursive_> --exclude "<regex>" <path_to_directory>
+
+# Watch a file for changes, exiting when no event occurs for 30 seconds
+inotifywait <__m___monitor_> <__t___timeout_> <30> <path_to_file>
+
+# Only watch a file for file modification events
+inotifywait <__e___event_> <modify> <path_to_file>
+
+# Watch a file printing only events, and no status messages
+inotifywait <__q___quiet_> <path_to_file>
+
+# Run a command when a file is accessed
+inotifywait <__e___event_> <access> <path_to_file> && <command>

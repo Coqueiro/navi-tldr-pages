@@ -3,4 +3,23 @@
 
 % dex, linux
 
+# Execute all programs in the autostart folders
+dex <__a___autostart_>
 
+# Execute all programs in the specified folders
+dex <__a___autostart_> <__s___search_paths_> <path_to_directory1>:<path_to_directory2>:<path_to_directory3>:
+
+# Preview the programs would be executed in a GNOME specific autostart
+dex <__a___autostart_> <__e___environment_> <GNOME>
+
+# Preview the programs would be executed in a regular autostart
+dex <__a___autostart_> <__d___dry_run_>
+
+# Preview the value of the DesktopEntry property `Name`
+dex <__p___property_> <Name> <path_to_file_desktop>
+
+# Create a DesktopEntry for a program in the current directory
+dex <__c___create_> <path_to_file_desktop>
+
+# Execute a single program (with `Terminal=true` in the `.desktop` file) in the given terminal
+dex --term <terminal> <path_to_file_desktop>

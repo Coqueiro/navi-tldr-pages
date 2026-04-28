@@ -3,4 +3,11 @@
 
 % agate, common
 
+# Run and generate a private key and certificate
+agate --content <path_to_content>/ --addr <_____1965> --addr <0_0_0_0_1965> --hostname <example_com> --lang <en_US>
 
+# Run server
+agate <path_to_file>
+
+# Display help
+agate <__h___help_>

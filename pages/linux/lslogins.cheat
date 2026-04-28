@@ -3,4 +3,20 @@
 
 % lslogins, linux
 
+# Display users in the system
+lslogins
 
+# Display users belonging to a specific group
+lslogins <__g___groups_> <groups>
+
+# Display user accounts
+lslogins <__u___user_accs_>
+
+# Display last logins
+lslogins <__L___last_>
+
+# Display system accounts
+lslogins <__s___system_accs_>
+
+# Display supplementary groups
+lslogins <__G___supp_groups_>

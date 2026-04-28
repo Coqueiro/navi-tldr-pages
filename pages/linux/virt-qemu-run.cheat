@@ -3,4 +3,14 @@
 
 % virt-qemu-run, linux
 
+# Run a QEMU virtual machine
+virt-qemu-run <path_to_guest_xml>
 
+# Run a QEMU virtual machine and store the state in a specific directory
+virt-qemu-run <__r___root_> <path_to_directory> <path_to_guest_xml>
+
+# Run a QEMU virtual machine and display verbose information about the startup
+virt-qemu-run <__v___verbose_> <path_to_guest_xml>
+
+# Display help
+virt-qemu-run <__h___help_>

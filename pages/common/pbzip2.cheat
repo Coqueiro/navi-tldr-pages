@@ -3,4 +3,17 @@
 
 % pbzip2, common
 
+# Compress a file
+pbzip2 <path_to_file>
 
+# Compress a file using the specified number of processors
+pbzip2 -p<4> <path_to_file>
+
+# Compress in combination with tar (options can be passed to `pbzip2`)
+tar -cf <path_to_compressed_file>.tar.bz2 <__I___use_compress_program_> "pbzip2 {{-option1 -option2 ...}}" <path_to_file>
+
+# Decompress a file
+pbzip2 <__d___decompress_> <path_to_compressed_file_bz2>
+
+# Display help
+pbzip2 <__h___help_>

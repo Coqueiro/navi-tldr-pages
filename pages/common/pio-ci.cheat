@@ -3,4 +3,20 @@
 
 % pio-ci, common
 
+# Build a PlatformIO project in the default system temporary directory and delete it afterwards
+pio ci <path_to_project>
 
+# Build a PlatformIO project and specify specific libraries
+pio ci <__l___lib_> <path_to_library_directory> <path_to_project>
+
+# Build a PlatformIO project and specify a specific board (`pio boards` lists all of them)
+pio ci <__b___board_> <board> <path_to_project>
+
+# Build a PlatformIO project in a specific directory
+pio ci --build-dir <path_to_build_directory> <path_to_project>
+
+# Build a PlatformIO project and don't delete the build directory
+pio ci --keep-build-dir <path_to_project>
+
+# Build a PlatformIO project using a specific configuration file
+pio ci <__c___project_conf_> <path_to_platformio_ini>

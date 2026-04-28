@@ -3,4 +3,20 @@
 
 % crush, common
 
+# Start interactive mode
+crush
 
+# Run with debug logging
+crush <__d___debug_>
+
+# Run with debug logging in a specific directory
+crush <__d___debug_> <__c___cwd_> <path_to_project>
+
+# Run a single non-interactive prompt
+crush run "{{Explain the use of context in Go}}"
+
+# Run in dangerous mode (auto-accept all permissions)
+crush <__y___yolo_>
+
+# Display version
+crush <__v___version_>

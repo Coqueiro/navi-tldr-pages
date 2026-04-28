@@ -3,4 +3,17 @@
 
 % aa-logprof, linux
 
+# Interactively review and update profiles based on system logs
+sudo aa-logprof
 
+# Use a specific directory for AppArmor profiles
+sudo aa-logprof <__d___dir_> /<path_to_profiles>
+
+# Use a specific log file instead of the default
+sudo aa-logprof <__f___file_> /<path_to_logfile>
+
+# Ignore all log entries before the specified mark
+sudo aa-logprof <__m___logmark_> "<log_marker_text>"
+
+# Display help
+aa-logprof <__h___help_>

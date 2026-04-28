@@ -3,4 +3,26 @@
 
 % kubeseal, common
 
+# Encrypt a Kubernetes secret from a YAML file into a SealedSecret (default JSON output)
+kubeseal < <secret_yaml> > <sealedsecret_json>
 
+# Encrypt a secret, outputting it in YAML or JSON format, using a bearer token for API authentication
+kubeseal < <secret_yaml> <__o___format_> <yaml_json> --token <my_bearer_token> > <sealedsecret_yaml>
+
+# Seal a secret using a specific controller namespace of sealed-secrets controller and name
+kubeseal < <secret_yaml> --controller-namespace <controller_namespace> --controller-name <controller_name> > <sealedsecret_yaml>
+
+# Encrypt a raw secret value from a file with a specified name and scope
+kubeseal --raw --from-file <path_to_secret_txt> --name <my_secret> --scope <strict_namespace_wide_cluster_wide> > <sealedsecret_yaml>
+
+# Fetch the controller's public certificate for offline sealing with basic auth
+kubeseal --fetch-cert --username <username> --password <password> > <cert_pem>
+
+# Seal a secret offline using a fetched certificate
+kubeseal < <secret_yaml> --cert <cert_pem> > <sealedsecret_yaml>
+
+# Merge a secret into an existing SealedSecret file in-place
+kubeseal < <secret_yaml> --merge-into <sealedsecret_yaml>
+
+# Validate a SealedSecret without applying it
+kubeseal < <sealedsecret_yaml> --validate

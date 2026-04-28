@@ -3,4 +3,14 @@
 
 % byzanz-record, linux
 
+# Record the screen and write the recording to a file (by default, `byzanz-record` will only record for 10 seconds)
+byzanz-record <path_to_file__byzanz_flv_gif_ogg_ogv_webm_>
 
+# Show information while and after recording
+byzanz-record <__v___verbose_> <path_to_file__byzanz_flv_gif_ogg_ogv_webm_>
+
+# Record the screen for a minute
+byzanz-record <__d___duration_> 60 <path_to_file__byzanz_flv_gif_ogg_ogv_webm_>
+
+# Delay recording for 10 seconds
+byzanz-record --delay 10 <path_to_file__byzanz_flv_gif_ogg_ogv_webm_>

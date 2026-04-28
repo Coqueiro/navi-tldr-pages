@@ -3,4 +3,14 @@
 
 % openclaw-gateway, common
 
+# Start the gateway on the default port (18789)
+openclaw gateway --allow-unconfigured
 
+# Start the gateway on a specific port
+openclaw gateway --allow-unconfigured --port <18789>
+
+# Start the gateway with verbose logging
+openclaw gateway --allow-unconfigured --verbose
+
+# Display help
+openclaw gateway <__h___help_>

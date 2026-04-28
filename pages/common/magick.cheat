@@ -16,10 +16,10 @@ magick <path_to_input_image_png> -resize <50>% <path_to_output_image_png>
 magick <path_to_input_image_png> -define jpeg:extent=<512kb> <path_to_output_image_jpg>
 
 # Create a GIF out of all JPEG images in the current directory
-magick {{*.jpg}} <path_to_images_gif>
+magick <__jpg> <path_to_images_gif>
 
 # Create a checkerboard pattern
 magick -size <640x480> pattern:checkerboard <path_to_checkerboard_png>
 
 # Create a PDF file out of all JPEG images in the current directory
-magick {{*.jpg}} -adjoin <path_to_file_pdf>
+magick <__jpg> -adjoin <path_to_file_pdf>

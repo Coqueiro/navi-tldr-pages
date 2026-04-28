@@ -3,4 +3,17 @@
 
 % expac, linux
 
+# List the dependencies of a package
+expac <__S___sync_> '%D' <package>
 
+# List the optional dependencies of a package
+expac <__S___sync_> "%o" <package>
+
+# List the download size of packages in MiB
+expac <__S___sync_> <__H___humansize_> M '%k\t%n' {{package1 package2 ...}}
+
+# List packages marked for upgrade with their download size
+expac <__S___sync_> <__H___humansize_> M '%k\t%n' $(pacman -Qqu) | sort {{[-sh|--sort --human-numeric-sort]}}
+
+# List explicitly-installed packages with their optional dependencies
+expac <__d___delim_> '\n\n' <__l___listdelim_> '\n\t' <__Q___query_> '%n\n\t%O' $(pacman -Qeq)

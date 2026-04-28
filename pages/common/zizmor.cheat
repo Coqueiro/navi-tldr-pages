@@ -3,4 +3,26 @@
 
 % zizmor, common
 
+# Audit all workflows and actions in the current directory
+zizmor .
 
+# Audit a specific workflow file
+zizmor <path_to_workflow_yml>
+
+# Audit a remote GitHub repository (requires a GitHub token)
+zizmor --gh-token <token> <username_repository>
+
+# Run only offline audits (no network requests)
+zizmor <__o___offline_> <path_to_workflow_yml>
+
+# Output results in SARIF format
+zizmor --format sarif <path_to_workflow_yml>
+
+# Filter findings by minimum severity
+zizmor --min-severity <informational_low_medium_high> .
+
+# Display help
+zizmor <__h___help_>
+
+# Display version
+zizmor <__v___version_>

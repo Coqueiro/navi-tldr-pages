@@ -3,4 +3,14 @@
 
 % bun-run, common
 
+# Run a script defined in `package.json`
+bun run <script_name>
 
+# Run a JavaScript or TypeScript file directly
+bun run <path_to_file_ts>
+
+# Run a file in "watch" mode (restarts automatically when the file changes)
+bun run --watch <path_to_file_ts>
+
+# Run a file using a specific configuration file
+bun run <__c___config_> <path_to_bunfig_toml> <path_to_file_ts>

@@ -7,7 +7,7 @@
 ppmtomitsu <path_to_file_ppm> > <path_to_file_mitsu>
 
 # Enlarge the image by the specified factor, use the specified sharpness and produce `n` copies
-ppmtomitsu {{[-e|-enlarge]}} <1_2_3> {{[-s|-sharpness]}} <1_2_3_4> {{[-c|-copy]}} <__e__enlarge_> <path_to_file_ppm> > <path_to_file_mitsu>
+ppmtomitsu <__e__enlarge_> <1_2_3> <__s__sharpness_> <1_2_3_4> <__c__copy_> <n> <path_to_file_ppm> > <path_to_file_mitsu>
 
 # Use the given medium for the printing process
-ppmtomitsu {{[-m|-media]}} <A_A4_AS_A4S> <path_to_file_ppm> > <path_to_file_mitsu>
+ppmtomitsu <__m__media_> <A_A4_AS_A4S> <path_to_file_ppm> > <path_to_file_mitsu>

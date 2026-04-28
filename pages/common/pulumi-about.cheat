@@ -3,4 +3,14 @@
 
 % pulumi-about, common
 
+# Print information about the Pulumi environment
+pulumi about
 
+# Print information about the Pulumi environment in JSON format
+pulumi about <__j___json_>
+
+# Print information about the Pulumi environment of a specific stack
+pulumi about <__s___stack_> <stack_name>
+
+# Display help
+pulumi about <__h___help_>

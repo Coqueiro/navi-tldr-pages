@@ -3,4 +3,26 @@
 
 % gh, common
 
+# Clone a GitHub repository locally
+gh repo clone <owner>/<repository>
 
+# Create a new issue
+gh issue <_new_create_>
+
+# View and filter the open issues of the current repository
+gh issue <_ls_list_>
+
+# View an issue in the default web browser
+gh issue view <__w___web_> <issue_number_url>
+
+# Create a pull request
+gh pr <_new_create_>
+
+# View a pull request in the default web browser
+gh pr view <__w___web_> <pr_number_url_branch>
+
+# Check out a specific pull request locally
+gh {{[co|pr checkout]}} <pr_number_url_branch>
+
+# Check the status of a repository's pull requests
+gh pr status

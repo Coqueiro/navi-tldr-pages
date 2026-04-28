@@ -3,4 +3,20 @@
 
 % reuse, common
 
+# Lint for REUSE compliance for the current project (version control aware)
+reuse lint
 
+# Lint for REUSE compliance from the specified directory
+reuse --root <path_to_directory> lint
+
+# Add copyright statement to file
+reuse annotate <__c___copyright_> "<your_name> <<your_email>>" --fallback-dot-license <path_to_file>
+
+# Add license information to file
+reuse annotate <__l___license_> <spdx_identifier> --fallback-dot-license <path_to_file>
+
+# Download a license by its SPDX identifier and place it in the LICENSES directory
+reuse download <spdx_identifier>
+
+# Download all missing licenses detected in the project
+reuse download --all

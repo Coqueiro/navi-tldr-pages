@@ -3,4 +3,26 @@
 
 % mitmproxy, common
 
+# Start `mitmproxy` with default settings (will listen on port `8080`)
+mitmproxy
 
+# Start `mitmproxy` bound to a custom address and port
+mitmproxy --listen-host <ip_address> <__p___listen_port_> <port>
+
+# Start `mitmproxy` using a script to process traffic
+mitmproxy <__s___scripts_> <path_to_script_py>
+
+# Export the logs with SSL/TLS master keys to external programs (wireshark, etc.)
+SSLKEYLOGFILE="<path_to_file>" mitmproxy
+
+# Specify mode of operation of the proxy server (`regular` is the default)
+mitmproxy <__m___mode_> <regular_transparent_socks5____>
+
+# Set the console layout
+mitmproxy --console-layout <horizontal_single_vertical>
+
+# Save all proxied traffic to a file for later analysis
+mitmproxy <__w___save_stream_file_> <path_to_dump_mitm>
+
+# Replay a previously saved HTTP flow file
+mitmproxy {{[-nr|--no-server --rfile]}} <path_to_dump_mitm>

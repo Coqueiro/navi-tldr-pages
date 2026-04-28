@@ -3,4 +3,23 @@
 
 % dhcpig, common
 
+# Exhaust all of the available DHCP addresses using the specified interface
+sudo <path_to>/pig.py <eth0>
 
+# Exhaust IPv6 addresses using eth1 interface
+sudo <path_to>/pig.py <__6___ipv6_> <eth1>
+
+# Send fuzzed/malformed data packets using the interface
+sudo <path_to>/pig.py <__f___fuzz_> <eth1>
+
+# Enable color output
+sudo <path_to>/pig.py <__c___color_> <eth1>
+
+# Enable minimal verbosity and color output
+sudo <path_to>/pig.py <__c___color_> <__v___verbosity_> 1 <eth1>
+
+# Use a debug verbosity of 100 and scan network of neighboring devices using ARP packets
+sudo <path_to>/pig.py <__c___color_> <__v___verbosity_> 100 <__n___neighbors_scan_arp_> <eth1>
+
+# Enable printing lease information, attempt to scan and release all neighbor IP addresses
+sudo <path_to>/pig.py <__n___neighbors_scan_arp_> <__r___neighbors_attack_release_> <__o___show_options_> <eth1>

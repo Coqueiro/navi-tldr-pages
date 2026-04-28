@@ -3,4 +3,17 @@
 
 % docker-container-stats, common
 
+# Display a live stream for the statistics of all running containers
+docker {{[stats|container stats]}}
 
+# Display a live stream of statistics for one or more containers
+docker {{[stats|container stats]}} {{container1 container2 ...}}
+
+# Change the columns format to display container's CPU usage percentage
+docker {{[stats|container stats]}} --format "<_Name>:\t<_CPUPerc>"
+
+# Display statistics for all containers (both running and stopped)
+docker {{[stats|container stats]}} <__a___all_>
+
+# Disable streaming stats and only pull the current stats
+docker {{[stats|container stats]}} --no-stream

@@ -3,4 +3,8 @@
 
 % pivot_root, linux
 
+# Make `/new_root` the new root (`/`) and move current root to a subdirectory of it
+sudo pivot_root <path_to_new_root> <path_to_new_root_old_root>
 
+# Display help
+pivot_root <__h___help_>

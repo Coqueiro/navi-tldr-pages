@@ -3,4 +3,17 @@
 
 % az-aks, common
 
+# List AKS clusters
+az aks list <__g___resource_group_> <resource_group>
 
+# Create a new AKS cluster
+az aks create <__g___resource_group_> <resource_group> <__n___name_> <name> <__c___node_count_> <count> --node-vm-size <size>
+
+# Delete an AKS cluster
+az aks delete <__g___resource_group_> <resource_group> <__n___name_> <name>
+
+# Get the access credentials for an AKS cluster
+az aks get-credentials <__g___resource_group_> <resource_group> <__n___name_> <name>
+
+# Get the upgrade versions available for an AKS cluster
+az aks get-upgrades <__g___resource_group_> <resource_group> <__n___name_> <name>

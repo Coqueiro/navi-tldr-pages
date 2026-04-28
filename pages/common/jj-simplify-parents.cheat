@@ -3,4 +3,8 @@
 
 % jj-simplify-parents, common
 
+# Simplify parent edges of given revisions
+jj simplify-parents <__r___revisions_> <revsets>
 
+# Simplify parent edges of given revisions and trees of their descendants
+jj simplify-parents <__s___source_> <revsets>

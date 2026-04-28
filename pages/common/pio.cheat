@@ -3,4 +3,11 @@
 
 % pio, common
 
+# Display help and list subcommands
+pio <__h___help_>
 
+# Display help for a specific subcommand
+pio <subcommand> <__h___help_>
+
+# Display version
+pio --version

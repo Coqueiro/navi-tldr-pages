@@ -3,4 +3,11 @@
 
 % zapier-init, common
 
+# Initialize a new Zapier integration
+zapier init <path_to_directory>
 
+# Initialize a new Zapier integration with a specific template
+zapier init <path_to_directory> <__t___template_> <basic_auth_callback_custom_auth_digest_auth_dynamic_dropdown_files_minimal_oauth1_trello_oauth2_search_or_create_session_auth_typescript>
+
+# Show extra debugging output
+zapier init <__d___debug_>

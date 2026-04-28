@@ -3,4 +3,20 @@
 
 % semanage-login, linux
 
+# List all login mappings
+sudo semanage login <__l___list_>
 
+# Add a login mapping (map Linux user to SELinux user)
+sudo semanage login <__a___add_> <__s___seuser_> <selinux_user> <linux_username>
+
+# Delete a login mapping
+sudo semanage login <__d___delete_> <linux_username>
+
+# Modify an existing login mapping
+sudo semanage login <__m___modify_> <__s___seuser_> <selinux_user> <linux_username>
+
+# Add a login mapping with a specific MLS/MCS range
+sudo semanage login <__a___add_> <__s___seuser_> <user_u> <__r___range_> <s0_s0_c0_c1023> <linux_username>
+
+# List only customized login mappings
+sudo semanage login <__l___list_> <__C___locallist_>

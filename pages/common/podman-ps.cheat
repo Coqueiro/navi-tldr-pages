@@ -3,4 +3,26 @@
 
 % podman-ps, common
 
+# List currently running Podman containers
+podman ps
 
+# List all Podman containers (running and stopped)
+podman ps <__a___all_>
+
+# Show the latest created container (includes all states)
+podman ps <__l___latest_>
+
+# Filter containers that contain a substring in their name
+podman ps <__f___filter_> "name=<name>"
+
+# Filter containers that share a given image as an ancestor
+podman ps <__f___filter_> "ancestor=<image>:<tag>"
+
+# Filter containers by exit status code
+podman ps <__a___all_> <__f___filter_> "exited=<code>"
+
+# Filter containers by status
+podman ps <__f___filter_> "status=<created_running_removing_paused_exited_dead>"
+
+# Filter containers that mount a specific volume or have a volume mounted in a specific path
+podman ps <__f___filter_> "volume=<path_to_directory>" --format "table <_ID>\t<_Image>\t<_Names>\t<_Mounts>"

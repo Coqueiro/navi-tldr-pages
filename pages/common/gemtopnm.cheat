@@ -7,7 +7,7 @@
 gemtopnm <path_to_file_img> > <path_to_output_pnm>
 
 # Describe the contents of the specified GEM image
-gemtopnm {{[-d|-debug]}} <path_to_file_img>
+gemtopnm <__d__debug_> <path_to_file_img>
 
 # Display version
 gemtopnm -version

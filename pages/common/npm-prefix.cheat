@@ -3,4 +3,8 @@
 
 % npm-prefix, common
 
+# Print the local prefix
+npm prefix
 
+# Print the global prefix
+npm prefix <__g___global_>

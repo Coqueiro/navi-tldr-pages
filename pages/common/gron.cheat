@@ -3,4 +3,23 @@
 
 % gron, common
 
+# Process `JSON` file into individual assignments
+gron <path_to_file_url>
 
+# Don't sort output data
+gron --no-sort <path_to_file_url>
+
+# Disable certificate validation
+gron <__k___insecure_> <url>
+
+# Display values of `gron` assignments
+gron <__v___values_> <path_to_file_url>
+
+# Turn assignments converted with `gron` back into `JSON`
+gron <__u___ungron_> <path_to_file_url>
+
+# Process individual lines of input as separate `JSON` objects
+gron <__s___stream_> <path_to_file_url>
+
+# Represent processed data as a `JSON` stream
+gron <__j___json_> <path_to_file_url>

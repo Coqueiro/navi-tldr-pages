@@ -3,4 +3,17 @@
 
 % pdbedit, linux
 
+# List all Samba users
+sudo pdbedit <__L___list_>
 
+# List all Samba users and their settings
+sudo pdbedit <__L___list_> <__v___verbose_>
+
+# Add an existing Unix user to Samba (will prompt for password)
+sudo pdbedit <__u___user_> <username> <__a___create_>
+
+# Remove a Samba user
+sudo pdbedit <__u___user_> <username> <__x___delete_>
+
+# Reset a Samba user's failed password counter
+sudo pdbedit <__u___user_> <username> <__z___bad_password_count_reset_>

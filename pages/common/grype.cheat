@@ -3,4 +3,26 @@
 
 % grype, common
 
+# Scan a container image
+grype <image_tag>
 
+# Scan an image and display results in a specific format
+grype <image_tag> <__o___output_> <json_table_cyclonedx_cyclonedx_json_sarif_template>
+
+# Scan an image, ignoring unfixed vulnerabilities
+grype <image_tag> --only-fixed
+
+# Scan an image and fail on vulnerabilities with a severity at or above the given level
+grype <image_tag> <__f___fail_on_> <negligible_low_medium_high_critical>
+
+# Scan a local directory and save the report to a file
+grype <path_to_directory> --file <path_to_report>
+
+# Update the vulnerability database
+grype db update
+
+# Display the current database status
+grype db status
+
+# Display help
+grype <__h___help_>

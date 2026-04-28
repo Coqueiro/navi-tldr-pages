@@ -3,4 +3,20 @@
 
 % xfs_admin, linux
 
+# Display the filesystem label
+sudo xfs_admin <__l___list_> <_dev_sdX>
 
+# Set the filesystem label
+sudo xfs_admin <__L___Label_> "<label>" <_dev_sdX>
+
+# Display the filesystem UUID
+sudo xfs_admin <__u___uuid_> <_dev_sdX>
+
+# Set the filesystem UUID (use with caution)
+sudo xfs_admin <__U___UUID_> <uuid> <_dev_sdX>
+
+# Generate a new UUID for the filesystem
+sudo xfs_admin <__U___UUID_> generate <_dev_sdX>
+
+# Display help
+xfs_admin

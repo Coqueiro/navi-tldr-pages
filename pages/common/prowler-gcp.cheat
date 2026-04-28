@@ -3,4 +3,20 @@
 
 % prowler-gcp, common
 
+# Run the default set of checks on all accessible GCP projects using default user credentials
+prowler gcp
 
+# Authenticate using a service account credentials file
+prowler gcp --credentials-file <path_to_credentials_json>
+
+# Scan specific GCP projects by ID
+prowler gcp --project-ids {{project_id1 project_id2 ...}}
+
+# Run checks for selected GCP services
+prowler gcp <__s___services_> <iam_compute____>
+
+# Run a specific GCP check
+prowler gcp <__c___checks_> <gcp_storage_bucket_logging_enabled>
+
+# Exclude specific checks or services
+prowler gcp <__e___excluded_checks_> <gcp_storage_bucket_logging_enabled> --exclude-services <iam_compute____>

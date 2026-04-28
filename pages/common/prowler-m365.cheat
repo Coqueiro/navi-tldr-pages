@@ -3,4 +3,20 @@
 
 % prowler-m365, common
 
+# Run Prowler with combined service principal and user credentials
+prowler m365 --env-auth
 
+# Authenticate using a service principal
+prowler m365 --sp-env-auth
+
+# Authenticate using the Azure CLI
+prowler m365 --az-cli-auth
+
+# Authenticate using a browser and specify the tenant ID
+prowler m365 --browser-auth --tenant-id "<XXXXXXXX>"
+
+# Run a specific Microsoft 365 check
+prowler m365 <__c___checks_> <etcd_enm365_onedrive_sharing_enabledcryption>
+
+# Exclude specific checks
+prowler m365 <__e___excluded_checks_> <m365_onedrive_sharing_enabled>

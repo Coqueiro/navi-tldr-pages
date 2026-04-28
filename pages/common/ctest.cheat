@@ -3,4 +3,17 @@
 
 % ctest, common
 
+# Run all tests in the current CMake build directory
+ctest
 
+# Run all tests defined in the CMake build directory, executing 4 [j]obs at a time in parallel
+ctest <__j___parallel_> 4
+
+# Run all tests defined in the CMake build directory and print detailed logs on failed tests
+ctest --output-on-failure
+
+# List available tests
+ctest <__N___show_only_>
+
+# Run a single test based on its name, or filter on a `regex`
+ctest --output-on-failure <__R___tests_regex_> '^<test_name>$'

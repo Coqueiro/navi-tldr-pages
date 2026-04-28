@@ -3,4 +3,26 @@
 
 % podman, common
 
+# List all containers (both running and stopped)
+podman ps <__a___all_>
 
+# Create a container from an image, with a custom name
+podman run --name <container_name> <image>
+
+# Start or stop an existing container
+podman <start_stop> <container_name>
+
+# Pull an image from a registry (defaults to Docker Hub)
+podman pull <image>
+
+# Display the list of already downloaded images
+podman images
+
+# Open a shell inside an already running container
+podman exec {{[-it|--interactive --tty]}} <container_name> <sh>
+
+# Remove a stopped container
+podman rm <container_name>
+
+# Display the logs of one or more containers and follow log output
+podman logs <__f___follow_> <container_name> <container_id>

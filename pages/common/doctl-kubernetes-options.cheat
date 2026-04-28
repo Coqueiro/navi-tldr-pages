@@ -4,10 +4,10 @@
 % doctl-kubernetes-options, common
 
 # List regions that support Kubernetes clusters
-doctl {{[k|kubernetes]}} {{[o|options]}} {{[r|regions]}}
+doctl <_k_kubernetes_> <_o_options_> <_r_regions_>
 
 # List machine sizes that can be used in a Kubernetes cluster
-doctl {{[k|kubernetes]}} {{[o|options]}} {{[s|sizes]}}
+doctl <_k_kubernetes_> <_o_options_> <_s_sizes_>
 
 # List Kubernetes versions that can be used with DigitalOcean clusters
-doctl {{[k|kubernetes]}} {{[o|options]}} {{[v|versions]}}
+doctl <_k_kubernetes_> <_o_options_> <_v_versions_>

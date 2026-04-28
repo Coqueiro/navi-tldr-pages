@@ -3,4 +3,20 @@
 
 % sipcalc, common
 
+# Display subnet information for an IPv4 CIDR address
+sipcalc <192_168_1_0_24>
 
+# Display all available information for an address
+sipcalc <__a___all_> <192_168_1_0_24>
+
+# Split an IPv4 network into subnets of a specified mask
+sipcalc <__s___v4split_> <255_255_255_128> <192_168_1_0_24>
+
+# Display IPv6 reverse DNS information
+sipcalc <__r___v6rev_> <2001_db8___32>
+
+# Enable DNS name resolution
+sipcalc <__d___resolve_> <192_168_1_0_24>
+
+# Display help
+sipcalc <__h___help_>

@@ -3,4 +3,17 @@
 
 % jj-split, common
 
+# Split the given revision into two interactively, putting the second revision on top of it
+jj split <__r___revision_> <revision>
 
+# Split out matching files from the given revision
+jj split <__r___revision_> <revision> <fileset>
+
+# Split the given revision, putting the second revision on top of given destination(s)
+jj split <__r___revision_> <revision> <__d___destination_> <revset>
+
+# Split the given revision, putting the second revision before and/or after other revision(s)
+jj split <__r___revision_> <revision> <__B___insert_before_> <revset> <__A___insert_after_> <revset>
+
+# Split the given revision into two parallel revisions
+jj split <__r___revision_> <revision> <__p___parallel_>

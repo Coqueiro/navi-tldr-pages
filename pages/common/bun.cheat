@@ -13,13 +13,13 @@ bun run <path_to_file_script_name>
 bun test
 
 # Download and install all the packages listed as dependencies in `package.json`
-bun {{[i|install]}}
+bun <_i_install_>
 
 # Add a dependency to `package.json`
-bun {{[a|add]}} <module_name>
+bun <_a_add_> <module_name>
 
 # Remove a dependency from `package.json`
-bun {{[rm|remove]}} <module_name>
+bun <_rm_remove_> <module_name>
 
 # Start a REPL (interactive shell)
 bun repl

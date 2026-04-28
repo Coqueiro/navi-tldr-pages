@@ -4,19 +4,19 @@
 % appman, linux
 
 # Update all packages to the latest available versions
-appman {{[-u|update]}}
+appman <__u_update_>
 
 # Search packages via keywords
-appman {{[-q|query]}} <package>
+appman <__q_query_> <package>
 
 # Install a new package
-appman {{[-i|install]}} <package>
+appman <__i_install_> <package>
 
 # Remove a package
-appman {{[-r|remove]}} <package>
+appman <__r_remove_> <package>
 
 # List all available packages
-appman {{[-l|list]}}
+appman <__l_list_>
 
 # Update AppMan to the latest version available
-appman {{[-s|sync]}}
+appman <__s_sync_>

@@ -3,4 +3,14 @@
 
 % sshare, linux
 
+# List Slurm share information
+sshare
 
+# Control the output format
+sshare --<parsable_parsable2_json_yaml>
+
+# Control the fields to display
+sshare <__o___format_> <format_string>
+
+# Display information for the specified users only
+sshare <__u___users_> <user_id_1_user_id_2____>

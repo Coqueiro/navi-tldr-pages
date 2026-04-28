@@ -3,4 +3,26 @@
 
 % git-add, common
 
+# Stage a file for a commit
+git add <path_to_file>
 
+# Add all files (tracked and untracked)
+git add <__A___all_>
+
+# Add all files recursively starting from the current folder
+git add .
+
+# Only add already tracked files
+git add <__u___update_>
+
+# Add an ignored file
+git add <__f___force_> <path_to_file>
+
+# Interactively stage parts of files
+git add <__p___patch_>
+
+# Interactively stage parts of a given file
+git add <__p___patch_> <path_to_file>
+
+# Interactively stage a file
+git add <__i___interactive_>

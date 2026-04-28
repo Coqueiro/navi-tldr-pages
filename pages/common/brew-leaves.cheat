@@ -3,4 +3,14 @@
 
 % brew-leaves, common
 
+# List installed formulas that are not dependent on other installed formulas or casks
+brew leaves
 
+# Only list leaves that were manually installed
+brew leaves <__r___installed_on_request_>
+
+# Only list leaves that were installed as dependencies
+brew leaves <__p___installed_as_dependency_>
+
+# Display help
+brew leaves <__h___help_>

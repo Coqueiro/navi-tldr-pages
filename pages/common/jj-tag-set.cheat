@@ -3,4 +3,17 @@
 
 % jj-tag-set, common
 
+# Create a tag pointing to the current working copy revision
+jj tag <_s_set_> <tag_name>
 
+# Create a tag pointing to a specific revision
+jj tag <_s_set_> <tag_name> <__r___revision_> <revision>
+
+# Create multiple tags pointing to the same revision
+jj tag <_s_set_> {{tag1 tag2 ...}} <__r___revision_> <revision>
+
+# Move an existing tag to a different revision
+jj tag <_s_set_> <tag_name> <__r___revision_> <revision> --allow-move
+
+# Create a tag pointing to the parent of the current revision
+jj tag <_s_set_> <tag_name> <__r___revision_> @-

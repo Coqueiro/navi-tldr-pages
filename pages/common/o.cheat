@@ -3,4 +3,17 @@
 
 % o, common
 
+# Open a file in editor
+o <path_to_file>
 
+# Open a file as read-only
+o <__m__monitor_> <path_to_file>
+
+# Save the file
+<Ctrl s>
+
+# Quit Orbiton
+<Ctrl q>
+
+# Display help
+o <__h___help_>

@@ -3,4 +3,17 @@
 
 % zapier-scaffold, common
 
+# Scaffold a new trigger, create, search, or resource
+zapier scaffold <trigger_search_create_resource> <noun>
 
+# Specify a custom destination directory for the scaffolded files
+zapier scaffold <trigger_search_create_resource> <noun> <__d___dest_>=<path_to_directory>
+
+# Overwrite existing files when scaffolding
+zapier scaffold <trigger_search_create_resource> <noun> <__f___force_>
+
+# Exclude comments from the scaffolded files
+zapier scaffold <trigger_search_create_resource> <noun> --no-help
+
+# Show extra debugging output
+zapier scaffold <__d___debug_>

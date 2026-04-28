@@ -3,4 +3,23 @@
 
 % bzip3, common
 
+# Compress a file
+bzip3 <path_to_file_to_compress>
 
+# Decompress a file
+bzip3 <__d___decode_> <path_to_compressed_file_bz3>
+
+# Decompress a file to `stdout`
+bzip3 {{[-dc|--decode --stdout]}} <path_to_compressed_file_bz3>
+
+# Test the integrity of each file inside the archive file
+bzip3 <__t___test_> <path_to_compressed_file_bz3>
+
+# Show the compression ratio for each file processed with detailed information
+bzip3 <__v___verbose_> <path_to_compressed_files_bz3>
+
+# Decompress a file overwriting existing files
+bzip3 <__d___decode_> <__f___force_> <path_to_compressed_file_bz3>
+
+# Display help
+bzip3 <__h___help_>

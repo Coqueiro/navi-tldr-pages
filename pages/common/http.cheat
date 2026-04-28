@@ -3,4 +3,26 @@
 
 % http, common
 
+# Make a simple GET request (shows response headers and content)
+http <https___example_com>
 
+# Print specific parts of the content (`H`: request headers, `B`: request body, `h`: response headers, `b`: response body, `m`: response metadata)
+http <__p___print_> <H_B_h_b_m_Hh_Hhb____> <https___example_com>
+
+# Specify the HTTP method when sending a request and use a proxy to intercept the request
+http <GET_POST_HEAD_PUT_PATCH_DELETE____> --proxy <http_https>:<http___localhost_8080_socks5___localhost_9050____> <https___example_com>
+
+# Follow any `3xx` redirects and specify additional headers in a request
+http <__F___follow_> <https___example_com> {{'User-Agent: Mozilla/5.0' 'Accept-Encoding: gzip'}}
+
+# Authenticate to a server using different authentication methods
+http <__a___auth_> <username_password_token> <__A___auth_type_> <basic_digest_bearer> <GET_POST____> <https___example_com_auth>
+
+# Construct a request but do not send it (similar to a dry-run)
+http --offline <GET_DELETE____> <https___example_com>
+
+# Use named sessions for persistent custom headers, auth credentials and cookies
+http --session <session_name_path_to_session_json> <__a___auth_> <username>:<password> <https___example_com_auth> <API_KEY_xxx>
+
+# Upload a file to a form (the example below assumes that the form field is `<input type="file" name="cv" />`)
+http <__f___form_> <POST> <https___example_com_upload> <cv_path_to_file>

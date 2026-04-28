@@ -4,19 +4,19 @@
 % jj-config, common
 
 # Start an editor on the user-level config file
-jj config {{[e|edit]}} --user
+jj config <_e_edit_> --user
 
 # Get the value of a config option
-jj config {{[g|get]}} <name>
+jj config <_g_get_> <name>
 
 # List all config variables and their values
-jj config {{[l|list]}}
+jj config <_l_list_>
 
 # Print the path to the user-level config file
-jj config {{[p|path]}} --user
+jj config <_p_path_> --user
 
 # Set a config option in the user-level config
-jj config {{[s|set]}} --user <name> <value>
+jj config <_s_set_> --user <name> <value>
 
 # Unset a config option in the user-level config
-jj config {{[u|unset]}} --user <name>
+jj config <_u_unset_> --user <name>

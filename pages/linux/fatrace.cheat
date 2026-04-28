@@ -3,4 +3,14 @@
 
 % fatrace, linux
 
+# Print file access events in all mounted filesystems to `stdout`
+sudo fatrace
 
+# Limit output to a program with a specific name
+sudo fatrace <__C___command_> <program_name>
+
+# Print file access events on the mount of the current directory to `stdout`
+sudo fatrace <__c___current_mount_>
+
+# Add timestamps to the printout
+sudo fatrace <__t___timestamp_>

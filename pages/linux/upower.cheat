@@ -3,4 +3,17 @@
 
 % upower, linux
 
+# Display power and battery information
+upower <__d___dump_>
 
+# List all power devices
+upower <__e___enumerate_>
+
+# Watch for and print power status changes
+upower <__m___monitor_>
+
+# Watch for and print detailed power status changes
+upower --monitor-detail
+
+# Display version
+upower <__v___version_>

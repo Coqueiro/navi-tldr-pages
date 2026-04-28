@@ -3,4 +3,23 @@
 
 % mcat, common
 
+# Display the contents of a file
+mcat <path_to_file>
 
+# Display a Markdown file with a specific theme
+mcat <__t___theme_> <theme_name> <path_to_file_md>
+
+# Display an image or video inline
+mcat {{[-i|--output inline]}} <path_to_file>
+
+# Convert a file to a specific format (e.g. `html`, `md`, `image`)
+mcat <__o___output_> <format> <path_to_file>
+
+# List the contents of a directory
+mcat <path_to_directory>
+
+# List the contents of a directory, including hidden files
+mcat <__a___hidden_> <path_to_directory>
+
+# Display content without paging
+mcat {{[-P|--paging never]}} <path_to_file>

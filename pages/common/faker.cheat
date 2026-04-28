@@ -3,4 +3,20 @@
 
 % faker, common
 
+# Show all fake data providers along with examples
+faker
 
+# Generate fake data of a specific type
+faker <name_address_passport_full_credit_card_full_phone_number_email_company_date_time_user_name_password_job____>
+
+# Generate a number of fake addresses from a specific country (use `localectl list-locales | cut --delimiter . --fields 1` to get list of locales)
+faker <__r___repeat_> <number> <__l___lang_> <de_DE_de_CH____> address
+
+# Generate a number of cities in a specific country and output them to a file (use `localectl list-locales | cut --delimiter . --fields 1` to get list of locales)
+faker <__r___repeat_> <number> <__l___lang_> <en_AU_en_US____> city -o <path_to_file_txt>
+
+# Generate a number of random HTTP user-agents showing verbose output
+faker <__r___repeat_> <number> <__v___verbose_> user_agent
+
+# Generate a number of domain names and separate each using a specific separator
+faker <__r___repeat_> <number> <__s___sep_> '<_>' domain_name

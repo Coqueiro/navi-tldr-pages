@@ -3,4 +3,8 @@
 
 % diff-so-fancy, common
 
+# Colorize `diff`
+diff <__u___unified_> <path_to_file1> <path_to_file2> | diff-so-fancy
 
+# Set `diff-so-fancy` to colorize the output during Git's interactive staging
+git config --global interactive.diffFilter "diff-so-fancy --patch"

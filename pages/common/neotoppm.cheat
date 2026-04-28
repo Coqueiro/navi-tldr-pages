@@ -7,4 +7,4 @@
 neotoppm <path_to_file_neo>
 
 # Display version
-neotoppm {{[-v|-version]}}
+neotoppm <__v__version_>

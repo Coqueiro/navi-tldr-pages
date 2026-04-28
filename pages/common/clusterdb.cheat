@@ -3,4 +3,11 @@
 
 % clusterdb, common
 
+# Cluster a specific database
+clusterdb <database_name>
 
+# Cluster all databases
+clusterdb <__a___all_>
+
+# Cluster a specific table in a database
+clusterdb <__t___table_> <table_name> <database_name>

@@ -3,4 +3,14 @@
 
 % kubectl-auth, common
 
+# Check if the current user can perform all actions on all resources in a specific namespace
+kubectl auth can-i '*' '*' <__n___namespace_> <namespace>
 
+# Check if the current user can perform a specific verb on a specific resource
+kubectl auth can-i <verb> <resource> <__n___namespace_> <namespace>
+
+# Check if a specific user or service account can perform an action on a resource
+kubectl auth can-i <verb> <resource> <__n___namespace_> <namespace> --as <user_or_sa>
+
+# List all actions the current user is allowed to perform in a namespace
+kubectl auth can-i --list <__n___namespace_> <namespace>

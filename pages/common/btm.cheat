@@ -3,4 +3,17 @@
 
 % btm, common
 
+# Show the default layout (CPU, memory, temperatures, disk, network, and processes)
+btm
 
+# Enable basic mode, removing charts and condensing data (similar to `top`)
+btm <__b___basic_>
+
+# Use big dots instead of small ones in charts
+btm <__m___dot_marker_>
+
+# Show also battery charge and health status
+btm --battery
+
+# Refresh every 250 milliseconds and show the last 30 seconds in the charts
+btm <__r___rate_> 250 <__t___default_time_value_> 30000

@@ -3,4 +3,26 @@
 
 % gnome-screenshot, linux
 
+# Take a screenshot and save it to the default location, normally `~/Pictures`
+gnome-screenshot
 
+# Take a screenshot and save it to the named file location
+gnome-screenshot <__f___file_> <path_to_file>
+
+# Take a screenshot and save it to the clipboard
+gnome-screenshot <__c___clipboard_>
+
+# Take a screenshot after the specified number of seconds
+gnome-screenshot <__d___delay_> <5>
+
+# Launch the GNOME Screenshot GUI
+gnome-screenshot <__i___interactive_>
+
+# Take a screenshot of the current window and save it to the specified file location
+gnome-screenshot <__w___window_> <__f___file_> <path_to_file>
+
+# Take a screenshot after the specified number of seconds and save it to the clipboard
+gnome-screenshot <__d___delay_> <10> <__c___clipboard_>
+
+# Display version
+gnome-screenshot --version

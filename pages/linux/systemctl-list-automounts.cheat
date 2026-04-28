@@ -3,4 +3,14 @@
 
 % systemctl-list-automounts, linux
 
+# List automount units currently in memory
+systemctl list-automounts
 
+# List all automount units, including inactive ones
+systemctl list-automounts <__a___all_>
+
+# Filter automount units by state
+systemctl list-automounts --state <active_inactive_failed____>
+
+# Filter automount units by name pattern
+systemctl list-automounts {{pattern1 pattern2 ...}}

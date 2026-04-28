@@ -3,4 +3,14 @@
 
 % sonar-scanner, common
 
+# Scan a project with configuration file in your project's root directory named `sonar-project.properties`
+sonar-scanner
 
+# Scan a project using configuration file other than `sonar-project.properties`
+sonar-scanner <__D___define_> <project_settings_myproject_properties>
+
+# Print debugging information
+sonar-scanner <__X___debug_>
+
+# Display help
+sonar-scanner <__h___help_>

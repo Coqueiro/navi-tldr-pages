@@ -3,4 +3,20 @@
 
 % iperf, common
 
+# Run on server
+iperf <__s___server_>
 
+# Run on server using UDP mode and set server port to listen on 5001
+iperf <__u___udp_> <__s___server_> <__p___port_> <5001>
+
+# Run on client
+iperf <__c___client_> <server_address>
+
+# Run on client every 2 seconds
+iperf <__c___client_> <server_address> <__i___interval_> <2>
+
+# Run on client with 5 parallel threads
+iperf <__c___client_> <server_address> <__P___parallel_> <5>
+
+# Run on client using UDP mode
+iperf <__u___udp_> <__c___client_> <server_address> <__p___port_> <5001>

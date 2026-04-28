@@ -19,7 +19,7 @@ resend templates create --name "<Welcome>" --subject "<subject>" --html "<_h1_He
 resend emails send --to <recipient_example_com> --template <template_id>
 
 # List verified domains
-resend domains {{[ls|list]}}
+resend domains <_ls_list_>
 
 # Show current authentication status
 resend whoami

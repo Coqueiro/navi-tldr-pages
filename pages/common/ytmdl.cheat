@@ -3,4 +3,26 @@
 
 % ytmdl, common
 
+# Download a song by name (with interactive selection)
+ytmdl <song_name>
 
+# Download the first result without prompting
+ytmdl <__q___quiet_> <song_name>
+
+# Download a song to a specific directory
+ytmdl <__o___output_dir_> <path_to_directory> <song_name>
+
+# Download a song from a YouTube URL
+ytmdl --url https://www.youtube.com/watch?v=<oHg5SJYRHA0>
+
+# Download a song in a specific format (mp3, m4a, or opus)
+ytmdl --format <mp3_m4a_opus> <song_name>
+
+# Download a song with artist and album information
+ytmdl --artist <artist_name> --album <album_name> <song_name>
+
+# Download a list of songs from a text file
+ytmdl --list <path_to_list_txt>
+
+# Display help
+ytmdl <__h___help_>

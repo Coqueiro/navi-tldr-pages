@@ -3,4 +3,11 @@
 
 % tcpick, linux
 
+# Capture traffic on a specific interface, port, and host
+sudo tcpick <__i___interface_> <interface> <__C___colors_> -h <host> -p <port>
 
+# Capture traffic on port 80 (HTTP) of a specific host
+sudo tcpick <__i___interface_> <eth0> <__C___colors_> -h <192_168_1_100> -p <80>
+
+# Display help
+tcpick --help

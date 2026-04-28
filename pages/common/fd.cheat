@@ -3,4 +3,26 @@
 
 % fd, common
 
+# Recursively find files matching a specific pattern in the current directory
+fd "<regex>"
 
+# Find files in a specific directory
+fd "<regex>" <path_to_directory>
+
+# Find files with a specific extension
+fd <__e___extension_> <txt>
+
+# Find only directories matching a specific pattern
+fd "<regex>" <__t___type_> <_d_directory_>
+
+# Include ignored and hidden files in the search
+fd "<regex>" <__H___hidden_> <__I___no_ignore_>
+
+# Exclude files that match a specific glob pattern
+fd "<regex>" <__E___exclude_> <glob>
+
+# Execute a command on each search result returned
+fd "<regex>" <__x___exec_> <command>
+
+# Find files only in the current directory
+fd "<regex>" <__d___max_depth_> 1

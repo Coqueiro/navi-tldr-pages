@@ -3,4 +3,17 @@
 
 % termdown, common
 
+# Start a stopwatch
+termdown
 
+# Start a 1 minute and 30 seconds countdown
+termdown <1m30s>
+
+# Start a 1 minute 30 seconds countdown with blinking the terminal at the end
+termdown 1m30s <__b___blink_>
+
+# Show a title above countdown
+termdown <1m30s> <__T___title_> "{{Interesting title}}"
+
+# Display current time
+termdown <__z___time_>

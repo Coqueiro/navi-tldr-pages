@@ -3,4 +3,11 @@
 
 % createdb, common
 
+# Create a database owned by the current user
+createdb <database_name>
 
+# Create a database owned by a specific user with a description
+createdb <__O___owner_> <username> <database_name> '<description>'
+
+# Create a database from a template
+createdb <__T___template_> <template_name> <database_name>

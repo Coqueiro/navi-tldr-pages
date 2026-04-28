@@ -3,4 +3,20 @@
 
 % brightnessctl, linux
 
+# List devices with changeable brightness
+brightnessctl <__l___list_>
 
+# Print the current brightness of the default device
+brightnessctl <_g_get_>
+
+# Print the current brightness of a specific device (can be a wildcard)
+brightnessctl <_g_get_> <__d___device_> '<device_name>'
+
+# Set the brightness to a specified percentage
+brightnessctl <_s_set_> <50>%
+
+# Increase brightness by a specified percentage
+brightnessctl <_s_set_> +<10>%
+
+# Decrease brightness by a specified percentage
+brightnessctl <_s_set_> <10>%-

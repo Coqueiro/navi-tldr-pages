@@ -10,4 +10,4 @@ ppmchange {{oldcolor1 newcolor1 oldcolor2 newcolor2 ...}} <path_to_input_ppm> > 
 ppmchange -closeness <percentage> {{oldcolor1 newcolor1 oldcolor2 newcolor2 ...}} <path_to_input_ppm> > <path_to_output_ppm>
 
 # Replace all pixels not specified in the arguments by a color
-ppmchange {{[-r|-remainder]}} <color> {{oldcolor1 newcolor1 oldcolor2 newcolor2 ...}} <path_to_input_ppm> > <path_to_output_ppm>
+ppmchange <__r__remainder_> <color> {{oldcolor1 newcolor1 oldcolor2 newcolor2 ...}} <path_to_input_ppm> > <path_to_output_ppm>

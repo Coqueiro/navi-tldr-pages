@@ -3,4 +3,14 @@
 
 % pdfattach, linux
 
+# Add a new attachment to an existing PDF file
+pdfattach <path_to_input_pdf> <path_to_file_to_attach> <path_to_output_pdf>
 
+# Replace attachment with same name if it exists
+pdfattach -replace <path_to_input_pdf> <path_to_file_to_attach> <path_to_output_pdf>
+
+# Display help
+pdfattach <__h___help_>
+
+# Display version
+pdfattach -v

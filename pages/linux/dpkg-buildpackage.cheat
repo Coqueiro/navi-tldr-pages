@@ -3,4 +3,23 @@
 
 % dpkg-buildpackage, linux
 
+# Generate source and binary packages
+dpkg-buildpackage
 
+# Generate only binary packages (no source package)
+dpkg-buildpackage <__b___build_binary_>
+
+# Generate only the source package (without compiling binaries)
+dpkg-buildpackage <__S___build_source_>
+
+# Do not sign the `.dsc` and `.changes` files
+dpkg-buildpackage <__us___unsigned_source_> <__uc___unsigned_changes_>
+
+# Do not run `clean` before compiling
+dpkg-buildpackage <__nc___no_pre_clean_>
+
+# Use `fakeroot` as the command to gain root privileges during the build
+dpkg-buildpackage <__r___root_command__>fakeroot
+
+# Run a specific `debian/rules` target
+dpkg-buildpackage <__T___rules_target__><clean>

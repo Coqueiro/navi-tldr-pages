@@ -7,7 +7,7 @@
 open <path_to_file_ext>
 
 # Open all the files of a given extension in the current directory with the associated application
-open {{*.ext}}
+open <__ext>
 
 # Open a directory using the default file manager
 open <path_to_directory>

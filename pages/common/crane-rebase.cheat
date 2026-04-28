@@ -3,4 +3,17 @@
 
 % crane-rebase, common
 
+# Rebase image
+crane rebase
 
+# New base image to insert
+crane rebase --new_base <image_name>
+
+# Old base image to remove
+crane rebase --old_base <image_name>
+
+# Tag to apply to rebased image
+crane rebase <__t___tag_> <tag_name>
+
+# Display help
+crane rebase <__h___help_>

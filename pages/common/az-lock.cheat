@@ -3,4 +3,20 @@
 
 % az-lock, common
 
+# Create a read-only subscription level lock
+az lock create <__n___name_> <lock_name> <__t___lock_type_> ReadOnly
 
+# Create a read-only resource group level lock
+az lock create <__n___name_> <lock_name> <__g___resource_group_> <group_name> <__t___lock_type_> ReadOnly
+
+# Delete a subscription level lock
+az lock delete <__n___name_> <lock_name>
+
+# Delete a resource group level lock
+az lock delete <__n___name_> <lock_name> <__g___resource_group_> <group_name>
+
+# List out all locks on the subscription level
+az lock list
+
+# Show a subscription level lock with a specific name
+az lock show <__n___name_> <lock_name>

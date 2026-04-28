@@ -3,4 +3,26 @@
 
 % tgpt, common
 
+# Chat with the default provider (GPT-3.5-turbo)
+tgpt "<prompt>"
 
+# Start multi-line interactive mode
+tgpt <__m___multiline_>
+
+# Generate images and save them to the current directory
+tgpt <__img___image_> "<prompt>"
+
+# Generate code with the default provider (GPT-3.5-turbo)
+tgpt <__c___code_> "<prompt>"
+
+# Chat with a specific provider quietly (without animations)
+tgpt --provider <openai_opengpts_koboldai_phind_llama2_blackboxai> <__q___quiet_> <__w___whole_> "<prompt>"
+
+# Generate and execute shell commands using a specific provider (with a confirmation prompt)
+tgpt --provider <llama2> <__s___shell_> "<prompt>"
+
+# Prompt with an API key, model, max response length, temperature, and `top_p` (required when using `openai` provider)
+tgpt --provider openai --key "<api_key>" --model "<gpt_3_5_turbo>" --max-length <10> --temperature <0_7> --top_p <0_9> "<prompt>"
+
+# Feed a file as additional pre-prompt input
+tgpt < <path_to_file> --provider <blackboxai> "<prompt>"

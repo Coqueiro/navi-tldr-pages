@@ -3,4 +3,17 @@
 
 % azurite, common
 
+# Use an existing location as workspace path
+azurite <__l___location_> <path_to_directory>
 
+# Disable access log displayed in console
+azurite <__s___silent_>
+
+# Enable debug log by providing a file path as log destination
+azurite <__d___debug_> <path_to_debug_log>
+
+# Customize the listening address of Blob/Queue/Table service
+azurite <__blobHost___queueHost___tableHost> <0_0_0_0>
+
+# Customize the listening port of Blob/Queue/Table service
+azurite <__blobPort___queuePort___tablePort> <8888>

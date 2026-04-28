@@ -3,4 +3,26 @@
 
 % grex, common
 
+# Generate a simple `regex`
+grex {{string1 string2 ...}}
 
+# Generate a case-insensitive `regex`
+grex <__i___ignore_case_> {{string1 string2 ...}}
+
+# Replace digits with `\d`
+grex <__d___digits_> {{string1 string2 ...}}
+
+# Replace Unicode word character with `\w`
+grex <__w___words_> {{string1 string2 ...}}
+
+# Replace spaces with `\s`
+grex <__s___spaces_> {{string1 string2 ...}}
+
+# Detect repeating patterns in the input and shorten them using {min,max} quantifiers
+grex <__r___repetitions_> {{string1 string2 ...}}
+
+# Generate `regex` of test cases (separated by newline) from a file
+grex <__f___file_> <path_to_file>
+
+# Do not generate anchors and non-capture groups
+grex --no-anchors <__g___capture_groups_> {{string1 string2 ...}}

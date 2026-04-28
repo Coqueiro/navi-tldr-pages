@@ -3,4 +3,23 @@
 
 % xh, common
 
+# Send a GET request (shows response headers and content)
+xh <https___postman_echo_com_get>
 
+# Send a POST request with a JSON body (key-value pairs are added to a top-level JSON object - e.g. `{"name": "john", "age": 25}`)
+xh post <https___postman_echo_com_post> <name_john> <age_25>
+
+# Send a GET request with query parameters (e.g. <https://postman-echo.com/response-headers?foo1=bar1&foo2=bar2>)
+xh get <https___postman_echo_com_response_headers> <foo1__bar1> <foo2__bar2>
+
+# Send a GET request with a custom header
+xh get <https___postman_echo_com> <header_name_header_value>
+
+# Make a GET request and save the response body to a file
+xh <__d___download_> <https___example_com> <__o___output_> <path_to_file>
+
+# Construct a request but do not send it (similar to a dry-run)
+xh --offline <get_delete____> <https___example_com>
+
+# Show equivalent `curl` command (this will not send any request)
+xh --<curl_curl_long> {{--follow --verbose get https://example.com user-agent:curl}}

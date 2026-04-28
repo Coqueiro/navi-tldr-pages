@@ -3,4 +3,11 @@
 
 % loadtest, common
 
+# Run with concurrent users and a specified amount of requests per second
+loadtest <__c___concurrency_> <10> <___rps___requestsPerSecond_> <200> <https___example_com>
 
+# Run with a custom HTTP header
+loadtest --headers "<accept_text_plain_text_html>" <https___example_com>
+
+# Run with a specific HTTP method
+loadtest <__m___method_> <GET> <https___example_com>

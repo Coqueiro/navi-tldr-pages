@@ -3,4 +3,17 @@
 
 % onionsearch, common
 
+# Request results from all the search engines
+onionsearch "<string>"
 
+# Request search results from specific search engines
+onionsearch "<string>" --engines <tor66_deeplink_phobos____>
+
+# Exclude certain search engines when searching
+onionsearch "<string>" --exclude <candle_ahmia____>
+
+# Limit the number of pages to load per engine
+onionsearch "<stuxnet>" --engines <tor66_deeplink_phobos____> --limit <3>
+
+# List all supported search engines
+onionsearch --help | grep <__A___after_context_> 1 <__i___ignore_case_> "supported engines"

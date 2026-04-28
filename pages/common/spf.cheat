@@ -3,4 +3,23 @@
 
 % spf, common
 
+# Launch `spf` with a specific path
+spf <path_to_directory>
 
+# Launch `spf` with multiple paths
+spf {{path/to/directory1 path/to/directory2 ...}}
+
+# Fix hotkey settings by appending missing keys
+spf <___fh___fix_hotkeys_>
+
+# Fix the configuration file by appending missing entries
+spf <___fch___fix_config_file_>
+
+# Use specific configuration and hotkey files
+spf <__c___config_file_> <path_to_config_toml> <___hf___hotkey_file_> <path_to_hotkey_toml>
+
+# Write the path of the first selected file to this file and exit
+spf <___cf___chooser_file_> <tmp_chooser_result>
+
+# Show internal configuration and data directory paths
+spf <_pl_path_list_>

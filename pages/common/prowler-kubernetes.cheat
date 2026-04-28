@@ -3,4 +3,23 @@
 
 % prowler-kubernetes, common
 
+# Run the default checks using the default kubeconfig location
+prowler kubernetes
 
+# Specify a custom kubeconfig file for scanning
+prowler kubernetes --kubeconfig-file <path_to_kubeconfig>
+
+# Specify a specific Kubernetes context to scan
+prowler kubernetes --context <my_context>
+
+# Scan specific namespaces only
+prowler kubernetes --namespaces <default> <kube_system>
+
+# Run checks for selected Kubernetes services
+prowler kubernetes <__s___services_> <ietcd_apiserver____>
+
+# Run a specific Kubernetes check
+prowler kubernetes <__c___checks_> <etcd_encryption>
+
+# Exclude specific checks or services
+prowler kubernetes <__e___excluded_checks_> <etcd_encryption> --exclude-services <ietcd_apiserver____>

@@ -3,4 +3,8 @@
 
 % gtk-launch, linux
 
+# Launch an application
+gtk-launch <Application_name>
 
+# Display help
+gtk-launch <__h___help_>

@@ -3,4 +3,14 @@
 
 % jira-me, common
 
+# Display the configured `jira` user
+jira me
 
+# List issues assigned to me
+jira issue <_ls_list_> <__a___assignee_> $(jira me)
+
+# List issues from the current sprint, assigned to me
+jira sprint <_ls_list_> --current <__a___assignee_> $(jira me)
+
+# Display help
+jira me <__h___help_>

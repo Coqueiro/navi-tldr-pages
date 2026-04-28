@@ -3,4 +3,14 @@
 
 % typeinc, common
 
+# Enter the typing test
+typeinc
 
+# Display the top 10 rank list for input difficulty level
+typeinc <__r___ranklist_> <difficulty_level>
+
+# Get random English words present in our wordlist
+typeinc <__w___words_> <word_count>
+
+# Calculate hypothetical Typeinc score
+typeinc <__s___score_>

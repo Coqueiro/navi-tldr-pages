@@ -3,4 +3,8 @@
 
 % resticprofile-unschedule, common
 
+# Unschedule a backup for a specific profile
+resticprofile unschedule <__n___name_> "<profile_name>"
 
+# Unschedule all backups
+resticprofile unschedule --all

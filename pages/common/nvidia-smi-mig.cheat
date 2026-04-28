@@ -3,4 +3,11 @@
 
 % nvidia-smi-mig, common
 
+# Create a compute instance from device 0
+nvidia-smi mig <__cgi___create_gpu_instance_> <0> <__C___default_compute_instance_>
 
+# List GPU instances
+nvidia-smi mig <__lgi___list_gpu_instances_>
+
+# Display help
+nvidia-smi mig <__h___help_>

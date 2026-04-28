@@ -3,4 +3,26 @@
 
 % flameshot, linux
 
+# Create a fullscreen screenshot
+flameshot full
 
+# Create a screenshot interactively
+flameshot gui
+
+# Create a screenshot and save it to a specific path
+flameshot gui <__p___path_> <path_to_directory>
+
+# Create a screenshot interactively in a simplified mode
+flameshot launcher
+
+# Create a screenshot from a specific monitor
+flameshot screen <__n___number_> <2>
+
+# Create a screenshot and print it to `stdout`
+flameshot gui <__r___raw_>
+
+# Create a screenshot and copy it to the clipboard
+flameshot gui <__c___clipboard_>
+
+# Create a screenshot with a specific delay in milliseconds
+flameshot full <__d___delay_> <5000>

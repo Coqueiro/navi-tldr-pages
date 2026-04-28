@@ -3,4 +3,26 @@
 
 % gpg, common
 
+# Create a GPG public and private key interactively
+gpg <___full_gen_key___full_generate_key_>
 
+# List all keys from the public keyring
+gpg <__k___list_keys_>
+
+# Sign `doc.txt` without encryption (writes output to `doc.txt.asc`)
+gpg --clearsign <doc_txt>
+
+# Encrypt and sign `doc.txt` for `alice@example.com` and `bob@example.com` (output to `doc.txt.gpg`)
+gpg {{[-es|--encrypt --sign]}} <__r___recipient_> <alice_example_com> <__r___recipient_> <bob_example_com> <doc_txt>
+
+# Encrypt `doc.txt` with only a passphrase (output to `doc.txt.gpg`)
+gpg <__c___symmetric_> <doc_txt>
+
+# Decrypt `doc.txt.gpg` (output to `stdout`)
+gpg <__d___decrypt_> <doc_txt_gpg>
+
+# Import a public key
+gpg --import <public_gpg>
+
+# Export the public/private key for `alice@example.com` (output to `stdout`)
+gpg <__export___export_secret_keys> <__a___armor_> <alice_example_com>

@@ -3,4 +3,26 @@
 
 % lure, linux
 
+# Install a package
+lure <_in_install_> <package>
 
+# Remove a package
+lure <_rm_remove_> <package>
+
+# Update packages
+lure <_up_upgrade_>
+
+# List all available packages
+lure <_ls_list_>
+
+# Pull all repositories that have changed
+lure <_ref_refresh_>
+
+# Add a new repository
+lure <_ar_addrepo_> <__n___name_> <repository_name> --url <repository_url>
+
+# Remove an existing repository
+lure <_rr_removerepo_> <__n___name_> <repository_name>
+
+# Build a package
+lure build -s <path_to_script>

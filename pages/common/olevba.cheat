@@ -3,4 +3,20 @@
 
 % olevba, common
 
+# Analyze a file, showing both macro code and analysis results
+olevba <path_to_file>
 
+# Recursively analyze all supported files in a directory
+olevba -r <path_to_directory>
+
+# Provide a password for encrypted Microsoft Office files (may be repeated)
+olevba <__p___password_> <password> <path_to_encrypted_file>
+
+# Display only analysis results, without showing macro source code
+olevba <__a___analysis_> <path_to_file>
+
+# Display only macro source code
+olevba <__c___code_> <path_to_file>
+
+# Show obfuscated strings and their decoded content
+olevba --decode <path_to_file>

@@ -3,4 +3,23 @@
 
 % lftp, linux
 
+# Connect to an FTP server
+lftp <__u___user_> <username> <ftp_example_com>
 
+# [Interactive] Download multiple files (glob expression)
+mget <path_to___png>
+
+# [Interactive] Upload multiple files (glob expression)
+mput <path_to___zip>
+
+# [Interactive] Delete multiple files on the remote server
+mrm <path_to___txt>
+
+# [Interactive] Rename a file on the remote server
+mv <original_filename> <new_filename>
+
+# [Interactive] Download or update an entire directory
+mirror <path_to_remote_directory> <path_to_local_output_directory>
+
+# [Interactive] Upload or update an entire directory
+mirror <__R___reverse_> <path_to_local_directory> <path_to_remote_output_directory>

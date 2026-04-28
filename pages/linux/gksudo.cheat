@@ -3,4 +3,17 @@
 
 % gksudo, linux
 
+# Run a command as a specific user
+gksudo <__u___user_> <userid> <command>
 
+# Run the command while preserving the current environments
+gksudo <__u___user_> <userid> <__k___preserve_env_> <command>
+
+# Force `gksudo` to use `su` to run the command
+gksu <__u___user_> <userid> <__w___su_mode_> <command>
+
+# Force `gksudo` to use `sudo` to run the command
+gksudo <__u___user_> <userid> <__S___sudo_mode_> <command>
+
+# Output debug info for the given command
+gksudo <__u___user_> <userid> <__d___debug_> <command>

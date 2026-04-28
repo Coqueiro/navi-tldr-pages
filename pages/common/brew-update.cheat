@@ -4,4 +4,4 @@
 % brew-update, common
 
 # Fetch the newest version of Homebrew and all formulae
-brew {{[up|update]}}
+brew <_up_update_>

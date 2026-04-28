@@ -3,4 +3,14 @@
 
 % debtap, linux
 
+# Update debtap database (before the first run)
+sudo debtap <__u___update_>
 
+# Convert the specified package
+debtap <path_to_package_deb>
+
+# Convert the specified package bypassing all questions, except for editing metadata files
+debtap <__q___quiet_> <path_to_package_deb>
+
+# Generate a PKGBUILD file
+debtap <__p___pkgbuild_> <path_to_package_deb>

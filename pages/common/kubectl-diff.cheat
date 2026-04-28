@@ -3,4 +3,5 @@
 
 % kubectl-diff, common
 
-
+# View differences between the live resource and file definition
+kubectl diff <__f___filename_> <path_to_filename>

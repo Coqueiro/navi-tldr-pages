@@ -3,4 +3,17 @@
 
 % godot, common
 
+# Run a project if the current directory contains a `project.godot` file, otherwise open the project manager
+godot
 
+# Edit a project (the current directory must contain a `project.godot` file)
+godot <__e___editor_>
+
+# Open the project manager even if the current directory contains a `project.godot` file
+godot <__p___project_manager_>
+
+# Export a project for release using a given export preset (the preset must be defined in the project)
+godot --export-release <preset> <output_path>
+
+# Execute a standalone GDScript file (the script must inherit from `SceneTree` or `MainLoop`)
+godot <__s___script_> <script_gd>

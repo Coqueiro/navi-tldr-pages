@@ -3,4 +3,14 @@
 
 % hledger-aregister, common
 
+# Show transactions and running balance in the `assets:bank:checking` account
+hledger <_areg_aregister_> assets:bank:checking
 
+# Show transactions and running balance in the first account whose name contains `savings`
+hledger <_areg_aregister_> savings
+
+# Show the checking account's cleared transactions, with a specified width
+hledger <_areg_aregister_> checking <__C___cleared_> <__w___width_> <120>
+
+# Show the checking register, including transactions from forecast rules
+hledger <_areg_aregister_> checking --forecast

@@ -3,4 +3,17 @@
 
 % vet, common
 
+# Scan the current directory
+vet scan <__D___directory_> .
 
+# Scan the `package-lock.json` manifest file
+vet scan <__M___manifests_> <path_to_manifest_file>
+
+# Scan with filter to fail on any critical vulnerability found in the codebase
+vet scan <__D___directory_> <path_to_directory> --filter 'vulns.critical.exists(p, true)' --filter-fail
+
+# Scan any OSS package for malware
+vet inspect malware --purl <package_url>
+
+# Start the MCP server for AI enabled security in code editors like Cursor
+vet server mcp

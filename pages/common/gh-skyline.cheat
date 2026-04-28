@@ -3,4 +3,26 @@
 
 % gh-skyline, common
 
+# Generate a skyline STL file for the current year and authenticated user
+gh skyline
 
+# Generate a skyline for a specific user and year
+gh skyline <__u___user_> <username> <__y___year_> <year>
+
+# Generate a skyline for a range of years
+gh skyline <__u___user_> <username> <__y___year_> <first_year>-<last_year>
+
+# Generate a full skyline (from the user's join year to the current year)
+gh skyline <__u___user_> <username> <__f___full_>
+
+# Enable debug logging
+gh skyline <__d___debug_>
+
+# Generate a skyline and specify the output file path
+gh skyline <__o___output_> <path_to_output_file_stl>
+
+# Open the GitHub profile for a specific user
+gh skyline <__u___user_> <username> <__w___web_>
+
+# Display help
+gh skyline <__h___help_>

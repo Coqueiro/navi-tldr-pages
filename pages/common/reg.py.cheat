@@ -4,19 +4,19 @@
 % reg.py, common
 
 # Query subkeys and values under a registry path
-reg.py <domain>/<username>:<password>@<target> query -keyName '{{HKLM\SOFTWARE\Microsoft\Windows}}'
+reg.py <domain>/<username>:<password>@<target> query -keyName '<HKLM_SOFTWARE_Microsoft_Windows>'
 
 # Query all subkeys and values under a registry path recursively
-reg.py <domain>/<username>:<password>@<target> query -keyName '{{HKLM\SOFTWARE\Microsoft\Windows}}' -s
+reg.py <domain>/<username>:<password>@<target> query -keyName '<HKLM_SOFTWARE_Microsoft_Windows>' -s
 
 # Add a new registry key or value (default value type is `REG_SZ`)
-reg.py <domain>/<username>:<password>@<target> add -keyName '{{HKLM\SOFTWARE\Microsoft\Windows}}' -v <value_name> -vt <REG_SZ_REG_NONE_REG_EXPAND_SZ_REG_BINARY_REG_DWORD_REG_DWORD_BIG_ENDIAN_REG_LINK_REG_MULTI_SZ_REG_QWORD> -vd <value_data>
+reg.py <domain>/<username>:<password>@<target> add -keyName '<HKLM_SOFTWARE_Microsoft_Windows>' -v <value_name> -vt <REG_SZ_REG_NONE_REG_EXPAND_SZ_REG_BINARY_REG_DWORD_REG_DWORD_BIG_ENDIAN_REG_LINK_REG_MULTI_SZ_REG_QWORD> -vd <value_data>
 
 # Delete a registry key or value
-reg.py <domain>/<username>:<password>@<target> delete -keyName '{{HKLM\SOFTWARE\Example}}' -v <value_name>
+reg.py <domain>/<username>:<password>@<target> delete -keyName '<HKLM_SOFTWARE_Example>' -v <value_name>
 
 # Save a registry key (and subkeys) to a file on the target via UNC path
-reg.py <domain>/<username>:<password>@<target> save -keyName '{{HKLM\SOFTWARE\Example}}' -o '\\<target>\<share>\<output_file_reg>'
+reg.py <domain>/<username>:<password>@<target> save -keyName '<HKLM_SOFTWARE_Example>' -o '\\<target>\<share>\<output_file_reg>'
 
 # Backup SAM, SYSTEM and SECURITY hives to a file on a target via UNC path (requires SYSTEM privileges)
 reg.py <domain>/<username>:<password>@<target> backup -o '\\<target>\<share>'

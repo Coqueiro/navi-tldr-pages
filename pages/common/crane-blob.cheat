@@ -3,4 +3,8 @@
 
 % crane-blob, common
 
+# Read the blob from a registry
+crane blob <blob_identifier>
 
+# Display help
+crane blob <__h___help_>

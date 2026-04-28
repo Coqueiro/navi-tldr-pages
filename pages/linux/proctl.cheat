@@ -3,4 +3,26 @@
 
 % proctl, linux
 
+# List available licenses
+proctl <__ll__list_licenses_>
 
+# List available languages
+proctl <__lL__list_languages_>
+
+# Pick a license in a FZF menu
+proctl <__pl__pick_license_>
+
+# Pick a language in a FZF menu
+proctl <__pL__pick_language_>
+
+# Remove all licenses from the current project
+proctl <__r__remove_license_>
+
+# Create a new license template
+proctl <__t__new_template_>
+
+# Delete a license from templates
+proctl <__R__delete_license_> {{@license_name1 @license_name2 ...}}
+
+# Display help
+proctl <__h__help_>

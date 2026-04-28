@@ -3,4 +3,20 @@
 
 % handbrakecli, common
 
+# Convert a video file to MKV (AAC 160kbit audio and x264 CRF20 video)
+handbrakecli <__i___input_> <input_avi> <__o___output_> <output_mkv> <__e___encoder_> x264 <__q___quality_> 20 <__B___ab_> 160
 
+# Resize a video file to 320x240
+handbrakecli <__i___input_> <input_mp4> <__o___output_> <output_mp4> <__w___width_> 320 <__l___height_> 240
+
+# List available presets
+handbrakecli <__z___preset_list_>
+
+# Convert an AVI video to MP4 using the Android preset
+handbrakecli <__Z___preset_> "Android" <__i___input_> <input_ext> <__o___output_> <output_mp4>
+
+# Print the content of a DVD, getting the CSS keys in the process
+handbrakecli <__i___input_> <_dev_sr0> <__t___title_> 0
+
+# Rip the first track of a DVD in the specified device. Audiotracks and subtitle languages are specified as lists
+handbrakecli <__i___input_> <_dev_sr0> <__t___title_> 1 <__o___output_> <out_mkv> <__f___format_> av_mkv <__e___encoder_> x264 <__s___subtitle_> <1_4_5> <__a___audio_> <1_2> <__E___aencoder_> copy <__q___quality_> <23>

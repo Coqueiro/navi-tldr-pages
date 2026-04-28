@@ -3,4 +3,26 @@
 
 % ed, common
 
+# Start an interactive editor session with an empty document
+ed
 
+# Start an interactive editor session with an empty document and a specific prompt
+ed <__p___prompt_> '{{> }}'
+
+# Start an interactive editor session with user-friendly errors
+ed <__v___verbose_>
+
+# Start an interactive editor session with an empty document and without diagnostics, byte counts and '!' prompt
+ed <__q___quiet_> <__s___script_>
+
+# Start an interactive editor session without exit status change when command fails
+ed <__l___loose_exit_status_>
+
+# Edit a specific file (this shows the byte count of the loaded file)
+ed <path_to_file>
+
+# [Interactive] Replace a string with a specific replacement for all lines
+,s/<regex>/<replacement>/g
+
+# [Interactive] Exit `ed`
+q

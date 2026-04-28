@@ -3,4 +3,20 @@
 
 % ansible-doc, common
 
+# List available action plugins (modules)
+ansible-doc <__l___list_>
 
+# List available plugins of a specific type
+ansible-doc <__t___type_> <become_cache_callback_cliconf_connection____> <__l___list_>
+
+# Show information about a specific action plugin (module)
+ansible-doc <plugin_name>
+
+# Show information about a plugin with a specific type
+ansible-doc <__t___type_> <become_cache_callback_cliconf_connection____> <plugin_name>
+
+# Show the playbook snippet for action plugin (modules)
+ansible-doc <__s___snippet_> <plugin_name>
+
+# Show information about an action plugin (module) as JSON
+ansible-doc <__j___json_> <plugin_name>

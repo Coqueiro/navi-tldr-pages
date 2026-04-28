@@ -4,13 +4,13 @@
 % tmsu, common
 
 # Tag a specific file with multiple tags
-tmsu tag <path_to_file_mp3> <music> <big_jazz> <__mp3>
+tmsu tag <path_to_file_mp3> <music> <big_jazz> <mp3>
 
 # Tag multiple files
-tmsu tag --tags "{{music mp3}}" {{*.mp3}}
+tmsu tag --tags "{{music mp3}}" <__mp3>
 
 # List tags of specified file(s)
-tmsu tags {{*.mp3}}
+tmsu tags <__mp3>
 
 # List files with specified tag(s)
 tmsu files <big_jazz> <music>

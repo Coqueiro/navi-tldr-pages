@@ -3,4 +3,17 @@
 
 % cheat, common
 
+# Show example usage of a command
+cheat <command>
 
+# Edit the cheat sheet for a command
+cheat <__e___edit_> <command>
+
+# List the available cheat sheets
+cheat <__l___list_>
+
+# Search available the cheat sheets for a specified command name
+cheat <__s___search_> <command>
+
+# Display version
+cheat <__v___version_>

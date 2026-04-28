@@ -3,4 +3,20 @@
 
 % opencode-uninstall, common
 
+# Uninstall OpenCode
+opencode uninstall
 
+# Uninstall and keep configuration files
+opencode uninstall <__c___keep_config_>
+
+# Uninstall and keep session data and snapshots
+opencode uninstall <__d___keep_data_>
+
+# Show what would be removed without removing
+opencode uninstall --dry-run
+
+# Skip confirmation prompts
+opencode uninstall <__f___force_>
+
+# Display help
+opencode uninstall <__h___help_>

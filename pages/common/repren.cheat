@@ -3,4 +3,17 @@
 
 % repren, common
 
+# Do a dry-run renaming a directory of PNGs with a literal string replacement
+repren <__n___dry_run_> --rename --literal --from '<find_string>' --to '<replacement_string>' <__png>
 
+# Do a dry-run renaming a directory of JPEGs with a `regex`
+repren --rename <__n___dry_run_> --from '<regex>' --to '<replacement_string>' <__jpg> <__jpeg>
+
+# Do a find-and-replace on the contents of a directory of CSV files
+repren --from '{{([0-9]+) example_string}}' --to '{{replacement_string \1}}' <__csv>
+
+# Do both a find-and-replace and a rename operation at the same time, using a pattern file
+repren <__p___patterns_> <path_to_patfile_ext> --full <__txt>
+
+# Do a case-insensitive rename
+repren --rename <__i___insensitive_> <__p___patterns_> <path_to_patfile_ext> *

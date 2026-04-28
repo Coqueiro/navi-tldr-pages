@@ -3,4 +3,20 @@
 
 % pstree, linux
 
+# Display a tree of all processes (rooted at init)
+pstree
 
+# Display a tree of processes with PIDs
+pstree <__p___show_pids_>
+
+# Display all process trees rooted at processes owned by specified user
+pstree <user>
+
+# Display command line arguments
+pstree <__a___arguments_>
+
+# Display children of a specified process
+pstree <pid>
+
+# Display parents of a specified process
+pstree <__s___show_parents_> <pid>

@@ -3,4 +3,14 @@
 
 % in-toto-run, common
 
+# Tag a Git repo and signing the resulting link file
+in-toto-run <__n___step_name_> <tag> <__p___products_> <_> --signing-key <key_file> -- {{git tag v1.0}}
 
+# Create a tarball, storing files as materials and the tarball as product
+in-toto-run <__n___step_name_> <package> <__m___materials_> <project> <__p___products_> <project_tar_gz> -- {{tar czf project.tar.gz project}}
+
+# Generate signed attestations for review work
+in-toto-run <__n___step_name_> <review> --signing-key <key_file> <__m___materials_> <document_pdf> <__x___no_command_>
+
+# Scan the image using Trivy and generate link file
+in-toto-run <__n___step_name_> <scan> --signing-key <key_file> <__p___products_> <report_json> -- /bin/sh -c "trivy --output report.json --format json <path_to_image>"

@@ -3,4 +3,26 @@
 
 % docker-compose-logs, common
 
+# View logs for all services
+docker compose logs
 
+# View logs for a specific service
+docker compose logs <service_name>
+
+# View logs and follow new output (like `tail --follow`)
+docker compose logs <__f___follow_>
+
+# View logs with timestamps
+docker compose logs <__t___timestamps_>
+
+# View only the last `n` lines of logs for each container
+docker compose logs <__n___tail_> <n>
+
+# View logs from a specific time onwards
+docker compose logs --since <timestamp>
+
+# View logs until a specific time
+docker compose logs --until <timestamp>
+
+# View logs for multiple specific services
+docker compose logs {{service1 service2 ...}}

@@ -3,4 +3,23 @@
 
 % pw-metadata, linux
 
+# Show metadata in `default` name
+pw-metadata
 
+# Show metadata with ID 0 in `settings`
+pw-metadata <__n___name_> <settings> <0>
+
+# List all available metadata objects
+pw-metadata <__l___list_>
+
+# Keep running and log the changes to the metadata
+pw-metadata <__m___monitor_>
+
+# Delete all metadata
+pw-metadata <__d___delete_>
+
+# Set `log.level` to 1 in `settings`
+pw-metadata <__n___name_> <settings> <0> <log_level> <1>
+
+# Display help
+pw-metadata <__h___help_>

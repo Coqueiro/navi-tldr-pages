@@ -3,4 +3,20 @@
 
 % cargo-test, common
 
+# Only run tests containing a specific string in their names
+cargo <_t_test_> <test_name>
 
+# Set the number of simultaneous running test cases
+cargo <_t_test_> -- --test-threads <count>
+
+# Test artifacts in release mode, with optimizations
+cargo <_t_test_> <__r___release_>
+
+# Test all packages in the workspace
+cargo <_t_test_> --workspace
+
+# Run tests for a specific package
+cargo <_t_test_> <__p___package_> <package>
+
+# Run tests without hiding output from test executions
+cargo <_t_test_> -- --nocapture

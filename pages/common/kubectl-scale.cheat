@@ -3,4 +3,11 @@
 
 % kubectl-scale, common
 
+# Scale a replica set
+kubectl scale --replicas <replicas_count> rs/<replica_name>
 
+# Scale a resource identified by a file
+kubectl scale --replicas <replicas_count> <__f___filename_> <path_to_file_yml>
+
+# Scale a deployment based on current number of replicas
+kubectl scale --replicas <replicas_count> --current-replicas <current_replicas> <_deploy_deployment_>/<deployment_name>

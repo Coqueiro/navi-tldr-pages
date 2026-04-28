@@ -3,4 +3,17 @@
 
 % fiascotopnm, common
 
+# Convert a compressed FIASCO file to a PNM file or in the case of video streams multiple PNM files
+fiascotopnm <path_to_file_fiasco> <__o___output_> <output_file_basename>
 
+# Use fast decompression, resulting in a slightly decreased quality of the output file(s)
+fiascotopnm <__z___fast_> <path_to_file_fiasco> <__o___output_> <output_file_basename>
+
+# Load the options to be used from the specified configuration file
+fiascotopnm <__f___config_> <path_to_fiascorc> <path_to_file_fiasco> <__o___output_> <output_file_basename>
+
+# Magnify the decompressed image(s) by a factor of 2^n
+fiascotopnm <__m___magnify_> <n> <path_to_file_fiasco> <__o___output_> <output_file_basename>
+
+# Smooth the decompressed image by the specified amount
+fiascotopnm <__s___smoothing_> <n> <path_to_file_fiasco> <__o___output_> <output_file_basename>

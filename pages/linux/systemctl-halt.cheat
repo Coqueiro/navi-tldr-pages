@@ -3,4 +3,23 @@
 
 % systemctl-halt, linux
 
+# Halt the system
+systemctl halt
 
+# Halt the system immediately without asking services to stop gracefully
+systemctl halt <__f___force_>
+
+# Halt the system immediately without sending notifications to logged-in users
+systemctl halt <__f___force_> --no-wall
+
+# Halt the system immediately without terminating any processes or unmounting filesystems (dangerous, may cause data loss)
+systemctl halt {{[-ff|--force --force]}}
+
+# Schedule a halt at a specific time (e.g., 23:00)
+systemctl halt --when 23:00
+
+# Schedule a halt after a certain duration (e.g., 2 hours)
+systemctl halt --when +2h
+
+# Cancel a scheduled halt
+systemctl halt --when cancel

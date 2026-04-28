@@ -3,4 +3,20 @@
 
 % xdp-filter, linux
 
+# Load the filter on an interface in skb (generic) mode with default allow policy
+sudo xdp-filter load <__p___policy_> allow <__m___mode_> skb <network_interface>
 
+# Unload the filter from an interface
+sudo xdp-filter unload <network_interface>
+
+# Deny traffic to a specific destination port
+sudo xdp-filter port <destination_port>
+
+# Deny traffic from a specific source IP address
+sudo xdp-filter ip <__m___mode_> src <source_ip>
+
+# Deny traffic from a specific source MAC address
+sudo xdp-filter ether <__m___mode_> src <mac_address>
+
+# Poll packets and show statistics every 10000 milliseconds
+sudo xdp-filter poll <__i___interval_> 10000

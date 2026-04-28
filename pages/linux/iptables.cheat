@@ -3,4 +3,20 @@
 
 % iptables, linux
 
+# View chains, rules, packet/byte counters, and line numbers for the filter table
+sudo iptables {{[-vnL --line-numbers|--verbose --numeric --list --line-numbers]}}
 
+# Set chain policy rule
+sudo iptables <__P___policy_> <chain> <rule>
+
+# Append rule to chain policy for IP
+sudo iptables <__A___append_> <chain> <__s___source_> <ip_address> <__j___jump_> <rule>
+
+# Append rule to chain policy for IP considering protocol and port
+sudo iptables <__A___append_> <chain> <__s___source_> <ip_address> <__p___protocol_> <tcp_udp_icmp____> --dport <port> <__j___jump_> <rule>
+
+# Add a NAT rule to translate all traffic from the `192.168.0.0/24` subnet to the host's public IP
+sudo iptables <__t___table_> <nat> <__A___append_> <POSTROUTING> <__s___source_> <192_168_0_0_24> <__j___jump_> <MASQUERADE>
+
+# Delete chain rule
+sudo iptables <__D___delete_> <chain> <rule_line_number>

@@ -3,4 +3,11 @@
 
 % jj-show, common
 
+# Show commit description and changes in a revision
+jj show <revset>
 
+# Show a summary of changes in a revision
+jj show <__s___summary_> <revset>
+
+# Show a histogram of changes in a revision
+jj show --stat <revset>

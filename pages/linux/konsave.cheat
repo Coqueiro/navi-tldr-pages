@@ -3,4 +3,23 @@
 
 % konsave, linux
 
+# Save the current configuration as a profile
+konsave <__s___save_> <profile_name>
 
+# Apply a profile
+konsave <__a___apply_> <profile_name>
+
+# Save the current configuration as a profile, overwriting existing profiles if they exist with the same name
+konsave <__s___save_> <profile_name> <__f___force_>
+
+# List all profiles
+konsave <__l___list_>
+
+# Remove a profile
+konsave <__r___remove_> <profile_name>
+
+# Export a profile as a `.knsv` to the home directory
+konsave <__e___export_profile_> <profile_name>
+
+# Import a `.knsv` profile
+konsave <__i___import_profile_> <path_to_profile_name_knsv>

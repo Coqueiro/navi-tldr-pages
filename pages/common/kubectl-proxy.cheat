@@ -3,4 +3,26 @@
 
 % kubectl-proxy, common
 
+# Run a proxy using the default settings on port 8001 and listen on localhost
+kubectl proxy
 
+# Proxy part of the Kubernetes API while serving static files from a local directory
+kubectl proxy <__w___www_> <path_to_static_dir> <__P___www_prefix_> <_static_prefix_> --api-prefix <_api_subset_>
+
+# Proxy the entire Kubernetes API under a custom prefix
+kubectl proxy --api-prefix <_custom_prefix_>
+
+# Serve the Kubernetes API on a specific port while also serving static content
+kubectl proxy <__p___port_> <port> <__w___www_> <path_to_static_dir>
+
+# Run a proxy on a random local port, printing the chosen port to `stdout`
+kubectl proxy <__p___port_> 0
+
+# Run the proxy on a Unix domain socket instead of a TCP port
+kubectl proxy <__u___unix_socket_> <path_to_socket>
+
+# Accept connections from remote hosts by listening on all interfaces (use caution when exposing the proxy publicly)
+kubectl proxy --address 0.0.0.0 --accept-hosts '.*'
+
+# Allow only selected API paths while rejecting sensitive endpoints
+kubectl proxy --accept-paths '^/api/v1/namespaces/default/.*' --reject-paths '^/api/.*/pods/.*/exec'

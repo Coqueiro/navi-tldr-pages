@@ -3,4 +3,11 @@
 
 % doctl-balance, common
 
+# Get balance of the account associated with the current context
+doctl balance <_g_get_>
 
+# Get the balance of an account associated with an access token
+doctl balance <_g_get_> <__t___access_token_> <access_token>
+
+# Get the balance of an account associated with a specified context
+doctl balance <_g_get_> --context

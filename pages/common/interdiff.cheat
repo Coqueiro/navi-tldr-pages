@@ -3,4 +3,8 @@
 
 % interdiff, common
 
+# Compare diff files
+interdiff <old_file> <new_file>
 
+# Compare diff files, ignoring whitespace
+interdiff <__w___ignore_all_space_> <old_file> <new_file>

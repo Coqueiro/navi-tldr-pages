@@ -3,4 +3,20 @@
 
 % kubectl-apply, common
 
+# Apply a configuration to a resource by file name
+kubectl apply <__f___filename_> <path_to_file>
 
+# Apply a configuration to a resource from `kustomization.yaml` in a directory
+kubectl apply <__k___kustomize_> <path_to_directory>
+
+# Apply a configuration to a resource by `stdin`
+{{cat pod.json}} | kubectl apply <__f___filename_> -
+
+# Edit the latest last-applied-configuration annotations of resources from the default editor
+kubectl apply edit-last-applied <__f___filename_> <path_to_file>
+
+# Set the latest last-applied-configuration annotations by setting it to match the contents of a file
+kubectl apply set-last-applied <__f___filename_> <path_to_file>
+
+# View the latest last-applied-configuration annotations by type/name or file
+kubectl apply view-last-applied <__f___filename_> <path_to_file>

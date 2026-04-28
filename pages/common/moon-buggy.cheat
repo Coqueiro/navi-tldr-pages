@@ -3,4 +3,20 @@
 
 % moon-buggy, common
 
+# Start `moon-buggy`
+moon-buggy
 
+# Skip the title screen and immediately start a game
+moon-buggy <__n___no_title_>
+
+# Display the leaderboard
+moon-buggy <__s___show_scores_>
+
+# Jump
+<_Space___j_>
+
+# Use the mining laser
+<_l___a_>
+
+# Quit the game
+<_q___n_>

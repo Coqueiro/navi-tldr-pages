@@ -4,4 +4,4 @@
 % ibmcloud-version, common
 
 # Display version
-ibmcloud {{[v|version]}}
+ibmcloud <_v_version_>

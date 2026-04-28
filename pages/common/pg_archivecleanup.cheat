@@ -3,4 +3,17 @@
 
 % pg_archivecleanup, common
 
+# Clean an archive directory up to a given WAL file
+pg_archivecleanup <path_to_archive> <path_to_walfile>
 
+# Perform a dry run (list files that would be removed without actually doing it)
+pg_archivecleanup <__n___dry_run_> <path_to_archive> <path_to_walfile>
+
+# Strip a file extension before deciding deletion
+pg_archivecleanup <__x___strip_extension_> <extension> <path_to_archive> <path_to_walfile>
+
+# Remove backup history files too
+pg_archivecleanup <__b___clean_backup_history_> <path_to_archive> <path_to_walfile>
+
+# Enable debug logging output
+pg_archivecleanup <__d___debug_> <path_to_archive> <path_to_walfile>

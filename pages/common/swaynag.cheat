@@ -3,4 +3,26 @@
 
 % swaynag, common
 
+# Display an error
+swaynag <__m___message_> "{{error message}}"
 
+# Display a warning
+swaynag <__t___type_> warning <__m___message_> "{{warning message}}"
+
+# Display a message with custom settings defined in the config
+swaynag <__t___type_> <custom_type> <__m___message_> "<message>"
+
+# Use the specified font
+swaynag <__f___font_> "{{monospace bold 9}}" <__m___message_> "{{error message}}"
+
+# Create a button and run a command in the specified terminal on click
+TERMINAL=<terminal_executable> swaynag <__b___button_> "{{button text}}" <command> <__m___message_> "{{error message}}"
+
+# Create a button and run a command on click
+swaynag <__B___button_no_terminal_> "{{button text}}" <command> <__m___message_> "{{error message}}"
+
+# Display the bar on the bottom of the screen
+swaynag <__e___edge_> bottom <__m___message_> "{{error message}}"
+
+# Open `swaynag` on the specified monitor
+swaynag <__o___output_> <DP_1> <__m___message_> "{{error message}}"

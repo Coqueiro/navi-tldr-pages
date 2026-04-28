@@ -3,4 +3,17 @@
 
 % csvtool, common
 
+# Extract the second column from a CSV file
+csvtool <__c___column_> <2> <path_to_file_csv>
 
+# Extract the second and fourth columns from a CSV file
+csvtool <__c___column_> <2_4> <path_to_file_csv>
+
+# Extract lines from a CSV file where the second column exactly matches `String`
+csvtool <__c___column_> <2> <__s___search_> '<_String_>' <path_to_file_csv>
+
+# Extract lines from a CSV file where the second column starts with `Bar`
+csvtool <__c___column_> <2> <__s___search_> '<_Bar>' <path_to_file_csv>
+
+# Find lines in a CSV file where the second column ends with `Baz` and then extract the third and sixth columns
+csvtool <__c___column_> <2> <__s___search_> '<Baz_>' <path_to_file_csv> | csvtool <__e___no_header_> <__c___column_> <3_6>

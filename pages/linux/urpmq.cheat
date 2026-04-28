@@ -3,4 +3,23 @@
 
 % urpmq, linux
 
+# Display information about an installable package
+urpmq -i <package>
 
+# Display direct dependencies of a package
+urpmq --requires <package>
+
+# Display direct and indirect dependencies of a package
+urpmq <__d___requires_recursive_> <package>
+
+# List the not installed packages needed for an RPM file with their sources
+sudo urpmq <__d___requires_recursive_> -m --sources <path_to_file_rpm>
+
+# List all configured media with their URLs, including inactive media
+urpmq --list-media --list-url
+
+# Search for a package printing [g]roup, version, and [r]elease
+urpmq -g -r <__y___fuzzy_> <keyword>
+
+# Search for a package with using its exact name
+urpmq -g -r <package>

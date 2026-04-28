@@ -3,4 +3,11 @@
 
 % lsmem, linux
 
+# List memory information
+lsmem
 
+# List memory information in JSON format
+lsmem <__J___json_>
+
+# List memory information with size in bytes
+lsmem <__b___bytes_>

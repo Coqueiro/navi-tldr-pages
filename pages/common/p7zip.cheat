@@ -3,4 +3,17 @@
 
 % p7zip, common
 
+# Archive a file, replacing it with a 7zipped compressed version
+p7zip <path_to_file>
 
+# Archive a file keeping the input file
+p7zip <__k___keep_> <path_to_file>
+
+# Decompress a file, replacing it with the original uncompressed version
+p7zip <__d___decompress_> <compressed_ext>.7z
+
+# Decompress a file keeping the input file
+p7zip <__d___decompress_> <__k___keep_> <compressed_ext>.7z
+
+# Skip some checks and force compression or decompression
+p7zip <__f___force_> <path_to_file>

@@ -3,4 +3,14 @@
 
 % koji-cancel, linux
 
+# Cancel a task by its ID
+koji cancel <task_id>
 
+# Cancel multiple tasks
+koji cancel {{task_id1 task_id2 ...}}
+
+# Cancel a task with verbose output
+koji cancel --verbose <task_id>
+
+# Display help
+koji cancel <__h___help_>

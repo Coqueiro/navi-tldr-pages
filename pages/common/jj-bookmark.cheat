@@ -3,4 +3,20 @@
 
 % jj-bookmark, common
 
+# Create a new bookmark at the given revision
+jj <_b_bookmark_> <_c_create_> <__r___revision_> <revision> <name>
 
+# List all existing bookmarks and their targets
+jj <_b_bookmark_> <_l_list_>
+
+# Move an existing bookmark to another revision
+jj <_b_bookmark_> <_m_move_> <__t___to_> <revision> <name>
+
+# Track given remote bookmarks
+jj <_b_bookmark_> <_t_track_> <name>@<remote>
+
+# Delete a bookmark, and propagate the deletion to remotes on the next push
+jj <_b_bookmark_> <_d_delete_> <name>
+
+# Forget a bookmark locally, without marking its deletion to be pushed
+jj <_b_bookmark_> <_f_forget_> <name>

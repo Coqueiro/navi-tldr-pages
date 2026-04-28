@@ -3,4 +3,20 @@
 
 % rtcwake, linux
 
+# Show whether an alarm is set or not
+sudo rtcwake <__m___mode_> show <__v___verbose_>
 
+# Suspend to RAM and wakeup after 10 seconds
+sudo rtcwake <__m___mode_> mem <__s___seconds_> <10>
+
+# Suspend to disk (higher power saving) and wakeup 15 minutes later
+sudo rtcwake <__m___mode_> disk --date +<15>min
+
+# Freeze the system (more efficient than suspend-to-RAM but version 3.9 or newer of the Linux kernel is required) and wakeup at a given date and time
+sudo rtcwake <__m___mode_> freeze --date <YYYYMMDDhhmm>
+
+# Disable a previously set alarm
+sudo rtcwake <__m___mode_> disable
+
+# Perform a dry run to wakeup the computer at a given time. (Press `<Ctrl c>` to abort)
+sudo rtcwake <__m___mode_> on --date <hh_ss>

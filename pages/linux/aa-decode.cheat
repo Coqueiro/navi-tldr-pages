@@ -3,4 +3,14 @@
 
 % aa-decode, linux
 
+# Decode a hex string
+aa-decode <hexstring>
 
+# Decode a log file
+sudo aa-decode <logfile>
+
+# Decode logs from `stdin` (e.g., redirected file)
+sudo aa-decode - < <logfile>
+
+# Display help
+aa-decode <__h___help_>

@@ -3,4 +3,23 @@
 
 % jj-interdiff, common
 
+# Compare changes from a revision to the working copy
+jj interdiff <__f___from_> <revset>
 
+# Compare changes from a revision to another revision
+jj interdiff <__f___from_> <from_revset> <__t___to_> <to_revset>
+
+# Compare changes in specific paths only
+jj interdiff <__f___from_> <from_revset> <__t___to_> <to_revset> <filesets>
+
+# Show a summary of changes
+jj interdiff <__f___from_> <revset> <__s___summary_>
+
+# Show diff statistics
+jj interdiff <__f___from_> <revset> --stat
+
+# Show a Git-format diff
+jj interdiff <__f___from_> <revset> --git
+
+# Show a word-level diff with changes indicated only by color
+jj interdiff <__f___from_> <revset> --color-words

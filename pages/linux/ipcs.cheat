@@ -3,4 +3,26 @@
 
 % ipcs, linux
 
+# Show information about all active IPC facilities
+ipcs
 
+# Show information about active shared [m]emory segments, message [q]ueues or [s]empahore sets
+ipcs <__shmems___queues___semaphores>
+
+# Show full details on the resource with a specific ID
+ipcs <__shmems___queues___semaphores> <__i___id_> <resource_id>
+
+# Show limits in [b]ytes or in a human-readable format
+ipcs <__l___limits_> <__bytes___human>
+
+# Show summary about current usage
+ipcs <__u___summary_>
+
+# Show creator's and owner's UIDs and PIDs for all IPC facilities
+ipcs <__c___creator_>
+
+# Show the PID of the last operators for all IPC facilities
+ipcs <__p___pid_>
+
+# Show last access times for all IPC facilities
+ipcs <__t___time_>

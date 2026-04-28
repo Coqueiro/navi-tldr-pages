@@ -4,22 +4,22 @@
 % npm-view, common
 
 # View information about the latest version of a package
-npm {{[v|view]}} <package>
+npm <_v_view_> <package>
 
 # View information about a specific version of a package
-npm {{[v|view]}} <package>@<version>
+npm <_v_view_> <package>@<version>
 
 # View all available versions of a package
-npm {{[v|view]}} <package> versions
+npm <_v_view_> <package> versions
 
 # View the description of a package
-npm {{[v|view]}} <package> description
+npm <_v_view_> <package> description
 
 # View the dependencies of the latest version of a package
-npm {{[v|view]}} <package> dependencies
+npm <_v_view_> <package> dependencies
 
 # View the repository URL of a package
-npm {{[v|view]}} <package> repository
+npm <_v_view_> <package> repository
 
 # View the maintainers of a package
-npm {{[v|view]}} <package> maintainers
+npm <_v_view_> <package> maintainers

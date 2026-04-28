@@ -3,4 +3,17 @@
 
 % toolbox-create, linux
 
+# Create a Toolbx container for a specific distribution
+toolbox create <__d___distro_> <distribution>
 
+# Create a Toolbx container for a specific release of the current distribution
+toolbox create <__r___release_> <release>
+
+# Create a Toolbx container with a custom image
+toolbox create <__i___image_> <name>
+
+# Create a Toolbx container from a custom Fedora image
+toolbox create <__i___image_> <quay_io_fedora_fedora_tag>
+
+# Create a Toolbx container using the default image for a specific Fedora release
+toolbox create <__d___distro_> <fedora> <__r___release_> f<version>

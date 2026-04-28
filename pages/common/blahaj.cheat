@@ -3,4 +3,20 @@
 
 % blahaj, common
 
+# Get a list of possible flags/colors
+blahaj --flags
 
+# Print a shark (blahaj) with default trans colors
+blahaj <__s___shark_>
+
+# Print a random flag with a 2x size multiplier
+blahaj <__f___flag_> <__r___random_> <__m___multiplier_> 2
+
+# Print the result of a text-producing command with lesbian colors
+{{cowsay "Hello, world"}} | blahaj <__c___colors_> lesbian
+
+# Print text and color by individual character
+echo "{{Hello, world}}" | blahaj <__i___individual_>
+
+# Print contents of a text document, coloring the background instead of text, by word
+blahaj <__w___words_> <__b___background_> <path_to_file>

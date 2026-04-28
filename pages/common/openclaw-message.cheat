@@ -3,4 +3,11 @@
 
 % openclaw-message, common
 
+# Send a message to a phone number (WhatsApp)
+openclaw message send <__t___target_> <_1234567890> <__m___message_> "<Hello>"
 
+# Send a message to a specific channel
+openclaw message send --channel <telegram> <__t___target_> <user_id> <__m___message_> "<Hello>"
+
+# Display help
+openclaw message <__h___help_>

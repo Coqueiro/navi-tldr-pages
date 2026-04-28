@@ -3,4 +3,14 @@
 
 % az-network, common
 
+# List network resources in a region that are used against a subscription quota
+az network list-usages
 
+# List all virtual networks in a subscription
+az network vnet list
+
+# Create a virtual network
+az network vnet create --address-prefixes <10_0_0_0_16> <__n___name_> <vnet> <__g___resource_group_> <group_name> --subnet-name <subnet> --subnet-prefixes <10_0_0_0_24>
+
+# Enable accelerated networking for a network interface card
+az network nic update --accelerated-networking true <__n___name_> <nic> <__g___resource_group_> <resource_group>

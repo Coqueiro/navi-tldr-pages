@@ -3,4 +3,17 @@
 
 % makoctl-dismiss, linux
 
+# Dismiss the most recent notification
+makoctl dismiss
 
+# Dismiss a specific notification by ID
+makoctl dismiss -n <notification_id>
+
+# Dismiss all notifications
+makoctl dismiss <__a___all_>
+
+# Dismiss all notifications in the first group
+makoctl dismiss <__g___group_>
+
+# Dismiss without adding to history
+makoctl dismiss <__h___no_history_>

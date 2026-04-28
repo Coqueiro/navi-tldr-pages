@@ -16,13 +16,13 @@ binary
 prompt off
 
 # [Interactive] Download multiple files (glob expression)
-mget {{*.png}}
+mget <__png>
 
 # [Interactive] Upload multiple files (glob expression)
-mput {{*.zip}}
+mput <__zip>
 
 # [Interactive] Delete multiple files on the remote server
-mdelete {{*.txt}}
+mdelete <__txt>
 
 # [Interactive] Rename a file on the remote server
 rename <original_filename> <new_filename>

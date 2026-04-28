@@ -3,4 +3,20 @@
 
 % npm-rebuild, common
 
+# Rebuild a specific package
+npm <_rb_rebuild_> <package>
 
+# Rebuild all installed packages
+npm <_rb_rebuild_>
+
+# Rebuild with verbose output
+npm <_rb_rebuild_> --verbose
+
+# Rebuild a package in a specific directory
+npm <_rb_rebuild_> --prefix <path_to_dir> <package>
+
+# Rebuild without using the npm cache
+npm <_rb_rebuild_> --no-cache
+
+# Rebuild in global mode
+npm <_rb_rebuild_> <__g___global_>

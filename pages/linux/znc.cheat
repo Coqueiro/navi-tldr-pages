@@ -3,4 +3,14 @@
 
 % znc, linux
 
+# Run the initial setup
+znc <__c___makeconf_>
 
+# Start the IRC bouncer daemon
+znc
+
+# Setup `znc` for systemd
+sudo <__u___user_> znc znc <__c___makeconf_> <__d___datadir_> /var/lib/znc
+
+# Enable `znc` to start on boot and start it now
+systemctl enable znc --now

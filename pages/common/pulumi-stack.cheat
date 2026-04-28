@@ -3,4 +3,26 @@
 
 % pulumi-stack, common
 
+# Create a new stack
+pulumi stack init <stack_name>
 
+# Show the stack state along with resource URNs
+pulumi stack <__u___show_urns_>
+
+# List stacks in the current project
+pulumi stack ls
+
+# List stacks across all projects
+pulumi stack ls <__a___all_>
+
+# Select an active stack
+pulumi stack select <stack_name>
+
+# Delete a stack
+pulumi stack rm <stack_name>
+
+# Show stack outputs, including secrets, in plaintext
+pulumi stack output --show-secrets
+
+# Export the stack state to a JSON file
+pulumi stack export --file <path_to_file_json>

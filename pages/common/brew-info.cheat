@@ -3,4 +3,20 @@
 
 % brew-info, common
 
+# Display statistics for Homebrew installation
+brew info
 
+# Display more information about a formula or cask
+brew info <formula_cask>
+
+# Display verbose information about a formula or cask
+brew info <__v___verbose_> <formula_cask>
+
+# Display information about a formula or cask in JSON format
+brew info --json <formula_cask>
+
+# Print JSON of currently installed formulae
+brew info --json --installed
+
+# Display help
+brew info <__h___help_>

@@ -3,4 +3,17 @@
 
 % nix-instantiate, common
 
+# Instantiate a store derivation from a Nix file
+nix-instantiate <path_to_file_nix>
 
+# Evaluate an expression
+nix-instantiate --eval <__E___expr_> <expression>
+
+# Evaluate with machine readable output
+nix-instantiate --eval --xml <__E___expr_> <expression>
+
+# Raw output, output of the function must be a string
+nix-instantiate --eval --raw <__E___expr_> <expression>
+
+# Evaluate a Nix expression from a specified file
+nix-instantiate --eval <path_to_file_nix>

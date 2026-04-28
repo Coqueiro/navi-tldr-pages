@@ -3,4 +3,26 @@
 
 % komac, common
 
+# Create a new package from scratch
+komac new <Package_Identifier> <__v___version_> <1_2_3> <__u___urls_> <https___example_com_app_exe>
 
+# Update an existing package with a new version
+komac update <Package_Identifier> <__v___version_> <1_2_3> <__u___urls_> <https___example_com_app_exe>
+
+# Update a package with multiple URLs and automatically submit
+komac update <Package_Identifier> <__v___version_> <1_2_3> <__u___urls_> {{https://example.com/app.exe https://example.com/app.msi ...}} <__s___submit_>
+
+# Remove a version from winget-pkgs
+komac remove <Package_Identifier> <__v___version_> <1_2_3>
+
+# List all versions for a package
+komac <_list_list_versions_> <Package_Identifier>
+
+# Sync your fork of winget-pkgs with the upstream repository
+komac <_sync_sync_fork_>
+
+# Update the stored GitHub token
+komac token <_add_update_> <__t___token_> <your_github_token>
+
+# Generate shell autocompletion script
+komac <_complete_autocomplete_> <bash_elvish_fish_powershell_zsh>

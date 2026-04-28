@@ -3,4 +3,23 @@
 
 % 2to3, common
 
+# Display the changes that would be performed without performing them (dry-run)
+2to3 <path_to_file_py>
 
+# Convert a Python 2 file to Python 3
+2to3 <__w___write_> <path_to_file_py>
+
+# Convert specific Python 2 language features to Python 3
+2to3 <__w___write_> <path_to_file_py> <__f___fix_> <raw_input> <__f___fix_> <print>
+
+# Convert all Python 2 language features except the specified ones to Python 3
+2to3 <__w___write_> <path_to_file_py> <__x___nofix_> <has_key> <__x___nofix_> <isinstance>
+
+# List all available language features that can be converted from Python 2 to Python 3
+2to3 <__l___list_fixes_>
+
+# Convert all Python 2 files in a directory to Python 3
+2to3 <__o___output_dir_> <path_to_python3_directory> <__W___write_unchanged_files_> <__n___nobackups_> <path_to_python2_directory>
+
+# Run 2to3 with multiple threads
+2to3 <__j___processes_> <4> <__o___output_dir_> <path_to_python3_directory> <__w___write_> <__n___nobackups_> --no-diffs <path_to_python2_directory>

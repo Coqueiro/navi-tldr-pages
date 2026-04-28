@@ -3,4 +3,14 @@
 
 % pw-mon, linux
 
+# Monitor the default PipeWire instance
+pw-mon
 
+# Monitor a specific remote instance
+pw-mon <__r___remote_> <remote_name>
+
+# Monitor the default instance specifying a color configuration
+pw-mon <__N___color_> <never_always_auto>
+
+# Display help
+pw-mon <__h___help_>

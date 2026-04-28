@@ -3,4 +3,26 @@
 
 % git, common
 
+# Create an empty Git repository
+git init
 
+# Clone a remote Git repository from the internet
+git clone <https___example_com_repo_git>
+
+# View the status of the local repository
+git status
+
+# Stage all changes for a commit
+git add <__A___all_>
+
+# Commit changes to version history
+git commit <__m___message_> <message_text>
+
+# Push local commits to a remote repository
+git push
+
+# Pull any changes made to a remote
+git pull
+
+# Reset everything the way it was in the latest commit
+git reset --hard; git clean <__f___force_>

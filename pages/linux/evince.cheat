@@ -3,4 +3,17 @@
 
 % evince, linux
 
+# Open a PDF file
+evince <path_to_file_pdf>
 
+# Open multiple documents
+evince {{file1.pdf file2.pdf ...}}
+
+# Open in fullscreen mode
+evince <__f___fullscreen_> <path_to_file_pdf>
+
+# Open in presentation mode
+evince <__s___presentation_> <path_to_file_pdf>
+
+# Open a specific page number
+evince <__i___page_index_> <5> <path_to_file_pdf>

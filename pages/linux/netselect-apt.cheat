@@ -3,4 +3,14 @@
 
 % netselect-apt, linux
 
+# Create `sources.list` using the lowest latency server
+sudo netselect-apt
 
+# Specify Debian branch, stable is used by default
+sudo netselect-apt <testing>
+
+# Include non-free section
+sudo netselect-apt <__n___non_free_>
+
+# Specify a country for the mirror list lookup
+sudo netselect-apt <__c___country_> <India>

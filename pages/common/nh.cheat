@@ -3,4 +3,20 @@
 
 % nh, common
 
+# Build and switch to a specified NixOS flake configuration
+nh os switch <path_to_flake>
 
+# Build and switch to a specified Home Manager flake configuration
+nh home switch <path_to_flake>
+
+# Build and switch to a nix-darwin flake configuration
+nh darwin switch <path_to_flake> <__H___hostname_> <host>
+
+# Collect all garbage and gcroots from the Nix store
+nh clean all <__a___ask_>
+
+# Search for a package in Nixpkgs
+nh search <name>
+
+# Generate shell completions for a specified shell
+nh completions <shell>

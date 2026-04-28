@@ -3,4 +3,11 @@
 
 % lvmdiskscan, linux
 
+# Scan all devices
+lvmdiskscan
 
+# Show only physical volumes (PVs)
+lvmdiskscan <__l___lvmpartition_>
+
+# Increase verbosity (repeat for more detail)
+lvmdiskscan <__v___verbose_>

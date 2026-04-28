@@ -3,4 +3,20 @@
 
 % parted, linux
 
+# List partitions on all block devices
+sudo parted <__l___list_>
 
+# Create a new partition table of the specified label-type
+sudo parted <_dev_sdX> mklabel <aix_amiga_bsd_dvh_gpt_loop_mac_msdos_pc98_sun>
+
+# Create a new `gpt` partition table with a 500MiB boot partition and give the rest for the system partition (`--script` skips user intervention prompts)
+sudo parted <_dev_sdX> <__s___script_> mklabel gpt mkpart "<boot_partition_name>" 0% 500MiB mkpart "<system_partition_name>" 500MiB 100%
+
+# Set a partition to have its boot flag turned on
+sudo parted <_dev_sdX> set <1> boot on
+
+# Start interactive mode with the specified disk selected
+sudo parted <_dev_sdX>
+
+# Display help
+parted <__h___help_>

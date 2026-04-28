@@ -3,4 +3,11 @@
 
 % kubectl-replace, common
 
+# Replace the resource using the resource definition file
+kubectl replace <__f___filename_> <path_to_file_yml>
 
+# Replace the resource using the input passed into `stdin`
+kubectl replace <__f___filename_> -
+
+# Force replace, delete, and then re-create the resource
+kubectl replace <__f___filename_> <path_to_file_yml> --force

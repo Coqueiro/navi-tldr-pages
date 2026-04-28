@@ -3,4 +3,11 @@
 
 % salloc, linux
 
+# Start an interactive shell session on a node in the cluster
+salloc
 
+# Execute the specified command synchronously on a node in the cluster
+salloc {{ls --all}}
+
+# Only allocate nodes fulfilling the specified constraints
+salloc <__C___constraint_> <_amd_intel__gpu>

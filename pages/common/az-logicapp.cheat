@@ -3,4 +3,20 @@
 
 % az-logicapp, common
 
+# Create a logic app
+az logicapp create <__n___name_> <name> <__g___resource_group_> <resource_group> <__s___storage_account_> <storage_account>
 
+# Delete a logic app
+az logicapp delete <__n___name_> <name> <__g___resource_group_> <resource_group>
+
+# List logic apps
+az logicapp list <__g___resource_group_> <resource_group>
+
+# Restart a logic app
+az logicapp restart <__n___name_> <name> <__g___resource_group_> <resource_group>
+
+# Start a logic app
+az logicapp start <__n___name_> <name> <__g___resource_group_> <resource_group>
+
+# Stop a logic app
+az logicapp stop <__n___name_> <name> <__g___resource_group_> <resource_group>

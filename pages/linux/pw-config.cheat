@@ -3,4 +3,23 @@
 
 % pw-config, linux
 
+# List all configuration files that will be used
+pw-config
 
+# List all configuration files that will be used by the PipeWire PulseAudio server
+pw-config <__n___name_> pipewire-pulse.conf
+
+# List all configuration sections used by the PipeWire PulseAudio server
+pw-config <__n___name_> pipewire-pulse.conf list
+
+# List the `context.properties` fragments used by the JACK clients
+pw-config <__n___name_> jack.conf list context.properties
+
+# List the merged `context.properties` used by the JACK clients
+pw-config <__n___name_> jack.conf merge context.properties
+
+# List the merged `context.modules` used by the PipeWire server and reformat
+pw-config <__n___name_> pipewire.conf <__r___recurse_> merge context.modules
+
+# Display help
+pw-config <__h___help_>

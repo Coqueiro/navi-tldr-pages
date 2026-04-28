@@ -3,4 +3,20 @@
 
 % frps, common
 
+# Start the service, using the default configuration file (assumed to be `frps.ini` in the current directory)
+frps
 
+# Start the service, using the newer TOML configuration file
+frps <__c___config_> <path_to_frps_toml>
+
+# Start the service, using a specified configuration file
+frps <__c___config_> <path_to_file>
+
+# Check if the configuration file is valid
+frps verify <__c___config_> <path_to_file>
+
+# Print autocompletion setup script for Bash, fish, PowerShell, or Zsh
+frps completion <bash_fish_powershell_zsh>
+
+# Display version
+frps <__v___version_>

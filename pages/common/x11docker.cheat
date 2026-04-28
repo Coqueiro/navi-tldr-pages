@@ -3,4 +3,17 @@
 
 % x11docker, common
 
+# Launch VLC in a container
+x11docker <__p___pulseaudio_> --share <_HOME_Videos> <jess_vlc>
 
+# Launch Xfce in a window
+x11docker <__d___desktop_> <x11docker_xfce>
+
+# Launch GNOME in a window
+x11docker <__d___desktop_> <__g___gpu_> --init=<systemd> <x11docker_gnome>
+
+# Launch KDE Plasma in a window
+x11docker <__d___desktop_> <__g___gpu_> --init=<systemd> <x11docker_kde_plasma>
+
+# Display help
+x11docker --help

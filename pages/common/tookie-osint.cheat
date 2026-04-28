@@ -3,4 +3,20 @@
 
 % tookie-osint, common
 
+# Scan a username
+tookie-osint <__u___user_> <username>
 
+# Scan a username with JSON output and 10 threads
+tookie-osint <__u___user_> <username> <__o___output_> json <__t___threads_> 10
+
+# Scan usernames from a file with CSV output
+tookie-osint <__U___userfile_> <path_to_users_txt> <__o___output_> csv
+
+# Scan a username using a proxy and show all results
+tookie-osint <__u___user_> <username> <__p___proxy_> <http___127_0_0_1_8080> <__a___all_>
+
+# Scan a username with the webscraper enabled
+tookie-osint <__u___user_> <username> <__W___webscraper_>
+
+# Display help
+tookie-osint <__h___help_>

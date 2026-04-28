@@ -3,4 +3,8 @@
 
 % peerindex, common
 
+# List all peers
+peerindex <master6_mrt>
 
+# Display all peers that have provided routing information
+peerindex <__r___only_refs_> <master6_mrt>

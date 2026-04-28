@@ -3,4 +3,26 @@
 
 % fish, common
 
+# Start an interactive shell session
+fish
 
+# Start an interactive shell session without loading startup configs
+fish <__N___no_config_>
+
+# Execute specific commands
+fish <__c___command_> "{{echo 'fish is executed'}}"
+
+# Execute a specific script
+fish <path_to_script_fish>
+
+# Check a specific script for syntax errors
+fish <__N___no_execute_> <path_to_script_fish>
+
+# Execute specific commands from `stdin`
+{{echo "echo 'fish is executed'"}} | fish
+
+# Start an interactive shell session in private mode, where the shell does not access old history or save new history
+fish <__P___private_>
+
+# Define and export an environmental variable that persists across shell restarts (builtin)
+set <__U___universal_> <__x___export_> <variable_name> <variable_value>

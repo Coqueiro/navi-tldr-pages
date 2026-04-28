@@ -3,4 +3,26 @@
 
 % nano, common
 
+# Open specific files, moving to the next file after closing the previous one
+nano {{path/to/file1 path/to/file2 ...}}
 
+# Start the editor without using configuration files
+nano <__I___ignorercfiles_>
+
+# Open a file and position the cursor at a specific line and column
+nano +<line>,<column> <path_to_file>
+
+# Open a file and enable soft wrapping
+nano <__S___softwrap_> <path_to_file>
+
+# Open a file and indent new lines to the previous line's indentation
+nano <__i___autoindent_> <path_to_file>
+
+# Open a file and create a backup file (`path/to/file~`) on save
+nano <__B___backup_> <path_to_file>
+
+# Open a file in restricted mode (i.e. don't read/write to files not specified on the command-line)
+nano <__R___restricted_> <path_to_file>
+
+# Exit nano
+<Ctrl x>

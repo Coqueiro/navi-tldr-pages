@@ -3,4 +3,17 @@
 
 % poetry-remove, common
 
+# Remove one or more packages from the project's dependencies
+poetry remove {{package1 package2 ...}}
 
+# Remove a package from the development dependencies
+poetry remove <package> <__D___dev_>
+
+# Remove a package from a specific dependency group
+poetry remove <package> <__G___group_> <group_name>
+
+# Remove a package without making any changes (dry-run)
+poetry remove <package> --dry-run
+
+# Update the lock file only, without removing the package from the environment
+poetry remove <package> --lock

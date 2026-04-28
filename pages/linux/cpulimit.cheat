@@ -3,4 +3,20 @@
 
 % cpulimit, linux
 
+# Limit an existing process with PID 1234 to only use 25% of the CPU
+cpulimit <__p___pid_> <1234> <__l___limit_> <25_>
 
+# Limit an existing program by its executable name
+cpulimit <__e___exe_> <program> <__l___limit_> <25>
+
+# Launch a given program and limit it to only use 50% of the CPU
+cpulimit <__l___limit_> <50> -- {{program argument1 argument2 ...}}
+
+# Launch a program, limit its CPU usage to 50% and run cpulimit in the background
+cpulimit <__l___limit_> <50> <__b___background_> -- <program>
+
+# Kill its process if the program's CPU usage goes over 50%
+cpulimit <__l___limit_> 50 <__k___kill_> -- <program>
+
+# Throttle both it and its child processes so that none go about 25% CPU
+cpulimit <__l___limit_> <25> <__m___monitor_forks_> -- <program>

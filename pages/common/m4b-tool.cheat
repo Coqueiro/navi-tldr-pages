@@ -3,4 +3,17 @@
 
 % m4b-tool, common
 
+# Create an audiobook with the audio files in the input directory
+m4b-tool merge <path_to_input_directory> <__o___output_file_>=<path_to_merged_m4b>
 
+# Make chapters using the input files' names
+m4b-tool merge <path_to_input_directory> <__o___output_file_>=<path_to_merged_m4b> --use-filenames-as-chapters
+
+# Split an audiobook into separate files by chapters
+m4b-tool split <path_to_audiobook_m4b> <__o___output_dir_>=<path_to_output_directory>
+
+# Split an audiobook into MP3 files
+m4b-tool split <path_to_audiobook_m4b> --audio-format <mp3> <__o___output_dir_>=<path_to_output_directory>
+
+# Adjust chapters using silence detection
+m4b-tool chapters <path_to_audiobook_m4b> --adjust-by-silence

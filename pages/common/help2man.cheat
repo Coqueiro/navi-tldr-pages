@@ -3,4 +3,17 @@
 
 % help2man, common
 
+# Generate a man page for an executable
+help2man <executable>
 
+# Specify the "name" paragraph in the man page
+help2man <executable> <__n___name_> <name>
+
+# Specify the section for the man page (defaults to 1)
+help2man <executable> <__s___section_> <section>
+
+# Output to a file instead of `stdout`
+help2man <executable> <__o___output_> <path_to_file>
+
+# Display help
+help2man --help

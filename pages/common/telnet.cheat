@@ -3,4 +3,20 @@
 
 % telnet, common
 
+# Telnet to the default port of a host
+telnet <host>
 
+# Telnet to a specific port of a host
+telnet <ip_address> <port>
+
+# [Interactive] Exit a telnet session
+quit
+
+# Emit the default escape character combination for terminating the session
+<Ctrl ]>
+
+# Start `telnet` with "x" as the session termination character
+telnet <__e___escape_> <x> <ip_address> <port>
+
+# Telnet to Star Wars animation
+telnet <towel_blinkenlights_nl>

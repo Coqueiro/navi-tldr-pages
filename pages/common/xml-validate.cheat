@@ -3,4 +3,17 @@
 
 % xml-validate, common
 
+# Validate one or more XML documents for well-formedness only
+xml <_val_validate_> {{path/to/input1.xml|URI1 path/to/input2.xml|URI2 ...}}
 
+# Validate one or more XML documents against a Document Type Definition (DTD)
+xml <_val_validate_> <__d___dtd_> <path_to_schema_dtd> {{path/to/input1.xml|URI1 path/to/input2.xml|URI2 ...}}
+
+# Validate one or more XML documents against an XML Schema Definition (XSD)
+xml <_val_validate_> <__s___xsd_> <path_to_schema_xsd> {{path/to/input1.xml|URI1 path/to/input2.xml|URI2 ...}}
+
+# Validate one or more XML documents against a Relax NG schema (RNG)
+xml <_val_validate_> <__r___relaxng_> <path_to_schema_rng> {{path/to/input1.xml|URI1 path/to/input2.xml|URI2 ...}}
+
+# Display help
+xml <_val_validate_> --help

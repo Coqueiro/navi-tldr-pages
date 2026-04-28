@@ -3,4 +3,26 @@
 
 % grub-mount, linux
 
+# Mount a block device or filesystem image to a mount point
+grub-mount <_dev_sdXY> <_mnt>
 
+# Mount an entire disk image's second partition, `-r` specifies the partition number in the image
+grub-mount <__r___root_> <2> <disk_img> <_mnt>
+
+# Mount an encrypted device and prompt for a passphrase
+grub-mount <__C___crypto_> <_dev_sdXY> <_mnt>
+
+# Load a ZFS encryption key from a file
+grub-mount <__K___zfs_key_> /<path_to_zfs_key> <_dev_sdX> <_mnt>
+
+# Show debugging output for a matching category
+grub-mount <__d___debug_> <string> <image> <_mnt>
+
+# Enable verbose output
+grub-mount <__v___verbose_> <image> <_mnt>
+
+# Display help
+grub-mount <______help_>
+
+# Display version
+grub-mount --version

@@ -7,16 +7,16 @@
 qm list
 
 # Create a virtual machine with a 4 GB SCSI disk on the `local-lvm` storage and an ID of 100 using an ISO file uploaded on the local storage
-qm {{[cr|create]}} <100> --scsi0 <local_lvm_4> --net0 <e1000> --cdrom <local_iso_proxmox_mailgateway_2_1_iso>
+qm <_cr_create_> <100> --scsi0 <local_lvm_4> --net0 <e1000> --cdrom <local_iso_proxmox_mailgateway_2_1_iso>
 
 # Show the configuration of a virtual machine, specifying its ID
-qm {{[co|config]}} <100>
+qm <_co_config_> <100>
 
 # Start a specific virtual machine
 qm start <100>
 
 # Send a shutdown request, then wait until the virtual machine is stopped
-qm {{[shu|shutdown]}} <100> && qm {{[w|wait]}} <100>
+qm <_shu_shutdown_> <100> && qm <_w_wait_> <100>
 
 # Destroy a virtual machine and remove all related resources
-qm {{[des|destroy]}} <100> --purge
+qm <_des_destroy_> <100> --purge

@@ -4,4 +4,4 @@
 % qm-vncproxy, linux
 
 # Proxy a specific virtual machine
-qm {{[v|vncproxy]}} <100>
+qm <_v_vncproxy_> <100>

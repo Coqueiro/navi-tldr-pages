@@ -3,4 +3,14 @@
 
 % jc.json, common
 
+# Convert command output to JSON via pipe
+<ifconfig> | jc <__ifconfig>
 
+# Convert command output to JSON via magic syntax
+jc <ifconfig>
+
+# Output pretty JSON via pipe
+<ifconfig> | jc <__ifconfig> <__p___pretty_>
+
+# Output pretty JSON via magic syntax
+jc <__p___pretty_> <ifconfig>

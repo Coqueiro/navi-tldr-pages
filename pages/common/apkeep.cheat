@@ -3,4 +3,11 @@
 
 % apkeep, common
 
+# Download an APK file to the specified directory
+apkeep <__a___app_> <com_example_application> <path_to_directory>
 
+# List all available versions for download
+apkeep <__a___app_> <com_example_application> <__l___list_versions_> <path_to_directory>
+
+# Specify a store to download from
+apkeep <__a___app_> <com_example_application> <__d___download_source_> <apk_pure_google_play_f_droid_huawei_app_gallery> <path_to_directory>

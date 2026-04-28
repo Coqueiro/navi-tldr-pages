@@ -4,7 +4,7 @@
 % btrfs-version, linux
 
 # Display help
-btrfs {{[v|version]}} --help
+btrfs <_v_version_> --help
 
 # Display version
-btrfs {{[v|version]}}
+btrfs <_v_version_>

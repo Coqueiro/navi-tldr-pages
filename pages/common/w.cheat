@@ -3,4 +3,14 @@
 
 % w, common
 
+# Display information about all users who are currently logged in
+w
 
+# Display information about a specific user
+w <username>
+
+# Display logged-in user information without a header
+w <__h___no_header_>
+
+# Display information without including the login, JCPU, and PCPU columns
+w <__s___short_>

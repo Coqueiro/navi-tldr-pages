@@ -3,4 +3,8 @@
 
 % readlink, common
 
+# Get the actual file to which the symlink points
+readlink <path_to_file>
 
+# Get the absolute path to a file
+readlink <__f___canonicalize_> <path_to_file>

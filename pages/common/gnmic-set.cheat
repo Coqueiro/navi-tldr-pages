@@ -3,4 +3,14 @@
 
 % gnmic-set, common
 
+# Update the value of a path
+gnmic <__a___address_> <ip_port> set --update-path <path_to_directory> --update-value <value>
 
+# Update the value of a path to match the contents of a JSON file
+gnmic <__a___address_> <ip_port> set --update-path <path_to_directory> --update-file <path_to_file>
+
+# Replace the value of a path to match the contents of a JSON file
+gnmic <__a___address_> <ip_port> set --replace-path <path_to_directory> --replace-file <path_to_file>
+
+# Delete the node at a given path
+gnmic <__a___address_> <ip_port> set --delete <path_to_directory>

@@ -3,4 +3,26 @@
 
 % smbserver.py, common
 
+# Set up a basic SMB share
+smbserver.py <sharename> <path_to_share>
 
+# Set up a share with a custom comment
+smbserver.py -comment <my_share> <sharename> <path_to_share>
+
+# Set up a share with username and password authentication
+smbserver.py -username <username> -password <password> <sharename> <path_to_share>
+
+# Set up a share with NTLM hash authentication
+smbserver.py -hashes <LMHASH>:<NTHASH> <sharename> <path_to_share>
+
+# Set up a share on a specific interface
+smbserver.py <__ip___interface_address_> <interface_ip_address> <sharename> <path_to_share>
+
+# Set up a share on a non-standard SMB port
+smbserver.py -port <port> <sharename> <path_to_share>
+
+# Set up a share with SMB2 support
+smbserver.py -smb2support <sharename> <path_to_share>
+
+# Set up a share and log commands to an output file
+smbserver.py -outputfile <path_to_output_file> <sharename> <path_to_share>

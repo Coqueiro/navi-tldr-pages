@@ -3,4 +3,8 @@
 
 % diff3, linux
 
+# Compare files
+diff3 <path_to_file1> <path_to_file2> <path_to_file3>
 
+# Show all changes, outlining conflicts
+diff3 <__A___show_all_> <path_to_file1> <path_to_file2> <path_to_file3>

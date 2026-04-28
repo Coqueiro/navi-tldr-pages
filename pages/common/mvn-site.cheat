@@ -3,4 +3,17 @@
 
 % mvn-site, common
 
+# Generate a project site using the site plugin
+mvn site
 
+# Generate a site for a specific Maven project (multi-module build)
+mvn site <__pl___projects_> <module_name>
+
+# Clean previous site output before generating a new one
+mvn clean site
+
+# Skip tests while generating the site
+mvn site <__D___define_> skipTests
+
+# Generate and deploy the site to the remote server
+mvn site-deploy

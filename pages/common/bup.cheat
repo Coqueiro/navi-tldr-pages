@@ -3,4 +3,17 @@
 
 % bup, common
 
+# Initialize a backup repository in a given local directory
+bup <__d___bup_dir_> <path_to_repository> init
 
+# Prepare a given directory before taking a backup
+bup <__d___bup_dir_> <path_to_repository> index <path_to_directory>
+
+# Backup a directory to the repository specifying its name
+bup <__d___bup_dir_> <path_to_repository> save <__n___name_> <backup_name> <path_to_directory>
+
+# Show the backup snapshots currently stored in the repository
+bup <__d___bup_dir_> <path_to_repository> ls
+
+# Restore a specific backup snapshot to a target directory
+bup <__d___bup_dir_> <path_to_repository> restore <__C___outdir_> <path_to_target_directory> <backup_name>

@@ -3,4 +3,20 @@
 
 % semanage-fcontext, linux
 
+# List all file labelling rules
+sudo semanage fcontext <__l___list_>
 
+# List all user-defined file labelling rules without headings
+sudo semanage fcontext {{[-lCn|--list --locallist --noheading]}}
+
+# Add a user-defined rule that labels any path which matches a PCRE `regex`
+sudo semanage fcontext <__a___add_> <__t___type_> <samba_share_t> '<_mnt_share______>'
+
+# Add a user-defined rule that creates a labeling equivalence between two subpaths
+sudo semanage fcontext <__a___add_> <__e___equal_> /<path_to_ref> /<path_to_target>
+
+# Delete a user-defined rule using its PCRE `regex`
+sudo semanage fcontext <__d___delete_> '<_mnt_share______>'
+
+# Relabel a directory recursively by applying the new rules
+restorecon -Rv <path_to_directory>

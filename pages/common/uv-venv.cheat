@@ -3,4 +3,20 @@
 
 % uv-venv, common
 
+# Create a virtual environment in the default location (`.venv`)
+uv venv
 
+# Create a virtual environment at a specific path
+uv venv <path_to_venv>
+
+# Create using a specific Python version
+uv venv <__p___python_> <3_12>
+
+# Include seed packages such as `pip` when creating the virtual environment
+uv venv --seed
+
+# Create with a custom prompt prefix
+uv venv --prompt <my_project>
+
+# Create and allow overwriting existing environment
+uv venv --allow-existing <venv_name>

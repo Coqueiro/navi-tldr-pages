@@ -3,4 +3,14 @@
 
 % stress-ng, common
 
+# Stress all CPUs with 4 workers for 60 seconds
+stress-ng <__c___cpu_> 4 <__t___timeout_> 60s
 
+# Stress virtual memory with 2 workers for 30 seconds
+stress-ng <__m___vm_> 2 --vm-bytes <512M> <__t___timeout_> 30s
+
+# Stress the I/O subsystem with 3 workers for 45 seconds
+stress-ng <__i___io_> 3 <__t___timeout_> 45s
+
+# Run all stress tests for 2 minutes
+stress-ng <__a___all_> <1> <__t___timeout_> 2m

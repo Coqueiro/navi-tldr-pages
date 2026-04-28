@@ -3,4 +3,17 @@
 
 % az-disk, common
 
+# Create a managed disk
+az disk create <__g___resource_group_> <resource_group> <__n___name_> <disk_name> <__z___size_gb_> <size_in_gb>
 
+# List managed disks in a resource group
+az disk list <__g___resource_group_> <resource_group>
+
+# Delete a managed disk
+az disk delete <__g___resource_group_> <resource_group> <__n___name_> <disk_name>
+
+# Grant read or write access to a managed disk (for export)
+az disk grant-access <__g___resource_group_> <resource_group> <__n___name_> <disk_name> <___access___access_level_> <Read_Write> --duration-in-seconds <seconds>
+
+# Update disk size
+az disk update <__g___resource_group_> <resource_group> <__n___name_> <disk_name> <__z___size_gb_> <new_size_in_gb>

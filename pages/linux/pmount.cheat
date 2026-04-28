@@ -3,4 +3,17 @@
 
 % pmount, linux
 
+# Mount a device below `/media/` (using device as mount point)
+pmount <_dev_to_block_device>
 
+# Mount a device with a specific filesystem type to `/media/label`
+pmount <__t___type_> <filesystem> <_dev_to_block_device> <label>
+
+# Mount a CD-ROM (filesystem type ISO9660) in read-only mode
+pmount <__t___type_> iso9660 <__r___read_only_> <_dev_cdrom>
+
+# Mount an NTFS-formatted disk, forcing read-write access
+pmount <__t___type_> ntfs <__w___read_write_> <_dev_sdX>
+
+# Display all mounted removable devices
+pmount

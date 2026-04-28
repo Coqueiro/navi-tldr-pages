@@ -3,4 +3,17 @@
 
 % pg_resetwal, common
 
+# Reset the WAL and control information for a specific data directory
+pg_resetwal <__D___pgdata_> <path_to_data>
 
+# Perform a dry run
+pg_resetwal <__D___pgdata_> <path_to_data> <__n___dry_run_>
+
+# Force the WAL and control information reset
+pg_resetwal <__D___pgdata_> <path_to_data> <__f___force_>
+
+# Display help
+pg_resetwal <______help_>
+
+# Display version
+pg_resetwal <__V___version_>

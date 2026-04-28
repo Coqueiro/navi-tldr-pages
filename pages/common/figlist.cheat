@@ -3,4 +3,14 @@
 
 % figlist, common
 
+# List all available fonts using the default font directory
+figlist
 
+# List fonts from a custom directory
+figlist -d <path_to_directory>
+
+# Search for a font by keyword
+figlist -d <path_to_directory> | grep <keyword>
+
+# Count the total number of available fonts in a specified directory
+figlist -d <path_to_directory> | wc <__l___lines_>

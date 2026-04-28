@@ -7,7 +7,7 @@
 unflatten {{path/to/input1.gv path/to/input2.gv ...}} > <path_to_output_gv>
 
 # Use `unflatten` as a preprocessor for `dot` layout to improve aspect ratio
-unflatten <path_to_input_gv> | dot -T <___> <path_to_output_png>
+unflatten <path_to_input_gv> | dot -T <png> <path_to_output_png>
 
 # Display help
 unflatten -?

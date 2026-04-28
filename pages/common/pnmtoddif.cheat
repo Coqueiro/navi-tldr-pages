@@ -7,4 +7,4 @@
 pnmtoddif <path_to_image_pnm> > <path_to_image_ddif>
 
 # Explicitly specify the horizontal and vertical resolution of the output image
-pnmtoddif {{[-r|-resolution]}} <horizontal_dpi> <vertical_dpi> <path_to_image_pnm> > <path_to_image_ddif>
+pnmtoddif <__r__resolution_> <horizontal_dpi> <vertical_dpi> <path_to_image_pnm> > <path_to_image_ddif>

@@ -3,4 +3,17 @@
 
 % az-devops, common
 
+# Set the Personal Access Token (PAT) to login to a particular organization
+az devops login <___org___organization_> <organization_url>
 
+# Open a project in the browser
+az devops project show <__p___project_> <project_name> --open
+
+# List members of a specific team working on a particular project
+az devops team list-member <__p___project_> <project_name> --team <team_name>
+
+# Check the Azure DevOps CLI current configuration
+az devops configure <__l___list_>
+
+# Configure the Azure DevOps CLI behavior by setting a default project and a default organization
+az devops configure <__d___defaults_> project=<project_name> organization=<organization_url>

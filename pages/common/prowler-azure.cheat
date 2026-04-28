@@ -3,4 +3,26 @@
 
 % prowler-azure, common
 
+# Run the default set of checks on the current Azure account using Azure CLI authentication
+prowler azure --az-cli-auth
 
+# Run checks for specific Azure subscriptions
+prowler azure --az-cli-auth --subscription-ids {{subscription_id1 subscription_id2 ...}}
+
+# Authenticate using a service principal via environment variables
+prowler azure --sp-env-auth
+
+# Authenticate using browser login and specify a tenant ID
+prowler azure --browser-auth --tenant-id "<XXXXXXXX>"
+
+# Authenticate using a managed identity (e.g. for Azure VM)
+prowler azure --managed-identity-auth
+
+# Run checks for selected Azure services
+prowler azure <__s___services_> <defender_iam____>
+
+# Run a specific Azure check
+prowler azure <__c___checks_> <storage_blob_public_access_level_is_disabled>
+
+# Exclude specific checks or services
+prowler azure <__e___excluded_checks_> <storage_blob_public_access_level_is_disabled> --exclude-services <defender_iam____>

@@ -3,4 +3,14 @@
 
 % swapon, linux
 
+# Show swap information
+swapon
 
+# Enable a given swap area
+sudo swapon <path_to_file>
+
+# Enable all swap areas specified in `/etc/fstab` except those with the `noauto` option
+sudo swapon <__a___all_>
+
+# Enable a swap partition by its label
+sudo swapon -L <label>

@@ -3,4 +3,20 @@
 
 % ethtool, linux
 
+# Display the current settings for an interface
+ethtool <eth0>
 
+# Display the driver information for an interface
+ethtool <__i___driver_> <eth0>
+
+# Display all supported features for an interface
+ethtool <__k___show_features_> <eth0>
+
+# Display the network usage statistics for an interface
+ethtool <__S___statistics_> <eth0>
+
+# Blink one or more LEDs on an interface for 10 seconds
+ethtool <__p___identify_> <eth0> <10>
+
+# Set the link speed, duplex mode, and parameter auto-negotiation for a given interface
+ethtool <__s___change_> <eth0> speed <10_100_1000> duplex <half_full> autoneg <on_off>

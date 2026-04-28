@@ -3,4 +3,14 @@
 
 % gh-ssh-key, common
 
+# List SSH keys for the currently authenticated user
+gh ssh-key <_ls_list_>
 
+# Add an SSH key to the currently authenticated user's account
+gh ssh-key add <path_to_key_pub>
+
+# Add an SSH key to the currently authenticated user's account with a specific title
+gh ssh-key add <__t___title_> <title> <path_to_key_pub>
+
+# Display help
+gh ssh-key

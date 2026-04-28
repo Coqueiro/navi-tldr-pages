@@ -10,4 +10,4 @@ ppmtobmp <path_to_file_ppm> > <path_to_file_bmp>
 ppmtobmp -<windows_os2> <path_to_file_ppm> > <path_to_file_bmp>
 
 # Use a specific number of bits for each pixel
-ppmtobmp {{[-b|-bbp]}} <1_4_8_24> <path_to_file_ppm> > <path_to_file_bmp>
+ppmtobmp <__b__bbp_> <1_4_8_24> <path_to_file_ppm> > <path_to_file_bmp>

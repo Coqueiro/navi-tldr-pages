@@ -3,4 +3,17 @@
 
 % strigger, linux
 
+# Register a new trigger. Execute the specified program when the specified event occurs
+strigger --set --<primary_database_failure_primary_slurmdbd_failure_primary_slurmctld_acct_buffer_full_primary_slurmctld_failure____> <__p___program_> <path_to_executable>
 
+# Execute the specified program when the specified job terminated
+strigger --set <__j___jobid_> <job_id> <__f___fini_> <__p___program_> "<path_to_executable> {{argument1 argument2 ...}}"
+
+# View active triggers
+strigger --get
+
+# View active triggers regarding the specified job
+strigger --get <__j___jobid_> <job_id>
+
+# Clear the specified trigger
+strigger --clear <trigger_id>

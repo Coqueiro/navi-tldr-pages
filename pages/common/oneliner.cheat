@@ -3,4 +3,20 @@
 
 % oneliner, common
 
+# Generate a shell command from plain English
+oneliner "{{find all jpg files larger than 10MB}}"
 
+# Explain what a command does
+oneliner <__e___explain_> "{{delete node_modules recursively}}"
+
+# Copy a generated command to the clipboard
+oneliner <__c___clipboard_> "{{compress all pdfs}}"
+
+# Show a detailed, educational breakdown of a command
+oneliner <__b___breakdown_> "{{list all active network connections}}"
+
+# Execute a generated command (use with caution)
+oneliner <__r___run_> "{{list files larger than 1GB}}"
+
+# Interactively confirm before executing a generated command
+oneliner <__i___interactive_> "{{delete temporary files in /tmp}}"

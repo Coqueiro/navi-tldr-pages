@@ -3,4 +3,20 @@
 
 % jj-diffedit, common
 
+# Edit changes in the current revision with a diff editor
+jj diffedit
 
+# Edit changes in a given revision
+jj diffedit <__r___revision_> <revset>
+
+# Edit changes comparing a "from" revision to a "to" revision
+jj diffedit <__f___from_> <from_revset> <__t___to_> <to_revset>
+
+# Edit only specific paths (unmatched paths remain unchanged)
+jj diffedit <filesets>
+
+# Use a specific diff editor
+jj diffedit --tool <name>
+
+# Preserve content instead of diff when rebasing descendants
+jj diffedit --restore-descendants

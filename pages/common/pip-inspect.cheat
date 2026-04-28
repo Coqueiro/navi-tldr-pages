@@ -3,4 +3,20 @@
 
 % pip-inspect, common
 
+# Inspect the current environment
+pip inspect
 
+# Inspect and save output to a file
+pip inspect > <environment_report_json>
+
+# Inspect only locally installed packages (not global)
+pip inspect --local
+
+# Inspect only user-installed packages
+pip inspect --user
+
+# Inspect packages in a specific path
+pip inspect --path <path_to_environment>
+
+# Inspect with verbose output (Note: the `-v` flag can be repeated to increase verbosity)
+pip inspect <__v___verbose_>

@@ -3,4 +3,23 @@
 
 % bzgrep, common
 
+# Search for a pattern within a compressed file
+bzgrep "<search_pattern>" <path_to_file>
 
+# Recursively search files in a bzip2 compressed `.tar` archive for a pattern
+bzgrep <__r___recursive_> "<search_pattern>" <path_to_tar_file>
+
+# Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match
+bzgrep <__context___before_context___after_context> 3 "<search_pattern>" <path_to_file>
+
+# Print file name and line number for each match
+bzgrep <__H___with_filename_> <__n___line_number_> "<search_pattern>" <path_to_file>
+
+# Search for lines matching a pattern, printing only the matched text
+bzgrep <__o___only_matching_> "<search_pattern>" <path_to_file>
+
+# Search `stdin` for lines that do not match a pattern
+cat <path_to_bz_compressed_file> | bzgrep <__v___invert_match_> "<search_pattern>"
+
+# Use extended `regex` (supports `?`, `+`, `{}`, `()`, and `|`), in case-insensitive mode
+bzgrep <__E___extended_regexp_> <__i___ignore_case_> "<search_pattern>" <path_to_file>

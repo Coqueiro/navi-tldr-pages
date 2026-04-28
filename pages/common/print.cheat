@@ -3,4 +3,11 @@
 
 % print, common
 
+# View documentation for the Zsh builtin
+tldr print.zsh
 
+# View documentation for the `print` alias of `run-mailcap --action=print`
+tldr <__p___platform_> linux run-mailcap
+
+# View documentation for printing text files on Windows
+tldr <__p___platform_> windows print.win

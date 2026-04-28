@@ -3,4 +3,26 @@
 
 % inxi, linux
 
+# Print a summary of CPU, memory, hard drive and kernel information
+inxi
 
+# Print a full description of CPU, memory, disk, network, and process information and filter sensitive information
+inxi {{[-ez|--expanded --filter]}}
+
+# Print a summary of CPU information
+inxi <__C___cpu_>
+
+# Print a summary of graphics information
+inxi <__G___graphics_>
+
+# Print a summary of system RAM
+inxi <__m___memory_>
+
+# Print a summary of system audio
+inxi <__A___audio_>
+
+# Print available sensor data
+inxi <__s___sensors_>
+
+# Print information about the distribution's repositories
+inxi <__r___repos_>

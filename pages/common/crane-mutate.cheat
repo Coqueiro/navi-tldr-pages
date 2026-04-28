@@ -3,4 +3,26 @@
 
 % crane-mutate, common
 
+# New annotations to set (default [])
+crane mutate <__a___annotation_>/<__l___label_> <annotation_label>
 
+# Path to tarball/command/entrypoint/environment variable/exposed-ports to append to image
+crane mutate <__append>/<__cmd>/<__entrypoint>/<__e___env_>/<__exposed_ports> {{var1 var2 ...}}
+
+# Path to new tarball of resulting image
+crane mutate <__o___output_> <path_to_tarball>
+
+# Repository in the form `os/arch/variant:osversion,platform` to push mutated image
+crane mutate --set-platform <platform_name>
+
+# New tag reference to apply to mutated image
+crane mutate <__t___tag_> <tag_name>
+
+# New user to set
+crane mutate <__u___user_> <username>
+
+# New working dir to set
+crane mutate <__w___workdir_> <path_to_work_directory>
+
+# Display help
+crane mutate <__h___help_>

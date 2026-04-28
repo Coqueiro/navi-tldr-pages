@@ -3,4 +3,23 @@
 
 % dust, common
 
+# Display information for the current directory
+dust
 
+# Display information about one or more directories
+dust {{path/to/directory1 path/to/directory2 ...}}
+
+# Display 30 directories (defaults to 21)
+dust <__n___number_of_lines_> 30
+
+# Display information for the current directory, up to 3 levels deep
+dust <__d___depth_> 3
+
+# Display the largest directories at the top in descending order
+dust <__r___reverse_>
+
+# Ignore a file or directory
+dust <__X___ignore_directory_> <path_to_file_or_directory>
+
+# Do not display percent bars and percentages
+dust <__b___no_percent_bars_>

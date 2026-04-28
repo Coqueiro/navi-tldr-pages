@@ -3,4 +3,23 @@
 
 % broot, linux
 
+# Install or reinstall the `br` shell function
+broot --install
 
+# Start and navigate the current directory tree interactively
+broot
+
+# Start displaying the size of files and directories
+broot <__s___sizes_>
+
+# Start sorting by size, showing ignored and hidden files
+broot <__w___whale_spotting_>
+
+# Start displaying permissions
+broot <__p___permissions_>
+
+# Start displaying directories only
+broot <__f___only_folders_>
+
+# Start displaying hidden files and directories
+broot <__h___hidden_>

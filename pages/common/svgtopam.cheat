@@ -7,4 +7,4 @@
 svgtopam <path_to_file_svg> > <path_to_output_pam>
 
 # Emit textual output describing the input image
-svgtopam {{[-t|-trace]}} <path_to_file_svg>
+svgtopam <__t__trace_> <path_to_file_svg>

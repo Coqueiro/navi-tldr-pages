@@ -3,4 +3,23 @@
 
 % useradd, linux
 
+# Create a new user
+sudo useradd <username>
 
+# Create a new user with the specified user ID
+sudo useradd <__u___uid_> <id> <username>
+
+# Create a new user with the specified shell
+sudo useradd <__s___shell_> <path_to_shell> <username>
+
+# Create a new user belonging to additional groups (mind the lack of whitespace)
+sudo useradd <__G___groups_> <group1_group2____> <username>
+
+# Create a new user with the default home directory
+sudo useradd <__m___create_home_> <username>
+
+# Create a new user with the home directory filled by template directory files
+sudo useradd <__k___skel_> <path_to_template_directory> <__m___create_home_> <username>
+
+# Create a new system user without the home directory
+sudo useradd <__r___system_> <username>

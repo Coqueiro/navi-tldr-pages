@@ -4,25 +4,25 @@
 % ip-route, linux
 
 # Display the `main` routing table
-ip {{[r|route]}}
+ip <_r_route_>
 
 # Add a default route using gateway forwarding
-sudo ip {{[r|route]}} {{[a|add]}} default via <gateway_ip>
+sudo ip <_r_route_> <_a_add_> default via <gateway_ip>
 
 # Add a default route using `ethX`
-sudo ip {{[r|route]}} {{[a|add]}} default dev <ethX>
+sudo ip <_r_route_> <_a_add_> default dev <ethX>
 
 # Add a static route
-sudo ip {{[r|route]}} {{[a|add]}} <destination_ip> via <gateway_ip> dev <ethX>
+sudo ip <_r_route_> <_a_add_> <destination_ip> via <gateway_ip> dev <ethX>
 
 # Delete a static route
-sudo ip {{[r|route]}} {{[d|delete]}} <destination_ip> dev <ethX>
+sudo ip <_r_route_> <_d_delete_> <destination_ip> dev <ethX>
 
 # Change or replace a static route
-sudo ip {{[r|route]}} <change_replace> <destination_ip> via <gateway_ip> dev <ethX>
+sudo ip <_r_route_> <change_replace> <destination_ip> via <gateway_ip> dev <ethX>
 
 # Show which route will be used by the kernel to reach an IP address
-ip {{[r|route]}} {{[g|get]}} <destination_ip>
+ip <_r_route_> <_g_get_> <destination_ip>
 
 # Display a specific routing table
-ip {{[r|route]}} {{[l|list]}} {{[t|table]}} <table_number>
+ip <_r_route_> <_l_list_> <_t_table_> <table_number>

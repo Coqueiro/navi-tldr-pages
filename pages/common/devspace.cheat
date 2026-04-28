@@ -3,4 +3,26 @@
 
 % devspace, common
 
+# Initialize a new DevSpace project in the current directory
+devspace init
 
+# Start development mode with port forwarding, file synchronization, and terminal access
+devspace dev
+
+# Start development mode in a specific namespace
+devspace dev <__n___namespace_> <namespace>
+
+# Deploy the project to Kubernetes
+devspace deploy
+
+# Deploy the project with a specific profile
+devspace deploy <__p___profile_> <profile_name>
+
+# Build all defined images
+devspace build
+
+# Follow logs from a pod
+devspace logs <__f___follow_>
+
+# Open the DevSpace UI in the browser
+devspace ui

@@ -3,4 +3,14 @@
 
 % systemctl-is-failed, linux
 
+# Check if there are any failed units
+systemctl is-failed
 
+# Check if a unit or multiple units have failed
+systemctl is-failed {{unit1 unit2 ...}}
+
+# Suppress output and return only the exit code
+systemctl is-failed <unit> <__q___quiet_>
+
+# Check if a user unit has failed
+systemctl is-failed <unit> --user

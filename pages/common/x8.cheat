@@ -3,4 +3,26 @@
 
 % x8, common
 
+# Check hidden parameters in a URL query
+x8 <__u___url_> <https___example_com_> <__w___wordlist_> <path_to_wordlist_txt>
 
+# Check parameters with a custom query injection point (`%s`)
+x8 <__u___url_> <https___example_com__something_1_26_s> <__w___wordlist_> <path_to_wordlist_txt>
+
+# Send parameters via POST body with JSON format
+x8 <__u___url_> <https___example_com_> <__X___method_> <POST> <__b___body_> '{{{"x":{%s\}\}}}' <__w___wordlist_> <path_to_wordlist_txt>
+
+# Check parameters with a custom template (`%k` for key, `%v` for value)
+x8 <__u___url_> <https___example_com_> <__P___param_template_> <user__k___v> <__w___wordlist_> <path_to_wordlist_txt>
+
+# Encode parameters for special characters in queries
+x8 <__u___url_> <https___example_com__path____2faction_php_3f_s_23> --encode <__w___wordlist_> <path_to_wordlist_txt>
+
+# Discover hidden headers for a URL
+x8 <__u___url_> <https___example_com_> --headers <__w___wordlist_> <path_to_headers_txt>
+
+# Check multiple URLs in parallel with high concurrency and verify found parameters
+x8 <__u___url_> <https___example_com_> <https___4rt_one_> <__W___workers_> <0> -c <3> --verify
+
+# Save request and response data for found parameters to a directory
+x8 <__u___url_> <https___example_com_> <__w___wordlist_> <path_to_wordlist_txt> --save-responses <path_to_output_directory>

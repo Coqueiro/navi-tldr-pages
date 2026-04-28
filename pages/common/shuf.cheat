@@ -3,4 +3,14 @@
 
 % shuf, common
 
+# Randomize the order of lines in a file and output the result
+shuf <path_to_file>
 
+# Only output the first 5 entries of the result
+shuf <__n___head_count_> 5 <path_to_file>
+
+# Write the output to another file
+shuf <path_to_input_file> <__o___output_> <path_to_output_file>
+
+# Generate 3 random numbers in the range 1-10 (inclusive, numbers can repeat)
+shuf <__n___head_count_> 3 <__i___input_range_> 1-10 <__r___repeat_>

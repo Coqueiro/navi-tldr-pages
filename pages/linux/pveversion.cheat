@@ -3,4 +3,8 @@
 
 % pveversion, linux
 
+# Print system version
+pveversion
 
+# Print Proxmox subpackage versions
+pveversion <__v___verbose_>

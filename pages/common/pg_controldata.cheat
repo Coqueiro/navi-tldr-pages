@@ -3,4 +3,11 @@
 
 % pg_controldata, common
 
+# Display control information for a specific data directory
+pg_controldata <__D___pgdata_> <path_to_data>
 
+# Display help
+pg_controldata <______help_>
+
+# Display version
+pg_controldata <__V___version_>

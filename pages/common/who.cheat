@@ -3,4 +3,11 @@
 
 % who, common
 
+# Display the username, line, and time of all currently logged-in sessions
+who
 
+# Display all available information
+who <__a___all_>
+
+# Display all available information with table headers
+who {{[-aH|--all --heading]}}

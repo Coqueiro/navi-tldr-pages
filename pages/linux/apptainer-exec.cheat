@@ -3,4 +3,26 @@
 
 % apptainer-exec, linux
 
+# Execute a command inside a container
+apptainer exec <path_to_image_sif> <command>
 
+# Execute a command with arguments
+apptainer exec <path_to_image_sif> <command> {{arg1 arg2 ...}}
+
+# Execute a command with a bind mount from host to container
+apptainer exec <__B___bind_> <path_to_source>:<path_to_destination> <path_to_image_sif> <command>
+
+# Execute a command with environment variables
+apptainer exec --env <variable>=<value> <path_to_image_sif> <command>
+
+# Execute a command in fully isolated mode (contained filesystem, PID, IPC, and clean environment)
+apptainer exec <__C___containall_> <path_to_image_sif> <command>
+
+# Execute a command with a writable temporary filesystem overlay
+apptainer exec --writable-tmpfs <path_to_image_sif> <command>
+
+# Execute a command with NVIDIA GPU support
+apptainer exec --nv <path_to_image_sif> <command>
+
+# Display help
+apptainer exec <__h___help_>

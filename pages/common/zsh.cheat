@@ -3,4 +3,26 @@
 
 % zsh, common
 
+# Start an interactive shell session
+zsh
 
+# Execute specific [c]ommands
+zsh -c "{{echo Hello world}}"
+
+# Execute a specific script
+zsh <path_to_script_zsh>
+
+# Check a specific script for syntax errors without executing it
+zsh <__n___no_exec_> <path_to_script_zsh>
+
+# Execute specific commands from `stdin`
+{{echo echo Hello world}} | zsh
+
+# Execute a specific script, printing each command in the script before executing it
+zsh <__x___xtrace_> <path_to_script_zsh>
+
+# Start an interactive shell session in verbose mode, printing each command before executing it
+zsh <__v___verbose_>
+
+# Start Zsh without loading user level configuration (e.g. `~/.zshrc`)
+zsh <__f___no_rcs_>

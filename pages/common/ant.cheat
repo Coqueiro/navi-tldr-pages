@@ -3,4 +3,17 @@
 
 % ant, common
 
+# Build a project with default build file `build.xml`
+ant
 
+# Build a project using build file other than `build.xml`
+ant <__f__buildfile_> <buildfile_xml>
+
+# Print information on possible targets for this project
+ant <__p__projecthelp_>
+
+# Print debugging information
+ant <__d__debug_>
+
+# Execute all targets that do not depend on fail target(s)
+ant <__k__keep_going_>

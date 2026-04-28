@@ -3,4 +3,8 @@
 
 % eu-readelf, linux
 
+# Display all extractable information contained in the ELF file
+eu-readelf <__a___all_> <path_to_file>
 
+# Display the contents of all NOTE segments/sections, or of a particular segment/section
+eu-readelf <__n___notes_> <_note_ABI_tag> <path_to_file>

@@ -3,4 +3,17 @@
 
 % autorandr, linux
 
+# Save the current screen layout
+autorandr <__s___save_> <profile_name>
 
+# Show the saved profiles
+autorandr
+
+# Load the first detected profile
+autorandr <__c___change_>
+
+# Load a specific profile
+autorandr <__l___load_> <profile_name>
+
+# Set the default profile
+autorandr <__d___default_> <profile_name>

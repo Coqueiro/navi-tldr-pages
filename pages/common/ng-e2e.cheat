@@ -3,4 +3,8 @@
 
 % ng-e2e, common
 
+# Run end-to-end tests
+ng <_e_e2e_>
 
+# Run end-to-end tests using a specific configuration
+ng <_e_e2e_> <__c___configuration_> <development_production____>

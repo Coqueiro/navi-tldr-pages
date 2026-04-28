@@ -3,4 +3,14 @@
 
 % unix2dos, linux
 
+# Change the line endings of a file
+unix2dos <path_to_file>
 
+# Create a copy with DOS-style line endings
+unix2dos <__n___newfile_> <path_to_file> <path_to_new_file>
+
+# Display file information
+unix2dos <__i___info_> <path_to_file>
+
+# Keep/add/remove Byte Order Mark
+unix2dos --<keep_bom_add_bom_remove_bom> <path_to_file>

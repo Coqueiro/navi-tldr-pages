@@ -3,4 +3,26 @@
 
 % diff, common
 
+# Compare files (lists changes to turn `old_file` into `new_file`)
+diff <path_to_old_file> <path_to_new_file>
 
+# Compare files, ignoring white spaces
+diff <__w___ignore_all_space_> <path_to_old_file> <path_to_new_file>
+
+# Compare files, showing the differences side by side
+diff <__y___side_by_side_> <path_to_old_file> <path_to_new_file>
+
+# Compare files, showing the differences in unified format (as used by `git diff`)
+diff <__u___unified_> <path_to_old_file> <path_to_new_file>
+
+# Compare directories recursively (shows names for differing files/directories as well as changes made to files)
+diff <__r___recursive_> <path_to_old_directory> <path_to_new_directory>
+
+# Compare directories, only showing the names of files that differ
+diff <__r___recursive_> <__q___brief_> <path_to_old_directory> <path_to_new_directory>
+
+# Create a patch file for Git from the differences of two text files, treating nonexistent files as empty
+diff <__a___text_> <__u___unified_> <__N___new_file_> <path_to_old_file> <path_to_new_file> > <path_to_diff_patch>
+
+# Compare files, showing output in color, trying hard to find the smallest set of changes
+diff <__d___minimal_> --color=always <path_to_old_file> <path_to_new_file>

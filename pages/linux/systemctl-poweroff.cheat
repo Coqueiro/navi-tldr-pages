@@ -3,4 +3,11 @@
 
 % systemctl-poweroff, linux
 
+# Power off the system
+systemctl poweroff
 
+# Power off the system immediately without asking services to stop gracefully
+systemctl poweroff <__f___force_>
+
+# Power off the system immediately without sending notifications to logged-in users
+systemctl poweroff <__f___force_> --no-wall

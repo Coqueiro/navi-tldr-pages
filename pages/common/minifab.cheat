@@ -3,4 +3,26 @@
 
 % minifab, common
 
+# Bring up the default Hyperledger Fabric network
+minifab up <__i___fabric_release_> <minifab_version>
 
+# Bring down the Hyperledger Fabric network
+minifab down
+
+# Install chaincode onto a specified channel
+minifab install <__n___chaincode_name_> <chaincode_name>
+
+# Install a specific chaincode version onto a channel
+minifab install <__n___chaincode_name_> <chaincode_name> <__v___chaincode_version_> <chaincode_version>
+
+# Initialize the chaincode after installation/upgrade
+minifab approve,commit,initialize,discover
+
+# Invoke a chaincode method with the specified arguments
+minifab invoke <__n___chaincode_name_> <chaincode_name> <__p___chaincode_parameters_> '"<method_name>", {{"argument1", "argument2", ...}}'
+
+# Make a query on the ledger
+minifab blockquery <block_number>
+
+# Quickly run an application
+minifab apprun <__l___chaincode_language_> <app_programming_language>

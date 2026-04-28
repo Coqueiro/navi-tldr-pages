@@ -3,4 +3,17 @@
 
 % csvformat, common
 
+# Convert to a tab-delimited file (TSV)
+csvformat <__T___out_tabs_> <data_csv>
 
+# Convert delimiters to a custom character
+csvformat <__D___out_delimiter_> "<custom_character>" <data_csv>
+
+# Convert line endings to carriage return (^M) + line feed
+csvformat <__M___out_lineterminator_> "<_r_n>" <data_csv>
+
+# Minimize use of quote characters
+csvformat <__U___out_quoting_> 0 <data_csv>
+
+# Maximize use of quote characters
+csvformat <__U___out_quoting_> 1 <data_csv>

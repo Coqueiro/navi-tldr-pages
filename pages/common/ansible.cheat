@@ -3,4 +3,23 @@
 
 % ansible, common
 
+# List hosts belonging to a group
+ansible <group> --list-hosts
 
+# Ping a group of hosts by invoking the ping module
+ansible <group> <__m___module_name_> ping
+
+# Display facts about a group of hosts by invoking the setup module
+ansible <group> <__m___module_name_> setup
+
+# Execute a command on a group of hosts by invoking command module with arguments
+ansible <group> <__m___module_name_> command <__a___args_> '<my_command>'
+
+# Execute a command with administrative privileges
+ansible <group> <__b___become_> --ask-become-pass <__m___module_name_> command <__a___args_> '<my_command>'
+
+# Execute a command using a custom inventory file
+ansible <group> <__i___inventory_> <inventory_file> <__m___module_name_> command <__a___args_> '<my_command>'
+
+# List the groups in an inventory
+ansible localhost <__m___module_name_> debug <__a___args_> '<var_groups_keys__>'

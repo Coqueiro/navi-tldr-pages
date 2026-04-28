@@ -3,4 +3,8 @@
 
 % snmpdf, common
 
+# Fetch the disk space usage
+snmpdf -v <version> -c <community> <ip_address>
 
+# Display help
+snmpdf <__h___help_>

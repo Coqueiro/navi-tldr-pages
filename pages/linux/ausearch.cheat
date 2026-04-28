@@ -3,4 +3,23 @@
 
 % ausearch, linux
 
+# Search for all SELinux AVC denial events
+sudo ausearch <__m___message_> avc
 
+# Search for events related to a specific executable
+sudo ausearch <__c___comm_> <httpd>
+
+# Search for events from a specific user
+sudo ausearch <__ui___uid_> <1000>
+
+# Search for events in the last 10 minutes
+sudo ausearch <__ts___start_> recent
+
+# Search for failed login attempts
+sudo ausearch <__m___message_> user_login <__sv___success_> no
+
+# Search for events related to a specific file
+sudo ausearch <__f___file_> <path_to_file>
+
+# Display results in raw format for further processing
+sudo ausearch <__m___message_> avc --raw

@@ -3,4 +3,17 @@
 
 % lxi, linux
 
+# Discover LXI devices on available networks
+lxi discover
 
+# Capture a screenshot, detecting a plugin automatically
+lxi screenshot <__a___address_> <ip_address>
+
+# Capture a screenshot using a specified plugin
+lxi screenshot <__a___address_> <ip_address> <__p___plugin_> <rigol_1000z>
+
+# Send an SCPI command to an instrument
+lxi scpi <__a___address_> <ip_address> "<_IDN_>"
+
+# Run a benchmark for request and response performance
+lxi benchmark <__a___address_> <ip_address>

@@ -3,4 +3,17 @@
 
 % hugo-server, common
 
+# Build and serve a site
+hugo server
 
+# Build and serve a site on a specified port number
+hugo server <__p___port_> <port_number>
+
+# Build and serve a site while minifying supported output formats (HTML, XML, etc.)
+hugo server --minify
+
+# Build and serve a site in the production environment with full re-renders while minifying supported formats
+hugo server <__e___environment_> <production> --disableFastRender --minify
+
+# Display help
+hugo server <__h___help_>

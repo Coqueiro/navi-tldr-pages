@@ -3,4 +3,20 @@
 
 % kubie, common
 
+# Display a selectable menu of contexts
+kubie ctx
 
+# Switch current shell to the given context
+kubie ctx <context>
+
+# Switch current shell to the given namespace
+kubie ns <namespace>
+
+# Switch current shell to the given context and namespace
+kubie ctx <context> <__n___namespace_> <namespace>
+
+# Execute a command in the given context and namespace, without spawning a shell
+kubie exec <context> <namespace> <command>
+
+# Check the Kubernetes configuration files for issues
+kubie lint

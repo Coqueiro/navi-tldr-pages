@@ -3,4 +3,17 @@
 
 % autopkgtest, linux
 
+# Build the package in the current directory and run all tests directly on the system
+autopkgtest -- <null>
 
+# Run a specific test for the package in the current directory
+autopkgtest --test-name=<test_name> -- <null>
+
+# Download and build a specific package with `apt-get`, then run all tests
+autopkgtest <package> -- <null>
+
+# Test the package in the current directory using a new root directory
+autopkgtest -- <chroot> <path_to_new_root>
+
+# Test the package in the current directory without rebuilding it
+autopkgtest <__B___no_built_binaries_> -- <null>

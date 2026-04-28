@@ -3,4 +3,20 @@
 
 % minicom, linux
 
+# Open a given serial port
+sudo minicom <__D___device_> <_dev_ttyXYZ>
 
+# Open a given serial port with a given baud rate
+sudo minicom <__D___device_> <_dev_ttyXYZ> <__b___baudrate_> <115200>
+
+# Enter the configuration menu before communicating with a given serial port
+sudo minicom <__D___device_> <_dev_ttyXYZ> <__s___setup_>
+
+# Capture the output of a serial port to a file
+sudo minicom <__D___device_> <_dev_ttyXYZ> <__C___capturefile_> <path_to_file>
+
+# Exit minicom
+<Ctrl a><x><Enter>
+
+# Display help
+minicom <__h___help_>

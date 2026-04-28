@@ -3,4 +3,26 @@
 
 % yt-dlp, common
 
+# Download a video or playlist (with the default options from command below)
+yt-dlp "<https___www_youtube_com_watch_v_oHg5SJYRHA0>"
 
+# List the available downloadable formats for a video
+yt-dlp <__F___list_formats_> "<https___www_youtube_com_watch_v_oHg5SJYRHA0>"
+
+# Download a video or playlist using the best MP4 video available (default is "bv\*+ba/b")
+yt-dlp <__f___format_> "<bv__ext_mp4__ba_ext_m4a__b_ext_mp4_>" "<https___www_youtube_com_watch_v_oHg5SJYRHA0>"
+
+# Extract audio from a video (requires ffmpeg or ffprobe)
+yt-dlp <__x___extract_audio_> "<https___www_youtube_com_watch_v_oHg5SJYRHA0>"
+
+# Specify audio format and audio quality of extracted audio (between 0 (best) and 10 (worst), default = 5)
+yt-dlp <__x___extract_audio_> --audio-format <mp3> --audio-quality <0> "<https___www_youtube_com_watch_v_oHg5SJYRHA0>"
+
+# Download only the second, fourth, fifth, sixth, and last items in a playlist (the first item is 1, not 0)
+yt-dlp <__I___playlist_items_> 2,4:6,-1 "<https___youtube_com_playlist_list_PLbzoR_pLrL6pTJfLQ3UwtB_3V4fimdqnA>"
+
+# Download all playlists of a YouTube channel/user keeping each playlist in a separate directory
+yt-dlp <__o___output_> "{{%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s}}" "<https___www_youtube_com_user_TheLinuxFoundation_playlists>"
+
+# Download a Udemy course keeping each chapter in a separate directory
+yt-dlp <__u___username_> <user> <__p___password_> <password> <__P___paths_> "<path_to_directory>" <__o___output_> "{{%(playlist)s/%(chapter_number)s - %(chapter)s/%(title)s.%(ext)s}}" "<https___www_udemy_com_java_tutorial>"

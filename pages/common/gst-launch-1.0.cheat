@@ -3,4 +3,26 @@
 
 % gst-launch-1.0, common
 
+# Play test video in a window
+gst-launch-1.0 videotestsrc ! autovideosink
 
+# Play test audio and enable verbose output
+gst-launch-1.0 audiotestsrc <__v___verbose_> ! autoaudiosink
+
+# Play a media file in a window
+gst-launch-1.0 playbin uri=<protocol>://<host>/<path_to_file>
+
+# Re-encode a media file
+gst-launch-1.0 filesrc location=<path_to_file> ! <file_type>demux ! <codec_type>dec ! <codec_type>enc ! <file_type>mux ! filesink location=<path_to_file>
+
+# Stream a file to an RTSP server
+gst-launch-1.0 filesrc location=<path_to_file> ! rtspclientsink location=rtsp://<host_IP>/<path_to_file>
+
+# Force an End Of Stream event if the pipeline is shut down with `<Ctrl c>` for containers that require finalization such as `mp4`
+gst-launch-1.0 <__e___eos_on_shutdown_> videotestsrc ! x264enc ! mp4mux ! filesink location=<path_to_file_mp4>
+
+# Multiplex together test video and test audio into a file
+gst-launch-1.0 <__e___eos_on_shutdown_> videotestsrc ! <x264enc> ! <element_name>. audiotestsrc ! <opusenc> ! <element_name>. <matroskamux> name=<element_name> ! filesink location=<path_to_file_mkv>
+
+# Enable debug output and dump a pipeline into a `.dot` file which can then be rendered with tools like `dot`
+GST_DEBUG=<1__5> GST_DEBUG_DUMP_DOT_DIR=<path_to_directory> gst-launch-1.0 <pipeline>

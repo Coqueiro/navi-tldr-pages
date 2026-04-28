@@ -3,4 +3,11 @@
 
 % lvrename, linux
 
+# Rename an LV using full paths
+sudo lvrename <_dev_vg_name_old_lv> <_dev_vg_name_new_lv>
 
+# Rename an LV using the volume group and names
+sudo lvrename <vg_name> <old_lv> <new_lv>
+
+# Answer "yes" to any prompts
+sudo lvrename <__y___yes_> <_dev_vg_name_old_lv> <_dev_vg_name_new_lv>

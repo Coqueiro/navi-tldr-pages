@@ -3,4 +3,17 @@
 
 % fbi, linux
 
+# Display an image
+sudo fbi <path_to_file>
 
+# Display multiple images
+sudo fbi {{path/to/file1 path/to/file2 ...}}
+
+# Start a slideshow with a custom delay (in seconds)
+sudo fbi <__t___timeout_> <delay> <path_to_files__>
+
+# Scale the image to fit the screen
+sudo fbi <__a___autozoom_> <path_to_file>
+
+# Display help
+fbi <__h___help_>

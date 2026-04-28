@@ -3,4 +3,17 @@
 
 % lychee, common
 
+# Scan a website for broken links
+lychee <https___example_com>
 
+# Display a breakdown of error types
+lychee --format detailed <https___example_com>
+
+# Limit the amount of connections to prevent DDOS protection
+lychee --max-concurrency <5> <links_txt>
+
+# Check files in a directory structure for any broken URLs
+grep <__r___recursive_> "<pattern>" | lychee -
+
+# Display help
+lychee --help

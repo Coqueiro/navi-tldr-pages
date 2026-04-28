@@ -3,4 +3,17 @@
 
 % kosmorro, common
 
+# Get ephemerides for Paris, France
+kosmorro <__p___position_> "48.7996,2.3511"
 
+# Get ephemerides for Paris, France, on its timezone
+kosmorro <__p___position_> "48.7996,2.3511" <__t___timezone_> "Europe/Paris"
+
+# Get ephemerides for Paris, France, on June 9th, 2020
+kosmorro <__p___position_> "48.7996,2.3511" <__d___date_> "2020-06-09"
+
+# Get ephemerides for Paris, France, in two days
+kosmorro <__p___position_> "48.7996,2.3511" <__d___date_> "+2d"
+
+# Generate a PDF (Note: TeXLive must be installed)
+kosmorro <__o___output_> "<path_to_file>.pdf"

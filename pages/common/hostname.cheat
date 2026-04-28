@@ -3,4 +3,14 @@
 
 % hostname, common
 
+# Show current host name
+hostname
 
+# Show the network address of the host name
+hostname <__i___ip_address_>
+
+# Show the FQDN (Fully Qualified Domain Name)
+hostname <__f___fqdn_>
+
+# Set current host name
+hostname <new_hostname>

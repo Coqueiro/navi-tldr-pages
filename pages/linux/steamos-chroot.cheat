@@ -3,4 +3,11 @@
 
 % steamos-chroot, linux
 
+# Switch to the other A/B partition
+steamos-chroot <__p___partset_> other
 
+# Switch to a partition on another drive
+steamos-chroot <__d___disk_> <_dev_sdX> <__p___partset_> <A_B>
+
+# Display help
+steamos-chroot <__h___help_>

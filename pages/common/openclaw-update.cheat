@@ -3,4 +3,14 @@
 
 % openclaw-update, common
 
+# Update to the latest version
+openclaw update
 
+# Switch to a specific release channel
+openclaw update --channel <stable_beta_dev>
+
+# Display version
+openclaw update <__v___version_>
+
+# Display help
+openclaw update <__h___help_>

@@ -3,4 +3,26 @@
 
 % mypy, common
 
+# Type check a specific file
+mypy <path_to_file_py>
 
+# Type check a specific module
+mypy <__m___module_> <module_name>
+
+# Type check a specific package
+mypy <__p___package_> <package_name>
+
+# Type check a string of code
+mypy <__c___command_> "<code>"
+
+# Ignore missing imports
+mypy --ignore-missing-imports <path_to_file_or_directory>
+
+# Show detailed error messages
+mypy <___tb___show_traceback_> <path_to_file_or_directory>
+
+# Specify a custom configuration file
+mypy --config-file <path_to_config_file>
+
+# Display help
+mypy <__h___help_>

@@ -3,4 +3,14 @@
 
 % vulkaninfo, common
 
+# Print full Vulkan information
+vulkaninfo
 
+# Print a summary
+vulkaninfo --summary
+
+# Make a HTML document of the full Vulkan information
+vulkaninfo --html
+
+# Display help
+vulkaninfo <__h___help_>

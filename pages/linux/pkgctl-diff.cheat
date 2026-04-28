@@ -3,4 +3,14 @@
 
 % pkgctl-diff, linux
 
+# Compare package files in tar content list different mode (default)
+pkgctl diff <__l___list_> <path_to_file_pkgname>
 
+# Compare package files in diffoscope different mode
+pkgctl diff <__d___diffoscope_> <path_to_file_pkgname>
+
+# Compare package files in `.PKGINFO` different mode
+pkgctl diff <__p___pkginfo_> <path_to_file_pkgname>
+
+# Compare package files in `.BUILDINFO` different mode
+pkgctl diff <__b___buildinfo_> <path_to_file_pkgname>

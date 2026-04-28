@@ -3,4 +3,20 @@
 
 % zeroclaw-channel, common
 
+# List all configured channels
+zeroclaw channel list
 
+# Start all configured channels
+zeroclaw channel start
+
+# Run health checks for configured channels
+zeroclaw channel doctor
+
+# Add a new channel
+zeroclaw channel add <telegram_discord_whatsapp_slack_webhook____> '<json_config>'
+
+# Remove a channel
+zeroclaw channel remove <channel_name>
+
+# Display help
+zeroclaw channel <__h___help_>

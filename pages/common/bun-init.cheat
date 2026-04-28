@@ -3,4 +3,23 @@
 
 % bun-init, common
 
+# Initialize a Bun project in the current directory
+bun init
 
+# Initialize in a specific directory
+bun init <path_to_directory>
+
+# Initialize with a specific project name
+bun init <__n___name_> <project_name>
+
+# Initialize a project with default prompts
+bun init <__y___yes_>
+
+# Initialize a minimal project
+bun init <__m___minimal_>
+
+# Initialize a React project
+bun init <__r___react_>
+
+# Initialize a React project with Tailwind CSS
+bun init --react=tailwind

@@ -4,10 +4,10 @@
 % nmcli-agent, linux
 
 # Register `nmcli` as a secret agent and listen for secret requests
-nmcli {{[a|agent]}} {{[s|secret]}}
+nmcli <_a_agent_> <_s_secret_>
 
 # Register `nmcli` as a polkit agent and listen for authorization requests
-nmcli {{[a|agent]}} {{[p|polkit]}}
+nmcli <_a_agent_> <_p_polkit_>
 
 # Register `nmcli` as a secret agent and a polkit agent
-nmcli {{[a|agent]}} {{[a|all]}}
+nmcli <_a_agent_> <_a_all_>

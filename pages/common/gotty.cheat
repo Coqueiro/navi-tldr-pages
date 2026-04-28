@@ -3,4 +3,11 @@
 
 % gotty, common
 
+# Share result of command
+gotty <command>
 
+# Share with write permission
+gotty <__w___permit_write_> <shell>
+
+# Share with credential (Basic Auth)
+gotty <__w___permit_write_> <__c___credential_> <username>:<password> <shell>

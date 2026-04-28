@@ -4,10 +4,10 @@
 % jj-config-unset, common
 
 # Unset a config option in the user-level config
-jj config {{[u|unset]}} --user <name>
+jj config <_u_unset_> --user <name>
 
 # Unset a config option in the repo-level config
-jj config {{[u|unset]}} --repo <name>
+jj config <_u_unset_> --repo <name>
 
 # Unset a config option in the workspace-level config
-jj config {{[u|unset]}} --workspace <name>
+jj config <_u_unset_> --workspace <name>

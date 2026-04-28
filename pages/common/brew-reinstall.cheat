@@ -3,4 +3,14 @@
 
 % brew-reinstall, common
 
+# Reinstall a formula/cask
+brew reinstall <formula_cask>
 
+# Reinstall a formula/cask and show verification and post-install steps
+brew reinstall <__v___verbose_> <formula_cask>
+
+# Make some output more quiet
+brew reinstall <__q___quiet_> <formula_cask>
+
+# Display help
+brew reinstall <__h___help_>

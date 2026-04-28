@@ -3,4 +3,8 @@
 
 % virt-clone, linux
 
+# Clone a virtual machine and automatically generate a new name, storage path, and MAC address
+virt-clone <__o___original_> <vm_name> --auto-clone
 
+# Clone a virtual machine and specify the new name, storage path, and MAC address
+virt-clone <__o___original_> <vm_name> <__n___name_> <new_vm_name> <__f___file_> <path_to_new_storage> <__m___mac_> <ff_ff_ff_ff_ff_ff_RANDOM>

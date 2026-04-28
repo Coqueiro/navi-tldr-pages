@@ -3,4 +3,14 @@
 
 % podman-load, common
 
+# Load an image from a `.tar` file
+podman load <__i___input_> <path_to_file_tar>
 
+# Load an image from a compressed `.tar` file
+podman load <__i___input_> <path_to_file_tar__gz__bz2__xz__zst_>
+
+# Load an image and display quiet output (only show the image ID)
+podman load <__q___quiet_> <__i___input_> <path_to_file_tar>
+
+# Load an image from `stdin`
+podman < <path_to_file_tar> load

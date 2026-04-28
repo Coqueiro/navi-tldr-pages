@@ -3,4 +3,14 @@
 
 % chfn, linux
 
+# Update a user's "Name" field in the output of `finger`
+chfn <__f___full_name_> <new_display_name> <username>
 
+# Update a user's "Office Room Number" field for the output of `finger`
+chfn <__o___office_> <new_office_room_number> <username>
+
+# Update a user's "Office Phone Number" field for the output of `finger`
+chfn <__p___office_phone_> <new_office_telephone_number> <username>
+
+# Update a user's "Home Phone Number" field for the output of `finger`
+chfn <__h___home_phone_> <new_home_telephone_number> <username>

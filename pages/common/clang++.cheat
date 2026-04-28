@@ -3,4 +3,26 @@
 
 % clang++, common
 
+# Compile a set of source code files into an executable binary
+clang++ {{path/to/source1.cpp path/to/source2.cpp ...}} <__o___output_> <path_to_output_executable>
 
+# Activate output of all errors and warnings
+clang++ <path_to_source_cpp> -Wall <__o___output_> <output_executable>
+
+# Show common warnings, debug symbols in output, and optimize without affecting debugging
+clang++ <path_to_source_cpp> -Wall <__g___debug_> -Og <__o___output_> <path_to_output_executable>
+
+# Choose a language standard to compile for
+clang++ <path_to_source_cpp> -std=<c__20> <__o___output_> <path_to_output_executable>
+
+# Include libraries located at a different path than the source file
+clang++ <path_to_source_cpp> <__o___output_> <path_to_output_executable> -I<path_to_header_path> -L<path_to_library_path> -l<path_to_library_name>
+
+# Compile source code into LLVM Intermediate Representation (IR)
+clang++ <__S___assemble_> -emit-llvm <path_to_source_cpp> <__o___output_> <path_to_output_ll>
+
+# Optimize the compiled program for performance
+clang++ <path_to_source_cpp> -O<1_2_3_fast> <__o___output_> <path_to_output_executable>
+
+# Display version
+clang++ --version

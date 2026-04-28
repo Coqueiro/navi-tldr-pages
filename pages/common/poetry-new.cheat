@@ -3,4 +3,20 @@
 
 % poetry-new, common
 
+# Create a new project (defaults to `src` layout)
+poetry new <path_to_directory>
 
+# Create a new project asking for configuration details interactively
+poetry new <path_to_directory> <__i___interactive_>
+
+# Create a new project with a specific package name
+poetry new <path_to_directory> --name <package_name>
+
+# Create a new project using the flat layout (without the `src` directory)
+poetry new <path_to_directory> --flat
+
+# Create a new project with a specific author
+poetry new <path_to_directory> --author "{{Name <email@example.com>}}"
+
+# Create a new project with a specific README format
+poetry new <path_to_directory> --readme <md_rst_txt____>

@@ -3,4 +3,20 @@
 
 % kaggle-competitions, common
 
+# List all competitions
+kaggle <_c_competitions_> list
 
+# Download competition data
+kaggle <_c_competitions_> download <competition_name>
+
+# Download specific file
+kaggle <_c_competitions_> download <competition_name> <__f___file_> <file>
+
+# Submit files to a competition
+kaggle <_c_competitions_> submit <competition_name> <__f___file_> <path_to_file> <__m___message_> "<message>"
+
+# Show or download leaderboard
+kaggle <_c_competitions_> leaderboard <competition_name> <__show___download>
+
+# View submissions
+kaggle <_c_competitions_> submissions <competition_name>

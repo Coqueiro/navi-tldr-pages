@@ -3,4 +3,20 @@
 
 % conda-export, common
 
+# Export the current environment details to `stdout`
+conda export
 
+# Export the current environment details to a `YAML` file
+conda export <__f___file_> <path_to_environment_yaml>
+
+# Export details in a specific format
+conda export --format <environment_json_environment_yaml_explicit_json_reqs_requirements_txt_yaml_yml>
+
+# Target an environment by name
+conda export <__n___name_> <environment_name>
+
+# Target an environment by its path
+conda export <__p___prefix_> <path_to_environment>
+
+# Include a specific channel
+conda export <__c___channel_> <channel_name>

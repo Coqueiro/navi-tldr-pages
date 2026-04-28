@@ -3,4 +3,26 @@
 
 % az-quantum, common
 
+# Create a new Azure Quantum workspace
+az quantum workspace create <__g___resource_group_> <ResourceGroup> <__l___location_> <Location> <__w___workspace_name_> <Workspace> <__a___storage_account_> <MyStorageAccountName>
 
+# List all Azure Quantum workspaces
+az quantum workspace list
+
+# Set a default Azure Quantum workspace
+az quantum workspace set <__g___resource_group_> <ResourceGroup> <__w___workspace_name_> <Workspace>
+
+# Submit a QIR quantum job to a target
+az quantum job submit <__g___resource_group_> <ResourceGroup> <__w___workspace_name_> <Workspace> <__l___location_> <Location> <__t___target_id_> <Id> --job-name <Job> --job-input-file <QirBitcode_bc> --job-input-format <qir_v1>
+
+# List all jobs in a Quantum Workspace
+az quantum job list <__g___resource_group_> <ResourceGroup> <__l___location_> <Location> <__w___workspace_name_> <Workspace>
+
+# Get the output of a quantum job
+az quantum job output <__g___resource_group_> <ResourceGroup> <__w___workspace_name_> <Workspace> --job-id <Job>
+
+# List available provider offerings in a location
+az quantum offerings list <__l___location_> <Location>
+
+# Set a default target for job submissions
+az quantum target set <__t___target_id_> <Id>

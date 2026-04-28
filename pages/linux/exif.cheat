@@ -3,4 +3,17 @@
 
 % exif, linux
 
+# Show all recognized EXIF information in an image
+exif <path_to_image_jpg>
 
+# Show a table listing known EXIF tags and whether each one exists in an image
+exif <__l___list_tags_> --no-fixup <path_to_image_jpg>
+
+# Extract the image thumbnail into a separate file
+exif <__e___extract_thumbnail_> <__o___output_> <path_to_thumbnail_jpg> <path_to_image_jpg>
+
+# Show the raw contents of the "Model" tag in the given image
+exif --ifd <0> <__t___tag_> "Model" <__m___machine_readable_> <path_to_image_jpg>
+
+# Change the value of the "Artist" tag to John Smith and save to `new.jpg`
+exif <__o___output_> <path_to_new_jpg> --ifd <0> <__t___tag_> "Artist" --set-value "John Smith" --no-fixup <path_to_image_jpg>

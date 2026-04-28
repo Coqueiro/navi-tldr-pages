@@ -3,4 +3,8 @@
 
 % localedef, linux
 
+# List compiled locales
+localedef --list-archive
 
+# Display help
+localedef <______help_>

@@ -3,4 +3,14 @@
 
 % podman-rmi, common
 
+# Remove one or more images given their names
+podman rmi {{image:tag image2:tag ...}}
 
+# Force remove an image
+podman rmi <__f___force_> <image>
+
+# Remove an image without deleting untagged parents
+podman rmi --no-prune <image>
+
+# Display help
+podman rmi <__h___help_>

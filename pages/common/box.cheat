@@ -3,4 +3,23 @@
 
 % box, common
 
+# Compile a new Phar file
+box compile
 
+# Compile a new Phar file using a specific configuration file
+box compile <__c___config_> <path_to_config>
+
+# Display information about the PHAR PHP extension
+box info
+
+# Display information about a specific Phar file
+box info <path_to_phar_file>
+
+# Validate the first found configuration file in the working directory
+box validate
+
+# Verify the signature of a specific Phar file
+box verify <path_to_phar_file>
+
+# Display help
+box help

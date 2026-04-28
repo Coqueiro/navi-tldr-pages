@@ -3,4 +3,11 @@
 
 % pgcli, common
 
+# Connect to a PostgreSQL database using a connection string
+pgcli postgresql://<user>@<host>/<database>
 
+# Connect to a database using flags
+pgcli <__h___host_> <host> <__U___username_> <username> <__d___dbname_> <database>
+
+# Display help
+pgcli --help

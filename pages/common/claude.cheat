@@ -3,4 +3,23 @@
 
 % claude, common
 
+# Execute with prompt
+claude prompt
 
+# Update `claude`
+claude update
+
+# Get the list of specified MCP servers
+claude mcp list
+
+# Create commit with command
+claude commit
+
+# Get the list of configurations
+claude config list
+
+# Continue the most recent session
+claude <__c___continue_>
+
+# Interactively select a session to continue
+claude <__r___resume_>

@@ -3,4 +3,23 @@
 
 % dnsrecon, linux
 
+# Scan a domain and save the results to an SQLite database
+dnsrecon <__d___domain_> <example_com> --db <path_to_database_sqlite>
 
+# Scan a domain, specifying the nameserver and performing a zone transfer
+dnsrecon <__d___domain_> <example_com> <__n___name_server_> <nameserver_example_com> <__t___type_> axfr
+
+# Scan a domain, using a brute-force attack and a dictionary of subdomains and hostnames
+dnsrecon <__d___domain_> <example_com> <__D___dictionary_> <path_to_dictionary_txt> <__t___type_> brt
+
+# Scan a domain, performing a reverse lookup of IP ranges from the SPF record and saving the results to a JSON file
+dnsrecon <__d___domain_> <example_com> -s <__j___json_>
+
+# Scan a domain, performing a Google enumeration and saving the results to a CSV file
+dnsrecon <__d___domain_> <example_com> -g <__c___csv_>
+
+# Scan a domain, performing DNS cache snooping
+dnsrecon <__d___domain_> <example_com> <__t___type_> snoop <__n___name_server_> <nameserver_example_com> <__D___dictionary_> <path_to_dictionary_txt>
+
+# Scan a domain, performing zone walking
+dnsrecon <__d___domain_> <example_com> <__t___type_> zonewalk

@@ -3,4 +3,8 @@
 
 % dolt-add, common
 
+# Add a table to the list of staged tables (stage a table)
+dolt add <table>
 
+# Stage all tables
+dolt add <__A___all_>

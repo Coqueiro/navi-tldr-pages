@@ -3,4 +3,20 @@
 
 % watch, common
 
+# Repeatedly run a command and show the result
+watch <command>
 
+# Re-run a command every 60 seconds
+watch <__n___interval_> 60 <command>
+
+# Monitor disk space, highlighting differences as they appear
+watch <__d___differences_> df
+
+# Repeatedly run a pipeline and show the result
+watch "<command1> | <command2> | <command3>"
+
+# Exit `watch` if the visible output changes
+watch <__g___chgexit_> <lsblk>
+
+# Interpret terminal control characters
+watch <__c___color_> {{ls --color=always}}

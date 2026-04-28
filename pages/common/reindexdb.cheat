@@ -3,4 +3,26 @@
 
 % reindexdb, common
 
+# Reindex a specific database
+reindexdb <database_name>
 
+# Reindex a specific database using connection options
+reindexdb <database_name> <__h___host_> <hostname> <__p___port_> <port> <__U___username_> <username>
+
+# Reindex all databases
+reindexdb <__a___all_>
+
+# Reindex a specific table in a database
+reindexdb <database_name> <__t___table_> <table_name>
+
+# Reindex a specific index in a database
+reindexdb <database_name> <__i___index_> <index_name>
+
+# Reindex a specific schema in a database
+reindexdb <database_name> <__S___schema_> <schema_name>
+
+# Reindex with verbose output
+reindexdb <database_name> <__v___verbose_>
+
+# Reindex a database using multiple parallel jobs
+reindexdb <database_name> <__j___jobs_> <number_of_jobs>

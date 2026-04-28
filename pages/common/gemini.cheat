@@ -3,4 +3,23 @@
 
 % gemini, common
 
+# Start a REPL session to chat interactively
+gemini
 
+# Send the output of another command to Gemini and exit immediately
+{{echo "Summarize the history of Rome"}} | gemini <__p___prompt_> -
+
+# Use a specific model (default: auto-gemini-3)
+gemini <__m___model_> <model_name>
+
+# Run inside a sandbox container
+gemini <__s___sandbox_>
+
+# Execute a prompt then stay in interactive mode
+gemini <__i___prompt_interactive_> "{{Give me an example of recursion in Python}}"
+
+# Set the approval mode for tool calls
+gemini --approval-mode <default_auto_edit_yolo_plan>
+
+# Resume a session (defaults to "latest"; accepts an index number or UUID)
+gemini <__r___resume_> <latest_index_session_id>

@@ -3,4 +3,23 @@
 
 % grub-probe, linux
 
+# Get GRUB filesystem module for a path
+sudo grub-probe <__t___target_> fs <_boot_grub>
 
+# Get the system device containing a path
+sudo grub-probe <__t___target_> device <_boot_grub>
+
+# Get GRUB disk name for a system device
+sudo grub-probe <__t___target_> drive <_dev_sdX> <__d___device_>
+
+# Get filesystem UUID
+sudo grub-probe <__t___target_> fs_uuid <_boot_grub>
+
+# Get filesystem label
+sudo grub-probe <__t___target_> fs_label <_boot_grub>
+
+# Get MBR partition type code(two hexadecimal digits)
+sudo grub-probe <__t___target_> msdos_parttype <_dev_sdX>
+
+# Probe using a custom device map
+sudo grub-probe <__t___target_> drive <_boot_grub> <__m___device_map_> <path_to_custom_device_map>

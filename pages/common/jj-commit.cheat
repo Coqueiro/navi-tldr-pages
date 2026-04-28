@@ -3,4 +3,11 @@
 
 % jj-commit, common
 
+# Open editor to write the commit message and then create a new empty commit on top
+jj commit
 
+# Commit with the given message
+jj commit <__m___message_> "<message>"
+
+# Interactively choose which changes to include
+jj commit <__i___interactive_>

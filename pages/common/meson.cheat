@@ -3,4 +3,26 @@
 
 % meson, common
 
+# Generate a project with default values
+meson init
 
+# Generate a C project with a given name and version
+meson init <__l___language_> c <__n___name_> <myproject> --version <0_1>
+
+# Configure a directory named `build` with default values for compilation
+meson {{[build|setup build]}}
+
+# Compile the project
+meson compile -C <path_to_build_directory>
+
+# Run all tests in the project
+meson test -C <path_to_build_directory>
+
+# Install the project to `/usr/local`
+meson install -C <path_to_build_directory>
+
+# Display help
+meson <__h___help_>
+
+# Display version
+meson <__v___version_>

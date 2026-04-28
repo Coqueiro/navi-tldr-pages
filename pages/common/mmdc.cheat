@@ -3,4 +3,11 @@
 
 % mmdc, common
 
+# Convert a file to the specified format (automatically determined from the file extension)
+mmdc <__i___input_> <input_mmd> <__o___output_> <output_svg>
 
+# Specify the theme of the chart
+mmdc <__i___input_> <input_mmd> <__o___output_> <output_svg> <__t___theme_> <forest_dark_neutral_default>
+
+# Specify the background color of the chart (e.g. `lime`, `"#D8064F"`, or `transparent`)
+mmdc <__i___input_> <input_mmd> <__o___output_> <output_svg> <__b___backgroundColor_> <color>

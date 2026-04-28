@@ -3,4 +3,17 @@
 
 % uptime, common
 
+# Print current time, uptime, number of logged-in users, and other information
+uptime
 
+# Show only the amount of time the system has been booted for
+uptime <__p___pretty_>
+
+# Print the date and time the system booted up at
+uptime <__s___since_>
+
+# Display the time data in seconds
+uptime <__r___raw_>
+
+# Display version
+uptime <__V___version_>

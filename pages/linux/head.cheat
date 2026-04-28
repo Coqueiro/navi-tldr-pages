@@ -3,4 +3,23 @@
 
 % head, linux
 
+# Show first 10 lines in a file
+head <path_to_file>
 
+# Show first 10 lines of multiple files
+head {{path/to/file1 path/to/file2 ...}}
+
+# Output the first 5 lines of a file
+head {{[-5|--lines 5]}} <path_to_file>
+
+# Output the first few lines of a file
+head <__n___lines_> <count> <path_to_file>
+
+# Output the first few bytes of a file
+head <__c___bytes_> <count> <path_to_file>
+
+# Output everything but the last few lines of a file
+head <__n___lines_> -<count> <path_to_file>
+
+# Output everything but the last few bytes of a file
+head <__c___bytes_> -<count> <path_to_file>

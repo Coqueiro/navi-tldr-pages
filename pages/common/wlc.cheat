@@ -3,4 +3,17 @@
 
 % wlc, common
 
+# List projects using a configuration file
+wlc <__c___config_> <path_to_file> list-projects
 
+# List components in a project and override API URL and API key
+wlc <__u___url_> <URL> <__k___key_> <key> ls <project>
+
+# List translations from a component in a specific format
+wlc <__f___format_> <text_csv_json_html> ls <project>/<component>
+
+# Print statistics for a project
+wlc stats <project>
+
+# Display help
+wlc <__h___help_>

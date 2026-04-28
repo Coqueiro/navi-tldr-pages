@@ -3,4 +3,14 @@
 
 % hn, common
 
+# View stories on Hacker News
+hn
 
+# View a specified number of stories on Hacker News
+hn <__l___limit_> <number>
+
+# View stories on Hacker News, and keep the list open after selecting a link
+hn <__k___keep_open_>
+
+# View stories on Hacker News sorted by submission date
+hn --latest

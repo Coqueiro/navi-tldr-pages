@@ -3,4 +3,23 @@
 
 % aide, linux
 
+# Initialize the database
+sudo aide <__i___init_>
 
+# Check the database for inconsistencies
+sudo aide <__C___check_>
+
+# Compare two databases according to definitions in the config file
+sudo aide <__E___compare_>
+
+# Check and update the database non-interactively
+sudo aide <__u___update_>
+
+# Define a config file to override the default `aide.conf`
+sudo aide <__c___config_> <path_to_config_file>
+
+# Use `regex` to limit AIDE to a specific string
+sudo aide <__l___limit_> <regex>
+
+# Send reporter results to a URL
+sudo aide <__r___report_> <reporterurl>

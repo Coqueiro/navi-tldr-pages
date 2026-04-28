@@ -3,4 +3,23 @@
 
 % act, common
 
+# List the available jobs
+act <__l___list_>
 
+# Run the default event
+act
+
+# Run a specific event
+act <event_type>
+
+# Run a specific job
+act <__j___job_> <job_id>
+
+# Do [n]ot actually run the actions (i.e. a dry run)
+act <__n___dryrun_>
+
+# Show verbose logs
+act <__v___verbose_>
+
+# Run a specific workflow with the push event
+act push <__W___workflows_> <path_to_workflow>

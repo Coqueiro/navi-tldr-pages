@@ -3,4 +3,23 @@
 
 % cut, common
 
+# Print the fifth character on each line
+<command> | cut <__c___characters_> 5
 
+# Print the fifth to tenth character of each line of the specified file
+cut <__c___characters_> 5-10 <path_to_file>
+
+# Split each line in a file by a delimiter into fields and print fields two and six (default delimiter is `TAB`)
+cut <__f___fields_> 2,6 <path_to_file>
+
+# Split each line by the specified delimiter and print all from the second field onward
+<command> | cut <__d___delimiter_> "<delimiter>" <__f___fields_> 2-
+
+# Use space as a delimiter and print only the first 3 fields
+<command> | cut <__d___delimiter_> " " <__f___fields_> -3
+
+# Only print lines that contain the delimiter
+<command> | cut <__d___delimiter_> "<_>" <__f___fields_> <1> <__s___only_delimited_>
+
+# Print specific fields of lines that use `NUL` to terminate lines instead of newlines
+{{find . -print0}} | cut <__z___zero_terminated_> <__d___delimiter_> "<_>" <__f___fields_> <2>

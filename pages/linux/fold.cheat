@@ -3,4 +3,11 @@
 
 % fold, linux
 
+# Fold lines in a fixed width
+fold <__w___width_> <width> <path_to_file>
 
+# Count width in bytes (the default is to count in columns)
+fold <__b___bytes_> <__w___width_> <width_in_bytes> <path_to_file>
+
+# Break the line after the rightmost blank within the width limit
+fold <__s___spaces_> <__w___width_> <width> <path_to_file>

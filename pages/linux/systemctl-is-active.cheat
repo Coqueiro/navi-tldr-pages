@@ -3,4 +3,14 @@
 
 % systemctl-is-active, linux
 
+# Check whether a unit is active
+systemctl is-active <unit>
 
+# Check whether multiple units are active
+systemctl is-active {{unit1 unit2 ...}}
+
+# Check whether a unit is active without printing the state to `stdout`
+systemctl is-active <unit> <__q___quiet_>
+
+# Check whether a user unit is active
+systemctl is-active <unit> --user

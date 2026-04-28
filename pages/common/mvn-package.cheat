@@ -3,4 +3,11 @@
 
 % mvn-package, common
 
+# Package a project
+mvn package
 
+# Package a project while skipping test execution
+mvn package <__D___define_> skipTests
+
+# Package a project and force Maven to update all dependencies
+mvn package <__U___update_snapshots_>

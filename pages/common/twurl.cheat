@@ -3,4 +3,20 @@
 
 % twurl, common
 
+# Authorize `twurl` to access a Twitter account
+twurl authorize <__c___consumer_key_> <twitter_api_key> <__s___consumer_secret_> <twitter_api_secret>
 
+# Make a GET request to an API endpoint
+twurl <__X___request_method_> GET <twitter_api_endpoint>
+
+# Make a POST request to an API endpoint
+twurl <__X___request_method_> POST <__d___data_> '<endpoint_params>' <twitter_api_endpoint>
+
+# Upload media to Twitter
+twurl <__H___host_> "<twitter_upload_url>" <__X___request_method_> POST "<twitter_upload_endpoint>" <__f___file_> "<path_to_media_jpg>" <__F___file_field_> "media"
+
+# Access a different Twitter API host
+twurl <__H___host_> <twitter_api_url> <__X___request_method_> GET <twitter_api_endpoint>
+
+# Create an alias for a requested resource
+twurl alias <alias_name> <resource>

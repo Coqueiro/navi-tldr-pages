@@ -3,4 +3,17 @@
 
 % doctl-databases-options, common
 
+# Run a `doctl databases options` command with an access token
+doctl <_d_databases_> <_o_options_> <command> <__t___access_token_> <access_token>
 
+# Retrieve a list of the available database engines
+doctl <_d_databases_> <_o_options_> <_eng_engines_>
+
+# Retrieve a list of the available regions for a given database engine
+doctl <_d_databases_> <_o_options_> <_r_regions_> --engine <pg_mysql_redis_mongodb>
+
+# Retrieve a list of the available slugs for a given database engine
+doctl <_d_databases_> <_o_options_> <_s_slugs_> --engine <pg_mysql_redis_mongodb>
+
+# Retrieve a list of the available versions for a given database engine
+doctl <_d_databases_> <_o_options_> <_v_versions_> --engine <pg_mysql_redis_mongodb>

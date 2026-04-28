@@ -3,4 +3,14 @@
 
 % alien, linux
 
+# Convert a specific installation file to Debian format (`.deb` extension)
+sudo alien <__d___to_deb_> <path_to_file>
 
+# Convert a specific installation file to Red Hat format (`.rpm` extension)
+sudo alien <__r___to_rpm_> <path_to_file>
+
+# Convert a specific installation file to a Slackware installation file (`.tgz` extension)
+sudo alien <__t___to_tgz_> <path_to_file>
+
+# Convert a specific installation file to Debian format and install on the system
+sudo alien <__d___to_deb_> <__i___install_> <path_to_file>

@@ -3,4 +3,14 @@
 
 % carbonyl, common
 
+# Open an `about:blank` page
+carbonyl
 
+# Open a webpage
+carbonyl <https___example_com>
+
+# Exit carbonyl
+<Ctrl c>
+
+# Display help
+carbonyl <__h___help_>

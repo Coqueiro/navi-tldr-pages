@@ -3,4 +3,26 @@
 
 % gdisk, linux
 
+# List partitions
+sudo gdisk <__l___list_>
 
+# Start the interactive partition manipulator
+sudo gdisk <_dev_sdX>
+
+# Open a help menu
+<?>
+
+# Print the [p]artition table
+<p>
+
+# Add a [n]ew partition
+<n>
+
+# Select a partition to [d]elete
+<d>
+
+# [w]rite table to disk and exit
+<w>
+
+# [q]uit without saving changes
+<q>

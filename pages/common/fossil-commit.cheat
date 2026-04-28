@@ -3,4 +3,14 @@
 
 % fossil-commit, common
 
+# Create a new version containing all the changes in the current checkout; user will be prompted for a comment
+fossil <_ci_commit_>
 
+# Create a new version containing all the changes in the current checkout, using the specified [m]essage
+fossil <_ci_commit_> <__m___comment_> "<comment>"
+
+# Create a new version containing all the changes in the current checkout with a comment read from a specific file
+fossil <_ci_commit_> <__M___message_file_> <path_to_commit_message_file>
+
+# Create a new version containing changes from the specified files; user will be prompted for a comment
+fossil <_ci_commit_> {{path/to/file1 path/to/file2 ...}}

@@ -3,4 +3,14 @@
 
 % vgcfgrestore, linux
 
+# Restore VG metadata from last backup
+sudo vgcfgrestore <vg_name>
 
+# Restore VG metadata from specified backup-file
+sudo vgcfgrestore <__f___file_> <path_to_file> <vg_name>
+
+# List all VG metadata backups
+sudo vgcfgrestore <__l___list_> <vg_name>
+
+# List one VG metadata backup file
+sudo vgcfgrestore <__l___list_> <__f___file_> <path_to_file> <vg_name>

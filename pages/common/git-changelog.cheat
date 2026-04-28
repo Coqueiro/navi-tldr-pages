@@ -3,4 +3,23 @@
 
 % git-changelog, common
 
+# Update existing file or create a new `History.md` file with the commit messages since the latest Git tag
+git changelog
 
+# List commits from the current version
+git changelog <__l___list_>
+
+# List a range of commits from the tag named `2.1.0` to now
+git changelog <__l___list_> <__s___start_tag_> 2.1.0
+
+# List pretty formatted range of commits between the tag `0.5.0` and the tag `1.0.0`
+git changelog <__s___start_tag_> 0.5.0 <__f___final_tag_> 1.0.0
+
+# List pretty formatted range of commits between the commit `0b97430` and the tag `1.0.0`
+git changelog --start-commit 0b97430 <__f___final_tag_> 1.0.0
+
+# Specify `CHANGELOG.md` as the output file
+git changelog CHANGELOG.md
+
+# Replace contents of current changelog file entirely
+git changelog <__p___prune_old_>

@@ -3,4 +3,17 @@
 
 % zeroclaw-gateway, common
 
+# Start the gateway on default port (8080)
+zeroclaw gateway
 
+# Start the gateway on a specific port
+zeroclaw gateway <__p___port_> <8080>
+
+# Start the gateway on a random available port
+zeroclaw gateway <__p___port_> 0
+
+# Start the gateway on a specific host
+zeroclaw gateway --host <0_0_0_0> <__p___port_> <8080>
+
+# Display help
+zeroclaw gateway <__h___help_>

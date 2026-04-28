@@ -3,4 +3,20 @@
 
 % qalc, common
 
+# Launch in interactive mode
+qalc <__i___interactive_>
 
+# Launch in terse mode (print the results only)
+qalc <__t___terse_>
+
+# Update currency exchange rates
+qalc <__e___exrates_>
+
+# Perform calculations non-interactively
+qalc {{66+99|2^4|6 feet to cm|1 bitcoin to USD|20 kmph to mph|...}}
+
+# List all supported functions/prefixes/units/variables
+qalc --<list_functions_list_prefixes_list_units_list_variables>
+
+# Execute commands from a file
+qalc <__f___file_> <path_to_file>

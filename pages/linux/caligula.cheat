@@ -3,4 +3,8 @@
 
 % caligula, linux
 
+# Flash an ISO to a drive
+caligula burn <path_to_image_iso>
 
+# Flash an ISO to a drive without entering the hash interactively
+caligula burn <path_to_image_iso> <__s___hash_> <hash>

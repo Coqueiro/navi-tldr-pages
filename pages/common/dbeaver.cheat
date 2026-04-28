@@ -3,4 +3,23 @@
 
 % dbeaver, common
 
+# Open DBeaver
+dbeaver
 
+# Open DBeaver connecting to a specific database
+dbeaver <__con___connect_> <database>
+
+# Force the creation of a new instance
+dbeaver --newInstance
+
+# Stop the running instance
+dbeaver --quit
+
+# Close all tabs within DBeaver
+dbeaver --closeTabs
+
+# Bring DBeaver to the top of applications
+dbeaver --bringToFront
+
+# Display help
+dbeaver --help

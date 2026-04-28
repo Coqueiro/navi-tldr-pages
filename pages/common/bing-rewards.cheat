@@ -3,4 +3,17 @@
 
 % bing-rewards, common
 
+# Complete both desktop and mobile searches
+bing-rewards
 
+# Run 10 searches with mobile user-agent
+bing-rewards <__m___mobile_> <__c___count_> 10
+
+# Complete mobile and desktop searches using specified Chrome profile "Profile 1"
+bing-rewards --profile "Profile 1"
+
+# Run searches sequentially across multiple Chrome profiles
+bing-rewards --profile "Default" "Profile 1" "Profile 2"
+
+# Display help
+bing-rewards <__h___help_>

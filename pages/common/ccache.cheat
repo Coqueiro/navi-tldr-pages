@@ -3,4 +3,14 @@
 
 % ccache, common
 
+# Show current cache statistics
+ccache <__s___show_stats_>
 
+# Clear all cache
+ccache <__C___clear_>
+
+# Reset statistics (but not cache itself)
+ccache <__z___zero_stats_>
+
+# Compile C code and cache compiled output (to use `ccache` on all `gcc` invocations, see the note above)
+ccache gcc <path_to_file_c>

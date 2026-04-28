@@ -3,4 +3,20 @@
 
 % pg_upgrade, common
 
+# Check clusters before upgrading
+pg_upgrade <__c___check_> <__b___old_bindir_> <path_to_old_bin> <__B___new_bindir_> <path_to_new_bin> <__d___old_datadir_> <path_to_old_data> <__D___new_datadir_> <path_to_new_data>
 
+# Perform the actual upgrade
+pg_upgrade <__b___old_bindir_> <path_to_old_bin> <__B___new_bindir_> <path_to_new_bin> <__d___old_datadir_> <path_to_old_data> <__D___new_datadir_> <path_to_new_data>
+
+# Use multiple parallel jobs during the upgrade
+pg_upgrade <__j___jobs_> <njobs> <__b___old_bindir_> <path_to_old_bin> <__B___new_bindir_> <path_to_new_bin> <__d___old_datadir_> <path_to_old_data> <__D___new_datadir_> <path_to_new_data>
+
+# Specify the old and new PostgreSQL ports
+pg_upgrade <__p___old_port_> <port> <__P___new_port_> <port> <__b___old_bindir_> <path_to_old_bin> <__B___new_bindir_> <path_to_new_bin> <__d___old_datadir_> <path_to_old_data> <__D___new_datadir_> <path_to_new_data>
+
+# Use hard links instead of copying files to the new cluster
+pg_upgrade <__k___link_> <__b___old_bindir_> <path_to_old_bin> <__B___new_bindir_> <path_to_new_bin> <__d___old_datadir_> <path_to_old_data> <__D___new_datadir_> <path_to_new_data>
+
+# Display help
+pg_upgrade <______help_>

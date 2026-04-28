@@ -4,10 +4,10 @@
 % npm-link, common
 
 # Symlink the current package globally
-npm {{[ln|link]}}
+npm <_ln_link_>
 
 # Link a globally linked package into another project's `node_modules`
-npm {{[ln|link]}} <package_name>
+npm <_ln_link_> <package_name>
 
 # Unlink a package from the current project
-npm {{[r|unlink]}} <package_name>
+npm <_r_unlink_> <package_name>

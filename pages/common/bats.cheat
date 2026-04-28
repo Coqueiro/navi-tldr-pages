@@ -3,4 +3,20 @@
 
 % bats, common
 
+# Run a BATS test script and output results in the TAP (Test Anything Protocol) format
+bats <__t___tap_> <path_to_test_bats>
 
+# Count test cases of a test script without running any tests
+bats <__c___count_> <path_to_test_bats>
+
+# Run BATS test cases recursively (files with a `.bats` extension)
+bats <__r___recursive_> <path_to_directory>
+
+# Output results in a specific format
+bats <__F___formatter_> <pretty_tap_tap13_junit> <path_to_test_bats>
+
+# Add timing information to tests
+bats <__T___timing_> <path_to_test_bats>
+
+# Run specific number of jobs in parallel (requires GNU `parallel` to be installed)
+bats <__j___jobs_> <number> <path_to_test_bats>

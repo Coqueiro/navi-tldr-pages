@@ -3,4 +3,26 @@
 
 % xidel, common
 
+# Print all URLs found by a Google search
+xidel <https___www_google_com_search_q_test> <__e___extract_> "//a/extract(@href, 'url[?]q=([^&]+)&', 1)[. != '']"
 
+# Print the title of all pages found by a Google search and download them
+xidel <https___www_google_com_search_q_test> <__f___follow_> "{{//a/extract(@href, 'url[?]q=([^&]+)&', 1)[. != '']}}" <__e___extract_> <__title> --download '{{{$host}/}}'
+
+# Follow all links on a page and print the titles, with XPath
+xidel <https___example_org> <__f___follow_> <__a> <__e___extract_> <__title>
+
+# Follow all links on a page and print the titles, with CSS selectors
+xidel <https___example_org> <__f___follow_> "<css__a__>" --css <title>
+
+# Follow all links on a page and print the titles, with pattern matching
+xidel <https___example_org> <__f___follow_> "{{<a>{.}</a>*}}" <__e___extract_> "{{<title>{.}</title>}}"
+
+# Read the pattern from `example.xml` (which will also check if the element containing "ood" is there, and fail otherwise)
+xidel <path_to_example_xml> <__e___extract_> "{{<x><foo>ood</foo><bar>{.}</bar></x>}}"
+
+# Print all newest Stack Overflow questions with title and URL using pattern matching on their RSS feed
+xidel <http___stackoverflow_com_feeds> <__e___extract_> "{{<entry><title>{title:=.}</title><link>{uri:=@href}</link></entry>+}}"
+
+# Check for unread Reddit mail, Webscraping, combining CSS, XPath, JSONiq, and automatically form evaluation
+xidel <https___reddit_com> <__f___follow_> "{{form(css('form.login-form')[1], {'user': '$your_username', 'passwd': '$your_password'})}}" <__e___extract_> "<css___mail____title>"

@@ -3,4 +3,8 @@
 
 % pg_test_timing, common
 
+# Run the default timing test (3 seconds)
+pg_test_timing
 
+# Run for a custom duration
+pg_test_timing <__d___duration_> <seconds>

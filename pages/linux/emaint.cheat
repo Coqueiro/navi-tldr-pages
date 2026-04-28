@@ -3,4 +3,17 @@
 
 % emaint, linux
 
+# Synchronize repositories that are set to auto-sync (default for most repositories)
+sudo emaint sync <__a___auto_>
 
+# Synchronize a specific repository
+sudo emaint sync <__r___repo_> <repository>
+
+# Synchronize all repositories
+sudo emaint sync <__A___allrepos_>
+
+# Clear the Portage resume list
+sudo emaint cleanresume <__f___fix_>
+
+# Clean Portage logs
+sudo emaint logs <__C___clean_>

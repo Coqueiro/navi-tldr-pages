@@ -3,4 +3,20 @@
 
 % pg_restore, common
 
+# Restore an archive into an existing database
+pg_restore <__d___dbname_> <db_name> <archive_file_dump>
 
+# Same as above, customize username
+pg_restore <__U___username_> <username> <__d___dbname_> <db_name> <archive_file_dump>
+
+# Same as above, customize host and port
+pg_restore <__h___host_> <host> <__p___port_> <port> <__d___dbname_> <db_name> <archive_file_dump>
+
+# List database objects included in the archive
+pg_restore <__l___list_> <archive_file_dump>
+
+# Clean database objects before creating them
+pg_restore <__c___clean_> <__d___dbname_> <db_name> <archive_file_dump>
+
+# Use multiple jobs to do the restoring
+pg_restore <__j___jobs_> <2> <__d___dbname_> <db_name> <archive_file_dump>

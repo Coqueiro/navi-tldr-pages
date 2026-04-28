@@ -4,22 +4,22 @@
 % bun-create, common
 
 # Create a new project from an official template interactively
-bun {{[c|create]}} <template>
+bun <_c_create_> <template>
 
 # Create a new project from an official template in a new directory
-bun {{[c|create]}} <template> <path_to_destination>
+bun <_c_create_> <template> <path_to_destination>
 
 # Create a new project from a GitHub repository template
-bun {{[c|create]}} <https___github_com_username_repo> <path_to_destination>
+bun <_c_create_> <https___github_com_username_repo> <path_to_destination>
 
 # Create a new project from a local template
-bun {{[c|create]}} <path_to_template> <path_to_destination>
+bun <_c_create_> <path_to_template> <path_to_destination>
 
 # Create a new project, overwriting the destination directory if it exists
-bun {{[c|create]}} <template> <path_to_destination> --force
+bun <_c_create_> <template> <path_to_destination> --force
 
 # Create a new project without initializing a Git repository automatically
-bun {{[c|create]}} <template> <path_to_destination> --no-git
+bun <_c_create_> <template> <path_to_destination> --no-git
 
 # Create a new project without installing dependencies automatically
-bun {{[c|create]}} <template> <path_to_destination> --no-install
+bun <_c_create_> <template> <path_to_destination> --no-install

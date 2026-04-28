@@ -3,4 +3,20 @@
 
 % lvchange, linux
 
+# Activate a logical volume
+sudo lvchange <__a___activate_> y <_dev_vg_name_lv_name>
 
+# Deactivate a logical volume
+sudo lvchange <__a___activate_> n <_dev_vg_name_lv_name>
+
+# Enable autoactivation for a logical volume
+sudo lvchange <__a___activate_> ay <_dev_vg_name_lv_name>
+
+# Set a logical volume to read-only (use `rw` for read-write)
+sudo lvchange <__p___permission_> r <_dev_vg_name_lv_name>
+
+# Skip activation for a logical volume
+sudo lvchange <__k___setactivationskip_> y <_dev_vg_name_lv_name>
+
+# Refresh a logical volume using the latest metadata
+sudo lvchange --refresh <_dev_vg_name_lv_name>

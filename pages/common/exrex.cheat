@@ -3,4 +3,26 @@
 
 % exrex, common
 
+# Generate all possible strings that match a `regex`
+exrex '<regex>'
 
+# Generate a random string that matches a `regex`
+exrex <__r___random_> '<regex>'
+
+# Generate at most 100 strings that match a `regex`
+exrex <__m___max_number_> <100> '<regex>'
+
+# Generate all possible strings that match a `regex`, joined by a custom delimiter string
+exrex <__d___delimiter_> "{{, }}" '<regex>'
+
+# Print count of all possible strings that match a `regex`
+exrex <__c___count_> '<regex>'
+
+# Simplify a `regex`
+exrex <__s___simplify_> '<ab_ac>'
+
+# Print eyes
+exrex '<_oO0_____oO0_>'
+
+# Print a boat
+exrex '{{( {20}(\| *\\|-{22}|\|)|\.={50}| ( ){0,5}\\\.| {12}~{39})}}'

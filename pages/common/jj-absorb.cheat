@@ -3,4 +3,8 @@
 
 % jj-absorb, common
 
+# Move all eligible and unambiguous changes from a revision to other revisions automatically
+jj absorb <__f___from_> <revset> <__t___into_> <revsets>
 
+# Move only changes in given files from a revision to other revisions
+jj absorb <__f___from_> <revset> <__t___into_> <revsets> <filesets>

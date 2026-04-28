@@ -3,4 +3,14 @@
 
 % openclaw-channels, common
 
+# List all configured channels
+openclaw channels list
 
+# Login to a channel
+openclaw channels login --channel <whatsapp>
+
+# Login to a specific channel with verbose logging
+openclaw channels login --channel <telegram> --verbose
+
+# Display help
+openclaw channels <__h___help_>

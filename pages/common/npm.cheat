@@ -3,4 +3,26 @@
 
 % npm, common
 
+# Create a `package.json` file with default values (omit `--yes` to do it interactively)
+npm init <__y___yes_>
 
+# Download all the packages listed as dependencies in `package.json`
+npm <_i_install_>
+
+# Download a specific version of a package and add it to the list of dependencies in `package.json`
+npm <_i_install_> <package_name>@<version>
+
+# Download the latest version of a package and add it to the list of dev dependencies in `package.json`
+npm <_i_install_> <package_name> <__D___save_dev_>
+
+# Download the latest version of a package and install it globally (set the install location with `npm config set prefix`)
+npm <_i_install_> <package_name> <__g___global_>
+
+# Uninstall a package and remove it from the list of dependencies in `package.json`
+npm <_r_uninstall_> <package_name>
+
+# List all locally installed dependencies
+npm <_ls_list_>
+
+# List all top-level globally installed packages
+npm <_ls_list_> <__g___global_> --depth <0>

@@ -3,4 +3,23 @@
 
 % pytest, common
 
+# Run tests from specific files
+pytest {{path/to/test_file1.py path/to/test_file2.py ...}}
 
+# Run tests with names matching a specific [k]eyword expression
+pytest -k <expression>
+
+# Exit as soon as a test fails or encounters an error
+pytest <__x___exitfirst_>
+
+# Run tests matching or excluding markers
+pytest -m {{marker_name1 and not marker_name2}}
+
+# Run until a test failure, continuing from the last failing test
+pytest <___sw___stepwise_>
+
+# Run tests without capturing output
+pytest <__s___capture_no_>
+
+# Run tests with increased verbosity, displaying individual test names
+pytest <__v___verbose_>

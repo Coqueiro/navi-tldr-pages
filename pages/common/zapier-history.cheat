@@ -3,4 +3,11 @@
 
 % zapier-history, common
 
+# List the history for an integration
+zapier history
 
+# Display additional debug output
+zapier history <__d___debug_>
+
+# List the history with a different output structure
+zapier history <__f___format_> <plain_json_raw_row_table>

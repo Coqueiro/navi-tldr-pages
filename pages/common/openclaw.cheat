@@ -3,4 +3,26 @@
 
 % openclaw, common
 
+# Run the onboarding wizard to set up the gateway and channels
+openclaw onboard --install-daemon
 
+# Start the gateway server
+openclaw gateway --allow-unconfigured --port <18789> --verbose
+
+# Send a message to a contact
+openclaw message send <__t___target_> <_1234567890> <__m___message_> "<Hello>"
+
+# Talk to the assistant with a single message
+openclaw agent <__m___message_> "{{Ship checklist}}"
+
+# Start interactive chat mode
+openclaw agent
+
+# Run diagnostics and check system health
+openclaw doctor
+
+# Update OpenClaw to the latest version
+openclaw update
+
+# List configured channels
+openclaw channels list

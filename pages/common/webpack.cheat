@@ -3,4 +3,14 @@
 
 % webpack, common
 
+# Create a single output file from an entry point file
+webpack <app_js> <bundle_js>
 
+# Load CSS files too from the JavaScript file (this uses the CSS loader for CSS files)
+webpack <app_js> <bundle_js> --module-bind '<css_css>'
+
+# Pass a configuration file (with e.g. the entry script and the output filename) and show compilation progress
+webpack <__c___config_> <webpack_config_js> --progress
+
+# Automatically recompile on changes to project files
+webpack <__w___watch_> <app_js> <bundle_js>

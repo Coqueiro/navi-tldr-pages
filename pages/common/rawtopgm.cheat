@@ -10,16 +10,16 @@ rawtopgm <width> <height> <path_to_image_raw> > <path_to_output_pgm>
 rawtopgm <path_to_image_raw> > <path_to_output_pgm>
 
 # Convert a raw greyscale image in which the pixels come bottom-first instead of top-first to a PGM image
-rawtopgm <width> <height> {{[-bt|-bottomfirst]}} <path_to_image_raw> > <path_to_output_pgm>
+rawtopgm <width> <height> <__bt__bottomfirst_> <path_to_image_raw> > <path_to_output_pgm>
 
 # Ignore the first `n` bytes of the specified file
-rawtopgm <width> <height> {{[-h|-headerskip]}} <__l__littleendian_> <path_to_image_raw> > <path_to_output_pgm>
+rawtopgm <width> <height> <__h__headerskip_> <n> <path_to_image_raw> > <path_to_output_pgm>
 
 # Ignore the last m bytes of each row in the specified file
-rawtopgm <width> <height> {{[-r|-rowskip]}} <__bt__bottomfirst_> <path_to_image_raw> > <path_to_output_pgm>
+rawtopgm <width> <height> <__r__rowskip_> <m> <path_to_image_raw> > <path_to_output_pgm>
 
 # Specify the maxval for the grey values in the input to be equal to `n`
-rawtopgm <width> <height> {{[-m|-maxval]}} <__l__littleendian_> <path_to_image_raw> > <path_to_output_pgm>
+rawtopgm <width> <height> <__m__maxval_> <n> <path_to_image_raw> > <path_to_output_pgm>
 
 # Specify the number of bytes that represent each sample in the input and that the byte-sequence is to be interpreted as little-endian
-rawtopgm <width> <height> -bpp <1_2> {{[-l|-littleendian]}} <path_to_image_raw> > <path_to_output_pgm>
+rawtopgm <width> <height> -bpp <1_2> <__l__littleendian_> <path_to_image_raw> > <path_to_output_pgm>

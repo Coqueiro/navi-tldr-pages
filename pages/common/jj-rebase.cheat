@@ -3,4 +3,14 @@
 
 % jj-rebase, common
 
+# Move given revisions to a different parent(s)
+jj rebase <__r___revisions_> <revset> <__d___destination_> <revset>
 
+# Move given revisions and all their descendants
+jj rebase <__s___source_> <revset> <__d___destination_> <revset>
+
+# Move all revisions in the branch containing given revisions
+jj rebase <__b___branch_> <revset> <__d___destination_> <revset>
+
+# Move revisions to before and/or after other revisions
+jj rebase <__r___revisions_> <revset> <__B___insert_before_> <revset> <__A___insert_after_> <revset>

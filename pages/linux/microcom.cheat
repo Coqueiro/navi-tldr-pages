@@ -3,4 +3,8 @@
 
 % microcom, linux
 
+# Open a serial port using the specified baud rate
+microcom <__p___port_> <_dev_ttyXYZ> <__s___speed_> <baud_rate>
 
+# Establish a telnet connection to the specified host
+microcom <__t___telnet_> <hostname>:<port>

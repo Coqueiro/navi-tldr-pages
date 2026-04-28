@@ -7,4 +7,4 @@
 ppmtopgm <path_to_file_ppm> > <path_to_file_pgm>
 
 # Display version
-ppmtopgm {{[-v|-version]}}
+ppmtopgm <__v__version_>

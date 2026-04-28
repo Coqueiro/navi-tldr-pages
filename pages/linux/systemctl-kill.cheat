@@ -3,4 +3,14 @@
 
 % systemctl-kill, linux
 
+# Send the `SIGTERM` signal to a unit to terminate it
+systemctl kill <unit>
 
+# Send a specific signal to a unit
+systemctl kill <__s___signal_> <signal_number_signal_name> <unit>
+
+# Send a `SIGHUP` signal to only the main process of a unit
+systemctl kill <__s___signal_> SIGHUP --kill-whom main <unit>
+
+# List all available signals
+systemctl kill <__s___signal_> help

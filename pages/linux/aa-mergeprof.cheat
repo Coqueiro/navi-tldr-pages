@@ -3,4 +3,11 @@
 
 % aa-mergeprof, linux
 
+# Merge one or more profile files into the default profile directory
+sudo aa-mergeprof {{file1 file2 ...}}
 
+# Merge profile files into a specific directory
+sudo aa-mergeprof <__d___dir_> /<path_to_profiles> {{file1 file2 ...}}
+
+# Display help
+aa-mergeprof <__h___help_>

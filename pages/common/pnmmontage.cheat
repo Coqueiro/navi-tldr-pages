@@ -10,7 +10,7 @@ pnmmontage {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
 pnmmontage -<0__9> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
 
 # Produce a packing that is not larger than `p` percent of the optimal packing
-pnmmontage {{[-qua|-quality]}} <p> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
+pnmmontage <__qua__quality_> <p> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
 
 # Write the positions of the input files within the packed image to a machine-readable file
-pnmmontage {{[-d|-data]}} <path_to_datafile> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>
+pnmmontage <__d__data_> <path_to_datafile> {{path/to/image1.pnm path/to/image2.pnm ...}} > <path_to_output_pnm>

@@ -4,22 +4,22 @@
 % nb, common
 
 # Create a new note in your `$EDITOR`
-nb {{[a|add]}} "<note_title>"
+nb <_a_add_> "<note_title>"
 
 # Edit a note in your `$EDITOR`
-nb {{[e|edit]}} <note_id>
+nb <_e_edit_> <note_id>
 
 # List all notes in the current notebook
 nb list
 
 # Add a todo
-nb {{[to|todos]}} {{[a|add]}} <title>
+nb <_to_todos_> <_a_add_> <title>
 
 # Import a file
 nb import (<path_to_file_url>)
 
 # Search for notes containing a keyword
-nb {{[q|search]}} "<keyword>"
+nb <_q_search_> "<keyword>"
 
 # Sync notes via Git
 nb sync

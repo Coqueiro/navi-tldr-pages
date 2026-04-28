@@ -3,4 +3,14 @@
 
 % gradle-properties, common
 
+# Display all project properties
+gradle properties
 
+# Display properties with detailed output
+gradle properties <__i___info_>
+
+# Display properties for a specific subproject
+gradle :<subproject>:properties
+
+# Display a specific property value
+gradle properties | grep <property_name>

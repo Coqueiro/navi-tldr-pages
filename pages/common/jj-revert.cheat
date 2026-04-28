@@ -3,4 +3,11 @@
 
 % jj-revert, common
 
+# Apply the reverse of the revisions specified by the given revsets (e.g. `B::D`, `A..D`, `B|C|D`, etc.)
+jj revert <__r___revisions_> <revsets>
 
+# Apply the reverse on top of specified revisions
+jj revert <__r___revisions_> <revsets> <__d___destination_> <revsets>
+
+# Apply the reverse before and/or after specified revisions
+jj revert <__r___revisions_> <revsets> <__B___insert_before_> <revsets> <__A___insert_after_> <revsets>

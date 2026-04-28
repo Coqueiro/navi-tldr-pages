@@ -3,4 +3,26 @@
 
 % clementine, common
 
+# Start the GUI or bring it to front
+clementine
 
+# Start playing music
+clementine <URL_path_to_music_ext>
+
+# Toggle between pausing and playing
+clementine <__t___play_pause_>
+
+# Stop playback
+clementine <__s___stop_>
+
+# Skip to the next or previous track
+clementine --<next_previous>
+
+# Create a new playlist with one or more music files or URLs
+clementine <__c___create_> {{URL1|path/to/music1.ext URL2|path/to/music2.ext ...}}
+
+# Load a playlist file
+clementine <__l___load_> <path_to_playlist_ext>
+
+# Play a specific track in the currently loaded playlist
+clementine <__k___play_track_> <5>

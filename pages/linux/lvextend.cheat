@@ -3,4 +3,14 @@
 
 % lvextend, linux
 
+# Increase a volume's size to 120 GB
+sudo lvextend <__L___size_> <120G> <logical_volume>
 
+# Increase a volume's size by 40 GB as well as the underlying filesystem
+sudo lvextend <__L___size_> +<40G> <__r___resizefs_> <logical_volume>
+
+# Increase a volume's size to 100% of the free physical volume space
+sudo lvextend <__l___extents_> +<100>%FREE <logical_volume>
+
+# Increase a volume's size to 100% of the free physical volume space and resize the underlying filesystem
+sudo lvextend <__l___extents_> +<100>%FREE <__r___resizefs_> <logical_volume>

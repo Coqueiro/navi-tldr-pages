@@ -3,4 +3,17 @@
 
 % you-get, common
 
+# Print media information about a specific media on the web
+you-get <__i___info_> <https___example_com_video_id_value>
 
+# Download a media from a specific URL
+you-get <https___example_com_video_id_value>
+
+# Search on Google Videos and download
+you-get <keywords>
+
+# Download a media to a specific location
+you-get <__o___output_dir_> <path_to_directory> <__O___output_filename_> <filename> <https___example_com_watch_v_value>
+
+# Download a media using a proxy
+you-get <__x___http_proxy_> <proxy_server> <https___example_com_watch_v_value>

@@ -3,4 +3,26 @@
 
 % audacious, common
 
+# Launch the GUI
+audacious
 
+# Start a new instance and play an audio
+audacious <__N___new_instance_> <path_to_audio>
+
+# Enqueue a specific directory of audio files
+audacious <__e___enqueue_> <path_to_directory>
+
+# Start or stop playback
+audacious <__t___play_pause_>
+
+# Skip forwards ([fwd]) or backwards ([rew]) in the playlist
+audacious --<fwd_rew>
+
+# Stop playback
+audacious <__s___stop_>
+
+# Start in CLI mode (headless)
+audacious <__H___headless_>
+
+# Exit as soon as playback stops or there is nothing to playback
+audacious <__q___quit_after_play_>

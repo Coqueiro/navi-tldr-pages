@@ -3,4 +3,14 @@
 
 % pulumi-logout, common
 
+# Log out of a specific cloud backend
+pulumi logout <url>
 
+# Log out of all backends simultaneously
+pulumi logout --all
+
+# Log out of using local mode
+pulumi logout <__l___local_>
+
+# Display help
+pulumi logout <__h___help_>

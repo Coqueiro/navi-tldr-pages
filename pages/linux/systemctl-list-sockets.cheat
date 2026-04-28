@@ -3,4 +3,17 @@
 
 % systemctl-list-sockets, linux
 
+# List active socket units currently in memory
+systemctl list-sockets
 
+# List active socket units with their socket types
+systemctl list-sockets --show-types
+
+# List all socket units, including inactive and failed ones
+systemctl list-sockets <__a___all_>
+
+# List socket units filtered by state
+systemctl list-sockets --state <active_inactive_failed____>
+
+# List socket units matching a name pattern
+systemctl list-sockets {{pattern1 pattern2 ...}}

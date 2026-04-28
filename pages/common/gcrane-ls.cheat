@@ -3,4 +3,14 @@
 
 % gcrane-ls, common
 
+# List the tags
+gcrane ls <repository>
 
+# Format response from the registry as JSON
+gcrane ls <repository> --json
+
+# Whether to recurse through repositories
+gcrane ls <repository> <__r___recursive_>
+
+# Display help
+gcrane ls <__h___help_>

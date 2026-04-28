@@ -3,4 +3,20 @@
 
 % exiv2, common
 
+# Print a summary of the image Exif metadata
+exiv2 <path_to_file>
 
+# Print all metadata (Exif, IPTC, XMP) with interpreted values
+exiv2 <__P__Print_> kt <path_to_file>
+
+# Print all metadata with raw values
+exiv2 <__P__Print_> kv <path_to_file>
+
+# Delete all metadata from an image
+exiv2 <__d___delete_> a <path_to_file>
+
+# Delete all metadata, preserving the file timestamp
+exiv2 <__d___delete_> a <__k___keep_> <path_to_file>
+
+# Rename the file, prepending the date and time from metadata (not from the file timestamp)
+exiv2 <__r___rename_> '<_Y_m_d__H_M_S__basename_>' <path_to_file>

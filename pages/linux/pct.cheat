@@ -10,19 +10,19 @@ pct list
 pct <start_stop_reboot> <100>
 
 # Access a specific container's shell
-pct {{[en|enter]}} <100>
+pct <_en_enter_> <100>
 
 # Create a container from template with 4GB size
-pct {{[cr|create]}} <100> <local_vztmpl_distro_name_tar_zst> --rootfs <local_lvm>:4
+pct <_cr_create_> <100> <local_vztmpl_distro_name_tar_zst> --rootfs <local_lvm>:4
 
 # Resize the container's disk to 20G
-pct {{[resi|resize]}} <100> <rootfs_mpX> <20G>
+pct <_resi_resize_> <100> <rootfs_mpX> <20G>
 
 # Show the configuration of a container, specifying its ID
-pct {{[conf|config]}} <100>
+pct <_conf_config_> <100>
 
 # Snapshot a specific container with description
-pct {{[sn|snapshot]}} <100> <my_snapshot> --description {{My snapshot description}}
+pct <_sn_snapshot_> <100> <my_snapshot> --description {{My snapshot description}}
 
 # Destroy a container and remove all related resources
-pct {{[des|destroy]}} <100> --purge
+pct <_des_destroy_> <100> --purge

@@ -3,4 +3,14 @@
 
 % systemd-nspawn, linux
 
+# Run a command in a container
+systemd-nspawn <__D___directory_> <path_to_container_root>
 
+# Run a full Linux-based OS in a container
+systemd-nspawn <__b___boot_> <__D___directory_> <path_to_container_root>
+
+# Run the specified command as PID 2 in the container (as opposed to PID 1) using a stub init process
+systemd-nspawn <__D___directory_> <path_to_container_root> <__a___as_pid2_>
+
+# Specify the machine name and hostname
+systemd-nspawn <__M___machine_> <container_name> --hostname <container_host> <__D___directory_> <path_to_container_root>

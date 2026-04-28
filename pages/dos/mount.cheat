@@ -7,19 +7,19 @@
 MOUNT C .
 
 # Mount specific directory as C
-MOUNT C {{C:\path\to\directory}}
+MOUNT C <C__path_to_directory>
 
 # Mount with free space limit (MB)
-MOUNT C {{C:\path\to\directory}} -freesize <1024>
+MOUNT C <C__path_to_directory> -freesize <1024>
 
 # Mount floppy drive
-MOUNT A {{A:\}} -t floppy
+MOUNT A <A__> -t floppy
 
 # Mount CD-ROM drive
-MOUNT D {{D:\}} -t cdrom
+MOUNT D <D__> -t cdrom
 
 # Mount CD with extra options
-MOUNT D {{D:\}} -t cdrom -usecd <0> -ioctl
+MOUNT D <D__> -t cdrom -usecd <0> -ioctl
 
 # Unmount drive
 MOUNT -u <C>

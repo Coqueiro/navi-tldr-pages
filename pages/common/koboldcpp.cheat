@@ -3,4 +3,17 @@
 
 % koboldcpp, common
 
+# Load one or more model files
+koboldcpp <__m___model_> <path_to_model_file>
 
+# Set port to listen on (defaults to 5001)
+koboldcpp --port <port>
+
+# Set amount of threads to use
+koboldcpp <__t___threads_> <amount_of_threads>
+
+# Launch web browser when boot is complete
+koboldcpp --launch
+
+# Start without the GUI launcher
+koboldcpp --skiplauncher

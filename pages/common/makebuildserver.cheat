@@ -3,4 +3,8 @@
 
 % makebuildserver, common
 
+# Create a new virtual machine or update an existing one (if available)
+makebuildserver
 
+# Force creating a fresh virtual machine
+makebuildserver <__c___clean_>

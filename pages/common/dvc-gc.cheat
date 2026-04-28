@@ -3,4 +3,14 @@
 
 % dvc-gc, common
 
+# Garbage collect from the cache, keeping only versions referenced by the current workspace
+dvc gc <__w___workspace_>
 
+# Garbage collect from the cache, keeping only versions referenced by branch, tags, and commits
+dvc gc <__a___all_branches_> <__T___all_tags_> <__a___all_commits_>
+
+# Garbage collect from the cache, including the default cloud remote storage (if set)
+dvc gc <__a___all_commits_> <__c___cloud_>
+
+# Garbage collect from the cache, including a specific cloud remote storage
+dvc gc <__a___all_commits_> <__c___cloud_> <__r___remote_> <remote_name>

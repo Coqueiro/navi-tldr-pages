@@ -3,4 +3,11 @@
 
 % lsscsi, linux
 
+# List all SCSI devices
+lsscsi
 
+# List all SCSI devices with detailed attributes
+lsscsi <__L___list_>
+
+# List all SCSI devices with human-readable disk capacity
+lsscsi <__s___size_>

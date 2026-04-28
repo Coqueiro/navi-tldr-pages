@@ -3,4 +3,14 @@
 
 % pw-profiler, linux
 
+# Profile the default instance, logging to `profile.log` (`gnuplot` files and a HTML file for result visualizing are also generated)
+pw-profiler
 
+# Change the log output file
+pw-profiler <__o___output_> <path_to_file_log>
+
+# Profile a remote instance
+pw-profiler <__r___remote_> <remote_name>
+
+# Display help
+pw-profiler <__h___help_>

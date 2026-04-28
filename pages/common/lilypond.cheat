@@ -3,4 +3,17 @@
 
 % lilypond, common
 
+# Compile a lilypond file into a PDF
+lilypond <path_to_file>
 
+# Compile into the specified format
+lilypond <__f___format_> <format_dump> <path_to_file>
+
+# Compile the specified file, suppressing progress updates
+lilypond <__s___silent_> <path_to_file>
+
+# Compile the specified file, and also specify the output filename
+lilypond <__o___output_> <path_to_output_file> <path_to_input_file>
+
+# Display version
+lilypond <__v___version_>

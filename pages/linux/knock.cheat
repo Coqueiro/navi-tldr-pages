@@ -3,4 +3,14 @@
 
 % knock, linux
 
+# Knock on ports using different protocols
+knock <hostname> <portnumber>:<protocol>
 
+# Knock on port using UDP
+knock <__u___udp_> <hostname> <portnumber>
+
+# Force usage of IPv4/IPv6
+knock <_4__6> <hostname> <portnumber>
+
+# Display errors and details of connection
+knock <__v___verbose_> <hostname> <portnumber>

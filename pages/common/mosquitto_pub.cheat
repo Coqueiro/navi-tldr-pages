@@ -3,4 +3,20 @@
 
 % mosquitto_pub, common
 
+# Publish a temperature value of 32 on the topic `sensors/temperature` to 192.168.1.1 (defaults to `localhost`) with Quality of Service (`QoS`) set to 1
+mosquitto_pub <__h___host_> <192_168_1_1> <__t___topic_> <sensors_temperature> <__m___message_> <32> <__q___qos_> <1>
 
+# Publish timestamp and temperature data on the topic `sensors/temperature` to a remote host on a non-standard port
+mosquitto_pub <__h___host_> <192_168_1_1> <__p___port_> <1885> <__t___topic_> <sensors_temperature> <__m___message_> "{{1266193804 32}}"
+
+# Publish light switch status and retain the message on the topic `switches/kitchen_lights/status` to a remote host because there may be a long period of time between light switch events
+mosquitto_pub <__r___retain_> <__h___host_> "<iot_eclipse_org>" <__t___topic_> <switches_kitchen_lights_status> <__m___message_> "<on>"
+
+# Send the contents of a file (`data.txt`) as a message and publish it to `sensors/temperature` topic
+mosquitto_pub <__t___topic_> <sensors_temperature> <__f___file_> <data_txt>
+
+# Send the contents of a file (`data.txt`), by reading from `stdin` and send the entire input as a message and publish it to `sensors/temperature` topic
+mosquitto_pub < <data_txt> <__t___topic_> <sensors_temperature> <__s___stdin_file_>
+
+# Read newline delimited data from `stdin` as a message and publish it to `sensors/temperature` topic
+{{echo data.txt}} | mosquitto_pub <__t___topic_> <sensors_temperature> <__l___stdin_line_>

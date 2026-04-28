@@ -3,4 +3,11 @@
 
 % bun-feedback, common
 
+# Send text as feedback
+bun feedback "{{Feedback text!}}"
 
+# Send one or more files as feedback
+bun feedback {{path/to/file1 path/to/file2 ...}}
+
+# Send feedback with email address attached
+bun feedback <path_to_file_text> <__e___email_> <email_address>

@@ -3,4 +3,14 @@
 
 % pnmcrop, common
 
+# Remove white borders on a PNM image
+pnmcrop <__w__white_> <path_to_image_pnm> > <path_to_output_pnm>
 
+# Remove borders of the specified color that are on the top and left side of the image
+pnmcrop -bg-color <color> <__t__top_> <__l__left_> <path_to_image_pnm> > <path_to_output_pnm>
+
+# Determine the color of the borders to be removed by the color of the pixel in the specified corner
+pnmcrop -bg-corner <topleft_topright_bottomleft_bottomright> <path_to_image_pnm> > <path_to_output_pnm>
+
+# Leave a border with a width of `n` pixels. Additionally, specify the behavior if the image is entirely made out of background
+pnmcrop <__m__margin_> <n> <__blan__blank_image_> <pass_minimize_maxcrop> <path_to_image_pnm> > <path_to_output_pnm>

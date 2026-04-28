@@ -3,4 +3,20 @@
 
 % ng-analytics, common
 
+# Enable analytics for the current project
+ng analytics <_on_enable_>
 
+# Enable analytics globally
+ng analytics <_on_enable_> <__g___global_>
+
+# Disable analytics for the current project
+ng analytics <_off_disable_>
+
+# Disable analytics globally
+ng analytics <_off_disable_> <__g___global_>
+
+# Display the current analytics configuration and status
+ng analytics info
+
+# Prompt interactively to configure analytics settings
+ng analytics prompt

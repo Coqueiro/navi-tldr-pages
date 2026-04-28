@@ -3,4 +3,23 @@
 
 % npm-query, common
 
+# Print direct dependencies
+npm query ':root > *'
 
+# Print all direct production/development dependencies
+npm query ':root > .<prod_dev>'
+
+# Print dependencies with a specific name
+npm query '#<package>'
+
+# Print dependencies with a specific name and within a semantic versioning range
+npm query '#<package>@<semantic_version>'
+
+# Print dependencies which have no dependencies
+npm query ':empty'
+
+# Find all dependencies with postinstall scripts and uninstall them
+npm query ":attr(scripts, [postinstall])" | jq 'map(.name) | join("\n")' <__r___raw_output_> | xargs -I _ npm uninstall _
+
+# Find all Git dependencies and print which application requires them
+npm query ":type(git)" | jq 'map(.name)' | xargs -I _ npm why _

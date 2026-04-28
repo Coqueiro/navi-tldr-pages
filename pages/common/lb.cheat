@@ -4,19 +4,19 @@
 % lb, common
 
 # Make a new draft
-lb {{[n|new]}}
+lb <_n_new_>
 
 # Edit a draft
-lb {{[e|edit]}}
+lb <_e_edit_>
 
 # Delete a draft
-lb {{[t|trash]}}
+lb <_t_trash_>
 
 # Publish a draft
-lb {{[p|publish]}}
+lb <_p_publish_>
 
 # Delete a published post
-lb {{[d|delete]}}
+lb <_d_delete_>
 
 # Unpublish a published post to edit it as a draft again
-lb {{[r|revise]}}
+lb <_r_revise_>

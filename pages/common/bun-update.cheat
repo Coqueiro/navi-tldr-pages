@@ -3,4 +3,23 @@
 
 % bun-update, common
 
+# Update all dependencies
+bun update
 
+# Update to the latest version, regardless of its compatibility
+bun update --latest
+
+# Update a specific dependency
+bun update <package_name>
+
+# Update a dependency to a specific version
+bun update <package_name>@<version>
+
+# Update packages interactively
+bun update <__i___interactive_>
+
+# Update dependencies recursively across all workspaces
+bun update <__r___recursive_>
+
+# Update dependencies interactively and recursively
+bun update <__i___interactive_> <__r___recursive_>

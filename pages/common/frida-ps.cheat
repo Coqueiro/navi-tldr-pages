@@ -3,4 +3,17 @@
 
 % frida-ps, common
 
+# List all running processes on the local machine
+frida-ps
 
+# List all running processes on a USB-connected device
+frida-ps <__U___usb_>
+
+# List all running applications on a USB-connected device
+frida-ps <__U___usb_> <__a___applications_>
+
+# List all installed applications on a USB-connected device
+frida-ps <__U___usb_> <__i___installed_>
+
+# List processes on a specific device
+frida-ps <__D___device_> <device_id>

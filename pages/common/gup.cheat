@@ -3,4 +3,26 @@
 
 % gup, common
 
+# Update all installed binaries
+gup update
 
+# List all installed binaries, their package paths, and versions
+gup list
+
+# Check for available updates without installing them
+gup check
+
+# Export the list of installed binaries to a file
+gup export <__f___file_> <path_to_gup_json>
+
+# Install binaries from a `gup` configuration file
+gup import <__f___file_> <path_to_gup_json>
+
+# Remove a specific binary
+gup remove <binary_name>
+
+# Update all binaries except for specific ones
+gup update <__e___exclude_> <binary1_binary2____>
+
+# Update specific binaries to the latest version
+gup update --latest <binary1_binary2____>

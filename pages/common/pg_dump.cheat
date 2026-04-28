@@ -3,4 +3,20 @@
 
 % pg_dump, common
 
+# Dump database into an SQL-script file
+pg_dump <db_name> > <output_file_sql>
 
+# Same as above, customize username
+pg_dump <__U___username_> <username> <db_name> > <output_file_sql>
+
+# Same as above, customize host and port
+pg_dump <__h___host_> <host> <__p___port_> <port> <db_name> > <output_file_sql>
+
+# Dump a database into a custom-format archive file
+pg_dump <__F___format_> <_c_custom_> <db_name> > <output_file_dump>
+
+# Dump only database data into an SQL-script file
+pg_dump <__a___data_only_> <db_name> > <path_to_output_file_sql>
+
+# Dump only schema (data definitions) into an SQL-script file
+pg_dump <__s___schema_only_> <db_name> > <path_to_output_file_sql>

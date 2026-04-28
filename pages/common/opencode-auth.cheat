@@ -3,4 +3,14 @@
 
 % opencode-auth, common
 
+# Log in to a provider interactively
+opencode auth login
 
+# List all configured providers
+opencode auth list
+
+# Log out from a configured provider interactively
+opencode auth logout
+
+# Display help
+opencode auth <__h___help_>

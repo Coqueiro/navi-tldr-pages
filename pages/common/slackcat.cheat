@@ -3,4 +3,14 @@
 
 % slackcat, common
 
+# Post a file to Slack
+slackcat <__c___channel_> <channel_name> <path_to_file>
 
+# Post a file to Slack with a custom filename
+slackcat <__c___channel_> <channel_name> <__n___filename_> <filename> <path_to_file>
+
+# Pipe command output to Slack as a text snippet
+<command> | slackcat <__c___channel_> <channel_name> <__n___filename_> <snippet_name>
+
+# Stream command output to Slack continuously
+<command> | slackcat <__c___channel_> <channel_name> <__s___stream_>

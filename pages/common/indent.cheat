@@ -3,4 +3,11 @@
 
 % indent, common
 
+# Format C/C++ source according to the Linux style guide, automatically back up the original files, and replace with the indented versions
+indent <__linux___linux_style_> {{path/to/source1.c path/to/source2.c ...}}
 
+# Format C/C++ source according to the GNU style, saving the indented version to a different file
+indent <__gnu___gnu_style_> <path_to_source_c> -o <path_to_indented_source_c>
+
+# Format C/C++ source according to the style of Kernighan & Ritchie (K&R), no tabs, 3 spaces per indent, and wrap lines at 120 characters
+indent <__kr___k_and_r_style_> <__il___indent_level_>3 <__nut___no_tabs_> <__l___line_length_>120 <path_to_source_c> -o <path_to_indented_source_c>

@@ -3,4 +3,11 @@
 
 % kodi-send, common
 
+# Quit Kodi
+kodi-send <__a___action_> Quit
 
+# Reboot the system
+kodi-send <__a___action_> Reboot
+
+# Send an action to a remote host
+kodi-send --host <192_168_0_1> --port <9777> <__a___action_> <Quit>

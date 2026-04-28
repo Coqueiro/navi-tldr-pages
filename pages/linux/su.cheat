@@ -3,4 +3,23 @@
 
 % su, linux
 
+# Switch to superuser (requires the root password)
+su
 
+# Switch to a given user (requires the user's password)
+su <username>
+
+# Switch to a given user and simulate a full login shell
+su - <username>
+
+# Execute a command as another user
+su - <username> <__c___command_> "<command>"
+
+# Switch to a given user and use a specific shell (e.g., Zsh, fish, Bash)
+su <__s___shell_> /<path_to_shell> <username>
+
+# Display help
+su <__h___help_>
+
+# Display version
+su <__V___version_>

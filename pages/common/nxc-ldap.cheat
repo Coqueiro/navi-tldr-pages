@@ -3,4 +3,17 @@
 
 % nxc-ldap, common
 
+# Search for valid domain credentials by trying out every combination in the specified lists of usernames and passwords
+nxc ldap <192_168_178_2> <__u___username_> <path_to_usernames_txt> <__p___password_> <path_to_passwords_txt>
 
+# Enumerate active domain users
+nxc ldap <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --active-users
+
+# Collect data about the targeted domain and automatically import these data into BloodHound
+nxc ldap <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --bloodhound <__c___collection_> <All>
+
+# Attempt to collect AS_REP messages for the specified user in order to perform an ASREPRoasting attack
+nxc ldap <192_168_178_2> <__u___username_> <username> <__p___password_> '' --asreproast <path_to_output_txt>
+
+# Attempt to extract the passwords of group managed service accounts on the domain
+nxc ldap <192_168_178_2> <__u___username_> <username> <__p___password_> <password> --gmsa

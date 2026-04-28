@@ -3,4 +3,23 @@
 
 % touch, common
 
+# Create specific files
+touch {{path/to/file1 path/to/file2 ...}}
 
+# Set the file [a]ccess or [m]odification times to the current one and don't create file if it doesn't exist
+touch <__c___no_create_> <_a__m> {{path/to/file1 path/to/file2 ...}}
+
+# Set the file [t]ime to a specific value and don't create file if it doesn't exist
+touch <__c___no_create_> -t <YYYYMMDDHHMM_SS> {{path/to/file1 path/to/file2 ...}}
+
+# Set the files' timestamp to the reference file's timestamp, and do not create the file if it does not exist
+touch <__c___no_create_> <__r___reference_> <path_to_reference_file> {{path/to/file1 path/to/file2 ...}}
+
+# Set the timestamp by parsing a string
+touch <__d___date_> "{{last year|5 hours|next thursday|nov 14|...}}" <path_to_file>
+
+# Create multiple files with an increasing number
+touch <path_to_file_1__10>}
+
+# Create multiple files with a letter range
+touch <path_to_file_a__z>}

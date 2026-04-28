@@ -4,16 +4,16 @@
 % qm-shutdown, linux
 
 # Shutdown a virtual machine
-qm {{[shu|shutdown]}} <100>
+qm <_shu_shutdown_> <100>
 
 # Shutdown a virtual machine after wait for at most 10 seconds
-qm {{[shu|shutdown]}} <100> --timeout <10>
+qm <_shu_shutdown_> <100> --timeout <10>
 
 # Shutdown a virtual machine and do not deactivate storage volumes
-qm {{[shu|shutdown]}} <100> --keepActive <true>
+qm <_shu_shutdown_> <100> --keepActive <true>
 
 # Shutdown a virtual machine and skip lock (only root can use this option)
-qm {{[shu|shutdown]}} <100> --skiplock <true>
+qm <_shu_shutdown_> <100> --skiplock <true>
 
 # Stop and shutdown a virtual machine
-qm {{[shu|shutdown]}} <100> --forceStop <true>
+qm <_shu_shutdown_> <100> --forceStop <true>

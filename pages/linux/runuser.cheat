@@ -3,4 +3,17 @@
 
 % runuser, linux
 
+# Run command as a different user
+sudo runuser <user> <__c___command_> '<command>'
 
+# Run command as a different user and group
+sudo runuser <user> <__g___group_> <group> <__c___command_> '<command>'
+
+# Start a login shell as a specific user
+sudo runuser <user> <__l___login_>
+
+# Specify a shell for running instead of the default shell (also works for login)
+sudo runuser <user> <__s___shell_> <_bin_sh>
+
+# Preserve the entire environment of root (only if `--login` is not specified)
+sudo runuser <user> <__p___preserve_environment_> <__c___command_> '<command>'

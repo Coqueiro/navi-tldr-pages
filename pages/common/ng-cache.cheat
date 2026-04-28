@@ -7,10 +7,10 @@
 ng cache clean
 
 # Disable the persistent disk cache for all projects in the workspace
-ng cache {{[off|disable]}}
+ng cache <_off_disable_>
 
 # Enable the persistent disk cache for all projects in the workspace
-ng cache {{[on|enable]}}
+ng cache <_on_enable_>
 
 # Print persistent disk cache configuration and statistics
 ng cache info

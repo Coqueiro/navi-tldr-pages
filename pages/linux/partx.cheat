@@ -3,4 +3,11 @@
 
 % partx, linux
 
+# List the partitions on a block device or disk image
+sudo partx <__l___list_> <path_to_device_or_disk_image>
 
+# Add all the partitions found in a given block device to the kernel
+sudo partx <__a___add_> <__v___verbose_> <path_to_device_or_disk_image>
+
+# Delete all the partitions found from the kernel (does not alter partitions on disk)
+sudo partx <__d___delete_> <path_to_device_or_disk_image>

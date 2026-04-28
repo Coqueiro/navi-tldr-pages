@@ -3,4 +3,14 @@
 
 % brew-cleanup, common
 
+# Remove stale lock files and outdated downloads for all formulas/casks
+brew cleanup
 
+# Remove stale lock files and outdated downloads for a specific formula/cask
+brew cleanup <formula_cask>
+
+# Show what would be removed, but do not actually remove anything
+brew cleanup <__n___dry_run_>
+
+# Display help
+brew cleanup <__h___help_>

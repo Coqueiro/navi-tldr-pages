@@ -3,4 +3,17 @@
 
 % code2prompt, common
 
+# Generate a prompt for the current project and copy it to the clipboard (default behavior)
+code2prompt <path_to_project>
 
+# Include only specific files and exclude a directory
+code2prompt <path_to_project> <__i___include_> "<_____rs>" <__e___exclude_> "<tests___>"
+
+# Write the prompt to a file instead of the clipboard
+code2prompt <path_to_project> <__O___output_file_> <my_prompt_txt>
+
+# Produce structured JSON output
+code2prompt <path_to_project> <__F___output_format_> json
+
+# Use a custom Handlebars template when generating the prompt
+code2prompt <path_to_project> <__t___template_> <my_template_hbs>

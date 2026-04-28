@@ -3,4 +3,11 @@
 
 % csvgrep, common
 
+# Find rows that have a certain string in column 1
+csvgrep <__c___columns_> <1> <__m___match_> <string_to_match> <data_csv>
 
+# Find rows in which columns 3 or 4 match a certain `regex`
+csvgrep <__c___columns_> <3_4> <__r___regex_> <regex> <data_csv>
+
+# Find rows in which the "name" column does NOT include the string "John Doe"
+csvgrep <__i___invert_match_> <__c___columns_> <name> <__m___match_> "{{John Doe}}" <data_csv>

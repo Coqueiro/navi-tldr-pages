@@ -3,4 +3,26 @@
 
 % nuclei, common
 
+# Update `nuclei` templates to the latest released version (downloaded to `~/nuclei-templates` on macOS/Linux or `%USERPROFILE%\nuclei-templates` on Windows)
+nuclei <__ut__update_templates_>
 
+# [l]ist all [t]emplates by specific [p]rotocol [t]ype
+nuclei -tl <__pt__type_> <dns_file_http_headless_tcp_workflow_ssl_websocket_whois_code_javascript>
+
+# Run an automatic web scan using Wappalyzer technology detection for a specific target [u]RL/host
+nuclei <__as__automatic_scan_> <__u__target_> <example_com>
+
+# Run HTTP [p]rotocol [t]ype templates of specific severity, exporting results to markdown files inside a specific directory
+nuclei <__s__severity_> <high_critical____> <__pt__type_> http <__u__target_> <https___example_com> <__me__markdown_export_> <path_to_directory>
+
+# Run all templates with a custom rate limit, maximum bulk size, and silent output (only findings shown)
+nuclei <__rl__rate_limit_> <150> <__bs__bulk_size_> <25> <__c__concurrency_> <25> -silent <__u__target_> <https___example_com>
+
+# Run a specific nuclei-bundled workflow against a target
+nuclei <__w__workflows_> <workflows_wordpress_workflow_yaml> <__u__target_> <https___example_com>
+
+# Run one or more specific templates or directory with templates with verbose output in `stderr` and output detected issues/vulnerabilities to a file
+nuclei <__t__templates_> <path_to_nuclei_templates_http> <__u__target_> <https___example_com> <__v__verbose_> <__o__output_> <path_to_results>
+
+# Use an AI prompt to dynamically generate a template to scan a target (projectdiscovery cloud pdcp API key needs to be configured using `nuclei -auth`)
+nuclei <__u__target_> <https___example_com> <__ai__prompt_> "{{find admin login endpoints}}"

@@ -3,4 +3,8 @@
 
 % updatedb, linux
 
+# Refresh database content
+sudo updatedb
 
+# Display file names as soon as they are found
+sudo updatedb <__v___verbose_>

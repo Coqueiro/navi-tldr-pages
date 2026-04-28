@@ -3,4 +3,23 @@
 
 % libtool, linux
 
+# Compile a source file into a `libtool` object
+libtool <_c_compile_> gcc <__c___compile_> <path_to_source_c> <__o___output_> <path_to_source_lo>
 
+# Create a library or an executable
+libtool <_l_link_> gcc <__o___output_> <path_to_library_lo> <path_to_source_lo>
+
+# Automatically set the library path so that another program can use uninstalled `libtool` generated programs or libraries
+libtool <_e_execute_> gdb <path_to_program>
+
+# Install a shared library
+libtool <_i_install_> cp <path_to_library_la> <path_to_installation_directory>
+
+# Complete the installation of `libtool` libraries on the system
+libtool <_f_finish_> <path_to_installation_directory>
+
+# Delete installed libraries or executables
+libtool <_u_uninstall_> <path_to_installed_library_la>
+
+# Delete uninstalled libraries or executables
+libtool <_cl_clean_> rm <path_to_source_lo> <path_to_library_la>

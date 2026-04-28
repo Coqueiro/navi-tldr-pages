@@ -3,4 +3,11 @@
 
 % mkfs.ntfs, linux
 
+# Create a NTFS filesystem inside partition Y on device X
+sudo mkfs.ntfs <_dev_sdXY>
 
+# Create filesystem with a volume-label
+sudo mkfs.ntfs <__L___label_> <volume_label> <_dev_sdXY>
+
+# Create filesystem with specific UUID
+sudo mkfs.ntfs <__U___with_uuid_> <UUID> <_dev_sdXY>

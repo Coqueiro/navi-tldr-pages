@@ -3,4 +3,26 @@
 
 % jira-issue, common
 
+# List recent issues
+jira issue <_ls_list_>
 
+# List issues assigned to a specific user
+jira issue <_ls_list_> <__a___assignee_> "<email_or_display_name>"
+
+# List high priority issues assigned to me
+jira issue <_ls_list_> <__a___assignee_> $(jira me) <__y___priority_> High
+
+# Create an issue using an interactive prompt
+jira issue create
+
+# Edit an issue using an interactive prompt
+jira issue edit
+
+# Assign user to an issue using an interactive prompt
+jira issue <_asg_assign_>
+
+# Move an issue to a certain state
+jira issue <_mv_move_> <issue_id> "{{In Progress}}"
+
+# Open an issue in the terminal using `less`
+jira issue view <issue_id>

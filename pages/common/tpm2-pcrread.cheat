@@ -3,4 +3,11 @@
 
 % tpm2-pcrread, common
 
+# Read all PCR values
+tpm2 pcrread
 
+# Read all PCR values of the sha256 bank
+tpm2 pcrread sha256:all
+
+# Read specific PCR values from multiple banks and write them to a file
+tpm2 pcrread <__o___output_> <path_to_file> <sha1_16_17_18_sha256_16_17_18>

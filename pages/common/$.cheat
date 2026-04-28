@@ -25,4 +25,4 @@ $(<command>)
 echo $#
 
 # Print out a Bash array
-echo ${{{array_name[@]}}}
+echo $<_array_name___>}

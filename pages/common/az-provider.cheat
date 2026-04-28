@@ -3,4 +3,17 @@
 
 % az-provider, common
 
+# Register a provider
+az provider register <__n___namespace_> <Microsoft_PolicyInsights>
 
+# Unregister a provider
+az provider unregister <__n___namespace_> <Microsoft_Automation>
+
+# List all providers for a subscription
+az provider list
+
+# Show information about a specific provider
+az provider show <__n___namespace_> <Microsoft_Storage>
+
+# List all resource types for a specific provider
+az provider list --query "[?namespace=='<Microsoft_Network>'].resourceTypes[].resourceType"

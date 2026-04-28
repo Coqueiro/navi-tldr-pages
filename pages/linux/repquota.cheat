@@ -3,4 +3,20 @@
 
 % repquota, linux
 
+# Report stats for all quotas in use
+sudo repquota <__a___all_>
 
+# Report quota stats for all users, even those who aren't using any of their quota
+sudo repquota <__v___verbose_> <filesystem>
+
+# Report on quotas for users only
+repquota <__u___user_> <filesystem>
+
+# Report on quotas for groups only
+sudo repquota <__g___group_> <filesystem>
+
+# Report on used quota and limits in a human-readable format
+sudo repquota <__s___human_readable_> <filesystem>
+
+# Report on all quotas for users and groups in a human-readable format
+sudo repquota {{[-augs|--all --user --group --human-readable]}}

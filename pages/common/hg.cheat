@@ -3,4 +3,26 @@
 
 % hg, common
 
+# Create an empty Mercurial repository
+hg init
 
+# Clone a remote Mercurial repository from the internet
+hg clone <https___example_com_repo>
+
+# View the status of a local repository
+hg status
+
+# Add all new files to the next commit
+hg add
+
+# Commit changes to version history
+hg commit <__m___message_> <message_text>
+
+# Push local changes to a remote repository
+hg push
+
+# Pull any changes made to a remote
+hg pull
+
+# Reset everything the way it was in the latest commit
+hg update <__C___clean_>; hg purge

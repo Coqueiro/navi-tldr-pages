@@ -3,4 +3,17 @@
 
 % createuser, common
 
+# Create a user interactively
+createuser --interactive <username>
 
+# Create a user with no special rights
+createuser <username>
+
+# Create a superuser
+createuser <__s___superuser_> <username>
+
+# Create a user allowed to create databases, manage roles, and prompt for a password
+createuser <__d___createdb_> <__r___createrole_> <__P___pwprompt_> <username>
+
+# Create a user without the ability to create databases or manage roles
+createuser <__D___no_createdb_> <__R___no_createrole_> <username>

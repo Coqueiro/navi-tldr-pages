@@ -3,4 +3,8 @@
 
 % distrobox-rm, linux
 
+# Remove a Distrobox container (Tip: Stop the container before removing it)
+distrobox-rm <container_name>
 
+# Remove a Distrobox container forcefully
+distrobox-rm <container_name> <__f___force_>

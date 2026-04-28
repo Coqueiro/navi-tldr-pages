@@ -3,4 +3,20 @@
 
 % ttyd, common
 
+# Start a read only web server sharing Bash shell on the default port (7681)
+ttyd bash
 
+# Start Bash on a specific port
+ttyd <__p___port_> <8080> bash
+
+# Allow clients to write to the terminal
+ttyd <__W___writable_> <command>
+
+# Set client options
+ttyd <__t___client_option_> <key_value> <command>
+
+# Display help
+ttyd <__h___help_>
+
+# Display version
+ttyd <__v___version_>

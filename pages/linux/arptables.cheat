@@ -3,4 +3,20 @@
 
 % arptables, linux
 
+# List all ARP rules in the filter table
+sudo arptables <__L___list_>
 
+# Append a rule to drop ARP packets from a specific IP address
+sudo arptables <__A___append_> INPUT <__s___source_ip_> <192_168_0_1> <__j___jump_> DROP
+
+# Delete a specific rule from the INPUT chain by its rule number
+sudo arptables <__D___delete_> INPUT <rule_number>
+
+# Flush all rules in the filter table
+sudo arptables <__F___flush_>
+
+# Set the default policy of the OUTPUT chain to ACCEPT
+sudo arptables <__P___policy_> OUTPUT ACCEPT
+
+# Save the current ARP rules to a file
+sudo arptables-save > <path_to_file>

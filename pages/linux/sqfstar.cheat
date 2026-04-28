@@ -13,7 +13,7 @@ zcat <archive_tar_gz> | sqfstar -comp <gzip_lzo_lz4_xz_zstd_lzma> <filesystem_sq
 xzcat <archive_tar_xz> | sqfstar <filesystem_squashfs> {{file1 file2 ...}}
 
 # Create a squashfs filesystem from a `.tar` archive compressed with `zstd`, excluding files ending with `.gz`
-zstdcat <archive_tar_zst> | sqfstar <filesystem_squashfs> "{{*.gz}}"
+zstdcat <archive_tar_zst> | sqfstar <filesystem_squashfs> "<__gz>"
 
 # Create a squashfs filesystem from a `.tar` archive compressed with `lz4`, excluding files matching a `regex`
 lz4cat <archive_tar_lz4> | sqfstar <filesystem_squashfs> -regex "<regex>"

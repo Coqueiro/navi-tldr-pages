@@ -7,4 +7,4 @@
 pbmlife <path_to_file_pbm>
 
 # Display version
-pbmlife {{[-v|-version]}}
+pbmlife <__v__version_>

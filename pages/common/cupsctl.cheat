@@ -7,7 +7,7 @@
 cupsctl
 
 # Display the configuration values of a specific server
-cupsctl -h {{server[:port]}}
+cupsctl -h <server__port_>
 
 # Enable encryption on the connection to the scheduler
 cupsctl -E

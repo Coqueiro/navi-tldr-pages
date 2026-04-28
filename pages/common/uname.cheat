@@ -3,4 +3,23 @@
 
 % uname, common
 
+# Print kernel name
+uname
 
+# Print all available system information
+uname <__a___all_>
+
+# Print system architecture and processor information
+uname {{[-mp|--machine --processor]}}
+
+# Print kernel name, kernel release, and kernel version
+uname {{[-srv|--kernel-name --kernel-release --kernel-version]}}
+
+# Print system hostname
+uname <__n___nodename_>
+
+# Print the current operating system name
+uname <__o___operating_system_>
+
+# Display help
+uname --help

@@ -3,4 +3,11 @@
 
 % pg_isready, common
 
+# Check connection
+pg_isready
 
+# Check connection with a specific hostname and port
+pg_isready <__h___host_> <hostname> <__p___port_> <port>
+
+# Check connection displaying a message only when the connection fails
+pg_isready <__q___quiet_>

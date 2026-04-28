@@ -3,4 +3,11 @@
 
 % lesskey, common
 
+# Compile key bindings from a source file
+lesskey <path_to_lesskey_file>
 
+# Compile key bindings and write to a specific output file
+lesskey <__o___output_> <path_to_output> <path_to_lesskey_file>
+
+# Display version
+lesskey <__V___version_>

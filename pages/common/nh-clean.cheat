@@ -3,4 +3,11 @@
 
 % nh-clean, common
 
+# Ask for clean up plan confirmation, clean all profiles and collect garbage
+nh clean all <__a___ask_>
 
+# Keep a specified number of the most recent profiles for the current user and clean the remaining profiles
+nh clean user <__k___keep_> <number>
+
+# Clean a specific profile and collect garbage
+nh clean profile <path_to_profile>

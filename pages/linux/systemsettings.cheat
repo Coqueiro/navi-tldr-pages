@@ -3,4 +3,11 @@
 
 % systemsettings, linux
 
+# Open the settings GUI
+systemsettings
 
+# List all possible KCM modules for `systemsettings`
+systemsettings --list
+
+# Display help
+systemsettings <__h___help_>

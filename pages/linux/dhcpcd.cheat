@@ -3,4 +3,14 @@
 
 % dhcpcd, linux
 
+# Release all address leases
+sudo dhcpcd <__k___release_>
 
+# Request the DHCP server for new leases
+sudo dhcpcd <__n___rebind_>
+
+# Print (dump) the last acquired lease for a given interface
+sudo dhcpcd <__U___dumplease_> <interface_name>
+
+# Print the last acquired lease for all interfaces
+sudo dhcpcd <__U___dumplease_>

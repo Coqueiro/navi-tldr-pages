@@ -3,4 +3,11 @@
 
 % gcrane-gc, common
 
+# List untagged images
+gcrane gc <repository>
 
+# Whether to recurse through repositories
+gcrane gc <repository> <__r___recursive_>
+
+# Display help
+gcrane gc <__h___help_>

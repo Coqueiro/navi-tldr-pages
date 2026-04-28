@@ -3,4 +3,26 @@
 
 % atool, common
 
+# List files in an archive
+atool <__l___list_> <path_to_archive_zip>
 
+# Extract an archive (safely creates a subdirectory if needed)
+atool <__x___extract_> <archive_tar_gz>
+
+# Extract an archive to a specific directory
+atool <__X___extract_to_> <path_to_output_directory> <archive_rar>
+
+# Display a specific file's content from an archive to `stdout` (like `cat`)
+atool <__c___cat_> <archive_tar> <path_to_file_in_archive_txt>
+
+# Create a new archive from specified files and/or directories
+atool <__a___add_> <new_archive_zip> {{path/to/file1 path/to/file2 ...}}
+
+# List files in an archive and send the output through a pager
+atool <__l___list_> <__p___pager_> <large_archive_tar_bz2>
+
+# Extract multiple archives at once (each to its own subdirectory if needed)
+atool <__x___extract_> <__e___each_> <archive1_zip> <archive2_tar_gz> <__rar>
+
+# Repack an archive from one format to another (e.g., `.tar.gz` to `.tar.7z`)
+atool <__r___repack_> <old_archive_tar_gz> <new_archive_tar_7z>

@@ -3,4 +3,26 @@
 
 % hddtemp, linux
 
+# Display temperature of a specific drive
+hddtemp <type>:<_dev_sdX>
 
+# Display temperature of a SATA drive assigned to `sda`
+hddtemp SATA:/dev/sda
+
+# Log temperatures to syslog every `n` seconds
+hddtemp <__S___syslog_> <nseconds> <type>:<_dev_sdX>
+
+# Print only numeric value of temperature without unit
+hddtemp <__n___numeric_> <type>:<_dev_sdX>
+
+# Define the unit used to denote temperature
+hddtemp <__u___unit_> <C_F> <type>:<_dev_sdX>
+
+# Wake ATA drive before attempting to read temperature
+hddtemp <__w___wake_up_> <type>:<_dev_sdX>
+
+# Enter debug mode to show S.M.A.R.T. fields and their values
+hddtemp <__D___debug_> <type>:<_dev_sdX>
+
+# Suppress compatibility check for drive types
+hddtemp <__q___quiet_> <type>:<_dev_sdX>

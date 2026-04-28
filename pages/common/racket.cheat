@@ -3,4 +3,17 @@
 
 % racket, common
 
+# Start a REPL (interactive shell)
+racket
 
+# Execute a Racket script
+racket <path_to_script_rkt>
+
+# Execute a Racket expression
+racket <__e___eval_> "<expression>"
+
+# Run module as a script (terminates option list)
+racket <__l___lib_> <module_name> <__m___main_> <arguments>
+
+# Start a REPL (interactive shell) for the `typed/racket` hashlang
+racket -I typed/racket

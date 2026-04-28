@@ -16,4 +16,4 @@ sudo zerotier-cli peers
 sudo zerotier-cli leave <network_id>
 
 # Display the status of ZeroTier One
-sudo zerotier-cli {{[info|status]}}
+sudo zerotier-cli <_info_status_>

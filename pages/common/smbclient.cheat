@@ -3,4 +3,23 @@
 
 % smbclient, common
 
+# List available shares on a server anonymously
+smbclient <__L___list_> <server> --no-pass
 
+# Connect to a share (will prompt for a password)
+smbclient //<server>/<share>
+
+# Connect to a share as a specific user
+smbclient <__U___user_> <domain_username> //<server>/<share>
+
+# Connect to a share as a specific user with inline password
+smbclient <__U___user_> <domain_username_password> //<server>/<share>
+
+# Connect to a share using a specific workgroup
+smbclient <__W___workgroup_> <domain> <__U___user_> <username> //<server>/<share>
+
+# Download a file from a specific directory on a share
+smbclient <__U___user_> <domain_username> //<server>/<share> <__D___directory_> <path_to_directory> <__c___command_> 'get <filename>'
+
+# Upload a file to a specific directory on a share
+smbclient <__U___user_> <domain_username> //<server>/<share> <__D___directory_> <path_to_directory> <__c___command_> 'put <path_to_local_file>'

@@ -3,4 +3,14 @@
 
 % conda-compare, common
 
+# Compare packages in the current directory to packages from the file `file.yml`
+conda compare file.yml
 
+# Compare packages in environment named `myenv` to packages from the file `file.yml`
+conda compare <__n___name_> myenv <path_to_file_yml>
+
+# Compare packages in environment `myenv` at custom path (i.e. prefix) to packages from the file `file.yml`
+conda compare <__p___prefix_> <path_to_myenv> <path_to_file_yml>
+
+# Display help
+conda compare <__h___help_>

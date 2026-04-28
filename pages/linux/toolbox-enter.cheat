@@ -3,4 +3,11 @@
 
 % toolbox-enter, linux
 
+# Enter a Toolbx container using the default image of a specific distribution
+toolbox enter <__d___distro_> <distribution>
 
+# Enter a Toolbx container using the default image of a specific release of the current distribution
+toolbox enter <__r___release_> <release>
+
+# Enter a Toolbx container using the default image for a specific Fedora release
+toolbox enter <__d___distro_> <fedora> <__r___release_> f<version>

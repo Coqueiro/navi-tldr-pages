@@ -3,4 +3,8 @@
 
 % rename, linux
 
+# View documentation for the Perl version
+tldr <__p___platform_> common rename
 
+# View documentation for the `util-linux` version
+tldr rename.util

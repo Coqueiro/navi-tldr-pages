@@ -3,4 +3,14 @@
 
 % fping, common
 
+# List the status of all hosts within a range
+fping <192_168_1__1__254>}
 
+# List alive hosts within a subnet generated from a netmask
+fping <__a___alive_> <__g___generate_> <192_168_1_0_24>
+
+# List alive hosts within a subnet generated from an IP range and prune per-probe results
+fping <__q___quiet_> <__a___alive_> <__g___generate_> <192_168_1_1> <192_168_1_254>
+
+# List unreachable hosts within a subnet generated from a netmask
+fping <__u___unreach_> <__g___generate_> <192_168_1_0_24>

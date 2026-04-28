@@ -3,4 +3,11 @@
 
 % opencode-import, common
 
+# Import from a JSON file
+opencode import <path_to_session>.json
 
+# Import from a share URL
+opencode import <URL>
+
+# Display help
+opencode import <__h___help_>

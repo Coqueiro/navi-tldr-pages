@@ -3,4 +3,8 @@
 
 % vgchange, linux
 
+# Change the activation status of logical volumes in all volume groups
+sudo vgchange <__a___activate_> <y_n>
 
+# Change the activation status of logical volumes in the specified volume group (determine with `vgscan`)
+sudo vgchange <__a___activate_> <y_n> <volume_group>

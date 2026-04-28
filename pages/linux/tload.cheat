@@ -3,4 +3,14 @@
 
 % tload, linux
 
+# Run tload
+tload
 
+# Display a graph with a specific vertical scale (e.g. 10 for a 1:1 scale)
+tload <__s___scale_> <value>
+
+# Change the refresh rate for the graph
+tload <__d___delay_> <seconds>
+
+# Display a graph for a specific terminal
+tload <_dev_tty1>

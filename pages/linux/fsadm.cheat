@@ -3,4 +3,17 @@
 
 % fsadm, linux
 
+# Check a filesystem for errors
+fsadm check <_dev_vg_name_lv_name>
 
+# Perform a dry-run resize to a specific size (no changes made)
+fsadm <__n___dry_run_> resize <_dev_vg_name_lv_name> <10G>
+
+# Grow a filesystem to fill the entire device (omit the size)
+fsadm resize <_dev_vg_name_lv_name>
+
+# Resize the filesystem and the underlying logical volume together
+fsadm <__l___lvresize_> resize <_dev_vg_name_lv_name> <100G>
+
+# For ext2/3/4, unmount and resize offline
+fsadm <__e___ext_offline_> resize <_dev_vg_name_lv_name> <20G>

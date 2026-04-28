@@ -3,4 +3,20 @@
 
 % pg_verifybackup, common
 
+# Verify a backup stored in a specific directory
+pg_verifybackup <path_to_backup>
 
+# Verify a backup showing progress information
+pg_verifybackup <__P___progress_> <path_to_backup>
+
+# Verify a backup and exit immediately on first error
+pg_verifybackup <__e___exit_on_error_> <path_to_backup>
+
+# Verify a backup ignoring specific files or directories
+pg_verifybackup <__i___ignore_> <path_to_file_or_directory> <path_to_backup>
+
+# Verify a backup with a manifest file in a different location
+pg_verifybackup <__m___manifest_path_> <path_to_backup_manifest> <path_to_backup>
+
+# Display help
+pg_verifybackup <______help_>

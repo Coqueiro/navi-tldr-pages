@@ -4,19 +4,19 @@
 % doctl-kubernetes-cluster, common
 
 # Create a Kubernetes cluster
-doctl {{[k|kubernetes]}} {{[c|cluster]}} {{[c|create]}} --count <3> --region <nyc1> --size <s_1vcpu_2gb> --version <latest> <cluster_name>
+doctl <_k_kubernetes_> <_c_cluster_> <_c_create_> --count <3> --region <nyc1> --size <s_1vcpu_2gb> --version <latest> <cluster_name>
 
 # List all Kubernetes clusters
-doctl {{[k|kubernetes]}} {{[c|cluster]}} {{[ls|list]}}
+doctl <_k_kubernetes_> <_c_cluster_> <_ls_list_>
 
 # Fetch and save the kubeconfig
-doctl {{[k|kubernetes]}} {{[c|cluster]}} {{[cfg|kubeconfig]}} {{[s|save]}} <cluster_name>
+doctl <_k_kubernetes_> <_c_cluster_> <_cfg_kubeconfig_> <_s_save_> <cluster_name>
 
 # Check for available upgrades
-doctl {{[k|kubernetes]}} {{[c|cluster]}} {{[gu|get-upgrades]}} <cluster_name>
+doctl <_k_kubernetes_> <_c_cluster_> <_gu_get_upgrades_> <cluster_name>
 
 # Upgrade a cluster to a new Kubernetes version
-doctl {{[k|kubernetes]}} {{[c|cluster]}} upgrade <cluster_name>
+doctl <_k_kubernetes_> <_c_cluster_> upgrade <cluster_name>
 
 # Delete a cluster
-doctl {{[k|kubernetes]}} {{[c|cluster]}} {{[d|delete]}} <cluster_name>
+doctl <_k_kubernetes_> <_c_cluster_> <_d_delete_> <cluster_name>

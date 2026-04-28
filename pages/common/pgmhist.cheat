@@ -7,13 +7,13 @@
 pgmhist <path_to_image_pgm>
 
 # Display the median grey value
-pgmhist {{[-me|-median]}} <path_to_image_pgm>
+pgmhist <__me__median_> <path_to_image_pgm>
 
 # Display four quartile grey value
-pgmhist {{[-qua|-quartile]}} <path_to_image_pgm>
+pgmhist <__qua__quartile_> <path_to_image_pgm>
 
 # Report the existence of invalid grey values
-pgmhist {{[-f|-forensic]}} <path_to_image_pgm>
+pgmhist <__f__forensic_> <path_to_image_pgm>
 
 # Display machine-readable output
-pgmhist {{[-ma|-machine]}} <path_to_image_pgm>
+pgmhist <__ma__machine_> <path_to_image_pgm>

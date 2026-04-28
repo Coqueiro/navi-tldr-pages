@@ -3,4 +3,17 @@
 
 % swaks, linux
 
+# Deliver a standard test email to `user@example.com` on port 25 of `test-server.example.net`
+swaks <__t___to_> <user_example_com> <__s___server_> <test_server_example_net>
 
+# Deliver a standard test email, requiring CRAM-MD5 authentication as user `me@example.com`. An "X-Test" header will be added to the email body
+swaks <__t___to_> <user_example_com> <__f___from_> <me_example_com> <__a___auth_> <CRAM_MD5> <__au___auth_user_> <me_example_com> --header-X-Test "<test_email>"
+
+# Test a virus scanner using EICAR in an attachment. Don't show the message DATA part
+swaks <__t___to_> <user_example_com> --attach - <__s___server_> <test_server_example_com> <__n___suppress_data_> <path_to_eicar_txt>
+
+# Test a spam scanner using GTUBE in the body of an email, routed via the MX records for `example.com`
+swaks <__t___to_> <user_example_com> --body <path_to_gtube_file>
+
+# Deliver a standard test email to `user@example.com` using the LMTP protocol via a UNIX domain socket file
+swaks <__t___to_> <user_example_com> --socket <_var_lda_sock> --protocol <LMTP>

@@ -3,4 +3,20 @@
 
 % pg_amcheck, common
 
+# Check a specific database
+pg_amcheck <dbname>
 
+# Check all databases
+pg_amcheck <__a___all_>
+
+# Check databases matching the specified pattern
+pg_amcheck <__d___database_> <pattern>
+
+# Check specific tables within a database
+pg_amcheck <__t___table_> <pattern> <dbname>
+
+# Check specific schemas within a database
+pg_amcheck <__s___schema_> <pattern> <dbname>
+
+# Display help
+pg_amcheck <______help_>

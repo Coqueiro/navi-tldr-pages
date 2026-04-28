@@ -3,4 +3,26 @@
 
 % opencode, common
 
+# Start the interactive TUI
+opencode
 
+# Continue the most recent session
+opencode <__c___continue_>
+
+# Run opencode in non-interactive mode by passing a prompt directly
+opencode run "<message>"
+
+# Use a specific model and agent
+opencode run <__m___model_> <provider>/<model> --agent <agent_name> "<message>"
+
+# List all available models from configured providers
+opencode models
+
+# Manage credentials and login for providers
+opencode auth login
+
+# Start a headless opencode server for API access
+opencode serve <__h___hostname_> <hostname> <__p___port_> <port>
+
+# Create a new agent with custom configuration
+opencode agent create

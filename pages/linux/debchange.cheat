@@ -3,4 +3,11 @@
 
 % debchange, linux
 
+# Add a new version for a non-maintainer upload to the changelog
+debchange <__n___nmu_>
 
+# Add a changelog entry to the current version
+debchange <__a___append_>
+
+# Add a changelog entry to close the bug with specified ID
+debchange --closes <bug_id>

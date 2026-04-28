@@ -3,4 +3,8 @@
 
 % podman-export, common
 
+# Export a container's filesystem to a `.tar` file
+podman export <__o___output_> <path_to_file_tar> <container_name_or_id>
 
+# Export a container's filesystem to `stdout`
+podman export <container_name_or_id> > <path_to_file_tar>

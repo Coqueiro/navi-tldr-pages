@@ -3,4 +3,11 @@
 
 % retry, common
 
+# Retry a command until it succeeds
+retry <command>
 
+# Retry a command every n seconds until it succeeds
+retry <__d___delay_> <n> <command>
+
+# Give up after n attempts
+retry <__t___times_> <n> <command>

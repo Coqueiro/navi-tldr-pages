@@ -3,4 +3,20 @@
 
 % phpstan, common
 
+# Analyze one or more directories
+phpstan analyse {{path/to/directory1 path/to/directory2 ...}}
 
+# Analyze a directory using a configuration file
+phpstan analyse <path_to_directory> <__c___configuration_> <path_to_config>
+
+# Analyze using a specific rule level (0-10, higher is stricter)
+phpstan analyse <path_to_directory> <__l___level_> <level>
+
+# Specify an autoload file to load before analyzing
+phpstan analyse <path_to_directory> <__a___autoload_file_> <path_to_autoload_file>
+
+# Specify a memory limit during analysis
+phpstan analyse <path_to_directory> --memory-limit <memory_limit>
+
+# Display available options for analysis
+phpstan analyse --help

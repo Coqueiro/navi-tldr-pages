@@ -3,4 +3,11 @@
 
 % systemctl-switch-root, linux
 
+# Switch to a new root filesystem and execute its default init system
+systemctl switch-root <path_to_new_root>
 
+# Switch to a new root filesystem and run a specific init binary
+systemctl switch-root <path_to_new_root> <_sbin_init>
+
+# Switch to a new root filesystem with verbose output
+systemctl switch-root <path_to_new_root> <__v___verbose_>

@@ -3,4 +3,20 @@
 
 % lsipc, linux
 
+# Show information about all active IPC facilities
+lsipc
 
+# Show information about active shared [m]emory segments, message [q]ueues, or [s]empahore sets
+lsipc <__shmems___queues___semaphores>
+
+# Show full details on the resource with a specific ID
+lsipc <__shmems___queues___semaphores> <__i___id_> <resource_id>
+
+# Print the given output columns (see all supported columns with `--help`)
+lsipc <__o___output_> <KEY_ID_PERMS_SEND_STATUS_NSEMS_RESOURCE____>
+
+# Use [r]aw, [J]SON, [l]ist, or [e]xport (key="value") format
+lsipc <__raw___json___list___export>
+
+# Don't truncate the output
+lsipc --notruncate

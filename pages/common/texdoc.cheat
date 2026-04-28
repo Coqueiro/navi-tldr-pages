@@ -3,4 +3,11 @@
 
 % texdoc, common
 
+# Open the first search result in the default PDF viewer
+texdoc <search>
 
+# List the best search results
+texdoc <__l___list_> <search>
+
+# Open full documentation of texdoc
+texdoc <texdoc>

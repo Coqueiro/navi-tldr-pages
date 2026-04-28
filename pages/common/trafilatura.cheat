@@ -3,4 +3,26 @@
 
 % trafilatura, common
 
+# Extract text from a URL
+trafilatura <__u___URL_> <url>
 
+# Extract text and save to a file
+trafilatura <__u___URL_> <url> <__o___output_dir_> <path_to_output_txt>
+
+# Extract text in JSON format
+trafilatura <__u___URL_> <url> --json
+
+# Extract text from multiple URLs listed in a file
+trafilatura <__i___input_file_> <path_to_url_list_txt>
+
+# Crawl a website using its sitemap
+trafilatura --sitemap <url_to_sitemap_xml>
+
+# Extract text while preserving HTML formatting
+trafilatura <__u___URL_> <url> --formatting
+
+# Extract text including comments
+trafilatura <__u___URL_> <url> --with-comments
+
+# Display help
+trafilatura <__h___help_>

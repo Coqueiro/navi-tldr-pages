@@ -3,4 +3,8 @@
 
 % nix-flake-init, common
 
+# Create a new flake from the default template, in the current directory
+nix flake init
 
+# Create a new flake with a specified template (see `nix flake show` for information about templates)
+nix flake init <__t___template_> templates#<your_template>

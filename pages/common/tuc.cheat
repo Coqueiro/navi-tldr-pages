@@ -3,4 +3,17 @@
 
 % tuc, common
 
+# Cut and rearrange fields
+echo "foo bar baz" | tuc <__d___delimiter_> '{{ }}' <__f___fields_> <3_2_1>
 
+# Replace the delimiter `space` with an arrow
+echo "foo bar baz" | tuc <__d___delimiter_> ' ' <__r___replace_delimiter_> ' ➡ '
+
+# Keep a range of fields
+echo "foo bar    baz" | tuc <__d___delimiter_> ' ' <__f___fields_> <2_>
+
+# Cut using `regex`
+echo "a,b, c" | tuc <__e___regex_> '{{[, ]+}}' <__f___fields_> <1_3>
+
+# Emit JSON output
+echo "foo bar baz" | tuc <__d___delimiter_> '{{ }}' --json

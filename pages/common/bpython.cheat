@@ -3,4 +3,14 @@
 
 % bpython, common
 
+# Start a REPL (interactive shell)
+bpython
 
+# Execute a specific Python file
+bpython <path_to_file_py>
+
+# Execute a specific Python file and start a REPL
+bpython <__i___interactive_> <path_to_file_py>
+
+# Use the specified configuration file instead of the default configuration
+bpython --config <path_to_file_conf>

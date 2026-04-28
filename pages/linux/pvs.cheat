@@ -3,4 +3,23 @@
 
 % pvs, linux
 
+# Display information about physical volumes
+sudo pvs
 
+# Display non-physical volumes
+sudo pvs <__a___all_>
+
+# Change default display to show more details
+sudo pvs <__v___verbose_>
+
+# Display only specific fields
+sudo pvs <__o___options_> <field_name_1_field_name_2____>
+
+# Append field to default display
+sudo pvs <__o___options_> +<field_name>
+
+# Suppress heading line
+sudo pvs --noheadings
+
+# Use separator to separate fields
+sudo pvs --separator <special_character>

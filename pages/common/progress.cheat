@@ -3,4 +3,17 @@
 
 % progress, common
 
+# Show the progress of running coreutils
+progress
 
+# Monitor all running coreutils
+progress <__m___monitor_>
+
+# Show the progress of running coreutils in quiet mode
+progress <__q___quiet_>
+
+# Launch and monitor a single long-running command
+<command> & progress <__m___monitor_> <__p___pid_> $!
+
+# Include an estimate of time remaining for completion
+progress <__w___wait_> <__c___command_> <firefox>

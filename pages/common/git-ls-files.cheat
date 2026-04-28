@@ -3,4 +3,14 @@
 
 % git-ls-files, common
 
+# Show deleted files
+git ls-files <__d___deleted_>
 
+# Show modified and deleted files
+git ls-files <__m___modified_>
+
+# Show ignored and untracked files
+git ls-files <__o___others_>
+
+# Show untracked files, not ignored
+git ls-files <__o___others_> --exclude-standard

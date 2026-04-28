@@ -3,4 +3,11 @@
 
 % ntp-ctl, common
 
+# Display information about the current state of the NTP daemon
+ntp-ctl status
 
+# Check if the specified configuration file (default: `/etc/ntpd-rs/ntp.toml`) is valid
+ntp-ctl <__c___config_> <path_to_config> validate
+
+# Interactively run a single synchronization of the clock
+sudo ntp-ctl force-sync

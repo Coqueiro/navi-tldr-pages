@@ -3,4 +3,20 @@
 
 % cec-client, linux
 
+# List all CEC adapters
+cec-client <__l___list_devices_>
 
+# Start an interactive CEC session
+sudo cec-client
+
+# Set the On-Screen Display name
+sudo cec-client <__o___osd_name_> <name>
+
+# Send a single command
+echo {{on 0}} | sudo cec-client <__s___single_command_>
+
+# Set a device to standby in interactive mode
+standby <0>
+
+# Turn a device on in interactive mode
+on <0>

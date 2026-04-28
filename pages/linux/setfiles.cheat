@@ -3,4 +3,17 @@
 
 % setfiles, linux
 
+# Set file contexts according to the default policy file
+sudo setfiles /etc/selinux/targeted/contexts/files/file_contexts <path_to_directory>
 
+# Set file contexts recursively and show changes
+sudo setfiles /etc/selinux/targeted/contexts/files/file_contexts <path_to_directory> <__v___verbose_>
+
+# Preview what would be changed without actually modifying contexts
+sudo setfiles /etc/selinux/targeted/contexts/files/file_contexts <path_to_directory> <__n___nochange_>
+
+# Set file contexts and verify them
+sudo setfiles /etc/selinux/targeted/contexts/files/file_contexts <path_to_directory> <__v___verbose_> <__F___force_>
+
+# Use a specific root path for context matching
+sudo setfiles /etc/selinux/targeted/contexts/files/file_contexts <path_to_new_directory> <__r___rootpath_> <path_to_old_directory>

@@ -3,4 +3,17 @@
 
 % sprio, linux
 
+# View the factors determining the scheduling priority of all jobs
+sprio
 
+# View the factors determining the specified job's scheduling priority
+sprio <__j___jobs_> <job_id_1_job_id_2____>
+
+# Output additional information
+sprio <__l___long_>
+
+# View information for the jobs of specified users
+sprio <__u___user_> <user_name_1_user_name_2____>
+
+# Print the weights for each factor determining job scheduling priority
+sprio <__w___weights_>

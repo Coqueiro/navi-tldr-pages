@@ -3,4 +3,23 @@
 
 % chown, common
 
+# Change the owner user of a file/directory
+sudo chown <user> <path_to_file_or_directory>
 
+# Change the owner user and group of a file/directory
+sudo chown <user>:<group> <path_to_file_or_directory>
+
+# Change the owner user and group to both have the name `user`
+sudo chown <user>: <path_to_file_or_directory>
+
+# Change the group of a file to a group that the current user belongs to
+chown :<group> <path_to_file_or_directory>
+
+# Recursively change the owner of a directory and its contents
+sudo chown <__R___recursive_> <user> <path_to_directory>
+
+# Change the owner of a symbolic link
+sudo chown <__h___no_dereference_> <user> <path_to_symlink>
+
+# Change the owner of a file/directory to match a reference file
+sudo chown --reference <path_to_reference_file> <path_to_file_or_directory>

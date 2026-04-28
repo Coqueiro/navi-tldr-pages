@@ -3,4 +3,8 @@
 
 % rpicam-raw, linux
 
+# Capture a video for a specific amount of seconds
+rpicam-raw <__t___timeout_> <2000> <__o___output_> <path_to_file_raw>
 
+# Change video dimensions and framerate
+rpicam-raw <__t___timeout_> <5000> --width <4056> --height <3040> <__o___output_> <path_to_file_raw> --framerate <8>

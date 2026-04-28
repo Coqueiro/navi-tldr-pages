@@ -3,4 +3,23 @@
 
 % strace, linux
 
+# Start tracing a specific process by its PID
+sudo strace <__p___attach_> <pid>
 
+# Trace a process and filter output by system call [e]xpression
+sudo strace <__p___attach_> <pid> -e <system_call_system_call2____>
+
+# Count time, calls, and errors for each system call and report a summary on program exit
+sudo strace <__p___attach_> <pid> <__c___summary_only_>
+
+# Show the time spent in every system call and specify the maximum string size to print
+sudo strace <__p___attach_> <pid> <__T___syscall_times_> <__s___string_limit_> <32>
+
+# Start tracing a program by executing it
+strace <program>
+
+# Start tracing file operations of a program
+strace -e trace=file <program>
+
+# Start tracing network operations of a program as well as all its forked and child processes, saving the output to a file
+strace <__f___follow_forks_> -e trace=network <__o___output_> <trace_txt> <program>

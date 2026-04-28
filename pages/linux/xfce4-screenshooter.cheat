@@ -3,4 +3,23 @@
 
 % xfce4-screenshooter, linux
 
+# Launch the screenshooter GUI
+xfce4-screenshooter
 
+# Take a screenshot of the entire screen and launch the GUI to ask how to proceed
+xfce4-screenshooter <__f___fullscreen_>
+
+# Take a screenshot of the entire screen and save it in the specified directory
+xfce4-screenshooter <__f___fullscreen_> <__s___save_> <path_to_directory>
+
+# Wait some time before taking the screenshot
+xfce4-screenshooter <__d___delay_> <seconds>
+
+# Take a screenshot of a region of the screen (select using the mouse)
+xfce4-screenshooter <__r___region_>
+
+# Take a screenshot of the active window, and copy it to the clipboard
+xfce4-screenshooter <__w___window_> <__c___clipboard_>
+
+# Take a screenshot of the active window, and open it with a chosen program
+xfce4-screenshooter <__w___window_> <__o___open_> <gimp>

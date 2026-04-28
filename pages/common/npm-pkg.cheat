@@ -3,4 +3,26 @@
 
 % npm-pkg, common
 
+# Get the value of a specific property
+npm pkg get <name>
 
+# Get multiple properties at once
+npm pkg get <name_version____>
+
+# Get multiple values across all workspaces
+npm pkg get <name> <version> <___ws___workspaces_>
+
+# Get a nested or array property value
+npm pkg get <contributors_0__email>
+
+# Set a property to a specific value
+npm pkg set <property>=<value>
+
+# Set multiple properties at once
+npm pkg set <property1>=<value1> <property2>=<value2>
+
+# Delete a property from `package.json`
+npm pkg delete <scripts_build>
+
+# Auto-fix common errors in `package.json`
+npm pkg fix

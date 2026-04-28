@@ -3,4 +3,14 @@
 
 % podman-import, common
 
+# Import a tarball from a local file and create an image
+podman import <path_to_tarball_tar> <image_tag>
 
+# Import a tarball from a URL
+podman import <https___example_com_image_tar> <image_tag>
+
+# Import a tarball and add a commit message
+podman import <__m___message_> "<commit_message>" <path_to_tarball_tar> <image_tag>
+
+# Import a tarball and set a default command (required for running the container)
+podman import <__c___change_> CMD=<_bin_bash> <path_to_tarball_tar> <image_tag>

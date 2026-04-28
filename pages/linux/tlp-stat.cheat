@@ -3,4 +3,26 @@
 
 % tlp-stat, linux
 
+# Generate status report with configuration and all active settings
+sudo tlp-stat
 
+# Show information about various devices
+sudo tlp-stat --<battery_disk_processor_graphics_pcie_rfkill_usb>
+
+# Show verbose information about devices that support verbosity
+sudo tlp-stat <__v___verbose_> --<battery_processor_pcie_usb>
+
+# Show configuration
+sudo tlp-stat <__c___config_>
+
+# Monitor [p]ower supply `udev` [ev]ents
+sudo tlp-stat <__P___pev_>
+
+# Show [p]ower [sup]ply diagonistics
+sudo tlp-stat --psup
+
+# Show [t]emperatures and fan speed
+sudo tlp-stat <__t___temp_>
+
+# Show general system information
+sudo tlp-stat <__s___system_>

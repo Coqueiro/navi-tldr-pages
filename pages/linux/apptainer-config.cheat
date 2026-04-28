@@ -3,4 +3,26 @@
 
 % apptainer-config, linux
 
+# Add a fakeroot user mapping
+sudo apptainer config fakeroot <__a___add_> <username>
 
+# Remove a fakeroot user mapping
+sudo apptainer config fakeroot <__r___remove_> <username>
+
+# Enable a fakeroot user mapping
+sudo apptainer config fakeroot <__e___enable_> <username>
+
+# Disable a fakeroot user mapping
+sudo apptainer config fakeroot <__d___disable_> <username>
+
+# Get the current value of a global configuration directive
+sudo apptainer config global <__g___get_> <directive>
+
+# Set a global configuration directive value
+sudo apptainer config global <__s___set_> <directive> <value>
+
+# Unset a global configuration directive value
+sudo apptainer config global <__u___unset_> <directive> <value>
+
+# Reset a global configuration directive to its default value
+sudo apptainer config global <__r___reset_> <directive>

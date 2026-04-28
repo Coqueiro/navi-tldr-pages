@@ -4,4 +4,4 @@
 % qm-listsnapshot, linux
 
 # List all snapshots of a specific virtual machine
-qm {{[lists|listsnapshot]}} <100>
+qm <_lists_listsnapshot_> <100>

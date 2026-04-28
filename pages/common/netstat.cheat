@@ -3,4 +3,23 @@
 
 % netstat, common
 
+# List all ports
+netstat <__a___all_>
 
+# List all listening ports
+netstat <__l___listening_>
+
+# List listening TCP ports
+netstat <__t___tcp_>
+
+# Display PID and program names
+netstat <__p___program_>
+
+# List information continuously
+netstat <__c___continuous_>
+
+# List routes and do not resolve IP addresses to hostnames
+netstat {{[-rn|--route --numeric]}}
+
+# List listening TCP and UDP ports (+ user and process if you're root)
+netstat {{[-tulpne|--tcp --udp --listening --program --numeric --extend]}}

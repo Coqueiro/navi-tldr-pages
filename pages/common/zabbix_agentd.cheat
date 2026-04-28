@@ -3,4 +3,26 @@
 
 % zabbix_agentd, common
 
+# Start the agent with the default configuration file
+zabbix_agentd
 
+# Start the agent with a custom configuration file
+zabbix_agentd <__c___config_> <path_to_zabbix_agentd_conf>
+
+# Run the agent in foreground (it stays attached to the current terminal session)
+zabbix_agentd <__c___config_> <path_to_zabbix_agentd_conf> <__f___foreground_>
+
+# Test the configuration file
+zabbix_agentd <__c___config_> <path_to_zabbix_agentd_conf> <__T___test_config_>
+
+# Test a specific item with verbose output
+zabbix_agentd <__c___config_> <path_to_zabbix_agentd_conf> <__t___test_> <item_key> <__v___verbose_>
+
+# Reload user parameters from the configuration file (runtime control)
+zabbix_agentd <__c___config_> <path_to_zabbix_agentd_conf> <__R___runtime_control_> userparameter_reload
+
+# Increase or decrease log level for all processes (runtime control)
+zabbix_agentd <__c___config_> <path_to_zabbix_agentd_conf> <__R___runtime_control_> log_level_<increase_decrease>
+
+# Display help
+zabbix_agentd <__h___help_>

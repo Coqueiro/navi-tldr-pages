@@ -3,4 +3,20 @@
 
 % git-archive, common
 
+# Create a `.tar` archive from the contents of the current `HEAD` and print it to `stdout`
+git archive <__v___verbose_> HEAD
 
+# Use the Zip format and report progress verbosely
+git archive <__v___verbose_> --format zip HEAD
+
+# Output the Zip archive to a specific file
+git archive <__v___verbose_> <__o___output_> <path_to_file_zip> HEAD
+
+# Create a `.tar` archive from the contents of the latest commit of a specific branch
+git archive <__o___output_> <path_to_file_tar> <branch_name>
+
+# Use the contents of a specific directory
+git archive <__o___output_> <path_to_file_tar> HEAD:<path_to_directory>
+
+# Prepend a path to each file to archive it inside a specific directory
+git archive <__o___output_> <path_to_file_tar> --prefix <path_to_prepend>/ HEAD

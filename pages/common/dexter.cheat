@@ -3,4 +3,8 @@
 
 % dexter, common
 
+# Create and authenticate a user with Google OIDC
+dexter auth <__i___client_id_> <client_id> <__s___client_secret_> <client_secret>
 
+# Override the default kube configuration file location
+dexter auth <__i___client_id_> <client_id> <__s___client_secret_> <client_secret> <__k___kube_config_> <sample_config>

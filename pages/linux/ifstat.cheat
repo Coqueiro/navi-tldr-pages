@@ -3,4 +3,11 @@
 
 % ifstat, linux
 
+# View network interface statistics since last query
+ifstat
 
+# View network interface statistics since last boot
+ifstat <__a___ignore_>
+
+# View error rate
+ifstat <__e___errors_>

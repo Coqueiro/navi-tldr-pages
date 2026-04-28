@@ -3,4 +3,17 @@
 
 % pwqgen, common
 
+# Generate a passphrase
+pwqgen
 
+# Generate a passphrase with a specific bit size between 24 and 136
+pwqgen random=<bitsize>
+
+# Use a config file to control password generation
+pwqgen config=<path_to_config_file>
+
+# Display help
+pwqgen <__h___help_>
+
+# Display version
+pwqgen --version

@@ -3,4 +3,23 @@
 
 % btop, common
 
+# Start `btop`
+btop
 
+# Start `btop` with the specified settings preset
+btop <__p___preset_> <0__9>
+
+# Start `btop` in TTY mode using 16 colors and TTY-friendly graph symbols
+btop <__t___tty_>
+
+# Start `btop` in 256-color mode instead of 24-bit color mode
+btop <__l___low_color_>
+
+# Set the update rate to 500 milliseconds
+btop <__u___update_> 500
+
+# Exit `btop`
+<q>
+
+# Display help
+btop <__h___help_>

@@ -3,4 +3,17 @@
 
 % reflex, common
 
+# Rebuild with `make` if any file changes
+reflex make
 
+# Compile and run Go application if any `.go` file changes
+reflex <__r___regex_> '<__go_>' {{go run .}}
+
+# Ignore a directory when watching for changes
+reflex <__G___inverse_regex_> '<_dir_>' <command>
+
+# Run command when reflex starts and restarts on file changes
+reflex <__s___start_service_> true <command>
+
+# Substitute the filename that changed in
+reflex -- echo {}

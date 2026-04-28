@@ -3,4 +3,26 @@
 
 % curl, common
 
+# Make an HTTP GET request and dump the contents in `stdout`
+curl <https___example_com>
 
+# Make an HTTP GET request, follow any `3xx` redirects, and dump the reply headers and contents to `stdout`
+curl <__L___location_> <__D___dump_header_> - <https___example_com>
+
+# Download a file, saving the output under the filename indicated by the URL
+curl <__O___remote_name_> <https___example_com_filename_zip>
+
+# Send form-encoded data (POST request of type `application/x-www-form-urlencoded`). Use `--data @file_name` or `--data @'-'` to read from `stdin`
+curl <__X___request_> POST <__d___data_> '<name_bob>' <http___example_com_form>
+
+# Send a request with an extra header, using a custom HTTP method and over a proxy (such as BurpSuite), ignoring insecure self-signed certificates
+curl <__k___insecure_> <__x___proxy_> <http___127_0_0_1_8080> <__H___header_> '{{Authorization: Bearer token}}' <__X___request_> <GET_PUT_POST_DELETE_PATCH____> <https___example_com>
+
+# Send data in JSON format, specifying the appropriate Content-Type header
+curl <__d___data_> '<__name___bob_>}' <__H___header_> '{{Content-Type: application/json}}' <http___example_com_users_1234>
+
+# Pass client certificate and private key for the request, skipping certificate validation
+curl <__E___cert_> <client_pem> --key <key_pem> <__k___insecure_> <https___example_com>
+
+# Resolve a hostname to a custom IP address, with verbose output (similar to editing the `/etc/hosts` file for custom DNS resolution)
+curl <__v___verbose_> --resolve <example_com>:<80>:<127_0_0_1> <http___example_com>

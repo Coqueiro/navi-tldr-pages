@@ -3,4 +3,20 @@
 
 % pip-wheel, common
 
+# Build a wheel for a package
+pip wheel <package>
 
+# Build wheels for packages in requirements file
+pip wheel <__r___requirement_> <path_to_requirements_txt>
+
+# Build wheel to a specific directory
+pip wheel <package> <__w___wheel_dir_> <path_to_directory>
+
+# Build wheel without dependencies
+pip wheel <package> --no-deps
+
+# Build wheel from local project
+pip wheel <path_to_project>
+
+# Build wheel from Git repository
+pip wheel git+<https___github_com_user_repo_git>

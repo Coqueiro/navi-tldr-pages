@@ -3,4 +3,17 @@
 
 % yadm-transcrypt, common
 
+# Set the symmetric cipher to utilize for encryption
+yadm transcrypt <__c___cipher_> <cipher>
 
+# Pass the password to derive the key from
+yadm transcrypt <__p___password_> <password>
+
+# Assume yes and accept defaults for non-specified options
+yadm transcrypt <__y___yes_>
+
+# Display the current repository's cipher and password
+yadm transcrypt <__d___display_>
+
+# Re -encrypt all encrypted files using new credentials
+yadm transcrypt <__r___rekey_>

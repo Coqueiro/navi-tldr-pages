@@ -3,4 +3,20 @@
 
 % rusnapshot, linux
 
+# Create a snapshot using a configuration file
+sudo rusnapshot <__c___config_> <path_to_config_toml> --cr
 
+# List created snapshots
+sudo rusnapshot <__c___config_> <path_to_config_toml> <__l___list_>
+
+# Delete a snapshot by ID or the name of the snapshot
+sudo rusnapshot <__c___config_> <path_to_config_toml> --del --id <snapshot_id>
+
+# Delete all `hourly` snapshots
+sudo rusnapshot <__c___config_> <path_to_config_toml> <__l___list_> <__k___keep_> <0> --clean --kind <hourly>
+
+# Create a read-write snapshot
+sudo rusnapshot <__c___config_> <path_to_config_toml> --cr <__r___rw_>
+
+# Restore a snapshot
+sudo rusnapshot <__c___config_> <path_to_config_toml> --id <snapshot_id> <__r___restore_>

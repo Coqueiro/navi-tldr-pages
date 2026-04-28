@@ -3,4 +3,17 @@
 
 % dpkg-query, linux
 
+# List all installed packages
+dpkg-query <__l___list_>
 
+# List installed packages matching a pattern
+dpkg-query <__l___list_> '<libc6_>'
+
+# List all files installed by a package
+dpkg-query <__L___listfiles_> <libc6>
+
+# Show information about a package
+dpkg-query <__s___status_> <libc6>
+
+# Search for packages that own files matching a pattern
+dpkg-query <__S___search_> <_etc_ld_so_conf_d>

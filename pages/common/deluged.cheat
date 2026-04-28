@@ -3,4 +3,14 @@
 
 % deluged, common
 
+# Start the Deluge daemon
+deluged
 
+# Start the Deluge daemon on a specific port
+deluged <__p___port_> <port>
+
+# Start the Deluge daemon using a specific configuration file
+deluged <__c___config_> <path_to_configuration_file>
+
+# Start the Deluge daemon and output the log to a file
+deluged <__l___logfile_> <path_to_log_file>

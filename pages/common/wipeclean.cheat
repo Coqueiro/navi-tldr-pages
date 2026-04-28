@@ -3,4 +3,8 @@
 
 % wipeclean, common
 
+# Clear the terminal screen
+wipeclean
 
+# Set the animation speed in frames per second (defaults to 150)
+wipeclean <__s___speed_> <speed>

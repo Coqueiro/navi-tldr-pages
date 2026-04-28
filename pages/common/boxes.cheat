@@ -3,4 +3,23 @@
 
 % boxes, common
 
+# Draw a box around a string
+echo "<string>" | boxes
 
+# Remove a box from a string
+echo "<string>" | boxes <__r___remove_>
+
+# Specify the box design
+echo "<string>" | boxes <__d___design_> <parchment>
+
+# Specify the box size (in columns by lines)
+echo "<string>" | boxes <__s___size_> <10>x<5>
+
+# Align the box text [h]orizonally (at [l]eft, [c]enter, or [r]ight)
+echo "<string>" | boxes <__a___align_> h<l_c_r>
+
+# Align the box text [v]ertically (at [t]op, [c]enter, or [b]ottom)
+echo "<string>" | boxes <__a___align_> v<t_c_b>
+
+# [j]ustify the box text (at [l]eft, [c]enter, or [r]ight)
+echo "<string>" | boxes <__a___align_> j<l_c_r><vt>

@@ -3,4 +3,17 @@
 
 % pulumi-plugin, common
 
+# List all plugins on the downloaded cache
+pulumi plugin ls
 
+# List plugins being used by the current project in JSON format
+pulumi plugin <__p___project_> <__j___json_>
+
+# Install a plugin kind (e.g resource) with the latest version or a specific one
+pulumi plugin install <kind> <name> <version>
+
+# Remove a plugin kind (e.g. resource) and interactively pick a version or provide a specific one
+pulumi plugin rm <kind> <name> <version>
+
+# Display help
+pulumi plugin <__h___help_>

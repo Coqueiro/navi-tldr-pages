@@ -3,4 +3,17 @@
 
 % zeroclaw-daemon, common
 
+# Start the daemon on default port (8080)
+zeroclaw daemon
 
+# Start the daemon on a specific port
+zeroclaw daemon <__p___port_> <8080>
+
+# Start the daemon on a random available port
+zeroclaw daemon <__p___port_> 0
+
+# Start the daemon on a specific host
+zeroclaw daemon --host <0_0_0_0> <__p___port_> <8080>
+
+# Display help
+zeroclaw daemon <__h___help_>

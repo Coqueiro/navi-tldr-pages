@@ -3,4 +3,26 @@
 
 % cradle, common
 
+# Install Cradle components (prompts for additional info)
+cradle install
 
+# Force install and overwrite files
+cradle install <__f___force_>
+
+# Connect to a remote server (see `config/deploy.php`)
+cradle connect <server_name>
+
+# Display the current Cradle configuration
+cradle config show
+
+# Install a package into the current Cradle instance
+cradle package install <package_name>
+
+# List installed packages
+cradle package list
+
+# Display help
+cradle help
+
+# Display version
+cradle --version

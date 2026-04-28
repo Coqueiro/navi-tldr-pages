@@ -3,4 +3,14 @@
 
 % wasm-opt, common
 
+# Apply default optimizations and write to a given file
+wasm-opt -O <input_wasm> <__o___output_> <output_wasm>
 
+# Apply all optimizations and write to a given file (takes more time, but generates optimal code)
+wasm-opt -O4 <input_wasm> <__o___output_> <output_wasm>
+
+# Optimize a file for size
+wasm-opt -Oz <input_wasm> <__o___output_> <output_wasm>
+
+# Print the textual representation of the binary to console
+wasm-opt <input_wasm> --print

@@ -3,4 +3,14 @@
 
 % bun-unlink, common
 
+# Unregister the current package globally
+bun unlink
 
+# Unregister a package in a specific directory
+bun unlink --cwd <path_to_package>
+
+# Perform a dry run without actually unregistering
+bun unlink --dry-run
+
+# Display help
+bun unlink <__h___help_>

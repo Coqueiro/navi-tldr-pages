@@ -4,19 +4,19 @@
 % ng, common
 
 # Create a new Angular application inside a directory
-ng {{[n|new]}} <project_name>
+ng <_n_new_> <project_name>
 
 # Compile the application and start a local development server
-ng {{[s|serve]}}
+ng <_s_serve_>
 
 # Create a new component
-ng {{[g|generate]}} {{[c|component]}} <component_name>
+ng <_g_generate_> <_c_component_> <component_name>
 
 # Build an Angular application or library
-ng {{[b|build]}}
+ng <_b_build_>
 
 # Run unit tests
-ng {{[t|test]}}
+ng <_t_test_>
 
 # Add a package to the current project
 ng add <package>
@@ -25,4 +25,4 @@ ng add <package>
 ng update
 
 # Display version
-ng {{[v|version]}}
+ng <_v_version_>

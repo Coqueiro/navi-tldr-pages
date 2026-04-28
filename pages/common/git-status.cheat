@@ -3,4 +3,23 @@
 
 % git-status, common
 
+# Show untracked and changed files which are not yet added for commit
+git status
 
+# Give output in short format
+git status <__s___short_>
+
+# Show output in short format along with branch info
+git status {{[-sb|--short --branch]}}
+
+# Show the changes in staged files (like `git diff --cached`)
+git status <__v___verbose_>
+
+# Show the changes in all tracked files (like `git diff HEAD`)
+git status {{[-vv|--verbose --verbose]}}
+
+# Show the number of entries currently stashed away
+git status --show-stash
+
+# Don't show untracked files in the output
+git status <__uno___untracked_files_no_>

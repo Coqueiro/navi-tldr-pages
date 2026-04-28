@@ -3,4 +3,8 @@
 
 % snmptest, common
 
+# Start the prompt
+snmptest -v <version> -c <community> <ip_address>
 
+# Display help
+snmptest <__h___help_>

@@ -3,4 +3,11 @@
 
 % doctl-databases-maintenance-window, common
 
+# Run a `doctl databases maintenance-window` command with an access token
+doctl <_d_databases_> <_mw_maintenance_window_> <command> <__t___access_token_> <access_token>
 
+# Retrieve details about a database cluster's maintenance windows
+doctl <_d_databases_> <_mw_maintenance_window_> <_g_get_> <database_id>
+
+# Update the maintenance window for a database cluster
+doctl <_d_databases_> <_mw_maintenance_window_> <_u_update_> <database_id> --day <day_of_the_week> --hour <hour_in_24_hours_format>

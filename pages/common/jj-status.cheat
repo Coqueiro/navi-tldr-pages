@@ -4,4 +4,4 @@
 % jj-status, common
 
 # Show high-level status of the repository
-jj {{[st|status]}}
+jj <_st_status_>

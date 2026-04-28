@@ -4,10 +4,10 @@
 % xml-list, common
 
 # Write the current directory's listing to an XML document
-xml {{[ls|list]}} > <path_to_dir_list_xml>
+xml <_ls_list_> > <path_to_dir_list_xml>
 
 # Write the specified directory's listing to an XML document
-xml {{[ls|list]}} <path_to_directory> > <path_to_dir_list_xml>
+xml <_ls_list_> <path_to_directory> > <path_to_dir_list_xml>
 
 # Display help
-xml {{[ls|list]}} --help
+xml <_ls_list_> --help

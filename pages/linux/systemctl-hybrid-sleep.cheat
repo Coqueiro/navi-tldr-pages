@@ -3,4 +3,11 @@
 
 % systemctl-hybrid-sleep, linux
 
+# Put the system into hybrid sleep immediately
+systemctl hybrid-sleep
 
+# Force hybrid sleep even if inhibitors are present
+systemctl hybrid-sleep <__f___force_>
+
+# Put the system into hybrid sleep without sending a wall message to logged-in users
+systemctl hybrid-sleep --no-wall

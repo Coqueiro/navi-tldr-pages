@@ -4,25 +4,25 @@
 % ip, linux
 
 # List interfaces with detailed info
-ip {{[a|address]}}
+ip <_a_address_>
 
 # List interfaces with brief network layer info
-ip {{[-br|-brief]}} {{[a|address]}}
+ip <__br__brief_> <_a_address_>
 
 # List interfaces with brief link layer info
-ip {{[-br|-brief]}} {{[l|link]}}
+ip <__br__brief_> <_l_link_>
 
 # Display the routing table
-ip {{[r|route]}}
+ip <_r_route_>
 
 # Show neighbors (ARP table)
-ip {{[n|neighbour]}}
+ip <_n_neighbour_>
 
 # Make an interface up/down
-sudo ip {{[l|link]}} {{[s|set]}} <ethX> <up_down>
+sudo ip <_l_link_> <_s_set_> <ethX> <up_down>
 
 # Add/Delete an IP address to an interface
-sudo ip {{[a|address]}} <add_delete> <ip_address>/<mask> dev <ethX>
+sudo ip <_a_address_> <add_delete> <ip_address>/<mask> dev <ethX>
 
 # Add a default route
-sudo ip {{[r|route]}} {{[a|add]}} default via <ip_address> dev <ethX>
+sudo ip <_r_route_> <_a_add_> default via <ip_address> dev <ethX>

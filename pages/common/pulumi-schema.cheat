@@ -3,4 +3,11 @@
 
 % pulumi-schema, common
 
+# Check a package schema
+pulumi schema check <path_to_file>
 
+# Check a package schema without failing if the reference to a type is missing
+pulumi schema check --allow-dangling-references <path_to_file>
+
+# Display help
+pulumi schema check <__h___help_>

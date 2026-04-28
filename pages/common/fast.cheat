@@ -3,4 +3,14 @@
 
 % fast, common
 
+# Measure the current download speed
+fast
 
+# Measure the current upload speed in addition to download speed
+fast <__u___upload_>
+
+# Display results on a single line to reduce spacing
+fast --single-line
+
+# Display complete results - download/upload speeds, latency, and ISP info
+fast --verbose

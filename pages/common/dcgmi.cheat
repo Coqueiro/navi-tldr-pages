@@ -3,4 +3,17 @@
 
 % dcgmi, common
 
+# Display information on all available GPUs and processes using them
+dcgmi discovery <__l___list_>
 
+# List created groups
+dcgmi group <__l___list_>
+
+# Display current usage statistics for device 0
+dcgmi dmon <__e___field_id_><1001_1002_1003_1004_1005>
+
+# Display help
+dcgmi <__h___help_>
+
+# Display help for a subcommand
+dcgmi <subcommand> <__h___help_>

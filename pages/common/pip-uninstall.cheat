@@ -3,4 +3,11 @@
 
 % pip-uninstall, common
 
+# Uninstall a package
+pip uninstall <package>
 
+# Uninstall packages listed in a specific file
+pip uninstall <__r___requirement_> <path_to_requirements_txt>
+
+# Uninstall package without asking for confirmation
+pip uninstall <__y___yes_> <package>

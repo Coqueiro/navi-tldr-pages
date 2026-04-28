@@ -3,4 +3,20 @@
 
 % dmidecode, linux
 
+# Show all DMI table contents
+sudo dmidecode
 
+# Show the BIOS version
+sudo dmidecode <__s___string_> bios-version
+
+# Show the system's serial number
+sudo dmidecode <__s___string_> system-serial-number
+
+# Show BIOS information
+sudo dmidecode <__t___type_> bios
+
+# Show CPU information
+sudo dmidecode <__t___type_> processor
+
+# Show memory information
+sudo dmidecode <__t___type_> memory

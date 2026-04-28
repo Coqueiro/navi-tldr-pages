@@ -3,4 +3,14 @@
 
 % pkcs11-tool, common
 
+# List slots and their potential token, using a specific module (e.g. `/usr/lib/softhsm/libsofthsm2.so`)
+pkcs11-tool --module <path_to_module_so> <__L___list_slots_> <__T___list_token_slots_>
 
+# List objects in a specific slot. (Note: `slot_id` is not the slot index shown as "Slot X")
+pkcs11-tool <__O___list_objects_> <__p___pin_> <auth_pin> --slot <slot_id>
+
+# Create a new object with a specific label and type
+pkcs11-tool --slot <slot_id> <__p___pin_> <auth_pin> <__y___type_> <cert_privkey_pubkey_secrkey_data____> <__a___label_> "<label>" <__d___id_> <01> <__w___write_object_> <path_to_cert_crt>
+
+# Delete an object by its label and type
+pkcs11-tool --slot <slot_id> <__p___pin_> <auth_pin> <__y___type_> <cert_privkey_pubkey_secrkey_data____> <__a___label_> "<label>" <__b___delete_object_>

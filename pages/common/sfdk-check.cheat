@@ -3,4 +3,20 @@
 
 % sfdk-check, common
 
+# Display test suites
+sfdk check --list-suites
 
+# Run all or essential test suites
+sfdk check
+
+# Add testing level to the check
+sfdk check <__l___levels_> +<level>
+
+# Remove testing level from the check
+sfdk check <__l___levels_> -<level>
+
+# Add testing suite to the check
+sfdk check <__s___suites_> +<suite>
+
+# Remove testing suite from the check
+sfdk check <__s___suites_> -<suite>

@@ -3,4 +3,14 @@
 
 % sfdk-init, common
 
+# Initialize a new project of the given type
+sfdk init <__t___type_> <type>
 
+# Initialize a new project with a specified builder
+sfdk init <__t___type_> <type> <__b___builder_> <builder>
+
+# Initialize a new project ignoring non-empty directory
+sfdk init <__t___type_> <type> --force
+
+# List available project types
+sfdk init <__l___list_types_>

@@ -3,4 +3,26 @@
 
 % gource, common
 
+# Run gource in a directory (if it isn't the repository's root directory, the root is sought up from there)
+gource <path_to_repository>
 
+# Run gource in the current directory, with a custom output resolution
+gource -<width>x<height>
+
+# Specify how long each day should be in the animation (this combines with -c, if provided)
+gource <__s___seconds_per_day_> <seconds>
+
+# Use fullscreen mode and a custom background color
+gource <__f___fullscreen_> <__b___background_colour_> <hex_color_code>
+
+# Specify the animation title
+gource --title <title>
+
+# Pause the animation
+<Space>
+
+# Adjust simulation speed
+<<___>>
+
+# Display help
+gource <__h___help_>

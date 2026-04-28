@@ -3,4 +3,14 @@
 
 % autorecon, linux
 
+# Perform reconnaissance on target host(s) (detailed scan results will be dumped in `results`)
+sudo autorecon <host_or_ip1_host_or_ip2____>
 
+# Perform reconnaissance on target(s) from a file
+sudo autorecon <__t___target_file_> <path_to_file>
+
+# Output results to a different directory
+sudo autorecon <__o___output_> <path_to_results> <host_or_ip1_host_or_ip2____>
+
+# Limit scanning to specific ports and protocols (`T` for TCP, `U` for UDP, `B` for both)
+sudo autorecon <__p___ports_> <T_21_25_80_443_U_53_B_123> <host_or_ip1_host_or_ip2____>

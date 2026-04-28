@@ -3,4 +3,17 @@
 
 % pulumi-stack-history, common
 
+# Display history for the current stack
+pulumi stack <_hist_history_>
 
+# Display history for the current stack showing full dates instead of relative dates
+pulumi stack <_hist_history_> --full-dates
+
+# Display history for the current stack in JSON format
+pulumi stack <_hist_history_> <__j___json_>
+
+# Display history for a specific stack
+pulumi stack <_hist_history_> <__s___stack_> <stack_name>
+
+# Display help
+pulumi stack <_hist_history_> <__h___help_>

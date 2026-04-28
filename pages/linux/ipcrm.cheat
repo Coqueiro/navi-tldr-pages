@@ -3,4 +3,23 @@
 
 % ipcrm, linux
 
+# Delete a shared memory segment by ID
+ipcrm <__m___shmem_id_> <shmem_id>
 
+# Delete a shared memory segment by key
+ipcrm <__M___shmem_key_> <shmem_key>
+
+# Delete an IPC queue by ID
+ipcrm <__q___queue_id_> <ipc_queue_id>
+
+# Delete an IPC queue by key
+ipcrm <__Q___queue_key_> <ipc_queue_key>
+
+# Delete a semaphore by ID
+ipcrm <__s___semaphore_id_> <semaphore_id>
+
+# Delete a semaphore by key
+ipcrm <__S___semaphore_key_> <semaphore_key>
+
+# Delete all IPC resources
+ipcrm <__a___all_>

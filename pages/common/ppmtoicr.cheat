@@ -7,10 +7,10 @@
 ppmtoicr <path_to_file_ppm> > <path_to_file_icr>
 
 # Display the output in name
-ppmtoicr {{[-w|-windowname]}} <name> <path_to_file_ppm> > <path_to_file_icr>
+ppmtoicr <__w__windowname_> <name> <path_to_file_ppm> > <path_to_file_icr>
 
 # Expand the image by the specified factor
-ppmtoicr {{[-e|-expand]}} <factor> <path_to_file_ppm> > <path_to_file_icr>
+ppmtoicr <__e__expand_> <factor> <path_to_file_ppm> > <path_to_file_icr>
 
 # Display the output on the screen with the specified number
-ppmtoicr {{[-d|-display]}} <number> <path_to_file_ppm> > <path_to_file_icr>
+ppmtoicr <__d__display_> <number> <path_to_file_ppm> > <path_to_file_icr>

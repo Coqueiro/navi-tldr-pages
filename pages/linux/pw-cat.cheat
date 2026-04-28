@@ -3,4 +3,26 @@
 
 % pw-cat, linux
 
+# Play a WAV file over the default target
+pw-cat <__p___playback_> <path_to_file_wav>
 
+# Play a MIDI file
+pw-cat <__p___playback_> <__m___midi_> <path_to_file_mid>
+
+# Play a DSD file
+pw-cat <__p___playback_> <__d___dsd_> <path_to_file_dsf>
+
+# Play a compressed audio file using passthrough (requires FFmpeg integration)
+pw-cat <__p___playback_> <__o___encoded_> <path_to_file_ac3>
+
+# Play a WAV file with a specified resampler quality (4 by default)
+pw-cat <__p___playback_> <__q___quality_> <0__15> <path_to_file_wav>
+
+# Record a MIDI file
+pw-cat <__r___record_> <__m___midi_> <path_to_file_mid>
+
+# Record a sample recording at a volume level of 125%
+pw-cat <__r___record_> --volume <1_25> <path_to_file_wav>
+
+# Record a sample recording using a different sample rate
+pw-cat <__r___record_> --rate <6000> <path_to_file_wav>

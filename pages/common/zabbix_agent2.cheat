@@ -3,4 +3,23 @@
 
 % zabbix_agent2, common
 
+# Start the agent with the default configuration file
+zabbix_agent2
 
+# Start the agent with a custom configuration file
+zabbix_agent2 <__c___config_> <path_to_zabbix_agent2_conf>
+
+# Test the configuration file and exit
+zabbix_agent2 <__c___config_> <path_to_zabbix_agent2_conf> <__T___test_config_>
+
+# Test a specific item with verbose output
+zabbix_agent2 <__c___config_> <path_to_zabbix_agent2_conf> <__t___test_> <item_key> <__v___verbose_>
+
+# Reload user parameters from the configuration file (runtime control)
+zabbix_agent2 <__c___config_> <path_to_zabbix_agent2_conf> <__R___runtime_control_> userparameter_reload
+
+# Increase or decrease log level (runtime control)
+zabbix_agent2 <__c___config_> <path_to_zabbix_agent2_conf> <__R___runtime_control_> loglevel <increase_decrease>
+
+# Display help
+zabbix_agent2 <__h___help_>

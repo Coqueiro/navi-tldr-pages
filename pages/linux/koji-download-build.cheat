@@ -3,4 +3,17 @@
 
 % koji-download-build, linux
 
+# Download all RPMs from a specific build
+koji download-build <BuildID_RPM_NVR>
 
+# Download RPMs signed with the given key
+koji download-build <BuildID_RPM_NVR> --key <key>
+
+# Only download RPMs for given arch
+koji download-build <BuildID_RPM_NVR> --arch <x86_64_aarch64_noarch____>
+
+# Download the given RPM
+koji download-build <RPM> --rpm
+
+# Display help
+koji download-build <__h___help_>

@@ -3,4 +3,20 @@
 
 % acpi, linux
 
+# Show battery information
+acpi
 
+# Show thermal information
+acpi <__t___thermal_>
+
+# Show cooling device information
+acpi <__c___cooling_>
+
+# Show thermal information in Fahrenheit
+acpi {{[-tf|--thermal --fahrenheit]}}
+
+# Show all information
+acpi <__V___everything_>
+
+# Extract information from `/proc` instead of `/sys`
+acpi <__p___proc_>

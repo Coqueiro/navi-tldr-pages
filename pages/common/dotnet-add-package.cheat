@@ -3,4 +3,20 @@
 
 % dotnet-add-package, common
 
+# Add a package to the project in the current directory
+dotnet add package <package>
 
+# Add a package to a specific project
+dotnet add <path_to_file_csproj> package <package>
+
+# Add a specific version of a package to the project
+dotnet add package <package> <__v___version_> <1_0_0>
+
+# Add a package using a specific NuGet source
+dotnet add package <package> <__s___source_> <https___api_nuget_org_v3_index_json>
+
+# Add a package only when targeting a specific framework
+dotnet add package <package> <__f___framework_> <net7_0>
+
+# Add and specify the directory where to restore packages (`~/.nuget/packages` by default)
+dotnet add package <package> --package-directory <path_to_directory>

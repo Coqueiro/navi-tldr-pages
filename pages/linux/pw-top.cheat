@@ -3,4 +3,14 @@
 
 % pw-top, linux
 
+# Display an interactive view of PipeWire nodes and devices
+pw-top
 
+# Monitor a remote instance
+pw-top <__r___remote_> <remote_name>
+
+# Print information periodically instead of running in interactive mode
+pw-top <__b___batch_mode_>
+
+# Print information periodically for a specific number of times
+pw-top <__b___batch_mode_> <__n___iterations_> <3>

@@ -3,4 +3,14 @@
 
 % docker-container-start, common
 
+# Start a Docker container
+docker {{[start|container start]}} <container>
 
+# Start a container, attaching `stdout` and `stderr`, and forwarding signals
+docker {{[start|container start]}} <__a___attach_> <container>
+
+# Start one or more containers
+docker {{[start|container start]}} {{container1 container2 ...}}
+
+# Display help
+docker {{[start|container start]}} --help

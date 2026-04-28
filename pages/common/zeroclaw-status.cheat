@@ -3,4 +3,8 @@
 
 % zeroclaw-status, common
 
+# Show system status
+zeroclaw status
 
+# Display help
+zeroclaw status <__h___help_>

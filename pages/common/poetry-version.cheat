@@ -3,4 +3,14 @@
 
 % poetry-version, common
 
+# Output the current version
+poetry version <__s___short_>
 
+# Set project to a specific phase
+poetry version <stage>
+
+# Increment the project to the next prerelease phase
+poetry version --next-phase
+
+# Test project stage function without writing to `pyproject.toml`
+poetry version <stage> --dry-run

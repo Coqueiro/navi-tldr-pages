@@ -3,4 +3,11 @@
 
 % zapier-test, common
 
+# Test an integration
+zapier test
 
+# Test an integration while skipping validation
+zapier test --skip-validate
+
+# Test an integration with additional debug output
+zapier test <__d___debug_>

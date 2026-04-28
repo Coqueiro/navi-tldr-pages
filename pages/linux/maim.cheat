@@ -3,4 +3,14 @@
 
 % maim, linux
 
+# Capture a screenshot and save it to the given path
+maim <path_to_screenshot_png>
 
+# Capture a screenshot of the selected region
+maim <__s___select_> <path_to_screenshot_png>
+
+# Capture a screenshot of the selected region and save it in the clipboard (requires `xclip`)
+maim <__s___select_> | xclip <__se__selection_> <_c_clipboard_> <__t__target_> image/png
+
+# Capture a screenshot of the current active window (requires `xdotool`)
+maim <__i___window_> $(xdotool getactivewindow) <path_to_screenshot_png>

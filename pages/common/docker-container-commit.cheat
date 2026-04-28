@@ -3,4 +3,23 @@
 
 % docker-container-commit, common
 
+# Create an image from a specific container
+docker {{[commit|container commit]}} <container> <image>:<tag>
 
+# Apply a `CMD` Dockerfile instruction to the created image
+docker {{[commit|container commit]}} <__c___change_> "CMD <command>" <container> <image>:<tag>
+
+# Apply an `ENV` Dockerfile instruction to the created image
+docker {{[commit|container commit]}} <__c___change_> "ENV <name>=<value>" <container> <image>:<tag>
+
+# Create an image with a specific author in the metadata
+docker {{[commit|container commit]}} <__a___author_> "<author>" <container> <image>:<tag>
+
+# Create an image with a specific comment in the metadata
+docker {{[commit|container commit]}} <__m___message_> "<comment>" <container> <image>:<tag>
+
+# Create an image without pausing the container during commit
+docker {{[commit|container commit]}} <__p___pause_> false <container> <image>:<tag>
+
+# Display help
+docker {{[commit|container commit]}} --help

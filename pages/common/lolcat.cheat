@@ -3,4 +3,23 @@
 
 % lolcat, common
 
+# Print a file to the console in rainbow colors
+lolcat <path_to_file>
 
+# Print the result of a text-producing command in rainbow colors
+<fortune> | lolcat
+
+# Use a seed to generate consistent colors (default: `0` as in random)
+lolcat <__S___seed_> <number> <path_to_file>
+
+# Control rainbow frequency (default: `0.1`)
+lolcat <__F___frequency_> <number> <path_to_file>
+
+# Control rainbow smoothing (default: `3`)
+lolcat <__p___spread_> <number> <path_to_file>
+
+# Print a file to the console with animated rainbow colors
+lolcat <__a___animate_> <path_to_file>
+
+# Print a file to the console with 24-bit (truecolor) rainbow colors
+lolcat <__t___truecolor_> <path_to_file>

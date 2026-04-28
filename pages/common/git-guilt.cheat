@@ -3,4 +3,20 @@
 
 % git-guilt, common
 
+# Show total blame count
+git guilt
 
+# Calculate the change in blame between two revisions
+git guilt <first_revision> <last_revision>
+
+# Show author emails instead of names
+git guilt <__e___email_>
+
+# Ignore whitespace only changes when attributing blame
+git guilt <__w___ignore_whitespace_>
+
+# Find blame delta over the last three weeks
+git guilt 'git log --until "3 weeks ago" --format "%H" <__n___max_count_> 1'
+
+# Find blame delta over the last three weeks (Git 1.8.5+)
+git guilt @{3.weeks.ago}

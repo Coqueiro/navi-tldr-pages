@@ -3,4 +3,17 @@
 
 % poetry-build, common
 
+# Build a tarball and a wheel for the project
+poetry build
 
+# Build a wheel package
+poetry build <__f___format_> wheel
+
+# Build a source distribution (sdist)
+poetry build <__f___format_> sdist
+
+# Clean the output directory before building
+poetry build --clean
+
+# Set the output directory
+poetry build <__o___output_> <path_to_directory>

@@ -3,4 +3,20 @@
 
 % dirsearch, common
 
+# Scan a web server for common paths with common extensions
+dirsearch <__u___url_> <url> --extensions-list
 
+# Scan a list of web servers for common paths with given file extensions
+dirsearch <__l___url_list_> <path_to_url_list_txt> <__e___extensions_> <php_jsp_aspx____>
+
+# Scan a web server for user-defined paths with common extensions
+dirsearch <__u___url_> <url> --extensions-list <__w___wordlists_> <path_to_url_paths1_txt_path_to_url_paths2_txt____>
+
+# Scan a web server using a cookie
+dirsearch <__u___url_> <url> <__e___extensions_> <php> --cookie <cookie>
+
+# Scan a web server using the `HEAD` HTTP method
+dirsearch <__u___url_> <url> <__e___extensions_> <php> <__m___http_method_> <HEAD>
+
+# Scan a web server, saving the results to a `.json` file
+dirsearch <__u___url_> <url> <__e___extensions_> <php> --json-report <path_to_report_json>

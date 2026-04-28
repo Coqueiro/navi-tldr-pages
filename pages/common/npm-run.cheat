@@ -22,4 +22,4 @@ npm stop
 npm restart
 
 # Run a script named `test`
-npm {{[t|test]}}
+npm <_t_test_>

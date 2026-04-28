@@ -3,4 +3,11 @@
 
 % swapoff, linux
 
+# Disable a given swap area
+sudo swapoff <path_to_file>
 
+# Disable all swap areas in `/proc/swaps`
+sudo swapoff <__a___all_>
+
+# Disable a swap partition by its label
+sudo swapoff -L <label>

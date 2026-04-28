@@ -3,4 +3,17 @@
 
 % patch, common
 
+# Apply a patch using a diff file (filenames must be included in the diff file)
+patch < <patch_diff>
 
+# Apply a patch to a specific file
+patch < <patch_diff> <path_to_file>
+
+# Patch a file writing the result to a different file
+patch < <patch_diff> <path_to_input_file> <__o___output_> <path_to_output_file>
+
+# Apply a patch to the current directory
+patch < <patch_diff> <__p___strip_> 1
+
+# Apply the reverse of a patch
+patch < <patch_diff> <__R___reverse_>

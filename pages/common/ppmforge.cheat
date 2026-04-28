@@ -10,7 +10,7 @@ ppmforge > <path_to_image_ppm>
 ppmforge -<night_clouds> > <path_to_image_ppm>
 
 # Use a custom mesh size and dimension for fractal generation and specify the dimensions of the output
-ppmforge {{[-m|-mesh]}} <512> {{[-d|-dimension]}} <2_5> {{[-x|-xsize]}} <1000> {{[-y|-ysize]}} <1000> > <path_to_image_ppm>
+ppmforge <__m__mesh_> <512> <__d__dimension_> <2_5> <__x__xsize_> <1000> <__y__ysize_> <1000> > <path_to_image_ppm>
 
 # Control the tilt and the angle from which the generated planet is illuminated
-ppmforge {{[-t|-tilt]}} <_15> {{[-ho|-hour]}} <12> > <path_to_image_ppm>
+ppmforge <__t__tilt_> <_15> <__ho__hour_> <12> > <path_to_image_ppm>

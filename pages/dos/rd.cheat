@@ -4,4 +4,4 @@
 % rd, dos
 
 # Remove directory
-RD {{path\to\directory}}
+RD <path_to_directory>

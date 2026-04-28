@@ -4,7 +4,7 @@
 % rtmon, linux
 
 # Save all network state changes to a file
-sudo rtmon {{[f|file]}} <path_to_file>
+sudo rtmon <_f_file_> <path_to_file>
 
 # Specify the type of change to log
-sudo rtmon {{[f|file]}} <link_address_route>
+sudo rtmon <_f_file_> <link_address_route>

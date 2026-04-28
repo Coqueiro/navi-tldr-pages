@@ -3,4 +3,17 @@
 
 % crane-registry, common
 
+# Serve a registry implementation
+crane registry serve
 
+# Address to listen on
+crane registry serve --address <address_name>
+
+# Path to a directory where blobs will be stored
+crane registry serve --disk <path_to_store_directory>
+
+# Display help for `crane registry`
+crane registry <__h___help_>
+
+# Display help for `crane registry serve`
+crane registry serve <__h___help_>

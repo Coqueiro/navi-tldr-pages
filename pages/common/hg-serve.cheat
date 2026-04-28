@@ -3,4 +3,20 @@
 
 % hg-serve, common
 
+# Start a web server instance
+hg serve
 
+# Start a web server instance on the specified port
+hg serve <__p___port_> <port>
+
+# Start a web server instance on the specified listening address
+hg serve <__a___address_> <address>
+
+# Start a web server instance with a specific identifier
+hg serve <__n___name_> <name>
+
+# Start a web server instance using the specified theme (see the templates directory)
+hg serve --style <style>
+
+# Start a web server instance using the specified SSL certificate bundle
+hg serve --certificate <path_to_certificate>

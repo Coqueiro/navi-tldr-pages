@@ -7,4 +7,4 @@
 leaftoppm <path_to_file_pl>
 
 # Display version
-leaftoppm {{[-v|-version]}}
+leaftoppm <__v__version_>

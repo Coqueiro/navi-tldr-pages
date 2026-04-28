@@ -3,4 +3,26 @@
 
 % gh-codespace, common
 
+# Create a codespace in GitHub interactively
+gh <_cs_codespace_> create
 
+# List all available codespaces
+gh <_cs_codespace_> <_ls_list_>
+
+# Connect to a codespace via SSH interactively
+gh <_cs_codespace_> ssh
+
+# Transfer a specific file to a codespace interactively
+gh <_cs_codespace_> cp <path_to_source_file> remote:<path_to_remote_file>
+
+# List the ports of a codespace interactively
+gh <_cs_codespace_> ports
+
+# Display the logs from a codespace interactively
+gh <_cs_codespace_> logs
+
+# Delete a codespace interactively
+gh <_cs_codespace_> delete
+
+# Display help for a subcommand
+gh <_cs_codespace_> <code_cp_create_delete_edit____> <__h___help_>

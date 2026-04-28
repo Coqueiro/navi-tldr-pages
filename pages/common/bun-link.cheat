@@ -3,4 +3,17 @@
 
 % bun-link, common
 
+# Link the current package globally
+bun link
 
+# Link a package locally to a project
+bun link <package_name>
+
+# Link a package in a specific directory
+bun link --cwd <path_to_package>
+
+# Perform a dry run without actually linking
+bun link --dry-run
+
+# Display help
+bun link <__h___help_>

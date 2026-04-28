@@ -3,4 +3,14 @@
 
 % pip-hash, common
 
+# Generate hash for a package file
+pip hash <path_to_package_whl>
 
+# Generate hash using a specific algorithm
+pip hash <__a___algorithm_> <sha256_sha384_sha512____> <path_to_package_whl>
+
+# Generate hashes for multiple files
+pip hash {{path/to/package1.whl path/to/package2.whl ...}}
+
+# Generate hash for downloaded archive
+pip hash <path_to_package_tar_gz>

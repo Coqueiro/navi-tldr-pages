@@ -3,4 +3,20 @@
 
 % apptainer-test, linux
 
+# Run the testscript of a container
+apptainer test <path_to_image_sif>
 
+# Run the testscript with a bind mount from host to container
+apptainer test <__B___bind_> <path_to_source>:<path_to_destination> <path_to_image_sif>
+
+# Run the testscript in fully isolated mode (contained filesystem, PID, IPC, and clean environment)
+apptainer test <__C___containall_> <path_to_image_sif>
+
+# Run the testscript with a writable temporary filesystem overlay
+apptainer test --writable-tmpfs <path_to_image_sif>
+
+# Run the testscript for a specific app within a container
+apptainer test --app <app_name> <path_to_image_sif>
+
+# Display help
+apptainer test <__h___help_>

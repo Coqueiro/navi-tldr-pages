@@ -3,4 +3,14 @@
 
 % picom-trans, common
 
+# Set the currently focused window opacity to a specific percentage
+picom-trans <__c___current_> <__o___opacity_> <percentage>
 
+# Set the opacity of a window with a specific name
+picom-trans <__n___name_> <Firefox> <__o___opacity_> <percentage>
+
+# Set the opacity of a specific window selected via mouse cursor
+picom-trans <__s___select_> <__o___opacity_> <percentage>
+
+# Toggle the opacity of a specific window
+picom-trans <__n___name_> <Firefox> <__t___toggle_>

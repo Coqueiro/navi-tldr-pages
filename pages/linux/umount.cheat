@@ -3,4 +3,17 @@
 
 % umount, linux
 
+# Unmount a filesystem, by passing the path to the source it is mounted from
+sudo umount <path_to_device_file>
 
+# Unmount a filesystem, by passing the path to the target where it is mounted
+sudo umount <path_to_mounted_directory>
+
+# When an unmount fails, try to remount the filesystem read-only
+sudo umount <__r___read_only_> <path_to_mounted_directory>
+
+# Recursively unmount each specified directory
+sudo umount <__R___recursive_> <path_to_mounted_directory>
+
+# Unmount all mounted filesystems (except the `proc` filesystem)
+sudo umount <__a___all_>

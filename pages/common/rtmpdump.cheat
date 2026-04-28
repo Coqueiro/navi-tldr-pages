@@ -3,4 +3,14 @@
 
 % rtmpdump, common
 
+# Download a file
+rtmpdump <__r___rtmp_> <rtmp___example_com_path_to_video> <__o___flv_> <file_ext>
 
+# Download a file from a Flash player
+rtmpdump <__r___rtmp_> <rtmp___example_com_path_to_video> <__W___swfVfy_> <http___example_com_player> <__f___flashVer_> "{{LNX 10,0,32,18}}" <__o___flv_> <file_ext>
+
+# Specify connection parameters if they are not detected correctly
+rtmpdump <__r___rtmp_> <rtmp___example_com_path_to_video> <__a___app_> <app_name> <__y___playpath_> <path_to_video> <__o___flv_> <file_ext>
+
+# Download a file from a server that requires a referrer
+rtmpdump <__r___rtmp_> <rtmp___example_com_path_to_video> <__p___pageUrl_> <http___example_com_webpage> <__o___flv_> <file_ext>

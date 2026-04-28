@@ -7,4 +7,4 @@
 imgtoppm <path_to_input> > <path_to_output_ppm>
 
 # Display version
-imgtoppm {{[-v|-version]}}
+imgtoppm <__v__version_>

@@ -3,4 +3,23 @@
 
 % kaggle-datasets, common
 
+# List all datasets owned by a user or organization
+kaggle <_d_datasets_> list --user <username>
 
+# Search dataset by name
+kaggle <_d_datasets_> list <__s___search_> "<dataset_name>"
+
+# Download a dataset
+kaggle <_d_datasets_> download "<dataset_name>"
+
+# Create a public dataset
+kaggle <_d_datasets_> create <__p___path_> <path_to_dataset> <__u___public_>
+
+# Download metadata of dataset
+kaggle <_d_datasets_> metadata <dataset_name>
+
+# Initialize metadata for dataset
+kaggle <_d_datasets_> init <__p___path_> <path_to_dataset>
+
+# Delete a dataset
+kaggle <_d_datasets_> delete <dataset_name>

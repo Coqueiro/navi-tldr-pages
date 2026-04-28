@@ -3,4 +3,17 @@
 
 % kubectl-attach, common
 
+# Get output from a pod
+kubectl attach <pod_name>
 
+# Get output from a container in the specified pod
+kubectl attach <pod_name> <__c___container_> <container_name>
+
+# Get output from the first pod of a replica set
+kubectl attach <_rs_replicaset_>/<replicaset_name>
+
+# Create an interactive session with a pod
+kubectl attach <pod_name> {{[-it|--stdin --tty]}}
+
+# Create an interactive session with a specific container from a pod
+kubectl attach <pod_name> <__c___container_> <container_name> {{[-it|--stdin --tty]}}

@@ -3,4 +3,20 @@
 
 % pkgstats, linux
 
+# Send installed package data
+pkgstats submit
 
+# View the sent data
+pkgstats submit <__d___dump_json_>
+
+# Search for packages
+pkgstats search <search_term>
+
+# Limit search result count (10 by default)
+pkgstats search <search_term> <__l___limit_> <count>
+
+# Pick packages for comparison
+pkgstats show {{package1 package2 ...}}
+
+# Display help
+pkgstats <__h___help_>

@@ -4,7 +4,7 @@
 % qm-terminal, linux
 
 # Attach to a terminal
-qm {{[ter|terminal]}} <100>
+qm <_ter_terminal_> <100>
 
 # Detach from a terminal
 <Ctrl o>

@@ -3,4 +3,17 @@
 
 % zipgrep, common
 
+# Search for a pattern within a Zip archive
+zipgrep "<search_pattern>" <path_to_file_zip>
 
+# Print file name and line number for each match
+zipgrep <__H___with_filename_> <__n___line_number_> "<search_pattern>" <path_to_file_zip>
+
+# Search for lines that do not match a pattern
+zipgrep <__v___invert_match_> "<search_pattern>" <path_to_file_zip>
+
+# Specify files inside a Zip archive from search
+zipgrep "<search_pattern>" <path_to_file_zip> <file_to_search1> <file_to_search2>
+
+# Exclude files inside a Zip archive from search
+zipgrep "<search_pattern>" <path_to_file_zip> <__x___line_regexp_> <file_to_exclude1> <file_to_exclude2>

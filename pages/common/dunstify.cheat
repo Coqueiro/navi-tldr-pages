@@ -3,4 +3,14 @@
 
 % dunstify, common
 
+# Show a notification with a given title and message
+dunstify "<Title>" "<Message>"
 
+# Show a notification with the specified urgency
+dunstify "<Title>" "<Message>" <__u___urgency_> <low_normal_critical>
+
+# Specify a message ID (overwrites any previous messages with the same ID)
+dunstify "<Title>" "<Message>" <__r___replace_> <123>
+
+# Display help
+dunstify <______help_>

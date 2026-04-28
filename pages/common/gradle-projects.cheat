@@ -3,4 +3,11 @@
 
 % gradle-projects, common
 
+# Display all sub-projects
+gradle projects
 
+# Display sub-projects with their descriptions
+gradle projects <__i___info_>
+
+# Display sub-projects of a specific project in a multi-project build
+gradle :<subproject>:projects

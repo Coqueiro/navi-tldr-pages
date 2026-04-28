@@ -3,4 +3,26 @@
 
 % rails, common
 
+# Create a new rails project
+rails new "<project_name>"
 
+# Generate a scaffold for a model named Post, predefining the attributes title and body
+rails generate scaffold Post title:string body:text
+
+# Run migrations
+rails db:migrate
+
+# List all routes
+rails routes
+
+# Start local server for current project on port 3000
+rails server
+
+# Start local server for current project on a specified port
+rails server <__p___port_> "<port>"
+
+# Open console to interact with application from command-line
+rails console
+
+# Display version
+rails <__v___version_>

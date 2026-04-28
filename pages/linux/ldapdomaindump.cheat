@@ -3,4 +3,14 @@
 
 % ldapdomaindump, linux
 
+# Dump all information using the given LDAP account
+ldapdomaindump <__u___user_> <domain>\<username> <__p___password_> <password_ntlm_hash> <hostname_ip>
 
+# Dump all information, resolving computer hostnames
+ldapdomaindump <__r___resolve_> <__u___user_> <domain>\<username> <__p___password_><password> <hostname_ip>
+
+# Dump all information, resolving computer hostnames with the selected DNS server
+ldapdomaindump <__r___resolve_> <__n___dns_server_> <domain_controller_ip> <__u___user_> <domain>\<username> <__p___password_><password> <hostname_ip>
+
+# Dump all information to the given directory without JSON output
+ldapdomaindump --no-json <__o___outdir_> <path_to_directory> <__u___user_> <domain>\<username> <__p___password_><password> <hostname_ip>

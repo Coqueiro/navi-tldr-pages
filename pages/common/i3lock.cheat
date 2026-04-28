@@ -3,4 +3,23 @@
 
 % i3lock, common
 
+# Lock the screen showing a white background
+i3lock
 
+# Lock the screen with a simple color background (rrggbb format)
+i3lock <__c___color_> <0000ff>
+
+# Lock the screen to a PNG background
+i3lock <__i___image_> <path_to_file_png>
+
+# Lock the screen and disable the unlock indicator (removes feedback on keypress)
+i3lock <__u___no_unlock_indicator_>
+
+# Lock the screen and don't hide the mouse pointer
+i3lock <__p___pointer_> <default>
+
+# Lock the screen to a PNG background tiled over all monitors
+i3lock <__i___image_> <path_to_file_png> <__t___tiling_>
+
+# Lock the screen and show the number of failed login attempts
+i3lock <__f___show_failed_attempts_>

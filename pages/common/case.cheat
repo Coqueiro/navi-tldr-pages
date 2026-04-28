@@ -7,7 +7,7 @@
 case <_COUNTRULE> in <words>) {{wc --words README}} ;; <lines>) {{wc --lines README}} ;; esac
 
 # Combine patterns with |, use * as a fallback pattern
-case <_COUNTRULE> in {{[wW]|words}}) {{wc --words README}} ;; {{[lL]|lines}}) {{wc --lines README}} ;; *) {{echo "what?"}} ;; esac
+case <_COUNTRULE> in <_wW__words>) {{wc --words README}} ;; <_lL__lines>) {{wc --lines README}} ;; *) {{echo "what?"}} ;; esac
 
 # Allow matching multiple patterns
 case <_ANIMAL> in <cat>) {{echo "It's a cat"}} ;;& <cat_dog>) {{echo "It's a cat or a dog"}} ;;& *) {{echo "Fallback"}} ;; esac

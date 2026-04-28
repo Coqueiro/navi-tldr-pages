@@ -3,4 +3,17 @@
 
 % az-login, common
 
+# Log in interactively
+az login
 
+# Log in with a service principal using a client secret
+az login --service-principal <__u___username_> <http___azure_cli_service_principal> <__p___password_> <secret> <__t___tenant_> <someone_onmicrosoft_com>
+
+# Log in with a service principal using a client certificate
+az login --service-principal <__u___username_> <http___azure_cli_service_principal> <__p___password_> <path_to_cert_pem> <__t___tenant_> <someone_onmicrosoft_com>
+
+# Log in using a VM's system assigned identity
+az login <__i___identity_>
+
+# Log in using a VM's user assigned identity
+az login <__i___identity_> <__u___username_> /subscriptions/<subscription_id>/resourcegroups/<my_rg>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<my_id>

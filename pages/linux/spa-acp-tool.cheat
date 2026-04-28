@@ -3,4 +3,26 @@
 
 % spa-acp-tool, linux
 
+# List all ALSA objects
+spa-acp-tool <_l_list_>
 
+# Probe a specific ALSA card by ID
+spa-acp-tool <_c_card_> <card_id>
+
+# List available ALSA profiles for a card
+spa-acp-tool <_lpr_list_profiles_> <card_id>
+
+# Set the active ALSA profile by ID
+spa-acp-tool <_spr_set_profile_> <profile_id>
+
+# List available devices for a card
+spa-acp-tool <_ld_list_devices_> <card_id>
+
+# Get volume from a device
+spa-acp-tool <_gv_get_volume_> <device_id>
+
+# Set volume on a device
+spa-acp-tool <_v_set_volume_> <device_id> <volume_level>
+
+# Toggle mute state on a device
+spa-acp-tool <_m_toggle_mute_> <device_id>

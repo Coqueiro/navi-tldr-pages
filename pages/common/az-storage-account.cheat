@@ -3,4 +3,14 @@
 
 % az-storage-account, common
 
+# Create a storage account
+az storage account create <__n___name_> <storage_account_name> <__g___resource_group_> <azure_resource_group> --location <azure_location> --sku <storage_account_sku>
 
+# Generate a shared access signature for a specific storage account
+az storage account generate-sas --account-name <storage_account_name> <__n___name_> <account_name> --permissions <sas_permissions> --expiry <expiry_date> --services <storage_services> --resource-types <resource_types>
+
+# List storage accounts
+az storage account list <__g___resource_group_> <azure_resource_group>
+
+# Delete a specific storage account
+az storage account delete <__n___name_> <storage_account_name> <__g___resource_group_> <azure_resource_group>

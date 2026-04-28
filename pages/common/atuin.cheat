@@ -3,4 +3,20 @@
 
 % atuin, common
 
+# Install atuin into your shell
+eval "$(atuin init <bash_zsh_fish>)"
 
+# Import history from the shell default history file
+atuin import auto
+
+# Search shell history for a specific command
+atuin search <command>
+
+# Register an account on the default sync server using the specified username, email, and password
+atuin register <__u___username_> <username> <__e___email_> <email> <__p___password_> <password>
+
+# Login to the default sync server
+atuin login <__u___username_> <username> <__p___password_> <password>
+
+# Sync history with the sync server
+atuin sync

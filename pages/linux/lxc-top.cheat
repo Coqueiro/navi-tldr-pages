@@ -3,4 +3,11 @@
 
 % lxc-top, linux
 
+# Start `lxc-top`
+lxc-top
 
+# Adjust update interval
+lxc-top <__d___delay_> <5>
+
+# Sort by [n]ame, [c]pu use, [b]lock I/O, [m]emory, or [k]ernel memory
+lxc-top <__s___sort_> <n_c_b_m_k>

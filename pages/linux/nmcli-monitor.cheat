@@ -4,4 +4,4 @@
 % nmcli-monitor, linux
 
 # Start monitoring NetworkManager changes
-nmcli {{[m|monitor]}}
+nmcli <_m_monitor_>

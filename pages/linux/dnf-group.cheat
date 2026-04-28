@@ -4,16 +4,16 @@
 % dnf-group, linux
 
 # List DNF groups, showing installed and uninstalled status in a table
-dnf {{[grp|group]}} list
+dnf <_grp_group_> list
 
 # Show DNF group info, including repository and optional packages
-dnf {{[grp|group]}} info <group_name>
+dnf <_grp_group_> info <group_name>
 
 # Install DNF group
-dnf {{[grp|group]}} install <group_name>
+dnf <_grp_group_> install <group_name>
 
 # Remove DNF group
-dnf {{[grp|group]}} remove <group_name>
+dnf <_grp_group_> remove <group_name>
 
 # Upgrade DNF group
-dnf {{[grp|group]}} upgrade <group_name>
+dnf <_grp_group_> upgrade <group_name>

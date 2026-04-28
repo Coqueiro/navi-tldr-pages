@@ -3,4 +3,23 @@
 
 % glances, common
 
+# Run in terminal
+glances
 
+# Run in web server mode to show results in browser
+glances <__w___webserver_>
+
+# Run in server mode to allow connections from other Glances clients
+glances <__s___server_>
+
+# Connect to a Glances server
+glances <__c___client_> <hostname>
+
+# Require a password in (web) server mode
+glances <__s___server_> --password
+
+# Exit Glances
+<q>
+
+# Display help
+glances <__h___help_>

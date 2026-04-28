@@ -3,4 +3,14 @@
 
 % conda-remove, common
 
+# Remove `scipy` from the currently active environment
+conda remove scipy
 
+# Remove a list of packages from the specified environment
+conda remove <__n___name_> <environment_name> {{package1 package2 ...}}
+
+# Remove all packages and the environment itself
+conda remove <__n___name_> <environment_name> --all
+
+# Remove all packages, but keep the environment
+conda remove <__n___name_> <environment_name> --all --keep-env

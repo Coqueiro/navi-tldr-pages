@@ -3,4 +3,26 @@
 
 % rustscan, common
 
+# Scan all ports of one or more comma-delimited addresses using the default values
+rustscan <__a___addresses_> <ip_or_hostname>
 
+# Scan the top 1000 ports with service and version detection
+rustscan --top <__a___addresses_> <address_or_addresses>
+
+# Scan a specific list of ports
+rustscan <__p___ports_> <port1_port2____> <__a___addresses_> <address_or_addresses>
+
+# Scan a specific range of ports
+rustscan <__r___range_> <start>-<end> <__a___addresses_> <address_or_addresses>
+
+# Invoke `nmap` functionalities (Nmap's OS detection and default scripts)
+rustscan <__a___addresses_> <address_or_addresses> -- -O <__sC___script_default_>
+
+# Scan with custom batch size (default: 4500) and timeout (default: 1500ms)
+rustscan <__b___batch_size_> <batch_size> <__t___timeout_> <timeout> <__a___addresses_> <address_or_addresses>
+
+# Scan with specific port order
+rustscan --scan-order <serial_random> <__a___addresses_> <address_or_addresses>
+
+# Scan in greppable mode (only output of the ports, no `nmap`)
+rustscan <__g___greppable_> <__a___addresses_> <address_or_addresses>

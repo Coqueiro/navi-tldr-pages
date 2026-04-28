@@ -3,4 +3,8 @@
 
 % nmblookup, common
 
+# Find hosts in the local network with SMB shares
+nmblookup <__S___status_> '*'
 
+# Find hosts in the local network with SMB shares run by SAMBA
+nmblookup <__S___status_> __SAMBA__

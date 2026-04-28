@@ -4,22 +4,22 @@
 % dnf, linux
 
 # Upgrade installed packages to the newest available versions
-sudo dnf {{[up|upgrade]}}
+sudo dnf <_up_upgrade_>
 
 # Search packages via keywords
-dnf {{[se|search]}} {{keyword1 keyword2 ...}}
+dnf <_se_search_> {{keyword1 keyword2 ...}}
 
 # Display details about a package
-dnf {{[if|info]}} <package>
+dnf <_if_info_> <package>
 
 # Install new packages (use `--assumeyes` to confirm all prompts automatically)
-sudo dnf {{[in|install]}} {{package1 package2 ...}}
+sudo dnf <_in_install_> {{package1 package2 ...}}
 
 # Remove packages
-sudo dnf {{[rm|remove]}} {{package1 package2 ...}}
+sudo dnf <_rm_remove_> {{package1 package2 ...}}
 
 # List installed packages
-dnf {{[ls|list]}} --installed
+dnf <_ls_list_> --installed
 
 # Find which packages provide a given command
 dnf provides <command>
