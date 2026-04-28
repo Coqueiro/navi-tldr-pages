@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO_DIR="/Users/lucas.garcia/Github/navi-tldr-pages"
+NAVI="/opt/homebrew/bin/navi"
+LOG_FILE="${REPO_DIR}/logs/update-$(date +%Y%m%d-%H%M%S).log"
+
+mkdir -p "${REPO_DIR}/logs"
+exec > >(tee -a "$LOG_FILE") 2>&1
+
+echo "=== navi-tldr-pages update: $(date) ==="
+
+# 1. Pull latest tldr pages
+echo "Pulling tldr upstream..."
+git -C "${REPO_DIR}/tldr" pull --ff-only
+
+# 2. Translate to .cheat format
+echo "Translating pages..."
+"${REPO_DIR}/scripts/translate"
+
+# 3. Commit + push if there are changes
+if git -C "${REPO_DIR}" diff --quiet && git -C "${REPO_DIR}" diff --cached --quiet; then
+  echo "No changes to commit."
+else
+  echo "Committing and pushing..."
+  git -C "${REPO_DIR}" add -A
+  git -C "${REPO_DIR}" commit -m "Updates pages (auto $(date +%Y-%m-%d))"
+  git -C "${REPO_DIR}" push origin main
+fi
+
+# 4. Update local navi cheats
+echo "Updating navi repo..."
+"${NAVI}" repo add Coqueiro/navi-tldr-pages
+
+# 5. Prune old logs (keep last 12)
+ls -t "${REPO_DIR}/logs"/update-*.log 2>/dev/null | tail -n +13 | xargs rm -f 2>/dev/null || true
+
+echo "=== Done: $(date) ==="
