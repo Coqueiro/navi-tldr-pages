@@ -3,6 +3,9 @@
 
 % npm-run, common
 
+# List available scripts
+npm run
+
 # Run a script
 npm run <script_name>
 
@@ -19,4 +22,4 @@ npm stop
 npm restart
 
 # Run a script named `test`
-npm test
+npm {{[t|test]}}

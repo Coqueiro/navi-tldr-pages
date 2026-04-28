@@ -13,7 +13,7 @@ etcdctl put <my_key> <my_value>
 etcdctl del <my_key>
 
 # Store a key-value pair, reading the value from a file
-etcdctl put <my_file> < <path_to_file_txt>
+etcdctl < <path_to_file_txt> put <my_file>
 
 # Save a snapshot of the etcd keystore
 etcdctl snapshot save <path_to_snapshot_db>

@@ -3,14 +3,14 @@
 
 % diskutil, osx
 
-# List all currently available disks, partitions and mounted volumes
+# List all currently available disks, partitions, and mounted volumes
 diskutil list
 
 # Repair the filesystem data structures of a volume
-diskutil repairVolume <_dev_disk_device>
+diskutil repairVolume <_dev_disk>
 
 # Unmount a volume
-diskutil unmountDisk <_dev_disk_device>
+diskutil unmountDisk <_dev_disk>
 
 # Eject a CD/DVD (unmount first)
-diskutil eject <_dev_disk_device1>
+diskutil eject <_dev_diskX>

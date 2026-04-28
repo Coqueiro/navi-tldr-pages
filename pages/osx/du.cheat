@@ -15,8 +15,8 @@ du -sh <path_to_directory>
 # List the human-readable sizes of a directory and of all the files and directories within it
 du -ah <path_to_directory>
 
-# List the human-readable sizes of a directory and any subdirectories, up to N levels deep
-du -h -d <2> <path_to_directory>
+# List the human-readable sizes of a directory and any subdirectories, up to `n` levels deep
+du -h -d <n> <path_to_directory>
 
 # List the human-readable size of all `.jpg` files in subdirectories of the current directory, and show a cumulative total at the end
-du -ch {{*/*.jpg}}
+du -ch */*.jpg

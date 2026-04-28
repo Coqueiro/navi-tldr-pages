@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/dirs_cleaner.md
+
+% dirs_cleaner, osx
+
+# Recursively delete contents of folder structure without removing directories
+sudo dirs_cleaner {{path/to/directory1 path/to/directory2 ...}}

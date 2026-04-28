@@ -7,7 +7,7 @@
 jupyter lab
 
 # Open a specific notebook
-jupyter lab <path_to_notebook_ipynb>
+jupyter lab <path_to_notebook>.ipynb
 
 # Start JupyterLab in a specific directory
 jupyter lab --notebook-dir <path_to_directory>

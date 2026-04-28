@@ -7,7 +7,7 @@
 mktemp
 
 # Use a custom directory if `$TMPDIR` is not set (the default is platform-dependent, but usually `/tmp`)
-mktemp -p <_path_to_tempdir>
+mktemp -p /<path_to_temporary_directory>
 
 # Use a custom path template (`X`s are replaced with random alphanumeric characters)
 mktemp <_tmp_example_XXXXXXXX>

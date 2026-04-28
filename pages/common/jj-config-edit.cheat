@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-config-edit.md
+
+% jj-config-edit, common
+
+# Start an editor on the user-level config file
+jj config {{[e|edit]}} --user
+
+# Start an editor on the repo-level config file
+jj config {{[e|edit]}} --repo
+
+# Start an editor on the workspace-level config file
+jj config {{[e|edit]}} --workspace

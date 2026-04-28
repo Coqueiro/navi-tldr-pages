@@ -3,8 +3,8 @@
 
 % tail, osx
 
-# Show last 'count' lines in file
-tail -n <8> <path_to_file>
+# Show last 8 lines in file
+tail -n 8 <path_to_file>
 
 # Print a file from a specific line number
 tail -n +<8> <path_to_file>
@@ -18,5 +18,5 @@ tail -f <path_to_file>
 # Keep reading file until `<Ctrl c>`, even if the file is inaccessible
 tail -F <path_to_file>
 
-# Show last 'count' lines in 'file' and refresh every 'seconds' seconds
-tail -n <8> -s <10> -f <path_to_file>
+# Show last `count` lines in a file and refresh every `seconds` seconds
+tail -n <count> -s <seconds> -f <path_to_file>

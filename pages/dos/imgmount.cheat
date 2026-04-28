@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/imgmount.md
+
+% imgmount, dos
+
+# Mount floppy
+IMGMOUNT a <floppy_img>
+
+# Mount CD-ROM
+IMGMOUNT d <cd_iso>

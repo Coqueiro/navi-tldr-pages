@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/lsix.md
+
+% lsix, common
+
+# List images in the current directory
+lsix
+
+# List images in a specific directory
+lsix <path_to_directory>
+
+# Display an image on the terminal
+lsix <path_to_image>

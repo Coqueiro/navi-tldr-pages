@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-patch.md
+
+% bun-patch, common
+
+# Prepare a package for patching
+bun patch <package>
+
+# Prepare a specific version of a package
+bun patch <package>@<version>
+
+# Prepare a package located at a specific path
+bun patch <path_to_package>
+
+# Generate a patch file for changes made to a package
+bun patch --commit <path_to_package>
+
+# Generate a patch file and store it in a custom directory
+bun patch --commit <path_to_package> --patches-dir <path_to_directory>

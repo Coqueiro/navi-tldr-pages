@@ -7,7 +7,7 @@
 aws ses create-receipt-rule-set --rule-set-name <rule_set_name> --generate-cli-skeleton
 
 # Describe the active receipt rule set
-aws ses describe-active-receipt-rule-set --generate-cli-skeletion
+aws ses describe-active-receipt-rule-set --generate-cli-skeleton
 
 # Describe a specific receipt rule
 aws ses describe-receipt-rule --rule-set-name <rule_set_name> --rule-name <rule_name> --generate-cli-skeleton

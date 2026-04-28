@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/boot.md
+
+% boot, dos
+
+# Boot from floppy image
+BOOT <path_to_floppy_img>
+
+# Boot from hard disk image
+BOOT <path_to_hard_disk_img>
+
+# Boot multiple floppy images
+BOOT {{path/to/floppy1.img path/to/floppy2.img ...}}

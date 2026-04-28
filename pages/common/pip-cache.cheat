@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pip-cache.md
+
+% pip-cache, common
+
+# Show the location of the pip cache directory
+pip cache dir
+
+# List filenames of all packages currently stored in the cache
+pip cache list
+
+# Remove all files from the pip cache
+pip cache purge
+
+# Remove cached files matching a specific package name
+pip cache remove <package_name>

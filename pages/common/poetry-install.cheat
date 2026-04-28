@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-install.md
+
+% poetry-install, common
+
+# Install dependencies
+poetry install
+
+# Skip installing the project itself as a dependency
+poetry install --no-root
+
+# Install only production dependencies
+poetry install --without dev
+
+# Install optional dependenciy groups
+poetry install --with test,docs

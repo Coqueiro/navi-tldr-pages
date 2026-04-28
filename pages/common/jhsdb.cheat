@@ -7,7 +7,7 @@
 jhsdb jstack --pid <pid>
 
 # Open a core dump in interactive debug mode
-jhsdb clhsdb --core <path_to_core_dump> --exe <path_to_jdk_bin_java>
+jhsdb clhsdb --core <path_to_core_dump> --exe <path_to_jdk_or_bin_or_java>
 
 # Start a remote debug server
 jhsdb debugd --pid <pid> --serverid <optional_unique_id>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-pm-hash.md
+
+% bun-pm-hash, common
+
+# Generate and print the hash of the current lockfile
+bun pm hash
+
+# Print the string used to hash the lockfile
+bun pm hash-string
+
+# Print the hash stored in the current lockfile
+bun pm hash-print

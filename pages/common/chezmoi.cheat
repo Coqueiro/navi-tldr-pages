@@ -3,7 +3,7 @@
 
 % chezmoi, common
 
-# Setup up `chezmoi`, creating a Git repository in `~/.local/share/chezmoi`
+# Set up `chezmoi`, creating a Git repository in `~/.local/share/chezmoi`
 chezmoi init
 
 # Set up `chezmoi` from existing dotfiles of a Git repository
@@ -22,7 +22,7 @@ chezmoi edit <path_to_dotfile_or_symlink>
 chezmoi diff
 
 # Apply the changes
-chezmoi -v apply
+chezmoi apply
 
 # Pull changes from a remote repository and apply them
 chezmoi update

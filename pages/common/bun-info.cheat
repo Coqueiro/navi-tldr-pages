@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-info.md
+
+% bun-info, common
+
+# Display the package metadata
+bun info <package_name>
+
+# Display the specific version metadata
+bun info <package_name>@<version>
+
+# Show a specific property of a package
+bun info <package_name> <property>
+
+# Output results in JSON format
+bun info <package_name> --json

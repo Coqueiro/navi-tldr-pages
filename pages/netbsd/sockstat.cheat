@@ -3,7 +3,7 @@
 
 % sockstat, netbsd
 
-# Show information for IPv4, IPv6 and Unix sockets for both listening and connected sockets
+# Show information for IPv4, IPv6, and Unix sockets for both listening and connected sockets
 sockstat
 
 # Show information for IPv[4]/IPv[6] sockets [l]istening on specific [p]orts using a specific [P]rotocol

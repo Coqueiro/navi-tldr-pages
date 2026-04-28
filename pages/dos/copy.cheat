@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/copy.md
+
+% copy, dos
+
+# Copy a file
+COPY <path_to_source_file> <path_to_destination_file>

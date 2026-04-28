@@ -3,5 +3,5 @@
 
 % sc_warts2text, common
 
-# Output the information in `warts` files as text
+# Output the information in `.warts` files as text
 sc_warts2text {{path/to/file1.warts path/to/file2.warts ...}}

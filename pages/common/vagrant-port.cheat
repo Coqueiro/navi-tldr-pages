@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-port.md
+
+% vagrant-port, common
+
+# List all port mappings of machine(s) running in the current directory
+vagrant port
+
+# List mappings for a specific machine (if `Vagrantfile` is multi-machine)
+vagrant port <machine_name>
+
+# Display info for a specific guest port
+vagrant port --guest <port_number>
+
+# Display machine-readable output
+vagrant port --machine-readable

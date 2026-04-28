@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/path.md
+
+% path, dos
+
+# Display the current search path
+PATH
+
+# Set the semicolon-separated list of directories to search in
+PATH <path_to_directory1_path_to_directory2____>
+
+# Append a directory to the search path
+PATH %PATH%;<path_to_directory>
+
+# Add a directory to the beginning of the search path
+PATH <path_to_directory>;%PATH%
+
+# Clear the search path
+PATH;
+
+# Display help
+PATH /?

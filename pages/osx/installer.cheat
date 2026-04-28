@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/installer.md
+
+% installer, osx
+
+# Install a Python package to the root volume with verbose output
+sudo installer -verbose {{[-pkg|-package]}} <path_to_python_version_pkg> {{[-tgt|-target]}} /
+
+# Display list of packages (or subpackages for `.mpkg`) that can be installed on the target volume
+installer -pkginfo {{[-pkg|-package]}} <path_to_package_pkg>
+
+# Display list of volumes onto which the package can be installed
+installer -volinfo {{[-pkg|-package]}} <path_to_package_pkg>
+
+# Display list of domains into which the package can be installed
+installer -dominfo {{[-pkg|-package]}} <path_to_package_pkg>
+
+# Generate XML of install choices for a package
+installer {{[-pkg|-package]}} <path_to_package_pkg> -showChoiceChangesXML
+
+# Install package using XML config instead of command line parameters
+sudo installer {{[-pkg|-package]}} <path_to_package_pkg> -file <path_to_config_file>

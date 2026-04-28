@@ -3,7 +3,7 @@
 
 % git-name-rev, common
 
-# Show the name for HEAD
+# Show the name for `HEAD`
 git name-rev HEAD
 
 # Show only the name

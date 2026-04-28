@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/cava.md
+
+% cava, common
+
+# Start the visualizer
+cava
+
+# Use the specified configuration file
+cava -p <path_to_file>
+
+# Increase/Decrease sensitivity
+<_ArrowUp___ArrowDown_>
+
+# Increase/Decrease the number of bars
+<_ArrowRight___ArrowLeft_>
+
+# Reload the configuration file (this resets the number of bars and sensitivity)
+<r>
+
+# Reload colors from the configuration file
+<c>
+
+# Cycle the foreground/background color
+<_f___b_>
+
+# Quit
+<q>

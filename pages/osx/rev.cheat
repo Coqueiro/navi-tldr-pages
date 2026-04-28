@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/rev.md
+
+% rev, osx
+
+# Reverse each line in a file to `stdout`
+rev <path_to_file>
+
+# Reverse each line from `stdin` to `stdout`
+<command> | rev

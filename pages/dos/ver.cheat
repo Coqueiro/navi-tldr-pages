@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/ver.md
+
+% ver, dos
+
+# Set version
+VER set <major_version> <minor_version>

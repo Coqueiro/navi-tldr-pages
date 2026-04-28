@@ -3,9 +3,6 @@
 
 % travis, common
 
-# Display the client version
-travis version
-
 # Authenticate the CLI client against the server, using an authentication token
 travis login
 
@@ -17,3 +14,6 @@ travis encrypt <token>
 
 # Generate a `.travis.yml` file and enable the project
 travis init
+
+# Display version
+travis version

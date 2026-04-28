@@ -3,8 +3,8 @@
 
 % less, common
 
-# Open a file
-less <source_file>
+# Open a file for interactive reading
+less <path_to_source_file>
 
 # Page down/up
 <_Space___b_>
@@ -13,10 +13,10 @@ less <source_file>
 <_G___g_>
 
 # Forward search for a string (press `<n>`/`<N>` to go to next/previous match)
-</><something>
+</><pattern>
 
 # Backward search for a string (press `<n>`/`<N>` to go to next/previous match)
-<?><something>
+<?><pattern>
 
 # Follow the output of the currently opened file
 <F>

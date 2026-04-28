@@ -10,7 +10,7 @@ trace <class_pattern> <method_pattern>
 trace <class_pattern> <method_pattern> '#cost > <10>'
 
 # Trace the invoke chain of multiple classes or multiple methods
-trace -E <class_pattern1_class_patter2> <method_pattern1_method_pattern2_method_pattern3>
+trace -E <class_pattern1>|<class_patter2> <method_pattern1>|<method_pattern2>|<method_pattern3>
 
 # Track method invoke chains, only display invoke information that exceeds 10 ms, and exit after 5 times
 trace <class_pattern> <method_pattern> '#cost > <10>' -n 5

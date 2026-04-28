@@ -3,20 +3,4 @@
 
 % fd, common
 
-# Recursively find files matching a specific pattern in the current directory
-fd "<string_regex>"
 
-# Find files that begin with a specific string
-fd "<_string>"
-
-# Find files with a specific extension
-fd --extension <txt>
-
-# Find files in a specific directory
-fd "<string_regex>" <path_to_directory>
-
-# Include ignored and hidden files in the search
-fd --hidden --no-ignore "<string_regex>"
-
-# Execute a command on each search result returned
-fd "<string_regex>" --exec <command>

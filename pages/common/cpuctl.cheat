@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/cpuctl.md
+
+% cpuctl, common
+
+# Display the current state and time of last state change for each CPU in the system
+sudo cpuctl list
+
+# Set the specified CPUs offline
+sudo cpuctl offline {{cpu_number1 cpu_number2 ...}}
+
+# Set the specified CPUs online
+sudo cpuctl online {{cpu_number1 cpu_number2 ...}}

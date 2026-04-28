@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dosbox.md
+
+% dosbox, common
+
+# Start DOSBox with default settings
+dosbox
+
+# Run a DOS executable located at a specific path
+dosbox <path_to_executable_exe>
+
+# Mount a folder as C: and run an executable
+dosbox <path_to_executable_exe> -c "MOUNT C <path_to_folder>"
+
+# Start DOSBox in fullscreen mode
+dosbox -fullscreen
+
+# Exit DOSBox automatically after running a program
+dosbox <path_to_executable_exe> -exit

@@ -3,8 +3,14 @@
 
 % compopt, common
 
+# Print the completion options for given command
+compopt <command>
+
+# Enable or disable a completion option of a command
+compopt <_o__o> <option1> <_o__o> <option2> <command>
+
 # Print the options for the currently executing completion
 compopt
 
-# Print the completion options for given command
-compopt <command>
+# Enable or disable a completion option of a command
+compopt <_o__o> <option1> <_o__o> <option2>

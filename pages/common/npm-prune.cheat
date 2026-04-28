@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-prune.md
+
+% npm-prune, common
+
+# Remove all extraneous packages not listed in dependencies
+npm prune
+
+# Remove extraneous packages and devDependencies (useful for production builds)
+npm prune --production
+
+# Show what would be removed without making any changes
+npm prune --dry-run
+
+# Output the changes as JSON
+npm prune --json
+
+# Remove specific packages by name
+npm prune <package_name>

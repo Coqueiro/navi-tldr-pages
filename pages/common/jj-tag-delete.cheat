@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-tag-delete.md
+
+% jj-tag-delete, common
+
+# Delete a tag
+jj tag {{[d|delete]}} <tag_name>
+
+# Delete multiple tags
+jj tag {{[d|delete]}} {{tag1 tag2 ...}}
+
+# Delete tags matching a glob pattern
+jj tag {{[d|delete]}} "<glob_v1__>"
+
+# Delete tags matching a substring pattern
+jj tag {{[d|delete]}} "<substring_release>"
+
+# Delete a tag by exact name
+jj tag {{[d|delete]}} "<exact_v1_0_0>"

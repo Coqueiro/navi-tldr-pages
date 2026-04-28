@@ -13,7 +13,7 @@ herd list <namespace>
 herd list --raw
 
 # Display the list in a specific output format
-herd list --format=<txt_xml_json_md>
+herd list --format <txt_xml_json_md>
 
 # List all commands without describing their arguments
 herd list --short

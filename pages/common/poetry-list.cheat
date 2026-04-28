@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-list.md
+
+% poetry-list, common
+
+# List all available Poetry commands
+poetry list
+
+# List commands for a specific namespace
+poetry list <namespace>

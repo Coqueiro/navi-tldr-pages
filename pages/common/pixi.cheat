@@ -18,7 +18,7 @@ pixi run <task>
 # Manage tasks in the project environment
 pixi task <command>
 
-# Print the help message
+# Display help
 pixi <command> --help
 
 # Clean environment and task cache

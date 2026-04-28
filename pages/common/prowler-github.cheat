@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/prowler-github.md
+
+% prowler-github, common
+
+# Run all default GitHub security checks
+prowler github
+
+# Authenticate using a GitHub Personal Access Token
+prowler github --personal-access-token <pat>
+
+# Authenticate using a GitHub OAuth App Token
+prowler github --oauth-app-token <oauth_token>
+
+# Authenticate using a GitHub App ID and private key
+prowler github --github-app-id <app_id> --github-app-key <app_key>

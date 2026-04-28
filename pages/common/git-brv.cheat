@@ -3,5 +3,5 @@
 
 % git-brv, common
 
-# List each branch showing date, latest commit hash and message
+# List each branch showing date, latest commit hash, and message
 git brv

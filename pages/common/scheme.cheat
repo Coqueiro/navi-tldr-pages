@@ -7,7 +7,7 @@
 scheme
 
 # Run a scheme program (with no REPL output)
-scheme --quiet < <script_scm>
+scheme < <script_scm> --quiet
 
 # Load a scheme program into the REPL
 scheme --load <script_scm>

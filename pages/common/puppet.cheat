@@ -3,14 +3,4 @@
 
 % puppet, common
 
-# Execute a Puppet subcommand
-puppet <subcommand>
 
-# Check the Puppet version
-puppet --version
-
-# Display help
-puppet --help
-
-# Display help for a subcommand
-puppet help <subcommand>

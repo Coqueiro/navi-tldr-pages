@@ -10,4 +10,4 @@ xml {{[unesc|unescape]}} "<_lt_a1_gt_>"
 echo "<_lt_a1_gt_>" | xml {{[unesc|unescape]}}
 
 # Display help
-xml {{[esc|escape]}} --help
+xml {{[unesc|unescape]}} --help

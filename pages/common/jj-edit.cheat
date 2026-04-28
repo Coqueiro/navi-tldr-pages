@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-edit.md
+
+% jj-edit, common
+
+# Set the given revision as the working copy
+jj edit <revset>

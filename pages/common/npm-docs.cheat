@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-docs.md
+
+% npm-docs, common
+
+# Open a specific package's documentation page
+npm docs <package>
+
+# Open documentation for multiple packages at once
+npm docs {{package1 package2 ...}}

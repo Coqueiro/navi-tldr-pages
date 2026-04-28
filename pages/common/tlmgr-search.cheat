@@ -3,17 +3,17 @@
 
 % tlmgr-search, common
 
-# Search for a package name and descriptions of all locally installed packages from a specific regular expression
-tlmgr search "<regular_expression>"
+# Search for a package name and descriptions of all locally installed packages from a specific `regex`
+tlmgr search "<regex>"
 
-# Search for all file names of all locally installed packages from a regular expression
-tlmgr search --file "<regular_expression>"
+# Search for all file names of all locally installed packages from a `regex`
+tlmgr search --file "<regex>"
 
-# Search for all file names, package names, and descriptions of all locally installed packages from a regular expression
-tlmgr search --all "<regular_expression>"
+# Search for all file names, package names, and descriptions of all locally installed packages from a `regex`
+tlmgr search --all "<regex>"
 
 # Search the TeX Live database, instead of the local installation
-tlmgr search --global "<regular_expression>"
+tlmgr search --global "<regex>"
 
 # Restrict the matches for package names and descriptions (but not for file names) to whole words
-tlmgr search --all --word "<regular_expression>"
+tlmgr search --all --word "<regex>"

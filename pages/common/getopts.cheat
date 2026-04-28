@@ -3,17 +3,20 @@
 
 % getopts, common
 
-# Check if an option is set
-getopts <x> <opt>; echo $opt
+# Check if an option is the first set option in the current context
+getopts <x> <opt>; echo $<opt>
 
-# Set an option to require an argument and check said argument
-getopts <x>: <opt>; echo $OPTARG
+# Check if an option is set in a string (specified option must be the first element of the string)
+getopts <x> <opt> "{{string text}}"; echo $<opt>
+
+# Set an option to require an argument and print them
+getopts <x>: <opt>; echo $<opt> $OPTARG
 
 # Check for multiple options
-while getopts <xyz> <opt>; do case $opt in x) echo x is set;; y) echo y is set;; z) echo z is set;; esac; done
+while getopts <xyz> <opt>; do case $<opt> in x) {{echo x is set}};; y) {{echo y is set}};; z) {{echo z is set}};; esac; done
 
 # Set `getopts` to silent mode and handle option errors
-while getopts :<x_> <opt>; do case $opt in x) ;; :) echo "Argument required";; ?) echo "Invalid argument" esac;; done
+while getopts :<x_> <opt>; do case $<opt> in x) ;; :) {{echo "Argument required"}};; ?) {{echo "Invalid argument"}} esac;; done
 
 # Reset `getopts`
 OPTIND=1

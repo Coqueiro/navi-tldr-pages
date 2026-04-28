@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-playbin.md
+
+% gst-launch-1.0-playbin, common
+
+# Play a local file
+gst-launch-1.0 playbin uri=file:///<path_to_file>
+
+# Play a file from the internet
+gst-launch-1.0 playbin uri=<https___example_com_path_to_file>
+
+# Play track 4 of a CD
+gst-launch-1.0 playbin uri=cdda://4
+
+# Play a DVD in a disc drive
+gst-launch-1.0 playbin uri=dvd://

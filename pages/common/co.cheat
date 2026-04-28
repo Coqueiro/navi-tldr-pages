@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/co.md
+
+% co, common
+
+# Check out the latest revision of a file (retrieves a read-only copy)
+co <path_to_file>
+
+# Check out a file with a lock for editing
+co -l <path_to_file>
+
+# Check out a specific revision of a file
+co -r<revision> <path_to_file>
+
+# Check out a file and overwrite it if it already exists
+co -f -l <path_to_file>
+
+# Print a specific revision to `stdout` without creating a file
+co -p -r<revision> <path_to_file>

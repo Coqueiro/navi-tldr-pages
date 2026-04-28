@@ -3,7 +3,7 @@
 
 % cariddi, common
 
-# Hunt for secrets using custom regexes and output results in JSON
+# Hunt for secrets using custom `regex`es and output results in JSON
 cat <path_to_urls_txt> | cariddi -s -sf <path_to_custom_secrets_txt> -json
 
 # Hunt for juicy endpoints with high concurrency and timeout with plain output results

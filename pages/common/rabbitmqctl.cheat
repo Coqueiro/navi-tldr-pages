@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rabbitmqctl.md
+
+% rabbitmqctl, common
+
+# Display the status of the current node
+rabbitmqctl status
+
+# View documentation for RabbitMQ cluster commands
+tldr rabbitmqctl cluster
+
+# View documentation for RabbitMQ user commands
+tldr rabbitmqctl users
+
+# View documentation for RabbitMQ vhosts commands
+tldr rabbitmqctl vhosts
+
+# Learn more about a specific command
+rabbitmqctl help <command>

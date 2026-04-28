@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/del.md
+
+% del, dos
+
+# Delete a file
+DEL <path_to_file>
+
+# Delete all files matching a pattern
+DEL {{path/to/*.ext}}

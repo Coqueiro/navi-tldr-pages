@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/scdoc.md
+
+% scdoc, common
+
+# Generate man pages from a scdoc (`.scd`) file
+scdoc < <path_to_file_scd> > <path_to_file_1>
+
+# Generate man pages from a scdoc file and display the generated troff (man) source
+scdoc < <path_to_file_scd> | <less>

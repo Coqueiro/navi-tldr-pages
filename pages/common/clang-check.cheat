@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/clang-check.md
+
+% clang-check, common
+
+# Run default checks on a source file
+clang-check <path_to_file_cpp> --
+
+# Dump the Abstract Syntax Tree for debugging
+clang-check <path_to_file_cpp> -ast-dump --
+
+# Filter AST by Name
+clang-check <path_to_file_cpp> -ast-dump -ast-dump-filter FunctionName
+
+# Pretty-Print AST
+clang-check <path_to_file_cpp> -ast-print --

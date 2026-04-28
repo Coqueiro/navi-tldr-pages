@@ -3,8 +3,8 @@
 
 % yadm-list, common
 
-# Print a list of files managed by `yadm` in the current directory
+# Print a list of files managed by yadm in the current directory
 yadm list
 
-# List all files managed by `yadm` completely
+# List all files managed by yadm completely
 yadm list -a

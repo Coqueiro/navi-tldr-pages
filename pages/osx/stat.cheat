@@ -3,7 +3,7 @@
 
 % stat, osx
 
-# Show file properties such as size, permissions, creation and access dates among others
+# Show file properties such as size, permissions, creation date, and access date among others
 stat <path_to_file>
 
 # Same as above but verbose (more similar to Linux's `stat`)

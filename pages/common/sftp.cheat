@@ -12,17 +12,17 @@ sftp -P <remote_port> <remote_user>@<remote_host>
 # Connect using a predefined host (in `~/.ssh/config`)
 sftp <host>
 
-# Transfer remote file to the local system
-get <_path_remote_file>
+# [Interactive] Transfer remote file to the local system
+get <path_to_remote_file>
 
-# Transfer local file to the remote system
-put <_path_local_file>
+# [Interactive] Transfer local file to the remote system
+put <path_to_local_file>
 
-# Transfer remote directory to the local system recursively (works with `put` too)
-get -R <_path_remote_directory>
+# [Interactive] Transfer remote directory to the local system recursively (works with `put` too)
+get -R <path_to_remote_directory>
 
-# Get list of files on local machine
+# [Interactive] Get list of files on local machine
 lls
 
-# Get list of files on remote machine
+# [Interactive] Get a list of files on the remote machine
 ls

@@ -3,7 +3,7 @@
 
 % ppmtoppm, common
 
-# Copy a PPM image (i.e. a PBM, PGM or PPM image) from `stdin` to `stdout`
+# Copy a PPM image (i.e. a PBM, PGM, or PPM image) from `stdin` to `stdout`
 ppmtoppm < <path_to_image_ppm> > <path_to_output_ppm>
 
 # Display version

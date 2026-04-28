@@ -16,7 +16,7 @@ asnmap {{[-d|-domain]}} <example_com> -silent
 asnmap -org <GOOGLE> -silent
 
 # Lookup CIDR ranges from a file of targets
-asnmap {{[-f|-file]}} <targets_txt> -silent
+asnmap {{[-f|-file]}} <path_to_targets_txt> -silent
 
 # Output results in JSON format
 asnmap {{[-d|-domain]}} <facebook_com> {{[-j|-json]}} -silent

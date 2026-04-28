@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mailsy.md
+
+% mailsy, common
+
+# Create an email address
+mailsy g
+
+# Fetch emails (press `<Enter>` to open email in browser)
+mailsy m
+
+# Show details about the account
+mailsy me
+
+# Dispose the email address
+mailsy d

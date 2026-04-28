@@ -15,5 +15,5 @@ img2pdf <path_to_image_ext> --auto-orient --pagesize <A4_T> --border <2cm>:<5_1c
 # Shrink only larger images to a rectangle of specified dimensions inside a page with a specific size
 img2pdf <path_to_image_ext> --pagesize <30cm>x<20cm> --imgsize <10cm>x<15cm> --fit <shrink> --output <path_to_file_pdf>
 
-# Convert an image to PDF, and specify metadata for the resulting file
+# Convert an image to PDF and specify metadata for the resulting file
 img2pdf <path_to_image_ext> --title <title> --author <author> --creationdate <1970_01_31> --keywords {{keyword1 keyword2}} --subject <subject> --output <path_to_file_pdf>

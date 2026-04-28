@@ -4,7 +4,7 @@
 % sips, osx
 
 # Specify an output directory so that originals do not get modified
-sips --out <path_to_out_dir>
+sips --out <path_to_output_directory>
 
 # Resample image at specified size, Image aspect ratio may be altered
 sips --resampleHeightWidth <1920> <300> <image_file_ext>
@@ -16,7 +16,7 @@ sips --resampleHeightWidthMax <1920> <300> <image_file_ext>
 sips --resampleWidth <960> <path_to_images>
 
 # Convert an image from CMYK to RGB
-sips --matchTo "/System/Library/ColorSync/Profiles/Generic RGB Profile.icc" <path_to_image_ext> <path_to_out_dir>
+sips --matchTo "/System/Library/ColorSync/Profiles/Generic RGB Profile.icc" <path_to_image_ext> <path_to_output_directory>
 
 # Remove ColorSync ICC profile from an image
 sips --deleteProperty profile --deleteColorManagementProperties <path_to_image_file_ext>

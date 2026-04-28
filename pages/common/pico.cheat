@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pico.md
+
+% pico, common
+
+# Start the editor
+pico <path_to_file>
+
+# Start the editor with the cursor located n lines into the file
+pico +<n> <path_to_file>
+
+# Start the editor with the cursor shown before the current selection
+pico -g <path_to_file>
+
+# Define the quote string for files such as email
+pico -Q "<quotestring>" <path_to_file>
+
+# Enable mouse functionality when run within an `xterm` window
+pico -m <path_to_file>
+
+# Set the operating directory for `pico`
+pico -o <path_to_directory>
+
+# Enable "view only" mode, which disallows any edits
+pico -v <path_to_file>
+
+# Display all files including those beginning with a period
+pico -a

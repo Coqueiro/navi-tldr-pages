@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gradle-wrapper.md
+
+% gradle-wrapper, common
+
+# Generate wrapper with the current Gradle version
+gradle wrapper
+
+# Generate wrapper with a specific Gradle version
+gradle wrapper --gradle-version <8_5>
+
+# Generate wrapper with a specific distribution type
+gradle wrapper --distribution-type <bin_all>
+
+# Generate wrapper using a specific distribution URL
+gradle wrapper --gradle-distribution-url <url>

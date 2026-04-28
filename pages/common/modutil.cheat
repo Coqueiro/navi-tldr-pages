@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/modutil.md
+
+% modutil, common
+
+# Add a PKCS #11 module to a NSS database (e.g. a Firefox profile: `$HOME/.mozilla/firefox/default-release`)
+modutil -dbdir sql:<path_to_nss_database_directory> -add "<module_label>" -libfile <path_to_pkcs11_mod_so>
+
+# List PKCS #11 modules in a NSS database
+modutil -dbdir sql:<path_to_nss_database_directory> -list

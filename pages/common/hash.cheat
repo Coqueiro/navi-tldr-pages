@@ -12,7 +12,7 @@ hash -r
 # Delete a specific command from the hash table
 hash -d <command>
 
-# Print the full path of `command`
+# Print the full path of a command
 hash -t <command>
 
 # Display help

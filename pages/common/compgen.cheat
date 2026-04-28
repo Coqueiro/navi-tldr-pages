@@ -3,11 +3,14 @@
 
 % compgen, common
 
-# List all commands that you could run
+# List all shell built-ins, aliases, functions, and executables that you could run
 compgen -c
 
-# List all commands that you could run that start with a specified string
-compgen -c <str>
+# List all commands that you could run that start with a specified string and save results to `$COMPREPLY`
+compgen -V COMPREPLY -c <str>
+
+# Match against a wordlist
+compgen -W "{{apple orange banana}}" <a>
 
 # List all aliases
 compgen -a
@@ -18,11 +21,8 @@ compgen -A function
 # Show shell reserved keywords
 compgen -k
 
-# See all available commands/aliases starting with 'ls'
+# See all available commands/aliases starting with `ls`
 compgen -ac <ls>
 
 # List all users on the system
 compgen -u
-
-# Display help
-compgen --help

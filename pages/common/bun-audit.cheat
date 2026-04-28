@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-audit.md
+
+% bun-audit, common
+
+# Audit all dependencies in a project with a `bun.lock` file
+bun audit
+
+# Show only vulnerabilities at or above a specific severity level
+bun audit --audit-level <low_moderate_high_critical>
+
+# Audit only production dependencies
+bun audit --prod
+
+# Ignore a specific CVE ID
+bun audit --ignore <CVE_XXXX_YYYY>
+
+# Output the raw JSON report
+bun audit --json

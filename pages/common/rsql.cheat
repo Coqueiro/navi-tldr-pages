@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rsql.md
+
+% rsql, common
+
+# Enter interactive mode
+rsql
+
+# Connect to a database (e.g. PostgreSQL)
+rsql --url "<postgresql___user_pass_localhost_mydb>"
+
+# Connect to a PostgreSQL database with SSL
+rsql --url "<postgresql___user_pass_localhost_db_sslmode_require>"
+
+# Connect to a MySQL database with a specified charset
+rsql --url "<mysql___user_pass_localhost_db_charset_utf8mb4>"
+
+# Run a query and exit
+rsql --url "<sqlite___database_db>" -- "{{SELECT * FROM users LIMIT 10}}"
+
+# Set default format
+rsql --url "<sqlite___db_sqlite>" --format json
+
+# Connect to file and use custom line separator
+rsql --url "<delimited___data_txt_separator___has_header_true>"

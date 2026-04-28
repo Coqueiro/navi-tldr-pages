@@ -7,10 +7,10 @@
 dockutil --add <path_to_application>
 
 # Replace one application with another in the current user's dock
-dockutil --add <_path_to_application> --replacing '<dock_item_label>'
+dockutil --add /<path_to_application> --replacing '<dock_item_label>'
 
 # Add a directory with view options and display it as a folder icon or stack
-dockutil --add <_path_to_directory> --view <grid_fan_list_auto> --display <folder_stack>
+dockutil --add /<path_to_directory> --view <grid_fan_list_auto> --display <folder_stack>
 
 # Add a URL dock item after another item
 dockutil --add <vnc___example_server_local> --label '{{Example VNC}}' --after <dock_item_label>

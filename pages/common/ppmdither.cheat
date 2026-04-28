@@ -3,7 +3,7 @@
 
 % ppmdither, common
 
-# Read a PPM image, apply dithering and save it to a file
+# Read a PPM image, apply dithering, and save it to a file
 ppmdither <path_to_image_ppm> > <path_to_file_ppm>
 
 # Specify the desired number of shades for each primary color

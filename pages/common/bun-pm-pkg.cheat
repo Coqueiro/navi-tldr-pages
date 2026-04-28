@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-pm-pkg.md
+
+% bun-pm-pkg, common
+
+# Get all properties from `package.json`
+bun pm pkg get
+
+# Get a single property
+bun pm pkg get <property>
+
+# Get multiple properties
+bun pm pkg get {{property1 property2 property3 ...}}
+
+# Get nested property
+bun pm pkg get <property>.<attribute>
+
+# Set a property
+bun pm pkg set <property>="<value>"
+
+# Delete a property
+bun pm pkg delete <property>
+
+# Automatically fix common issues in `package.json`
+bun pm pkg fix

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-about.md
+
+% poetry-about, common
+
+# Display global information about Poetry, including the current version
+poetry about

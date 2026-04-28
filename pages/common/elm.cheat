@@ -3,7 +3,7 @@
 
 % elm, common
 
-# Initialize an Elm project, generates an elm.json file
+# Initialize an Elm project, generates an `elm.json` file
 elm init
 
 # Start interactive Elm shell

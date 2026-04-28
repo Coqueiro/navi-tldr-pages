@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-explain.md
+
+% npm-explain, common
+
+# Explain why a specific package is installed
+npm {{[why|explain]}} <package_name>
+
+# Show explanation in JSON format
+npm {{[why|explain]}} <package_name> --json
+
+# Include peer dependencies in the explanation
+npm {{[why|explain]}} <package_name> --include peer
+
+# Limit explanation depth to 2 levels deep
+npm {{[why|explain]}} <package_name> --depth 2

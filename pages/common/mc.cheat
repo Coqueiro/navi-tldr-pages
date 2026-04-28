@@ -3,4 +3,8 @@
 
 % mc, common
 
+# View documentation for MinIO client
+tldr mc.cli
 
+# View documentation for Midnight Commander
+tldr mc.fm

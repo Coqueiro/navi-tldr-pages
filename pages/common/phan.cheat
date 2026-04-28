@@ -13,7 +13,7 @@ phan --init --init-level <level>
 phan
 
 # Analyze one or more directories
-phan --directory <path_to_directory> --directory <path_to_another_directory>
+phan {{--directory path/to/directory1 --directory path/to/directory2 ...}}
 
 # Specify a configuration file (defaults to `.phan/config.php`)
 phan --config-file <path_to_config_php>

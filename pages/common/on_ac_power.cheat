@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/on_ac_power.md
+
+% on_ac_power, common
+
+# Test if a computer is running on line power
+on_ac_power

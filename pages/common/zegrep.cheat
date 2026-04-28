@@ -3,4 +3,5 @@
 
 % zegrep, common
 
-
+# View documentation for the original command
+tldr zgrep

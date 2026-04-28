@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ng-completion.md
+
+% ng-completion, common
+
+# Set up autocompletion interactively for the current shell
+ng completion
+
+# Generate an autocompletion script for `bash` or `zsh`
+ng completion script
+
+# Source the autocompletion script in the current session
+source <(ng completion script)

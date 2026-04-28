@@ -6,8 +6,8 @@
 # Connect to the server <dav.example.com>, open the root collection
 cadaver <http___dav_example_com_>
 
-# Connect to a server using a specific port and open the collection `/foo/bar/`
-cadaver <http___dav_example_com_8022_foo_bar_>
+# Connect to a server using a specific port and open a collection
+cadaver <http___dav_example_com_8022_path_to_collection_>
 
 # Connect to a server using SSL
 cadaver <https___davs_example_com_>

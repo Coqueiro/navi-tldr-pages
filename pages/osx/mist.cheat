@@ -19,7 +19,7 @@ mist list installer --include-betas
 mist list installer --latest "macOS Sonoma"
 
 # List and export macOS Installers to a CSV file
-mist list installer --export "<_path_to_export_csv>"
+mist list installer --export "/<path_to_export_csv>"
 
 # Download the latest macOS Sonoma Firmware for Apple Silicon Macs, with a custom name
 mist download firmware "macOS Sonoma" --firmware-name "{{Install %NAME% %VERSION%-%BUILD%.ipsw}}"

@@ -21,8 +21,8 @@ vim +<line_number> <path_to_file>
 # Search for a pattern in the file (press `<n>`/`<N>` to go to next/previous match)
 </><search_pattern><Enter>
 
-# Perform a regular expression substitution in the whole file
-<:>%s/<regular_expression>/<replacement>/g<Enter>
+# Perform a `regex` substitution in the whole file
+<:>%s/<regex>/<replacement>/g<Enter>
 
 # Display the line numbers
 <:>set nu<Enter>

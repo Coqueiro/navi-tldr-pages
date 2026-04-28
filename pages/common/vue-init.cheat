@@ -10,4 +10,4 @@ vue init <webpack_webpack_simple_browserify_browserify_simple_simple> <project_n
 vue init <path_to_template_directory> <project_name>
 
 # Create a new project using a template from GitHub
-vue init <username>/<repo> <project_name>
+vue init <username>/<repository> <project_name>

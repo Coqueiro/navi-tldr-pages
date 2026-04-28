@@ -18,5 +18,5 @@ terraform plan
 # Build or change infrastructure
 terraform apply
 
-# Destroy Terraform-managed infrastructure
+# Destroy all infrastructure in the current directory
 terraform destroy

@@ -9,5 +9,5 @@ xctool -project <YourProject_xcodeproj> -scheme <YourScheme> build
 # Build a project that is part of a workspace
 xctool -workspace <YourWorkspace_xcworkspace> -scheme <YourScheme> build
 
-# Clean, build and execute all the tests
+# Clean, build, and execute all the tests
 xctool -workspace <YourWorkspace_xcworkspace> -scheme <YourScheme> clean build test

@@ -10,7 +10,7 @@ gau <example_com>
 gau {{domain1 domain2 ...}}
 
 # Fetch all URLs of several domains from an input file, running multiple threads
-gau --threads <4> < <path_to_domains_txt>
+gau < <path_to_domains_txt> --threads <4>
 
 # Write [o]utput results to a file
 gau <example_com> --o <path_to_found_urls_txt>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-resume.md
+
+% vagrant-resume, common
+
+# Resume machine specified by name or id
+vagrant resume <name_id>
+
+# Resume and run all configured provisioners
+vagrant resume <name_id> --provision
+
+# Resume and specify which provisioners to re-run
+vagrant resume <name_id> --provision-with <provisioner>

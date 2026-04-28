@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-pm-trust.md
+
+% bun-pm-trust, common
+
+# Trust a specific dependency and add it to `trustedDependencies`
+bun pm trust <dependency_name>
+
+# Trust all currently untrusted dependencies
+bun pm trust --all

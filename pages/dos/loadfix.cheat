@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/loadfix.md
+
+% loadfix, dos
+
+# Start a program with 64KB allocated memory
+LOADFIX <program>
+
+# Load with custom KB reduction (1-1024)
+LOADFIX -<32> <program>
+
+# Free all previously allocated memory
+LOADFIX -f

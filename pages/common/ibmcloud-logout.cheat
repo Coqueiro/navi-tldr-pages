@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ibmcloud-logout.md
+
+% ibmcloud-logout, common
+
+# Log out of the current session
+ibmcloud logout

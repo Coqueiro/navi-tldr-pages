@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-config-unset.md
+
+% jj-config-unset, common
+
+# Unset a config option in the user-level config
+jj config {{[u|unset]}} --user <name>
+
+# Unset a config option in the repo-level config
+jj config {{[u|unset]}} --repo <name>
+
+# Unset a config option in the workspace-level config
+jj config {{[u|unset]}} --workspace <name>

@@ -12,5 +12,8 @@ cargo install --git <repo_url>
 # Build from the specified branch/tag/commit when installing from a Git repository
 cargo install --git <repo_url> --<branch_tag_rev> <branch_name_tag_commit_hash>
 
+# Install a package from a local directory
+cargo install --path <path_to_package>
+
 # List all installed packages and their versions
 cargo install --list

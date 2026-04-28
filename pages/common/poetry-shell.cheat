@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-shell.md
+
+% poetry-shell, common
+
+# Spawn a shell within the virtual environment
+poetry shell

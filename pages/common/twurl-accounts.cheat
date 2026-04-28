@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/twurl-accounts.md
+
+% twurl-accounts, common
+
+# List all authorized Twitter accounts and their consumer keys
+twurl accounts

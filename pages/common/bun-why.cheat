@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-why.md
+
+% bun-why, common
+
+# Explain why a specific package is installed
+bun why <package_name>
+
+# Explain why all packages matching a pattern are installed
+bun why "<pattern>"
+
+# Explain why packages from a specific organization are installed
+bun why "@<organization>/*"
+
+# Show only top-level dependencies
+bun why <package_name> --top
+
+# Limit the dependency tree depth
+bun why <package_name> --depth <number>

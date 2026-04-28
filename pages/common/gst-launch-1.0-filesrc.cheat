@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-filesrc.md
+
+% gst-launch-1.0-filesrc, common
+
+# Read data from a file
+gst-launch-1.0 filesrc location=<path_to_file> ! <pipeline>

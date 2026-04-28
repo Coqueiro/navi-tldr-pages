@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/deepseek.md
+
+% deepseek, common
+
+# Start interactive mode
+deepseek
+
+# Run a single prompt
+deepseek chat "{{write a Python function for binary search}}"
+
+# Start interactive mode with a specific model
+deepseek --model <deepseek_coder_6_7b>
+
+# Set up the local environment (Ollama)
+deepseek setup
+
+# Force the CLI to use local mode
+deepseek --local
+
+# Display help
+deepseek --help

@@ -4,7 +4,7 @@
 % pocount, common
 
 # Print a colorful table with the translation progress of a file
-pocount <path_to_file_file_po>
+pocount <path_to_file_po>
 
 # Print translation progress of various files, one line per file
 pocount --short {{translation_*.ts}}

@@ -19,10 +19,10 @@ VBoxManage import <path_to_file_ovf> --register
 VBoxManage import <path_to_file_ovf> --dry-run
 
 # Set the guest OS type (one of `VBoxManage list ostypes`) for the imported VM
-VBoxManage import <path_to_file_ovf> --ostype=<ostype>
+VBoxManage import <path_to_file_ovf> --ostype <ostype>
 
 # Set the memory (in megabytes) for the imported VM
-VBoxManage import <path_to_file_ovf> --memory=<1>
+VBoxManage import <path_to_file_ovf> --memory <1>
 
 # Set the number of CPUs for the imported VM
-VBoxManage import <path_to_file_ovf> --cpus=<1>
+VBoxManage import <path_to_file_ovf> --cpus <1>

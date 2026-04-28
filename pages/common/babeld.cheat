@@ -10,7 +10,7 @@ babeld -c <path_to_ports_conf> -c <path_to_filters_conf> -c <path_to_interfaces_
 babeld -D
 
 # Specify a [C]onfiguration command
-babeld -C {{'redistribute metric 256'}}
+babeld -C '{{redistribute metric 256}}'
 
 # Specify on which interfaces to operate
 babeld <eth0> <eth1> <wlan0>

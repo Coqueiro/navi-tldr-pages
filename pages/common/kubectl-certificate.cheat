@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubectl-certificate.md
+
+% kubectl-certificate, common
+
+# Approve a certificate signing request by name
+kubectl certificate approve <csr_name>
+
+# Deny a certificate signing request by name
+kubectl certificate deny <csr_name>
+
+# Approve a certificate signing request defined in a manifest file
+kubectl certificate approve --filename <path_to_csr_yaml>
+
+# Deny a certificate signing request defined in a manifest file
+kubectl certificate deny --filename <path_to_csr_yaml>
+
+# Force reapproval of a certificate signing request that was previously denied
+kubectl certificate approve --force <csr_name>

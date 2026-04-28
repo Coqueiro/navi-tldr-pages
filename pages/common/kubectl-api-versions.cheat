@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubectl-api-versions.md
+
+% kubectl-api-versions, common
+
+# Print the supported API versions on the server, in the form of "group/version"
+kubectl api-versions

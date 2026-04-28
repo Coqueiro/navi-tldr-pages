@@ -3,7 +3,7 @@
 
 % bower, common
 
-# Install a project's dependencies, listed in its bower.json
+# Install a project's dependencies, listed in its `bower.json`
 bower install
 
 # Install one or more packages to the bower_components directory

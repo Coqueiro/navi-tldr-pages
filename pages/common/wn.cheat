@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wn.md
+
+% wn, common
+
+# Show information available for the word "emphatically"
+wn emphatically
+
+# List synonyms of the adverb "emphatically"
+wn emphatically -synsr
+
+# List antonyms of the adjective "slow"
+wn slow -antsa

@@ -6,8 +6,8 @@
 # Show available commands and flags
 hcloud
 
-# Display help
-hcloud -h
-
 # Show available commands and flags for `hcloud` contexts
 hcloud context
+
+# Display help
+hcloud -h

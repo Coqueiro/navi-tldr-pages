@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-lfs-transfer.md
+
+% git-lfs-transfer, common
+
+# Upload large files tracked by Git LFS to a repository
+git-lfs-transfer <path_to_repo_git> upload
+
+# Download large files tracked by Git LFS from a repository
+git-lfs-transfer <path_to_repo_git> download

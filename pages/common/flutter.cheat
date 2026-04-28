@@ -21,5 +21,8 @@ flutter test <test_example_test_dart>
 # Build a release APK targeting most modern smartphones
 flutter build apk --target-platform <android_arm>,<android_arm64>
 
+# Delete the `build` and `.dart_tool` directories
+flutter clean
+
 # Display help about a specific command
 flutter help <command>

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-destroy.md
+
+% terraform-destroy, common
+
+# Destroy all infrastructure in the current directory
+terraform destroy
+
+# Destroy infrastructure, skipping interactive approval
+terraform destroy -auto-approve
+
+# Destroy a specific resource
+terraform destroy -target {{resource_type.resource_name[instance_index]}}
+
+# Specify values for input variables
+terraform destroy -var '<name1>=<value1>' -var '<name2>=<value2>'
+
+# Specify values for input variables from a file
+terraform destroy -var-file <path_to_file_tfvars>
+
+# Destroy infrastructure with compact warnings
+terraform destroy -compact-warnings

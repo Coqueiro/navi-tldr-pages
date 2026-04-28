@@ -16,7 +16,7 @@ aws s3 ls <bucket_name>/<path_to_directory>/
 aws s3 ls --recursive <bucket_name>
 
 # List all files in a path with a given prefix
-aws s3 ls --recursive <bucket_name>/<path_to_directory_><prefix>
+aws s3 ls --recursive <bucket_name>/<path_to_directory>/<prefix>
 
 # Display help
 aws s3 ls help

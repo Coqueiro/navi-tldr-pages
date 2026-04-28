@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-git-init.md
+
+% jj-git-init, common
+
+# Create a new Git backed repo in the current directory
+jj git init
+
+# Create a new Git backed repo in the given directory
+jj git init <path_to_directory>
+
+# Initialize the Jujutsu repository as a valid Git repository (allowing the use of both `jj` and `git` commands in the same directory)
+jj git init --colocate
+
+# Initialize the Jujutsu repository backed by an existing Git repository
+jj git init --git-repo <git_repo>

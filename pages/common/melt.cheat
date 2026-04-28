@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/melt.md
+
+% melt, common
+
+# Generate a seed phrase from an existing Ed25519 private key
+melt <___ssh_id_ed25519>
+
+# Generate a seed phrase from `stdin`
+{{cat ~/.ssh/id_ed25519}} | melt
+
+# Restore an SSH key from a seed phrase
+melt restore <path_to_key> --seed "<seed_phrase>"
+
+# Restore an SSH key from a seed phrase via `stdin`
+{{cat path/to/file}} | melt restore -

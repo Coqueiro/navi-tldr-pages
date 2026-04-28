@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-libcamerasrc.md
+
+% gst-launch-1.0-libcamerasrc, common
+
+# View video in a window
+gst-launch-1.0 libcamerasrc ! videoconvert ! autovideosink
+
+# Specify the device to read from
+gst-launch-1.0 libcamerasrc camera-name=<camera_name> ! {{videoconvert ! autovideosink}}

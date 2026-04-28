@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mpijavac.md
+
+% mpijavac, common
+
+# Compile a Java source file
+mpijavac <path_to_source_file>.java
+
+# Pass application-specific classpaths to compiler
+mpijavac -cp <path_to_app>.jar <path_to_source_file>.java
+
+# Show the flags necessary to build MPI Java applications
+mpijavac --showme
+
+# Show the flags necessary to compile MPI Java applications
+mpijavac --showme:compile
+
+# Show full invoked Java compiler command line
+mpijavac <path_to_source_file>.java --showme

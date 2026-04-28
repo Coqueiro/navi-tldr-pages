@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/minecraft.md
+
+% minecraft, common
+
+# Start a Minecraft server and generate a world if it doesn't exist
+java -jar <path_to_server_jar> --nogui
+
+# Set the minimum and maximum amount of memory a server is allowed to have (Note: Setting them the same prevents lag caused by heap scaling)
+java -Xms<1024M> -Xmx<2048M> -jar <path_to_server_jar> --nogui
+
+# Start a server with a GUI
+java -jar <path_to_server_jar>
+
+# [Interactive] Shut the server down
+stop

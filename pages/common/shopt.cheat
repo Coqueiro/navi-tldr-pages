@@ -3,7 +3,7 @@
 
 % shopt, common
 
-# List of all settable options and whether they are set
+# List of all setable options and whether they are set
 shopt
 
 # Set an option

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-upgrade.md
+
+% bun-upgrade, common
+
+# Upgrade to the latest stable version
+bun upgrade
+
+# Upgrade to the latest canary build
+bun upgrade --canary
+
+# Switch back to the latest stable version
+bun upgrade --stable

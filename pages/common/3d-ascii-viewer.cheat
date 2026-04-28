@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/3d-ascii-viewer.md
+
+% 3d-ascii-viewer, common
+
+# Display a model
+3d-ascii-viewer <path_to_model>.obj
+
+# Set width and height
+3d-ascii-viewer -w <width> -h <height> <path_to_model>.obj
+
+# Enable color
+3d-ascii-viewer --color <path_to_model>.obj
+
+# Set frames per second
+3d-ascii-viewer -f <fps> <path_to_model>.obj
+
+# Interactive mode
+3d-ascii-viewer --interactive <path_to_model>.obj
+
+# Display help
+3d-ascii-viewer --help

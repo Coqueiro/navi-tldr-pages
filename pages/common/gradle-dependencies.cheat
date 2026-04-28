@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gradle-dependencies.md
+
+% gradle-dependencies, common
+
+# Display all dependencies
+gradle dependencies
+
+# Display dependencies for a specific configuration
+gradle dependencies --configuration <implementation>
+
+# Display dependencies for a specific subproject
+gradle :<subproject>:dependencies
+
+# Display dependencies and save to a file
+gradle dependencies > <path_to_dependencies_txt>

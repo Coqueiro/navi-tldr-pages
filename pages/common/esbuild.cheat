@@ -7,7 +7,7 @@
 esbuild --bundle <path_to_file_js>
 
 # Bundle a JSX application from `stdin`
-esbuild --bundle --outfile=<path_to_out_js> < <path_to_file_jsx>
+esbuild < <path_to_file_jsx> --bundle --outfile=<path_to_out_js>
 
 # Bundle and minify a JSX application with source maps in `production` mode
 esbuild --bundle --define:{{process.env.NODE_ENV=\"production\"}} --minify --sourcemap <path_to_file_js>

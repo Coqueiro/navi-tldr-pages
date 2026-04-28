@@ -3,8 +3,5 @@
 
 % whoami, common
 
-# Display currently logged username
-whoami
-
-# Display the username after a change in the user ID
-sudo whoami
+# View documentation for the original command
+tldr id

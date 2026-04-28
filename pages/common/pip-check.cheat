@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pip-check.md
+
+% pip-check, common
+
+# Check for broken or missing requirements
+pip check
+
+# Check and log output to a file
+pip check --log <path_to_file>

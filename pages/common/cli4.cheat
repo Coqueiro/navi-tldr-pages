@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/cli4.md
+
+% cli4, common
+
+# Display account information
+cli4 <_user>
+
+# List all zones
+cli4 <_zones>
+
+# List DNS records for a specific zone
+cli4 <_zones__example_com_dns_records>
+
+# Create a new DNS record
+cli4 --post <name_example_com> <type_A> <content_192_0_2_1> <_zones__example_com_dns_records>
+
+# Update an existing DNS record
+cli4 --put <name_sub_example_com> <type_A> <content_192_0_2_2> <_zones__example_com_dns_records__record_id>
+
+# Delete a DNS record
+cli4 --delete <_zones__example_com_dns_records__record_id>
+
+# Purge all cache for a zone
+cli4 --post <purge_everything_true> <_zones__example_com_purge_cache>

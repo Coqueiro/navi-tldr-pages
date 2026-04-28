@@ -3,17 +3,17 @@
 
 % nix-flake, common
 
-# Create a new flake (just the `flake.nix` file) from the default template, in the current directory
-nix flake init
-
 # Update all inputs (dependencies) of the flake in the current directory
 nix flake update
 
 # Update a specific input (dependency) of the flake in the current directory
-nix flake lock --update-input <input>
+nix flake update <input>
 
-# Show all the outputs of a flake on github
-nix flake show <github_owner_repo>
+# Clone a GitHub repository containing a flake
+nix flake clone <github_owner_repo_attributes>
+
+# Create missing lock file entries for a flake in a specified directory
+nix flake lock <path_to_flake>
 
 # Display help
 nix flake --help

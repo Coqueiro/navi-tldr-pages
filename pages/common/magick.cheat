@@ -9,6 +9,12 @@ magick <path_to_input_image_png> <path_to_output_image_jpg>
 # Resize an image, making a new copy
 magick <path_to_input_image_jpg> -resize <100x100> <path_to_output_image_jpg>
 
+# Resize an image by a percentage
+magick <path_to_input_image_png> -resize <50>% <path_to_output_image_png>
+
+# Scale an image to have a specified file size
+magick <path_to_input_image_png> -define jpeg:extent=<512kb> <path_to_output_image_jpg>
+
 # Create a GIF out of all JPEG images in the current directory
 magick {{*.jpg}} <path_to_images_gif>
 

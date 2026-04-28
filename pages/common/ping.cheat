@@ -3,7 +3,7 @@
 
 % ping, common
 
-# Ping host
+# Ping a host
 ping <host>
 
 # Ping a host only a specific number of times

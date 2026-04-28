@@ -15,7 +15,7 @@ gdu --show-disks
 # Interactively show the disk usage of the current directory but ignore some sub-directories
 gdu --ignore-dirs <path_to_directory1_path_to_directory2____>
 
-# Ignore paths by regular expression
+# Ignore paths by `regex`
 gdu --ignore-dirs-pattern '{{.*[abc]+}}'
 
 # Ignore hidden directories

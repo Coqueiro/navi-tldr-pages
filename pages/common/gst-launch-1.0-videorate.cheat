@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-videorate.md
+
+% gst-launch-1.0-videorate, common
+
+# Normalize framerate and apply new timestamps
+gst-launch-1.0 <source> ! videorate ! <sink>

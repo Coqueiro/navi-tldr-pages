@@ -6,7 +6,7 @@
 # Generate Terraform for Azure storage account
 aiac get terraform {{for an azure storage account}}
 
-# Generate a Dockerfile for nginx
+# Generate a Dockerfile for `nginx`
 aiac get dockerfile {{for a secured nginx}}
 
 # Generate GitHub action that applies Terraform

@@ -13,7 +13,7 @@ cat <path_to_file> | aspell list
 aspell dicts
 
 # Run `aspell` with a different language (takes two-letter ISO 639 language code)
-aspell --lang=<cs>
+aspell --lang <cs>
 
 # List misspelled words from `stdin` and ignore words from personal word list
-cat <path_to_file> | aspell --personal=<personal_word_list_pws> list
+cat <path_to_file> | aspell --personal <personal_word_list_pws> list

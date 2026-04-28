@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-pack.md
+
+% npm-pack, common
+
+# Create a tarball from the current package in the current directory
+npm pack
+
+# Create a tarball from a specific package folder
+npm pack <path_to_package_directory>
+
+# Run a dry run to preview the tarball contents without creating it
+npm pack --dry-run
+
+# Create a tarball without running lifecycle scripts
+npm pack --ignore-scripts
+
+# Specify a custom registry to fetch package metadata from
+npm pack --registry <https___registry_npmjs_org_>

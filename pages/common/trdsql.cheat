@@ -4,13 +4,13 @@
 % trdsql, common
 
 # Convert object data from multiple JSON files to a CSV file with header (`-oh`) and double quote
-trdsql -ocsv -oh "SELECT * FROM {{path/to/file/*.json}}" | sed 's/\([^,]*\)/"&"/g' > <path_to_file_csv>
+trdsql -ocsv -oh "SELECT * FROM {{path/to/directory/*.json}}" | sed 's/\([^,]*\)/"&"/g' > <path_to_file_csv>
 
-# Interpret JSON list as a table and put objects inside as columns (path/to/file.json: `{"list":[{"age":"26","name":"Tanaka"}]}`)
-trdsql "SELECT * FROM <path_to_file_json>::.list
+# Interpret JSON list as a table and put objects inside as columns (`path/to/file.json: {"list":[{"age":"26","name":"Tanaka"}]}`)
+trdsql "SELECT * FROM <path_to_file_json>::.list"
 
 # Manipulate complex SQL query with data from multiple CSV files with first line is header (`-ih`)
-trdsql -icsv -ih "SELECT <column1_column2> FROM {{path/to/file*.csv}} WHERE column2 != '' ORDER BY column1 GROUP BY column1"
+trdsql -icsv -ih "SELECT <column1_column2> FROM {{path/to/file*.csv}} WHERE column2 != '' ORDER BY <column1> GROUP BY <column1>"
 
 # Merge content of 2 CSV files to one CSV file
 trdsql "SELECT <column1_colum2> FROM <path_to_file1_csv> UNION SELECT <column1_column2> FROM <path_to_file2_csv>"

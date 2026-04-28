@@ -16,7 +16,7 @@ safe env
 safe tree <path>
 
 # Move a secret from one path to another
-safe move <old_path_to_secret> <new_path_to_secret>
+safe move <path_to_old_secret> <path_to_new_secret>
 
 # Generate a new 2048-bit SSH key-pair and store it
 safe ssh <2048> <path_to_secret>

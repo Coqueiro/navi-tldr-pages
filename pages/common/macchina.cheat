@@ -9,7 +9,7 @@ macchina
 # Specify a custom configuration file path
 macchina --config <path_to_configuration_file>
 
-# List system information, but lengthen uptime, shell and kernel output
+# List system information, but lengthen uptime, shell, and kernel output
 macchina --long-uptime --long-shell --long-kernel
 
 # Check for any errors/system failures encountered when trying to fetch system information

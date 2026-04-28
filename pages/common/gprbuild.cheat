@@ -13,4 +13,4 @@ gprbuild -P <project_name>
 gprclean
 
 # Install compiled binaries
-gprinstall --prefix <path_to_installation_dir>
+gprinstall --prefix <path_to_installation_directory>

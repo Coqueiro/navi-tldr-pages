@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-ssh-config.md
+
+% vagrant-ssh-config, common
+
+# Get SSH configuration for the machine running in the current directory
+vagrant ssh-config
+
+# Target a machine by name or ID
+vagrant ssh-config <name_id>

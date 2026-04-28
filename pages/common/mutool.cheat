@@ -15,7 +15,7 @@ mutool merge -o <path_to_output_pdf> {{path/to/input1.pdf path/to/input2.pdf ...
 # Query information about all content embedded in a PDF
 mutool info <path_to_input_pdf>
 
-# Extract all images, fonts and resources embedded in a PDF to the current directory
+# Extract all images, fonts, and resources embedded in a PDF to the current directory
 mutool extract <path_to_input_pdf>
 
 # Show the outline (table of contents) of a PDF

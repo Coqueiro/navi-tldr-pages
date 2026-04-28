@@ -10,13 +10,13 @@ tart pull <acme_io_org_name_tag>
 tart clone <source_vm> <vm_name>
 
 # Create a new Mac VM from a specific ipsw file
-tart create --from-ipsw=<latest_path_to_file_ipsw> <vm_name>
+tart create --from-ipsw <latest_path_to_file_ipsw> <vm_name>
 
 # Run an existing VM
 tart run <vm_name>
 
 # Run an existing VM with a specific mounted directory
-tart run --dir=<path_to_directory>:<_path_to_local_directory> <vm_name>
+tart run --dir <path_to_directory>:/<path_to_local_directory> <vm_name>
 
 # List VMs
 tart list

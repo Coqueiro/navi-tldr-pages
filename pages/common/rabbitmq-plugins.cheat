@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rabbitmq-plugins.md
+
+% rabbitmq-plugins, common
+
+# List plugins
+rabbitmq-plugins list
+
+# Enable a plugin
+rabbitmq-plugins enable <plugin>
+
+# Disable a plugin
+rabbitmq-plugins disable <plugin>
+
+# Enable a plugin and disable the rest
+rabbitmq-plugins set <plugin>

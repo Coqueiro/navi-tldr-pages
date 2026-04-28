@@ -24,5 +24,5 @@ flyctl apps list
 # View the status of a specific running application
 flyctl status --app <app_name>
 
-# Display version information
+# Display version
 flyctl version

@@ -3,17 +3,17 @@
 
 % aws-s3-sync, common
 
-# Sync files and directories from local to a bucket
-aws s3 sync <path_to_file_or_directory> s3://<bucket_target_name>/<path_to_remote_location>
+# Sync files in a directory from local to a bucket
+aws s3 sync <path_to_directory> s3://<bucket_name>/<path_to_remote_location>
 
-# Sync files and directories from a bucket to local
-aws s3 sync s3://<bucket_source_name>/<path_to_remote_location> <path_to_file_or_directory>
+# Sync files in a directory from a bucket to local
+aws s3 sync s3://<bucket_name>/<path_to_remote_location> <path_to_directory>
 
 # Sync objects between two buckets
 aws s3 sync s3://<bucket_source_name>/<path_to_remote_location> s3://<bucket_target_name>/<path_to_remote_location>
 
 # Sync local files to S3 while excluding specific files or directories
-aws s3 sync <path_to_file_or_directory> s3://<bucket_target_name>/<path_to_remote_location> --exclude <path_to_file> --exclude <path_to_directory>/*
+aws s3 sync <path_to_directory> s3://<bucket_name>/<path_to_remote_location> --exclude <path_to_file> --exclude <path_to_directory>/*
 
 # Sync objects between buckets and delete destination files not in source
 aws s3 sync s3://<bucket_source_name>/<path_to_remote_location> s3://<bucket_target_name>/<path_to_remote_location> --delete
@@ -22,7 +22,7 @@ aws s3 sync s3://<bucket_source_name>/<path_to_remote_location> s3://<bucket_tar
 aws s3 sync <path_to_local_directory> s3://<bucket_name>/<path_to_remote_location> --acl <private_public_read> --storage-class <STANDARD_IA_GLACIER>
 
 # Sync files to S3 and skip unchanged ones (compare size and modification time)
-aws s3 sync <path_to_file_or_directory> s3://<bucket_name>/<path_to_remote_location> --size-only
+aws s3 sync <path_to_directory> s3://<bucket_name>/<path_to_remote_location> --size-only
 
 # Display help
 aws s3 sync help

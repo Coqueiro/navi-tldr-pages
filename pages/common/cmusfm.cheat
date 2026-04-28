@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/cmusfm.md
+
+% cmusfm, common
+
+# Initialize `cmusfm` and authorize access to your account
+cmusfm init
+
+# Display help
+cmusfm

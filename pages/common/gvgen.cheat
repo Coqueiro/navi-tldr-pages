@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gvgen.md
+
+% gvgen, common
+
+# Generate a [c]ycle with 10 vertices and edges and write it to `stdout`
+gvgen -c <10>
+
+# Generate a 4×3 [g]rid
+gvgen -g <4_3>
+
+# Generate a binary [t]ree of height 5
+gvgen -t <5>
+
+# Generate a complete [b]ipartite graph with 3 and 4 vertices
+gvgen -b <3_4>
+
+# Create a [r]andom graph and [o]utput it to a file
+gvgen -r <10_5> -o <random_gv>
+
+# Generate a [d]irected graph with [v]erbose output
+gvgen -d -v -c <6>
+
+# Display help
+gvgen -?

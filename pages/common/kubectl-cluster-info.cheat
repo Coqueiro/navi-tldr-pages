@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubectl-cluster-info.md
+
+% kubectl-cluster-info, common
+
+# Show basic cluster information
+kubectl cluster-info
+
+# Dump current cluster state to `stdout` (for debugging)
+kubectl cluster-info dump
+
+# Dump cluster state to a directory
+kubectl cluster-info dump --output-directory <path_to_directory>
+
+# Use a specific kubeconfig context
+kubectl cluster-info --context <context_name>

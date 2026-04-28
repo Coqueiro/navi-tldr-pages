@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/haproxy.md
+
+% haproxy, common
+
+# Check configuration file for validity
+haproxy -c -f <path_to_haproxy_cfg>
+
+# Start HAProxy with a configuration file
+haproxy -f <path_to_haproxy_cfg>
+
+# Start in daemon mode
+haproxy -D -f <path_to_haproxy_cfg>
+
+# Start in master-worker mode
+haproxy -W -f <path_to_haproxy_cfg>
+
+# Start with debugging mode enabled (foreground, verbose output)
+haproxy -d -f <path_to_haproxy_cfg>
+
+# Reload configuration with graceful shutdown of old process
+haproxy -f <path_to_haproxy_cfg> -sf <pid>
+
+# Set maximum number of simultaneous connections
+haproxy -f <path_to_haproxy_cfg> -n <maxconn>
+
+# Reload with zero downtime by reusing sockets from old process
+haproxy -f <path_to_haproxy_cfg> -x <path_to_haproxy_sock> -sf <pid>

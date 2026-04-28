@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ibmcloud-config.md
+
+% ibmcloud-config, common
+
+# Set HTTP request timeout to 30 seconds
+ibmcloud config --http-timeout 30
+
+# Enable trace output for HTTP requests
+ibmcloud config --trace true
+
+# Trace HTTP requests to a specific file
+ibmcloud config --trace <path_to_trace_file>
+
+# Disable color output
+ibmcloud config --color false
+
+# Set the locale to a specific language
+ibmcloud config --locale <zh_Hans>
+
+# Enable automatic SSO one-time passcode acceptance
+ibmcloud config --sso-otp auto

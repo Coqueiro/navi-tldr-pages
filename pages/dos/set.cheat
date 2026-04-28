@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/set.md
+
+% set, dos
+
+# Set variable
+SET <VAR>=<value>

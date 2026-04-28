@@ -3,7 +3,7 @@
 
 % git-cat-file, common
 
-# Get the [s]ize of the HEAD commit in bytes
+# Get the [s]ize of the `HEAD` commit in bytes
 git cat-file -s HEAD
 
 # Get the [t]ype (blob, tree, commit, tag) of a given Git object

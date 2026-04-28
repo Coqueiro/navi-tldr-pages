@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-explore.md
+
+% npm-explore, common
+
+# Browse an installed package
+npm explore <package_name>
+
+# Browse a package and run a command inside it
+npm explore <package_name> -- <command>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/setopt.md
+
+% setopt, common
+
+# List enabled options
+setopt
+
+# Set an option
+setopt <option>
+
+# Display all available options and their status
+set -o

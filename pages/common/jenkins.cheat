@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jenkins.md
+
+% jenkins, common
+
+# Connect to jenkins CLI
+java -jar jenkins-cli.jar -s <jenkins_server_url> -auth <username>:<api_token>
+
+# Restart jenkins
+java -jar jenkins-cli.jar -s <jenkins_server_url> restart
+
+# Shutdown jenkins
+java -jar jenkins-cli.jar -s <jenkins_server_url> shutdown
+
+# Display help
+java -jar jenkins-cli.jar -s <jenkins_server_url> help
+
+# Display version
+java -jar jenkins-cli.jar -s <jenkins_server_url> version

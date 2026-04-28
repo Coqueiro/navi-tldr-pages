@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-config.md
+
+% jj-config, common
+
+# Start an editor on the user-level config file
+jj config {{[e|edit]}} --user
+
+# Get the value of a config option
+jj config {{[g|get]}} <name>
+
+# List all config variables and their values
+jj config {{[l|list]}}
+
+# Print the path to the user-level config file
+jj config {{[p|path]}} --user
+
+# Set a config option in the user-level config
+jj config {{[s|set]}} --user <name> <value>
+
+# Unset a config option in the user-level config
+jj config {{[u|unset]}} --user <name>

@@ -13,7 +13,7 @@ eksctl get cluster --name=<name> --region=<region>
 eksctl create cluster --config-file=<path_to_file>
 
 # Create a cluster using a configuration file and skip creating nodegroups until later
-eksctl create cluster --config-file=<path> --without-nodegroup
+eksctl create cluster --config-file=<path_to_file> --without-nodegroup
 
 # Delete a cluster
 eksctl delete cluster --name=<name> --region=<region>

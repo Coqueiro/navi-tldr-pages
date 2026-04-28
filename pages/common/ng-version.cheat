@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ng-version.md
+
+% ng-version, common
+
+# Display version
+ng {{[v|version]}}
+
+# Display the CLI, framework, system, and project dependency versions in JSON format
+ng {{[v|version]}} --json

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-config-get.md
+
+% jj-config-get, common
+
+# Get the value of a config option
+jj config {{[g|get]}} <name>
+
+# Get the configured user name
+jj config {{[g|get]}} user.name
+
+# Get the configured user email
+jj config {{[g|get]}} user.email
+
+# Get the default revset for the log command
+jj config {{[g|get]}} revsets.log

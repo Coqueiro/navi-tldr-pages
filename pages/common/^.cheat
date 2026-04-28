@@ -13,4 +13,7 @@
 ^<string1>^<string2>^<string3>
 
 # Replace all occurrences of `string1`
-^<string1>^<string2>^:&
+^<string1>^<string2>^:g&
+
+# Print the substituted command without running it
+^<string1>^<string2>^:p

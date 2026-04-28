@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/conda-repoquery.md
+
+% conda-repoquery, common
+
+# Show available versions of the specified package
+conda repoquery search <package>
+
+# Show dependencies of the specified package
+conda repoquery depends <package>
+
+# Show packages that depend on the specified package
+conda repoquery whoneeds <package>

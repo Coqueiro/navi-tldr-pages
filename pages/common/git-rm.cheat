@@ -6,8 +6,11 @@
 # Remove file from repository index and filesystem
 git rm <path_to_file>
 
-# Remove directory
+# Remove directory [r]ecursively
 git rm -r <path_to_directory>
 
 # Remove file from repository index but keep it untouched locally
 git rm --cached <path_to_file>
+
+# Reduce the repository to only the `.git` directory
+git rm -r .

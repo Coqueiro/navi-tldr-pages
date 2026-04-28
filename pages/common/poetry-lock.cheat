@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-lock.md
+
+% poetry-lock, common
+
+# Lock dependencies from the current directory's `pyproject.toml` file
+poetry lock
+
+# Regenerate the existing lock file
+poetry lock --regenerate

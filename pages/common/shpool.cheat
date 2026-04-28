@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/shpool.md
+
+% shpool, common
+
+# Create a new session or attach to an existing one
+shpool attach <session_name>
+
+# List existing sessions
+shpool list
+
+# Detach from the current session
+shpool detach
+
+# Detach from a session
+shpool detach <session_name>
+
+# Kill a named session
+shpool kill <session_name>
+
+# Start the `shpool` daemon
+shpool daemon

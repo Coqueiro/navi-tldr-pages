@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/mo.md
+
+% mo, osx
+
+# View documentation for the original command
+tldr mole

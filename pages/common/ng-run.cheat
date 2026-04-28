@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ng-run.md
+
+% ng-run, common
+
+# Run an Architect target using the format `project:target:configuration`
+ng run <project_name>:<build_serve_test_lint____>:<development_production____>

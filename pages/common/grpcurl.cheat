@@ -7,7 +7,7 @@
 grpcurl <grpc_server_com_443> <my_custom_server_Service_Method>
 
 # Send a request with a header and a body
-grpcurl -H "{{Authorization: Bearer $token}}" -d {{'{"foo": "bar"}'}} <grpc_server_com_443> <my_custom_server_Service_Method>
+grpcurl -H "{{Authorization: Bearer $token}}" -d '{{{"foo": "bar"}}}' <grpc_server_com_443> <my_custom_server_Service_Method>
 
 # List all services exposed by a server
 grpcurl <grpc_server_com_443> list

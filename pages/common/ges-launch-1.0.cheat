@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ges-launch-1.0.md
+
+% ges-launch-1.0, common
+
+# View two clips in sequence
+ges-launch-1.0 +clip <path_to_file1> +clip <path_to_file2>
+
+# View interactive controls
+<k>

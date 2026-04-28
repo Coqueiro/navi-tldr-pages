@@ -3,8 +3,11 @@
 
 % xdelta, common
 
-# Apply a patch
-xdelta -d -s <path_to_input_file> <path_to_delta_file_xdelta> <path_to_output_file>
+# Generate a patch (delta) between two files
+xdelta delta <path_to_old_file> <path_to_new_file> <path_to_patch_file>
 
-# Create a patch
-xdelta -e -s <path_to_old_file> <path_to_new_file> <path_to_output_file_xdelta>
+# Apply a patch to an old file to reconstruct the new file
+xdelta patch <path_to_patch_file> <path_to_old_file> <path_to_new_file>
+
+# Generate a patch with a specific compression level
+xdelta delta -<0__9> <path_to_old_file> <path_to_new_file> <path_to_patch_file>

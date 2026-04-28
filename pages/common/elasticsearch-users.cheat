@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/elasticsearch-users.md
+
+% elasticsearch-users, common
+
+# Add a new user interactively (prompts for password)
+elasticsearch-users useradd <username>
+
+# Add a new user and specify roles
+elasticsearch-users useradd <username> -r <role1_role2>
+
+# Change the password for an existing user
+elasticsearch-users passwd <username>
+
+# Delete a user
+elasticsearch-users userdel <username>
+
+# List all users in the native realm
+elasticsearch-users list

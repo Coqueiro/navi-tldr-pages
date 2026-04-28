@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/diffimg.md
+
+% diffimg, common
+
+# Compare two images and output the difference image to the specified file
+diffimg <path_to_image1> <path_to_image2> <path_to_output_image>

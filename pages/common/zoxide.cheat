@@ -3,20 +3,4 @@
 
 % zoxide, common
 
-# Go to the highest-ranked directory that contains "foo" in the name
-zoxide query <foo>
 
-# Go to the highest-ranked directory that contains "foo" and then "bar"
-zoxide query <foo> <bar>
-
-# Start an interactive directory search (requires `fzf`)
-zoxide query --interactive
-
-# Add a directory or increment its rank
-zoxide add <path_to_directory>
-
-# Remove a directory from `zoxide`'s database
-zoxide remove <path_to_directory>
-
-# Generate shell configuration for command aliases (`z`, `zi`)
-zoxide init <bash_elvish_fish_nushell_posix_powershell_tcsh_xonsh_zsh>

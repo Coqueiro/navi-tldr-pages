@@ -15,5 +15,5 @@ diskutil partitionDisk <_dev_disk_device> 1 <APM_MBR_GPT> <partition_filesystem>
 # Reformat a volume, then create multiple partitions
 diskutil partitionDisk <_dev_disk_device> <number_of_partitions> <APM_MBR_GPT> <partition_filesystem1> <partition_name1> <partition_size1> <partition_filesystem2> <partition_name2> <partition_size2> ...
 
-# List all supported file systems for partitioning
+# List all supported filesystems for partitioning
 diskutil listFilesystems

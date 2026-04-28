@@ -10,4 +10,4 @@ crane export <image_name> -
 crane export <image_name> <path_to_tarball>
 
 # Read image from `stdin`
-crane export - <path_to_filename>
+crane export - <path_to_file>

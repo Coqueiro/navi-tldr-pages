@@ -6,5 +6,5 @@
 # Display changes in a histogram
 diff <path_to_file1> <path_to_file2> | diffstat
 
-# Display inserted, deleted and modified changes as a table
+# Display inserted, deleted, and modified changes as a table
 diff <path_to_file1> <path_to_file2> | diffstat -t

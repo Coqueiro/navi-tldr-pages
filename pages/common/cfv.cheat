@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/cfv.md
+
+% cfv, common
+
+# [T]est checksum files in current directory
+cfv -T
+
+# [T]est [v]erbosely, re[n]ame bad, and show [u]nverified files using a checksum [f]ile
+cfv -Tvnu -f <path_to_file>
+
+# [C]reate a checksum file of a specific [t]ype for the selected files
+cfv -C -t "<sfv_sha256_md5____>" {{file1 file2 ...}}
+
+# [C]reate separate checksum files for each [r]ecursively selected directory
+cfv -Cr
+
+# [C]reate a single `sha256` type [f]ile for all [rr]ecursively selected files
+cfv -C -f <sums_sha256> -rr
+
+# [C]reate a `g[z]ipped` `.sfv` file [v]erbosely, following `sym[l]inks` and using `path/to/directory` as base [p]ath
+cfv -Czvl -p <path_to_directory>

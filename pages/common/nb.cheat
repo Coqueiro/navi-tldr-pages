@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/nb.md
+
+% nb, common
+
+# Create a new note in your `$EDITOR`
+nb {{[a|add]}} "<note_title>"
+
+# Edit a note in your `$EDITOR`
+nb {{[e|edit]}} <note_id>
+
+# List all notes in the current notebook
+nb list
+
+# Add a todo
+nb {{[to|todos]}} {{[a|add]}} <title>
+
+# Import a file
+nb import (<path_to_file_url>)
+
+# Search for notes containing a keyword
+nb {{[q|search]}} "<keyword>"
+
+# Sync notes via Git
+nb sync
+
+# Display help
+nb help

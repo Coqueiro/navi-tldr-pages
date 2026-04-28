@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-version.md
+
+% vagrant-version, common
+
+# Display the currently installed version and latest version of Vagrant that is currently available
+vagrant version
+
+# Display version
+vagrant --version

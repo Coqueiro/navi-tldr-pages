@@ -3,5 +3,5 @@
 
 % git-show-unmerged-branches, common
 
-# Print all branches which are not merged into the current HEAD
+# Print all branches which are not merged into the current `HEAD`
 git show-unmerged-branches

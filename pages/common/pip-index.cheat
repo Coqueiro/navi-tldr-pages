@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pip-index.md
+
+% pip-index, common
+
+# List all available versions of a package
+pip index versions <package>
+
+# List versions from a specific index
+pip index versions <package> --index-url <https___test_pypi_org_simple_>
+
+# Include pre-release versions
+pip index versions <package> --pre
+
+# Include an additional index
+pip index versions <package> --extra-index-url <https___example_com_simple_>
+
+# List versions for a specific platform
+pip index versions <package> --platform <linux_x86_64>

@@ -6,7 +6,7 @@
 # Make a bootable USB drive from an isohybrid file (such like `archlinux-xxx.iso`) and show the progress
 dd if=<path_to_file_iso> of=<_dev_usb_drive> status=progress
 
-# Clone a drive to another drive with 4 MB block, ignore error and show the progress
+# Clone a drive to another drive with 4 MB block, ignore errors, and show the progress
 dd bs=4m conv=noerror if=<_dev_source_drive> of=<_dev_dest_drive> status=progress
 
 # Generate a file with a specific number of random bytes by using kernel random driver

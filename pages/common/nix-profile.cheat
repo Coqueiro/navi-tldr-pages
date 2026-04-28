@@ -3,11 +3,11 @@
 
 % nix-profile, common
 
-# Install some packages from nixpkgs into the default profile
-nix profile install {{nixpkgs#pkg1 nixpkgs#pkg2 ...}}
+# Install packages from nixpkgs into the default profile
+nix profile add {{nixpkgs#pkg1 nixpkgs#pkg2 ...}}
 
 # Install a package from a flake on GitHub into a custom profile
-nix profile install <github_owner_repo_pkg> --profile <__path_to_directory>
+nix profile add <github_owner_repo_pkg> --profile <path_to_directory>
 
 # List packages currently installed in the default profile
 nix profile list
@@ -15,8 +15,8 @@ nix profile list
 # Remove a package installed from nixpkgs from the default profile, by name
 nix profile remove <legacyPackages_x86_64_linux_pkg>
 
-# Upgrade packages in the default to the latest available versions
-nix profile upgrade
+# Upgrade packages in the default profile to the latest available versions
+nix profile upgrade --all
 
 # Rollback (cancel) the latest action on the default profile
 nix profile rollback

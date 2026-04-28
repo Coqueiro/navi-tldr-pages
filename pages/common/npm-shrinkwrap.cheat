@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-shrinkwrap.md
+
+% npm-shrinkwrap, common
+
+# Generate a `npm-shrinkwrap.json` file from the current `package-lock.json`
+npm shrinkwrap
+
+# Run in production mode (excludes devDependencies)
+npm shrinkwrap --production
+
+# Force recreate the shrinkwrap file even if it already exists
+npm shrinkwrap --force

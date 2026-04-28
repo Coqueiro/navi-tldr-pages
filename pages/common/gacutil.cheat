@@ -7,7 +7,7 @@
 gacutil -i <path_to_assembly_dll>
 
 # Uninstall the specified assembly from GAC
-gacutil -i <assembly_display_name>
+gacutil -u <assembly_display_name>
 
 # Print the content of GAC
 gacutil -l

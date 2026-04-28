@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ots.md
+
+% ots, common
+
+# Create new secret
+ots new
+
+# Create new secret and specify hours until expiry (default is 24)
+ots new -x <number_of_hours>h
+
+# Specify region of server to store secret (default is `us-east-1`)
+ots new --region <regional_server_id>

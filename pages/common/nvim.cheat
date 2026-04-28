@@ -18,8 +18,8 @@ nvim <path_to_file>
 # Search for a pattern in the file (press `<n>`/`<N>` to go to next/previous match)
 <Esc></><search_pattern><Enter>
 
-# Perform a regular expression substitution in the whole file
-<Esc><:>%s/<regular_expression>/<replacement>/g<Enter>
+# Perform a `regex` substitution in the whole file
+<Esc><:>%s/<regex>/<replacement>/g<Enter>
 
 # Enter normal mode and save (write) the file, and quit
 <_Esc__Z__Z___Esc____x_Enter___Esc____wq_Enter_>

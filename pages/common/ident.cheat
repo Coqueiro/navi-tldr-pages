@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ident.md
+
+% ident, common
+
+# Display RCS identification strings in a file
+ident <path_to_file>
+
+# Display RCS identification strings, suppressing warnings if no patterns are found
+ident -q {{path/to/file1 path/to/file2 ...}}
+
+# Display RCS identification strings from `stdin`
+cat <path_to_file> | ident

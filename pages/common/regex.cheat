@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/regex.md
+
+% regex, common
+
+# Match any single character
+.
+
+# Match the start of a line
+^<hello>
+
+# Match the end of a line
+<world>$
+
+# Match zero or more repeated characters
+<a>*
+
+# Match a set of characters
+[<abc>]
+
+# Match ranges of characters
+[<a_z>][<3_9>]
+
+# Match anything but the specified character
+[^<a>]
+
+# Match a boundary around a word
+"\b<text>\b"

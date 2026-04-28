@@ -9,7 +9,7 @@ bedtools intersect -a <path_to_file_A> -b {{path/to/file_B1 path/to/file_B2 ...}
 # Intersect two files with a [l]eft [o]uter [j]oin, i.e. report each feature from `file1` and NULL if no overlap with `file2`
 bedtools intersect -a <path_to_file1> -b <path_to_file2> -loj > <path_to_output_file>
 
-# Using more efficient algorithm to intersect two pre-sorted files
+# Use a more efficient algorithm to intersect two pre-sorted files
 bedtools intersect -a <path_to_file1> -b <path_to_file2> -sorted > <path_to_output_file>
 
 # [g]roup a file based on the first three and the fifth [c]olumn and apply the sum [o]peration on the sixth column

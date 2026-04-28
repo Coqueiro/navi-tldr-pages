@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/timg.md
+
+% timg, common
+
+# Display a static image
+timg <image_jpg>
+
+# Display all JPEG images in the current directory
+timg *.jpg
+
+# Display all the bitmaps in icons file
+timg <example_ico>
+
+# Play a video
+timg <video_mp4>
+
+# Play contents of webcam
+timg <_dev_videoX>
+
+# Play an animated GIF
+timg <gif_gif>
+
+# Display version
+timg --version

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/hexdump.md
+
+% hexdump, common
+
+# Print the hexadecimal representation of a file, replacing duplicate lines by `*`
+hexdump <path_to_file>
+
+# Display the input offset in hexadecimal and its ASCII representation in two columns
+hexdump -C <path_to_file>
+
+# Display the hexadecimal representation of a file, but interpret only a specific number of bytes of the input
+hexdump -C -n <number_of_bytes> <path_to_file>
+
+# Verbose - no suppression by `*` on duplicate lines
+hexdump -v <path_to_file>
+
+# Format output using printf-like format string
+hexdump -e '{{element_format .. end_format}}' <path_to_file>

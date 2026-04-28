@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-apply.md
+
+% terraform-apply, common
+
+# Create or update infrastructure
+terraform apply
+
+# Create or update infrastructure, skipping interactive approval
+terraform apply -auto-approve
+
+# Apply a plan file
+terraform apply <path_to_file_tfplan>
+
+# Specify values for input variables
+terraform apply -var '<name1>=<value1>' -var '<name2>=<value2>'
+
+# Specify values for input variables from a file
+terraform apply -var-file <path_to_file_tfvars>
+
+# Apply changes to a specific resource
+terraform apply -target {{resource_type.resource_name[instance_index]}}
+
+# Replace a specific resource
+terraform apply -replace {{resource_type.resource_name[instance_index]}}
+
+# Destroy Terraform-managed infrastructure
+terraform apply -destroy

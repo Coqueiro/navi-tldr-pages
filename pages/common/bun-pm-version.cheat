@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-pm-version.md
+
+% bun-pm-version, common
+
+# Display the current package version
+bun pm version
+
+# Set a specific version
+bun pm version <9_0_1>
+
+# Bump the version using a semantic version type (`major`, `minor`, `patch`, etc.)
+bun pm version <major_minor_patch_premajor_preminor_prepatch_prerelease>
+
+# Set the version based on Git tags
+bun pm version from-git

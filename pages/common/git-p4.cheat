@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-p4.md
+
+% git-p4, common
+
+# Clone a Perforce depot into a new Git repository
+git p4 clone <path_to_p4_depot>
+
+# Sync changes from Perforce into the current Git repository
+git p4 sync <path_to_p4_depot>
+
+# Rebase local commits on top of the latest Perforce changes
+git p4 rebase
+
+# Submit Git changes back to Perforce
+git p4 submit
+
+# Clone the full Perforce history instead of only the latest changelist
+git p4 clone <path_to_p4_depot>@all

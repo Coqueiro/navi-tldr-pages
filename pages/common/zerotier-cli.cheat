@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/zerotier-cli.md
+
+% zerotier-cli, common
+
+# Join a network
+sudo zerotier-cli join <network_id>
+
+# List networks
+sudo zerotier-cli listnetworks
+
+# List peers in a readable format
+sudo zerotier-cli peers
+
+# Leave a network
+sudo zerotier-cli leave <network_id>
+
+# Display the status of ZeroTier One
+sudo zerotier-cli {{[info|status]}}

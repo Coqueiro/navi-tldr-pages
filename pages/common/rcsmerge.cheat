@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rcsmerge.md
+
+% rcsmerge, common
+
+# Merge differences between two revisions into the working file
+rcsmerge -r<revision1> -r<revision2> <path_to_file>
+
+# Merge changes from a branch revision into the working file
+rcsmerge -r<branch_revision> <path_to_file>
+
+# Perform a quiet merge (suppress diagnostics)
+rcsmerge -q -r<revision1> -r<revision2> <path_to_file>
+
+# Print the result to `stdout` instead of overwriting the working file
+rcsmerge -p -r<revision1> -r<revision2> <path_to_file>

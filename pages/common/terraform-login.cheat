@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-login.md
+
+% terraform-login, common
+
+# Log in to HCP Terraform (app.terraform.io)
+terraform login
+
+# Log in to a specific hostname
+terraform login <hostname>
+
+# Log in to HCP Terraform Europe
+terraform login app.terraform.io/eu

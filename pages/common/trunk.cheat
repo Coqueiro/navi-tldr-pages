@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/trunk.md
+
+% trunk, common
+
+# View documentation for the Rust WASM bundler
+tldr trunk.rs
+
+# View documentation for the trunk.io code quality platform
+tldr trunk.io

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-uridecodebin.md
+
+% gst-launch-1.0-uridecodebin, common
+
+# Load and decode data from the internet
+gst-launch-1.0 uridecodebin uri=<https___example_com_path_to_file> ! <sink>

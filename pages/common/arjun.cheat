@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/arjun.md
+
+% arjun, common
+
+# Scan a URL for GET parameters
+arjun -u <https___example_com_page_php>
+
+# Scan using POST method
+arjun -u <https___example_com_api> -m POST
+
+# Save discovered parameters to a JSON file
+arjun -u <https___example_com> -o <path_to_output_json>
+
+# Use a custom wordlist
+arjun -u <https___example_com> -w <path_to_wordlist_txt>
+
+# Increase request delay by specific amount of seconds to avoid rate limiting
+arjun -u <https___example_com> -d <2>

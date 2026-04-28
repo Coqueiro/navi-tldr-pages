@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/loadhigh.md
+
+% loadhigh, dos
+
+# Load program into upper memory
+LOADHIGH <program>

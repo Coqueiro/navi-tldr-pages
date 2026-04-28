@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/i3-msg.md
+
+% i3-msg, common
+
+# Run an i3 command
+i3-msg <command>
+
+# Print a list of workspaces in JSON
+i3-msg -t get_workspaces
+
+# Print a layout tree of all open windows, containers, outputs, and workspaces in JSON
+i3-msg -t get_tree

@@ -3,17 +3,17 @@
 
 % share, sunos
 
-# List all currently shared file systems
+# List all currently shared filesystems
 share
 
 # Share a directory with read/write access
-share -F nfs -o rw <_path_to_directory>
+share -F nfs -o rw /<path_to_directory>
 
 # Share a directory with read-only access
-share -F nfs -o ro <_path_to_directory>
+share -F nfs -o ro /<path_to_directory>
 
 # Share a directory with specific options (e.g., allow root access from a specific host)
-share -F nfs -o rw,root=<hostname> <_path_to_directory>
+share -F nfs -o rw,root=<hostname> /<path_to_directory>
 
 # Make sharing persistent by adding entries to `/etc/dfs/dfstab`
-echo "share -F nfs -o rw <_path_to_directory>" >> /etc/dfs/dfstab
+echo "share -F nfs -o rw /<path_to_directory>" >> /etc/dfs/dfstab

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/fuser.md
+
+% fuser, osx
+
+# Show PIDs of processes accessing a file or directory
+fuser <path_to_file_or_directory>
+
+# Show PIDs and usernames of processes accessing a file or directory
+fuser -u <path_to_file_or_directory>

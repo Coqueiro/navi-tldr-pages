@@ -6,7 +6,7 @@
 # Convert a PAM image file to an ICO file
 pamtowinicon <path_to_input_file_pam> > <path_to_output_ico>
 
-# Encode images with resolutions smaller than t in the BMP format and all other images in the PNG format
+# Encode images with resolutions smaller than `t` in the BMP format and all other images in the PNG format
 pamtowinicon {{[-pn|-pngthreshold]}} <__pn__pngthreshold_> <path_to_input_file_pam> > <path_to_output_ico>
 
 # Make all pixels outside the non-opaque area black

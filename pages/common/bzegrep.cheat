@@ -3,4 +3,5 @@
 
 % bzegrep, common
 
-
+# View documentation for the original command
+tldr bzgrep

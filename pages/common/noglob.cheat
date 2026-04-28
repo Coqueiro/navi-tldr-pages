@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/noglob.md
+
+% noglob, common
+
+# Fetch an unquoted and unescaped URL
+noglob curl <https___example_com_a_1>
+
+# Open a file named with a literal asterisk
+noglob less {{*.txt}}

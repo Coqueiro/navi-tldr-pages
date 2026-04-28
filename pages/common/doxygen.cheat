@@ -3,6 +3,9 @@
 
 % doxygen, common
 
+# Generate documentation, using `Doxyfile` as configuration file if it exists
+doxygen
+
 # Generate a default template configuration file `Doxyfile`
 doxygen -g
 

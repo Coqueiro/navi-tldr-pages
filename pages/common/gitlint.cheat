@@ -16,7 +16,7 @@ gitlint --extra-path <path_to_directory>
 gitlint --target <path_to_target_directory>
 
 # Path to a file containing a commit-msg
-gitlint --msg-filename <path_to_filename>
+gitlint --msg-filename <path_to_file>
 
 # Read staged commit meta-info from the local repository
 gitlint --staged

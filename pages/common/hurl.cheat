@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/hurl.md
+
+% hurl, common
+
+# Run HTTP requests from a file
+hurl <path_to_file_hurl>
+
+# Run HTTP requests and set variable to use
+hurl --variable <variable_name>=<value> <path_to_file_hurl>
+
+# Run HTTP requests with secret to be redacted on logs and reports
+hurl --secret <secret_name>=<value> <path_to_file_hurl>
+
+# Run HTTP requests and inject variables and secret from file
+hurl --variables-file <path_to_variables_file> --secrets-file <path_to_secrets_file> <path_to_file_hurl>
+
+# Run specific HTTP requests from file, from entry 2 to 5
+hurl --from-entry 2 --to-entry 5 <path_to_file_hurl>
+
+# Test HTTP requests from file and generate report in HTML
+hurl --test --report-html <path_to_output_directory> <path_to_file_hurl>

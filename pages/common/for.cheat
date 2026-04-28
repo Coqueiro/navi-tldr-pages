@@ -3,14 +3,14 @@
 
 % for, common
 
-# Iterate through command line arguments
+# Iterate through command line parameters
 for <variable>; do {{echo $variable}}; done
 
 # Execute the given commands for each of the specified items
 for <variable> in {{item1 item2 ...}}; do {{echo "Loop is executed"}}; done
 
 # Iterate over a given range of numbers
-for <variable> in <_from>..<to>..<step>}; do {{echo "Loop is executed"}}; done
+for <variable> in <_from__to__step>}; do {{echo "Loop is executed"}}; done
 
 # Iterate over a given list of files
 for <variable> in {{path/to/file1 path/to/file2 ...}}; do {{echo "Loop is executed"}}; done

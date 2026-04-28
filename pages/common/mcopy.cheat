@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mcopy.md
+
+% mcopy, common
+
+# Copy a file from Linux to an MS-DOS disk or image
+mcopy <path_to_source_file> <A>:/<path_to_target_file>
+
+# Copy a file from an MS-DOS disk to the current Linux directory
+mcopy <A>:<_path_to_source_file> .
+
+# Copy all files from an MS-DOS drive to a Linux directory
+mcopy <A>: <path_to_target_directory>
+
+# Copy a file into a DOS disk [i]mage file instead of a drive letter (`::` represents the root directory of the DOS disk)
+mcopy -i <path_to_image_img> <path_to_source_file> ::/<path_to_target_file>
+
+# Copy a file from a disk image to the current directory
+mcopy -i <path_to_image_img> ::/<path_to_source_file> .
+
+# Copy a directory recur[s]ively to an MS-DOS disk
+mcopy -s <path_to_source_directory> <A>:/<path_to_target_directory>
+
+# Copy a file and [p]reserve attributes
+mcopy -p <path_to_source_file> <A>:/<path_to_target_file>

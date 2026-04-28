@@ -4,7 +4,7 @@
 % acme.sh-dns, common
 
 # Issue a certificate using an automatic DNS API mode
-acme.sh --issue --dns <gnd_gd> --domain <__example_com>
+acme.sh --issue --dns <dns_gd> --domain <__example_com>
 
 # Issue a wildcard certificate (denoted by an asterisk) using an automatic DNS API mode
 acme.sh --issue --dns <dns_namesilo> --domain <__example_com> --domain {{*.example.com}}

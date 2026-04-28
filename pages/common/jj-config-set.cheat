@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-config-set.md
+
+% jj-config-set, common
+
+# Set the user name in the user-level config
+jj config {{[s|set]}} --user user.name "<name>"
+
+# Set the user email in the user-level config
+jj config {{[s|set]}} --user user.email "<email>"
+
+# Set a config option in the repo-level config
+jj config {{[s|set]}} --repo <name> <value>
+
+# Set a config option in the workspace-level config
+jj config {{[s|set]}} --workspace <name> <value>
+
+# Set a boolean config option
+jj config {{[s|set]}} --user <name> <true_false>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/tccutil.md
+
+% tccutil, osx
+
+# Reset a specific service
+sudo tccutil reset <service>
+
+# Reset all services
+sudo tccutil reset All

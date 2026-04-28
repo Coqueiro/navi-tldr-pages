@@ -13,9 +13,9 @@ read -a <array>
 read -n <character_count> <variable>
 
 # Assign multiple values to multiple variables
-read {{_ variable1 _ variable2}} <<< "{{The surname is Bond}}"
+read <<< "{{The surname is Bond}}" {{_ variable1 _ variable2}}
 
-# Do not let backslash (\\) act as an escape character
+# Do not let backslash (`\`) act as an escape character
 read -r <variable>
 
 # Display a prompt before the input
@@ -25,4 +25,4 @@ read -p "{{Enter your input here: }}" <variable>
 read -s <variable>
 
 # Read `stdin` and perform an action on every line
-while read line; do <echo_ls_rm____> "$line"; done < <_dev_stdin_path_to_file____>
+cat <_dev_stdin_path_to_file____> | while read line; do <echo_ls_rm____> "$line"; done

@@ -4,13 +4,13 @@
 % gh-release, common
 
 # List releases in a GitHub repository, limited to 30 items
-gh release list
+gh release {{[ls|list]}}
 
 # Display information about a specific release
 gh release view <___>
 
 # Create a new release
-gh release create <___>
+gh release {{[new|create]}} <___>
 
 # Delete a specific release
 gh release delete <___>

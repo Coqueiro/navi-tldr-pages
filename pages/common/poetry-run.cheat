@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-run.md
+
+% poetry-run, common
+
+# Run a command inside the virtual environment
+poetry run <command>
+
+# Run a command with arguments
+poetry run <command> {{argument1 argument2 ...}}
+
+# Run a script defined in `pyproject.toml`
+poetry run <script_name>
+
+# Run a Python script
+poetry run python <path_to_script_py>

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/cvfsck.md
+
+% cvfsck, osx
+
+# Check an Xsan volume for metadata corruption (read-only mode)
+sudo cvfsck <_Volumes_XsanVolume>
+
+# Repair a corrupted Xsan volume (make modifications to fix problems)
+sudo cvfsck -w <_Volumes_XsanVolume>
+
+# Log problems to the system log (used mainly during automatic startup checks)
+sudo cvfsck -l <_Volumes_XsanVolume>
+
+# Report free-space fragmentation on an Xsan volume
+sudo cvfsck -f <_Volumes_XsanVolume>

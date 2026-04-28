@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-create.md
+
+% bun-create, common
+
+# Create a new project from an official template interactively
+bun {{[c|create]}} <template>
+
+# Create a new project from an official template in a new directory
+bun {{[c|create]}} <template> <path_to_destination>
+
+# Create a new project from a GitHub repository template
+bun {{[c|create]}} <https___github_com_username_repo> <path_to_destination>
+
+# Create a new project from a local template
+bun {{[c|create]}} <path_to_template> <path_to_destination>
+
+# Create a new project, overwriting the destination directory if it exists
+bun {{[c|create]}} <template> <path_to_destination> --force
+
+# Create a new project without initializing a Git repository automatically
+bun {{[c|create]}} <template> <path_to_destination> --no-git
+
+# Create a new project without installing dependencies automatically
+bun {{[c|create]}} <template> <path_to_destination> --no-install

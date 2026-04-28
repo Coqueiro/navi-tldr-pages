@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/zinit.md
+
+% zinit, common
+
+# Show all installed plugins
+zinit plugins
+
+# Go to the directory of a plugin
+zinit cd <repository_owner>/<repository_name>
+
+# Fetch the newest version of `zinit` from GitHub
+zinit self-update
+
+# List status of all installed completions
+zinit completions
+
+# Install completions for a plugin
+zinit creinstall <repository_owner>/<repository_name>
+
+# Delete completion for a plugin
+zinit cuninstall <repository_owner>/<repository_name>

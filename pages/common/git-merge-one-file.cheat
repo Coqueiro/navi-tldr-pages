@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-merge-one-file.md
+
+% git-merge-one-file, common
+
+# Resolve a simple merge conflict for a file
+git merge-one-file <path_to_file>
+
+# Use as a helper in merge-index for a file
+git merge-index git-merge-one-file <path_to_file>
+
+# Handle a binary file merge
+git merge-one-file -p <path_to_file>
+
+# Apply after read-tree in a scripted merge
+git read-tree -m <branch1> <branch2> && git merge-index git-merge-one-file <path_to_file>

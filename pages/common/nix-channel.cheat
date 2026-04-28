@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/nix-channel.md
+
+% nix-channel, common
+
+# List current channels
+nix-channel --list
+
+# Add a channel
+nix-channel --add <https___nixos_org_channels_nixpkgs_unstable>
+
+# Update package list of all channels
+nix-channel --update

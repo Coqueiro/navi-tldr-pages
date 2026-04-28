@@ -6,5 +6,5 @@
 # Bring most recently suspended or running background job to foreground
 fg
 
-# Bring a specific job to foreground
-fg %<job_id>
+# Bring a specific job to foreground (run `jobs` to find the job number)
+fg %<job_number>

@@ -6,7 +6,7 @@
 # List gadgets in the binary file
 ROPgadget --binary <path_to_binary>
 
-# Filter gadgets in the binary file by a regular expression
+# Filter gadgets in the binary file by a `regex`
 ROPgadget --binary <path_to_binary> --re <regex>
 
 # List gadgets in the binary file, excluding specified type

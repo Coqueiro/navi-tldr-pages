@@ -6,5 +6,5 @@
 # Log out from the active account
 az logout
 
-# Log out a specific username
-az logout --username <alias_somedomain_com>
+# Log out a specific user
+az logout --username <alias_example_com>

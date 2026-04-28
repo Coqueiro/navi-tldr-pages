@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tuitube.md
+
+% tuitube, common
+
+# Start `tuitube`
+tuitube
+
+# Switch between options (navigate)
+<Tab>
+
+# Submit
+<Enter>
+
+# Show menu
+<Ctrl k>

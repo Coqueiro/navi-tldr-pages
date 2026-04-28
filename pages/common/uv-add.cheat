@@ -22,7 +22,7 @@ uv add --group <group> {{package1 package2 ...}}
 uv add --dev {{package1 package2 ...}}
 
 # Add package as editable
-uv add --editable <path_to_package_>
+uv add --editable <path_to_package>/
 
 # Enable an extra when installing package, may be provided multiple times
 uv add <package> --extra <extra_feature>

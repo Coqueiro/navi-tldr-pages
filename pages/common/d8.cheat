@@ -10,4 +10,4 @@ d8
 d8 <path_to_file_js>
 
 # Evaluate a JavaScript expression
-d8 -e "<code>
+d8 -e "<code>"

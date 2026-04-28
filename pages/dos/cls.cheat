@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/cls.md
+
+% cls, dos
+
+# Clear the screen resetting colors to white on black
+CLS

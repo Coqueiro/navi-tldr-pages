@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-upload.md
+
+% vagrant-upload, common
+
+# Upload file or directory from the host to the guest machine
+vagrant upload <path_to_source_file_or_directory> <path_to_destination_file_or_directory> <name_id>
+
+# Compress the file or directory before uploading to guest machine
+vagrant upload --compress <path_to_source_file_or_directory> <path_to_destination_file_or_directory> <name_id>
+
+# Specify which type of compression to use. Default type is `zip`
+vagrant upload --compression-type <tgz_zip> <path_to_source_file_or_directory> <path_to_destination_file_or_directory> <name_id>
+
+# Create a temporary location on the guest machine and upload files to that location
+vagrant upload --temporary <path_to_source_file_or_directory> <path_to_destination_file_or_directory> <name_id>

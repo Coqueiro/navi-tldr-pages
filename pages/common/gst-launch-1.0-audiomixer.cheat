@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-audiomixer.md
+
+% gst-launch-1.0-audiomixer, common
+
+# Mix two audio streams together
+gst-launch-1.0 <audiotestsrc> ! <element_name>. <audiotestsrc> ! <element_name>. audiomixer name=<element_name> ! <fakesink>

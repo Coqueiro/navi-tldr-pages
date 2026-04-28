@@ -6,7 +6,7 @@
 # List gadgets in the binary file
 ropper --file <path_to_binary>
 
-# Filter gadgets in the binary file by a regular expression
+# Filter gadgets in the binary file by a `regex`
 ropper --file <path_to_binary> --search <regex>
 
 # List gadgets of specified type in the binary file

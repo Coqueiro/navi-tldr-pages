@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/dos/mount.md
+
+% mount, dos
+
+# Mount current directory as C
+MOUNT C .
+
+# Mount specific directory as C
+MOUNT C {{C:\path\to\directory}}
+
+# Mount with free space limit (MB)
+MOUNT C {{C:\path\to\directory}} -freesize <1024>
+
+# Mount floppy drive
+MOUNT A {{A:\}} -t floppy
+
+# Mount CD-ROM drive
+MOUNT D {{D:\}} -t cdrom
+
+# Mount CD with extra options
+MOUNT D {{D:\}} -t cdrom -usecd <0> -ioctl
+
+# Unmount drive
+MOUNT -u <C>

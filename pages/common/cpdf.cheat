@@ -3,7 +3,7 @@
 
 % cpdf, common
 
-# Select pages 1, 2, 3 and 6 from a source document and write those to a destination document
+# Select pages 1, 2, 3, and 6 from a source document and write those to a destination document
 cpdf <path_to_source_document_pdf> <1_3_6> -o <path_to_destination_document_pdf>
 
 # Merge two documents into a new one

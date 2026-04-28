@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ibmcloud-update.md
+
+% ibmcloud-update, common
+
+# Update CLI to the most recent version
+ibmcloud update
+
+# Force an update without confirmation prompts
+ibmcloud update -f

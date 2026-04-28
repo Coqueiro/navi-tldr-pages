@@ -10,10 +10,10 @@ case <_COUNTRULE> in <words>) {{wc --words README}} ;; <lines>) {{wc --lines REA
 case <_COUNTRULE> in {{[wW]|words}}) {{wc --words README}} ;; {{[lL]|lines}}) {{wc --lines README}} ;; *) {{echo "what?"}} ;; esac
 
 # Allow matching multiple patterns
-case <_ANIMAL> in <cat>) echo "It's a cat" ;;& <cat_dog>) echo "It's a cat or a dog" ;;& *) echo "Fallback" ;; esac
+case <_ANIMAL> in <cat>) {{echo "It's a cat"}} ;;& <cat_dog>) {{echo "It's a cat or a dog"}} ;;& *) {{echo "Fallback"}} ;; esac
 
 # Continue to the next pattern's commands without checking the pattern
-case <_ANIMAL> in <cat>) echo "It's a cat" ;& <dog>) echo "It's either a dog or cat fell through" ;& *) echo "Fallback" ;; esac
+case <_ANIMAL> in <cat>) {{echo "It's a cat"}} ;& <dog>) {{echo "It's either a dog or cat fell through"}} ;& *) {{echo "Fallback"}} ;; esac
 
 # Display help
 help case
