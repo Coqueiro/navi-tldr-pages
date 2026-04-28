@@ -3,5 +3,4 @@
 
 % yuy2topam, common
 
-# Convert YUY2 bytes to PAM
-yuy2topam {{[-w|-width]}} <value> {{[-h|-height]}} <value> <path_to_file_yuy2> > <path_to_file_pam>
+

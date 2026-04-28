@@ -3,14 +3,4 @@
 
 % ppmcie, common
 
-# Draw a CIE color chart using the REC709 color system as a PPM image
-ppmcie > <path_to_output_ppm>
 
-# Specify the color system to be used
-ppmcie -<cie_ebu_hdtv_ntsc_smpte> > <path_to_output_ppm>
-
-# Specify the location of the individual illuminants
-ppmcie -<red_green_blue> {{xpos ypos}} > <path_to_output_ppm>
-
-# Do not dim the area outside the Maxwell triangle
-ppmcie {{[-f|-full]}} > <path_to_output_ppm>

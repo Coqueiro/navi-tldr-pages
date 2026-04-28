@@ -3,8 +3,4 @@
 
 % giftopnm, common
 
-# Convert a GIF image to a Netpbm image pixel-for-pixel
-giftopnm <path_to_input_gif> > <path_to_output_pnm>
 
-# Display version
-giftopnm {{[-v|-version]}}

@@ -3,11 +3,4 @@
 
 % ppmtv, common
 
-# Give the PPM image an American TV appearance
-ppmtv <dim_factor> <path_to_file_ppm> > <path_to_output_ppm>
 
-# Suppress all informational messages
-ppmtv {{[-q|-quiet]}}
-
-# Display version
-ppmtv {{[-v|-version]}}

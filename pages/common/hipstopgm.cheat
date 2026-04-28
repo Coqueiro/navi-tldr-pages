@@ -3,11 +3,4 @@
 
 % hipstopgm, common
 
-# Convert a HIPS file into a PGM image
-hipstopgm <path_to_file_hips>
 
-# Suppress all informational messages
-hipstopgm {{[-q|-quiet]}}
-
-# Display version
-hipstopgm {{[-v|-version]}}

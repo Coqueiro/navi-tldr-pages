@@ -3,14 +3,4 @@
 
 % ppmtoilbm, common
 
-# Convert a PPM image to an ILBM file
-ppmtoilbm <path_to_file_ppm> > <path_to_file_ilbm>
 
-# Write a maximum of `n` planes to the ILBM file and produce a HAM/24bit/direct color file if this number is exceeded
-ppmtoilbm {{[-mp|-maxplanes]}} <__fp__fixplanes_> -<hamif_24if_dcif> <path_to_file_ppm> > <path_to_file_ilbm>
-
-# Produce a ILBM file with exactly `n` planes
-ppmtoilbm {{[-fp|-fixplanes]}} <__fp__fixplanes_> <path_to_file_ppm> > <path_to_file_ilbm>
-
-# Select the compression method to be used
-ppmtoilbm -<compress_nocompress_savemem> <path_to_file_ppm> > <path_to_file_ilbm>

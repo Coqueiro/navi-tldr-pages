@@ -3,8 +3,4 @@
 
 % pbmmask, common
 
-# Create a mask bitmap separating background from foreground
-pbmmask <path_to_image_pbm> > <path_to_output_pbm>
 
-# Expand the generated mask by one pixel
-pbmmask {{[-r|-expand]}} <path_to_image_pbm> > <path_to_output_pbm>

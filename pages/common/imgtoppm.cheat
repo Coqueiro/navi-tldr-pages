@@ -3,8 +3,4 @@
 
 % imgtoppm, common
 
-# Convert an input image to PPM format
-imgtoppm <path_to_input> > <path_to_output_ppm>
 
-# Display version
-imgtoppm {{[-v|-version]}}

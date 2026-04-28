@@ -10,6 +10,9 @@ exec > >(tee -a "$LOG_FILE") 2>&1
 
 echo "=== navi-tldr-pages update: $(date) ==="
 
+# Translate script uses relative paths, so we must run from the repo root
+cd "${REPO_DIR}"
+
 # 1. Pull latest tldr pages
 echo "Pulling tldr upstream..."
 git -C "${REPO_DIR}/tldr" pull --ff-only

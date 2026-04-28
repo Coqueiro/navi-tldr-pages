@@ -3,8 +3,4 @@
 
 % neotoppm, common
 
-# Generate the PPM image as output for an Atari Neochrome NEO file as input
-neotoppm <path_to_file_neo>
 
-# Display version
-neotoppm {{[-v|-version]}}

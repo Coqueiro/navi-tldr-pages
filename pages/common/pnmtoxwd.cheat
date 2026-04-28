@@ -3,11 +3,4 @@
 
 % pnmtoxwd, common
 
-# Convert a PNM image file to XWD
-pnmtoxwd <path_to_input_file_pnm> > <path_to_output_file_xwd>
 
-# Produce the output in the DirectColor format
-pnmtoxwd {{[-d|-directcolor]}} <path_to_input_file_pnm> > <path_to_output_file_xwd>
-
-# Set the color depth of the output to b bits
-pnmtoxwd {{[-ps|-pseudodepth]}} <b> <path_to_input_file_pnm> > <path_to_output_file_xwd>

@@ -3,11 +3,4 @@
 
 % ppmtopj, common
 
-# Convert a PPM file to an HP PaintJet file
-ppmtopj <path_to_input_ppm> > <path_to_output_pj>
 
-# Move the image in the x and y direction
-ppmtopj {{[-x|-xpos]}} <dx> {{[-y|-ypos]}} <dy> <path_to_input_ppm> > <path_to_output_pj>
-
-# Explicitly specify a gamma value
-ppmtopj {{[-g|-gamma]}} <gamma> <path_to_input_ppm> > <path_to_output_pj>

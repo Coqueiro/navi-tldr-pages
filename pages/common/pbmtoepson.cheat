@@ -3,11 +3,4 @@
 
 % pbmtoepson, common
 
-# Convert a PBM image to an Epson printer graphic
-pbmtoepson <path_to_image_pbm> > <path_to_output_epson>
 
-# Specify the printer protocol of the output
-pbmtoepson {{[-pr|-protocol]}} <escp9_escp> <path_to_image_pbm> > <path_to_output_epson>
-
-# Specify the horizontal DPI of the output
-pbmtoepson {{[-d|-dpi]}} <60_72_80_90_120_144_240> <path_to_image_pbm> > <path_to_output_epson>

@@ -3,11 +3,4 @@
 
 % pnmtops, common
 
-# Convert a PNM image to a PS file
-pnmtops <path_to_file_pnm> > <path_to_file_ps>
 
-# Specify the dimensions of the output image in inches
-pnmtops {{[-imagew|-imagewidth]}} <imagewidth> {{[-imageh|-imageheight]}} <imageheight> <path_to_file_pnm> > <path_to_file_ps>
-
-# Specify the dimensions of the page the output image resides on in inches
-pnmtops {{[-w|-width]}} <width> {{[-h|-height]}} <height> <path_to_file_pnm> > <path_to_file_ps>
