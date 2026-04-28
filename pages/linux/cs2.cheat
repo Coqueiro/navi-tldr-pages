@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cs2.md
+
+% cs2, linux
+
+# View documentation for the original command
+tldr counter strike 2

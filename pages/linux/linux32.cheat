@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/linux32.md
+
+% linux32, linux
+
+# View documentation for the original command
+tldr setarch

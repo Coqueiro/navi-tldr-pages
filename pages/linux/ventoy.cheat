@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ventoy.md
+
+% ventoy, linux
+
+# Install Ventoy to a specific drive with the defaults
+sudo ventoy -i <_dev_sdX>
+
+# Install Ventoy with GPT partition style instead of MBR
+sudo ventoy -i -g <_dev_sdX>
+
+# Install Ventoy with GPT partition style and a custom partition label and secure boot disabled
+sudo ventoy -i -g -S -L <LABEL_NAME> <_dev_sdX>
+
+# Install Ventoy and reserve space at the end of the disk
+sudo ventoy -i -r <SIZE_MB> <_dev_sdX>
+
+# Force install Ventoy (overwrites existing installation)
+sudo ventoy -I <_dev_sdX>
+
+# Update Ventoy on a drive
+sudo ventoy -u <_dev_sdX>
+
+# Display Ventoy information for a drive
+sudo ventoy -l <_dev_sdX>
+
+# Try non-destructive installation if possible (Ventoy will not reformat the disk)
+sudo ventoy -i -n <_dev_sdX>

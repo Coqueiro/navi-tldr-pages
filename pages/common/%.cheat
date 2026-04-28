@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/%.md
+
+% %, common
+
+# Bring the current job to front
+%
+
+# Bring the previous job to front
+%-
+
+# Bring the job number `n` to front
+%<n>
+
+# Bring a job whose command starts with `string` to front
+%<string>
+
+# Bring a job whose command contains `string` to front
+%?<string>
+
+# Resume a suspended job
+%<1> &

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/qm-terminal.md
+
+% qm-terminal, linux
+
+# Attach to a terminal
+qm {{[ter|terminal]}} <100>
+
+# Detach from a terminal
+<Ctrl o>

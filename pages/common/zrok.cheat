@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/zrok.md
+
+% zrok, common
+
+# Request an invitation to use the public zrok service (run this first)
+zrok invite
+
+# Enable the zrok environment with the token from an invitation email
+zrok enable <your_token>
+
+# Create a publicly accessible URL for a local web server
+zrok share public <http___localhost_8080>
+
+# Create a secure share accessible only with a unique token
+zrok share private <http___localhost_3000>
+
+# Access a private share created by another user
+zrok access private <share_token>
+
+# Serve the contents of a local directory as a simple website
+zrok share public --backend-mode web <path_to_directory>
+
+# Display the status of the zrok environment and active shares
+zrok status

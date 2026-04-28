@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-x.md
+
+% bun-x, common
+
+# View documentation for the original command
+tldr bunx

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-deprecate.md
+
+% npm-deprecate, common
+
+# Deprecate a specific version of a package
+npm deprecate <package_name>@<version> "<deprecation_message>"
+
+# Deprecate a range of versions of a package
+npm deprecate <package_name>@"<<version_range>" "<deprecation_message>"
+
+# Un-deprecate a specific version of a package
+npm deprecate <package_name>@<version> ""

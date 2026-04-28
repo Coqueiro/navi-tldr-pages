@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/inkview.md
+
+% inkview, common
+
+# Preview an SVG
+inkview <path_to_file_svg>
+
+# Preview multiple SVGs (use `<ArrowKeys>` to navigate)
+inkview {{path/to/file1.svg path/to/file2.svg ...}}

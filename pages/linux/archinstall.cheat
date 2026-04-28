@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/archinstall.md
+
+% archinstall, linux
+
+# Start the interactive installer
+archinstall

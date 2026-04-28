@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/llvm-mc.md
+
+% llvm-mc, common
+
+# Assemble assembly code file into object file with machine code
+llvm-mc --filetype=obj -o <path_to_output_o> <path_to_input_s>
+
+# Disassemble object file with machine code into assembly code file
+llvm-mc --disassemble -o <path_to_output_s> <path_to_input_o>
+
+# Compile LLVM bit code file into assembly code
+llvm-mc -o <path_to_output_s> <path_to_input_bc>
+
+# Assemble assembly code from `stdin` and show encoding to `stdout`
+echo "{{addl %eax, %ebx}}" | llvm-mc -show-encoding -show-inst
+
+# Disassemble machine code from `stdin` for specified triple
+echo "{{0xCD 0x21}}" | llvm-mc --disassemble -triple=<target_name>

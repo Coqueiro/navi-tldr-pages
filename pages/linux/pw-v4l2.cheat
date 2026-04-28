@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pw-v4l2.md
+
+% pw-v4l2, linux
+
+# Run a program
+pw-v4l2 <program>
+
+# Display help
+pw-v4l2 -h

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fi.md
+
+% fi, common
+
+# View documentation for the `if` keyword
+tldr if

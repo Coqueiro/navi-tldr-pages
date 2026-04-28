@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pip-debug.md
+
+% pip-debug, common
+
+# Show general debug information
+pip debug
+
+# Show debug information for a specific platform
+pip debug --platform <platform>
+
+# Show debug information for a specific Python version
+pip debug --python-version <version>
+
+# Show debug information for a specific Python implementation
+pip debug --implementation <implementation>
+
+# Show debug information for a specific ABI
+pip debug --abi <abi>

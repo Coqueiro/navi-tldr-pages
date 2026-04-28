@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/arthas.md
+
+% arthas, common
+
+# Start Arthas
+java -jar <path_to_arthas_boot_jar>
+
+# Reconnect Arthas (default port used by Arthas is 3658)
+telnet localhost <port_number>
+
+# Exit the current Arthas client without affecting other clients. equals `exit`、`logout`、`q` command
+<exit_quit_logout_q>
+
+# Terminate the Arthas server, all the Arthas clients connecting to this server will be disconnected
+stop

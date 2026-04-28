@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/trace-cmd-list.md
+
+% trace-cmd-list, linux
+
+# List available tracers
+sudo trace-cmd list -t
+
+# List available plugins
+sudo trace-cmd list -p
+
+# List available events
+sudo trace-cmd list -e
+
+# List available functions
+sudo trace-cmd list -f

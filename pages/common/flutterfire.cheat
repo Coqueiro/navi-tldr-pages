@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flutterfire.md
+
+% flutterfire, common
+
+# Initialize and configure Firebase for your current Flutter app
+flutterfire configure
+
+# Specify platforms (iOS, Android, web) to support
+flutterfire configure --platforms <ios_android____>
+
+# Use a specific Firebase project
+flutterfire configure --project <project_id>

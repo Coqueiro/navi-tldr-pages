@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/nix-eval.md
+
+% nix-eval, common
+
+# Evaluate Nix flake attributes in the current directory
+nix eval .#<attributes>
+
+# Evaluate a given Nix expression
+nix eval --expr '<your_expression>'
+
+# Evaluate a Nix expression from a specified file
+nix eval --file <path_to_file>
+
+# Print the store path of the specified package from nixpkgs
+nix eval <nixpkgs_pkg> --raw
+
+# Evaluate attributes from a flake directly from GitHub
+nix eval <github_owner_repo_attributes>
+
+# Evaluate a given lambda function passing the specified package as argument
+nix eval <nixpkgs_pkg> --apply '<lambda_function>'

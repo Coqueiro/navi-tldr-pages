@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/presenterm.md
+
+% presenterm, common
+
+# Display a presentation
+presenterm <path_to_slides_md>
+
+# Display a presentation with a specific theme
+presenterm --theme <dark_light_tokyonight_storm____> <path_to_slides_md>
+
+# List all available themes
+presenterm --list-themes
+
+# Export a presentation to PDF
+presenterm --export-pdf --output <path_to_output_pdf> <path_to_slides_md>
+
+# Display a presentation with code snippet execution enabled
+presenterm --enable-snippet-execution <path_to_slides_md>
+
+# Validate that presentation content fits within the terminal
+presenterm --validate-overflows <path_to_slides_md>

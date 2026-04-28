@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-start.md
+
+% systemctl-start, linux
+
+# Start a unit
+systemctl start <unit>
+
+# Start a user unit
+systemctl start <unit> --user

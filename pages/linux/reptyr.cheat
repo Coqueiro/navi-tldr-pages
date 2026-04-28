@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/reptyr.md
+
+% reptyr, linux
+
+# Move a running process to your current terminal
+reptyr <pid>
+
+# Attach to a process using its name
+reptyr $(pidof <htop>)

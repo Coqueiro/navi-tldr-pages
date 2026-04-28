@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/odpscmd.md
+
+% odpscmd, common
+
+# Start the command-line with a custom configuration file
+odpscmd --config=<odps_config_ini>
+
+# [Interactive] Switch current project
+use <project_name>;
+
+# [Interactive] Show tables in the current project
+show tables;
+
+# [Interactive] Describe a table
+desc <table_name>;
+
+# [Interactive] Show table partitions
+show partitions <table_name>;
+
+# [Interactive] Describe a partition
+desc <table_name> partition (<partition_spec>);

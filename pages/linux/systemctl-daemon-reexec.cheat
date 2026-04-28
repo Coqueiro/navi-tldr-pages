@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-daemon-reexec.md
+
+% systemctl-daemon-reexec, linux
+
+# Reexecute systemd
+systemctl daemon-reexec

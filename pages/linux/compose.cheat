@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/compose.md
+
+% compose, linux
+
+# View documentation for the original command
+tldr run-mailcap

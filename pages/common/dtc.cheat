@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dtc.md
+
+% dtc, common
+
+# Compile a device tree source `.dts` file into a binary device tree blob `.dtb` file
+dtc -I dts -O dtb -o <path_to_output_file_dtb> <path_to_input_file_dts>
+
+# Compile a device tree source `.dts` file into a binary device tree blob overlay `.dtbo` file
+dtc -@ -I dts -O dtb -o <path_to_output_file_dtbo> <path_to_input_file_dts>
+
+# Decompile a device tree blob `.dtb` file into a readable device tree source `.dts` file
+dtc -I dtb -O dts -o <path_to_output_file_dts> <path_to_input_file_dtb>
+
+# Decompile the current device tree from the system into a readable device tree source `.dts` file
+dtc -I fs -O dts /proc/device-tree

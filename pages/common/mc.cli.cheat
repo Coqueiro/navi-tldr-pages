@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mc.cli.md
+
+% mc.cli, common
+
+# Add connection to a S3 server
+mc alias set <local> <http___localhost_9000> <access_key> <secret_key>
+
+# Create a bucket
+mc mb <local_bucket_name>
+
+# List buckets and their content recursively
+mc ls <local> --recursive

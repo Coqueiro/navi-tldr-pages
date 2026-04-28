@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-log-level.md
+
+% systemctl-log-level, linux
+
+# Show the current log level of the systemd manager
+systemctl log-level
+
+# Set the manager's log level
+systemctl log-level <emerg_alert_crit_err_warning_notice_info_debug>

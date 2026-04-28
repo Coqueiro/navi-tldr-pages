@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacrepairfile.md
+
+% pacrepairfile, linux
+
+# Search for the package and reset the properties of a file
+pacrepairfile <path_to_file> --package
+
+# Reset a file quietly
+pacrepairfile <package_name> --quiet --package
+
+# Reset specific file properties (mode, owner UID, group GID, or modification time)
+pacrepairfile <package_name> --<mode_gid_mtime_uid> --package
+
+# Display help
+pacrepairfile --help
+
+# Display version
+pacrepairfile --version

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ip-monitor.md
+
+% ip-monitor, linux
+
+# Monitor the whole network for state changes
+ip {{[mo|monitor]}}
+
+# Specify the type to monitor
+ip {{[mo|monitor]}} <link_address_route_neigh_rule_maddress____>
+
+# Replay an event file (can be generated with `rtmon`)
+ip {{[mo|monitor]}} {{[f|file]}} <path_to_file>

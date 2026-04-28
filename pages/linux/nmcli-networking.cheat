@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/nmcli-networking.md
+
+% nmcli-networking, linux
+
+# Show the networking status of NetworkManager
+nmcli {{[n|networking]}}
+
+# Enable or disable networking and all interfaces managed by NetworkManager
+nmcli {{[n|networking]}} <on_off>
+
+# Show the last known connectivity state
+nmcli {{[n|networking]}} {{[c|connectivity]}}
+
+# Show the current connectivity state
+nmcli {{[n|networking]}} {{[c|connectivity]}} {{[c|check]}}

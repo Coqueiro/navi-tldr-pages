@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/openssl.md
+
+% openssl, common
+
+# Generate a private key and encrypt the output file using AES-256
+openssl genpkey -algorithm <rsa_ec> -out <path_to_private_key> -aes256
+
+# Generate the corresponding public key from the private key `private.key` using `rsa`
+openssl rsa -in <path_to_private_key> -pubout -out <path_to_public_key>
+
+# Generate a self-signed certificate valid for a specified number of days (365)
+openssl req -new -x509 -key <path_to_private_key> -out <path_to_certificate_crt> -days 365
+
+# Convert a certificate to `.pem` or `.der` format
+openssl x509 -in <path_to_certificate_crt> -out <path_to_certificate_pem_path_to_certificate_der> -outform <pem_der>
+
+# Check certificate details
+openssl x509 -in <path_to_certificate_crt> -text -noout
+
+# Generate a certificate signing request (CSR)
+openssl req -new -key <path_to_private_key> -out <path_to_request_csr>
+
+# Display help
+openssl help
+
+# Display version
+openssl version

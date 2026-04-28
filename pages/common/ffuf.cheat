@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ffuf.md
+
+% ffuf, common
+
+# Enumerate directories using [c]olored output and a [w]ordlist specifying a target [u]RL
+ffuf -c -w <path_to_wordlist_txt> -u <https___example_com_FUZZ>
+
+# Enumerate webservers of subdomains by changing the position of the keyword
+ffuf -w <path_to_subdomains_txt> -u <https___FUZZ_example_com>
+
+# Fuzz with specified [t]hreads (default: 40) and pro[x]ying the traffic and save [o]utput to a file
+ffuf -o -w <path_to_wordlist_txt> -u <https___example_com_FUZZ> -t <500> -x <http___127_0_0_1_8080>
+
+# Fuzz a specific [H]eader ("Name: Value") and [m]atch HTTP status [c]odes
+ffuf -w <path_to_wordlist_txt> -u <https___example_com> -H "{{Host: FUZZ}}" -mc <200>
+
+# Fuzz with specified HTTP method and [d]ata, while [f]iltering out specific status [c]odes and response [s]ize
+ffuf -w <path_to_postdata_txt> -X <POST> -d "{{username=admin\&password=FUZZ}}" -u <https___example_com_login_php> -fc <302_401_499> -fs <1234>
+
+# Fuzz multiple positions with multiple wordlists using different modes and [a]uto [c]alibration to reduce false positives
+ffuf -w <path_to_keys_KEY> -w <path_to_values_VALUE> -mode <pitchfork_clusterbomb> -u <https___example_com_id_KEY_VALUE> -ac
+
+# Proxy requests through a HTTP MITM pro[x]y (such as Burp Suite or `mitmproxy`)
+ffuf -w <path_to_wordlist> -x <http___127_0_0_1_8080> -u <https___example_com_FUZZ>

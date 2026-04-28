@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubectl-explain.md
+
+% kubectl-explain, common
+
+# Show documentation for a resource
+kubectl explain <pods_nodes_deployments____>
+
+# Show documentation for a sub-resource or field of an object
+kubectl explain <pod_spec_containers>
+
+# Show documentation for a specific versioned resource
+kubectl explain <ingress_v1_networking_k8s_io>
+
+# Show all fields recursively for a resource
+kubectl explain {{[po|pods]}} --recursive
+
+# Display help
+kubectl explain --help

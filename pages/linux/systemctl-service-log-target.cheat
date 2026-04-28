@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-service-log-target.md
+
+% systemctl-service-log-target, linux
+
+# Show the current log target for a service
+systemctl service-log-target <service_name>
+
+# Set the log target to `console` (send logs to `stderr`)
+systemctl service-log-target <service_name> console
+
+# Set the log target to `journal` (send logs to `systemd-journald`)
+systemctl service-log-target <service_name> journal
+
+# Set the log target to `syslog` (send logs to `/dev/log`)
+systemctl service-log-target <service_name> syslog
+
+# Allow systemd to choose an appropriate log target
+systemctl service-log-target <service_name> auto
+
+# Disable all log output
+systemctl service-log-target <service_name> null

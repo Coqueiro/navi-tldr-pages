@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/coreutils.md
+
+% coreutils, common
+
+# Run a utility with arguments
+coreutils <util> <util_options>
+
+# List files in [l]ong format
+coreutils ls -l
+
+# Display help for `ls`
+coreutils ls --help

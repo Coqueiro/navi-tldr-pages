@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/docker-buildx-ls.md
+
+% docker-buildx-ls, common
+
+# List builder instances
+docker buildx ls
+
+# Format the output using a Go template
+docker buildx ls --format "<_NAME>: <_DriverEndpoint>"

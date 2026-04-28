@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dumpntlminfo.py.md
+
+% dumpntlminfo.py, common
+
+# Dump NTLM info from target (SMB, default port 445)
+DumpNTLMInfo.py <target>
+
+# Dump NTLM info using a specific IP
+DumpNTLMInfo.py -target-ip <target_ip> <target>
+
+# Specify a custom port
+DumpNTLMInfo.py -port <port> <target>
+
+# Dump NTLM info using RPC protocol (default port 135)
+DumpNTLMInfo.py -protocol RPC -port 135 <target>
+
+# Turn on debug output
+DumpNTLMInfo.py -debug <target>

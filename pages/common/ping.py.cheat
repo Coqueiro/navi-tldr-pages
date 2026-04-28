@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ping.py.md
+
+% ping.py, common
+
+# Ping a host from a specified source IPv4 address
+ping.py <source_ipv4> <destination_ipv4>
+
+# Ping 192.168.1.100 from 192.168.1.10
+ping.py 192.168.1.10 192.168.1.100

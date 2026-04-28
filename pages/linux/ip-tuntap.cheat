@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ip-tuntap.md
+
+% ip-tuntap, linux
+
+# Show all existing TUN/TAP devices
+ip {{[tunt|tuntap]}}
+
+# Create a TUN device with a specific name
+sudo ip {{[tunt|tuntap]}} {{[a|add]}} {{[d|dev]}} <tun0> {{[m|mode]}} {{[t|tun]}}
+
+# Create a TAP device with a specific name
+sudo ip {{[tunt|tuntap]}} {{[a|add]}} {{[d|dev]}} <tap0> {{[m|mode]}} {{[ta|tap]}}
+
+# Delete a TUN or TAP device
+sudo ip {{[tunt|tuntap]}} {{[d|delete]}} {{[d|dev]}} <tun0_tap0> {{[m|mode]}} <tun_tap>
+
+# Set the owner (UID) of a TUN/TAP device
+sudo ip {{[tunt|tuntap]}} {{[a|add]}} {{[d|dev]}} <tun0_tap0> {{[m|mode]}} <tun_tap> {{[u|user]}} <username>
+
+# Set both owner (UID) and group (GID) for a TUN/TAP device
+sudo ip {{[tunt|tuntap]}} {{[a|add]}} {{[d|dev]}} <tun0_tap0> {{[m|mode]}} <tun_tap> {{[u|user]}} <username> {{[g|group]}} <group_name>

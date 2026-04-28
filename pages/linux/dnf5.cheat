@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf5.md
+
+% dnf5, linux
+
+# View documentation for the original command
+tldr dnf

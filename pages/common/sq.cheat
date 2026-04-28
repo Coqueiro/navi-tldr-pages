@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sq.md
+
+% sq, common
+
+# Encrypt a file using a password (symmetric encryption)
+sq encrypt --with-password --without-signature <path_to_file> --output <path_to_file_pgp>
+
+# Decrypt a password-protected file
+sq decrypt <path_to_file_pgp> --output <path_to_file>
+
+# Inspect an OpenPGP file to see its metadata and structure
+sq inspect <path_to_file_pgp>
+
+# Verify a file with a detached signature and a certificate file
+sq verify --signer-file <path_to_signer_asc> --signature-file <path_to_file_sig> <path_to_file>
+
+# Verify a file with an embedded (cleartext) signature and a certificate file
+sq verify --signer-file <path_to_signer_asc> --cleartext <path_to_file>
+
+# Generate own key, and save it on the local key store
+sq key generate --own-key --name <name> --email <name_example_com>
+
+# List all secret keys or certs managed by the local key store
+sq <key_cert> list
+
+# List current configuration and storage paths
+sq config inspect paths

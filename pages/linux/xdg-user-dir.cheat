@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/xdg-user-dir.md
+
+% xdg-user-dir, linux
+
+# Display the home directory for the current user
+xdg-user-dir
+
+# Display the location of a user directory
+xdg-user-dir <DESKTOP_DOWNLOAD_TEMPLATES_PUBLICSHARE_DOCUMENTS_MUSIC_PICTURES_VIDEOS____>

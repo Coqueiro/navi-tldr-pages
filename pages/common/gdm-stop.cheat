@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gdm-stop.md
+
+% gdm-stop, common
+
+# Stop the GNOME Display Manager application
+gdm-stop

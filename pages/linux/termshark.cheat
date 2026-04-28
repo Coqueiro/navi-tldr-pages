@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/termshark.md
+
+% termshark, linux
+
+# Monitor the default network interface
+sudo termshark
+
+# Specify the interface to monitor
+sudo termshark <interface>

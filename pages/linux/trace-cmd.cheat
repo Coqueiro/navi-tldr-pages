@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/trace-cmd.md
+
+% trace-cmd, linux
+
+# Display the status of tracing system
+sudo trace-cmd stat
+
+# List available tracers
+sudo trace-cmd list -t
+
+# Start tracing with a specific plugin
+sudo trace-cmd start -p <function_function_graph_preemptirqsoff_irqsoff_preemptoff_wakeup____>
+
+# View the trace output
+sudo trace-cmd show
+
+# Stop the tracing but retain the buffers
+sudo trace-cmd stop
+
+# Clear the trace buffers
+sudo trace-cmd clear
+
+# Record a trace
+sudo trace-cmd record
+
+# Display the recorded trace
+sudo trace-cmd report

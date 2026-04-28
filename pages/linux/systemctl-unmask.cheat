@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-unmask.md
+
+% systemctl-unmask, linux
+
+# Unmask a service
+systemctl unmask <service_name>
+
+# Unmask and start a service immediately
+systemctl unmask <service_name> --now
+
+# Unmask a user service
+systemctl unmask <service_name> --user

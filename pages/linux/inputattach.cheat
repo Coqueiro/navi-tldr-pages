@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/inputattach.md
+
+% inputattach, linux
+
+# Attach a Pulse8 CEC device to the input system
+inputattach --pulse8-cec <_dev_ttyACM0>
+
+# Display help
+inputattach --help

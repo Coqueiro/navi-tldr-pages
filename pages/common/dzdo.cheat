@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dzdo.md
+
+% dzdo, common
+
+# Run a command with elevated privileges
+dzdo <command>
+
+# Run a command as another user
+dzdo -u <user> <command>
+
+# Edit a file with elevated privileges using the default editor
+dzdo -e <path_to_file>
+
+# Launch an interactive login shell with elevated privileges
+dzdo -i
+
+# Launch the default shell with elevated privileges
+dzdo -s
+
+# List allowed commands for the current user
+dzdo -l
+
+# Validate and update authentication timestamp
+dzdo -v
+
+# Display version
+dzdo -V

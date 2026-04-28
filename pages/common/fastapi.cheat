@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fastapi.md
+
+% fastapi, common
+
+# Run a FastAPI app with automatic reload (for development)
+fastapi run <path_to_file_py> --reload
+
+# Serve your app in both development mode
+fastapi dev <path_to_file_py>
+
+# Specify the host and port to run on
+fastapi run <path_to_file_py> --host <host_address> --port <port>
+
+# Set the app variable name (if not `app`) or specify a custom app directory
+fastapi run <path_to_file_py> --app-dir <path_to_app> --app <custom_app_name>
+
+# Display help
+fastapi --help
+
+# Display help for a subcommand
+fastapi <subcommand> --help

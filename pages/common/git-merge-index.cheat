@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-merge-index.md
+
+% git-merge-index, common
+
+# Merge all files needing resolution using the standard helper
+git merge-index git-merge-one-file -a
+
+# Merge a specific file
+git merge-index git-merge-one-file -- <path_to_file>
+
+# Merge multiple files, continuing on failures
+git merge-index -o git-merge-one-file -- {{path/to/file1 path/to/file2 ...}}
+
+# Quietly merge all files with a custom program
+git merge-index -q <merge_program> -a
+
+# Inspect merge inputs for a file using `cat`
+git merge-index cat -- <path>

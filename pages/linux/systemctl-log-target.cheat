@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-log-target.md
+
+% systemctl-log-target, linux
+
+# Show the current log target of the systemd manager
+systemctl log-target
+
+# Set the manager's log target
+systemctl log-target <journal_or_kmsg_journal_kmsg_console_syslog_null_auto>

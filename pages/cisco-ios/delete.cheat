@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/cisco-ios/delete.md
+
+% delete, cisco-ios
+
+# Delete a file from flash memory
+delete <vlan_dat>

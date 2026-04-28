@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/conda-deactivate.md
+
+% conda-deactivate, common
+
+# Deactivate a conda environment
+conda deactivate

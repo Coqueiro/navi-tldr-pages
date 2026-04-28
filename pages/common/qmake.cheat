@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/qmake.md
+
+% qmake, common
+
+# Generate a `Makefile` from a project file in the current directory
+qmake
+
+# Specify `Makefile` and project file locations
+qmake -o <path_to_Makefile> <path_to_project_file_pro>
+
+# Generate a default project file
+qmake -project
+
+# Compile a project
+qmake && make
+
+# Enable debug mode
+qmake -d
+
+# Display help
+qmake -help

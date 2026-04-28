@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dnsmasq.md
+
+% dnsmasq, common
+
+# Start dnsmasq with default configuration
+dnsmasq
+
+# Run dnsmasq in the foreground (for debugging)
+dnsmasq --no-daemon
+
+# Specify a custom configuration file
+dnsmasq --conf-file=<path_to_config_conf>
+
+# Enable verbose logging
+dnsmasq --log-queries --log-facility=-
+
+# Set a DHCP range and lease time
+dnsmasq --dhcp-range=<192_168_0_50_192_168_0_150_12h>
+
+# Display version
+dnsmasq --version

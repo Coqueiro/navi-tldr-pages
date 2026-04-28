@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/terraria.md
+
+% terraria, linux
+
+# Start an interactive server setup
+<path_to>/TerrariaServer
+
+# Start a Terraria server
+<path_to>/TerrariaServer -world <path_to_world_wld>

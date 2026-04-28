@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/putty.md
+
+% putty, common
+
+# Connect to a remote host via SSH
+putty -ssh <username>@<hostname_or_ip>
+
+# Connect to a remote host on a specific [P]ort
+putty -ssh <username>@<hostname_or_ip> -P <port>
+
+# Load a saved session
+putty -load <session_name>
+
+# Connect with a private key for authentication
+putty -ssh <username>@<hostname_or_ip> -i <path_to_private_key_ppk>
+
+# Connect via Telnet
+putty -telnet <hostname_or_ip>
+
+# Enable [X]11 forwarding
+putty -ssh <username>@<hostname_or_ip> -X
+
+# Set up [L]ocal port forwarding
+putty -ssh <username>@<hostname_or_ip> -L <local_port>:<destination_host>:<destination_port>
+
+# Display help
+putty -help

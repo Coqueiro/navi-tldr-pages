@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hd-idle.md
+
+% hd-idle, linux
+
+# Start a service to manage hard drive spin down. By default hard disks will spin down after 10 minutes of inactivity
+systemctl start hd-idle
+
+# Spin down a disk immediately
+hd-idle -t <_dev_sdX>
+
+# Set disks to never spin down, then set explicit idle times (in seconds) for disks which have "sda" or "sdb" in their device name
+hd-idle -i 0 -a /dev/sda -i <300> -a /dev/sdb -i <1200>

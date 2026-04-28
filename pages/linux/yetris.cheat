@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/yetris.md
+
+% yetris, linux
+
+# Start a Tetris game
+yetris
+
+# Navigate the piece horizontally
+<_ArrowLeft___ArrowRight_>
+
+# Rotate the piece clockwise or counterclockwise
+<_x___z_>
+
+# Hold a piece (only one allowed at a time)
+<c>
+
+# Soft drop the piece
+<ArrowDown>
+
+# Hard drop the piece
+<Space>
+
+# Pause/unpause the game
+<p>
+
+# Quit the game
+<q>

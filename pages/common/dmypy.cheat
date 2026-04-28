@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dmypy.md
+
+% dmypy, common
+
+# Type check a file, and start the daemon if it is not running
+dmypy run -- <path_to_file_py>
+
+# Start the daemon
+dmypy start
+
+# Type check a file (requires the daemon to be running)
+dmypy check -- <path_to_file_py>
+
+# Stop the daemon
+dmypy stop

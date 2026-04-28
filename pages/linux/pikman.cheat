@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pikman.md
+
+% pikman, linux
+
+# Install a package
+pikman {{[i|install]}} <package>
+
+# List installed packages
+pikman {{[l|list]}}
+
+# Search for a package
+pikman {{[s|search]}} <package>
+
+# Update the list of available packages
+pikman update
+
+# Remove a package
+pikman {{[r|remove]}} <package>
+
+# Remove all unused packages
+pikman autoremove
+
+# List available package updates
+pikman upgrades
+
+# Install available package updates
+pikman upgrade

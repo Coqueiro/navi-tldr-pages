@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-help.md
+
+% npm-help, common
+
+# Display the documentation for a specific command
+npm help <command>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mke2fs.md
+
+% mke2fs, linux
+
+# Create an ext2 filesystem on a partition
+sudo mke2fs -t ext2 <_dev_sdXY>
+
+# Create an ext3 filesystem on a partition
+sudo mke2fs -t ext3 <_dev_sdXY>
+
+# Create an ext4 filesystem on a partition
+sudo mke2fs -t ext4 <_dev_sdXY>

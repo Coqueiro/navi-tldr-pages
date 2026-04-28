@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-inspect-1.0.md
+
+% gst-inspect-1.0, common
+
+# Print information on a plugin
+gst-inspect-1.0 <plugin>
+
+# List hardware transcoding capabilities of your device
+gst-inspect-1.0 <va_vaapi_nvcodec____>
+
+# List available container plugins
+gst-inspect-1.0 <matroska_avi_ogg_isomp4____>
+
+# List available audio codecs
+gst-inspect-1.0 <opus_vorbis_flac____>
+
+# List GStreamer core elements
+gst-inspect-1.0 coreelements
+
+# List plugins that utilize graphics APIs
+gst-inspect-1.0 <vulkan_opengl____>
+
+# List available image codecs
+gst-inspect-1.0 <png_jpeg____>
+
+# List all available plugins
+gst-inspect-1.0

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-suspend.md
+
+% vagrant-suspend, common
+
+# Suspend the currently running machine
+vagrant suspend
+
+# Target a machine by name or ID
+vagrant suspend <name_id>

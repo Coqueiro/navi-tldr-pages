@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/float.md
+
+% float, common
+
+# Declare a floating point variable
+float <variable_name>
+
+# Declare a floating point variable while assigning its value
+float <variable_name>=<value>
+
+# Declare multiple floating point variables
+float {{var1=value1 var2=value2 ...}}
+
+# Display defined variables
+float

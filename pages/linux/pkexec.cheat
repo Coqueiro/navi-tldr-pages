@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pkexec.md
+
+% pkexec, linux
+
+# Run command as root
+pkexec <command>
+
+# Switch user to root
+pkexec
+
+# Run command as a specific user
+pkexec --user <username> <command>

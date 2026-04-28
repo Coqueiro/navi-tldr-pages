@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tpm2-pcrreset.md
+
+% tpm2-pcrreset, common
+
+# Reset the PCR 23 banks
+tpm2 pcrreset 23
+
+# Reset the PCR 16 and 23 banks
+tpm2 pcrreset 16 23

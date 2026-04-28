@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-freeze.md
+
+% systemctl-freeze, linux
+
+# Freeze a specific unit
+systemctl freeze <unit>
+
+# Freeze multiple units
+systemctl freeze {{unit1 unit2 ...}}
+
+# Freeze all running units
+systemctl freeze '*'

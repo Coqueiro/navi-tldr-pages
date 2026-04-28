@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/uv-version.md
+
+% uv-version, common
+
+# Display the current project version
+uv version
+
+# Set the project version to a specific value
+uv version <1_2_3>
+
+# Bump the project version using semantic versioning
+uv version --bump <major_minor_patch>
+
+# Preview version changes without writing to `pyproject.toml`
+uv version --bump <patch> --dry-run
+
+# Update version for a specific package in a workspace
+uv version --package <package_name> <1_2_3>
+
+# Display version in JSON format
+uv version --output-format json

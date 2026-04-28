@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ibmcloud-api.md
+
+% ibmcloud-api, common
+
+# View the current API endpoint
+ibmcloud api
+
+# Set the API endpoint to `cloud.ibm.com`
+ibmcloud api cloud.ibm.com
+
+# Set a private API endpoint
+ibmcloud api private.cloud.ibm.com
+
+# Use a VPC connection for a private endpoint
+ibmcloud api private.cloud.ibm.com --vpc
+
+# Bypass SSL validation of HTTP requests
+ibmcloud api https://cloud.ibm.com --skip-ssl-validation
+
+# Remove the API endpoint setting
+ibmcloud api --unset

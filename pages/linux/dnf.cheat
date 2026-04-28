@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf.md
+
+% dnf, linux
+
+# Upgrade installed packages to the newest available versions
+sudo dnf {{[up|upgrade]}}
+
+# Search packages via keywords
+dnf {{[se|search]}} {{keyword1 keyword2 ...}}
+
+# Display details about a package
+dnf {{[if|info]}} <package>
+
+# Install new packages (use `--assumeyes` to confirm all prompts automatically)
+sudo dnf {{[in|install]}} {{package1 package2 ...}}
+
+# Remove packages
+sudo dnf {{[rm|remove]}} {{package1 package2 ...}}
+
+# List installed packages
+dnf {{[ls|list]}} --installed
+
+# Find which packages provide a given command
+dnf provides <command>
+
+# Clean cached data
+sudo dnf clean <all_dbcache_expire_cache_metadata_packages>

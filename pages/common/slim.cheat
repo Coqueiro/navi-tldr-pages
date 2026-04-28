@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/slim.md
+
+% slim, common
+
+# Start Slim on interactive mode
+slim
+
+# Analyze Docker layers from a specific image
+slim xray --target <image_tag>
+
+# Lint a Dockerfile
+slim lint --target <path_to_Dockerfile>
+
+# Analyze and generate an optimized Docker image
+slim build <image_tag>
+
+# Display help for a subcommand
+slim <subcommand> --help

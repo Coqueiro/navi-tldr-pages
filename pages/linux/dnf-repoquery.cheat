@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf-repoquery.md
+
+% dnf-repoquery, linux
+
+# Query a package for its dependencies
+dnf {{[rq|repoquery]}} --deplist <package>

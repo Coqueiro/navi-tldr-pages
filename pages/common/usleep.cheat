@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/usleep.md
+
+% usleep, common
+
+# Delay in microseconds
+usleep <microseconds>
+
+# Execute a specific command after a 500,000 microseconds delay
+usleep 500000 && <command>

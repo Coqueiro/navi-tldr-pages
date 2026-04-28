@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ip-rule.md
+
+% ip-rule, linux
+
+# Display the routing policy
+ip {{[ru|rule]}}
+
+# Create a new generic routing rule with a higher priority than `main`
+sudo ip {{[ru|rule]}} {{[a|add]}} from all lookup <100>
+
+# Add a new rule based on packet source addresses
+sudo ip {{[ru|rule]}} {{[a|add]}} from <192_168_178_2_32>
+
+# Add a new rule based on packet destination addresses
+sudo ip {{[ru|rule]}} {{[a|add]}} to <192_168_178_2_32>
+
+# Delete a rule based on packet source addresses
+sudo ip {{[ru|rule]}} {{[d|delete]}} from <192_168_178_2_32>
+
+# Remove all routing rules
+sudo ip {{[ru|rule]}} {{[f|flush]}}
+
+# Save all rules to a file
+ip {{[ru|rule]}} {{[s|save]}} > <path_to_ip_rules_dat>
+
+# Restore all rules from a file
+sudo ip < <path_to_ip_rules_dat> {{[ru|rule]}} {{[r|restore]}}

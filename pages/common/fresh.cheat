@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fresh.md
+
+% fresh, common
+
+# Open a file
+fresh <path_to_file>
+
+# Search for a pattern
+<Ctrl f><search_pattern><Enter>
+
+# Replace a pattern
+<Ctrl r><search_pattern><Enter><replacement><Enter>
+
+# Show File Explorer
+<Ctrl e>
+
+# Save file
+<Ctrl s>
+
+# Quit
+<Ctrl q>

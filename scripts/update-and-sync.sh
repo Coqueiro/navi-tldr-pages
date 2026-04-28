@@ -25,12 +25,20 @@ else
   echo "Committing and pushing..."
   git -C "${REPO_DIR}" add -A
   git -C "${REPO_DIR}" commit -m "Updates pages (auto $(date +%Y-%m-%d))"
-  git -C "${REPO_DIR}" push origin main
+  git -C "${REPO_DIR}" push origin master
 fi
 
-# 4. Update local navi cheats
-echo "Updating navi repo..."
-"${NAVI}" repo add Coqueiro/navi-tldr-pages
+# 4. Update local navi cheats (direct copy, avoids navi repo add hanging on auth)
+NAVI_CHEATS_DIR="${HOME}/Library/Application Support/navi/cheats/Coqueiro__navi-tldr-pages"
+echo "Syncing cheat files to ${NAVI_CHEATS_DIR}..."
+mkdir -p "${NAVI_CHEATS_DIR}"
+# Flatten directory structure: pages/common/foo.cheat -> pages__common__foo.cheat
+find "${REPO_DIR}/pages" "${REPO_DIR}/personal_pages" -name '*.cheat' 2>/dev/null | while read -r src; do
+  rel="${src#"${REPO_DIR}/"}"
+  flat="$(echo "$rel" | tr '/' '__')"
+  cp "$src" "${NAVI_CHEATS_DIR}/${flat}"
+done
+echo "Synced $(ls "${NAVI_CHEATS_DIR}" | wc -l | tr -d ' ') cheat files."
 
 # 5. Prune old logs (keep last 12)
 ls -t "${REPO_DIR}/logs"/update-*.log 2>/dev/null | tail -n +13 | xargs rm -f 2>/dev/null || true

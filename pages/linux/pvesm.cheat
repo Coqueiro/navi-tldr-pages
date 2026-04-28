@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pvesm.md
+
+% pvesm, linux
+
+# Get status for all datastores
+pvesm {{[st|status]}}
+
+# List storage contents
+pvesm {{[l|list]}} <storage_name>
+
+# Add a directory storage
+pvesm add {{[d|dir]}} <storage_name> --path <path_to_directory>
+
+# Set a storage to contain specific content
+pvesm set <storage_name> --content <iso_images_backup_vztmpl____>
+
+# Delete a file from storage
+pvesm free <local_iso_archlinux_2025_08_01_x86_64_iso>
+
+# Remove a storage
+pvesm {{[r|remove]}} <storage_name>

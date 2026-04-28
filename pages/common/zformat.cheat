@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/zformat.md
+
+% zformat, common
+
+# Load the zformat module
+zmodload zsh/zutil
+
+# Format a string by replacing `%c` with a value and store the result in a variable
+zformat -f <variable> "{{Hello %c}}" <c_world>
+
+# Format with right-padding (left-align) to a minimum width
+zformat -f <variable> "<_10c>" <c_hello>
+
+# Format with left-padding (right-align) using negative width
+zformat -f <variable> "<__10c>" <c_hello>
+
+# Use ternary expression for conditional text (if value is 3, outputs "yes", otherwise "no")
+zformat -f <variable> "{{The answer is '%3(c.yes.no)'.}}" <c_3>
+
+# Format with left-padding (right-align) using negative minimum width
+zformat -f <variable> "name: %-15n value: %-10v" <n_value1> <v_value2>
+
+# Align strings (left:right pairs separated by colon)
+zformat -a <array> <_> <left1_right1> <left2_right2>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-reset-failed.md
+
+% systemctl-reset-failed, linux
+
+# Reset the failed state of all units
+systemctl reset-failed
+
+# Reset the failed state of a specific unit
+systemctl reset-failed <unit>
+
+# Reset multiple units at once
+systemctl reset-failed {{unit_1 unit_2 ...}}

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-template.md
+
+% pct-template, linux
+
+# Convert a container into a template
+pct {{[t|template]}} <100>

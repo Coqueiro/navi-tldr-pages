@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/spa-json-dump.md
+
+% spa-json-dump, linux
+
+# Convert a SPA JSON file to standard JSON
+spa-json-dump <path_to_file_conf>
+
+# Convert SPA JSON from `stdin` to standard JSON
+echo "<spa_json_string>" | spa-json-dump

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-pm-cache.md
+
+% bun-pm-cache, common
+
+# Display the path to the global module cache
+bun pm cache
+
+# Clear the global module cache
+bun pm cache rm

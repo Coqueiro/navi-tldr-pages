@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/steamos-factory-reset.md
+
+% steamos-factory-reset, linux
+
+# Begin a factory reset (requires confirmation)
+steamos-factory-reset
+
+# Display help
+steamos-factory-reset --help

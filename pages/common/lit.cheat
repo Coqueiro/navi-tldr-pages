@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/lit.md
+
+% lit, common
+
+# Run a specified test case
+lit <path_to_test_file_test>
+
+# Run all test cases in a specified directory
+lit <path_to_test_suite>
+
+# Run all test cases and check the wall time for each cases, then report to summary output
+lit <path_to_test_suite> --time-tests
+
+# Run individual tests with Valgrind (memory check and memory leak test)
+lit <path_to_test_file_test> --vg --vg-leak --vg-args=<args_to_valgrind>

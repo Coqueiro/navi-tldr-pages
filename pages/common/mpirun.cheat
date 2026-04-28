@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mpirun.md
+
+% mpirun, common
+
+# Execute an Open MPI program
+mpirun <path_to_executable>
+
+# Execute an Open MPI program with `n` parallel processes
+mpirun -n <n> <path_to_executable>
+
+# Allow more processes than available physical cores
+mpirun -oversubscribe <path_to_executable>

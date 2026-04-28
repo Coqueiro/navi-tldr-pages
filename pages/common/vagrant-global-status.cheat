@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-global-status.md
+
+% vagrant-global-status, common
+
+# Display the state of all machines
+vagrant global-status
+
+# Prune any stale entries from the output
+vagrant global-status --prune

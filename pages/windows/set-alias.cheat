@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/set-alias.md
+
+% set-alias, windows
+
+# Create or reassign new alias
+Set-Alias -Name <text> -Value <command>
+
+# Add a description to alias
+Set-Alias -Name <text> -Value <command> -Description "<description>"

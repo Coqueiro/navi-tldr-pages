@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-import-environment.md
+
+% systemctl-import-environment, linux
+
+# Import a variable
+systemctl import-environment <variable>
+
+# Import multiple variables
+systemctl import-environment {{variable_1 variable_2 ...}}
+
+# Import variables for user services
+systemctl import-environment <variable> --user

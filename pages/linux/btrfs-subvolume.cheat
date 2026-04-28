@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/btrfs-subvolume.md
+
+% btrfs-subvolume, linux
+
+# Create a new empty subvolume
+sudo btrfs {{[su|subvolume]}} {{[c|create]}} <path_to_new_subvolume>
+
+# List all subvolumes and snapshots in the specified filesystem
+sudo btrfs {{[su|subvolume]}} {{[l|list]}} <path_to_btrfs_filesystem>
+
+# Delete a subvolume
+sudo btrfs {{[su|subvolume]}} {{[d|delete]}} <path_to_subvolume>
+
+# Create a [r]ead-only snapshot of an existing subvolume
+sudo btrfs {{[su|subvolume]}} {{[sn|snapshot]}} -r <path_to_source_subvolume> <path_to_target>
+
+# Create a read-write snapshot of an existing subvolume
+sudo btrfs {{[su|subvolume]}} {{[sn|snapshot]}} <path_to_source_subvolume> <path_to_target>
+
+# Show detailed information about a subvolume
+sudo btrfs {{[su|subvolume]}} {{[sh|show]}} <path_to_subvolume>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/cisco-ios/question-mark.md
+
+% question-mark, cisco-ios
+
+# Get available commands
+?
+
+# Get storages that are listable
+dir ?
+
+# Show what IP information is viewable
+ip show ?

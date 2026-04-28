@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/openstack-port.md
+
+% openstack-port, common
+
+# List all ports
+openstack port list
+
+# Show detailed information about a specific port
+openstack port show <port_id_or_name>
+
+# Create a port on a specific network
+openstack port create --network <network_id_or_name> <port_name>
+
+# Create a port and assign it a fixed IP `192.168.1.50`
+openstack port create --network <network_id> --fixed-ip subnet=<subnet_id>,ip-address=192.168.1.50 <port_name>
+
+# Delete a port
+openstack port delete <port_id_or_name>

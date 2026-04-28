@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/intercept.md
+
+% intercept, linux
+
+# Read and output raw input events from a given input device file (the system will not see any key presses)
+sudo intercept -g <_dev_input_eventX>
+
+# Read and output raw input events from a given input device file (the system can see key presses and does not block other programs from reading them)
+sudo intercept <_dev_input_eventX>

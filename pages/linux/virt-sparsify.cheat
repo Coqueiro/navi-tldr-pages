@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/virt-sparsify.md
+
+% virt-sparsify, linux
+
+# Create a sparsified compressed image without snapshots from an unsparsified one
+virt-sparsify --compress <path_to_image_qcow2> <path_to_new_image_qcow2>
+
+# Sparsify an image in-place
+virt-sparsify --in-place <path_to_image_img>
+
+# Convert from one image format to another
+virt-sparsify <path_to_image> --convert <qcow2_raw_vdi____> <path_to_new_image>

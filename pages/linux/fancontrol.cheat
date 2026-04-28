@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/fancontrol.md
+
+% fancontrol, linux
+
+# Start `fancontrol` using default `/etc/fancontrol` configuration file
+fancontrol
+
+# Start `fancontrol` using custom configuration file path
+fancontrol <path_to_config_file>

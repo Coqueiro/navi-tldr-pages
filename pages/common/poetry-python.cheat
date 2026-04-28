@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-python.md
+
+% poetry-python, common
+
+# Install the specified Python version
+poetry python install <3_13_1>
+
+# List all Python versions managed by System or Poetry
+poetry python list
+
+# List all Python versions managed by Poetry
+poetry python list --managed
+
+# Remove the specified Python version (if managed by Poetry)
+poetry python remove <3_13_1>

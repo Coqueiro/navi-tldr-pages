@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-reload-or-try-restart.md
+
+% systemctl-reload-or-try-restart, linux
+
+# View documentation for the original command
+tldr systemctl try-reload-or-restart

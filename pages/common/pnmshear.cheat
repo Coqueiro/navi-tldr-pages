@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pnmshear.md
+
+% pnmshear, common
+
+# Shear a PNM image by the specified angle
+pnmshear <angle> <path_to_input_pnm> > <path_to_output_pnm>
+
+# Specify the color of the background in the sheared image
+pnmshear {{[-b|-background]}} <blue> <angle> <path_to_input_pnm> > <path_to_output_pnm>
+
+# Do not perform anti-aliasing
+pnmshear {{[-n|-noantialias]}} <angle> <path_to_input_pnm> > <path_to_output_pnm>

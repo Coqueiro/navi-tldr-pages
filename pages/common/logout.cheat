@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/logout.md
+
+% logout, common
+
+# Exit a login shell
+logout
+
+# Exit a login shell and specify a return value
+logout <exit_code>

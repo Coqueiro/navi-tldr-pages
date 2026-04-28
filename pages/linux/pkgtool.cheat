@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pkgtool.md
+
+% pkgtool, linux
+
+# Launch the interactive package tool
+sudo pkgtool
+
+# Remove packages interactively
+sudo pkgtool --remove_menu
+
+# View installed packages
+pkgtool --view_menu
+
+# Install packages from the current directory
+sudo pkgtool --install_menu
+
+# Set up packages interactively (run `doinst.sh` scripts)
+sudo pkgtool --setup_menu

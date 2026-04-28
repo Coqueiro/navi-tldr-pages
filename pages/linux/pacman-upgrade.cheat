@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacman-upgrade.md
+
+% pacman-upgrade, linux
+
+# Install one or more packages from files
+sudo pacman -U {{path/to/package1.pkg.tar.zst path/to/package2.pkg.tar.zst ...}}
+
+# Install a package without prompting
+sudo pacman -U --noconfirm <path_to_package_pkg_tar_zst>
+
+# Overwrite conflicting files during a package installation
+sudo pacman -U --overwrite <path_to_file> <path_to_package_pkg_tar_zst>
+
+# Install a package, skipping the [d]ependency version checks
+sudo pacman -Ud <path_to_package_pkg_tar_zst>
+
+# Fetch and [p]rint packages that would be affected by upgrade (does not install any packages)
+pacman -Up <path_to_package_pkg_tar_zst>
+
+# Display [h]elp
+pacman -Uh

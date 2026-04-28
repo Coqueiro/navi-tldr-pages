@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-privilege.md
+
+% mimikatz-privilege, windows
+
+# Enable debug privilege (required for many modules)
+mimikatz "privilege::debug"
+
+# Check current privilege state
+mimikatz "privilege::whoami"

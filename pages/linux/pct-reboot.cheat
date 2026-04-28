@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-reboot.md
+
+% pct-reboot, linux
+
+# Reboot a container
+pct reboot <100>

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dutree.md
+
+% dutree, linux
+
+# Show a graphical tree of the current directory
+dutree
+
+# Show a specific directory
+dutree <path_to_directory>
+
+# Aggregate items smaller than a number of KB (or M for MB, or G for GB)
+dutree --aggr <number>K
+
+# Show subdirectories up to the specified depth (default is 1)
+dutree --depth <depth>
+
+# Skip directories for a fast local overview
+dutree --files-only
+
+# Exclude hidden files
+dutree --no-hidden

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacini.md
+
+% pacini, linux
+
+# Show the full parsed configuration file (default: `stdin`)
+pacini <path_to_file>
+
+# List configured sections
+pacini <path_to_file> --section-list
+
+# Always show directive names even if only one directive is provided
+pacini <path_to_file> --verbose
+
+# Display directives listed in a specific section
+pacini <path_to_file> --section <section_name>
+
+# Display help
+pacini --help
+
+# Display version
+pacini --version

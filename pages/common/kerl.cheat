@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kerl.md
+
+% kerl, common
+
+# Build and install an Erlang/OTP version in a directory
+kerl build-install <28_0> <28_0> <path_to_installation_directory>/<28_0>
+
+# Activate an Erlang/OTP installation
+. <path_to_installation>/activate
+
+# Deactivate the current Erlang/OTP installation
+kerl_deactivate
+
+# List all available Erlang/OTP releases
+kerl list releases
+
+# List installed Erlang/OTP builds
+kerl list installations

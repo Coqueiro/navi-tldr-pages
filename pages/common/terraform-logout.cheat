@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-logout.md
+
+% terraform-logout, common
+
+# Log out from HCP Terraform (app.terraform.io)
+terraform logout
+
+# Log out from a specific hostname
+terraform logout <hostname>

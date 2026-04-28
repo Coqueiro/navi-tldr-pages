@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-get-default.md
+
+% systemctl-get-default, linux
+
+# Check the default target on your system
+systemctl get-default

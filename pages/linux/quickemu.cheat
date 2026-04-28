@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/quickemu.md
+
+% quickemu, linux
+
+# Create and run a virtual machine from a configuration file
+quickemu --vm <path_to_file_conf>
+
+# Do not commit any changes to disk/snapshot but write any changes to temporary files
+quickemu --status-quo --vm <path_to_file_conf>
+
+# Start the virtual machine in full-screen mode (`<Ctrl Alt f>` to exit) and select the display backend (`sdl` by default)
+quickemu --fullscreen --display <sdl_gtk_spice_spice_app_none> --vm <path_to_file_conf>
+
+# Select a virtual audio device to emulate and create a desktop shortcut
+quickemu --sound-card <intel_hda_ac97_es1370_sb16_none> --shortcut --vm <path_to_file_conf>
+
+# Create/restore/delete a snapshot
+quickemu --snapshot <create_apply_delete> <tag> --vm <path_to_file_conf>
+
+# List available snapshots
+quickemu --snapshot info --vm <path_to_file_conf>
+
+# Delete the entire virtual machine and its configuration
+quickemu --delete-vm --vm <path_to_file_conf>
+
+# Delete the virtual machine's disk image and EFI variables
+quickemu --delete-disk --vm <path_to_file_conf>

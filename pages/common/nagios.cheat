@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/nagios.md
+
+% nagios, common
+
+# Start `nagios`
+nagios /etc/nagios/nagios.cfg
+
+# Start `nagios` in daemon mode
+nagios -d
+
+# Start `nagios`, print service check scheduling information to `stdout`, then shutdown
+nagios -s
+
+# Verify configuration file
+nagios -v

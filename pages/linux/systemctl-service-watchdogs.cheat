@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-service-watchdogs.md
+
+% systemctl-service-watchdogs, linux
+
+# Show whether service watchdogs are currently enabled
+systemctl service-watchdogs
+
+# Enable service runtime watchdogs
+systemctl service-watchdogs yes
+
+# Disable service runtime watchdogs
+systemctl service-watchdogs no

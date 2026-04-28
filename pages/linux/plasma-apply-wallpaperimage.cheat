@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/plasma-apply-wallpaperimage.md
+
+% plasma-apply-wallpaperimage, linux
+
+# Apply a wallpaper
+plasma-apply-wallpaperimage /<path_to_image>
+
+# Apply a wallpaper with a fill mode
+plasma-apply-wallpaperimage --fill-mode <stretch_preserveAspectFit_preserveAspectCrop_tile_tileVertically_tileHorizontally_pad> /<path_to_image>
+
+# Display help
+plasma-apply-wallpaperimage --help

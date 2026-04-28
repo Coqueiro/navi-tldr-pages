@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wait4x.md
+
+% wait4x, common
+
+# Wait for a TCP port to become available
+wait4x tcp <localhost_8080>
+
+# Wait for an HTTP endpoint to return a specific status code
+wait4x http <https___example_com_health> --expect-status-code <200>
+
+# Wait for a PostgreSQL database to become ready
+wait4x postgresql '<postgres___user_password_localhost_5432_mydb_sslmode_disable>'
+
+# Wait for a Redis server to become available
+wait4x redis <redis___localhost_6379>
+
+# Wait for a service with a custom timeout and check interval
+wait4x tcp <localhost_3306> --timeout <30s> --interval <2s>
+
+# Wait for multiple services in parallel
+wait4x tcp {{localhost:3306 localhost:6379 ...}}
+
+# Display help for a subcommand
+wait4x <subcommand> --help
+
+# Display version
+wait4x version

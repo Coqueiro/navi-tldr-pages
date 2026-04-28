@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/papermc.md
+
+% papermc, common
+
+# Start a server
+papermc start
+
+# Stop a server
+papermc stop
+
+# Restart a server
+papermc restart
+
+# Backup a world
+papermc backup
+
+# Restore world data from a backup
+papermc restore <path_to_file>
+
+# Display help
+papermc

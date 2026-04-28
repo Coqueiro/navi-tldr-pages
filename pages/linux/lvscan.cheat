@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lvscan.md
+
+% lvscan, linux
+
+# List all logical volumes
+sudo lvscan
+
+# List only active logical volumes
+sudo lvscan --active
+
+# List only inactive logical volumes
+sudo lvscan --inactive
+
+# Display logical volumes in JSON format
+sudo lvscan --reportformat json

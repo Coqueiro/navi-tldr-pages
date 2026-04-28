@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/installpkg.md
+
+% installpkg, linux
+
+# Install a package
+sudo installpkg <path_to_package_tgz>
+
+# Generate a report of a simulated installation to `stdout`
+installpkg -warn <path_to_package_tgz>
+
+# Create a package from current directory and its subdirectories
+installpkg -m <package_name_tgz>
+
+# Install the contents of the current directory and subdirectories as a package with a specified name
+sudo installpkg -r <package_name_tgz>

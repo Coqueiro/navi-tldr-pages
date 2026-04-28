@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pihole.md
+
+% pihole, linux
+
+# Check Pi-hole's status
+pihole status
+
+# Update Pi-hole and Gravity
+sudo pihole {{[-up|updatePihole]}}
+
+# Start or stop the daemon
+pihole <enable_disable>
+
+# Update the lists and flush the cache without restarting the DNS server
+pihole reloaddns
+
+# Update the list of ad-serving domains
+pihole {{[-g|updateGravity]}}
+
+# Allow or deny the specified domain
+pihole <allow_deny> <example_com>
+
+# Search the lists for a domain
+pihole {{[-q|query]}} <example_com>
+
+# Open a real-time log of connections
+pihole {{[-t|tail]}}

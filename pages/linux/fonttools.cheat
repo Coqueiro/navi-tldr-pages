@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/fonttools.md
+
+% fonttools, linux
+
+# Subset a TTF font file to the Basic Latin Unicode block
+fonttools subset <path_to_font_ttf> --unicodes=U+0000-007F
+
+# Display help
+fonttools --help

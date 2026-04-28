@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ascii-xfr.md
+
+% ascii-xfr, linux
+
+# Send a file
+ascii-xfr -s <path_to_file>
+
+# Receive a file
+ascii-xfr -r <path_to_file>

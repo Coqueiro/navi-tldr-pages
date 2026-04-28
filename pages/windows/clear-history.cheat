@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/clear-history.md
+
+% clear-history, windows
+
+# Clear all command history from current session
+Clear-History
+
+# Clear command by specific name
+Clear-History -CommandLine "<command>"
+
+# Clear multiple commands by name
+Clear-History -CommandLine {{"command1", "command2", ...}}
+
+# Clear a specific history entry by ID
+Clear-History -Id <id_number>
+
+# Clear multiple IDs
+Clear-History -Id {{id1, id2, ...}}
+
+# Clear commands within a range of IDs
+Clear-History -Id (<start_id>..<end_id>)
+
+# Show what would be deleted
+Clear-History -WhatIf
+
+# Ask for confirmation before clearing
+Clear-History -Confirm

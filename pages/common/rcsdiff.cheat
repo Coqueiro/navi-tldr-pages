@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rcsdiff.md
+
+% rcsdiff, common
+
+# Compare the working file with the latest revision
+rcsdiff <path_to_file>
+
+# Compare the working file with a specific revision
+rcsdiff -r<revision> <path_to_file>
+
+# Compare two specific revisions of a file
+rcsdiff -r<revision1> -r<revision2> <path_to_file>
+
+# Show differences in unified format
+rcsdiff -u <path_to_file>
+
+# Show differences with context lines
+rcsdiff -c <path_to_file>

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wait4x-http.md
+
+% wait4x-http, common
+
+# Wait for an HTTP endpoint to respond with a specific status code
+wait4x http <https___example_com_health> --expect-status-code <200>
+
+# Wait for a response body to match a `regex` pattern
+wait4x http <https___api_example_com_status> --expect-body-regex '{{\"status\":\s*\"healthy\"}}'
+
+# Wait for a specific JSON field to exist using GJSON path syntax
+wait4x http <https___api_example_com_status> --expect-body-json "<services_database_status>"
+
+# Wait for a response with custom request headers
+wait4x http <https___api_example_com> --request-header "{{Authorization: Bearer token123}}"
+
+# Wait for a specific response header to match a value
+wait4x http <https___api_example_com> --expect-header "<Content_Type_application_json>"
+
+# Wait using a TLS client certificate
+wait4x http <https___example_com> --cert-file <path_to_cert_pem> --key-file <path_to_key_pem>
+
+# Wait with a custom timeout and inverted check (wait for endpoint to go down)
+wait4x http <https___example_com_health> --expect-status-code <200> --invert-check --timeout <60s>

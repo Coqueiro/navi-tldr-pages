@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pamtosrf.md
+
+% pamtosrf, common
+
+# Convert a Netpbm image or a stream of Netpbm images to SRF format
+pamtosrf <path_to_file_pam> > <path_to_output_srf>

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/makoctl.md
+
+% makoctl, linux
+
+# List all current notifications
+makoctl list
+
+# List notification history
+makoctl history
+
+# Reload the configuration file
+makoctl reload
+
+# Restore the most recently expired notification from history
+makoctl restore
+
+# Display help
+makoctl help

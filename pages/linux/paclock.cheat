@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/paclock.md
+
+% paclock, linux
+
+# Lock the database
+sudo paclock
+
+# Write the lock file path to `stdout` (without locking the database)
+paclock --print
+
+# Unlock the database
+sudo paclock --unlock
+
+# Display help
+paclock --help
+
+# Display version
+paclock --version

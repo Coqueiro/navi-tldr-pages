@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gradle-init.md
+
+% gradle-init, common
+
+# Initialize a new Gradle project interactively
+gradle init
+
+# Initialize a project of a specific type
+gradle init --type <basic_java_application_java_library____>
+
+# Initialize a project with a specific DSL
+gradle init --dsl <groovy_kotlin>
+
+# Initialize a project with a specific test framework
+gradle init --test-framework <junit_jupiter_testng_spock>
+
+# Initialize a project without interactive prompts
+gradle init --type <java_application> --dsl <kotlin> --test-framework <junit_jupiter>

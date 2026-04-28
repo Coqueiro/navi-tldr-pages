@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pbmtoepsi.md
+
+% pbmtoepsi, common
+
+# Convert a PBM image to an encapsulated PostScript style preview bitmap
+pbmtoepsi <path_to_image_pbm> > <path_to_output_bmp>
+
+# Produce a quadratic output image with the specified resolution
+pbmtoepsi {{[-d|-dpi]}} <144> <path_to_image_pbm> > <path_to_output_bmp>
+
+# Produce an output image with the specified horizontal and vertical resolution
+pbmtoepsi {{[-d|-dpi]}} <72x144> <path_to_image_pbm> > <path_to_output_bmp>
+
+# Only create a boundary box
+pbmtoepsi {{[-b|-bbonly]}} <path_to_image_pbm> > <path_to_output_bmp>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-apply.md
+
+% sfdk-apply, common
+
+# Apply all patches
+sfdk apply
+
+# Reverse apply all patches
+sfdk apply -R

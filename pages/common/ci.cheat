@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ci.md
+
+% ci, common
+
+# Check in a file and keep the working file unlocked
+ci -u <path_to_file>
+
+# Check in a file and keep the working file locked
+ci -l <path_to_file>
+
+# Check in a file with a specific log message
+ci -m"<log_message>" <path_to_file>
+
+# Check in a file, unlocking it but leaving the working file read-only
+ci <path_to_file>
+
+# Force check-in even if there are no changes
+ci -f -u <path_to_file>

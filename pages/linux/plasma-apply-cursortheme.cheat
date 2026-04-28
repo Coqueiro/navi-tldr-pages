@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/plasma-apply-cursortheme.md
+
+% plasma-apply-cursortheme, linux
+
+# List available cursor themes
+plasma-apply-cursortheme --list-themes
+
+# Apply a cursor theme
+plasma-apply-cursortheme <breeze_cursors>
+
+# Display help
+plasma-apply-cursortheme --help

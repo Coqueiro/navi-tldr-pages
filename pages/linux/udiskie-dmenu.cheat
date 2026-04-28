@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/udiskie-dmenu.md
+
+% udiskie-dmenu, linux
+
+# Launch the menu to mount or unmount devices
+udiskie-dmenu
+
+# Use rofi instead of dmenu
+udiskie-dmenu --rofi
+
+# Display help
+udiskie-dmenu --help

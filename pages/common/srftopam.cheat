@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/srftopam.md
+
+% srftopam, common
+
+# Convert an SRF file to Netpbm format
+srftopam <path_to_file_srf> > <path_to_output_pam>

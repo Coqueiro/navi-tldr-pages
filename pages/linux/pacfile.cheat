@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacfile.md
+
+% pacfile, linux
+
+# List all available packages
+pacfile <path_to_file_or_directory>
+
+# Compare database values to the filesystem
+pacfile <path_to_file_or_directory> --check
+
+# Display help
+pacfile --help
+
+# Display version
+pacfile --version

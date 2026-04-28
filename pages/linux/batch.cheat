@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/batch.md
+
+% batch, linux
+
+# Start the `atd` daemon
+systemctl start atd
+
+# Execute commands from `stdin` (press `<Ctrl d>` when done)
+batch
+
+# Execute a command from `stdin`
+echo "<__make_db_backup_sh>" | batch

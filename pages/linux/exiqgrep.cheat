@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/exiqgrep.md
+
+% exiqgrep, linux
+
+# Match the sender address using a case-insensitive search
+exiqgrep -f '<<email_example_com>>'
+
+# Match the sender address and display message IDs only
+exiqgrep -i -f '<<email_example_com>>'
+
+# Match the [r]ecipient address
+exiqgrep -r '<email_example_com>'
+
+# Remove all messages matching the sender address from the queue
+exiqgrep -i -f '<<email_example_com>>' | xargs exim -Mrm
+
+# Test for bounced messages
+exiqgrep -f '^<>$'
+
+# Display the [c]ount of bounced messages
+exiqgrep -c -f '^<>$'

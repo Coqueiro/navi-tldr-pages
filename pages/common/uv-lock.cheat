@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/uv-lock.md
+
+% uv-lock, common
+
+# Create or update the project's lockfile
+uv lock
+
+# Check if the lockfile is up-to-date without updating it
+uv lock --check
+
+# Assert that a lockfile exists without checking if it's current
+uv lock --check-exists
+
+# Preview what would be locked without writing the lockfile
+uv lock --dry-run
+
+# Lock a specific Python script instead of the current project
+uv lock --script <path_to_script_py>
+
+# Upgrade all packages to their latest compatible versions
+uv lock --upgrade
+
+# Upgrade only specific packages
+uv lock --upgrade-package <package1> --upgrade-package <package2>

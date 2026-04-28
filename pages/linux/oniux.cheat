@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/oniux.md
+
+% oniux, linux
+
+# Isolate an application
+oniux <command>
+
+# Query a website
+oniux curl <https___example_com>
+
+# Query an onion site
+oniux curl <http___example_onion>
+
+# Run an entire shell in "torified" isolation
+oniux bash
+
+# Isolate graphical applications in desktop environments
+oniux hexchat

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/makoctl-mode.md
+
+% makoctl-mode, linux
+
+# List all currently active modes
+makoctl mode
+
+# Add a mode
+makoctl mode -a <do_not_disturb>
+
+# Remove a mode
+makoctl mode -r <do_not_disturb>
+
+# Toggle a mode (add if absent, remove if present)
+makoctl mode -t <do_not_disturb>
+
+# Set specific modes, replacing all current modes
+makoctl mode -s {{mode1 mode2 ...}}

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/squid.md
+
+% squid, common
+
+# Start Squid in the background
+sudo squid
+
+# Start Squid in the foreground
+sudo squid -N
+
+# Start Squid with a specific configuration file
+sudo squid -f <path_to_squid_conf>
+
+# Test the configuration file for errors
+sudo squid -k parse
+
+# Reload the configuration file
+sudo squid -k reconfigure
+
+# Shut down Squid gracefully
+sudo squid -k shutdown
+
+# Rotate the log files
+sudo squid -k rotate

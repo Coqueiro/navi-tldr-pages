@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/con2fbmap.md
+
+% con2fbmap, linux
+
+# Display the framebuffer mapping of a console
+sudo con2fbmap <console_number>
+
+# Map a console to a specific framebuffer
+sudo con2fbmap <console_number> <framebuffer_number>

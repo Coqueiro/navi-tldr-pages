@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/linux-boot-prober.md
+
+% linux-boot-prober, linux
+
+# Probe a partition
+sudo linux-boot-prober <_dev_sdXY>

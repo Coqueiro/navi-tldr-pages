@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/eglinfo.md
+
+% eglinfo, linux
+
+# Display full platform information
+eglinfo
+
+# Display a brief version of platform information
+eglinfo -B
+
+# Display help
+eglinfo -h

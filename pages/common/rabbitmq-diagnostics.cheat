@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rabbitmq-diagnostics.md
+
+% rabbitmq-diagnostics, common
+
+# List resource alarms
+rabbitmq-diagnostics alarms
+
+# List node certificates
+rabbitmq-diagnostics certificates
+
+# Check if RabbitMQ is running on the specified node
+rabbitmq-diagnostics check_running --node <node>
+
+# Run peer discovery
+rabbitmq-diagnostics discover_peers
+
+# List listeners (bound sockets)
+rabbitmq-diagnostics listeners
+
+# Print the last `n` log lines on the specified node
+rabbitmq-diagnostics log_tail --number <n> --node <node>

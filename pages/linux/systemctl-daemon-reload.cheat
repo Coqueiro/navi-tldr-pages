@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-daemon-reload.md
+
+% systemctl-daemon-reload, linux
+
+# Reload systemd to apply changes in unit files
+systemctl daemon-reload

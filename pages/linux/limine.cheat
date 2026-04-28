@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/limine.md
+
+% limine, linux
+
+# Install Limine to an MBR-partitioned disk
+limine bios-install <_dev_sdX>
+
+# Install Limine to a GPT-partitioned disk with a specific BIOS boot partition
+limine bios-install <_dev_sdX> <partition_number>
+
+# Install Limine to a disk image file
+limine bios-install <path_to_image_iso>
+
+# Install Limine for modern UEFI systems (requires the `limine-entry-tool` package)
+limine-install
+
+# Update boot entries after a kernel upgrade (requires the `limine-entry-tool` package)
+limine-update
+
+# Scan for other operating systems to add to the boot menu (requires the `limine-entry-tool` package)
+limine-scan

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-stop.md
+
+% systemctl-stop, linux
+
+# Stop a unit
+systemctl stop <unit>
+
+# Stop a service and suppress warnings
+systemctl stop <unit> --no-warn
+
+# Stop a user unit
+systemctl stop <unit> --user

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/cisco-ios/reload.md
+
+% reload, cisco-ios
+
+# Reboot the system
+reload
+
+# Reboot after `n` seconds
+reload in <n>
+
+# Cancel pending reboots
+reload cancel

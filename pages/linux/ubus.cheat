@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ubus.md
+
+% ubus, linux
+
+# List available objects
+ubus list
+
+# Retrieve system information in JSON format
+ubus call system board
+
+# Listen to events
+ubus subscribe <event_name>
+
+# Display help
+ubus

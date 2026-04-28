@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mkisofs.md
+
+% mkisofs, linux
+
+# Create an ISO from a directory
+mkisofs -o <filename_iso> <path_to_source_directory>
+
+# Set the disc label when creating an ISO
+mkisofs -o <filename_iso> -V "<label_name>" <path_to_source_directory>
+
+# Create an ISO image with files larger than 2GiB by reporting a smaller apparent size for ISO9660 filesystems
+mkisofs -o <filename_iso> -allow-limited-size <path_to_source_directory>

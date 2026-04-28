@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/eog.md
+
+% eog, linux
+
+# Open an image file
+eog <path_to_image_png>
+
+# Open multiple images
+eog {{image1.jpg image2.png ...}}
+
+# Open images in fullscreen mode
+eog --fullscreen <path_to_image_jpg>
+
+# Start a slideshow
+eog --slide-show <path_to_directory>
+
+# Open a single image without image collection
+eog --single-window <path_to_image_jpg>
+
+# Open an image in a new window instance
+eog --new-instance <path_to_image_jpg>

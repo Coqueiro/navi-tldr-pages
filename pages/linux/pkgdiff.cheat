@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pkgdiff.md
+
+% pkgdiff, linux
+
+# Compare two packages and display differences
+pkgdiff <path_to_package1_txz> <path_to_package2_txz>
+
+# Compare two packages with colorized output
+pkgdiff -c <path_to_package1_txz> <path_to_package2_txz>
+
+# Compare two packages and output a simple unified diff
+pkgdiff -a <path_to_package1_txz> <path_to_package2_txz>

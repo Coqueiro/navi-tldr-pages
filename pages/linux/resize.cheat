@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/resize.md
+
+% resize, linux
+
+# Resize the terminal
+resize
+
+# Print terminal size
+resize -s

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/steamosctl.md
+
+% steamosctl, linux
+
+# Change to desktop mode
+steamosctl switch-to-desktop-mode
+
+# Change to gamemode
+steamosctl switch-to-game-mode
+
+# Change whether the system opens gamemode or desktop during login
+steamosctl set-default-login-mode <game_desktop>
+
+# Display help
+steamosctl

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf-download.md
+
+% dnf-download, linux
+
+# Download the latest version of a package to the current directory
+dnf download <package>
+
+# Download a package to a specific directory (the directory must exist)
+dnf download <package> --destdir <path_to_directory>
+
+# Print the URL where the RPM package can be downloaded from
+dnf download --url <package>

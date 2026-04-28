@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/alr-version.md
+
+% alr-version, common
+
+# Display version
+alr --version
+
+# Display the Alire environment version
+alr version

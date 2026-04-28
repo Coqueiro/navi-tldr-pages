@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-clone.md
+
+% pct-clone, linux
+
+# Clone a container
+pct {{[cl|clone]}} <100> <101>
+
+# Clone a container with a custom name
+pct {{[cl|clone]}} <100> <101> --hostname <host_name>
+
+# Create a full clone instead of a linked clone
+pct {{[cl|clone]}} <100> <101> --full

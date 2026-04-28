@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ifstatus.md
+
+% ifstatus, linux
+
+# Display interface status
+ifstatus <interface_name>
+
+# Display help
+ifstatus

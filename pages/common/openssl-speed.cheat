@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/openssl-speed.md
+
+% openssl-speed, common
+
+# Benchmark all available algorithms
+openssl speed
+
+# Benchmark the most common algorithms
+openssl speed {{md5 sha1 sha256 aes rsa}}
+
+# Benchmark a specific EVP cipher
+openssl speed -evp <aes_256_cbc>
+
+# Benchmark algorithms for a specific duration (in seconds)
+openssl speed -seconds <10>
+
+# Benchmark using wall-clock time instead of CPU user time
+openssl speed -elapsed
+
+# Output in machine readable format
+openssl speed -mr
+
+# Benchmark multiple algorithms in parallel using all available CPU cores
+openssl speed -multi $(nproc)

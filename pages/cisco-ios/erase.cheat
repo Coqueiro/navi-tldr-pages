@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/cisco-ios/erase.md
+
+% erase, cisco-ios
+
+# Erase the startup configuration
+erase startup-config
+
+# Erase a filesystem
+erase <flash>:

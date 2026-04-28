@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-resize.md
+
+% pct-resize, linux
+
+# Resize the container size to 20GB
+pct {{[resi|resize]}} <100> rootfs 20G
+
+# Add 10GB to the container storage
+pct {{[resi|resize]}} <100> rootfs +10G

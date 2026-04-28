@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/vgextend.md
+
+% vgextend, linux
+
+# Add a physical volume to an existing volume group
+sudo vgextend <___> <_dev_sda1>
+
+# Add multiple physical volumes to an existing volume group
+sudo vgextend <___> {{/dev/sda1 /dev/sda2 ...}}

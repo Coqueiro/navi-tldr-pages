@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-pulsesrc.md
+
+% gst-launch-1.0-pulsesrc, common
+
+# Listen to the default microphone
+gst-launch-1.0 pulsesrc ! autoaudiosink
+
+# Specify the source by name (can match a substring)
+gst-launch-1.0 pulsesrc device="<device_name>" ! autoaudiosink
+
+# Record the monitor of the default sink
+gst-launch-1.0 pulsesrc device=@DEFAULT_MONITOR@ ! <opusenc> ! <oggmux> ! filesink location=<path_to_file_ogg>

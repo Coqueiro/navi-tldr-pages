@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/qm-destroy.md
+
+% qm-destroy, linux
+
+# Destroy a specific virtual machine
+qm {{[des|destroy]}} <100>
+
+# Destroy all disks that are not explicitly referenced in a specific virtual machine's configuration
+qm {{[des|destroy]}} <100> --destroy-unreferenced-disks
+
+# Destroy a virtual machine and remove from all locations (inventory, backup jobs, high availability managers, etc.)
+qm {{[des|destroy]}} <100> --purge
+
+# Destroy a specific virtual machine ignoring locks and forcing destroy
+sudo qm {{[des|destroy]}} <100> --skiplock

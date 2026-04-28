@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/glxgears.md
+
+% glxgears, common
+
+# Run an OpenGL test window
+glxgears
+
+# Display OpenGL renderer information
+glxgears -info
+
+# Display help
+glxgears -h

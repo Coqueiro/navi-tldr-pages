@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/xml-c14n.md
+
+% xml-c14n, common
+
+# View documentation for the original command
+tldr xml canonic

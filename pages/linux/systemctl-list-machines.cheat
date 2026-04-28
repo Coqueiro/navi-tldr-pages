@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-list-machines.md
+
+% systemctl-list-machines, linux
+
+# Show all machines (host and running containers/VMs)
+systemctl list-machines
+
+# List a specific machine
+systemctl list-machines <machine>
+
+# List multiple matching machines
+systemctl list-machines {{machine_1 machine_2 ...}}
+
+# Filter machines using wildcard patterns ie, `shell-globbing`
+systemctl list-machines <pattern>

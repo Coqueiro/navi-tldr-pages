@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/minio-server.md
+
+% minio-server, common
+
+# Start a server using the default configuration
+minio server <path_to_data_directory>
+
+# Start a server binding to a different port for the API and web console
+minio server --address ":<port>" --console-address ":<port>" <path_to_data_directory>
+
+# Start a server as part of a cluster of 2 nodes
+minio server <node1_hostname> <path_to_data_directory> <node2_hostname> <path_to_data_directory>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/matchpathcon.md
+
+% matchpathcon, linux
+
+# Lookup the persistent security context setting of an absolute path
+matchpathcon /<path_to_file>
+
+# Restrict lookup to settings on a specific file type
+matchpathcon -m <file_dir_pipe_chr_file_blk_file_lnk_file_sock_file> /<path_to_file>
+
+# [V]erify that the persistent and current security context of a path agree
+matchpathcon -V /<path_to_file>

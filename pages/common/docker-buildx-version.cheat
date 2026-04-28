@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/docker-buildx-version.md
+
+% docker-buildx-version, common
+
+# Display version
+docker buildx version

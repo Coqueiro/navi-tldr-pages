@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ssh-keyscan.md
+
+% ssh-keyscan, common
+
+# Retrieve all public SSH keys of a remote host
+ssh-keyscan <hostname>
+
+# Retrieve all public SSH keys of a remote host listening on a specific port
+ssh-keyscan -p <port> <hostname>
+
+# Retrieve certain types of public SSH keys of a remote host
+ssh-keyscan -t <rsa_dsa_ecdsa_ed25519> <hostname>
+
+# Manually update the SSH known_hosts file with the fingerprint of a given host
+ssh-keyscan -H <hostname> >> ~/.ssh/known_hosts

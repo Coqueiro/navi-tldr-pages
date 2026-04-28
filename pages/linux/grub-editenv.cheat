@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/grub-editenv.md
+
+% grub-editenv, linux
+
+# Set a default boot entry (Assuming the boot entry already exists)
+grub-editenv /boot/grub/grubenv set default=<Ubuntu>
+
+# Display all GRUB environment variables
+grub-editenv /boot/grub/grubenv list
+
+# Reset the `saved_entry` variable to the default
+grub-editenv /boot/grub/grubenv unset saved_entry

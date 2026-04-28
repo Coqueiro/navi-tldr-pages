@@ -74,6 +74,6 @@ export_markdown() {
 rm -rf "./pages"
 
 for f in $(find_markdowns); do
-    printf "Exporting $f: "
+    printf "Exporting %s: " "$f"
     export_markdown "$f" && echo "success" || echo "failed"
 done

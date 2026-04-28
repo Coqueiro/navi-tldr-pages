@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/snake4.md
+
+% snake4, linux
+
+# Start a snake game
+snake4
+
+# Choose level
+<_1___2___3___4___5_>
+
+# Navigate the snake
+<_ArrowUp___ArrowDown___ArrowLeft___ArrowRight_>
+
+# Pause game
+<Space>
+
+# Quit game
+<q>
+
+# Show the high scores
+snake4 --highscores

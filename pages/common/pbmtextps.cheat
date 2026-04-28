@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pbmtextps.md
+
+% pbmtextps, common
+
+# Render a single line of text as a PBM image
+pbmtextps "{{Hello World!}}" > <path_to_output_pbm>
+
+# Specify the font and font size
+pbmtextps -font <Times_Roman> -fontsize <30> "{{Hello World!}}" > <path_to_output_pbm>
+
+# Specify the desired left and top margins
+pbmtextps {{[-l|-leftmargin]}} <70> {{[-t|-topmargin]}} <162> "{{Hello World!}}" > <path_to_output_pbm>
+
+# Do not output the rendered text as a PBM image, but a PostScript program that would create this image
+pbmtextps {{[-du|-dump-ps]}} "{{Hello World!}}" > <path_to_output_ps>

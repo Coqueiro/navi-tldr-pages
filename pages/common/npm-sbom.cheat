@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-sbom.md
+
+% npm-sbom, common
+
+# Output a list of all dependencies in your project
+npm sbom
+
+# Exclude both `dev` and `optional` dependencies
+npm sbom --omit dev --omit optional
+
+# Generate an SBOM based only on the `package-lock.json`
+npm sbom --package-lock-only

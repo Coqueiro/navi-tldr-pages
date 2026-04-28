@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-reload-or-restart.md
+
+% systemctl-reload-or-restart, linux
+
+# Reload or restart a unit
+systemctl reload-or-restart <unit>
+
+# Reload or restart multiple units matching a pattern
+systemctl reload-or-restart <pattern>
+
+# Run the command without waiting for the operation to complete
+systemctl reload-or-restart <unit> --no-block
+
+# Apply the command only to user units
+systemctl reload-or-restart <unit> --user

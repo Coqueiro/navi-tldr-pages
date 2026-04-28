@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/explodepkg.md
+
+% explodepkg, linux
+
+# Extract a package to the current directory
+explodepkg <path_to_package_tgz>
+
+# Extract multiple packages to the current directory
+explodepkg <path_to_package1_tgz> <path_to_package2_tgz>

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/raku.md
+
+% raku, common
+
+# Execute a Raku script
+raku <path_to_script_raku>
+
+# Execute a single Raku command
+raku -e "<command>"
+
+# Check syntax only (runs BEGIN and CHECK blocks)
+raku -c <path_to_script_raku>
+
+# Start a REPL (interactive shell)
+raku
+
+# Load a module before running the program
+raku -M <module_name> <path_to_script_raku>
+
+# Add a path to the module search path
+raku -I <path_to_module_directory> <path_to_script_raku>
+
+# Extract and display documentation from a script
+raku --doc <path_to_script_raku>

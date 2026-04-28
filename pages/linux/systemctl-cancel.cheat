@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-cancel.md
+
+% systemctl-cancel, linux
+
+# Cancel a job by its numeric ID
+systemctl cancel <job_id>
+
+# Cancel multiple jobs
+systemctl cancel {{job_id1 job_id2 ...}}
+
+# Cancel all pending jobs
+systemctl cancel
+
+# Cancel a job in the user service manager
+systemctl cancel <job_id> --user

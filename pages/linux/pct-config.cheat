@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-config.md
+
+% pct-config, linux
+
+# Display the saved configuration
+pct config <100>
+
+# Display the running configuration without pending changes
+pct config <100> --current
+
+# Display configuration of a specific snapshot
+pct config <100> --snapshot <snapshot_name>

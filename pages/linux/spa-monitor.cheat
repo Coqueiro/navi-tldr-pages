@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/spa-monitor.md
+
+% spa-monitor, linux
+
+# Load a specific SPA plugin
+spa-monitor <path_to_plugin_so>

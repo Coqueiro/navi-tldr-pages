@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/limine-enroll-config.md
+
+% limine-enroll-config, linux
+
+# Embed a config file's BLAKE2B hash into the Limine EFI executable
+limine-enroll-config <path_to_BOOTX64_EFI> <blake2b_hash>
+
+# Remove the enrolled hash from the executable, disabling the config integrity check
+limine-enroll-config --reset <path_to_BOOTX64_EFI>
+
+# Display help
+limine-enroll-config --help

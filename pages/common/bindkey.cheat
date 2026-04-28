@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bindkey.md
+
+% bindkey, common
+
+# List all existing hotkeys
+bindkey
+
+# Bind a hotkey to a specific command
+bindkey "<_k>" <kill_line>
+
+# Bind a hotkey to a specific key [s]equence
+bindkey -s '^o' 'cd ..\n'
+
+# [l]ist keymaps
+bindkey -l
+
+# List all hotkeys in a key[M]ap
+bindkey -M <main>
+
+# Enable [v]i mode
+bindkey -v
+
+# Enable [e]macs mode (default mode)
+bindkey -e
+
+# Check which mode is active (vi or emacs)
+bindkey -lL main | grep -Eo 'viins|emacs'

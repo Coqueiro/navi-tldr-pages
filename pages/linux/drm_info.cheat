@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/drm_info.md
+
+% drm_info, linux
+
+# Dump DRM information
+drm_info
+
+# Dump DRM information in [j]SON format
+drm_info -j

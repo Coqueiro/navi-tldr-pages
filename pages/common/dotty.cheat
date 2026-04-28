@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dotty.md
+
+% dotty, common
+
+# Open a graph file (`.gv` or `.dot`) in the Dotty editor
+dotty <path_to_graph_gv>
+
+# Start Dotty with the [V]ersion information displayed
+dotty -V
+
+# Set the [l]ayout [m]ode to synchronous or asynchronous
+dotty -lm <sync_async> <path_to_graph_gv>
+
+# Set the m[e]ssage verbosity [l]evel (`0` for minimal, `1` for detailed)
+dotty -el <0_1> <path_to_graph_gv>

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rgb3toppm.md
+
+% rgb3toppm, common
+
+# Combine three PGM images (representing red, green, and blue color components) into one PPM image
+rgb3toppm <path_to_red_file_ppm> <path_to_green_file_ppm> <path_to_blue_file_ppm> > <path_to_output_ppm>

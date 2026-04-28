@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sfdk-device.md
+
+% sfdk-device, common
+
+# Display the registered devices
+sfdk device list
+
+# Execute a command on a device by name or index
+sfdk device exec <device_name_or_idx> <command>
+
+# Run an interactive shell on a device by name or index
+sfdk device exec <device_name_or_idx>

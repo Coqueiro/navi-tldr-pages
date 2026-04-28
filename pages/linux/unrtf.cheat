@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/unrtf.md
+
+% unrtf, linux
+
+# Convert an RTF file to HTML (default)
+unrtf <path_to_file_rtf>
+
+# Convert an RTF file to plain ASCII
+unrtf --text <path_to_file_rtf>
+
+# Convert an RTF file to LaTeX
+unrtf --latex <path_to_file_rtf>

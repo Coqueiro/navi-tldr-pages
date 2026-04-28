@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lid.md
+
+% lid, linux
+
+# View documentation for the `libuser` tool
+tldr lid.libuser
+
+# View documentation for the `idutils` tool
+tldr lid.idutils

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacman-u.md
+
+% pacman-u, linux
+
+# View documentation for the original command
+tldr pacman upgrade

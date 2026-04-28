@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hwinfo.md
+
+% hwinfo, linux
+
+# Display all available hardware information
+hwinfo
+
+# Display information about a specific hardware component
+hwinfo --<cpu_memory_disk_gfxcard_network_usb_pci_keyboard_mouse_monitor_sound_fingerprint____>
+
+# Display information about a specific hardware component succinctly
+hwinfo <__component> --short
+
+# Write all hardware information to a file
+hwinfo --all --log <path_to_file>
+
+# Display help
+hwinfo --help

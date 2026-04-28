@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacsift.md
+
+% pacsift, linux
+
+# List all available packages
+pacsift
+
+# Filter packages that provide a given package
+pacsift --satisfies <package>

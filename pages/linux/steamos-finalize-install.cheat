@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/steamos-finalize-install.md
+
+% steamos-finalize-install, linux
+
+# Finalize the installation
+sudo steamos-finalize-install
+
+# Finalize without updating bootloaders or kernel
+sudo steamos-finalize-install --no-bootloaders --no-kernel
+
+# Skip all migration steps
+sudo steamos-finalize-install --no-migrate
+
+# Set a specific root hash during finalization
+sudo steamos-finalize-install --roothash <hash>
+
+# Force system migration steps regardless of environment
+sudo steamos-finalize-install --force

@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wezterm.md
+
+% wezterm, common
+
+# Start a new Wezterm process and create a window
+wezterm
+
+# Establish an `ssh` session in a new Wezterm window
+wezterm ssh <user>@<host>:<port>
+
+# Connect to the multiplexer (`wezterm-mux-server`)
+wezterm connect <domain_name>
+
+# Output an image to the terminal
+wezterm imgcat <path_to_image>
+
+# Record a terminal session as an asciicast (by default recordings are saved to `/tmp`)
+wezterm record
+
+# Replay an asciicast terminal session
+wezterm replay <path_to_cast_file>
+
+# Specify the configuration file to use (overrides the normal configuration file resolution)
+wezterm --config-file <path_to_config_file>
+
+# Display help
+wezterm help

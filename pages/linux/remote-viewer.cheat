@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/remote-viewer.md
+
+% remote-viewer, linux
+
+# View a remote using a `virt-viewer` file
+remote-viewer <path_to_virt_viewer_file>

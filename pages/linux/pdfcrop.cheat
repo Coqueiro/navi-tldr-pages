@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pdfcrop.md
+
+% pdfcrop, linux
+
+# Automatically detect and remove the margin for each page in a PDF file
+pdfcrop <path_to_input_file_pdf> <path_to_output_file_pdf>
+
+# Set the margins of each page to a specific value
+pdfcrop <path_to_input_file_pdf> --margins '<left> <top> <right> <bottom>' <path_to_output_file_pdf>
+
+# Set the margins of each page to a specific value, using the same value for left, top, right, and bottom
+pdfcrop <path_to_input_file_pdf> --margins <300> <path_to_output_file_pdf>
+
+# Use a user-defined bounding box for cropping instead of automatically detecting it
+pdfcrop <path_to_input_file_pdf> --bbox '<left> <top> <right> <bottom>' <path_to_output_file_pdf>
+
+# Use different user-defined bounding boxes for odd and even pages
+pdfcrop <path_to_input_file_pdf> --bbox-odd '<left> <top> <right> <bottom>' --bbox-even '<left> <top> <right> <bottom>' <path_to_output_file_pdf>
+
+# Automatically detect margins using a lower resolution for improved performance
+pdfcrop <path_to_input_file_pdf> --resolution <72> <path_to_output_file_pdf>

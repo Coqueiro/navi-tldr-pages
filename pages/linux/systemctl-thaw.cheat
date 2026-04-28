@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-thaw.md
+
+% systemctl-thaw, linux
+
+# Thaw a specific unit
+systemctl thaw <unit>
+
+# Thaw multiple units
+systemctl thaw {{unit1 unit2 ...}}
+
+# Thaw all currently frozen units
+systemctl thaw '*'

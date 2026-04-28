@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hwloc-ls.md
+
+% hwloc-ls, linux
+
+# View documentation for the original command
+tldr lstopo-no-graphics

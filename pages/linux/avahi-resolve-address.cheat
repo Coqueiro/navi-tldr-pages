@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/avahi-resolve-address.md
+
+% avahi-resolve-address, linux
+
+# View documentation for the original command
+tldr avahi-resolve

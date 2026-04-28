@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/natural-selection-2.md
+
+% natural-selection-2, linux
+
+# Start a server with the default settings
+<path_to>/server_linux
+
+# Give a server a custom name that shows in the server browser
+<path_to>/server_linux -name '<server_name>'
+
+# Specify a connection port for the server
+<path_to>/server_linux -port <27015>
+
+# Specify maximum player count
+<path_to>/server_linux -limit <2__24>
+
+# Specify the initial map the server starts on
+<path_to>/server_linux -map <ns2_summit>
+
+# Limit access to the server with a password
+<path_to>/server_linux -password <password>
+
+# Start a server with webui admin interface
+<path_to>/server_linux -webadmin -webport <8080>

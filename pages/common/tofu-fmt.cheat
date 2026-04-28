@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tofu-fmt.md
+
+% tofu-fmt, common
+
+# Format the configuration in the current directory
+tofu fmt
+
+# Format the configuration in the current directory and subdirectories
+tofu fmt -recursive
+
+# Display diffs of formatting changes
+tofu fmt -diff
+
+# Do not list files that were formatted to `stdout`
+tofu fmt -list=false

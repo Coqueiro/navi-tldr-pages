@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/greater-than.md
+
+% greater-than, common
+
+# Redirect `stdout` to a file
+<command> > <path_to_file>
+
+# Append to a file
+<command> >> <path_to_file>
+
+# Redirect both `stdout` and `stderr` to a file
+<command> &> <path_to_file>
+
+# Redirect `stderr` to `/dev/null` to keep the terminal output clean
+<command> 2> /dev/null
+
+# Clear the file contents or create a new empty file
+> <path_to_file>
+
+# Redirect `stderr` to `stdout` for piping them together
+<command1> 2>&1 | <command2>
+
+# Open a persistent file descriptor
+exec <3>><path_to_file>
+
+# Write to a custom file descriptor
+{{echo text}} >&<3>

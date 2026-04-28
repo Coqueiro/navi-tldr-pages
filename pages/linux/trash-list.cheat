@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/trash-list.md
+
+% trash-list, linux
+
+# View documentation for `trash-list`
+tldr trash

@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ip-route-list.md
+
+% ip-route-list, linux
+
+# Display the `main` routing table
+ip {{[r|route]}} {{[l|list]}}
+
+# Display the main routing table (same as first example)
+ip {{[r|route]}} {{[l|list]}} {{[t|table]}} <main_254>
+
+# Display the local routing table
+ip {{[r|route]}} {{[l|list]}} {{[t|table]}} <local_255>
+
+# Display all routing tables
+ip {{[r|route]}} {{[l|list]}} {{[t|table]}} <all_unspec_0>
+
+# List routes from a given device only
+ip {{[r|route]}} {{[l|list]}} dev <ethX>
+
+# List routes within a given scope
+ip {{[r|route]}} {{[l|list]}} {{[s|scope]}} link
+
+# Display the routing cache
+ip {{[r|route]}} {{[l|list]}} {{[c|cache]}}
+
+# Display only IPv6 or IPv4 routes
+ip <_6__4> {{[r|route]}}

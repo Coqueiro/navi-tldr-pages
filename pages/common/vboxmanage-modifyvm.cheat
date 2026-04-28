@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vboxmanage-modifyvm.md
+
+% vboxmanage-modifyvm, common
+
+# Rename the VM
+VBoxManage modifyvm <uuid_vm_name> --name <new_name>
+
+# Adjust memory and CPU
+VBoxManage modifyvm <uuid_vm_name> --memory <2048> --cpus <2>
+
+# Enable Remote Display (VRDE)
+VBoxManage modifyvm <uuid_vm_name> --vrde on
+
+# Enable session recording
+VBoxManage modifyvm <uuid_vm_name> --recording on

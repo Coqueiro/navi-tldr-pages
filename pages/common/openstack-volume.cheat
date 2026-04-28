@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/openstack-volume.md
+
+% openstack-volume, common
+
+# List volumes
+openstack volume list --all-projects
+
+# Show volume details
+openstack volume show <volume_id>
+
+# Create new volume
+openstack volume create --size <size_in_GB> --image <image_id> --snapshot <snapshot_id> <__bootable___non_bootable> <volume_name>
+
+# Delete volumes(s)
+openstack volume delete {{volume_id1 volume_id2 ...}}
+
+# Migrate volume to a new host
+openstack volume migrate --host <host_hostname> <instance_id>
+
+# Set volume properties
+openstack volume set --name <volume_new_name> --size <volume_new_size> <__attached___detached> <__bootable___non_bootable> <volume_id>

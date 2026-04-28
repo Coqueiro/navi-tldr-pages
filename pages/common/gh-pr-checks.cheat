@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gh-pr-checks.md
+
+% gh-pr-checks, common
+
+# Show checks for the pull request of the current branch
+gh pr checks
+
+# Show checks for a specific pull request
+gh pr checks <pr_number>
+
+# Watch checks and update in real time until completion
+gh pr checks <pr_number> --watch
+
+# Show only required checks
+gh pr checks <pr_number> --required

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/debootstrap.md
+
+% debootstrap, linux
+
+# Create a Debian stable release system inside the `debian-root` directory
+sudo debootstrap stable <path_to_debian_root>/ http://deb.debian.org/debian
+
+# Create a minimal system including only required packages
+sudo debootstrap --variant=minbase stable <path_to_debian_root>/
+
+# Create a Debian Unstable system inside the `sid-root` directory with a local mirror
+sudo debootstrap sid <path_to_sid_root>/ <file____path_to_mirror>/
+
+# Switch to a bootstrapped system
+sudo chroot <path_to_root>
+
+# List available releases
+ls /usr/share/debootstrap/scripts/

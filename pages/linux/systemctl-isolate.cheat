@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-isolate.md
+
+% systemctl-isolate, linux
+
+# Switch to a target (assumed `.target` if no extension provided)
+systemctl isolate <target>
+
+# Switch to graphical target explicitly
+systemctl isolate graphical.target
+
+# Switch to rescue (single-user) mode
+systemctl isolate rescue.target
+
+# Switch to emergency mode
+systemctl isolate emergency.target

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-decodebin.md
+
+% gst-launch-1.0-decodebin, common
+
+# Decode data to raw format
+gst-launch-1.0 <source> ! decodebin ! <sink>

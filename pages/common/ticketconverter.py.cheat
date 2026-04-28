@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ticketconverter.py.md
+
+% ticketconverter.py, common
+
+# Convert kirbi to ccache
+ticketConverter.py <path_to_ticket_kirbi> <path_to_ticket_ccache>
+
+# Convert ccache to kirbi
+ticketConverter.py <path_to_ticket_ccache> <path_to_ticket_kirbi>

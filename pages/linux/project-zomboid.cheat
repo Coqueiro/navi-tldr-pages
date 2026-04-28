@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/project-zomboid.md
+
+% project-zomboid, linux
+
+# Start the server
+<path_to>/start-server.sh
+
+# Start a server with a specific name
+<path_to>/start-server.sh -servername <server_name>

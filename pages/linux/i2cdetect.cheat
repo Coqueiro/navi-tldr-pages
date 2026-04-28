@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/i2cdetect.md
+
+% i2cdetect, linux
+
+# List active I2C buses
+i2cdetect -l
+
+# Scan devices on an I2C bus
+i2cdetect <i2c_bus>
+
+# Scan devices on an I2C bus without asking for confirmation
+i2cdetect -y <i2c_bus>

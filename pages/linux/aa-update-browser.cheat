@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/aa-update-browser.md
+
+% aa-update-browser, linux
+
+# [l]ist available browser abstraction profiles
+sudo aa-update-browser -l
+
+# Show what changes would be made to a profile without applying them ([d]ry-run)
+sudo aa-update-browser -d <path_to_profile>
+
+# [u]pdate a profile with specific abstractions
+sudo aa-update-browser -u <abstraction1_abstraction2____> <path_to_profile>
+
+# Remove all abstractions from a profile
+sudo aa-update-browser -u '' <path_to_profile>
+
+# Display help
+aa-update-browser -h

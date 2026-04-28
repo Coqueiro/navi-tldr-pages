@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-play-1.0.md
+
+% gst-play-1.0, common
+
+# Play a media file
+gst-play-1.0 {{file1|directory1|uri1 file2|directory2|uri2 ...}}

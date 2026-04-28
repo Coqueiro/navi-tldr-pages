@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/yj.md
+
+% yj, common
+
+# Convert [y]AML to JSON (default) from `stdin` and write the result to `stdout`
+yj < <file_yml> -y
+
+# Convert [t]OML to [y]AML
+yj < <file_toml> -ty
+
+# Convert [j]SON to [t]OML with [i]ndentation
+yj < <file_json> -jti
+
+# Convert H[c]L to [j]SON
+yj < <file_hcl> -cj
+
+# Convert [y]AML to H[c]L ignoring inf/[n]aN conversion
+yj < <file_yml> -ycn
+
+# Display [v]ersion
+yj -v

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wezterm-cli.md
+
+% wezterm-cli, common
+
+# List windows, tabs, and panes
+wezterm cli list
+
+# Split the current pane and print the new pane's ID to `stdout`
+wezterm cli split-pane --<left_right_top_bottom> --<cells_percent> <n>
+
+# Activate (focus) a pane
+wezterm cli activate-pane --pane-id <id>
+
+# Kill a pane
+wezterm cli kill-pane --pane-id <id>

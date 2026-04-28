@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-emergency.md
+
+% systemctl-emergency, linux
+
+# Enter emergency mode
+systemctl emergency
+
+# Enter emergency mode without blocking (return immediately)
+systemctl emergency --no-block

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacsync.md
+
+% pacsync, linux
+
+# Update all sync databases
+sudo pacsync
+
+# Update specific sync databases
+sudo pacsync {{repository1 repository2 ...}}
+
+# Update sync databases even if they are already up-to-date
+sudo pacsync --force
+
+# Update sync databases using a specific configuration file
+sudo pacsync --config <path_to_pacman_conf>
+
+# Update sync databases and return true only if a database was actually updated
+sudo pacsync --updated

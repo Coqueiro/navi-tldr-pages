@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dockdiver.md
+
+% dockdiver, common
+
+# List all repositories in a Docker registry
+dockdiver -url <https___example_com> -list
+
+# Dump a specific repository to the default output directory (docker_dump)
+dockdiver -url <https___example_com> -dump <repository_name>
+
+# Dump all repositories with basic authentication
+dockdiver -url <https___example_com> -dump-all -username <username> -password <password>
+
+# Dump a repository with a rate limit and a custom port (the default port is `5000`)
+dockdiver -url <https___example_com> -dump <repository_name> -port <port> -rate <requests_per_second> -dir <path_to_output_directory>
+
+# Dump all repositories with bearer token for authorization
+dockdiver -url <https___example_com> -dump-all -bearer <bearer_token>
+
+# Add custom headers as JSON (e.g., '{"X-Custom": "Value"}')
+dockdiver -url <https___example_com> -list -headers '{{{"X-Custom": "Value"}}}'

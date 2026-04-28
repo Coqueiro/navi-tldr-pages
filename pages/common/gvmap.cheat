@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gvmap.md
+
+% gvmap, common
+
+# Generate a clustered map layout from a DOT format graph
+gvmap <graph_gv> -o <output_xdot>
+
+# Generate a map using existing cluster subgraphs from the input
+gvmap -D <graph_gv>
+
+# Include graph edges in the [o]utput map
+gvmap -e <graph_gv> -o <output_xdot>
+
+# Specify a [c]olor scheme (1: pastel, 2: blue-yellow, 3: white-red, etc.)
+gvmap -c <1_2_3____> <graph_gv> -o <output_xdot>
+
+# Set the maximum number of [C]lusters (by default 0, meaning there is no limit)
+gvmap -C <10> <graph_gv> -o <output_xdot>
+
+# Only draw cluster 2 (by default, all clusters are drawn)
+gvmap -highlight=<2> <graph_gv> -o <output_xdot>

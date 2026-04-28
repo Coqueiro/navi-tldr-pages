@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/selinuxenabled.md
+
+% selinuxenabled, linux
+
+# Check if SELinux is enabled (no output; check exit code with `echo $?`)
+selinuxenabled
+
+# Check if SELinux is enabled and print the result
+selinuxenabled && echo "SELinux is enabled" || echo "SELinux is disabled"
+
+# Use in a shell script to conditionally execute commands
+if selinuxenabled; then echo "SELinux is running"; fi

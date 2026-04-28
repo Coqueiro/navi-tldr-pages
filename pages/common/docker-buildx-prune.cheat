@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/docker-buildx-prune.md
+
+% docker-buildx-prune, common
+
+# Remove build cache for currently active builder
+docker buildx prune
+
+# Remove cache records based on a specific filter
+docker buildx prune --filter "<type_source_local>"
+
+# Remove the least recently used cache records until the cache size is below a specific limit
+docker buildx prune --max-used-space <128mb>
+
+# Remove the least recently used cache records until a specific amount of free disk space is available
+docker buildx prune --reserved-space <2gb>

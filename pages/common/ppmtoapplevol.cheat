@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ppmtoapplevol.md
+
+% ppmtoapplevol, common
+
+# Convert a PPM image into an Apple volume label image
+ppmtoapplevol <path_to_image_ppm> > <path_to_output>

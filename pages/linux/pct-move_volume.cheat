@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-move_volume.md
+
+% pct-move_volume, linux
+
+# View documentation for the original command
+tldr pct move-volume

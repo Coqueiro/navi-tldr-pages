@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gc.md
+
+% gc, common
+
+# Count nodes and edges in a file
+gc <path_to_file_dot>
+
+# Count only [n]odes
+gc -n <path_to_file_dot>
+
+# Count only [e]dges
+gc -e <path_to_file_dot>
+
+# Count [c]onnected components
+gc -c <path_to_file_dot>
+
+# Display help
+gc -?

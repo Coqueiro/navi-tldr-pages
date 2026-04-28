@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/chroot.md
+
+% chroot, common
+
+# Run `$SHELL` in the new root directory
+sudo chroot <path_to_new_root>
+
+# Run command as new root directory
+sudo chroot <path_to_new_root> <command>
+
+# Use a specific user and group
+sudo chroot --userspec <username_or_id>:<group_name_or_id> <path_to_new_root>

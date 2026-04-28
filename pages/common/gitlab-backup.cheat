@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gitlab-backup.md
+
+% gitlab-backup, common
+
+# Create a full backup (default strategy)
+sudo gitlab-backup create
+
+# Create a full backup using the copy strategy
+sudo gitlab-backup create STRATEGY=<copy>
+
+# Restore a backup by specifying its ID
+sudo gitlab-backup restore BACKUP=<backup_id>
+
+# Restore a backup while skipping specific components
+sudo gitlab-backup restore BACKUP=<backup_id> SKIP=<db_uploads____>

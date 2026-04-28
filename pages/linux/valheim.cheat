@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/valheim.md
+
+% valheim, linux
+
+# Start the server
+<path_to>/start_server.sh
+
+# Stop the server gracefully
+<Ctrl c>
+
+# Start the server using the provided Docker script
+<path_to_docker_start_server_sh> <path_to_start_server_sh>

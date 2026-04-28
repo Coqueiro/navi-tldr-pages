@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/zerotier-one.md
+
+% zerotier-one, common
+
+# Start the ZeroTier One [d]aemon
+sudo zerotier-one -d

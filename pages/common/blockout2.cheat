@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/blockout2.md
+
+% blockout2, common
+
+# Start a new game
+blockout2
+
+# Navigate the current piece on a 2D plane
+<_ArrowUp___ArrowDown___ArrowLeft___ArrowRight_>
+
+# Rotate the piece on its axis
+<_q___w___e___a___s___d_>
+
+# Hard drop the current piece
+<Space>
+
+# Pause/unpause the game
+<p>

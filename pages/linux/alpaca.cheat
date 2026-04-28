@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/alpaca.md
+
+% alpaca, linux
+
+# Launch Alpaca and start a new chat
+alpaca --new-chat "<chat_title>"
+
+# Open Quick Ask with a message
+alpaca --ask "<message>"
+
+# List all activities that can be launched with `--activity`
+alpaca --list-activities
+
+# Open an activity
+alpaca --activity <activity>
+
+# List all current chats
+alpaca --list-chats

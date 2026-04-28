@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pw-jack.md
+
+% pw-jack, linux
+
+# Run a command with its arguments, using PipeWire
+pw-jack <command> {{argument1 argument2 ...}}
+
+# Run a command in verbose mode
+pw-jack -v <command>
+
+# Connect to a specific remote PipeWire instance
+pw-jack -r <remote_instance_name> <command>
+
+# Display help
+pw-jack -h

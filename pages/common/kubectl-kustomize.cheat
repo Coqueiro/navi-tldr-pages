@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubectl-kustomize.md
+
+% kubectl-kustomize, common
+
+# Build resources from the current directory
+kubectl kustomize
+
+# Build resources from a specific directory
+kubectl kustomize <path_to_directory>
+
+# Build resources from a remote URL
+kubectl kustomize <https___github_com_user_repo_path>
+
+# Build resources and save to a file
+kubectl kustomize <path_to_directory> > <output_yaml>
+
+# Build resources with load restrictor disabled
+kubectl kustomize --load-restrictor <LoadRestrictionsNone> <path_to_directory>

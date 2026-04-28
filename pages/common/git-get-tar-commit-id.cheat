@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-get-tar-commit-id.md
+
+% git-get-tar-commit-id, common
+
+# Extract commit hash ID or quietly exit with a return code of 1
+git < <path_to_archive_tar> get-tar-commit-id

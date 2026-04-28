@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/duf.md
+
+% duf, common
+
+# List accessible devices
+duf
+
+# List everything (such as pseudo, duplicate, or inaccessible filesystems)
+duf --all
+
+# Only show specified devices or mount points
+duf {{path/to/directory1 path/to/directory2 ...}}
+
+# Sort the output by a specified criteria
+duf --sort <size_used_avail_usage>
+
+# Show or hide specific filesystems
+duf --<only_fs_hide_fs> <tmpfs_vfat_ext4_xfs>
+
+# Sort the output by key
+duf --sort <mountpoint_size_used_avail_usage_inodes_inodes_used_inodes_avail_inodes_usage_type_filesystem>
+
+# Change the theme (if `duf` fails to use the right theme)
+duf --theme <dark_light>

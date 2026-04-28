@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/phpmd.md
+
+% phpmd, common
+
+# Display a list of available rulesets and formats
+phpmd
+
+# Scan a file or directory for problems using comma-separated rulesets
+phpmd <path_to_file_or_directory> <xml_text_html> <ruleset1_ruleset2____>
+
+# Specify the minimum priority threshold for rules
+phpmd <path_to_file_or_directory> <xml_text_html> <ruleset1_ruleset2____> --minimumpriority <priority>
+
+# Include only the specified extensions in analysis
+phpmd <path_to_file_or_directory> <xml_text_html> <ruleset1_ruleset2____> --suffixes <extensions>
+
+# Exclude the specified comma-separated directories
+phpmd <path_to_file_or_directory1_path_to_file_or_directory2____> <xml_text_html> <ruleset1_ruleset2____> --exclude <directory_patterns>
+
+# Output the results to a file instead of `stdout`
+phpmd <path_to_file_or_directory> <xml_text_html> <ruleset1_ruleset2____> --reportfile <path_to_report_file>
+
+# Ignore the use of warning-suppressive PHPDoc comments
+phpmd <path_to_file_or_directory> <xml_text_html> <ruleset1_ruleset2____> --strict

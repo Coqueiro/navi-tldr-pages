@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pulumi-update.md
+
+% pulumi-update, common
+
+# View documentation for the original command
+tldr pulumi up

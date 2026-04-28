@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-pm-migrate.md
+
+% bun-pm-migrate, common
+
+# Migrate the lockfile in the current project
+bun pm migrate

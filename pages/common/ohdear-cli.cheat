@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ohdear-cli.md
+
+% ohdear-cli, common
+
+# View documentation for the command under its current name
+tldr ohdear

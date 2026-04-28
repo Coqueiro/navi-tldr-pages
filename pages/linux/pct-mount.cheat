@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-mount.md
+
+% pct-mount, linux
+
+# Mount the filesystem of a specific container
+pct mount <100>

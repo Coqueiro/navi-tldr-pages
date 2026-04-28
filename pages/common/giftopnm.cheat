@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/giftopnm.md
+
+% giftopnm, common
+
+# Convert a GIF image to a Netpbm image pixel-for-pixel
+giftopnm <path_to_input_gif> > <path_to_output_pnm>
+
+# Display version
+giftopnm {{[-v|-version]}}

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/paccapability.md
+
+% paccapability, linux
+
+# List all available capabilities
+paccapability
+
+# Check for the specified capability
+paccapability <nls_downloader_signatures>
+
+# Display help
+paccapability --help
+
+# Display version
+paccapability --version

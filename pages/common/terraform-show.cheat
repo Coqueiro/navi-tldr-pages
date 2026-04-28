@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-show.md
+
+% terraform-show, common
+
+# Show the current state
+terraform show
+
+# Show a specific state file
+terraform show <path_to_terraform_tfstate>
+
+# Show a specific plan file
+terraform show <path_to_file_tfplan>
+
+# Output in JSON format
+terraform show -json
+
+# Output a plan file in JSON format
+terraform show -json <path_to_file_tfplan>
+
+# Write to a file without color codes
+terraform show -no-color > <path_to_file>

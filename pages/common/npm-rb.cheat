@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-rb.md
+
+% npm-rb, common
+
+# View documentation for the original command
+tldr npm-rebuild

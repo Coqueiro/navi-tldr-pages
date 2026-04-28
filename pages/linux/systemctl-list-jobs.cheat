@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-list-jobs.md
+
+% systemctl-list-jobs, linux
+
+# List all active jobs
+systemctl list-jobs
+
+# Filter jobs for a specific unit
+systemctl list-jobs <unit>

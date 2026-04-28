@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/chattr.md
+
+% chattr, linux
+
+# Make a file or directory [i]mmutable to changes and deletion, even by superuser
+sudo chattr +i <path_to_file_or_directory>
+
+# Make a file or directory mutable
+sudo chattr -i <path_to_file_or_directory>
+
+# [R]ecursively make an entire directory and contents immutable
+sudo chattr -R +i <path_to_directory>
+
+# Mark a directory and its files to be interpreted in a case-insensitive manner (case-[F]olding)
+chattr +F <path_to_directory>
+
+# Set a file to only allow [a]ppending
+sudo chattr +a <path_to_file>

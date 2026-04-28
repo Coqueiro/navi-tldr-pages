@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-help.md
+
+% systemctl-help, linux
+
+# Show the manual page for a specific unit
+systemctl help <unit>
+
+# Show the manual pages for multiple units
+systemctl help {{unit1 unit2 ...}}
+
+# Show the manual page for a user unit
+systemctl help <unit> --user
+
+# Show the manual page without a pager (all at once)
+systemctl help <unit> --no-pager
+
+# Show the manual page for the unit of a process by PID
+systemctl help <pid>

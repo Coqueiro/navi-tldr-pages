@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ubuntu-drivers.md
+
+% ubuntu-drivers, linux
+
+# List available drivers for the current hardware
+sudo ubuntu-drivers list
+
+# Install drivers for detected hardware
+sudo ubuntu-drivers install
+
+# Display help
+ubuntu-drivers

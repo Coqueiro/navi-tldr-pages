@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mkfs.xfs.md
+
+% mkfs.xfs, linux
+
+# Create an XFS filesystem inside partition Y on device X
+sudo mkfs.xfs <_dev_sdXY>
+
+# Create an XFS filesystem with a volume label
+sudo mkfs.xfs -L <volume_label> <_dev_sdXY>

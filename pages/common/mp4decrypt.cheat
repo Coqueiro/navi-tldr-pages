@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mp4decrypt.md
+
+% mp4decrypt, common
+
+# Decrypt a file using a specific key (key ID in hex, key in hex)
+mp4decrypt --key <key_id_hex>:<key_hex> <path_to_input_file_mp4> <path_to_output_file_mp4>
+
+# Decrypt a file using a specific key for a track ID (track ID in decimal, key in hex)
+mp4decrypt --key <track_id>:<key_hex> <path_to_input_file_mp4> <path_to_output_file_mp4>
+
+# Decrypt a file using multiple keys while displaying the progress of the decryption
+mp4decrypt --key <key_id_1>:<key_1> --key <key_id_2>:<key_2> --show-progress <path_to_input_file_mp4> <path_to_output_file_mp4>

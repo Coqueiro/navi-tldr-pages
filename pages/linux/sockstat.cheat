@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/sockstat.md
+
+% sockstat, linux
+
+# Show information for IPv4 and IPv6 sockets for both listening and connected sockets
+sockstat
+
+# Show information for IPv[4]/IPv[6] sockets [l]istening on specific [p]orts using a specific p[R]otocol
+sockstat -<4_6> -l -R <tcp_udp_raw_unix> -p <port1_port2___>
+
+# Also show [c]onnected sockets and [u]nix sockets
+sockstat -cu
+
+# Only show sockets of the specified `pid` or process
+sockstat -P <pid_process>
+
+# Only show sockets of the specified `uid` or user
+sockstat -U <uid_user>
+
+# Only show sockets of the specified `gid` or group
+sockstat -G <gid_group>

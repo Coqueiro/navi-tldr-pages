@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/steamos-devmode.md
+
+% steamos-devmode, linux
+
+# Enable developer mode
+sudo steamos-devmode enable
+
+# Enable developer mode without confirmation prompt
+sudo steamos-devmode enable --no-prompt
+
+# Check if developer mode is currently enabled
+sudo steamos-devmode status

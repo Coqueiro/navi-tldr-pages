@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tailscale-set.md
+
+% tailscale-set, common
+
+# View documentation for `tailscale up`
+tldr tailscale up

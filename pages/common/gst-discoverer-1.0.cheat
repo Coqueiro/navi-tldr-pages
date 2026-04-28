@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-discoverer-1.0.md
+
+% gst-discoverer-1.0, common
+
+# Print file metadata
+gst-discoverer-1.0 <path_to_file>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-videoscale.md
+
+% gst-launch-1.0-videoscale, common
+
+# Scale video to fit the capabilities of both input and output
+gst-launch-1.0 <input> ! videoscale ! <output>
+
+# Scale video to an arbitrary resolution
+gst-launch-1.0 <input> ! videoscale ! video/x-raw,width=<width>,height=<height> ! <output>

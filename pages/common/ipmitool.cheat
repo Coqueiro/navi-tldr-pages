@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ipmitool.md
+
+% ipmitool, common
+
+# Open IPMI shell on the local hardware
+sudo ipmitool shell
+
+# Open IPMI shell on a remote host
+ipmitool -H <ip_address> -U <user_name> shell

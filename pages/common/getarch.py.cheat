@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/getarch.py.md
+
+% getarch.py, common
+
+# Check the architecture of a single target system
+getArch.py -target <target>
+
+# Check the architecture of multiple targets from a file (one per line)
+getArch.py -targets <path_to_targets_file>
+
+# Set a custom socket timeout (default is 2 seconds)
+getArch.py -target <target> -timeout <seconds>
+
+# Enable debug mode for detailed output
+getArch.py -target <target> -debug

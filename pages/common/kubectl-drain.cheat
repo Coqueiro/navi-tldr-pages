@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubectl-drain.md
+
+% kubectl-drain, common
+
+# Drain a node
+kubectl drain <node_name>
+
+# Drain a node, ignoring DaemonSet-managed pods
+kubectl drain <node_name> --ignore-daemonsets
+
+# Drain a node and delete pods using emptyDir volumes (local data will be lost)
+kubectl drain <node_name> --ignore-daemonsets --delete-emptydir-data
+
+# Drain a node, forcing eviction of pods not managed by a controller
+kubectl drain <node_name> --force
+
+# Drain a node with a custom grace period for pod termination
+kubectl drain <node_name> --grace-period <seconds>
+
+# Drain a node, evicting only pods that match a label selector
+kubectl drain <node_name> --pod-selector <label_key>=<label_value>
+
+# Drain a node with a timeout
+kubectl drain <node_name> --timeout <duration>
+
+# Preview the drain operation without actually evicting pods (dry run)
+kubectl drain <node_name> --dry-run=<none_server_client>

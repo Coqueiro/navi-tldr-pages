@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lid.libuser.md
+
+% lid.libuser, linux
+
+# List primary and secondary groups of a specific user
+sudo lid <username>
+
+# List users of a specific group
+sudo lid --group <group_name>

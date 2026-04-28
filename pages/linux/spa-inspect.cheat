@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/spa-inspect.md
+
+% spa-inspect, linux
+
+# Display information about a SPA plugin
+spa-inspect <path_to_plugin_so>

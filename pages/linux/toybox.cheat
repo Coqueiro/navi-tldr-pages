@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/toybox.md
+
+% toybox, linux
+
+# List all available Toybox commands
+toybox
+
+# Run a Toybox command explicitly (useful if another command with the same name exists in `$PATH`)
+toybox <command> <arguments>
+
+# List files in the current directory
+toybox ls
+
+# Remove a file
+toybox rm <path_to_file>
+
+# Display help information for a specific command
+toybox <command> --help
+
+# Display version
+toybox --version

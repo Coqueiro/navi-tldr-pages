@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/udevmon.md
+
+% udevmon, linux
+
+# Start udevmon with specified configuration file
+udevmon -c <path_to_config_yaml>

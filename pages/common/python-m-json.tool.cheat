@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/python-m-json.tool.md
+
+% python-m-json.tool, common
+
+# Pretty-print JSON from a file
+python -m json.tool <path_to_file_json>
+
+# Validate and pretty-print JSON from `stdin`
+echo '{{{"key": "value"}}}' | python -m json.tool

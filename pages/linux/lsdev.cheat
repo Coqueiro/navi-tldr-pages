@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lsdev.md
+
+% lsdev, linux
+
+# Show list of installed hardware
+lsdev

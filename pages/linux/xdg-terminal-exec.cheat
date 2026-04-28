@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/xdg-terminal-exec.md
+
+% xdg-terminal-exec, linux
+
+# Open the default terminal
+xdg-terminal-exec
+
+# Execute a command in the default terminal
+xdg-terminal-exec <command> {{argument1 argument2 ...}}
+
+# Hold the terminal open after the command has finished executing
+xdg-terminal-exec --hold <command>

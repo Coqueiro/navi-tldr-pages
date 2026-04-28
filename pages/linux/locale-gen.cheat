@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/locale-gen.md
+
+% locale-gen, linux
+
+# Generate locales
+sudo locale-gen
+
+# Do not delete undefined locales
+sudo locale-gen --keep-existing

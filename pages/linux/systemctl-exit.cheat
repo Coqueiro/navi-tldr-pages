@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-exit.md
+
+% systemctl-exit, linux
+
+# Exit the user service manager
+systemctl exit --user
+
+# Exit the user service manager with a specific exit code
+systemctl exit <code> --user
+
+# Ask the container's service manager to exit (equivalent of `systemctl poweroff` if not in a container)
+systemctl exit

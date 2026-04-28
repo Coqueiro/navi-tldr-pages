@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-help-search.md
+
+% npm-help-search, common
+
+# Search for commands or topics related to a keyword
+npm help-search <keyword>
+
+# Search with multiple words
+npm help-search {{keyword1 keyword2 ...}}

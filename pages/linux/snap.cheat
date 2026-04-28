@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/snap.md
+
+% snap, linux
+
+# View documentation for the packaging solution
+tldr snap.pkg
+
+# View documentation for the European Space Agency Earth observation data processing tool
+tldr snap.esa

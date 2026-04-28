@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/udiskie-umount.md
+
+% udiskie-umount, linux
+
+# Unmount a mounted device
+udiskie-umount <path_to_mount>
+
+# Unmount and power down a USB device
+udiskie-umount --detach <path_to_mount>
+
+# Eject an optical drive
+udiskie-umount --eject <path_to_mount>
+
+# Display help
+udiskie-umount --help

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/paccheck.md
+
+% paccheck, linux
+
+# List and check all installed packages
+paccheck
+
+# Check the specified packages
+paccheck {{package1 package2 ...}}
+
+# Only display messages if a problem is found
+paccheck --quiet
+
+# Check that all package dependencies are satisfied
+paccheck --depends
+
+# Display help
+paccheck --help
+
+# Display version
+paccheck --version

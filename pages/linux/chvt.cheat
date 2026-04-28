@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/chvt.md
+
+% chvt, linux
+
+# Change to a specific TTY
+sudo chvt <3>

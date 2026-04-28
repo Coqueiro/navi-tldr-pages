@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lvmdevices.md
+
+% lvmdevices, linux
+
+# List devices recorded in the devices file
+sudo lvmdevices
+
+# Add a device to the devices file
+sudo lvmdevices --adddev <_dev_sdXN>
+
+# Remove a device from the devices file
+sudo lvmdevices --deldev <_dev_sdXN>
+
+# Add a physical volume by its PVID
+sudo lvmdevices --addpvid <PVID>
+
+# Remove a physical volume by its PVID
+sudo lvmdevices --delpvid <PVID>
+
+# Update the devices file after device names change
+sudo lvmdevices --update
+
+# Check the devices file for problems
+sudo lvmdevices --check
+
+# Display version
+lvmdevices --version

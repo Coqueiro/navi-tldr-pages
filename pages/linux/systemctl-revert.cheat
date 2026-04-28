@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-revert.md
+
+% systemctl-revert, linux
+
+# Revert unit files to their default settings
+systemctl revert {{unit1 unit2 ...}}
+
+# Revert a user unit file
+systemctl revert <unit> --user

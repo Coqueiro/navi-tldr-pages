@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/adb-start-server.md
+
+% adb-start-server, common
+
+# Start the adb server if it is not running
+adb start-server

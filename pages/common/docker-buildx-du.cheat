@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/docker-buildx-du.md
+
+% docker-buildx-du, common
+
+# Show disk usage
+docker buildx du
+
+# Filter output based on a specific condition
+docker buildx du --filter "<description__golang>"
+
+# Show verbose output
+docker buildx du --verbose
+
+# Format the output using a Go template
+docker buildx du --format "table <_ID>    <_Description>"
+
+# Pretty print output as JSON with `jq` command
+docker buildx du --format json | jq .
+
+# Inspect the disk usage of a specific builder
+docker buildx du --builder <builder_name>

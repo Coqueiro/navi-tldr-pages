@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-cat.md
+
+% systemctl-cat, linux
+
+# Show the contents and absolute path of a unit file
+systemctl cat <unit>
+
+# Show the contents of multiple unit files
+systemctl cat {{unit1 unit2 ...}}
+
+# Show the contents of a unit file for a template
+systemctl cat <template_>
+
+# Show the contents of a user unit file
+systemctl cat <unit> --user

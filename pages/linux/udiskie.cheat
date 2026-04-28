@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/udiskie.md
+
+% udiskie, linux
+
+# Start udiskie with tray icon and notifications
+udiskie --tray --notify
+
+# Run udiskie without using a config file
+udiskie --no-config
+
+# Specify a custom config file
+udiskie --config <path_to_config_yml>
+
+# Use a custom password prompt command
+udiskie --password-prompt '<command>'
+
+# Enable verbose output
+udiskie --verbose
+
+# Display help
+udiskie --help
+
+# Display version
+udiskie --version

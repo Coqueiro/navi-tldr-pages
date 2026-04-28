@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/autoexpect.md
+
+% autoexpect, linux
+
+# Spawn a shell and generate a script from it
+autoexpect
+
+# Run a command and generate a script from it
+autoexpect <command>
+
+# Run a command, generate a script, and save the script to a specified file
+autoexpect -f <path_to_file> <command>

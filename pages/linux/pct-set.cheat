@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-set.md
+
+% pct-set, linux
+
+# Set container to start automatically on boot
+pct set <100> --onboot
+
+# Set a container to have a static IP
+pct set <100> --net0 name=eth0,bridge=vmbr0,ip=<10_0_0_100_24>,gw=<10_0_0_1>
+
+# Set container memory and CPU limit
+pct set <100> --memory <8192> --cpulimit <4>
+
+# Set the hostname of a container
+pct set <100> --hostname <new_name>
+
+# Mount a host file location in a guest
+pct set <100> --mp<0> /<path_to_host_directory>,mp=/<path_to_guest_mount_point>
+
+# Set container tags
+pct set <100> --tags <tag1_tag2____>
+
+# Remove an option
+pct set <100> --delete <net0_mp0_mp1____>

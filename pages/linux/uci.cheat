@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/uci.md
+
+% uci, linux
+
+# Fetch a value
+uci get <network_lan_ipaddr>
+
+# List all options and their values
+uci show <network>
+
+# Set a value
+uci set <config>.<section>.<option>=<value>
+
+# Add a new section
+uci add <config> <section>
+
+# Delete a section or value
+uci delete <config>.<section>.<option>
+
+# Commit changes
+uci commit <config>
+
+# Discard uncommitted changes
+uci revert <config>
+
+# Display help
+uci

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mhwd-gpu.md
+
+% mhwd-gpu, linux
+
+# Show current Xorg configuration path
+mhwd-gpu --status
+
+# Check if Xorg configuration has a valid symlink
+mhwd-gpu --check
+
+# Set a custom Xorg configuration for an Nvidia GPU
+sudo mhwd-gpu --setmod nvidia --setxorg /<path_to_nvidia_conf>
+
+# Set a custom Xorg configuration for an AMD GPU
+sudo mhwd-gpu --setmod <catalyst_ati> --setxorg /<path_to_amdgpu_conf>
+
+# Display help
+mhwd-gpu --help

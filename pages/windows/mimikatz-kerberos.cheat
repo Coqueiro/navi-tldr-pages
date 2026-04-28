@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-kerberos.md
+
+% mimikatz-kerberos, windows
+
+# List current Kerberos tickets
+mimikatz "kerberos::list"
+
+# Purge all Kerberos tickets
+mimikatz "kerberos::purge"
+
+# Inject a ticket from a `.kirbi` file
+mimikatz "kerberos::ptt ticket.kirbi"

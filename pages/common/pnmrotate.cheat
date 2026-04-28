@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pnmrotate.md
+
+% pnmrotate, common
+
+# Rotate a PNM image by some angle (measured in degrees, counter-clockwise)
+pnmrotate <angle> <path_to_input_pnm> > <path_to_output_pnm>
+
+# Specify the background color exposed by rotating the input image
+pnmrotate {{[-b|-background]}} <color> <angle> <path_to_input_pnm> > <path_to_output_pnm>
+
+# Disable anti-aliasing, improving performance but decreasing quality
+pnmrotate {{[-n|-noantialias]}} <angle> <path_to_input_pnm> > <path_to_output_pnm>

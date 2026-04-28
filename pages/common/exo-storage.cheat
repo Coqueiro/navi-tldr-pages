@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/exo-storage.md
+
+% exo-storage, common
+
+# Create a new SOS bucket
+exo storage mb <bucket_name>
+
+# Upload a file to a bucket
+exo storage put <path_to_file> <bucket_name>/<prefix_>
+
+# List the objects within a bucket
+exo storage ls <bucket_name>
+
+# Simulate the download of an object from a bucket
+exo storage get <bucket_name>/<object_key> <local_path> --dry-run
+
+# Manage the metadata of an object
+exo storage metadata add <bucket_name>/<object_key> <key_value>

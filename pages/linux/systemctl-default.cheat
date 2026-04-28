@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-default.md
+
+% systemctl-default, linux
+
+# Enter default mode as a blocking operation
+systemctl default
+
+# Enter default mode as asynchronous operation
+systemctl default --no-block

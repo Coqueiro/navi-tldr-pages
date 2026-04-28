@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/alr-help.md
+
+% alr-help, common
+
+# Display top-level help and list all available commands
+alr help
+
+# Display help for a specific subcommand
+alr help <subcommand>
+
+# Show the rules for how crate names and versions must be formatted
+alr help identifiers

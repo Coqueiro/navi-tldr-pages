@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/plasma-apply-desktoptheme.md
+
+% plasma-apply-desktoptheme, linux
+
+# List available desktop themes
+plasma-apply-desktoptheme --list-themes
+
+# Apply a desktop theme
+plasma-apply-desktoptheme <default>
+
+# Display help
+plasma-apply-desktoptheme --help

@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/minidlna.md
+
+% minidlna, common
+
+# Start the MiniDLNA daemon using the default configuration at `/etc/minidlna.conf`
+minidlna
+
+# Start MiniDLNA with a specific configuration file
+minidlna -f <path_to_minidlna_conf>
+
+# Force a database rescan on startup
+minidlna -R
+
+# Run MiniDLNA in the foreground (useful for debugging)
+minidlna -d
+
+# Enable verbose debug output
+minidlna -d -v
+
+# Specify a custom media directory (overrides config)
+minidlna -m <path_to_media>
+
+# Specify a custom database directory
+minidlna -P <path_to_pidfile>
+
+# Specify a custom log file path
+minidlna -l <path_to_logfil_log>

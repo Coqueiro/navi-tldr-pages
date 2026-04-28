@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/i2cget.md
+
+% i2cget, linux
+
+# Read from a register of an I2C device
+i2cget <i2cbus> <device_address> <register_address>
+
+# Read from a register of an I2C device without asking for confirmation
+i2cget -y <i2cbus> <device_address> <register_address>
+
+# Read from a register of an I2C device using a specific mode
+i2cget <i2cbus> <device_address> <register_address> <b_w_c_s_i>

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pip-config.md
+
+% pip-config, common
+
+# List all configuration values
+pip config list
+
+# Show configuration files and their values
+pip config debug
+
+# Set the value for a command option
+pip config set <command_option> <value> <__global___user___site>
+
+# Get the value for a command option
+pip config get <command_option> <__global___user___site>
+
+# Unset the value for a command option
+pip config unset <command_option> <__global___user___site>
+
+# Edit the configuration file with the default editor
+pip config edit <__global___user___site>
+
+# Edit the configuration file with a specific editor
+pip config edit <__global___user___site> --editor <path_to_editor_binary>

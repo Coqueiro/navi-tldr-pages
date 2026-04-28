@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ludusavi.md
+
+% ludusavi, common
+
+# Backup games
+ludusavi backup --path <path_to_backup>
+
+# Restore games
+ludusavi restore --path <path_to_backup> {{"game1" "game2" ...}}
+
+# List backups
+ludusavi backups --path <path_to_backup>
+
+# Wrap launcher game
+ludusavi wrap --gui --infer <heroic_lutris_steam> -- <game_launch_commands>
+
+# Wrap standalone game
+ludusavi wrap --gui --name <name> -- <game_launch_commands>

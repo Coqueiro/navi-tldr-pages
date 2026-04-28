@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ng-build.md
+
+% ng-build, common
+
+# Build an Angular application or library
+ng {{[b|build]}}
+
+# Specify the output path relative to the workspace root
+ng {{[b|build]}} --output-path <path_to_directory>
+
+# Enable Ahead-of-Time (AOT) compilation
+ng {{[b|build]}} --aot
+
+# Show build progress in the console
+ng {{[b|build]}} --progress
+
+# Display additional verbose output during the build
+ng {{[b|build]}} --verbose
+
+# Automatically clear the terminal screen during rebuilds
+ng {{[b|build]}} --clear-screen
+
+# Rebuild automatically when source files change
+ng {{[b|build]}} --watch

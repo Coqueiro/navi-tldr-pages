@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-add-requires.md
+
+% systemctl-add-requires, linux
+
+# Add a `Requires` dependency from a target to a unit
+systemctl add-requires <target> <unit>
+
+# Add multiple `Requires` dependencies at once
+systemctl add-requires <target> {{unit1 unit2 ...}}
+
+# Add a user-level `Requires` dependency
+systemctl add-requires <target> <unit> --user

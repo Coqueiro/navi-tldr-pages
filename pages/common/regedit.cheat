@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/regedit.md
+
+% regedit, common
+
+# Export a specific registry key and contents to a file
+regedit -E <path_to_file> <path_to_registry_key>
+
+# Delete a specified registry key
+regedit -D <path_to_registry_key>
+
+# Open the graphical registry manager
+regedit
+
+# Display help
+regedit -?

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gh-a11y.md
+
+% gh-a11y, common
+
+# View documentation for the original command
+tldr gh accessibility

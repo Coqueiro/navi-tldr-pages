@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-show-environment.md
+
+% systemctl-show-environment, linux
+
+# Display the environment block for the system
+systemctl show-environment
+
+# Display the environment block for the current user
+systemctl show-environment --user

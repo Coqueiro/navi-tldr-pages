@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/npm-ping.md
+
+% npm-ping, common
+
+# Ping the default `npm` registry
+npm ping
+
+# Ping custom `npm` registry
+npm ping --registry <custom_registry_url>

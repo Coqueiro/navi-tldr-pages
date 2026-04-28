@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-net.md
+
+% mimikatz-net, windows
+
+# List domain users
+mimikatz "net::users"
+
+# List domain computers
+mimikatz "net::computers"
+
+# Retrieve domain controller information
+mimikatz "net::domaincontrollers"

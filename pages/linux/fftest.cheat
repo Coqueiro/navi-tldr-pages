@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/fftest.md
+
+% fftest, linux
+
+# Open `fftest` on an event
+fftest <_dev_input_eventX>

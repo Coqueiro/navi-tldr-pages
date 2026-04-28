@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/counter-strike-2.md
+
+% counter-strike-2, linux
+
+# Run a game with one map
+<path_to>/cs2 -dedicated +map <de_dust2>
+
+# Run a game with specified maximum number of players
+<path_to>/cs2 -dedicated +map <de_dust2> -maxplayers <64>
+
+# Run a game with specified server IP and port
+<path_to>/cs2 -dedicated +map <de_dust2> -ip <1_2_3_4> -port <27015>
+
+# [Interactive] Shut the server down
+quit

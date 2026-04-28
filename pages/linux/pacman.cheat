@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacman.md
+
+% pacman, linux
+
+# [S]ynchronize and update all packages
+sudo pacman -Syu
+
+# Install a new package
+sudo pacman -S <package>
+
+# [R]emove a package and its dependencies
+sudo pacman -Rs <package>
+
+# Search ([s]) the package database for a `regex` or keyword
+pacman -Ss "<search_pattern>"
+
+# Search the database for packages containing a specific [F]ile
+pacman -F "<file_name>"
+
+# List only the [e]xplicitly installed packages and versions
+pacman -Qe
+
+# List orphan packages (installed as [d]ependencies but not actually required by any package)
+pacman -Qtdq
+
+# Empty the entire `pacman` cache
+sudo pacman -Scc

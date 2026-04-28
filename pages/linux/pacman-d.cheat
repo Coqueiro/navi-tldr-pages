@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacman-d.md
+
+% pacman-d, linux
+
+# View documentation for the original command
+tldr pacman database

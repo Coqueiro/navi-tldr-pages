@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dialog.md
+
+% dialog, linux
+
+# Display a message
+dialog --msgbox "<Message>" <height> <width>
+
+# Prompt the user for text
+dialog --inputbox "{{Enter text:}}" <8> <40> 2><output_txt>
+
+# Prompt the user for a yes/no question
+dialog --yesno "<Continue_>" <7> <40>
+
+# Display help
+dialog

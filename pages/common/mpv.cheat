@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mpv.md
+
+% mpv, common
+
+# Play a video or audio from a URL or file
+mpv <url_path_to_file>
+
+# Jump backward/forward 5 seconds
+<_ArrowLeft___ArrowRight_>
+
+# Jump backward/forward 1 minute
+<_ArrowDown___ArrowUp_>
+
+# Decrease or increase playback speed by 10%
+{{<[>|<]>}}
+
+# Add subtitles from a file
+mpv --sub-file=<path_to_file>
+
+# Take a screenshot of the current frame (saved to `mpv-shotNNNN.jpg` by default)
+<s>
+
+# Play a file at a specified speed (1 by default)
+mpv --speed <0_01__100> <path_to_file>
+
+# Play a file using a profile defined in the `mpv.conf` file
+mpv --profile <profile_name> <path_to_file>

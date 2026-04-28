@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mvn-generate-sources.md
+
+% mvn-generate-sources, common
+
+# Run all lifecycle phases up to `generate-sources`
+mvn generate-sources
+
+# Run the next phase to generate resources
+mvn generate-resources
+
+# Clean and regenerate sources
+mvn clean generate-sources

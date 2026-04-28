@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/es.md
+
+% es, windows
+
+# Search for a file or folder by name
+es <search_term>
+
+# Search using a `regex`
+es -r <regex>
+
+# Match whole words
+es -w <search_term>
+
+# Limit the number of results shown
+es -n <10> <search_term>
+
+# Search within a specific folder
+es -path <folder_path> <search_term>
+
+# List folders only
+es /ad
+
+# List files only
+es /a-d
+
+# Sort results (e.g., by name)
+es -sort <name_ascending>

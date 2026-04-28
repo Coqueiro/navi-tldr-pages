@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/nmcli-agent.md
+
+% nmcli-agent, linux
+
+# Register `nmcli` as a secret agent and listen for secret requests
+nmcli {{[a|agent]}} {{[s|secret]}}
+
+# Register `nmcli` as a polkit agent and listen for authorization requests
+nmcli {{[a|agent]}} {{[p|polkit]}}
+
+# Register `nmcli` as a secret agent and a polkit agent
+nmcli {{[a|agent]}} {{[a|all]}}

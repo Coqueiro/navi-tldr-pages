@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/xdelta3.md
+
+% xdelta3, common
+
+# Create a patch ([e]ncode) based on a [s]ource file
+xdelta3 -e -s <path_to_old_file> <path_to_new_file> <path_to_patch_file>
+
+# Apply a patch ([d]ecompress) to a [s]ource file
+xdelta3 -d -s <path_to_old_file> <path_to_patch_file> <path_to_new_file>
+
+# Create a patch with a specific compression level
+xdelta3 -<0__9> -s <path_to_old_file> <path_to_new_file> <path_to_patch_file>

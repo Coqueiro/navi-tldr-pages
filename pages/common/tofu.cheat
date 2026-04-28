@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tofu.md
+
+% tofu, common
+
+# Initialize a new or existing OpenTofu configuration
+tofu init
+
+# Verify that the configuration files are syntactically valid
+tofu validate
+
+# Format configuration according to OpenTofu language style conventions
+tofu fmt
+
+# Generate and show an execution plan
+tofu plan
+
+# Build or change infrastructure
+tofu apply
+
+# Destroy Tofu-managed infrastructure
+tofu destroy

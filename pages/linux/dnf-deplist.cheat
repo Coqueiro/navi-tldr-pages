@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf-deplist.md
+
+% dnf-deplist, linux
+
+# View documentation for the original command
+tldr dnf repoquery

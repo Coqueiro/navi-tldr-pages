@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ng-cache.md
+
+% ng-cache, common
+
+# Delete the persistent disk cache
+ng cache clean
+
+# Disable the persistent disk cache for all projects in the workspace
+ng cache {{[off|disable]}}
+
+# Enable the persistent disk cache for all projects in the workspace
+ng cache {{[on|enable]}}
+
+# Print persistent disk cache configuration and statistics
+ng cache info

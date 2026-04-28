@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/fbgrab.md
+
+% fbgrab, linux
+
+# Generate a screenshot from the current TTY
+sudo fbgrab <path_to_file>.png
+
+# Specify which TTY to capture
+sudo fbgrab -c <number> <path_to_file>.png

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-force-reload.md
+
+% systemctl-force-reload, linux
+
+# View documentation for the original command
+tldr systemctl try-reload-or-restart

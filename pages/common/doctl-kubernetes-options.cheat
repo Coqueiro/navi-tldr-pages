@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/doctl-kubernetes-options.md
+
+% doctl-kubernetes-options, common
+
+# List regions that support Kubernetes clusters
+doctl {{[k|kubernetes]}} {{[o|options]}} {{[r|regions]}}
+
+# List machine sizes that can be used in a Kubernetes cluster
+doctl {{[k|kubernetes]}} {{[o|options]}} {{[s|sizes]}}
+
+# List Kubernetes versions that can be used with DigitalOcean clusters
+doctl {{[k|kubernetes]}} {{[o|options]}} {{[v|versions]}}

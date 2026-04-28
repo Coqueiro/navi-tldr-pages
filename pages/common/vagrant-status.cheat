@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vagrant-status.md
+
+% vagrant-status, common
+
+# View status of the machines in the current directory
+vagrant status
+
+# Target a machine by name or ID
+vagrant status <name_id>

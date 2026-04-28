@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gst-launch-1.0-v4l2src.md
+
+% gst-launch-1.0-v4l2src, linux
+
+# View video in a window
+gst-launch-1.0 v4l2src device=<_dev_video0> ! autovideosink
+
+# Create a PipeWire node out of a v4l2 device
+gst-launch-1.0 v4l2src device=<_dev_video0> ! videoconvert ! pipewiresink mode=provide stream-properties="properties,media.class=Video/Source" client-name="{{Virtual Camera}}"

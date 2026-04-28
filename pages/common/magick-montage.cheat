@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/magick-montage.md
+
+% magick-montage, common
+
+# Tile images into a grid, automatically resizing images larger than the grid cell size
+magick montage {{path/to/image1.jpg path/to/image2.jpg ...}} <path_to_montage_jpg>
+
+# Tile images into a grid, automatically calculating the grid cell size from the largest image
+magick montage {{path/to/image1.jpg path/to/image2.jpg ...}} -geometry <_0_0> <path_to_montage_jpg>
+
+# Specify the grid cell size and resize images to fit it before tiling
+magick montage {{path/to/image1.jpg path/to/image2.jpg ...}} -geometry <640x480_0_0> <path_to_montage_jpg>
+
+# Limit the number of rows and columns in the grid, causing input images to overflow into multiple output montages
+magick montage {{path/to/image1.jpg path/to/image2.jpg ...}} -geometry <_0_0> -tile <2x3> <montage__d_jpg>
+
+# Resize and crop images to fill their grid cells before tiling
+magick montage {{path/to/image1.jpg path/to/image2.jpg ...}} -geometry <_0_0> -resize <640x480_> -gravity <center> -crop <640x480_0_0> <path_to_montage_jpg>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-console.md
+
+% pct-console, linux
+
+# Attach to a terminal
+pct console <100>
+
+# Detach from a terminal
+<Ctrl a><q>

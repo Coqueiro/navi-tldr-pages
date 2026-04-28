@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-rerere.md
+
+% git-rerere, common
+
+# Enable rerere globally
+git config --global rerere.enabled true
+
+# Forget a file's recorded resolution
+git rerere forget <path_to_file>
+
+# Check the status of recorded resolutions
+git rerere status

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/unsetopt.md
+
+% unsetopt, common
+
+# List all currently unset options (use `setopt` to list set options)
+unsetopt
+
+# Unset a specific option
+unsetopt <option_name>
+
+# Unset multiple options at once
+unsetopt {{option_name1 option_name2 ...}}

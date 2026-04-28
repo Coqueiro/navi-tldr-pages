@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/trace-cmd-record.md
+
+% trace-cmd-record, linux
+
+# Record a trace with a specific plugin
+sudo trace-cmd record -p <plugin>
+
+# Record a trace of a specific executable
+sudo trace-cmd record -F <executable>
+
+# Record a trace of a specific function
+sudo trace-cmd record -g <function>
+
+# Exclude a specific function from the trace
+sudo trace-cmd record -n <function>
+
+# Limit the function call graph depth
+sudo trace-cmd record --max-graph-depth <depth>
+
+# Record a trace from a specific process ID
+sudo trace-cmd record -P <pid>

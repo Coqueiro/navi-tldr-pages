@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/pnputil.md
+
+% pnputil, windows
+
+# List all installed driver packages
+pnputil /enum-drivers
+
+# Install a driver package from an INF file
+pnputil /add-driver {{path\to\driver.inf}}
+
+# Add and install all INF files in a folder (including subdirectories)
+pnputil /add-driver {{path\to\folder\*.inf}} /subdirs
+
+# Delete a driver package using its published name
+pnputil /delete-driver <oemXX_inf>
+
+# Install a driver package using its published name
+pnputil /add-driver <oemXX_inf>
+
+# Export all driver packages to a folder
+pnputil /export-driver * {{path\to\folder}}
+
+# List all devices
+pnputil /enum-devices

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf-versionlock.md
+
+% dnf-versionlock, linux
+
+# List the current versionlock entries
+dnf versionlock
+
+# Add a versionlock for all available packages matching the spec
+dnf versionlock add <package>
+
+# Add an exclude (within versionlock) for the available packages matching the spec
+dnf versionlock exclude <package>
+
+# Remove any matching versionlock entries
+dnf versionlock delete <package>
+
+# Remove all versionlock entries
+dnf versionlock clear

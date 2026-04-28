@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-queue.md
+
+% gst-launch-1.0-queue, common
+
+# Separate a pipeline into multiple threads so that one blocking element doesn't block the rest
+gst-launch-1.0 <source> ! queue ! <sink>

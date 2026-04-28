@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-videotestsrc.md
+
+% gst-launch-1.0-videotestsrc, common
+
+# Produce a video with SMPTE color bars
+gst-launch-1.0 videotestsrc ! <autovideosink>
+
+# Define what type of test video to produce
+gst-launch-1.0 videotestsrc pattern=<smpte_snow_green_ball_circular____> ! <autovideosink>

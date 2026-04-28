@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/poetry-search.md
+
+% poetry-search, common
+
+# Search for a package
+poetry search <package_name>
+
+# Search for multiple packages
+poetry search {{package1 package2 ...}}

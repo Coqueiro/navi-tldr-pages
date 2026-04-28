@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rlog.md
+
+% rlog, common
+
+# Display the complete revision history of a file
+rlog <path_to_file>
+
+# Display only the header information (no revision details)
+rlog -h <path_to_file>
+
+# Display information for a specific revision
+rlog -r<revision> <path_to_file>
+
+# Display revisions within a date range
+rlog -d"<start_date><<end_date>" <path_to_file>
+
+# Display revisions by a specific author
+rlog -w<author> <path_to_file>

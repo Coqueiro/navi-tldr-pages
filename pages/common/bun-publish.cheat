@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/bun-publish.md
+
+% bun-publish, common
+
+# Publish the current package to the npm registry
+bun publish
+
+# Publish a package from a specific directory
+bun publish <path_to_package_directory>
+
+# Publish a scoped package with specific access level
+bun publish --access <public_restricted>
+
+# Publish a package to a custom registry
+bun publish --registry <registry>
+
+# Run a dry run to see what would be published without uploading
+bun publish --dry-run
+
+# Publish a package with a specific distribution tag
+bun publish --tag <tag_name>
+
+# Publish with a one-time password for 2FA-enabled accounts
+bun publish --otp <one_time_password>
+
+# Publish using a specific authentication type
+bun publish --auth-type <web_legacy>

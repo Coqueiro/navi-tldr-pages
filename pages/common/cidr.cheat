@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/cidr.md
+
+% cidr, common
+
+# Explain a CIDR range
+cidr explain <10_0_0_0_16>
+
+# Check whether an address belongs to a CIDR range
+cidr contains <10_0_0_0_16> <10_0_14_5>
+
+# Get a count of all addresses in a CIDR range
+cidr count <10_0_0_0_16>
+
+# Check whether two CIDR ranges overlap
+cidr overlaps <10_0_0_0_16> <10_0_14_0_22>
+
+# Divide a CIDR range into a specific number of networks
+cidr divide <10_0_0_0_16> <9>

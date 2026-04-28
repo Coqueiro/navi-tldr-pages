@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/ren.md
+
+% ren, windows
+
+# View documentation for the original command
+tldr Rename-Item

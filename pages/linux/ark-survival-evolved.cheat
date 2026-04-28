@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ark-survival-evolved.md
+
+% ark-survival-evolved, linux
+
+# Start the server with a specific map
+<path_to>/ShooterGameServer <TheIsland>
+
+# Start the server with a specific session name, server password, and admin password
+<path_to>/ShooterGameServer <TheIsland>?SessionName=<session_name>?ServerPassword=<server_password>?ServerAdminPassword=<admin_password>
+
+# Start the server with a specific port and set a maximum player count
+<path_to>/ShooterGameServer <TheIsland>?Port=<7777>?MaxPlayers=<1__70>
+
+# Enable PvE and disabling PvP
+<path_to>/ShooterGameServer <TheIsland>?ServerPVE=true
+
+# Set a multiplier to scale the server difficulty, affecting the maximum level of wild creatures
+<path_to>/ShooterGameServer <TheIsland>?DifficultyOffset=<1_0>
+
+# Enable a specific event
+<path_to>/ShooterGameServer <TheIsland> -ActiveEvent=<Summer>
+
+# Enable automatic mod downloading, installation, and updating (Steam only)
+<path_to>/ShooterGameServer <TheIsland> -automanagedmods
+
+# Enable crossplay between Steam and Epic Games Store
+<path_to>/ShooterGameServer <TheIsland> -crossplay -PublicIPForEpic=<ip_address>

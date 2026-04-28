@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/asciiquarium.md
+
+% asciiquarium, common
+
+# Start `asciiquarium`
+asciiquarium
+
+# Pipe the output through `lolcat` for rainbow colors
+asciiquarium | lolcat
+
+# Toggle [p]ause
+<p>
+
+# [r]edraw aquarium and all entities
+<r>
+
+# Exit `asciiquarium`
+<q>

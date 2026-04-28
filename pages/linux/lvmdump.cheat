@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lvmdump.md
+
+% lvmdump, linux
+
+# Generate a basic dump
+lvmdump
+
+# Generate an extended dump with metadata and daemon info
+lvmdump -a -l -m
+
+# Dump the information into a directory instead of a tarball
+lvmdump -d <path_to_directory>
+
+# Display help
+lvmdump -h

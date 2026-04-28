@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pacreport.md
+
+% pacreport, linux
+
+# Generate a summary of installed packages
+pacreport
+
+# List unowned files
+pacreport --unowned-files
+
+# List missing package files
+pacreport --missing-files
+
+# Search for unmerged backup files (i.e. `.pacnew`, `.pacsave`) in `/etc`
+pacreport --backups
+
+# Display packages in a specific group that are not currently installed
+pacreport --group <group_name>

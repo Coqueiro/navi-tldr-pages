@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mkinitfs.md
+
+% mkinitfs, linux
+
+# Generate an initramfs with the features specified in `/etc/mkinitfs/mkinitfs.conf`
+mkinitfs
+
+# Use a different configuration file
+mkinitfs -c <path_to_config>
+
+# Compress the initramfs using the specified compression algorithm (default: gzip)
+mkinitfs -C <gzip_xz_zstd_lz4_none>
+
+# List files that will be included in the initramfs image
+mkinitfs -l
+
+# List all available features
+mkinitfs -L

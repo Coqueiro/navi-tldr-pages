@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mkfs.ext4.md
+
+% mkfs.ext4, linux
+
+# Create an ext4 filesystem inside partition Y on device X
+sudo mkfs.ext4 <_dev_sdXY>
+
+# Create an ext4 filesystem with a volume-label
+sudo mkfs.ext4 -L <volume_label> <_dev_sdXY>
+
+# Create an ext4 filesystem owned by a specific user and group
+sudo mkfs.ext4 -E root_owner=<uid>:<gid> <_dev_sdXY>

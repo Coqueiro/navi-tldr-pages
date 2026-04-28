@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dump.exfat.md
+
+% dump.exfat, linux
+
+# Print on-disk information for a given filesystem
+dump.exfat <_dev_sdXY>

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cuyo.md
+
+% cuyo, linux
+
+# Start a new game
+cuyo
+
+# Navigate the piece horizontally
+<_a___d___ArrowLeft___ArrowRight_>
+
+# Turn the piece
+<_w___ArrowUp_>
+
+# Hard drop the piece
+<_s___ArrowDown_>

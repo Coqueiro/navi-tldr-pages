@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/unzipsfx.md
+
+% unzipsfx, linux
+
+# Create a self-extracting binary file of a Zip archive
+cat $(which unzipsfx) <path_to_archive_zip> > <filename> && chmod 755 <filename>
+
+# Extract a self-extracting binary in the current directory
+<__path_to_binary>
+
+# Test a self-extracting binary for errors
+<__path_to_binary> -t
+
+# Print content of a file in the self-extracting binary without extraction
+<__path_to_binary> -c <path_to_file>
+
+# Print comments on Zip archive in the self-extracting binary
+<__path_to_binary> -z

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cdrecord.md
+
+% cdrecord, linux
+
+# Display optical drives available to `cdrecord`
+cdrecord --devices
+
+# Record ("burn") an audio-only disc
+cdrecord dev=<_dev_optical_drive> -audio {{track*.cdaudio}}
+
+# Burn a file to a disc, ejecting the disc once done (some recorders require this)
+cdrecord -eject dev=<_dev_optical_drive> -data <file_iso>
+
+# Burn a file to the disc in an optical drive, potentially writing to multiple discs in succession
+cdrecord -tao dev=<_dev_optical_drive> -data <file_iso>

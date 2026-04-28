@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/palworld.md
+
+% palworld, linux
+
+# Start the server with default settings
+<path_to>/PalServer.sh
+
+# Start the server with a specific port and set a maximum player count
+<path_to>/PalServer.sh -port=<8211> -players=<1__32>
+
+# Start a public lobby server
+<path_to>/PalServer.sh -publiclobby
+
+# Start the server with performance optimizations for multi-threaded CPUs
+<path_to>/PalServer.sh -useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS
+
+# Start the server with a specific public IP and port for community servers
+<path_to>/PalServer.sh -publicip=<ip_address> -publicport=<port>

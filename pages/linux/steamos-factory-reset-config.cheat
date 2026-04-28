@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/steamos-factory-reset-config.md
+
+% steamos-factory-reset-config, linux
+
+# Generate factory reset configuration data
+steamos-factory-reset-config

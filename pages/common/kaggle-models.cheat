@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kaggle-models.md
+
+% kaggle-models, common
+
+# Get a model
+kaggle {{[m|models]}} get "<model_name>"
+
+# List all models
+kaggle {{[m|models]}} list
+
+# Initialize metadata file for model creation
+kaggle {{[m|models]}} init
+
+# Create a new model
+kaggle {{[m|models]}} create
+
+# Delete a model
+kaggle {{[m|models]}} delete "<model_name>"
+
+# Update a model
+kaggle {{[m|models]}} update

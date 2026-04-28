@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/togglesebool.md
+
+% togglesebool, linux
+
+# Flip the current (non-persistent) values of the specified booleans
+sudo togglesebool <virt_use_samba_virt_use_usb____>
+
+# Flip multiple booleans
+sudo togglesebool {{key1 key2 ...}}

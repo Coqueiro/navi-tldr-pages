@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/rtmon.md
+
+% rtmon, linux
+
+# Save all network state changes to a file
+sudo rtmon {{[f|file]}} <path_to_file>
+
+# Specify the type of change to log
+sudo rtmon {{[f|file]}} <link_address_route>
