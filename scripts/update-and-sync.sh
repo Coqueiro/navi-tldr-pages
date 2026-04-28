@@ -32,10 +32,12 @@ fi
 NAVI_CHEATS_DIR="${HOME}/Library/Application Support/navi/cheats/Coqueiro__navi-tldr-pages"
 echo "Syncing cheat files to ${NAVI_CHEATS_DIR}..."
 mkdir -p "${NAVI_CHEATS_DIR}"
-# Flatten directory structure: pages/common/foo.cheat -> pages__common__foo.cheat
+# Clear old files and flatten: pages/common/foo.cheat -> pages__common__foo.cheat
+rm -rf "${NAVI_CHEATS_DIR}"
+mkdir -p "${NAVI_CHEATS_DIR}"
 find "${REPO_DIR}/pages" "${REPO_DIR}/personal_pages" -name '*.cheat' 2>/dev/null | while read -r src; do
   rel="${src#"${REPO_DIR}/"}"
-  flat="$(echo "$rel" | tr '/' '__')"
+  flat="$(echo "$rel" | sed 's|/|__|g')"
   cp "$src" "${NAVI_CHEATS_DIR}/${flat}"
 done
 echo "Synced $(ls "${NAVI_CHEATS_DIR}" | wc -l | tr -d ' ') cheat files."
