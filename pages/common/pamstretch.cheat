@@ -3,4 +3,8 @@
 
 % pamstretch, common
 
+# Scale up a PAM image by an integer factor
+pamstretch <n> <path_to_image_pam> > <path_to_output_pam>
 
+# Scale up a PAM image by the specified factors in the horizontal and vertical directions
+pamstretch {{[-x|-xscale]}} <xn> {{[-y|-yscale]}} <yn> <path_to_image_pam> > <path_to_output_pam>

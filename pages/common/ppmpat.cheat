@@ -3,4 +3,8 @@
 
 % ppmpat, common
 
+# Produce a PPM file of the specified pattern with the specified dimensions
+ppmpat -<gingham2_gingham3_madras_tartan_poles____> <width> <height> > <path_to_file_ppm>
 
+# Produce a PPM file of a camo pattern using the specified colors
+ppmpat {{[-ca|-camo]}} {{[-co|-color]}} <color1_color2____> <width> <height> > <path_to_file_ppm>

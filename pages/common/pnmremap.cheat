@@ -3,4 +3,14 @@
 
 % pnmremap, common
 
+# Replace the colors in an image with those in the specified color palette
+pnmremap {{[-ma|-mapfile]}} <path_to_palette_file_ppm> <path_to_input_pnm> > <path_to_output_pnm>
 
+# Use Floyd-Steinberg dithering for representing colors missing in the color palette
+pnmremap {{[-ma|-mapfile]}} <path_to_palette_file_ppm> {{[-fs|-floyd]}} <path_to_input_pnm> > <path_to_output_pnm>
+
+# Use the first color in the palette for representing colors missing in the color palette
+pnmremap {{[-ma|-mapfile]}} <path_to_palette_file_ppm> {{[-fi|-firstisdefault]}} <path_to_input_pnm> > <path_to_output_pnm>
+
+# Use the specified color for representing colors missing in the color palette
+pnmremap {{[-ma|-mapfile]}} <path_to_palette_file_ppm> {{[-m|-missingcolor]}} <color> <path_to_input_pnm> > <path_to_output_pnm>

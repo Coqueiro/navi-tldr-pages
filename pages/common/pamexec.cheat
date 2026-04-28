@@ -3,4 +3,8 @@
 
 % pamexec, common
 
+# Execute a shell command on each image in a Netpbm file
+pamexec <command> <path_to_image_pam>
 
+# Stop processing if a command terminates with a nonzero exit status
+pamexec <command> <path_to_image_pam> {{[-c|-check]}}

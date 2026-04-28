@@ -3,4 +3,11 @@
 
 % pnmscalefixed, common
 
+# Scale an image such that the result has the specified dimensions
+pnmscalefixed {{[-w|-width]}} <width> {{[-h|-height]}} <height> <path_to_input_pnm> > <path_to_output_pnm>
 
+# Scale an image such that the result has the specified width, keeping the aspect ratio
+pnmscalefixed {{[-w|-width]}} <width> <path_to_input_pnm> > <path_to_output_pnm>
+
+# Scale an image such that its width and height is changed by the specified factors
+pnmscalefixed {{[-xsc|-xscale]}} <x_factor> {{[-ysc|-yscale]}} <y_factor> <path_to_input_pnm> > <path_to_output_pnm>

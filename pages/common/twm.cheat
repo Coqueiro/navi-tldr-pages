@@ -3,4 +3,17 @@
 
 % twm, common
 
+# Connect to the default X server
+twm
 
+# Connect to a specific X server
+twm {{[-d|-display]}} <display>
+
+# Only manage the default screen
+twm {{[-s|-single]}}
+
+# Use a specific startup file
+twm {{[-f|-file]}} <path_to_file>
+
+# Enable verbose mode and print unexpected errors in X
+twm {{[-v|-verbose]}}

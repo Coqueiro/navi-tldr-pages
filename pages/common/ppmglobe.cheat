@@ -3,4 +3,8 @@
 
 % ppmglobe, common
 
+# Transform an image to strips that can be cut out and glues onto a sphere
+ppmglobe <number_of_strips> <path_to_image_ppm> > <path_to_output_ppm>
 
+# Use the specified color for the areas between the strips
+ppmglobe {{[-b|-background]}} <red> <number_of_strips> <path_to_image_ppm> > <path_to_output_ppm>

@@ -3,4 +3,11 @@
 
 % xwdtopnm, common
 
+# Convert a XWD image file to PBM
+xwdtopnm <path_to_input_file_xwd> > <path_to_output_file_pnm>
 
+# Display information about the conversion process
+xwdtopnm {{[-verb|-verbose]}} <path_to_input_file_xwd> > <path_to_output_file_pnm>
+
+# Display the contents of the X11 header of the input file
+xwdtopnm {{[-h|-headerdump]}} <path_to_input_file_xwd> > <path_to_output_file_pnm>

@@ -3,4 +3,8 @@
 
 % pnmsmooth, common
 
+# Smooth out a PNM image using a convolution matrix of size 3x3
+pnmsmooth <path_to_input_pnm> > <path_to_output_pnm>
 
+# Smooth out a PNM image using a convolution matrix of size width times height
+pnmsmooth {{[-w|-width]}} <width> {{[-h|-height]}} <height> <path_to_input_pnm> > <path_to_output_pnm>

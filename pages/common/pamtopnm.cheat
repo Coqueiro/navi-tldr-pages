@@ -3,4 +3,8 @@
 
 % pamtopnm, common
 
+# Convert a PAM image to an equivalent PNM image, i.e. a PBM, PGM, or PPM image
+pamtopnm <path_to_image_pam> > <path_to_output_pbm_pgm_ppm>
 
+# Display version
+pamtopnm {{[-v|-version]}}

@@ -3,4 +3,5 @@
 
 % ppmcolormask, common
 
-
+# Produce a mask of areas of a certain color in the specified PPM image
+ppmcolormask {{[-c|-color]}} <red_blue> <path_to_input_ppm> > <path_to_output_pbm>

@@ -3,4 +3,11 @@
 
 % pamtotiff, common
 
+# Convert a PAM image to a TIFF image
+pamtotiff <path_to_input_file_pam> > <path_to_output_file_tiff>
 
+# Explicitly specify a compression method for the output file
+pamtotiff -<none_packbits_lzw_g3_g4_flate_adobeflate> <path_to_input_file_pam> > <path_to_output_file_tiff>
+
+# Always produce a color TIFF image, even if the input image is greyscale
+pamtotiff {{[-c|-color]}} <path_to_input_file_pam> > <path_to_output_file_tiff>

@@ -3,4 +3,8 @@
 
 % sldtoppm, common
 
+# Convert an SLD file to a PPM image
+sldtoppm <path_to_input_sld> > <path_to_output_ppm>
 
+# Compensate for non-square pixels by scaling the width of the image
+sldtoppm {{[-a|-adjust]}} <path_to_input_sld> > <path_to_output_ppm>

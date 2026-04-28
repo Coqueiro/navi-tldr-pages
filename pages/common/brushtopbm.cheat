@@ -3,4 +3,8 @@
 
 % brushtopbm, common
 
+# Generate a PBM file as output for a Xerox doodle brush file as input
+brushtopbm <path_to_file_brush>
 
+# Display version
+brushtopbm {{[-v|-version]}}

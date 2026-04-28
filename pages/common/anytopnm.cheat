@@ -3,4 +3,8 @@
 
 % anytopnm, common
 
+# Convert an input image to PBM, PGM, or PPM format irrespective of the input type
+anytopnm <path_to_input> > <path_to_output_pnm>
 
+# Display version
+anytopnm {{[-v|-version]}}

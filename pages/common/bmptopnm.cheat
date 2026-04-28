@@ -3,4 +3,11 @@
 
 % bmptopnm, common
 
+# Generate the PBM, PGM, or PNM image as output, for Windows or OS/2 BMP file as input
+bmptopnm <path_to_file_bmp>
 
+# Report contents of the BMP header to `stderr`
+bmptopnm {{[-verb|-verbose]}} <path_to_file_bmp>
+
+# Display version
+bmptopnm {{[-v|-version]}}

@@ -3,4 +3,8 @@
 
 % pamshadedrelief, common
 
+# Generate a shaded relief image with the input image interpreted as an elevation map
+pamshadedrelief < <path_to_input_pam> > <path_to_output_pam>
 
+# Gamma adjust the image by the specified factor
+pamshadedrelief < <path_to_input_pam> {{[-g|-gamma]}} <factor> > <path_to_output_pam>
