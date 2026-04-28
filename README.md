@@ -23,7 +23,21 @@ Manual update:
 Automated update (local):
 - A macOS `launchd` agent runs `scripts/update-and-sync.sh` every Monday at 09:00
 - It pulls tldr, translates, commits + pushes if changes exist, and syncs cheat files to navi's local cheats directory
-- See `AGENTS.md` for management commands and known gotchas
+- Manage the agent with `launchctl`:
+  ```bash
+  # Reload after plist changes
+  launchctl unload ~/Library/LaunchAgents/com.lucas.navi-tldr-update.plist
+  launchctl load ~/Library/LaunchAgents/com.lucas.navi-tldr-update.plist
+
+  # Force a manual run
+  launchctl start com.lucas.navi-tldr-update
+
+  # Check status (second column = last exit code, 0 = success)
+  launchctl list | grep navi-tldr
+
+  # View logs
+  ls -lt logs/update-*.log | head -5
+  ```
 
 ### Creating personal cheatsheets
 - Edit pages under `personal_pages`
