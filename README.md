@@ -12,12 +12,18 @@ Please don't edit the `.cheat` files by hand.
 - run `navi` again
 
 ### Updating using this repo
+
+Manual update:
 - go to the project root
-- clone [tldr][tldr]
-- Alternatively, if you already have tldr cloned (to tldr folder, for example), pull changes ("cd tldr && git pull") 
+- clone [tldr][tldr] (or, if already cloned to `tldr/`, pull changes: `cd tldr && git pull`)
 - run `./scripts/translate`
-- git commit -m "Updates pages" && git push
+- `git commit -m "Updates pages" && git push`
 - run `navi repo add Coqueiro/navi-tldr-pages`
+
+Automated update (local):
+- A macOS `launchd` agent runs `scripts/update-and-sync.sh` every Monday at 09:00
+- It pulls tldr, translates, commits + pushes if changes exist, and syncs cheat files to navi's local cheats directory
+- See `AGENTS.md` for management commands and known gotchas
 
 ### Creating personal cheatsheets
 - Edit pages under `personal_pages`

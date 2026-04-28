@@ -66,6 +66,9 @@ Navi expects flat filenames with `__` as path separator: `pages__common__tar.che
 ### `scripts/translate` printf format string
 The `printf` on line 77 must use `%s` format, not inline variable expansion, because some tldr filenames (like `%.md`) are interpreted as printf format specifiers.
 
+### `scripts/translate` regex escaping in `sanitize_variables`
+The `sanitize_variables` function uses `sed` to replace `{{variable}}` placeholders with navi `<variable>` syntax. Variable names extracted from tldr pages can contain regex metacharacters (e.g. `[-c|--continue]`), which causes `sed` "RE error: invalid character range" if not escaped. The fix escapes `[][\/*.^$|` before the sed substitution. Without this, ~8,464 pages using the `{{[-flag|--long-flag]}}` pattern produce empty cheat files.
+
 ### `tldr/` is a plain clone, not a git submodule
 `git pull --ff-only` inside `tldr/` is the correct update method. Do not use `git submodule update`.
 
