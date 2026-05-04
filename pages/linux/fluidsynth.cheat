@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/fluidsynth.md
+
+% fluidsynth, linux
+
+# Play a MIDI file
+fluidsynth <_usr_share_soundfonts_soundfont_sf2> <path_to_file_midi>
+
+# Specify the audio driver
+fluidsynth <__a___audio_driver_> <pipewire_pulseaudio> <_usr_share_soundfonts_soundfont_sf2> <path_to_file_midi>
+
+# Display help
+fluidsynth <__h___help_>

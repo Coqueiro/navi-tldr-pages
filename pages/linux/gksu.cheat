@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gksu.md
+
+% gksu, linux
+
+# Run a command as a specific user
+gksu <__u___user_> <userid> <command>
+
+# Run the command while preserving the current environments
+gksu <__u___user_> <userid> <__k___preserve_env_> <command>
+
+# Force `gksu` to use `su` to run the command
+gksu <__u___user_> <userid> <__w___su_mode_> <command>
+
+# Force `gksu` to use `sudo` to run the command
+gksu <__u___user_> <userid> <__S___sudo_mode_> <command>
+
+# Output debug info for the given command
+gksu <__u___user_> <userid> <__d___debug_> <command>

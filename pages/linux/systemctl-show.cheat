@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-show.md
+
+% systemctl-show, linux
+
+# Show properties of the system service manager
+systemctl show
+
+# Show properties of the user service manager
+systemctl show --user
+
+# Show properties of a specific unit
+systemctl show <unit>
+
+# Show properties of a specific user unit
+systemctl show <unit> --user
+
+# Include empty properties in the list
+systemctl show <__a___all_>
+
+# Only show the specified properties
+systemctl show <unit> <__p___property_> <Wants_Conflicts____>

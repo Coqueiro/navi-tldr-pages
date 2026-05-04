@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-exec.md
+
+% pct-exec, linux
+
+# Launch a command in a container
+pct <_ex_exec_> <100> <command>
+
+# Open a Bash shell in a container
+pct <_ex_exec_> <100> bash
+
+# Pass arguments to the command
+pct <_ex_exec_> <100> -- <command> <arguments>

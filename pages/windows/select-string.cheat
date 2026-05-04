@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/select-string.md
+
+% select-string, windows
+
+# Search for a pattern within a file
+Select-String -Path "<path_to_file>" -Pattern '<search_pattern>'
+
+# Search for an exact string (disables `regex`)
+Select-String -SimpleMatch "<exact_string>" <path_to_file>
+
+# Search for pattern in all `.ext` files in current dir
+Select-String -Path "<__ext>" -Pattern '<search_pattern>'
+
+# Capture the specified number of lines before and after the line that matches the pattern
+Select-String --Context <2_3> "<search_pattern>" <path_to_file>
+
+# Search `stdin` for lines that do not match a pattern
+Get-Content <path_to_file> | Select-String --NotMatch "<search_pattern>"

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/choco-search.md
+
+% choco-search, windows
+
+# Search for a package
+choco search <query>
+
+# Search for a package locally
+choco search <query> --local-only
+
+# Only include exact matches in the results
+choco search <query> <__e___exact_>
+
+# Confirm all prompts automatically
+choco search <query> <__y___yes_>
+
+# Specify a custom source to search for packages in
+choco search <query> <__s___source_> <source_url_alias>
+
+# Provide a username and password for authentication
+choco search <query> <__u___user_> <username> <__p___password_> <password>

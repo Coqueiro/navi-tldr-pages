@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/android/pkg.md
+
+% pkg, android
+
+# Upgrade all installed packages
+pkg <_up_upgrade_>
+
+# List currently installed packages
+pkg <_list_i_list_installed_>
+
+# Install a package
+pkg <_i_install_> <package>
+
+# Uninstall a package
+pkg <_un_uninstall_> <package>
+
+# Reinstall a package
+pkg <_rei_reinstall_> <package>
+
+# Search for a package
+pkg <_se_search_> <package>
+
+# Show information about specific package
+pkg <_sh_show_> <package>
+
+# Display help
+pkg <_h_help_>

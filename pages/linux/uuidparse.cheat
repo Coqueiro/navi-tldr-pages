@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/uuidparse.md
+
+% uuidparse, linux
+
+# Parse the specified UUIDs, use a tabular output format
+uuidparse {{uuid1 uuid2 ...}}
+
+# Parse UUIDs from `stdin`
+<command> | uuidparse
+
+# Use the JSON output format
+uuidparse <__J___json_> {{uuid1 uuid2 ...}}
+
+# Do not print a header line
+uuidparse <__n___noheadings_> {{uuid1 uuid2 ...}}
+
+# Use the raw output format
+uuidparse <__r___raw_> {{uuid1 uuid2 ...}}
+
+# Specify which of the four output columns to print
+uuidparse <__o___output_> <UUID_VARIANT_TYPE_TIME>
+
+# Display help
+uuidparse <__h___help_>

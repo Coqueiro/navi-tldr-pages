@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/choco-source.md
+
+% choco-source, windows
+
+# List currently available sources
+choco source list
+
+# Add a new package source
+choco source add <__n___name_> <name> <__s___source_> <url>
+
+# Add a new package source with credentials
+choco source add <__n___name_> <name> <__s___source_> <url> <__u___user_> <username> <__p___password_> <password>
+
+# Add a new package source with a client certificate
+choco source add <__n___name_> <name> <__s___source_> <url> --cert <path_to_certificate_file>
+
+# Enable a package source
+choco source enable <__n___name_> <name>
+
+# Disable a package source
+choco source disable <__n___name_> <name>
+
+# Remove a package source
+choco source remove <__n___name_> <name>

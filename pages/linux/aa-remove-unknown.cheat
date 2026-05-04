@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/aa-remove-unknown.md
+
+% aa-remove-unknown, linux
+
+# Perform a dry run to see which profiles would be removed
+sudo aa-remove-unknown -n
+
+# Actually remove the profiles
+sudo aa-remove-unknown
+
+# Display help
+aa-remove-unknown <__h___help_>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-process.md
+
+% mimikatz-process, windows
+
+# List processes with their tokens
+mimikatz "process::list"
+
+# Elevate mimikatz to a SYSTEM process
+mimikatz "process::token /user:NT AUTHORITY\SYSTEM"

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-crypto.md
+
+% mimikatz-crypto, windows
+
+# List cryptographic providers
+mimikatz "crypto::providers"
+
+# List keys in a cryptographic provider
+mimikatz "crypto::capi"
+
+# Export certificates and keys
+mimikatz "crypto::certificates /export"

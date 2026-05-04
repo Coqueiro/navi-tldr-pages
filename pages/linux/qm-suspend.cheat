@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/qm-suspend.md
+
+% qm-suspend, linux
+
+# Suspend a virtual machine by ID
+qm <_su_suspend_> <100> <integer>
+
+# Skip the lock check when suspending the VM
+qm <_su_suspend_> <100> <integer> --skiplock
+
+# Skip the lock check for storage when suspending the VM
+qm <_su_suspend_> <100> <integer> --skiplockstorage

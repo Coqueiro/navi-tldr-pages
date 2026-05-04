@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lxc-create.md
+
+% lxc-create, linux
+
+# Create a container interactively in `/var/lib/lxc/`
+sudo lxc-create <__n___name_> <container_name> <__t___template_> download
+
+# Create a container in a target directory
+sudo lxc-create <__P___lxcpath_> /<path_to_directory>/ <__n___name_> <container_name> <__t___template_> download
+
+# Create a container passing options to a template
+sudo lxc-create <__n___name_> <container_name> <__t___template_> download -- <__d___dist_> <distro_name> <__r___release_> <release_version> <__a___arch_> <arch>
+
+# Display help
+lxc-create <______help_>

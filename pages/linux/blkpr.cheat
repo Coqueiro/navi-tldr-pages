@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/blkpr.md
+
+% blkpr, linux
+
+# Register (command) a new reservation with a given key on a given device
+blkpr <__c___command_> register <__k___key_> <reservation_key> <path_to_device>
+
+# Set the type of an existing reservation to exclusive access
+blkpr <__c___command_> reserve <__k___key_> <reservation_key> <__t___type_> exclusive-access <path_to_device>
+
+# Preempt the existing reservation with a given key and replace it with a new reservation
+blkpr <__c___command_> preempt <__K___oldkey_> <old_key> <__k___key_> <new_key> <__t___type_> write-exclusive <path_to_device>
+
+# Release a reservation with a given key and type on a given device
+blkpr <__c___command_> release <__k___key_> <reservation_key> <__t___type_> <reservation_type> <path_to_device>
+
+# Clear all reservations from a given device
+blkpr <__c___command_> clear <__k___key_> <key> <path_to_device>

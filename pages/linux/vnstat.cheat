@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/vnstat.md
+
+% vnstat, linux
+
+# Display traffic summary for all interfaces
+vnstat
+
+# Display traffic summary for a specific network interface
+vnstat <__i___iface_> <network_interface>
+
+# Display live stats for a specific network interface
+vnstat <__l___live_> <__i___iface_> <network_interface>
+
+# Show traffic statistics on an hourly basis for the last 24 hours using a bar graph
+vnstat <__hg___hoursgraph_>
+
+# Measure and show average traffic for 30 seconds
+vnstat <__tr___traffic_> <30>

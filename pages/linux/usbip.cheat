@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/usbip.md
+
+% usbip, linux
+
+# List all local USB devices and their bus ID's
+usbip list <__l___local_>
+
+# Start a `usbip` daemon on the server
+systemctl start usbipd
+
+# Bind a USB device to `usbip` on the server
+sudo usbip bind <__b___busid_> <bus_id>
+
+# Load the kernel module required by `usbip` on the client
+sudo modprobe vhci-hcd
+
+# Attach to the `usbip` device on the client (bus ID is the same as on the server)
+sudo usbip attach <__r___remote_> <ip_address> <__b___busid_> <bus_id>
+
+# List attached devices
+usbip port
+
+# Detach from a device
+sudo usbip detach <__p___port_> <port>
+
+# Unbind a device
+usbip unbind <__b___busid_> <bus_id>

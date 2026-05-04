@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cat.md
+
+% cat, linux
+
+# Print the contents of a file to `stdout`
+cat <path_to_file>
+
+# Concatenate several files into an output file
+cat {{path/to/file1 path/to/file2 ...}} > <path_to_output_file>
+
+# Append several files to an output file
+cat {{path/to/file1 path/to/file2 ...}} >> <path_to_output_file>
+
+# Write to a file interactively
+cat > <path_to_file>
+
+# Number all output lines
+cat <__n___number_> <path_to_file>
+
+# Display all characters, including tabs, line endings, and non-printing characters
+cat <__A___show_all_> <path_to_file>
+
+# Pass file contents to another program through `stdin`
+cat <path_to_file> | <program>

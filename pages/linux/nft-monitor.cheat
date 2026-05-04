@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/nft-monitor.md
+
+% nft-monitor, linux
+
+# Monitor all nftables events
+sudo nft monitor
+
+# Monitor only rule updates (add, delete, replace)
+sudo nft monitor rules
+
+# Monitor set and element updates
+sudo nft monitor sets
+
+# Monitor events and print JSON output
+sudo nft <__j___json_> monitor

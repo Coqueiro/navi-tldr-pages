@@ -10,7 +10,7 @@ rustc <path_to_main_rs>
 rustc <__C___codegen_> lto <__C___codegen_> opt-level=<0_1_2_3_s_z> <path_to_main_rs>
 
 # Compile with debugging information
-rustc -g <path_to_main_rs>
+rustc {{[-g|--codegen debuginfo=2]}} <path_to_main_rs>
 
 # Explain an error message
 rustc --explain <error_code>
@@ -23,3 +23,6 @@ rustc --print target-list
 
 # Compile for a specific target
 rustc --target <target_triple> <path_to_main_rs>
+
+# Display help
+rustc <__h___help_>

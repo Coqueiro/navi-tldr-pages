@@ -13,4 +13,7 @@ rustdoc <src_lib_rs> --crate-name <name>
 rustdoc <path_to_file_md>
 
 # Specify the output directory
-rustdoc <src_lib_rs> --out-dir <path_to_output_directory>
+rustdoc <src_lib_rs> <__o___out_dir_> <path_to_output_directory>
+
+# Display help
+rustdoc <__h___help_>

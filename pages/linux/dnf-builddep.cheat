@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf-builddep.md
+
+% dnf-builddep, linux
+
+# Install dependencies for a given package
+dnf builddep <path_to_specification_spec>
+
+# Install dependencies for a given package but ignore unavailable
+dnf builddep --skip-unavailable <path_to_specification_spec>
+
+# Define the RPM macro to a given expression
+dnf builddep <__D___define_> '<expression>'
+
+# Define an argument for a `.spec` file path
+dnf builddep --spec <argument>
+
+# Define an argument for a `.rpm` file path
+dnf builddep --srpm <argument>
+
+# Display help
+dnf builddep --help-cmd

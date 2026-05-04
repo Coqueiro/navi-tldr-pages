@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/apptainer-capability.md
+
+% apptainer-capability, linux
+
+# Show all available Linux capabilities
+apptainer capability avail
+
+# Show descriptions for specific capabilities
+apptainer capability avail <cap_chown_cap_net_raw____>
+
+# List capabilities for all users and groups
+apptainer capability list
+
+# List capabilities for a specific user or group
+apptainer capability list <username_groupname>
+
+# Add capabilities to a user
+sudo apptainer capability add <__u___user_> <username> <cap_net_raw_cap_chown____>
+
+# Add capabilities to a group
+sudo apptainer capability add <__g___group_> <groupname> <cap_net_raw_cap_chown____>
+
+# Remove capabilities from a user
+sudo apptainer capability drop <__u___user_> <username> <cap_net_raw_cap_chown____>
+
+# Remove all capabilities from a user
+sudo apptainer capability drop <__u___user_> <username> all

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-unmount.md
+
+% pct-unmount, linux
+
+# Unmount the filesystem of a specific container
+pct unmount <100>

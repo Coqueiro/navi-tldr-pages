@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/apparmor_parser.md
+
+% apparmor_parser, linux
+
+# Load a profile into the kernel
+sudo apparmor_parser <__a___add_> <profile_file>
+
+# Replace an existing profile
+sudo apparmor_parser <__r___replace_> <profile_file>
+
+# Remove a profile from the kernel
+sudo apparmor_parser <__R___remove_> <profile_name>
+
+# Load a profile in complain mode (logs violations but doesn't block)
+sudo apparmor_parser <__C___complain_> <__r___replace_> <path_to_profile>
+
+# Preprocess a profile (resolve includes) and write binary cache to file
+apparmor_parser <__p___preprocess_> <__o___ofile_> <path_to_output_cache> <__Q___skip_kernel_load_> <path_to_profile>
+
+# Preprocess and print binary profile to `stdout` without loading
+apparmor_parser <__p___preprocess_> <__S___stdout_> <__Q___skip_kernel_load_> <path_to_profile>
+
+# Replace a profile while skipping cache reads
+sudo apparmor_parser <__r___replace_> <__T___skip_read_cache_> <path_to_profile>
+
+# Replace a profile, rebuild cache, and write it to a custom directory
+sudo apparmor_parser <__r___replace_> <__W___write_cache_> <__L___cache_loc_> /<path_to_cache> <path_to_profile>

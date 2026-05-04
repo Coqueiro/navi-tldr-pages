@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/hugo-serve.md
+
+% hugo-serve, common
+
+# View documentation for the original command
+tldr hugo server

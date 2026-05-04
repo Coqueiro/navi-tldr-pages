@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lastb.md
+
+% lastb, linux
+
+# List last logged in users
+sudo lastb
+
+# List all last logged in users since a given time
+sudo lastb <__s___since_> <YYYY_MM_DD>
+
+# List all last logged in users until a given time
+sudo lastb <__t___until_> <YYYY_MM_DD>
+
+# List all logged in users at a specific time
+sudo lastb <__p___present_> <hh_mm>
+
+# List all last logged in users and translate the IP into a hostname
+sudo lastb <__d___dns_>

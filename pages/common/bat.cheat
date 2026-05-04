@@ -9,8 +9,8 @@ bat {{path/to/file1 path/to/file2 ...}}
 # Concatenate several files into the target file
 bat {{path/to/file1 path/to/file2 ...}} > <path_to_target_file>
 
-# Remove decorations and disable paging (`--style plain` can be replaced with `-p`, or both options with `-pp`)
-bat --style plain --pager never <path_to_file>
+# Remove decorations and disable paging
+bat {{[-pp|--style plain --pager never]}} <path_to_file>
 
 # Highlight a specific line or a range of lines with a different background color
 bat <__H___highlight_line_> <10_5_10__10_10__10__5> <path_to_file>

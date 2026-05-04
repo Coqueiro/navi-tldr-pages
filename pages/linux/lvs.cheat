@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lvs.md
+
+% lvs, linux
+
+# Display information about logical volumes
+sudo lvs
+
+# Display all logical volumes
+sudo lvs <__a___all_>
+
+# Change default display to show more details
+sudo lvs <__v___verbose_>
+
+# Display only specific fields
+sudo lvs <__o___options_> <field_name_1_field_name_2____>
+
+# Append field to default display
+sudo lvs <__o___options_> +<field_name>
+
+# Suppress heading line
+sudo lvs --noheadings
+
+# Use a separator to separate fields
+sudo lvs --separator <_>

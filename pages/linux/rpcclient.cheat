@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/rpcclient.md
+
+% rpcclient, linux
+
+# Connect to a remote host
+rpcclient <__U___user_> <domain>\<username>%<password> <ip_address>
+
+# Connect to a remote host on a domain without a password
+rpcclient <__U___user_> <username> <__W___workgroup_> <domain> <__N___no_pass_> <ip_address>
+
+# Connect to a remote host, passing the password hash
+rpcclient <__U___user_> <domain>\<username> --pw-nt-hash <ip_address>
+
+# Execute shell commands on a remote host
+rpcclient <__U___user_> <domain>\<username>%<password> <__c___command_> <semicolon_separated_commands> <ip_address>
+
+# Display domain users
+rpcclient $> enumdomusers
+
+# Display privileges
+rpcclient $> enumprivs
+
+# Display information about a specific user
+rpcclient $> queryuser <username_rid>
+
+# Create a new user in the domain
+rpcclient $> createdomuser <username>

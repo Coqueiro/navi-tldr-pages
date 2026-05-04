@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/apptainer-search.md
+
+% apptainer-search, linux
+
+# Search for container images matching a query
+apptainer search <query>
+
+# Search for container images for a specific architecture
+apptainer search --arch <amd64_arm64_386_ppc64le_s390x> <query>
+
+# Search for only signed container images
+apptainer search --signed <query>
+
+# Search in a specific Container Library
+apptainer search --library <library_url> <query>
+
+# Display help
+apptainer search <__h___help_>

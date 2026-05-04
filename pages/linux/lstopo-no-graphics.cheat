@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lstopo-no-graphics.md
+
+% lstopo-no-graphics, linux
+
+# Display the machine topology in a tree format
+lstopo-no-graphics
+
+# Display only physical cores (ignore logical processors)
+lstopo-no-graphics --only pu
+
+# Display the topology with physical indexes
+lstopo-no-graphics <__p___physical_>
+
+# Display help
+lstopo-no-graphics <__h___help_>

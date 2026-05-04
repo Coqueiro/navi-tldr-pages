@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pw-reserve.md
+
+% pw-reserve, linux
+
+# Reserve a device (currently only supports audio devices)
+pw-reserve <__n___name_> <audioN>
+
+# Monitor a device instead of reserving it
+pw-reserve <__n___name_> <audioN> <__m___monitor_>
+
+# Display help
+pw-reserve <__h___help_>

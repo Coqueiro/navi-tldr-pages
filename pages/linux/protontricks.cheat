@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/protontricks.md
+
+% protontricks, linux
+
+# Run the protontricks GUI
+protontricks --gui
+
+# Run Winetricks for a specific game
+protontricks <appid> <winetricks_args>
+
+# Run a command within a game's installation directory
+protontricks <__c___command_> <command> <appid>
+
+# List all installed games
+protontricks <__l___list_>
+
+# Search for a game's App ID by name
+protontricks <__s___search_> <game_name>
+
+# Run an executable in the proton environment of a specific game
+protontricks-launch --appid <appid> <path_to_executable_exe>
+
+# Display help
+protontricks <__h___help_>

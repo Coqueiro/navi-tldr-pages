@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/cisco-ios/username.md
+
+% username, cisco-ios
+
+# Set up an admin account
+username <admin> privilege 15 secret <password>

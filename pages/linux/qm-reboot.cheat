@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/qm-reboot.md
+
+% qm-reboot, linux
+
+# Reboot a virtual machine
+qm <_reb_reboot_> <100>
+
+# Reboot a virtual machine after wait for at most 10 seconds
+qm <_reb_reboot_> <100> --timeout <10>

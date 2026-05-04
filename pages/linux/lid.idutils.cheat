@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lid.idutils.md
+
+% lid.idutils, linux
+
+# List all tokens and their file locations in the ID database
+lid
+
+# Find files containing a specific token
+lid <token>
+
+# Find tokens matching a pattern, ignoring case
+lid <__i___ignore_case_> <token>
+
+# Find tokens matching an extended `regex`
+lid <__r___regexp_> "<pattern>"
+
+# Output matching lines in grep-style format
+lid <__R___result_> grep <token>
+
+# Find tokens that appear only once (useful for finding unused definitions)
+lid <__F___frequency_> 1

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/renice.md
+
+% renice, linux
+
+# Set the absolute priority of a running process
+renice --priority <3> <__p___pid_> <pid>
+
+# Increase the priority of a running process
+sudo renice --relative <_4> <__p___pid_> <pid>
+
+# Decrease the priority of all processes owned by a user
+renice --relative <4> <__u___user_> <uid_user>
+
+# Set the priority of all processes that belong to a process group
+sudo renice <_5> <__g___pgrp_> <process_group>

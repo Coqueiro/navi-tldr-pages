@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/away.md
+
+% away, linux
+
+# Lock terminal and set away message
+away <message>
+
+# Lock terminal and enable mail check
+away <__c___mail_> <message>
+
+# Lock terminal and disable mail check
+away <__C___nomail_> <message>
+
+# Lock terminal and sleep background tasks for number of seconds
+away <__t___time_> <seconds> <message>
+
+# Lock terminal and check mail if at least one inbox hasn't received new mail
+away <__p___persist_> <message>
+
+# Lock terminal and check mail until at least one inbox has received new mail
+away <__P___nopersist_> <message>
+
+# Display help
+away <__h___help_>
+
+# Display version
+away <__v___version_>

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cu.md
+
+% cu, linux
+
+# Open a given serial port
+sudo cu <__l___line_> <_dev_ttyXYZ>
+
+# Open a given serial port with a given baud rate
+sudo cu <__l___line_> <_dev_ttyXYZ> <__s___speed_> <115200>
+
+# Open a given serial port with a given baud rate and echo characters locally (half-duplex mode)
+sudo cu <__l___line_> <_dev_ttyXYZ> <__s___speed_> <115200> <__h___halfduplex_>
+
+# Open a given serial port with a given baud rate, parity, and no hardware or software flow control
+sudo cu <__l___line_> <_dev_ttyXYZ> <__s___speed_> <115200> --parity=<even_odd_none> <__f___nortscts_> --nostop
+
+# Exit the `cu` session when in connection
+<Enter><~><.>
+
+# Display help
+cu --help

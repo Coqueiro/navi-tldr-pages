@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/apk.md
+
+% apk, linux
+
+# Update repository indexes and upgrade all packages
+apk upgrade <__U___update_cache_>
+
+# Only update repository indexes
+apk update
+
+# Install a new package
+apk add <package>
+
+# Remove a package
+apk del <package>
+
+# Repair/Reinstall a package without modifying main dependencies
+apk fix <package>
+
+# Search for packages with a keyword in their name and list results with descriptions
+apk search <__v___verbose_> <keyword>
+
+# Search for packages with a keyword in their description
+apk search <__d___description_> <keyword>
+
+# Display information about a specific package
+apk info <package>

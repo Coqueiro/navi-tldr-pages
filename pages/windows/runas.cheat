@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/runas.md
+
+% runas, windows
+
+# Run a program as the Administrator local user
+runas /user:.\Administrator "<command>"
+
+# Run a program as a specific user
+runas /user:<domain_username> "<command>"
+
+# Run a program without loading the user's profile
+runas /noprofile /user:<domain_username> "<command>"
+
+# Open Command Prompt as another user
+runas /user:<domain_username> cmd
+
+# Run Notepad as a specific user with the current user's environment variables, opening a file with escaped quotes
+runas /env /user:<domain_username> "notepad \"<C__path_to_file_txt>\""
+
+# Run Active Directory Users and Computers as a specific user
+runas /env /user:<domain_username> "mmc %windir%\system32\dsa.msc"

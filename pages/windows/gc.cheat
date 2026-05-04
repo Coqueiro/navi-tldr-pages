@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/gc.md
+
+% gc, windows
+
+# View documentation for GraphViz's `gc` command
+tldr gc <__p___platform_> common
+
+# View documentation for the PowerShell's `Get-Content` command
+tldr get-content
+
+# Determine whether `gc` is currently configured to GraphViz's `gc` or PowerShell's `Get-Content` by printing its help documentation
+gc -?

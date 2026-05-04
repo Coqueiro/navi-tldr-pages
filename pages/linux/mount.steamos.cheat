@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mount.steamos.md
+
+% mount.steamos, linux
+
+# Mount all necessary partitions from a device to a target directory
+sudo mount.steamos <_dev_sdX> <_mnt>
+
+# Mount with options to exclude specific partitions (e.g. `/home`, overlays)
+sudo mount.steamos <__o___options_> nohome,nooverlay <_dev_sdX> <_mnt>
+
+# Unmount all partitions mounted under a target directory
+sudo mount.steamos -u <_mnt>
+
+# Display help
+mount.steamos <__h___help_>

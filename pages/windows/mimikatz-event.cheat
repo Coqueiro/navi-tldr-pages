@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-event.md
+
+% mimikatz-event, windows
+
+# Clear event logs
+mimikatz "event::clear"
+
+# Display event log sources
+mimikatz "event::providers"

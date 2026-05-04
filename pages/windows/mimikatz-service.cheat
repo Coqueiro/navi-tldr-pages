@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-service.md
+
+% mimikatz-service, windows
+
+# Start a service
+mimikatz "service::start service_name"
+
+# Stop a service
+mimikatz "service::stop service_name"
+
+# Delete a service
+mimikatz "service::delete service_name"

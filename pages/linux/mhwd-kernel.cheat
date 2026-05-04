@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mhwd-kernel.md
+
+% mhwd-kernel, linux
+
+# List all available kernels
+mhwd-kernel <__l___list_>
+
+# List all installed kernels
+mhwd-kernel <__li___listinstalled_>
+
+# Install a kernel
+sudo mhwd-kernel <__i___install_> <kernel>
+
+# Remove a kernel
+sudo mhwd-kernel <__r___remove_> <kernel>
+
+# Install a kernel, replacing the currently running kernel
+sudo mhwd-kernel <__i___install_> <kernel> rmc

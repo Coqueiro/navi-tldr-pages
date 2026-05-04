@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ark.md
+
+% ark, linux
+
+# Extract a specific archive into the current directory
+ark <__b___batch_> <path_to_archive>
+
+# Extract an archive into a specific directory
+ark <__b___batch_> <__o___destination_> <path_to_directory> <path_to_archive>
+
+# Create an archive if it does not exist and add specific files to it
+ark <__t___add_to_> <path_to_archive> {{path/to/file1 path/to/file2 ...}}

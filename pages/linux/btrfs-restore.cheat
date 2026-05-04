@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/btrfs-restore.md
+
+% btrfs-restore, linux
+
+# Restore all files from a btrfs filesystem to a given directory
+sudo btrfs <_rest_restore_> <path_to_btrfs_device> <path_to_target_directory>
+
+# List (don't write) files to be restored from a btrfs filesystem
+sudo btrfs <_rest_restore_> <__D___dry_run_> <path_to_btrfs_device> <path_to_target_directory>
+
+# Restore files matching a given `regex` ([c]ase-insensitive) files to be restored from a btrfs filesystem (all parent directories of target file(s) must match as well)
+sudo btrfs <_rest_restore_> --path-regex <regex> -c <path_to_btrfs_device> <path_to_target_directory>
+
+# Restore files from a btrfs filesystem using a specific root [t]ree `bytenr` (see `btrfs-find-root`)
+sudo btrfs <_rest_restore_> -t <bytenr> <path_to_btrfs_device> <path_to_target_directory>
+
+# Restore files from a btrfs filesystem (along with metadata, extended attributes, and Symlinks), overwriting files in the target
+sudo btrfs <_rest_restore_> <__m___metadata_> <__x___xattr_> <__S___symlinks_> <__o___overwrite_> <path_to_btrfs_device> <path_to_target_directory>

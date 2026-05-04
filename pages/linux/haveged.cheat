@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/haveged.md
+
+% haveged, linux
+
+# Generate a random number
+sudo haveged
+
+# Run `haveged` in foreground
+sudo haveged <__F___Foreground_>
+
+# Set file path for output of `haveged`
+sudo haveged <__f___file_> <path_to_file>
+
+# Set run level for daemon
+sudo haveged <__r___run_> <runlevel>
+
+# Set collection buffer size in kibibyte words
+sudo haveged <__b___buffer_> <buffersizeinKW>
+
+# Insert a command to an already running `haveged` process or daemon
+sudo haveged <__c___command_> <command>
+
+# Set cache size in kibibyte words
+sudo haveged <__d___data_> <cachesizeinKW>
+
+# Set number of bytes to write to the output file
+sudo haveged <__n___number_> <byteamount>

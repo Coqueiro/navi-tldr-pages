@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/bcdboot.md
+
+% bcdboot, windows
+
+# Initialize the system partition by using BCD files from the source Windows folder
+bcdboot <C__Windows>
+
+# Enable [v]erbose mode
+bcdboot <C__Windows> /v
+
+# Specify the volume letter of the [s]ystem partition
+bcdboot <C__Windows> /s <S_>
+
+# Specify a [l]ocale
+bcdboot <C__Windows> /l <en_us>
+
+# Specify a [f]irmware type while copying the boot files to a specified volume
+bcdboot <C__Windows> /s <S_> /f <UEFI_BIOS_ALL>

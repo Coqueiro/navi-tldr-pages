@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/sm.md
+
+% sm, linux
+
+# Display a message in full-screen
+sm "{{Hello World!}}"
+
+# Display a message with inverted colors
+sm <__i___invert_> "{{Hello World!}}"
+
+# Display a message with a custom foreground color
+sm <__f___foreground_> <blue> "{{Hello World!}}"
+
+# Display a message with a custom background color
+sm <__b___background_> <_008888> "{{Hello World!}}"
+
+# Display a message rotated 3 times (in steps of 90 degrees, counterclockwise)
+sm <__r___rotate_> <3> "{{Hello World!}}"
+
+# Display a message using the output from another command
+{{echo "Hello World!"}} | sm -

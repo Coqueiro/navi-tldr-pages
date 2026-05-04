@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/vol.py.md
+
+% vol.py, windows
+
+# Get information about a memory dump file
+python3 vol.py <__f___filename_> <path_to_memory_dump_file> windows.info
+
+# List active processes
+python3 vol.py <__f___filename_> <path_to_memory_dump_file> windows.pslist
+
+# List hashes of users on system
+python3 vol.py <__f___filename_> <path_to_memory_dump_file> windows.hashdump
+
+# List active network connections
+python3 vol.py <__f___filename_> <path_to_memory_dump_file> windows.netstat
+
+# Display help
+python3 vol.py <__h___help_>

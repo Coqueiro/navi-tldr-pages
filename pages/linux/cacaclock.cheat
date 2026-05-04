@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cacaclock.md
+
+% cacaclock, linux
+
+# Display the time
+cacaclock
+
+# Change the font
+cacaclock <__f___font_> <font>
+
+# Change the format using an `strftime` format specification
+cacaclock <__d___dateformat_> <strftime_arguments>

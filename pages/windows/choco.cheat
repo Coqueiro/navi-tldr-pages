@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/choco.md
+
+% choco, windows
+
+# Install a package
+choco install <package_name>
+
+# Upgrade a specific installed package
+choco upgrade <package_name>
+
+# Upgrade all outdated packages and automatically confirm all prompts
+choco upgrade all <__y___yes_>
+
+# Uninstall a package and automatically confirm all prompts
+choco uninstall <package_name> <__y___yes_>
+
+# Search for packages by name or keyword
+choco search <query>
+
+# List all packages installed on the machine
+choco list
+
+# Show packages that have newer versions available
+choco outdated
+
+# Install a package from a specific source
+choco install <package_name> <__s___source_> <source>

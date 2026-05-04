@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/tune.exfat.md
+
+% tune.exfat, linux
+
+# Print the volume label of a filesystem
+tune.exfat <__l___print_label_> <_dev_sdXY>
+
+# Set the volume label of a filesystem
+tune.exfat <__L___set_label_> <new_label> <_dev_sdXY>
+
+# Print the volume GUID of a filesystem
+tune.exfat <__u___print_guid_> <_dev_sdXY>
+
+# Set the volume GUID of a filesystem
+tune.exfat <__U___set_guid_> <new_guid> <_dev_sdXY>
+
+# Print the volume serial of a filesystem
+tune.exfat <__i___print_serial_> <_dev_sdXY>
+
+# Set the volume serial of a filesystem
+tune.exfat <__I___set_serial_> <new_serial> <_dev_sdXY>

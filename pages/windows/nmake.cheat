@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/nmake.md
+
+% nmake, windows
+
+# Build targets using the default makefile in the current directory
+nmake
+
+# Build targets using a specific makefile
+nmake /F <path_to_makefile>
+
+# Build a specific target
+nmake <target>
+
+# Display commands without executing them
+nmake /N
+
+# Display all macro definitions and target descriptions
+nmake /P
+
+# Continue building unrelated targets on error
+nmake /K
+
+# Build and ignore timestamp checks (force rebuild)
+nmake /A
+
+# Suppress copyright message
+nmake /NOLOGO

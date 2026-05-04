@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pveum.md
+
+% pveum, linux
+
+# List users
+pveum <_u_user_> <_l_list_>
+
+# Add a user
+pveum <_u_user_> <_a_add_> <username>@pve
+
+# Add a user with an email, description, and password
+pveum <_u_user_> <_a_add_> <username>@pve --email <email_address> --comment <description> --password <password>
+
+# Change user password
+pveum <_pa_passwd_> <username>@pve
+
+# Delete a user
+pveum <_u_user_> <_d_delete_> <username>@pve
+
+# Give a user access to a specific VM with specific permissions
+pveum <_a_acl_> <_m_modify_> /vms/<1000> --user <username>@pve --role <PVEVMUser>

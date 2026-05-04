@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/audit2allow.md
+
+% audit2allow, linux
+
+# Generate allow rules from recent audit denials and display them
+sudo audit2allow <__a___all_>
+
+# Generate allow rules from a specific audit log file
+sudo audit2allow <__i___input_> <path_to_audit_log>
+
+# Generate a policy module from recent audit denials
+sudo audit2allow <__a___all_> <__M___module_> <module_name>
+
+# Explain why SELinux denials occurred (same as `audit2why`)
+sudo audit2allow <__a___all_> --why
+
+# Display detailed information around generated messages
+sudo audit2allow <__a___all_> <__e___explain_>
+
+# Use installed macros to generate a reference policy
+sudo audit2allow <__a___all_> <__R___reference_>
+
+# Generate allow rules for a specific service
+sudo ausearch <__m___message_> avc <__c___comm_> <service_name> | audit2allow <__M___module_> <policy_name>
+
+# Enable verbose output mode
+sudo audit2allow <__a___all_> <__v___verbose_>

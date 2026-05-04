@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/trace-cmd-report.md
+
+% trace-cmd-report, linux
+
+# Display the recorded trace
+sudo trace-cmd report
+
+# Display the recorded trace for a specific CPU
+sudo trace-cmd report --cpu <cpu_number>

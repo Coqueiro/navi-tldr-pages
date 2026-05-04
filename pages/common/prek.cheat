@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/prek.md
+
+% prek, common
+
+# Install prek into your Git hooks
+prek install
+
+# Run prek hooks on all staged files
+prek run
+
+# Run prek hooks on all files, staged or unstaged
+prek run <__a___all_files_>
+
+# Clean prek cache
+prek cache clean
+
+# Update prek configuration file to the latest repos' versions
+prek auto-update

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/compress-archive.md
+
+% compress-archive, windows
+
+# Compress a single file
+Compress-Archive -Path <path_to_file_txt> -DestinationPath <path_to_file_zip>
+
+# Compress multiple files
+Compress-Archive -Path {{path\to\file1, path\to\file2, ...}} -DestinationPath <path_to_files_zip>
+
+# Compress a directory
+Compress-Archive -Path <path_to_directory> -DestinationPath <path_to_directory_zip>
+
+# Update an existing archive
+Compress-Archive -Path <path_to_file> -DestinationPath <path_to_directory_zip> -Update
+
+# Set compression level
+Compress-Archive -Path <path_to_directory> -DestinationPath <path_to_directory_zip> -CompressionLevel <Optimal_Fastest_NoCompression>

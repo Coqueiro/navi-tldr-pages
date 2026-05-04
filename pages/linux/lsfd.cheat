@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lsfd.md
+
+% lsfd, linux
+
+# List all open file descriptors
+lsfd
+
+# List all files kept open by a specific program
+lsfd <__Q___filter_> 'PID == <process_id>'
+
+# Check what program has a specific file open
+lsfd <__Q___filter_> "NAME == '<path_to_file>'"
+
+# List open IPv4 or IPv6 sockets
+lsfd <_i4__i6>
+
+# Display help
+lsfd <__h___help_>

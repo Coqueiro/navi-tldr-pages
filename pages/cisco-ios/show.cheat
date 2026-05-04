@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/cisco-ios/show.md
+
+% show, cisco-ios
+
+# Show switch IP addresses
+<_sh_show_> ip interface brief
+
+# Show specific interface configuration
+<_sh_show_> ip interface <vlan1>
+
+# Show vlan configuration
+<_sh_show_> vlan
+
+# Show currently running configuration
+<_sh_show_> running-config
+
+# Show SSH configuration
+<_sh_show_> ip ssh

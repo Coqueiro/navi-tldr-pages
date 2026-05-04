@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lxc-checkconfig.md
+
+% lxc-checkconfig, linux
+
+# Check the current kernel for LXC support
+lxc-checkconfig
+
+# Check any kernel for LXC support
+CONFIG=/<path_to_configuration> lxc-checkconfig

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mkdir.md
+
+% mkdir, windows
+
+# Create a directory
+mkdir <path_to_directory>
+
+# Create a nested directory tree recursively
+mkdir <path_to_sub_directory>

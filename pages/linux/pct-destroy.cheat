@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-destroy.md
+
+% pct-destroy, linux
+
+# Destroy a container
+pct <_des_destroy_> <100>
+
+# Destroy a container even if it's running
+pct <_des_destroy_> <100> --force
+
+# Also delete all references to this container
+pct <_des_destroy_> <100> --purge

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dos2unix.md
+
+% dos2unix, linux
+
+# Change the line endings of a file
+dos2unix <path_to_file>
+
+# Create a copy with Unix-style line endings
+dos2unix <__n___newfile_> <path_to_file> <path_to_new_file>
+
+# Display file information
+dos2unix <__i___info_> <path_to_file>
+
+# Keep/add/remove Byte Order Mark
+dos2unix --<keep_bom_add_bom_remove_bom> <path_to_file>

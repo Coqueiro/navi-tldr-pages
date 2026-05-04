@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pgrep.md
+
+% pgrep, linux
+
+# Return PIDs of any running processes with a matching command string
+pgrep <process_name>
+
+# Also display the full command
+pgrep <__a___list_full_> <process_name>
+
+# Search for processes including their command-line options
+pgrep <__f___full_> "<process_name> <parameter>"
+
+# Search for processes run by a specific user
+pgrep <__u___euid_> <username> <process_name>

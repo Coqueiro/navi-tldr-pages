@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pveam.md
+
+% pveam, linux
+
+# Update container template database
+pveam <_u_update_>
+
+# List available templates
+pveam <_a_available_>
+
+# Download a template
+pveam <_d_download_> <local> <template_name>
+
+# List downloaded templates
+pveam <_l_list_> <local>
+
+# List available templates in a specific section
+pveam <_a_available_> --section <system_turnkeylinux_mail>
+
+# Remove a template
+pveam <_r_remove_> <local>:<vztmpl>/<template_name>

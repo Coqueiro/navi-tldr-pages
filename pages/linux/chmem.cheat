@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/chmem.md
+
+% chmem, linux
+
+# Set a memory block offline
+sudo chmem <__b___block_> <__d___disable_> <block_number>
+
+# Set a memory block online
+sudo chmem <__b___block_> <__e___enable_> <block_number>
+
+# Set a memory range offline using hexadecimal addresses
+sudo chmem <__d___disable_> 0x<start_address>-0x<end_address>
+
+# Set a memory range online using hexadecimal addresses
+sudo chmem <__e___enable_> 0x<start_address>-0x<end_address>
+
+# Set memory online and assign it to a specific zone (e.g., Movable)
+sudo chmem <__e___enable_> 0x<start_address> <__z___zone_> <Movable>
+
+# Display help
+chmem <__h___help_>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-status.md
+
+% pct-status, linux
+
+# Display if the container is running
+pct status <100>
+
+# Display detailed container information
+pct status <100> --verbose

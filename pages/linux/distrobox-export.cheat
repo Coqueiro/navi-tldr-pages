@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/distrobox-export.md
+
+% distrobox-export, linux
+
+# Export an app from the container to the host (the desktop entry/icon will show up in your host system's application list)
+distrobox-export <__a___app_> <package> <__ef___extra_flags_> "--foreground"
+
+# Export a binary from the container to the host
+distrobox-export <__b___bin_> <path_to_binary> <__ep___export_path_> <path_to_binary_on_host>
+
+# Export a binary from the container to the host (i.e.`$HOME/.local/bin`)
+distrobox-export <__b___bin_> <path_to_binary> <__ep___export_path_> <path_to_export>
+
+# Export a service from the container to the host (`--sudo` will run the service as root inside the container)
+distrobox-export --service <package> <__ef___extra_flags_> "--allow-newer-config" <__S___sudo_>
+
+# Unexport/delete an exported application
+distrobox-export <__a___app_> <package> <__d___delete_>

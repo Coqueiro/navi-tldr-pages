@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hyprshot.md
+
+% hyprshot, linux
+
+# Select and take a screenshot of a region
+hyprshot <__m___mode_> region
+
+# Select and take a screenshot of a specific window
+hyprshot <__m___mode_> window
+
+# Select and take a screenshot of a specific output
+hyprshot <__m___mode_> output
+
+# Take a screenshot of the currently active window
+hyprshot <__m___mode_> active <__m___mode_> window
+
+# Freeze the screen and take a screenshot of the selected region
+hyprshot <__z___freeze_> <__m___mode_> region
+
+# Select and take a screenshot of a specific window, saving to the given output directory
+hyprshot <__o___output_folder_> <path_to_directory> <__m___mode_> window
+
+# Select and take a screenshot of a specific output, saving the screenshot to the clipboard only
+hyprshot --clipboard <__m___mode_> output

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/wget.md
+
+% wget, windows
+
+# View documentation for the original `wget` command
+tldr wget <__p___platform_> common
+
+# View documentation for PowerShell's `Invoke-WebRequest` command
+tldr invoke-webrequest
+
+# Check whether `wget` is properly installed by printing its version number. If this command evaluates into an error, PowerShell may have substituted this command with `Invoke-WebRequest`
+wget --version

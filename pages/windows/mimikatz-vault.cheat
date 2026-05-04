@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-vault.md
+
+% mimikatz-vault, windows
+
+# List vault credentials
+mimikatz "vault::list"
+
+# Dump all vault credentials
+mimikatz "vault::cred"

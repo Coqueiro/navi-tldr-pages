@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-is-enabled.md
+
+% systemctl-is-enabled, linux
+
+# Show the enablement state
+systemctl is-enabled {{unit1 unit2 ...}}
+
+# Suppress output and return only the exit code
+systemctl is-enabled <unit> <__q___quiet_>
+
+# Show installation targets and symlink paths
+systemctl is-enabled <unit> <__l___full_>

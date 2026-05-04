@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/rexec.md
+
+% rexec, linux
+
+# Execute a command on a remote host
+rexec <__h___host_> <remote_host> {{ls -l}}
+
+# Specify the remote username on a remote host
+rexec <__u___username_> <username> <__h___host_> <remote_host> {{ps aux}}
+
+# Redirect `stdin` from `/dev/null` on a remote host
+rexec <__n___noerr_> <__h___host_> <remote_host> {{ls -l}}
+
+# Specify the remote port on a remote host
+rexec <__P___port_> <1234> <__h___host_> <remote_host> {{ls -l}}

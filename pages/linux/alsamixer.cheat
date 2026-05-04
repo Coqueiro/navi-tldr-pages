@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/alsamixer.md
+
+% alsamixer, linux
+
+# Select the soundcard to use
+alsamixer <__c___card_> <soundcard_number>
+
+# Select mixer device to control
+alsamixer <__D___device_> <device_name>
+
+# Increase volume
+<w>
+
+# Decrease volume
+<x>
+
+# Quit alsamixer
+<Esc>

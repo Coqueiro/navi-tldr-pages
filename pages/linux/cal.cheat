@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cal.md
+
+% cal, linux
+
+# Display a calendar for the current month
+cal
+
+# Display 3 months spanning the date
+cal <__3___three_>
+
+# Display the whole calendar for the current year
+cal <__y___year_>
+
+# Display the next twelve months
+cal <__Y___twelve_>
+
+# Use Monday as the first day of the week
+cal <__m___monday_>
+
+# Display a calendar for a specific year (4 digits)
+cal <year>
+
+# Display a calendar for a specific month and year
+cal <month> <year>

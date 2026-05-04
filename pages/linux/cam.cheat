@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cam.md
+
+% cam, linux
+
+# List available cameras
+cam <__l___list_>
+
+# List controls of a camera
+cam <__c___camera_> <camera_index> --list-controls
+
+# Write frames to a folder
+cam <__c___camera_> <camera_index> <__C___capture__><frames_to_capture> <__F___file_>
+
+# Display camera feed in a window
+cam <__c___camera_> <camera_index> <__C___capture_> <__S___sdl_>

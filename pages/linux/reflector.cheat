@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/reflector.md
+
+% reflector, linux
+
+# Get all mirrors, sort for download speed and save them
+sudo reflector --sort <rate> --save <_etc_pacman_d_mirrorlist>
+
+# Only get German HTTPS mirrors
+reflector <__c___country_> <Germany> <__p___protocol_> <https>
+
+# Only get the 10 recently sync'd mirrors
+reflector <__l___latest_> <10>
+
+# Use a configuration file to fetch mirrors
+sudo reflector @<_etc_xdg_reflector_reflector_conf>
+
+# Display help
+reflector <__h___help_>

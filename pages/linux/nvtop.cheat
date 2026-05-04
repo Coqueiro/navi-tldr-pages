@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/nvtop.md
+
+% nvtop, linux
+
+# Launch the interactive GPU monitor
+nvtop
+
+# Set the update delay in tenths of a second (for example, 2 = 0.2 seconds)
+nvtop <__d___delay_> <2>
+
+# Run in monochrome (no color) mode
+nvtop <__C___no_color_>
+
+# Use Fahrenheit for temperature display
+nvtop <__f___freedom_unit_>
+
+# Always show encoder/decoder meters, disabling auto-hide
+nvtop <__E___encode_hide_> -1
+
+# Show a single combined bar plot instead of per-GPU plots
+nvtop <__p___no_plot_>
+
+# Show the program version
+nvtop <__v___version_>

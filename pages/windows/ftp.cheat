@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/ftp.md
+
+% ftp, windows
+
+# Connect to a remote FTP server interactively
+ftp <host>
+
+# Log in as an anonymous user
+ftp -A <host>
+
+# Disable automatic login upon initial connection
+ftp -n <host>
+
+# Run a file containing a list of FTP commands
+ftp -s:<path_to_file> <host>
+
+# [Interactive] Download multiple files (glob expression)
+mget <__png>
+
+# [Interactive] Upload multiple files (glob expression)
+mput <__zip>
+
+# [Interactive] Delete multiple files on the remote server
+mdelete <__txt>
+
+# Display help
+ftp --help

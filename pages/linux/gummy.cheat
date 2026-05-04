@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gummy.md
+
+% gummy, linux
+
+# Set the screen temperature to 3000K
+gummy <__t___temperature_> <3000>
+
+# Set the screen backlight to 50%
+gummy --backlight <50>
+
+# Set the screen pixel brightness to 45%
+gummy <__b___brightness_> <45>
+
+# Increase current screen pixel brightness by 10%
+gummy <__b___brightness_> <_10>
+
+# Decrease current screen pixel brightness by 10%
+gummy <__b___brightness_> <_10>
+
+# Set the temperature and pixel brightness for the second screen
+gummy <__s___screen_> <1> <__t___temperature_> <3800> <__b___brightness_> <65>

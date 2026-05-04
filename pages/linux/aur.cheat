@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/aur.md
+
+% aur, linux
+
+# Initialize the repository that matches the path in `/etc/pacman.conf`
+repo-add <path_to_database_db_tar_gz>
+
+# Search the AUR database for a package
+aur search <keyword>
+
+# Download one or more packages and their dependencies from the AUR, build them, and add them to a local repository
+aur sync {{package1 package2 ...}}
+
+# List packages available in your local repository
+aur repo <__l___list_>
+
+# Upgrade local repository packages
+aur sync <__u___upgrades_>
+
+# Clean build files after install
+aur sync <__C___clean_> <package>
+
+# Install a package without viewing changes in Vim and do not confirm dependency installation
+aur sync --noview <__n___noconfirm_> <package>
+
+# Remove a package form the repository metadata (does not remove the package file itself)
+repo-remove <path_to_database_db_tar_gz> <package>

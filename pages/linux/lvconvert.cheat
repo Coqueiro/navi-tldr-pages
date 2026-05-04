@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lvconvert.md
+
+% lvconvert, linux
+
+# Convert a linear logical volume to RAID1 (add one mirror: two copies total)
+sudo lvconvert --type raid1 <__m___mirrors_> 1 <_dev_vg_name_lv_name>
+
+# Remove mirroring and convert back to a linear logical volume
+sudo lvconvert <__m___mirrors_> 0 <_dev_vg_name_lv_name>
+
+# Merge a snapshot back into its origin logical volume (applies on next activation)
+sudo lvconvert --merge <_dev_vg_name_snapshot_lv>
+
+# Repair a degraded RAID logical volume
+sudo lvconvert --repair <_dev_vg_name_lv_name>
+
+# Convert an existing logical volume into a thin pool with a separate metadata LV
+sudo lvconvert --type thin-pool --poolmetadata <_dev_vg_name_pool_metadata_lv> <_dev_vg_name_pool_lv>

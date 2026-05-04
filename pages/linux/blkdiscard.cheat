@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/blkdiscard.md
+
+% blkdiscard, linux
+
+# Discard all sectors on a device, removing all data
+blkdiscard <_dev_device>
+
+# Securely discard all blocks on a device, removing all data
+blkdiscard <__s___secure_> <_dev_device>
+
+# Discard the first 100 MB of a device
+blkdiscard <__l___length_> <100MB> <_dev_device>

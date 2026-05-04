@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-mask.md
+
+% systemctl-mask, linux
+
+# Mask a service
+systemctl mask <service_name>
+
+# Ensure that the service is shut down while masking
+systemctl mask <service_name> --now
+
+# Mask a user service
+systemctl mask <service_name> --user

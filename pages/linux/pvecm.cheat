@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pvecm.md
+
+% pvecm, linux
+
+# Add the current node to an existing cluster
+pvecm add <hostname_or_ip>
+
+# Add a node to the cluster configuration (internal use)
+pvecm <_addn_addnode_> <node>
+
+# Display the version of the cluster join API available on this node
+pvecm <_ap_apiver_>
+
+# Generate new cluster configuration
+pvecm <_c_create_> <clustername>
+
+# Remove a node from the cluster configuration
+pvecm <_d_delnode_> <node>
+
+# Display the local view of the cluster nodes
+pvecm <_n_nodes_>
+
+# Display the local view of the cluster status
+pvecm <_s_status_>

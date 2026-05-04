@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/conntrack.md
+
+% conntrack, linux
+
+# List all currently tracked connections
+conntrack <__L___dump_>
+
+# Display a real-time event log of connection changes
+conntrack <__E___event_>
+
+# Display a real-time event log of connection changes and associated timestamps
+conntrack <__E___event_> <__o___output_> timestamp
+
+# Display a real-time event log of connection changes for a specific IP address
+conntrack <__E___event_> <__s___orig_src_> <ip_address>
+
+# Delete all flows for a specific source IP address
+conntrack <__D___delete_> <__s___orig_src_> <ip_address>

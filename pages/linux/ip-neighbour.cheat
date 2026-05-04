@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ip-neighbour.md
+
+% ip-neighbour, linux
+
+# Display the neighbour/ARP table entries
+ip <_n_neighbour_>
+
+# Remove entries in the neighbour table on device `ethX`
+sudo ip <_n_neighbour_> <_f_flush_> dev <ethX>
+
+# Perform a neighbour lookup and return a neighbour entry
+ip <_n_neighbour_> <_g_get_> <lookup_ip> dev <ethX>
+
+# Add or delete an ARP entry for the neighbour IP address to `ethX`
+sudo ip <_n_neighbour_> <add_delete> <ip_address> lladdr <mac_address> dev <ethX> nud reachable
+
+# Change or replace an ARP entry for the neighbour IP address to `ethX`
+sudo ip <_n_neighbour_> <change_replace> <ip_address> lladdr <new_mac_address> dev <ethX>

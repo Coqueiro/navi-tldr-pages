@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/growpart.md
+
+% growpart, linux
+
+# Extend partition `n` from `sdX` to fill empty space until end of disk or beginning of next partition
+growpart <_dev_sdX> <n>
+
+# Show what modifications would be made when growing partition `n` in a disk image
+growpart <__N___dry_run_> /<path_to_disk_img> <n>

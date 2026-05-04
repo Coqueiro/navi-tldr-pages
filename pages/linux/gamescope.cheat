@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gamescope.md
+
+% gamescope, linux
+
+# Run a program with gamescope on the terminal
+gamescope -- <program>
+
+# Run a game with gamescope through Steam
+gamescope -- %command%
+
+# Upscale a 720p game to 1440p with integer scaling
+gamescope <__h___nested_height_> 720 <__H___output_height_> 1440 <__S___scaler_> integer -- <command>
+
+# Limit a vsynced game to 30 FPS
+gamescope <__r___nested_refresh_> 30 -- <command>
+
+# Launch Steam in Big Picture Mode and integrate with gamescope
+gamescope <__e___steam_> -- /usr/bin/steam -tenfoot
+
+# Specify which display to prefer
+gamescope <__O___prefer_output_> <HDMI_A_1_DP_3____> -- <program>
+
+# Toggle fullscreen
+<Super f>
+
+# Display help
+gamescope --help

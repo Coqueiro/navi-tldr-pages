@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/fcrackzip.md
+
+% fcrackzip, linux
+
+# Brute-force a password with a length of 4 to 8 characters and contains only alphanumeric characters (order matters)
+fcrackzip <__b___brute_force_> <__l___length_> 4-8 <__c___charset_> aA1 <archive>
+
+# Brute-force a password in verbose mode with a length of 3 characters that only contains lowercase characters, `$`, and `%`
+fcrackzip <__v___verbose_> <__b___brute_force_> <__l___length_> 3 <__c___charset_> a:$% <archive>
+
+# Brute-force a password that contains only lowercase and special characters
+fcrackzip <__b___brute_force_> <__l___length_> 4 <__c___charset_> a! <archive>
+
+# Brute-force a password containing only digits, starting from the password `12345`
+fcrackzip <__b___brute_force_> <__l___length_> 5 <__c___charset_> 1 <__p___init_password_> 12345 <archive>
+
+# Crack a password using a wordlist
+fcrackzip <__u___use_unzip_> <__D___dictionary_> <__p___init_password_> <wordlist> <archive>
+
+# Benchmark cracking performance
+fcrackzip <__B___benchmark_>

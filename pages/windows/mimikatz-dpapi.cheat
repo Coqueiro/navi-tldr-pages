@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-dpapi.md
+
+% mimikatz-dpapi, windows
+
+# List master keys
+mimikatz "dpapi::masterkey /list"
+
+# Decrypt a DPAPI blob
+mimikatz "dpapi::blob /in:blob_file.bin"
+
+# Retrieve Chrome credentials using DPAPI
+mimikatz "dpapi::chrome /in:Login Data"

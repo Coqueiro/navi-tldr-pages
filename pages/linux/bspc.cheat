@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/bspc.md
+
+% bspc, linux
+
+# Define two virtual desktops
+bspc monitor <__d___reset_desktops_> <desktop_name1> <desktop_name2>
+
+# Focus the given desktop
+bspc desktop <__f___focus_> <number>
+
+# Close the windows rooted at the selected node
+bspc node <__c___close_>
+
+# Send the selected node to the given desktop
+bspc node <__d___to_desktop_> <number>
+
+# Toggle full screen mode for the selected node
+bspc node <__t___state_> ~fullscreen
+
+# Set the value of a specific setting
+bspc config <setting_name> <value>

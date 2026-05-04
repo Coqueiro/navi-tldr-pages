@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gpasswd.md
+
+% gpasswd, linux
+
+# Define group administrators
+sudo gpasswd <__A___administrators_> <user1_user2> <group>
+
+# Set the list of group members
+sudo gpasswd <__M___members_> <user1_user2> <group>
+
+# Create a password for the named group
+gpasswd <group>
+
+# Add a user to the named group
+gpasswd <__a___add_> <user> <group>
+
+# Remove a user from the named group
+gpasswd <__d___delete_> <user> <group>

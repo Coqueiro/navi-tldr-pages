@@ -15,5 +15,8 @@ sudo libinput debug-gui
 # Debug tablet axis values
 sudo libinput debug-tablet
 
+# Record a single device
+sudo libinput record
+
 # Display help
 libinput <__h___help_>

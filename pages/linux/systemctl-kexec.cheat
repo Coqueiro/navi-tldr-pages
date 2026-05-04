@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/systemctl-kexec.md
+
+% systemctl-kexec, linux
+
+# Fast reboot using kexec (if kernel is pre-loaded)
+systemctl kexec
+
+# Force normal reboot even if kexec is available
+systemctl kexec <__f___force_>

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/copy.md
+
+% copy, windows
+
+# Copy a file to another location
+copy <path_to_source_file> <path_to_target_file>
+
+# Copy a file into another directory, keeping the filename
+copy <path_to_source_file> <path_to_target_directory>
+
+# Copy multiple files to a directory
+copy {{path\to\file1 path\to\file2 ...}} <path_to_target_directory>
+
+# Copy all files from one directory to another directory
+copy <path_to_source_directory__> <path_to_target_directory>
+
+# Copy files with a specific extension
+copy <path_to_source_directory___ext> <path_to_target_directory>
+
+# Copy a file and prompt before overwriting
+copy /-y <path_to_source_file> <path_to_target_file>

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mokutil.md
+
+% mokutil, linux
+
+# Show if Secure Boot is enabled
+mokutil --sb-state
+
+# Enable Secure Boot
+mokutil --enable-validation
+
+# Disable Secure Boot
+mokutil --disable-validation
+
+# List enrolled keys
+mokutil <__l___list_enrolled_>
+
+# Enroll a new key
+mokutil <__i___import_> <path_to_key_der>
+
+# List the keys to be enrolled
+mokutil <__N___list_new_>
+
+# Set shim verbosity
+mokutil --set-verbosity true

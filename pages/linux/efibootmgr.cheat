@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/efibootmgr.md
+
+% efibootmgr, linux
+
+# List all boot options with their numbers
+efibootmgr <__u___unicode_>
+
+# Add UEFI Shell v2 as a boot option
+sudo efibootmgr <__c___create_> <__d___disk_> <_dev_sda> <__p___part_> <1> <__l___loader_> "<_path_to_shell_efi>" <__L___label_> "{{UEFI Shell}}"
+
+# Add Linux as a boot option
+sudo efibootmgr <__c___create_> <__d___disk_> <_dev_sda> <__p___part_> <1> <__l___loader_> "<_vmlinuz>" <__u___unicode_> "<kernel_cmdline>" <__L___label_> "<Linux>"
+
+# Change the current boot order
+sudo efibootmgr <__o___bootorder_> <0002_0008_0001_001A____>
+
+# Delete a boot option
+sudo efibootmgr <__b___bootnum_> <0008> <__B___delete_bootnum_>

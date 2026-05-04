@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lvmpolld.md
+
+% lvmpolld, linux
+
+# Start the daemon in the foreground
+lvmpolld <__f___foreground_>
+
+# Start in the foreground with debug logging
+lvmpolld <__f___foreground_> <__l___log_> debug
+
+# Set the idle shutdown timeout (seconds)
+lvmpolld <__t___timeout_> <300>
+
+# Use a custom socket path
+lvmpolld <__s___socket_> <_tmp_lvmpolld_socket>
+
+# Use a custom PID file
+lvmpolld <__p___pidfile_> <_tmp_lvmpolld_pid>
+
+# Dump the current state
+lvmpolld --dump

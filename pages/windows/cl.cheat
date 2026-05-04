@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/cl.md
+
+% cl, windows
+
+# Compile a source file
+cl <path_to_source_c>
+
+# Compile and create an executable with a custom name
+cl /Fe <path_to_output_executable> <path_to_source_c>
+
+# Compile a source file with optimization enabled
+cl /O2 <path_to_source_c>
+
+# Compile a source file and create a debug executable
+cl /Zi <path_to_source_c>
+
+# Compile multiple source files
+cl {{path\to\source1.c path\to\source2.c ...}}
+
+# Specify the output directory for compiled files
+cl /Fo <path_to_output_directory>\ <path_to_source_c>
+
+# Compile with warnings as errors
+cl /WX <path_to_source_c>

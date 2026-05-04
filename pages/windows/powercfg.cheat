@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/powercfg.md
+
+% powercfg, windows
+
+# Display the current power scheme
+powercfg /getactivescheme
+
+# List all available power schemes
+powercfg <__L__list_>
+
+# Set the active power scheme by its GUID
+powercfg /setactive <GUID>
+
+# Turn off the display after a specific number of minutes on AC power
+powercfg <__X__change_> monitor-timeout-ac <minutes>
+
+# Turn off the display after a specific number of minutes on battery power
+powercfg <__X__change_> monitor-timeout-dc <minutes>
+
+# Put the system to sleep after a specific number of minutes on AC power
+powercfg <__X__change_> standby-timeout-ac <minutes>
+
+# Generate a system sleep diagnostics report and save it to a file
+powercfg /sleepstudy /output <path_to_report_html>
+
+# Generate a full power efficiency report and save it to a file
+powercfg /energy /output <path_to_report_html>
