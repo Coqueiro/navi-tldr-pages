@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/powertop2tuned.md
+
+% powertop2tuned, linux
+
+# Create a new TuneD profile based on current PowerTOP recommendations
+sudo powertop2tuned <profile_name>
+
+# Create a new profile and enable most recommendations automatically
+sudo powertop2tuned <__e___enable_> <profile_name>
+
+# Create a profile from an existing PowerTOP HTML report
+sudo powertop2tuned <__i___input_> <path_to_report_html> <profile_name>
+
+# Create a new profile in a specific directory
+sudo powertop2tuned <__o___output_> <path_to_directory> <profile_name>
+
+# Create a new profile without merging the active profile
+sudo powertop2tuned <__n___new_profile_> <profile_name>
+
+# Merge recommendations with a specific existing profile
+sudo powertop2tuned <__m___merge_profile_> <existing_profile> <profile_name>
+
+# Force overwrite an existing profile directory
+sudo powertop2tuned <__f___force_> <profile_name>

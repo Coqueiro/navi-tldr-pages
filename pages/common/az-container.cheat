@@ -4,7 +4,7 @@
 % az-container, common
 
 # Create a container in a container group
-az container create <__g___resource_group_> <resource_group> <__n___name_> <name> --image <image_name> <__os___os_type_> <windows_linux> --cpu <number_of_CPU_cores> --memory <memory_in_GB>
+az container create <__g___resource_group_> <resource_group> <__n___name_> <name> --image <image_name> <__os___os_type_> <windows_linux> --cpu <number_of_cpu_cores> --memory <memory_in_GB>
 
 # Execute a command from within a running container of a container group
 az container exec <__g___resource_group_> <resource_group> <__n___name_> <container_group_name> --exec-command "<command>"

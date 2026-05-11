@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/xkbcli.md
+
+% xkbcli, common
+
+# Display how to type a key and if it needs modifiers (Note: Does not support compose sequences)
+xkbcli how-to-type <A_0x0041>
+
+# Bring up an interactive window that captures keypresses
+xkbcli interactive
+
+# Compile a list of available compose sequences
+xkbcli compile-compose

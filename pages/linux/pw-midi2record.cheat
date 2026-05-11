@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pw-midi2record.md
+
+% pw-midi2record, linux
+
+# Record a MIDI 2.0 clip file from the default source
+pw-midi2record <path_to_file_mid>
+
+# Record a MIDI clip, forcing the MIDI format to use (defaults to `ump`)
+pw-midi2record <__M___force_midi_> <midi_ump> <path_to_file_mid>
+
+# Display help
+pw-midi2record <__h___help_>

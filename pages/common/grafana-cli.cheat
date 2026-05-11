@@ -3,8 +3,17 @@
 
 % grafana-cli, common
 
-# Install, update, or remove specific plugins
-grafana-cli plugins <install_update_remove> {{plugin_id1 plugin_id2 ...}}
+# Install plugins
+grafana cli plugins install {{plugin_id1 plugin_id2 ...}}
+
+# Specify a homepath when installing a plugin
+grafana cli --homepath <_usr_share_grafana> plugins install <plugin_id>
+
+# Update plugins
+grafana cli plugins update {{plugin_id1 plugin_id2 ...}}
+
+# Remove plugins
+grafana cli plugins remove {{plugin_id1 plugin_id2 ...}}
 
 # List all installed plugins
-grafana-cli plugins ls
+grafana cli plugins ls

@@ -4,16 +4,22 @@
 % openconnect, common
 
 # Connect to a server
-openconnect <vpn_example_org>
+sudo openconnect <vpn_example_org>
 
 # Connect to a server, forking into the background
-openconnect --background <vpn_example_org>
+sudo openconnect <__b___background_> <vpn_example_org>
 
 # Terminate the connection that is running in the background
-killall -SIGINT openconnect
+sudo killall -SIGINT openconnect
+
+# Specify the user to log in as
+sudo openconnect <__u___user_> <username> <vpn_example_org>
+
+# Specify the connection protocol
+sudo openconnect --protocol <nc_pulse_gp_f5_fortinet_array> <vpn_example_org>
 
 # Connect to a server, reading options from a configuration file
-openconnect --config=<path_to_file> <vpn_example_org>
+sudo openconnect --config <path_to_config_file> <vpn_example_org>
 
 # Connect to a server and authenticate with a specific SSL client certificate
-openconnect --certificate=<path_to_file> <vpn_example_org>
+sudo openconnect <__c___certificate_> <path_to_certificate_pem> <vpn_example_org>

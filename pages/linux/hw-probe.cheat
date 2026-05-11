@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hw-probe.md
+
+% hw-probe, linux
+
+# Probe for all hardware and upload the data
+sudo -E hw-probe -all -upload

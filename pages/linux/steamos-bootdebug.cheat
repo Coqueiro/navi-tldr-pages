@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/steamos-bootdebug.md
+
+% steamos-bootdebug, linux
+
+# Change what SteamOS shows on boot
+sudo steamos-bootdebug <kernel_debug_kernel_quiet_menu_verbose_quiet_status>
+
+# Show kernel logging only on the next boot
+sudo steamos-bootdebug <kernel_debug_once>
+
+# Set if the boot process should log to a file
+sudo steamos-bootdebug log <enable_disable>
+
+# Display the recorded log file
+sudo steamos-bootdebug log show

@@ -3,8 +3,8 @@
 
 % nvm, common
 
-# Install a specific version of Node.js
-nvm install <node_version>
+# Install/uninstall a specific version of Node.js
+nvm <install_uninstall> <node_version>
 
 # Use a specific version of Node.js in the current shell
 nvm use <node_version>
@@ -12,17 +12,17 @@ nvm use <node_version>
 # Set the default Node.js version
 nvm alias default <node_version>
 
-# List all available Node.js versions and highlight the default one
-nvm list
+# List remote versions available for install, only show LTS (long-term support) versions
+nvm ls-remote --lts
 
-# Uninstall a given Node.js version
-nvm uninstall <node_version>
+# List installed versions
+nvm <_ls_list_>
 
 # Launch the REPL of a specific version of Node.js
-nvm run <node_version> --version
+nvm run <node_version>
 
 # Execute a script in a specific version of Node.js
-nvm exec <node_version> node <app_js>
+nvm exec <node_version> node <path_to_script_js>
 
 # Upgrade to the latest working npm version on the current Node.js version
 nvm install-latest-npm

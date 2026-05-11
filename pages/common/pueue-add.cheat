@@ -13,7 +13,7 @@ pueue add -- {{command --arg -f}}
 pueue add <__s___stashed_> -- {{rsync --archive --compress /local/directory /remote/directory}}
 
 # Add a command to a group and start it immediately, see `pueue group` to manage groups
-pueue add <__i___immediate_> <__g___group_> "<CPU_intensive>" -- {{ffmpeg -i input.mp4 frame_%d.png}}
+pueue add <__i___immediate_> <__g___group_> "<cpu_intensive>" -- {{ffmpeg -i input.mp4 frame_%d.png}}
 
 # Add a command and start it after commands 9 and 12 finish successfully
 pueue add <__a___after_> <9> <12> <__g___group_> "<torrents>" -- {{transmission-cli torrent_file.torrent}}

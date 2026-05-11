@@ -19,7 +19,7 @@ trivy fs --security-checks <vuln_config> <path_to_project_directory>
 trivy config <path_to_iac_directory>
 
 # Scan a local or remote Git repository for vulnerabilities
-trivy repo <path_to_local_repository_directory_remote_repository_URL>
+trivy repo <path_to_local_repository_directory_remote_repository_url>
 
 # Scan a Git repository up to a specific commit hash
 trivy repo --commit <commit_hash> <repository>

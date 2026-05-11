@@ -16,4 +16,4 @@ apt-key del <key_id>
 wget {{[-qO|--quiet --output-document]}} - <https___host_tld_filename_key> | apt-key add -
 
 # Add a key from keyserver with only key ID
-apt-key adv --keyserver <pgp_mit_edu> --recv <KEYID>
+apt-key adv --keyserver <pgp_mit_edu> --recv <key_id>

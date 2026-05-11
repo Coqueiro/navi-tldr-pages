@@ -18,6 +18,9 @@ wine <explorer_notepad_write>
 # Run `Registry Editor`, `Control Panel`, or `Task Manager`
 wine <regedit_control_taskmgr>
 
+# Open a virtual Wine desktop
+wine explorer /desktop=<shell>,<1920x1080>
+
 # Run the configuration tool
 wine winecfg
 

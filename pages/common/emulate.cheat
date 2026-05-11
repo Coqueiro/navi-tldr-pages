@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/emulate.md
+
+% emulate, common
+
+# Print current emulation mode
+emulate
+
+# Adjust settings of the current shell session to mimic Bash
+emulate bash
+
+# Evaluate a [c]ommand within temporary emulation
+emulate ksh -c "{{echo hi}}"
+
+# Emulate the default Zsh, [R]esetting options when possible
+emulate zsh -R
+
+# Scope emulation to the current function
+<my_function>() { emulate -L <zsh_sh_ksh_csh>; <ls> }

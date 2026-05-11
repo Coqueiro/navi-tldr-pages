@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pw-midi2play.md
+
+% pw-midi2play, linux
+
+# Play a MIDI 2.0 clip file over the default target
+pw-midi2play <path_to_file_mid>
+
+# Play a MIDI clip, forcing the MIDI format to use (defaults to `ump`)
+pw-midi2play <__M___force_midi_> <midi_ump> <path_to_file_mid>
+
+# Display help
+pw-midi2play <__h___help_>

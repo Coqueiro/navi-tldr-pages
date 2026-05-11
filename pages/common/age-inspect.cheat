@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/age-inspect.md
+
+% age-inspect, common
+
+# Print the recipient type, the file size, and whether it uses post-quantum encryption
+age-inspect <path_to_file>
+
+# Print the output to `stdout` as JSON
+age-inspect --json <path_to_file>

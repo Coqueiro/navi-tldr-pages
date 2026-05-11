@@ -6,5 +6,8 @@
 # Generate a key pair, save it to an unencrypted file, and print the public key to `stdout`
 age-keygen <__o___output_> <path_to_file>
 
+# Generate a post-quantum key pair, save it to an unencrypted file, and print the public key to `stdout`
+age-keygen -pq <__o___output_> <path_to_file>
+
 # Convert an identit[y] to a recipient and print the public key to `stdout`
 age-keygen -y <path_to_file>

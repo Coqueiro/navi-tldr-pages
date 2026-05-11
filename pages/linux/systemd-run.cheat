@@ -22,7 +22,7 @@ sudo systemd-run --on-calendar=<calendar_event> <command> {{argument1 argument2 
 systemd-run <__r___remain_after_exit_> --pty <command>
 
 # Set properties (e.g. CPUQuota, MemoryMax) of the process and wait until it exits
-systemd-run <__p___property_> MemoryMax=<memory_in_bytes> <__p___property_> CPUQuota=<percentage_of_CPU_time>% --wait <command>
+systemd-run <__p___property_> MemoryMax=<memory_in_bytes> <__p___property_> CPUQuota=<percentage_of_cpu_time>% --wait <command>
 
 # Use the program in a shell pipeline
 <command1> | systemd-run <__P___pipe_> <command2> | <command3>
