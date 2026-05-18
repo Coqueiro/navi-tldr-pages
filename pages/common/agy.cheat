@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/agy.md
+
+% agy, common
+
+# Open a specific file or directory
+agy <path_to_file_or_directory>
+
+# Compare two files with each other
+agy <__d___diff_> <path_to_file1> <path_to_file2>
+
+# Pass in a prompt to run in a chat session in the current working directory
+agy chat "<prompt>"
+
+# Install or uninstall a specific extension
+agy --<install_uninstall>-extension <publisher_extension_path_to_extension_vsix>
+
+# Add an MCP (Model Context Protocol) server definition to the user profile
+agy --add-mcp "<json_string>"
+
+# Display help
+agy <__h___help_>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/spindump.md
+
+% spindump, osx
+
+# Sample all processes for 10 seconds with 10 milliseconds of run time between samples
+sudo spindump
+
+# Sort a specific process topmost for a custom duration and interval
+sudo spindump <pid_partial_name> <duration_seconds> <interval_milliseconds>
+
+# Write output to a specific file
+sudo spindump <pid_partial_name> -o <path_to_output_txt>

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/apt-list.md
+
+% apt-list, linux
+
+# List all available packages
+apt list
+
+# List packages by name only (supports wildcards like *)
+apt list <package>
+
+# List installed packages
+apt list <__i___installed_>
+
+# List upgradable packages
+apt list <__u___upgradable_>

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/criu.md
+
+% criu, linux
+
+# Check if the current kernel has support for the necessary CRIU features
+sudo criu check
+
+# Checkpoint a process with a specific ID, saving the state to a specific directory
+sudo criu dump <__t___tree_> <process_id> <__D___images_dir_> <path_to_directory>
+
+# Restore a process from previously saved image files
+sudo criu restore <__D___images_dir_> <path_to_directory>
+
+# Dump a process and allow it to continue running instead of terminating it
+sudo criu dump <__t___tree_> <process_id> <__D___images_dir_> <path_to_directory> <__R___leave_running_>

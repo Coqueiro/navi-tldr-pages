@@ -3,11 +3,17 @@
 
 % kernel-install, linux
 
-# Add kernel and initramfs images to bootloader partition
-sudo kernel-install add <kernel_version> <kernel_image> {{path/to/initrd-file ...}}
+# Show the current kernel configuration that has been configured or auto-detected
+kernel-install
 
-# Remove kernel from the bootloader partition
+# Show the configuration for a specific kernel image
+kernel-install inspect <path_to_kernel_image>
+
+# Add a kernel to the bootloader partition
+sudo kernel-install add <kernel_version> <path_to_kernel_image>
+
+# Add a kernel and initramfs images to the bootloader partition
+sudo kernel-install add <kernel_version> <path_to_kernel_image> {{path/to/initrd1 path/to/initrd2 ...}}
+
+# Remove a kernel from the bootloader partition
 sudo kernel-install remove <kernel_version>
-
-# Show various paths and parameters that have been configured or auto-detected
-sudo kernel-install inspect <kernel_image>

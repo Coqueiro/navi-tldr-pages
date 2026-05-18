@@ -18,7 +18,7 @@ npm <_c_config_> set <key> <value>
 # Delete a configuration key
 npm <_c_config_> delete <key>
 
-# Edit the global npm configuration file in the default editor
+# Edit the npm configuration file in the default editor (use the `--global` flag to edit the global config)
 npm <_c_config_> edit
 
 # Attempt to repair invalid configuration items

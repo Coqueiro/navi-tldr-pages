@@ -7,13 +7,13 @@
 ip <_ru_rule_>
 
 # Create a new generic routing rule with a higher priority than `main`
-sudo ip <_ru_rule_> <_a_add_> from all lookup <100>
+sudo ip <_ru_rule_> <_a_add_> from all lookup <table_id>
 
 # Add a new rule based on packet source addresses
-sudo ip <_ru_rule_> <_a_add_> from <192_168_178_2_32>
+sudo ip <_ru_rule_> <_a_add_> from <192_168_178_2_32> lookup <table_id>
 
 # Add a new rule based on packet destination addresses
-sudo ip <_ru_rule_> <_a_add_> to <192_168_178_2_32>
+sudo ip <_ru_rule_> <_a_add_> to <192_168_178_2_32> lookup <table_id>
 
 # Delete a rule based on packet source addresses
 sudo ip <_ru_rule_> <_d_delete_> from <192_168_178_2_32>

@@ -10,7 +10,7 @@ sudo lxc-create <__n___name_> <container_name> <__t___template_> download
 sudo lxc-create <__P___lxcpath_> /<path_to_directory>/ <__n___name_> <container_name> <__t___template_> download
 
 # Create a container passing options to a template
-sudo lxc-create <__n___name_> <container_name> <__t___template_> download -- <__d___dist_> <distro_name> <__r___release_> <release_version> <__a___arch_> <arch>
+sudo lxc-create <__n___name_> <container_name> <__t___template_> download -- <__d___dist_> <distro_name> <__r___release_> <release_version> <__a___arch_> <architecture>
 
 # Display help
 lxc-create <______help_>

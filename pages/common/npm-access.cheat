@@ -13,7 +13,7 @@ npm access list collaborators <package_name> <username>
 npm access get status <package_name>
 
 # Set package status (public or private)
-npm access set status <public_private> <package_name>
+npm access set status=<public_private> <package_name>
 
 # Grant access to a package
 npm access grant <read_only_read_write> <scope_team> <package_name>
@@ -22,4 +22,4 @@ npm access grant <read_only_read_write> <scope_team> <package_name>
 npm access revoke <scope_team> <package_name>
 
 # Configure two-factor authentication requirement
-npm access set mfa <none_publish_automation> <package_name>
+npm access set mfa=<none_publish_automation> <package_name>

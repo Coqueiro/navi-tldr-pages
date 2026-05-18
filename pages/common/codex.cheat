@@ -7,19 +7,19 @@
 codex
 
 # Run a single Codex command using a prompt
-codex "{{your prompt}}"
+codex "<prompt>"
 
-# Run a prompt in full auto mode
-codex --full-auto "{{your prompt}}"
+# Run a prompt allowing Codex to edit files in the workspace
+codex --sandbox workspace-write "<prompt>"
 
 # Use a specific model
-codex <__m___model_> <model_name> "{{your prompt}}"
+codex <__m___model_> <model_name> "<prompt>"
 
 # Use a local open source model provider
-codex --oss --local-provider <lmstudio_ollama> "{{your prompt}}"
+codex --oss --local-provider <lmstudio_ollama> "<prompt>"
 
-# [Interactive] Show the resource usage for the current session
-/cost
+# [Interactive] Display session configuration and token usage
+/status
 
 # Display help
 codex <__h___help_>

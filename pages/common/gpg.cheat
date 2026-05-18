@@ -21,8 +21,8 @@ gpg <__c___symmetric_> <doc_txt>
 # Decrypt `doc.txt.gpg` (output to `stdout`)
 gpg <__d___decrypt_> <doc_txt_gpg>
 
-# Import a public key
-gpg --import <public_gpg>
+# Import a public key from WKD (Web Key Directory) if the key isn't already in the keyring
+gpg --locate-keys <alice_example_com>
 
 # Export the public/private key for `alice@example.com` (output to `stdout`)
 gpg <__export___export_secret_keys> <__a___armor_> <alice_example_com>

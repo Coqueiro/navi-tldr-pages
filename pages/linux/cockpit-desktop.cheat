@@ -4,7 +4,7 @@
 % cockpit-desktop, linux
 
 # Open a page
-cockpit-desktop <url> <SSH_host>
+cockpit-desktop <url> <ssh_host>
 
 # Open storage page
 cockpit-desktop <_cockpit__localhost_storage_index_html>

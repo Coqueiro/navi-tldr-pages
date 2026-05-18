@@ -16,7 +16,7 @@ limine-entry-tool --add-uki "<kernel_name>" "<path_to_uki_efi>"
 limine-entry-tool --remove "<kernel_name>"
 
 # Remove an entire OS entry by its name or machine ID
-limine-entry-tool --remove-os "<OS_name_machine_id>"
+limine-entry-tool --remove-os "<os_name_machine_id>"
 
 # Add an EFI boot entry for an alternative bootloader (e.g., Windows)
-limine-entry-tool --add-efi "<EFI_entry_name>" "<path_to_loader_efi>"
+limine-entry-tool --add-efi "<efi_entry_name>" "<path_to_loader_efi>"

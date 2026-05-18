@@ -10,7 +10,7 @@ get_iplayer "<program_name>"
 get_iplayer "<program_name>" <__g___get_>
 
 # Record program by URL from the BBC iPlayer website
-get_iplayer "https://www.bbc.co.uk/iplayer/episode/<program_PID>/<name_of_show_episode_number_episode_title>"
+get_iplayer "https://www.bbc.co.uk/iplayer/episode/<program_pid>/<name_of_show_episode_number_episode_title>"
 
 # Download subtitles for a program by results of search
 get_iplayer "<program_name>" --subtitles-only

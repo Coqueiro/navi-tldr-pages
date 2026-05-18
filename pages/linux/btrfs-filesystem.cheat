@@ -22,4 +22,4 @@ sudo btrfs <_f_filesystem_> <_sy_sync_> <path_to_btrfs_mount>
 sudo btrfs <_f_filesystem_> du <__s___summarize_> <path_to_directory>
 
 # Create a swap file
-sudo btrfs <_f_filesystem_> <_m_mkswapfile_> --size <8g> --uuid <clear_random_time_UUID_value> <path_to_swapfile>
+sudo btrfs <_f_filesystem_> <_m_mkswapfile_> --size <8g> --uuid <clear_random_time_uuid_value> <path_to_swapfile>

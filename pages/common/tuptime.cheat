@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tuptime.md
+
+% tuptime, common
+
+# Show system uptime history and statistics
+tuptime
+
+# Show system lifetime as table
+tuptime --table
+
+# Show system lifetime as list
+tuptime --list
+
+# Show table with kernel version and boot ID
+tuptime --table --kernel --bootid
+
+# Report from startup range
+tuptime --table --since <1> --until <5>
+
+# Limit the report from a given number of seconds ago (e.g. one year = 31557600)
+tuptime --tsince -<31557600>
+
+# Output time in seconds and datetimes in epoch format
+tuptime --seconds
+
+# Report in CSV format
+tuptime --csv

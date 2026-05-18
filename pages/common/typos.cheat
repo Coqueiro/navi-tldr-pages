@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/typos.md
+
+% typos, common
+
+# Check a file or directory for spelling mistakes
+typos <path_to_file_or_directory>
+
+# Fix typos automatically in a file or directory
+typos <__w___write_changes_> <path_to_file_or_directory>
+
+# Preview the changes before applying them
+typos --diff <path_to_file_or_directory>
+
+# List all supported file types
+typos --type-list
+
+# Show spelling mistakes in a specific output format (defaults to `long`)
+typos --format <brief_long_json____> <path_to_file_or_directory>

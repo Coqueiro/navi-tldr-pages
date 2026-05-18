@@ -3,7 +3,7 @@
 
 % evtest, linux
 
-# List all detected input devices
+# List all detected input devices and select one for monitoring
 sudo evtest
 
 # Display events from a specific input device

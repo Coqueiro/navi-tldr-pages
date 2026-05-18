@@ -16,7 +16,7 @@ git stash <__p___patch_>
 git stash list
 
 # Show the changes as a patch between the stash and the commit back when stash entry was first created
-git stash show <__p___patch_>}
+git stash show <__p___patch_>
 
 # Apply a stash and remove it from the stash list if applying doesn't cause conflicts
 git stash pop

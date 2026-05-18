@@ -4,7 +4,7 @@
 % az-cognitiveservices, common
 
 # Create an API Cognitive Services account in a specific location without confirmation required
-az cognitiveservices account create <__n___name_> <account_name> <__g___resource_group_> <resource_group> --kind <API_name> <__l___location_> <location> --sku <sku_name> --yes
+az cognitiveservices account create <__n___name_> <account_name> <__g___resource_group_> <resource_group> --kind <api_name> <__l___location_> <location> --sku <sku_name> --yes
 
 # List usages for Azure Cognitive Services account
 az cognitiveservices account list-usage <__n___name_> <account_name> <__g___resource_group_> <resource_group>

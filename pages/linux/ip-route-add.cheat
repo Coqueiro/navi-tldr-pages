@@ -14,3 +14,6 @@ sudo ip <_r_route_> <_a_add_> <destination_ip> via <gateway_ip> dev <ethX>
 
 # Add a route to a specific routing table
 sudo ip <_r_route_> <_a_add_> <destination_ip> dev <ethX> <_t_table_> <ip_address>
+
+# Force internet traffic to go through a specific device while leaving local traffic unchanged (requires also creating a rule)
+sudo ip <_r_route_> <_a_add_> default via <gateway_ip> dev <ethX> table <table_id>

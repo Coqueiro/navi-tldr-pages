@@ -3,8 +3,8 @@
 
 % git-merge, common
 
-# Merge a branch into your current branch
-git merge <branch_name>
+# Merge branches into your current branch
+git merge {{branch_name1 branch_name2 ...}}
 
 # Edit the merge message
 git merge <__e___edit_> <branch_name>

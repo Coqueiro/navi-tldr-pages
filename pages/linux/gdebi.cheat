@@ -10,7 +10,7 @@ gdebi <path_to_package_deb>
 gdebi <path_to_package_deb> <__q___quiet_>
 
 # Set an APT configuration option
-gdebi <path_to_package_deb> <__o___option_> <APT_OPTS>
+gdebi <path_to_package_deb> <__o___option_> <apt_options>
 
 # Use alternative root dir
 gdebi <path_to_package_deb> --root <path_to_root_directory>
