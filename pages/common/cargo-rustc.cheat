@@ -10,13 +10,13 @@ cargo rustc -- <rustc_options>
 cargo rustc <__r___release_>
 
 # Compile with architecture-specific optimizations for the current CPU
-cargo rustc <__r___release_> -- -C target-cpu=native
+cargo rustc <__r___release_> -- <__C___codegen_> target-cpu=native
 
 # Compile with speed optimizations
-cargo rustc -- -C opt-level <1_2_3>
+cargo rustc -- <__C___codegen_> opt-level=<1_2_3>
 
 # Compile with [s]ize optimizations (`z` also turns off loop vectorization)
-cargo rustc -- -C opt-level <s_z>
+cargo rustc -- <__C___codegen_> opt-level=<s_z>
 
 # Check if your package uses unsafe code
 cargo rustc --lib -- -D unsafe-code

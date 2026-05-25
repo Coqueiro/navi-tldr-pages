@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dagger.md
+
+% dagger, common
+
+# Initialize a new module with the specified SDK
+dagger init --sdk <go_python_typescript> <path_to_module>
+
+# Prepare a local module for development
+dagger develop
+
+# List available functions in the current module
+dagger functions
+
+# Call a function on the current module
+dagger call <function_name>
+
+# Install a module dependency from a Git repository
+dagger install <github_com_user_repo>
+
+# Update a module's dependencies
+dagger update
+
+# Display help
+dagger <__h___help_>
+
+# Display version
+dagger version

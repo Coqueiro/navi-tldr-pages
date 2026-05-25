@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sqlfluff.md
+
+% sqlfluff, common
+
+# Lint a SQL file or directory with a specific dialect
+sqlfluff lint <__d___dialect_> <dialect> <path_to_file_or_directory>
+
+# Auto-format a SQL file or directory with a specific dialect
+sqlfluff format <__d___dialect_> <dialect> <path_to_file_or_directory>
+
+# Automatically fix linting violations in a SQL file or directory
+sqlfluff fix <__d___dialect_> <dialect> <__r___rules_> <rule1_rule2____> <path_to_file_or_directory>
+
+# Parse a SQL file or directory and display the parse tree
+sqlfluff parse <__d___dialect_> <dialect> <path_to_file_or_directory>
+
+# Show all supported SQL dialects
+sqlfluff dialects

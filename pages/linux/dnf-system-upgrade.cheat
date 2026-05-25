@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/dnf-system-upgrade.md
+
+% dnf-system-upgrade, linux
+
+# Prepare the system by upgrading all installed packages
+sudo dnf upgrade --refresh
+
+# Download packages required for the new release version
+sudo dnf system-upgrade download --releasever <release_version>
+
+# Reboot and start the upgrade process
+sudo dnf system-upgrade reboot
+
+# Display the status of the current upgrade transaction
+sudo dnf system-upgrade status
+
+# Display logs from previous upgrade attempts
+sudo dnf system-upgrade log
+
+# Remove cached upgrade data and packages
+sudo dnf system-upgrade clean

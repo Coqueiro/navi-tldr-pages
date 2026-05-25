@@ -12,6 +12,15 @@ typos <__w___write_changes_> <path_to_file_or_directory>
 # Preview the changes before applying them
 typos --diff <path_to_file_or_directory>
 
+# Check a file or directory, including hidden files and directories
+typos --hidden <path_to_file_or_directory>
+
+# Check a file or directory, ignoring files that match a specific glob pattern
+typos --exclude <pattern> <path_to_file_or_directory>
+
+# Write the current configuration to a specific file
+typos --dump-config <path_to_typos_toml>
+
 # List all supported file types
 typos --type-list
 

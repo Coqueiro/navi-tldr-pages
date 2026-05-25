@@ -7,10 +7,10 @@
 cargo rustdoc -- <rustdoc_options>
 
 # Warn about a documentation lint
-cargo rustdoc -- --warn rustdoc::<lint_name>
+cargo rustdoc -- <__W___warn_> rustdoc::<lint_name>
 
 # Ignore a documentation lint
-cargo rustdoc -- --allow rustdoc::<lint_name>
+cargo rustdoc -- <__A___allow_> rustdoc::<lint_name>
 
 # Document the package's library
 cargo rustdoc --lib

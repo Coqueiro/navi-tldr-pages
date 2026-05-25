@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ukify.md
+
+% ukify, linux
+
+# Build a Unified Kernel Image
+ukify build --linux <path_to_vmlinuz> --initrd <path_to_initrd_img> --cmdline "<root_UUID_xxxx>"
+
+# Build a UKI with multiple initrd files
+ukify build --linux <path_to_vmlinuz> --initrd <path_to_initrd1_img> --initrd <path_to_initrd2_img> --cmdline "<root_UUID_xxxx>"
+
+# Build a UKI, specifying the output filename
+ukify build --linux <path_to_vmlinuz> --initrd <path_to_initrd_img> --cmdline "<root_UUID_xxxx>" --output <path_to_output_efi>
+
+# Build a UKI including CPU microcode
+ukify build --linux <path_to_vmlinuz> --initrd <path_to_initrd_img> --microcode <path_to_microcode_img> --cmdline "<root_UUID_xxxx>"
+
+# Sign the UKI for Secure Boot
+ukify build --linux <path_to_vmlinuz> --initrd <path_to_initrd_img> --cmdline "<root_UUID_xxxx>" --secureboot-private-key <path_to_private_key_pem> --secureboot-certificate <path_to_certificate_pem>
+
+# Inspect a UKI file
+ukify inspect <path_to_uki_efi>
+
+# Generate signing keys
+ukify genkey --secureboot-certificate-validity <365>
+
+# Display help
+ukify <__h___help_>

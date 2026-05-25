@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jxlinfo.md
+
+% jxlinfo, common
+
+# Display brief information about an image
+jxlinfo <path_to_file>.jxl
+
+# Display verbose information about an image
+jxlinfo <__v___verbose_> <path_to_file>.jxl
+
+# Display help
+jxlinfo <__h___help_>

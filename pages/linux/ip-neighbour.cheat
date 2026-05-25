@@ -17,3 +17,6 @@ sudo ip <_n_neighbour_> <add_delete> <ip_address> lladdr <mac_address> dev <ethX
 
 # Change or replace an ARP entry for the neighbour IP address to `ethX`
 sudo ip <_n_neighbour_> <change_replace> <ip_address> lladdr <new_mac_address> dev <ethX>
+
+# Display only IPv6 or IPv4 neighbours
+ip <_6__4> <_n_neighbour_>
