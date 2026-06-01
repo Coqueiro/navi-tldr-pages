@@ -10,7 +10,7 @@ ldc2 <path_to_source_d> -of=<path_to_output_executable>
 ldc2 -c <path_to_source_d>
 
 # Select the target architecture and OS
-ldc -mtriple=<architecture_OS> -c <path_to_source_d>
+ldc -mtriple=<architecture_os> -c <path_to_source_d>
 
 # Display help
 ldc2 -h

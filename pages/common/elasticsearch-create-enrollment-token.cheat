@@ -13,7 +13,7 @@ elasticsearch-create-enrollment-token <__s___scope_> kibana
 elasticsearch-create-enrollment-token <__s___scope_> node --verbose
 
 # Create an enrollment token for a Kibana instance with a custom Elasticsearch URL
-elasticsearch-create-enrollment-token <__s___scope_> kibana --url "<IP>"
+elasticsearch-create-enrollment-token <__s___scope_> kibana --url "<ip>"
 
 # Display help
 elasticsearch-create-enrollment-token <__h___help_>

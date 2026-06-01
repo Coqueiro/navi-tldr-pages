@@ -13,7 +13,7 @@ pv <path_to_file>
 pv {{[-cN|--cursor --name]}} in <path_to_file_txt> | grep <pattern> | pv {{[-cN|--cursor --name]}} out > <path_to_filtered_file_txt>
 
 # Attach to an already running process and see its file reading progress
-pv <__d___watchfd_> <PID>
+pv <__d___watchfd_> <pid>
 
 # Read an erroneous file, skip errors as `dd conv=sync,noerror` would
 pv {{[-EE|--skip-errors --skip-errors]}} <path_to_faulty_media> > <path_to_image_img>

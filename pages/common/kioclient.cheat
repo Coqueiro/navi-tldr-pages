@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kioclient.md
+
+% kioclient, common
+
+# Open a URL with its default KDE handler
+kioclient exec <url>
+
+# Print the contents of a remote file to `stdout`
+kioclient cat <sftp___user_host_path_to_file>
+
+# List the contents of a remote directory
+kioclient ls <smb___server_share>
+
+# Copy one or more files via KIO
+kioclient cp {{path/to/source1 path/to/source2 ...}} <path_to_destination>
+
+# Move a file via KIO
+kioclient mv <path_to_source> <path_to_destination>
+
+# Remove a file via KIO
+kioclient rm <url>
+
+# Create a new directory via KIO
+kioclient mkdir <url>
+
+# Display help
+kioclient --help

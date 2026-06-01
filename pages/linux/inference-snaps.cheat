@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/inference-snaps.md
+
+% inference-snaps, linux
+
+# Start a chat in terminal (and a chat server in background on first start)
+<inference_snap> chat
+
+# Show current engine and status of chat server
+<inference_snap> status
+
+# Select specific engine (eg. `cuda` for NVIDIA GPU). Download and use the appropriate model for the engine
+sudo <inference_snap> use-engine <engine>
+
+# Show detailed device hardware information (RAM, architecture, etc.)
+sudo <inference_snap> show-machine
+
+# Get all configuration (`http.host`, `http.port`) of running chat server
+<inference_snap> get

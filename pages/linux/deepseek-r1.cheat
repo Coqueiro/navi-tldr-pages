@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/deepseek-r1.md
+
+% deepseek-r1, linux
+
+# View documentation for `inference-snap`
+tldr inference-snap

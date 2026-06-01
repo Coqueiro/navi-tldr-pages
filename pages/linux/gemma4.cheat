@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gemma4.md
+
+% gemma4, linux
+
+# View documentation for `inference-snap`
+tldr inference-snap

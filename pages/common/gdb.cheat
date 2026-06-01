@@ -7,7 +7,7 @@
 gdb <path_to_executable>
 
 # Attach a process to `gdb`
-gdb <__p___pid_> <procID>
+gdb <__p___pid_> <process_id>
 
 # Debug with a core file
 gdb <__c___core_> <path_to_core> <path_to_executable>

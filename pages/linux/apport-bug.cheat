@@ -13,4 +13,4 @@ apport-bug <package>
 apport-bug <path_to_executable>
 
 # Report a bug about a specific process
-apport-bug <PID>
+apport-bug <pid>

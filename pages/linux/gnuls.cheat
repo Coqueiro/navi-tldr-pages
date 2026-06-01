@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gnuls.md
+
+% gnuls, linux
+
+# View documentation for the original command
+tldr ls

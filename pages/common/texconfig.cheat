@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/texconfig.md
+
+% texconfig, common
+
+# Display the current TeX configuration
+texconfig conf
+
+# Set the default paper size for supported programs
+texconfig paper <a4_letter____>
+
+# Set the default paper size for PDFTeX
+texconfig pdftex paper <a4_letter____>
+
+# Rebuild all TeX formats and font maps
+texconfig init
+
+# Rebuild a specific format
+texconfig init <format>
+
+# Refresh the TeX filename database
+texconfig rehash

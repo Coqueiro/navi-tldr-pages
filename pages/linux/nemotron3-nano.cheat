@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/nemotron3-nano.md
+
+% nemotron3-nano, linux
+
+# View documentation for `inference-snap`
+tldr inference-snap

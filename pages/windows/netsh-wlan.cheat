@@ -7,7 +7,7 @@
 netsh wlan show networks
 
 # Connect to a wireless network with a specific SSID
-netsh wlan connect name=<SSID>
+netsh wlan connect name=<ssid>
 
 # Disconnect from the current wireless network
 netsh wlan disconnect
@@ -16,13 +16,13 @@ netsh wlan disconnect
 netsh wlan show interfaces
 
 # Export a wireless network profile to an XML file
-netsh wlan export profile name=<SSID> folder=<C__path_to_folder> key=clear
+netsh wlan export profile name=<ssid> folder=<C__path_to_folder> key=clear
 
 # Delete a saved wireless network profile
-netsh wlan delete profile name=<SSID>
+netsh wlan delete profile name=<ssid>
 
 # Enable hosted network (turn PC into Wi-Fi hotspot)
-netsh wlan set hostednetwork mode=allow ssid=<SSID> key=<password>
+netsh wlan set hostednetwork mode=allow ssid=<ssid> key=<password>
 
 # Start the hosted network
 netsh wlan start hostednetwork

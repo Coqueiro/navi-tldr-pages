@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gnub2sum.md
+
+% gnub2sum, linux
+
+# View documentation for the original command
+tldr b2sum

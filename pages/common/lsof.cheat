@@ -19,7 +19,7 @@ lsof -u <username>
 lsof -c <process_or_command_name>
 
 # List files opened by a specific process, given its PID
-lsof -p <PID>
+lsof -p <pid>
 
 # List open files in a directory
 lsof +D <path_to_directory>

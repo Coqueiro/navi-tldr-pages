@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gnupinky.md
+
+% gnupinky, linux
+
+# View documentation for the original command
+tldr pinky

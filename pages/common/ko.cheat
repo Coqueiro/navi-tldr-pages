@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/ko.md
+
+% ko, common
+
+# Build and publish a container image from a Go package import path
+ko build <import_path>
+
+# Build and load a container image into a local Docker daemon
+ko build <__L___local_> <import_path>
+
+# Apply Kubernetes manifests with Go image references resolved to digests
+ko apply <__f___filename_> <path_to_manifest_yaml>
+
+# Create Kubernetes resources with resolved image references
+ko create <__f___filename_> <path_to_manifest_yaml>
+
+# Print resolved Kubernetes manifests without applying them
+ko resolve <__f___filename_> <path_to_manifest_yaml>
+
+# Build and run a Go package on Kubernetes
+ko run <import_path>
+
+# Delete Kubernetes resources defined in a manifest
+ko delete <__f___filename_> <path_to_manifest_yaml>
+
+# Log in to a container registry
+ko login <registry_example_com> <__u___username_> <username> <__p___password_> <password>

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hardlink.md
+
+% hardlink, linux
+
+# Perform a dry run without modifying files
+hardlink <__n___dry_run_> <path_to_directory>
+
+# Hardlink duplicate files in a directory
+hardlink <path_to_directory>
+
+# Hardlink duplicate files in multiple directories
+hardlink {{path/to/directory1 path/to/directory2 ...}}
+
+# Display verbose output while hardlinking
+hardlink <__v___verbose_> <path_to_directory>
+
+# Only consider files with a minimum size
+hardlink <__s___minimum_size_> <size> <path_to_directory>

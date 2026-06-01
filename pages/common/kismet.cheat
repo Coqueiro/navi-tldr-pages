@@ -25,4 +25,4 @@ sudo kismet -c <wlan0> --data-source=<rtl433>
 sudo kismet -c <wlan0> --enable-alert=<new_ap>
 
 # Display detailed information about a specific AP's packets
-sudo kismet -c <wlan0> --info <BSSID>
+sudo kismet -c <wlan0> --info <bssid>

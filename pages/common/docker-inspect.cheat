@@ -4,7 +4,7 @@
 % docker-inspect, common
 
 # Display information about a container, image, or volume using a name or ID
-docker inspect <container_image_ID>
+docker inspect <container_image_id>
 
 # Display a container's IP address
 docker inspect <__f___format_> '\{\{range.NetworkSettings.Networks\}\}\{\{.IPAddress\}\}\{\{end\}\}' <container>

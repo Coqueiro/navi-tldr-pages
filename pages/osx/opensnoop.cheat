@@ -10,7 +10,7 @@ sudo opensnoop
 sudo opensnoop -n "<process_name>"
 
 # Track all file opens by a process by PID
-sudo opensnoop -p <PID>
+sudo opensnoop -p <pid>
 
 # Track which processes open a specified file
 sudo opensnoop -f <path_to_file>

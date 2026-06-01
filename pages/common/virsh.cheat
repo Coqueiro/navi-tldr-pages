@@ -7,7 +7,7 @@
 virsh <__c___connect_> <qemu____system_qemu____session_xen____system_lxc____system____>
 
 # List all domains
-virsh <__c___connect_> <URI> list --all
+virsh <__c___connect_> <uri> list --all
 
 # Activate a network named `default`
 sudo virsh net-start <default>

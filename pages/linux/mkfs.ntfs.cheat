@@ -10,4 +10,4 @@ sudo mkfs.ntfs <_dev_sdXY>
 sudo mkfs.ntfs <__L___label_> <volume_label> <_dev_sdXY>
 
 # Create filesystem with specific UUID
-sudo mkfs.ntfs <__U___with_uuid_> <UUID> <_dev_sdXY>
+sudo mkfs.ntfs <__U___with_uuid_> <uuid> <_dev_sdXY>
