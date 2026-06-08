@@ -10,7 +10,7 @@ perldoc -<f_v_a> <name>
 perldoc -q <regex>
 
 # Send output directly to `stdout` (by default, it is send to a pager)
-perldoc -T <page_module_program_URL>
+perldoc -T <page_module_program_url>
 
 # Specify the language code of the desired translation
-perldoc -L <language_code> <page_module_program_URL>
+perldoc -L <language_code> <page_module_program_url>

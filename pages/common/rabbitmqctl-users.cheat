@@ -22,4 +22,4 @@ rabbitmqctl set_permissions <__p___vhost_> <vhost> <username> <read> <write> <co
 rabbitmqctl clear_permissions <__p___vhost_> <vhost> <username>
 
 # Assign one or more tags (e.g., administrator) to a user
-rabbitmqctl set_user_tags <username> <tag1> [<tag2>]
+rabbitmqctl set_user_tags <username> {{tag1 tag2 ...}}

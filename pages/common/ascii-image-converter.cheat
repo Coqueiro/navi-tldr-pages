@@ -4,19 +4,19 @@
 % ascii-image-converter, common
 
 # Convert an image into ASCII
-ascii-image-converter <path_to_image_URL>
+ascii-image-converter <path_to_image_url>
 
 # Colorize the output
-ascii-image-converter <__C___color_> <path_to_image_URL>
+ascii-image-converter <__C___color_> <path_to_image_url>
 
 # Create a tresholded image using braille (if the image is barely visible, try changing the terminal font)
-ascii-image-converter <__b___braille_> <path_to_image_URL>
+ascii-image-converter <__b___braille_> <path_to_image_url>
 
 # Create a dithered image using braille (if the image is barely visible, try changing the terminal font)
-ascii-image-converter <__b___braille_> --dither <path_to_image_URL>
+ascii-image-converter <__b___braille_> --dither <path_to_image_url>
 
 # Display the image with negative colors
-ascii-image-converter {{[-Cn|--color --negative]}} <path_to_image_URL>
+ascii-image-converter {{[-Cn|--color --negative]}} <path_to_image_url>
 
 # Use a wider range of characters to display an image (may improve image accuracy)
-ascii-image-converter <__c___complex_> <path_to_image_URL>
+ascii-image-converter <__c___complex_> <path_to_image_url>

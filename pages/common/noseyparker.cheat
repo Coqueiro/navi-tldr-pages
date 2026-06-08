@@ -13,7 +13,7 @@ noseyparker report <__d___datastore_> <path_to_datastore_np>
 noseyparker report <__d___datastore_> <path_to_datastore_np> <__f___format_> <human_json_jsonl_sarif>
 
 # Scan a remote Git repo (and Git history) for secrets
-noseyparker scan --git-url <URL> <__d___datastore_> <path_to_datastore_np>
+noseyparker scan --git-url <url> <__d___datastore_> <path_to_datastore_np>
 
 # Scan all GitHub repositories of a user or organization for secrets
 noseyparker scan <__github_user___github_organization> <username_or_org_name> <__d___datastore_> <path_to_datastore_np>

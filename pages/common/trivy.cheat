@@ -13,7 +13,7 @@ trivy image <__s___severity_> <HIGH_CRITICAL> <alpine_3_15>
 trivy image --ignore-unfixed <alpine_3_15>
 
 # Scan the filesystem for vulnerabilities and misconfigurations
-trivy fs --security-checks <vuln_config> <path_to_project_directory>
+trivy fs --scanners <vuln_misconfig> <path_to_project_directory>
 
 # Scan a IaC (Terraform, CloudFormation, ARM, Helm, and Dockerfile) directory for misconfigurations
 trivy config <path_to_iac_directory>

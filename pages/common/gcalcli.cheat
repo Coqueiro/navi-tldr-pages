@@ -7,7 +7,10 @@
 gcalcli agenda
 
 # Show events starting from or between specific dates (also takes relative dates e.g. "tomorrow")
-gcalcli agenda <mm_dd> [<mm_dd>]
+gcalcli agenda <mm_dd>
+
+# Show events between specific dates (also takes relative dates e.g. "tomorrow")
+gcalcli agenda <mm_dd> <mm_dd>
 
 # List events from a specific calendar
 gcalcli --calendar <calendar_name> agenda

@@ -13,7 +13,7 @@ security delete-keychain <path_to_file_keychain>
 security create-keychain -p <password> <path_to_file_keychain>
 
 # Set a certificate to use with a website or [s]ervice by its [c]ommon name (fails if several certificates with the same common name exist)
-security set-identity-preference -s <URL_hostname_service> -c "<common_name>" <path_to_file_keychain>
+security set-identity-preference -s <url_hostname_service> -c "<common_name>" <path_to_file_keychain>
 
 # Add a certificate from file to a [k]eychain (if -k isn't specified, the default keychain is used)
 security add-certificates -k <file_keychain> <path_to_cert_file_pem>

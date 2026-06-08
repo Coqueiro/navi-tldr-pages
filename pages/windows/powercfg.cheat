@@ -10,7 +10,7 @@ powercfg /getactivescheme
 powercfg <__L__list_>
 
 # Set the active power scheme by its GUID
-powercfg /setactive <GUID>
+powercfg /setactive <guid>
 
 # Turn off the display after a specific number of minutes on AC power
 powercfg <__X__change_> monitor-timeout-ac <minutes>

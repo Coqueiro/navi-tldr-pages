@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-update-server-info.md
+
+% git-update-server-info, common
+
+# Update Git's auxiliary files for dumb HTTP serving
+git update-server-info
+
+# Rebuild the auxiliary info files from scratch
+git update-server-info <__f___force_>

@@ -21,5 +21,5 @@ nvtop <__E___encode_hide_> -1
 # Show a single combined bar plot instead of per-GPU plots
 nvtop <__p___no_plot_>
 
-# Show the program version
+# Display version
 nvtop <__v___version_>

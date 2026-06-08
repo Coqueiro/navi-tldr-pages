@@ -25,4 +25,4 @@ podman exec {{[-it|--interactive --tty]}} <container_name> <sh>
 podman rm <container_name>
 
 # Display the logs of one or more containers and follow log output
-podman logs <__f___follow_> <container_name> <container_id>
+podman logs <__f___follow_> {{container_name_or_id1 container_name_or_id2 ...}}

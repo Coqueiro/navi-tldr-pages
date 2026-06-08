@@ -6,7 +6,7 @@
 # Login to a registry
 gcrane auth login <registry> <__u___username_> <user> <__p___password_> <password>
 
-# List tags, manifests, and sub-repostiories
+# List tags, manifests, and sub-repositories
 gcrane ls <registry>/<project_id>
 
 # Copy images from one registry to another

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/gethelpcmd-expertexperienceadmintask.md
+
+% gethelpcmd-expertexperienceadmintask, windows
+
+# Get detailed information and accept this command's End-User License Agreement (EULA)
+GetHelpCmd.exe -S ExpertExperienceAdminTask -AcceptEula
+
+# Get detailed information and save the logs to a specific directory
+GetHelpCmd.exe -S ExpertExperienceAdminTask -AcceptEula -LogFolder <path_to_directory>
+
+# Get detailed information without showing the progress
+GetHelpCmd.exe -S ExpertExperienceAdminTask -AcceptEula -HideProgress

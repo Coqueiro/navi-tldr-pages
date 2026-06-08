@@ -9,7 +9,7 @@ go test
 # [v]erbosely test the package in the current directory
 go test -v
 
-# Test the packages in the current directory and all subdirectories (note the `...`)
+# Test the packages in the current directory and all subdirectories
 go test -v ./...
 
 # Test the package in the current directory and run all benchmarks

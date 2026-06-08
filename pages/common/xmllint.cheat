@@ -19,4 +19,4 @@ xmllint --format <source_file_xml>
 xmllint --valid <source_file_xml>
 
 # Validate XML against DTD schema hosted online
-xmllint --dtdvalid <URL> <source_file_xml>
+xmllint --dtdvalid <url> <source_file_xml>

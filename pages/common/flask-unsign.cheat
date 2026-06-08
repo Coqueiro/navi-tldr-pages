@@ -7,7 +7,7 @@
 flask-unsign <__d___decode_> <__c___cookie_> <cookie>
 
 # Decode a session cookie fetched from a URL which returns a `Set-Cookie` header
-flask-unsign <__d___decode_> --server <URL>
+flask-unsign <__d___decode_> --server <url>
 
 # Brute-force a secret key using the default flask-unsign-wordlist (requires `flask-unsign-wordlist`)
 flask-unsign <__u___unsign_> <__c___cookie_> <cookie>

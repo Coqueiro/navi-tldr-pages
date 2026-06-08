@@ -7,7 +7,7 @@
 limactl list
 
 # Create a VM using the default settings and optionally provide a name and/or a template (see `limactl create --list-templates` for available templates)
-limactl create --name <vm_name> template://<debian_fedora_ubuntu____>
+limactl create --name <vm_name> template:<debian_fedora_ubuntu____>
 
 # Start a VM (this might install some dependencies in it and take a few minutes)
 limactl start <vm_name>

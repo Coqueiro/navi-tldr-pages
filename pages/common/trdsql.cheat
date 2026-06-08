@@ -13,13 +13,13 @@ trdsql "SELECT * FROM <path_to_file_json>::.list"
 trdsql -icsv -ih "SELECT <column1_column2> FROM <path_to_file__csv> WHERE column2 != '' ORDER BY <column1> GROUP BY <column1>"
 
 # Merge content of 2 CSV files to one CSV file
-trdsql "SELECT <column1_colum2> FROM <path_to_file1_csv> UNION SELECT <column1_column2> FROM <path_to_file2_csv>"
+trdsql "SELECT <column1_column2> FROM <path_to_file1_csv> UNION SELECT <column1_column2> FROM <path_to_file2_csv>"
 
 # Connect to PostgreSQL database
 trdsql -driver postgres -dsn "host=<hostname> port=<5433> dbname=<database_name>" "SELECT 1"
 
 # Create table data to MySQL database from CSV file
-trdsql -driver mysql -dsn "<username>:<password>@<hostname>/<database>" -ih "CREATE TABLE <table> (<column1> int, <colum2> varchar(20)) AS SELECT <column3> AS <column1>,<column2> FROM <path_to_header_file_csv>"
+trdsql -driver mysql -dsn "<username>:<password>@<hostname>/<database>" -ih "CREATE TABLE <table> (<column1> int, <column2> varchar(20)) AS SELECT <column3> AS <column1>,<column2> FROM <path_to_header_file_csv>"
 
 # Show data from compress log files
 trdsql -iltsv "SELECT * FROM <path_to_access_log_gz>"

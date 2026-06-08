@@ -7,7 +7,7 @@
 sudo systemctl start stratisd
 
 # Create a storage pool from one or more devices
-sudo stratis pool create <pool_name> <_dev_sdX> <_dev_sdY>
+sudo stratis pool create <pool_name> {{/dev/sdX /dev/sdY ...}}
 
 # Create a filesystem (volume) in a pool
 sudo stratis filesystem create <pool_name> <volume_name>

@@ -1,7 +1,7 @@
 ; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/linux/inference-snaps.md
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/inference-snap.md
 
-% inference-snaps, linux
+% inference-snap, linux
 
 # Start a chat in terminal (and a chat server in background on first start)
 <inference_snap> chat

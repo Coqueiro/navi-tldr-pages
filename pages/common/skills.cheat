@@ -22,4 +22,4 @@ skills <_rm_remove_> <skill_name>
 skills update
 
 # Create a new `SKILL.md` template
-skills init <_skill_name_>
+skills init <skill_name>

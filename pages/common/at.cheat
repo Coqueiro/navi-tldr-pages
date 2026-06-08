@@ -18,5 +18,5 @@ at -f <path_to_file> 9:30 PM Tue
 # List all queued jobs for the current user (same as `atq`)
 at -l
 
-# View a specied job
+# View a specified job
 at -c <job_number>

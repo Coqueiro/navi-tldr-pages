@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fc-scan.md
+
+% fc-scan, common
+
+# Scan a font file
+fc-scan <path_to_font_file>
+
+# Scan a directory of fonts recursively
+fc-scan <path_to_directory>
+
+# Scan multiple files or directories
+fc-scan {{path/to/font1.ttf path/to/font2.otf ...}}
+
+# Print results without including font sizes
+fc-scan <__b___brief_> <path_to_font_file>
+
+# Print results using a custom output format
+fc-scan <__f___format_> "{{%{family}\n}}" <path_to_font_file>
+
+# Display help
+fc-scan <__h___help_>
+
+# Display version
+fc-scan <__V___version_>

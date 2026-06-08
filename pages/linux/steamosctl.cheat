@@ -12,5 +12,17 @@ steamosctl switch-to-game-mode
 # Change whether the system opens gamemode or desktop during login
 steamosctl set-default-login-mode <game_desktop>
 
+# Get currently used CPU scheduler
+steamosctl get-cpu-scheduler
+
+# Set the system to use a specific CPU scheduler
+steamosctl set-cpu-scheduler <none_lavd____>
+
+# Display available desktop sessions
+steamosctl get-valid-desktop-sessions
+
+# Set the the default desktop session
+steamosctl set-default-desktop-session <plasma_desktop_plasmax11_desktop____>
+
 # Display help
 steamosctl

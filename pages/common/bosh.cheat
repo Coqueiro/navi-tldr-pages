@@ -4,7 +4,7 @@
 % bosh, common
 
 # Create local alias for director in a specific environment
-bosh alias-env <environment_name> <__e___environment_> <ip_address_URL> --ca-cert <ca_certificate>
+bosh alias-env <environment_name> <__e___environment_> <ip_address_url> --ca-cert <ca_certificate>
 
 # List environments
 bosh environments

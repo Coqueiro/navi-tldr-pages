@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/pyinstaller.md
+
+% pyinstaller, common
+
+# Bundle a Python script into a one-folder bundle (output goes to `dist/`)
+pyinstaller <path_to_script_py>
+
+# Bundle a Python script into a single executable file
+pyinstaller <__F___onefile_> <path_to_script_py>
+
+# Bundle a GUI application without opening a console window
+pyinstaller <__w___windowed_> <path_to_script_py>
+
+# Set the name of the bundled executable
+pyinstaller <__n___name_> <app_name> <path_to_script_py>
+
+# Set a custom icon for the executable
+pyinstaller <__i___icon_> <path_to_icon_ico> <path_to_script_py>
+
+# Include additional data files or directories in the bundle
+pyinstaller --add-data "<path_to_source>:<destination>" <path_to_script_py>
+
+# Display help
+pyinstaller <__h___help_>
+
+# Display version
+pyinstaller <__v___version_>

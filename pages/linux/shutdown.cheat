@@ -10,7 +10,7 @@ shutdown -h now
 shutdown <__r___reboot_> now
 
 # Reboot in 5 minutes
-shutdown <__r___reboot_> +<5> &
+shutdown <__r___reboot_> +5 &
 
 # Shutdown at 1:00 pm (Uses 24h clock)
 shutdown -h 13:00

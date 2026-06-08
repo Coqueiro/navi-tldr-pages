@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/gethelpcmd.md
+
+% gethelpcmd, windows
+
+# View documentation for PowerShell's `Get-Help` command
+tldr get-help
+
+# View documentation for the `ExpertExperienceAdminTask` scenario
+tldr gethelpcmd-expertexperienceadmintask
+
+# View documentation for the `OutlookCalendarCheckTask` scenario
+tldr gethelpcmd-outlookcalendarchecktask

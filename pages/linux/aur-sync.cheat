@@ -9,11 +9,11 @@ aur sync {{package1 package2 ...}}
 # Upgrade local repository packages
 aur sync <__u___upgrades_>
 
+# Ignore specific packages when upgrading
+aur sync <__u___upgrades_> --ignore <package1_package2____>
+
 # Clean build files after install
 aur sync <__C___clean_> <package>
 
 # Install a package without viewing changes in Vim and do not confirm dependency installation
 aur sync --noview <__n___noconfirm_> <package>
-
-# Ignore specific packages when upgrading
-aur sync <__u___upgrades_> --ignore <package1_package2____>

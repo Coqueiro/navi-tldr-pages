@@ -7,7 +7,7 @@
 fakedata --generators
 
 # Generate data using one or more generators
-fakedata <generator1> <generator2>
+fakedata {{generator1 generator2 ...}}
 
 # Generate data with a specific output format
 fakedata <__f___format_> <csv_tab_sql> <generator>

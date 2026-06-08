@@ -4,7 +4,7 @@
 % importctl, linux
 
 # Download image in tarball format from a url via pull
-sudo importctl pull-tar <URL> <path_to_directory>
+sudo importctl pull-tar <url> <path_to_directory>
 
 # Pull or download from a remote source that is either raw or `.qcow2` file, and stores it as a raw file
 sudo importctl pull-raw <https___example_com_source_ext> <name> --class=<machine_portable_sysext_confext>

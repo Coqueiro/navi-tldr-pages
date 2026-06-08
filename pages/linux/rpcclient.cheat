@@ -15,14 +15,14 @@ rpcclient <__U___user_> <domain>\<username> --pw-nt-hash <ip_address>
 # Execute shell commands on a remote host
 rpcclient <__U___user_> <domain>\<username>%<password> <__c___command_> <semicolon_separated_commands> <ip_address>
 
-# Display domain users
-rpcclient $> enumdomusers
+# [Interactive] Display domain users
+enumdomusers
 
-# Display privileges
-rpcclient $> enumprivs
+# [Interactive] Display privileges
+enumprivs
 
-# Display information about a specific user
-rpcclient $> queryuser <username_rid>
+# [Interactive] Display information about a specific user
+queryuser <username_rid>
 
-# Create a new user in the domain
-rpcclient $> createdomuser <username>
+# [Interactive] Create a new user in the domain
+createdomuser <username>

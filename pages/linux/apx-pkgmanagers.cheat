@@ -6,7 +6,7 @@
 # Interactively create a new package manager configuration
 apx pkgmanagers create
 
-# List all available package manager confirgurations
+# List all available package manager configurations
 apx pkgmanagers list
 
 # Remove a package manager configuration
