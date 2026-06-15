@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/tuned.md
+
+% tuned, linux
+
+# Start the `tuned` daemon in the foreground
+sudo tuned
+
+# Start the `tuned` daemon in the background
+sudo tuned <__d___daemon_>
+
+# Start the `tuned` daemon with a specific profile
+sudo tuned <__p___profile_> <profile_name>
+
+# Start the `tuned` daemon logging to a custom log file
+sudo tuned <__l___log_> <path_to_log_file_log>
+
+# Start the `tuned` daemon writing its process ID to a custom PID file
+sudo tuned <__P___pid_> <path_to_pid_file_pid>
+
+# Start the `tuned` daemon with debugging messages
+sudo tuned <__D___debug_>

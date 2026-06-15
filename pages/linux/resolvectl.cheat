@@ -19,7 +19,7 @@ resolvectl flush-caches
 resolvectl statistics
 
 # Retrieve an MX record of a domain
-resolvectl --legend <no> <__t___type_> <MX> query <domain>
+resolvectl --legend <no> <__t___type_> MX query <domain>
 
 # Resolve an SRV record, for example `_xmpp-server._tcp gmail.com`
 resolvectl service _<service>._<protocol> <name>

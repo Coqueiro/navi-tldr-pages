@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mariadb-binlog.md
+
+% mariadb-binlog, common
+
+# Show events from a specific binary log file
+mariadb-binlog <path_to_binlog>
+
+# Show entries from a binary log for a specific database
+mariadb-binlog <__d___database_> <database_name> <path_to_binlog>
+
+# Show events from a binary log between specific dates
+mariadb-binlog --start-datetime '{{2022-01-01 01:00:00}}' --stop-datetime '{{2022-02-01 01:00:00}}' <path_to_binlog>
+
+# Show events from a binary log between specific positions
+mariadb-binlog <__j___start_position_> <100> --stop-position <200> <path_to_binlog>
+
+# Show binary log from a MariaDB server on the given host
+mariadb-binlog <__h___host_> <hostname> <path_to_binlog>

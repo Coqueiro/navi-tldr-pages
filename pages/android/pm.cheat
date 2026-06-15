@@ -3,17 +3,26 @@
 
 % pm, android
 
-# List all installed apps
+# List installed packages
 pm list packages
 
-# List all installed [s]ystem apps
-pm list packages -s
+# Install an app package from a given path
+pm install /<path_to_app>.apk
 
-# List all installed [3]rd-party apps
-pm list packages -3
+# Uninstall a package from the device
+pm uninstall <package>
 
-# List apps matching specific keywords
-pm list packages {{keyword1 keyword2 ...}}
+# Clear all app data for a package
+pm clear <package>
 
-# Display a path of the APK of a specific app
-pm path <app>
+# Enable a package or component
+pm enable <package_or_class>
+
+# Disable a package or component
+pm disable-user <package_or_class>
+
+# Grant a permission for an app
+pm grant <package> <android_permission_CAMERA_android_permission_ACCESS_FINE_LOCATION_android_permission_READ_CONTACTS____>
+
+# Revoke a permission for an app
+pm revoke <package> <android_permission_CAMERA_android_permission_ACCESS_FINE_LOCATION_android_permission_READ_CONTACTS____>

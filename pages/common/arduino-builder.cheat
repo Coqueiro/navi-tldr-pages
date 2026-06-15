@@ -16,4 +16,4 @@ arduino-builder -build-path <path_to_build_directory>
 arduino-builder -build-options-file <path_to_build_options_json>
 
 # Enable verbose mode
-arduino-builder -verbose <true>
+arduino-builder -verbose true

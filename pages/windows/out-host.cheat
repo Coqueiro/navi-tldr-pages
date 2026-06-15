@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/out-host.md
+
+% out-host, windows
+
+# Display a command output or variable's value into the command-line (equivalent to invoking the command or variable without `Out-Host` itself)
+<command_or_variable> | Out-Host
+
+# Display the output into an interactive paging view (will not work in PowerShell ISE)
+<command_or_variable> | Out-Host -Paging
+
+# Interactively display a text file within the paging view (equivalent to `more <path_to_file>`)
+Get-Content <path_to_file> | Out-Host -Paging
+
+# Go to the next page within the paging view
+<Space>
+
+# Go to the next line within the paging view
+<Enter>
+
+# Exit the paging view
+<q>

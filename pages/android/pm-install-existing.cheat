@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/android/pm-install-existing.md
+
+% pm-install-existing, android
+
+# Re-add an app
+pm install-existing <app_name>

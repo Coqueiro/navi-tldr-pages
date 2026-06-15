@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/out-gridview.md
+
+% out-gridview, windows
+
+# Display the command or cmdlet outputs into a new window
+<command> | Out-GridView
+
+# Display a PowerShell hashtable (such as `$PSVersionTable`), and do not finish the command until the window has been closed
+$PSVersionTable | Out-GridView -Wait
+
+# Read and parse a CSV file into a new window, with a custom title
+Import-Csv <path_to_file_csv> | Out-GridView -Title "<title>"
+
+# Interactively select a subset of rows from a previous command's `stdout` to the `stdin` input for another command (use `<Ctrl LeftClick>`, `<Shift LeftClick>`, `<Shift ArrowUp>`, or `<Shift ArrowDown>` for multi-selection)
+<previous_command> | Out-GridView -PassThru | <next_command>
+
+# Interactively select a subset of rows of a text file to be passed as an input for another command
+Get-Content <path_to_file_txt> | Out-GridView -PassThru | <command>

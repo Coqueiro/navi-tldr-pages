@@ -10,7 +10,7 @@ godoc <fmt>
 godoc <fmt> <Printf>
 
 # Serve documentation as a web server on port 6060
-godoc -http=:<6060>
+godoc -http=:6060
 
 # Create an index file
 godoc -write_index -index_files=<path_to_file>

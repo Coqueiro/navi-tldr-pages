@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/b4-prep.md
+
+% b4-prep, linux
+
+# Start a new patch series branch forked from a specific point
+b4 prep <__n___new_> <series_name> <__f___fork_point_> <fork_point>
+
+# Edit the cover letter for the current series
+b4 prep --edit-cover
+
+# Automatically populate the cover letter with recipients from commit trailers and maintainer files
+b4 prep <__c___auto_to_cc_>
+
+# Run local checks (e.g., `checkpatch.pl`) on the series
+b4 prep --check
+
+# Enroll an existing branch as a b4-prep-managed branch
+b4 prep <__e___enroll_> <base_branch>
+
+# Archive and clean up an obsolete prep-managed branch
+b4 prep --cleanup <branch_name>

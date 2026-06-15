@@ -10,4 +10,4 @@ texdoc <search>
 texdoc <__l___list_> <search>
 
 # Open full documentation of texdoc
-texdoc <texdoc>
+texdoc texdoc

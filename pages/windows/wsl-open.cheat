@@ -4,7 +4,7 @@
 % wsl-open, windows
 
 # Open the current directory in Windows Explorer
-wsl-open <_>
+wsl-open .
 
 # Open a URL in the user's default web browser in Windows
 wsl-open <https___example_com>

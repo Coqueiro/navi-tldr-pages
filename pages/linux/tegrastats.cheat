@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/tegrastats.md
+
+% tegrastats, linux
+
+# Repeatedly print system statistics
+sudo tegrastats
+
+# Set a custom interval in milliseconds
+sudo tegrastats --interval <1000>
+
+# Write the output to a file
+sudo tegrastats --logfile <filename>

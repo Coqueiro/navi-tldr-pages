@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/iw-event.md
+
+% iw-event, linux
+
+# Listen to wireless events
+iw event
+
+# Print a kernel timestamp
+iw event -t
+
+# Print a human readable timestamp
+iw event -T
+
+# Print timestamp relative to the last event
+iw event -r
+
+# Print full frame data
+iw event -f

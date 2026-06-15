@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/metaflac.md
+
+% metaflac, common
+
+# Show all tags in a FLAC file
+metaflac --show-all-tags <path_to_file_flac>
+
+# Show one or more specific tags from a FLAC file
+metaflac --show-tag <tag_name1> --show-tag <tag_name2> <path_to_file_flac>
+
+# Set a tag in a FLAC file
+metaflac --set-tag "<tag_name>=<tag_value>" <path_to_file_flac>
+
+# Remove all tags with a specific name from a FLAC file
+metaflac --remove-tag <tag_name> <path_to_file_flac>
+
+# Remove all tags from a FLAC file
+metaflac --remove-all-tags <path_to_file_flac>
+
+# Import tags from a file (one `NAME=VALUE` pair per line)
+metaflac --import-tags-from <path_to_tags_txt> <path_to_file_flac>
+
+# List all metadata blocks in a FLAC file
+metaflac --list <path_to_file_flac>
+
+# Show the sample rate and number of channels from a FLAC file
+metaflac --show-sample-rate --show-channels <path_to_file_flac>

@@ -10,4 +10,4 @@ xmount --in <raw> <path_to_image_dd> --out <dmg> <mountpoint>
 xmount --cache <path_to_cache_ovl> --in <ewf> <path_to_image_E__> --out <vhd> <mountpoint>
 
 # Mount the first partition at sector 2048 into a new `.raw` image file
-xmount --offset <2048> --in <raw> <path_to_image_dd> --out <raw> <mountpoint>
+xmount --offset 2048 --in <raw> <path_to_image_dd> --out raw <mountpoint>

@@ -5,3 +5,18 @@
 
 # Start the interactive installer
 archinstall
+
+# Start the interactive installer and generate a configuration file instead of installing
+archinstall --dry-run
+
+# Enable advanced options
+archinstall --advanced
+
+# Install using the specified configuration files
+archinstall --config <path_to_config_json> --creds <path_to_credentials_json>
+
+# Install using configuration files from a remote server
+archinstall --config-url <https___example_com_config_json> --creds-url <https___example_com_credentials_json>
+
+# Install using the specified script
+archinstall --script <minimal_only_hd>

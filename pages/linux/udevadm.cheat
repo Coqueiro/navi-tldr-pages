@@ -13,7 +13,7 @@ sudo udevadm monitor <__k___kernel_>
 sudo udevadm monitor <__u___udev_>
 
 # List attributes of device `/dev/sda`
-sudo udevadm info <__a___attribute_walk_> <_dev_sda>
+sudo udevadm info <__a___attribute_walk_> /dev/sda
 
 # Reload all `udev` rules
 sudo udevadm control <__R___reload_>
@@ -22,4 +22,4 @@ sudo udevadm control <__R___reload_>
 sudo udevadm trigger
 
 # Test an event run by simulating loading of `/dev/sda`
-sudo udevadm test <_dev_sda>
+sudo udevadm test /dev/sda

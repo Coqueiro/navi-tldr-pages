@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/update-desktop-database.md
+
+% update-desktop-database, linux
+
+# Update the desktop file MIME type cache for standard system directories
+sudo update-desktop-database
+
+# Update the cache for a specific desktop file directory
+update-desktop-database <path_to_directory>
+
+# Update the cache for multiple directories
+update-desktop-database {{path/to/directory1 path/to/directory2 ...}}
+
+# Update the cache without displaying any output
+update-desktop-database <__q___quiet_>
+
+# Update the cache with verbose output
+update-desktop-database <__v___verbose_>

@@ -4,4 +4,13 @@
 % screencap, android
 
 # Take a screenshot
-screencap <path_to_file>
+screencap <path_to_image_png>
+
+# Print file contents to `stdout` as PNG
+screencap -p
+
+# Take a screenshot and save it over an `adb` connection
+adb shell screencap -p > <path_to_image_png>
+
+# Display help
+screencap -h

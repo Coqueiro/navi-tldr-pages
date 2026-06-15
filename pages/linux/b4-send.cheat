@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/b4-send.md
+
+% b4-send, linux
+
+# Send patches from the current prep-tracked branch
+b4 send
+
+# Generate the messages to review without sending them
+b4 send <__o___output_dir_> <path_to_directory>
+
+# Send patches to specific recipients for preview without rerolling the series version
+b4 send --preview-to {{email_address1 email_address2 ...}}
+
+# Send a previously sent version of the series again
+b4 send --resend <version_number>
+
+# Perform a dry run without sending any mail
+b4 send <__d___dry_run_>

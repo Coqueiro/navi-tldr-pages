@@ -13,4 +13,4 @@ beanstalkd -l <ip_address> -p <port_number>
 beanstalkd -b <path_to_persistence_directory>
 
 # Sync to the persistence directory every 500 milliseconds
-beanstalkd -b <path_to_persistence_directory> -f <500>
+beanstalkd -b <path_to_persistence_directory> -f 500

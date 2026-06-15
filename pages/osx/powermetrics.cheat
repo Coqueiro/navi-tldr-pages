@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/powermetrics.md
+
+% powermetrics, osx
+
+# Display CPU, power, and wakeup metrics using the default 5-second sample interval
+sudo powermetrics
+
+# Sample metrics every 2000 milliseconds taking 10 samples then exit
+sudo powermetrics <__i___sample_rate_> 2000 <__n___sample_count_> 10
+
+# Save output to a file instead of `stdout`
+sudo powermetrics <__o___output_file_> <path_to_output_txt>
+
+# Order the process list by the specified method (default: `composite`)
+sudo powermetrics <__r___order_> <pid_wakeups_cputime_composite>
+
+# Display output in machine-readable property list format and print a usage summary on exit
+sudo powermetrics <__f___format_> plist --show-usage-summary

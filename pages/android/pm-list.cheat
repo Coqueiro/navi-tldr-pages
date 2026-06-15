@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/android/pm-list.md
+
+% pm-list, android
+
+# List all installed packages
+pm list packages
+
+# List either [s]ystem or [3]rd-party packages
+pm list packages <_s__3>
+
+# Print all users on the system
+pm list users
+
+# Print all known permission groups
+pm list permission-groups
+
+# Print all known permissions
+pm list permissions
+
+# List all test packages
+pm list instrumentation
+
+# Print all features of the system
+pm list features
+
+# Print all the libraries supported by the current device
+pm list libraries

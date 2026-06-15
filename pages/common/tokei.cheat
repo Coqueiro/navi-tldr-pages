@@ -13,4 +13,4 @@ tokei <path_to_directory> <__e___exclude_> <__min_js>
 tokei <path_to_directory> <__f___files_>
 
 # Display a report for all files of type Rust and Markdown
-tokei <path_to_directory> <__t___type_> <Rust>,<Markdown>
+tokei <path_to_directory> <__t___types_> <Rust>,<Markdown>

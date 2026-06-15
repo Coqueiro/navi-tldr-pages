@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/freebsd/pfctl.md
+
+% pfctl, freebsd
+
+# Enable the packet filter
+sudo pfctl -e
+
+# Disable the packet filter
+sudo pfctl -d
+
+# Load rules from a configuration file
+sudo pfctl -f <path_to_pf_conf>
+
+# Show all active rules
+pfctl -sr
+
+# Show packet filter status information
+pfctl -s info
+
+# Flush all rules
+sudo pfctl -F rules
