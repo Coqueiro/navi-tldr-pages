@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/foot.md
+
+% foot, common
+
+# Start a terminal
+foot
+
+# Start the server (use `footclient` to start terminal windows that connect to the server)
+foot <__s___server_>
+
+# Execute a command in a new terminal window
+foot <command>
+
+# Start a terminal in fullscreen mode
+foot <__F___fullscreen_>
+
+# Start a terminal with the specified window dimensions, in pixels
+foot <__w___window_size_pixels_> <width>x<height>
+
+# Start a terminal with the specified Wayland app id (default: `foot`)
+foot <__a___app_id_> <id>
+
+# Check for errors in the configuration file
+foot <__C___check_config_>
+
+# Override a configuration option
+foot <__o___override_> <section>.<key>=<value>

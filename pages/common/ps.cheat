@@ -22,4 +22,7 @@ ps <__u___user_> $(id <__u___user_>) f
 ps <__o___format_> ppid= <__p___pid_> <pid>
 
 # Sort processes by memory consumption
-ps --sort size
+ps <_k___sort_> size
+
+# Display threads for a specific process
+ps -L <__p___pid_> <process_id>

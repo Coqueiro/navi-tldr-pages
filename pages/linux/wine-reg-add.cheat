@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wine-reg-add.md
+
+% wine-reg-add, linux
+
+# Add a new registry key
+wine reg add '<HKEY_CURRENT_USER_path_to_key>'
+
+# Add a [v]alue with specific [d]ata under a key
+wine reg add '<HKEY_CURRENT_USER_path_to_key>' /v <value_name> /d <data>
+
+# Add a value with a specific data [t]ype (defaults to `REG_SZ`)
+wine reg add '<HKEY_CURRENT_USER_path_to_key>' /v <value_name> /t <REG_SZ_REG_DWORD_REG_QWORD_REG_BINARY_REG_MULTI_SZ_REG_EXPAND_SZ_REG_NONE> /d <data>
+
+# Set the default (unnamed) value of a key
+wine reg add '<HKEY_CURRENT_USER_path_to_key>' /ve /d <data>
+
+# Add a `REG_MULTI_SZ` value, specifying the string [s]eparator character
+wine reg add '<HKEY_CURRENT_USER_path_to_key>' /v <value_name> /t REG_MULTI_SZ /s <_> /d '<string1_string2_string3>'
+
+# [f]orcefully overwrite an existing value without prompting for confirmation
+wine reg add '<HKEY_CURRENT_USER_path_to_key>' /v <value_name> /d <data> /f
+
+# Display help
+wine reg add /?

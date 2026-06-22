@@ -3,7 +3,7 @@
 
 % pammixinterlace, common
 
-# Merge each row in an image with its two neighbours
+# Merge each row in an image with its two neighbors
 pammixinterlace <path_to_image_ppm> > <path_to_output_ppm>
 
 # Use the specified filtering mechanism

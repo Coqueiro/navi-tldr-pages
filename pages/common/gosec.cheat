@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gosec.md
+
+% gosec, common
+
+# Scan a Go package recursively in the current directory
+gosec ./...
+
+# Scan a specific Go package
+gosec <path_to_package>
+
+# Scan a Go package recursively and save results to a file
+gosec -fmt <json_yaml_csv_html_sonarqube_golint_sarif_junit_xml> -out <path_to_report> <_____>
+
+# Only include a specific set of rules (by default, all rules will run)
+gosec -include <G101_G203_G401____> <_____>
+
+# Exclude directories from scanning
+gosec -exclude-dir <path_to_excluded_directory> <_____>
+
+# Scan with a specific severity or confidence level
+gosec -severity <low_medium_high> -confidence <low_medium_high> <_____>
+
+# Exclude a specific set of rules from scanning
+gosec -exclude <G101_G304_G401____> <_____>
+
+# Scan test files as well
+gosec -tests <_____>

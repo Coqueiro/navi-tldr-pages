@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/dvdmaker.md
+
+% dvdmaker, windows
+
+# Launch Windows DVD Maker
+dvdmaker
+
+# Specify the DVD disk burner drive
+dvdmaker -drive:<F>
+
+# Import assets predefined by a Windows DVD Maker import file list XML file
+dvdmaker <path_to_file_xml>
+
+# Reset Windows DVD Maker configuration to factory settings (Warning: This will reset your app settings)
+dvdmaker _clear_

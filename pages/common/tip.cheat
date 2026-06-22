@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tip.md
+
+% tip, common
+
+# Connect to a remote system defined in `/etc/remote`
+tip <system_name>
+
+# Connect at a specific baud rate
+tip -<115200> <system_name>
+
+# Connect with verbose output
+tip -v <system_name>
+
+# Connect with tilde escape sequences disabled
+tip -n <system_name>

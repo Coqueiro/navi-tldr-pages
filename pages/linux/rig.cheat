@@ -7,7 +7,7 @@
 rig
 
 # Display a [m]ale (or [f]emale) random name and address
-rig -<m_f>
+rig <_m__f>
 
 # Use [d]ata files from a specific directory (default is `/usr/share/rig`)
 rig -d <path_to_directory>

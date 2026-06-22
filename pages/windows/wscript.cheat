@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/wscript.md
+
+% wscript, windows
+
+# Set `cscript` (CLI) or `wscript` (GUI) as the default interpreter to run Windows Script Host programs
+wscript //h:<cscript_wscript>
+
+# Run a script
+wscript <path_to_script_vbs>
+
+# Run script in the [i]nteractive or [b]atch mode (enable or suppress alerts, prompts, and scripting errors)
+wscript //<i_b> <path_to_script_vbs>
+
+# Show or hide the Windows Script Host logo before running (useful to get Host version / suppress outputs)
+wscript <__logo___nologo> <path_to_script_vbs>
+
+# Specify a custom execution engine to run the script (useful for using custom script filenames)
+wscript //e:<jscript_vbscript_custom_engine> <path_to_script_vbs>
+
+# Set a [t]imeout for running a given script (in seconds)
+wscript //t:<seconds> <path_to_script_vbs>
+
+# Start the [d]ebugger and wait until a scripting error occurs
+wscript //d <path_to_script_vbs>
+
+# Start debugging from the first script line in an IDE (e.g., Visual Studio)
+wscript //x <path_to_script_vbs>

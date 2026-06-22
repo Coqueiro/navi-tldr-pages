@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wine-reg-import.md
+
+% wine-reg-import, linux
+
+# Import registry entries from a file
+wine reg import <path_to_file_reg>
+
+# Display help
+wine reg import /?

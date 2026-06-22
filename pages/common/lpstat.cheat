@@ -3,6 +3,9 @@
 
 % lpstat, common
 
+# List all queued print jobs
+lpstat
+
 # List printers present on the machine and whether they are enabled for printing
 lpstat -p
 

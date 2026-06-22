@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/wmpnscfg.md
+
+% wmpnscfg, windows
+
+# Start the daemon
+wmpnscfg
+
+# Close all instances of the daemon
+wmpnscfg /close

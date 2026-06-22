@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wayland-info.md
+
+% wayland-info, common
+
+# Display information about the current Wayland compositor and available protocols
+wayland-info
+
+# Display information for interfaces matching a specific name
+wayland-info <__i___interface_> <wl_output>
+
+# Save the output to a file
+wayland-info > <path_to_file_txt>

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/footclient.md
+
+% footclient, common
+
+# Start a new terminal window, wait until the window is closed and return its exit code
+footclient
+
+# Start a new terminal window and exit immediately
+footclient <__N___no_wait_>
+
+# Execute a command in a new terminal window
+footclient <command>
+
+# Start a terminal in fullscreen mode
+footclient <__F___fullscreen_>
+
+# Start a terminal with the specified window dimensions, in pixels
+footclient <__w___window_size_pixels_> <width>x<height>
+
+# Start a terminal with the specified Wayland app id (default: `footclient`)
+footclient <__a___app_id_> <id>
+
+# Override a configuration option
+footclient <__o___override_> <section>.<key>=<value>

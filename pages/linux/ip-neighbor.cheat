@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ip-neighbor.md
+
+% ip-neighbor, linux
+
+# Display the neighbor/ARP table entries
+ip <_n_neighbor_>
+
+# Remove entries in the neighbor table on device `ethX`
+sudo ip <_n_neighbor_> <_f_flush_> dev <ethX>
+
+# Perform a neighbor lookup and return a neighbor entry
+ip <_n_neighbor_> <_g_get_> <lookup_ip> dev <ethX>
+
+# Add or delete an ARP entry for the neighbor IP address to `ethX`
+sudo ip <_n_neighbor_> <add_delete> <ip_address> lladdr <mac_address> dev <ethX> nud reachable
+
+# Change or replace an ARP entry for the neighbor IP address to `ethX`
+sudo ip <_n_neighbor_> <change_replace> <ip_address> lladdr <new_mac_address> dev <ethX>
+
+# Display only IPv6 or IPv4 neighbors
+ip <_6__4> <_n_neighbor_>

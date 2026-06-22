@@ -15,6 +15,9 @@ magick <path_to_input_image_png> -resize <50>% <path_to_output_image_png>
 # Scale an image to have a specified file size
 magick <path_to_input_image_png> -define jpeg:extent=<512kb> <path_to_output_image_jpg>
 
+# Vertically/horizontally append images and have the empty space be transparent
+magick convert -background none {{path/to/image1.png path/to/image2.png ...}} <_append__append> <path_to_output_image_png>
+
 # Create a GIF out of all JPEG images in the current directory
 magick <__jpg> <path_to_images_gif>
 

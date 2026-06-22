@@ -9,7 +9,7 @@
 # Display the output into an interactive paging view (will not work in PowerShell ISE)
 <command_or_variable> | Out-Host -Paging
 
-# Interactively display a text file within the paging view (equivalent to `more <path_to_file>`)
+# Interactively display a text file within the paging view (equivalent to `more path/to/file`)
 Get-Content <path_to_file> | Out-Host -Paging
 
 # Go to the next page within the paging view

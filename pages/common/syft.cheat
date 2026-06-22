@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/syft.md
+
+% syft, common
+
+# Generate an SBOM from a container image
+syft <image_tag>
+
+# Generate an SBOM from a local directory
+syft <path_to_directory>
+
+# Generate an SBOM from a container archive file
+syft <path_to_archive_tar>
+
+# Generate an SBOM in SPDX JSON format
+syft <image_tag> <__o___output_> spdx-json
+
+# Generate an SBOM in CycloneDX JSON format
+syft <image_tag> <__o___output_> cyclonedx-json
+
+# Write the SBOM to a file in a specific format
+syft <image_tag> <__o___output_> <format>=<path_to_output_file>
+
+# Display help
+syft <__h___help_>
+
+# Display version
+syft --version

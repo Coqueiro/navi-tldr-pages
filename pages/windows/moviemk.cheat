@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/moviemk.md
+
+% moviemk, windows
+
+# Launch Windows Movie Maker
+moviemk
+
+# Open an existing Windows Movie Maker project file
+moviemk <path_to_file_mswmm>
+
+# Import a new audio, image, or video asset into an existing project
+moviemk <path_to_asset>
+
+# Import assets predefined by a Windows Movie Maker import file list XML file
+moviemk <path_to_file_xml>

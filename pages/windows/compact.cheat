@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/compact.md
+
+% compact, windows
+
+# Display the compression status of files in the current directory
+compact
+
+# Compress a specific file
+compact /c <path_to_file>
+
+# Uncompress a specific file
+compact /u <path_to_file>
+
+# Compress all files in a directory and its subdirectories
+compact /c /s <path_to_directory>
+
+# Uncompress all files in a directory and its subdirectories
+compact /u /s <path_to_directory>

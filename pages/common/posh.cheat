@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/posh.md
+
+% posh, common
+
+# Download documentation to your machine (run inside a Ruby project) and print full sync report
+posh sync --full
+
+# Start the interactive documentation browser for the current project
+posh
+
+# Clear all docsets from your machine
+posh clear
+
+# Generate the autocompletion script for your shell
+posh completion <bash_fish_powershell_zsh>
+
+# Display help
+posh <__h___help_>
+
+# Display help for a specific subcommand
+posh <subcommand> <__h___help_>

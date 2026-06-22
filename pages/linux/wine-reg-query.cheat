@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wine-reg-query.md
+
+% wine-reg-query, linux
+
+# Display all values directly under a key
+wine reg query '<HKEY_CURRENT_USER_path_to_key>'
+
+# Display a specific [v]alue of a key
+wine reg query '<HKEY_CURRENT_USER_path_to_key>' /v <value_name>
+
+# Display the default (unnamed) value of a key
+wine reg query '<HKEY_CURRENT_USER_path_to_key>' /ve
+
+# Recursively display a key together with all its [s]ubkeys and values
+wine reg query '<HKEY_CURRENT_USER_path_to_key>' /s
+
+# Display help
+wine reg query /?

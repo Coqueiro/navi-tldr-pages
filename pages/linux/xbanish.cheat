@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/xbanish.md
+
+% xbanish, linux
+
+# Hide the cursor on key press
+xbanish
+
+# Always keep the cursor hidden, ignoring key presses and mouse usage
+xbanish -a
+
+# Automatically hide the cursor after `n` seconds of inactivity
+xbanish -t <n>

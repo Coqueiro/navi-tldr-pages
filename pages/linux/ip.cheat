@@ -16,7 +16,7 @@ ip <__br__brief_> <_l_link_>
 ip <_r_route_>
 
 # Show neighbors (ARP table)
-ip <_n_neighbour_>
+ip <_n_neighbor_>
 
 # Make an interface up/down
 sudo ip <_l_link_> <_s_set_> <ethX> <up_down>

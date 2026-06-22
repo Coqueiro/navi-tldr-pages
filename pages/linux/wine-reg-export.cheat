@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wine-reg-export.md
+
+% wine-reg-export, linux
+
+# Export a registry key and its subkeys to a file
+wine reg export '<HKEY_CURRENT_USER_path_to_key>' <path_to_file_reg>
+
+# Export an entire registry hive to a file
+wine reg export <HKEY_CURRENT_USER> <path_to_file_reg>
+
+# Overwrite the output file if it already exists, without prompting
+wine reg export '<HKEY_CURRENT_USER_path_to_key>' <path_to_file_reg> /y
+
+# Display help
+wine reg export /?

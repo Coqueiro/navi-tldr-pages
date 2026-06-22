@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/wmpconfig.md
+
+% wmpconfig, windows
+
+# Turn network sharing on or off
+wmpconfig <HMEOn_HMEOff>
+
+# Stop a specific network device from sharing to this computer using its MAC address
+wmpconfig DisableHMEDevice <mac_address>
+
+# Remove a network device from sharing to this computer
+wmpconfig RemoveHMEDevice <mac_address>
+
+# Restore a network device from sharing to this computer
+wmpconfig RestoreHMEDevice <mac_address>
+
+# Set the parental control level for playing DVD content
+wmpconfig SetDVDParentalLevel <3>

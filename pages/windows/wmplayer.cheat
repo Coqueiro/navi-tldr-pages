@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/wmplayer.md
+
+% wmplayer, windows
+
+# Launch Windows Media Player
+wmplayer
+
+# Play an audio, video, or playlist file
+wmplayer <path_to_file>
+
+# Play a DVD or Audio CD
+wmplayer /device:<dvd_audiocd>
+
+# Play a file in fullscreen mode
+wmplayer <path_to_file> /fullscreen
+
+# Specify a user interface skin when playing a file
+wmplayer "<path_to_file>?wmpskin=<skin_name>"
+
+# Show the Media Library page
+wmplayer /Task MediaLibrary
+
+# Show the Now Playing page
+wmplayer /Task NowPlaying
