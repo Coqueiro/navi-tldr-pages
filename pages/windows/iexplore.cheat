@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/iexplore.md
+
+% iexplore, windows
+
+# Open a specific URL or file
+iexplore <https___example_com_path_to_file_html>
+
+# Open in InPrivate mode
+iexplore -private <example_com>
+
+# Open in [k]iosk/application mode (without toolbars, URL bar, buttons, etc.)
+iexplore -k <example_com>
+
+# Open with [ext]ensions/add-ons disabled
+iexplore -extoff <example_com>

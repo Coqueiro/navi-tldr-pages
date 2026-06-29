@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/excel.md
+
+% excel, windows
+
+# Launch the spreadsheet application
+excel
+
+# Create a new workbook with a [m]acro-enabled sheet
+excel /m
+
+# Open a workbook as a [t]emplate
+excel <__n__t_> <path_to_file_xlsx>
+
+# Start Microsoft Excel in [s]afe Mode
+excel <__s__safemode_>

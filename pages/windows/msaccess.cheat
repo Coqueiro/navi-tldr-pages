@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/msaccess.md
+
+% msaccess, windows
+
+# Launch the database application
+msaccess
+
+# Open an existing database file
+msaccess <path_to_file_accdb>
+
+# Open an existing database file in [r]ead-[o]nly mode
+msaccess /ro <path_to_fileaccdb>
+
+# Open a database, then e[x]ecute a specific macro
+msaccess <path_to_file_accdb> /x <MacroName>

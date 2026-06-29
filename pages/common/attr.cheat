@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/attr.md
+
+% attr, common
+
+# List the names and sizes of all extended attributes of a file
+attr -l <path_to_file>
+
+# Get the value of an extended attribute
+attr -g <attribute_name> <path_to_file>
+
+# Set an extended attribute value
+attr -s <attribute_name> -V "<attribute_value>" <path_to_file>
+
+# Set an extended attribute using a value from `stdin`
+echo "<attribute_value>" | attr -s <attribute_name> <path_to_file>
+
+# Remove an extended attribute
+attr -r <attribute_name> <path_to_file>

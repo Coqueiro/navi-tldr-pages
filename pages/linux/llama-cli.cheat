@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/llama-cli.md
+
+% llama-cli, linux
+
+# Start up LLM [m]odel and interface
+llama-cli <__m___model_> <path_to_model>
+
+# Start with setup prompt [c]ontext size
+llama-cli <__m___model_> <path_to_model> <__c___ctx_size_> <number>
+
+# Start with set offload [n]umber of layer [g]pu [l]ayers
+llama-cli <__m___model_> <path_to_model> <__ngl___gpu_layers___n_gpu_layers_> <auto_all_number>
+
+# Start with sending content as [sys]tem prompt from a [f]ile
+llama-cli <__m___model_> <path_to_model> <__sysf___system_prompt_file_> <path_to_prompt>
+
+# Start with sending content in [f]ile as first prompt
+llama-cli <__m___model_> <path_to_model> <__f___file_> <path_to_prompt>

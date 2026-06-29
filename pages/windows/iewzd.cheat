@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/iewzd.md
+
+% iewzd, windows
+
+# View the documentation for `iesetup`
+tldr <__p___platform_> windows iesetup
+
+# Run the Internet Explorer Wizard
+iewzd
+
+# Force or do not restart the computer after installing Internet Explorer
+iewzd <_norestart__forcerestart>
+
+# Do not set Internet Explorer as the default browser
+iewzd /no-default
+
+# Do not check for Internet Explorer updates
+iewzd /update-no
+
+# Run the Wizard in passive (no interaction) or quiet (no interaction and output) mode
+iewzd <_passive__quiet>
+
+# Save the installation log to a file
+iewzd /log <path_to_file>

@@ -7,7 +7,13 @@
 apkeep <__a___app_> <com_example_application> <path_to_directory>
 
 # List all available versions for download
-apkeep <__a___app_> <com_example_application> <__l___list_versions_> <path_to_directory>
+apkeep <__a___app_> <com_example_application> <__l___list_versions_>
+
+# Download a specific version of an APK file
+apkeep <__a___app_> <com_example_application>@<app_version> <path_to_directory>
 
 # Specify a store to download from
 apkeep <__a___app_> <com_example_application> <__d___download_source_> <apk_pure_google_play_f_droid_huawei_app_gallery> <path_to_directory>
+
+# Display help
+apkeep <__h___help_>

@@ -11,3 +11,6 @@ brew upgrade <formula_cask>
 
 # Print what would be upgraded, but don't actually upgrade anything
 brew upgrade <__n___dry_run_>
+
+# Upgrade all outdated packages without asking for confirmation
+brew upgrade <__y___yes_>

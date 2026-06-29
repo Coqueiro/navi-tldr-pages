@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/try-rs.md
+
+% try-rs, common
+
+# Open the interactive TUI
+try-rs
+
+# Create or jump to a named experiment
+try-rs <experiment_name>
+
+# Clone a repository into a dated folder
+try-rs <https___github_com_user_repository>
+
+# Clone a repository into a specific destination folder
+try-rs <https___github_com_user_repository> <destination_name>
+
+# Create a Git worktree from the current repository
+try-rs --worktree <worktree_name>
+
+# Generate shell integration for the specified shell
+try-rs --setup <bash_fish_zsh_nu_shell_power_shell>

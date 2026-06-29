@@ -21,7 +21,7 @@ wfuzz -c --hc <401> -s <delay_between_requests_in_seconds> -z file,<path_to_user
 # Provide wordlist directly from the command-line and use POST request for fuzzing
 wfuzz -z list,<word1_word2____> <https___api_example_com> -d "<id_FUZZ_showwallet_true>"
 
-# Provide wordlists from a file applying base64 and md5 encoding on them (`wfuzz -e encoders` lists all available encoders)
+# Provide wordlists from a file applying Base64 and MD5 encoding on them (`wfuzz -e encoders` lists all available encoders)
 wfuzz -z file,<path_to_file>,none-base64-md5 <https___example_com_FUZZ>
 
 # List available encoders/payloads/iterators/printers/scripts

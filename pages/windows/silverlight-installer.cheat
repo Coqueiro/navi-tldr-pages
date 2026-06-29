@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/silverlight-installer.md
+
+% silverlight-installer, windows
+
+# Run the Microsoft Silverlight installer in GUI
+silverlight-installer
+
+# Run the installer in [q]uiet mode (do not show GUI)
+silverlight-installer /q
+
+# [u]ninstall the program in [q]uiet mode
+silverlight-installer /qu

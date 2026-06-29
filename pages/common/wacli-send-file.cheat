@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-send-file.md
+
+% wacli-send-file, common
+
+# Send a file to a phone number
+wacli send file --to <phone_number> --file <path_to_file>
+
+# Send a file to a specific JID
+wacli send file --to <phone_number>@s.whatsapp.net --file <path_to_file>
+
+# Send a file with a custom timeout
+wacli send file --to <phone_number> --file <path_to_file> --timeout <10m>

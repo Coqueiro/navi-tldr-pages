@@ -15,7 +15,7 @@ rg <__F___fixed_strings_> -- <string>
 # Include hidden files and entries listed in `.gitignore`
 rg <______hidden_> --no-ignore <pattern>
 
-# Only search the files whose names match the glob pattern(s) (e.g. `README.*`)
+# Only search the files matching the glob pattern(s) (e.g. `README.*`, use `!filename_pattern` to exclude instead)
 rg <pattern> <__g___glob_> <filename_glob_pattern>
 
 # Recursively list filenames in the current directory that match a pattern

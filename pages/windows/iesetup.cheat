@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/iesetup.md
+
+% iesetup, windows
+
+# View the documentation for `iewzd`
+tldr <__p___platform_> windows iewzd
+
+# Build a custom Internet Explorer Wizard executable, specifying the location of `iewzd` executable
+iesetup /c:"<path_to_iewzd_exe>"
+
+# Apply custom `iewzd` program arguments into the custom installer
+iesetup /c:"<path_to_iewzd_exe> <iewzd_args>"
+
+# Run the build process in a [q]uiet mode, assuming the user account invoking this command as an [a]dministrator or regular [u]ser
+iesetup /q:<a_u> /c:"<path_to_iewzd_exe> <iewzd_args>"
+
+# Specify the [r]estart behavior after a successful installation ([a]sk, [n]ever, or alway[s])
+iesetup /r:<a_n_s> /c:"<path_to_iewzd_exe> <iewzd_args>"

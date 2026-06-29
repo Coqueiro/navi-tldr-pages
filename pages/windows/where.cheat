@@ -3,6 +3,9 @@
 
 % where, windows
 
+# View the documentation of the equivalent PowerShell command
+tldr where-object
+
 # Display the location of file pattern
 where <file_pattern>
 

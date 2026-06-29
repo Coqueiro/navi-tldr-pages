@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/start.md
+
+% start, windows
+
+# View the documentation of the equivalent PowerShell command
+tldr start-process
+
+# Start a new shell window with a custom title
+start "<window_title>" <cmd_powershell_python____>
+
+# Open a specific directory on Windows Explorer (equivalent to `explorer <path_to_directory>`)
+start "" "<path_to_directory>"
+
+# Start a specific Windows program file (command-line programs will open on a new console window)
+start <path_to_file>
+
+# Start a registered Windows program name and pass its command arguments
+start <msedge> {{--inprivate example.com}}
+
+# Start a Windows program in minimized or maximized window mode
+start <_min__max> <path_to_file_exe>
+
+# Start a command or Windows program with a specified working directory
+start /d <path_to_directory> <command_or_program>
+
+# Do not finish this command until the target command or program exits
+start /wait <command_or_program>

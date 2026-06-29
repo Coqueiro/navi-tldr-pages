@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mirrord.md
+
+% mirrord, common
+
+# Run a local binary connected to a remote pod
+mirrord exec <__t___target_> pod/<pod_name> -- <command> {{argument1 argument2 ...}}
+
+# Target a deployment in a specific namespace
+mirrord exec <__t___target_> deployment/<deployment_name> <__n___target_namespace_> <namespace> -- <command>
+
+# Run with a configuration file
+mirrord exec <__f___config_file_> <path_to_mirrord_json> -- <command>
+
+# Forward a local port to a host reachable from inside the cluster
+mirrord port-forward <__t___target_> pod/<pod_name> --port-mapping <local_port>:<remote_port>
+
+# Print incoming TCP traffic from specific ports on a remote target
+mirrord dump <__t___target_> pod/<pod_name> <__p___ports_> <8080>
+
+# Launch the interactive configuration wizard
+mirrord wizard
+
+# Diagnose mirrord setup and cluster connectivity
+mirrord diagnose

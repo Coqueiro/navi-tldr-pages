@@ -10,7 +10,7 @@ test "<_MY_VAR>" = "<_bin_zsh>"
 test -z "<_GIT_BRANCH>"
 
 # Test if a [f]ile exists
-test -f "<path_to_file_or_directory>"
+test -f "<path_to_file>"
 
 # Test if a [d]irectory does not exist
 test ! -d "<path_to_directory>"

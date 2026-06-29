@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/pptview.md
+
+% pptview, windows
+
+# Launch the application
+pptview
+
+# Open a presentation
+pptview <path_to_file_pptx>
+
+# Open at a specific slide [n]umber
+pptview /n<1> <path_to_file_pptx>
+
+# Open a [l]ist of presentation files from a playlist file
+pptview /l <path_to_playlist_txt>
+
+# [p]rint a presentation file
+pptview /p <path_to_file_pptx>

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/start-process.md
+
+% start-process, windows
+
+# Open a specific directory on Windows Explorer (equivalent to `explorer <path_to_directory>`)
+Start-Process <path_to_directory>
+
+# Start a specific Windows program file (command-line programs will open on a new console window)
+Start-Process <path_to_file>
+
+# Start a registered Windows program name and pass its command arguments
+Start-Process <msedge> {{--inprivate example.com}}
+
+# Start a Windows program in minimized or maximized window mode
+Start-Process -WindowStyle <Minimized_Maximized> <program>
+
+# Start a command or Windows program with a specified working directory
+Start-Process -WorkingDirectory <path_to_directory> <command_or_program>
+
+# Do not finish this command until the target command or program exits
+Start-Process -Wait <command_or_program>

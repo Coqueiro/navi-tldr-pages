@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/longbridge.md
+
+% longbridge, common
+
+# Display a real-time quote for a stock (US, HK, A-share, or Singapore)
+longbridge quote <NVDA_US>
+
+# Show a candlestick (K-line) chart for a symbol
+longbridge kline <700_HK>
+
+# List current portfolio positions
+longbridge positions
+
+# Show portfolio P&L summary
+longbridge portfolio
+
+# Fetch the latest news for a symbol
+longbridge news <AAPL_US>
+
+# View financial statements for a company
+longbridge financial-report <600519_SH>
+
+# Log in to a Longbridge account
+longbridge auth login

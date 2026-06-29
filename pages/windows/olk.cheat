@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/olk.md
+
+% olk, windows
+
+# Open the New Outlook application
+olk
+
+# Open under a specific profile name
+olk --profile "<profile>"
+
+# Run New Outlook in Safe Mode
+olk --safe
+
+# Check for New Outlook updates
+olk --force-update
+
+# Reset all New Outlook application settings, including credentials, to factory settings
+olk --reset

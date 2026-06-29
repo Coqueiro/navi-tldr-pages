@@ -6,7 +6,7 @@
 # Show information about all active IPC facilities
 lsipc
 
-# Show information about active shared [m]emory segments, message [q]ueues, or [s]empahore sets
+# Show information about active shared [m]emory segments, message [q]ueues, or [s]emaphore sets
 lsipc <__shmems___queues___semaphores>
 
 # Show full details on the resource with a specific ID

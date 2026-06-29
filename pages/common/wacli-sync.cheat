@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-sync.md
+
+% wacli-sync, common
+
+# Synchronize messages
+wacli sync
+
+# Synchronize messages once and exit
+wacli sync --once
+
+# Synchronize messages using a custom store
+wacli sync --store <path_to_store>
+
+# Synchronize messages with a custom timeout
+wacli sync --timeout <10m>

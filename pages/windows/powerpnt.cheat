@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/powerpnt.md
+
+% powerpnt, windows
+
+# Launch the presentation application
+powerpnt
+
+# Create a new [b]lank presentation
+powerpnt /b
+
+# Create a [n]ew presentation from a template
+powerpnt /n <path_to_file_potm>
+
+# [o]pen one or more files
+powerpnt /o {{path\to\file1.pptx path\to\file2.pptx ...}}
+
+# Open a file in [s]lideshow mode
+powerpnt /s <path_to_file_pptx>
+
+# Open a presentation, then execute a specific [m]acro
+powerpnt /m <path_to_file_pptm> "<MacroName>"
+
+# Print a presentation via the Print dialog
+powerpnt /pwo <path_to_file_pptx>
+
+# Directly [p]rint a presentation [t]o a specific printer
+powerpnt /pt <printer_name> <path_to_file_pptx>

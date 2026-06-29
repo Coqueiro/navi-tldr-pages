@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/iexpress.md
+
+% iexpress, windows
+
+# Build a self-extracting ZIP archive from a given SED file
+iexpress /n <path_to_file_sed>
+
+# Run the build process in a [m]inimized window
+iexpress /n /m <path_to_file_sed>
+
+# Run the build process in a [q]uiet mode, assuming the user account invoking this command as an [a]dministrator or regular [u]ser
+iexpress /n /q:<a_u> <path_to_file_sed>
+
+# Ensure the `.exe` file to [a]sk, [n]ever, or alway[s] [r]estart the computer after installation
+iexpress /r:<a_n_s> <path_to_file_sed>

@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/winword.md
+
+% winword, windows
+
+# Launch the word processor application
+winword
+
+# Launch Word with [n]o open documents
+winword /n
+
+# [w]rite a new blank document
+winword /w
+
+# Create a new document [f]rom (based on) an existing file
+winword /f <path_to_file_docx>
+
+# Open one or more files for edi[t]ing
+winword /t {{path\to\file1.docx path\to\file2.docx ...}}
+
+# Open a file with all AutoExec [m]acros disabled
+winword /m <path_to_file_docm>
+
+# Open a file with all AutoExec [m]acros disabled, then run a specific macro
+winword /m<MacroName> <path_to_file_docm>
+
+# Start Microsoft Word in Safe Mode
+winword /safe

@@ -6,7 +6,7 @@
 # Show information about [a]ll the IPC
 ipcs -a
 
-# Show information about active shared [m]emory segments, message [q]ueues or [s]empahore sets
+# Show information about active shared [m]emory segments, message [q]ueues or [s]emaphore sets
 ipcs <_m__q__s>
 
 # Show information on maximum allowable size in [b]ytes
