@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-contacts-refresh.md
+
+% wacli-contacts-refresh, common
+
+# Refresh all contacts from the store
+wacli contacts refresh
+
+# Refresh contacts using a custom store
+wacli contacts refresh --store <path_to_store>

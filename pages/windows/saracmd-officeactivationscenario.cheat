@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/saracmd-officeactivationscenario.md
+
+% saracmd-officeactivationscenario, windows
+
+# View documentation for the original command
+tldr gethelpcmd-officeactivationscenario

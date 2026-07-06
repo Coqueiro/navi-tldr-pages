@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tidy-viewer.md
+
+% tidy-viewer, common
+
+# Pretty-print the first 25 rows of a CSV file
+tidy-viewer <path_to_file_csv>
+
+# Pretty-print data piped from `stdin`
+cat <path_to_file_csv> | tidy-viewer
+
+# Pretty-print a file with a custom [s]eparator (e.g. a pipe)
+tidy-viewer <__s___delimiter_> '|' <path_to_file_psv>
+
+# Display data with a specific color palette (1: nord, 2: one_dark, 3: gruvbox, 4: dracula, 5: solarized light)
+tidy-viewer <__c___color_> <3> <path_to_file_csv>
+
+# Print all rows in color, paging through the output
+tidy-viewer {{[-af|--color-always --force-all-rows]}} <path_to_file_csv> | less -RS
+
+# Display help
+tidy-viewer <__h___help_>
+
+# Display version
+tidy-viewer <__V___version_>

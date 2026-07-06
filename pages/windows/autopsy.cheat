@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/autopsy.md
+
+% autopsy, windows
+
+# Launch the Autopsy graphical interface
+autopsy64.exe
+
+# Create a new case and specify the base directory to store case files
+autopsy64.exe --createCase --caseName <case_name> --caseBaseDir <path_to_base_directory>
+
+# Add a data source to an existing case
+autopsy64.exe --caseDir <path_to_case_directory> --addDataSource --dataSourcePath <path_to_source>
+
+# Generate a report for an existing case
+autopsy64.exe --caseDir <path_to_case_directory> --generateReports
+
+# List all data sources in an existing case
+autopsy64.exe --caseDir <path_to_case_directory> --listAllDataSources

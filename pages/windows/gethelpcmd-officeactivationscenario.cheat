@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/gethelpcmd-officeactivationscenario.md
+
+% gethelpcmd-officeactivationscenario, windows
+
+# Automatically fix activation-related errors, close Office, and accept this command's End-User License Agreement (EULA). Requires Administrator privileges to do so
+GetHelpCmd.exe -S OfficeActivationScenario -AcceptEula -CloseOffice
+
+# Detach the currently-installed Office licensing scheme from Shared Computer Activation (SCA), and activate the product separately. Requires Administrator privileges to do so
+GetHelpCmd.exe -S OfficeActivationScenario -AcceptEula -CloseOffice -RemoveSCA

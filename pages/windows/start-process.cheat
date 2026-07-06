@@ -3,7 +3,7 @@
 
 % start-process, windows
 
-# Open a specific directory on Windows Explorer (equivalent to `explorer <path_to_directory>`)
+# Open a specific directory on Windows Explorer (equivalent to `explorer path\to\directory`)
 Start-Process <path_to_directory>
 
 # Start a specific Windows program file (command-line programs will open on a new console window)

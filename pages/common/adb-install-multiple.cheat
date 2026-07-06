@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/adb-install-multiple.md
+
+% adb-install-multiple, common
+
+# Install a split package
+adb install-multiple {{path/to/app1.apk path/to/app2.apk ...}}

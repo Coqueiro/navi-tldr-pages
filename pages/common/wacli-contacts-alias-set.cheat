@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-contacts-alias-set.md
+
+% wacli-contacts-alias-set, common
+
+# Set an alias for a specific contact
+wacli contacts alias set <phone_number>@s.whatsapp.net <alias>
+
+# Set an alias using a custom store
+wacli contacts alias set <phone_number>@s.whatsapp.net <alias> --store <path_to_store>

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/android/pm-install-write.md
+
+% pm-install-write, android
+
+# Add a package to the install batch
+pm install-write <session_id> <label> <path_to_package_apk>

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/simple-mtpfs.md
+
+% simple-mtpfs, common
+
+# List available MTP devices
+simple-mtpfs <__l___list_devices_>
+
+# Mount a device to a directory
+simple-mtpfs <mount_point>
+
+# Mount a specific device to a directory (useful when multiple devices are connected)
+simple-mtpfs --device <number> <mount_point>
+
+# Unmount the filesystem
+umount <mount_point>

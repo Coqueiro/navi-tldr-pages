@@ -4,10 +4,16 @@
 % cjxl, common
 
 # Convert an image to JPEG XL
-cjxl <path_to_image_ext> <path_to_output_jxl>
+cjxl <path_to_image_ext> <path_to_output>.jxl
 
-# Set quality to lossless and maximize compression of the resulting image
-cjxl --distance 0 --effort 9 <path_to_image_ext> <path_to_output_jxl>
+# Convert with a specific effort level ('1' - fastest but worst results, '10' - slowest but best results, '7' - default)
+cjxl <__e___effort_> <1__10> <path_to_image_ext> <path_to_output>.jxl
+
+# Convert with a specific quality
+cjxl <__q___quality_> <0__100> <path_to_image_ext> <path_to_output>.jxl
+
+# Convert a JPEG to a JPEG XL with specific lossy quality
+cjxl <__q___quality_> <0__100> <__j___lossless_jpeg_> 0 <path_to_image_jpeg> <path_to_output>.jxl
 
 # Display an extremely detailed help
 cjxl {{[-h -v -v -v -v|--help --verbose --verbose --verbose --verbose]}}

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-contacts-search.md
+
+% wacli-contacts-search, common
+
+# Search for contacts by name in JSON format
+wacli contacts search "<name>" --json
+
+# Search for contacts using a custom store
+wacli contacts search "<name>" --json --store <path_to_store>

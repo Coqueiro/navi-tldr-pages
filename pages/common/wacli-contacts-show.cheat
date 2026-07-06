@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-contacts-show.md
+
+% wacli-contacts-show, common
+
+# Display details for a specific contact in JSON format
+wacli contacts show <phone_number>@s.whatsapp.net --json
+
+# Display details using a custom store
+wacli contacts show <phone_number>@s.whatsapp.net --json --store <path_to_store>

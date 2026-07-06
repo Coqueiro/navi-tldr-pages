@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-contacts-tags-add.md
+
+% wacli-contacts-tags-add, common
+
+# Add a tag to a contact
+wacli contacts tags add <phone_number>@s.whatsapp.net <tag>
+
+# Add a tag using a custom store
+wacli contacts tags add <phone_number>@s.whatsapp.net <tag> --store <path_to_store>

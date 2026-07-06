@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/gethelpcmd-teamsaddinscenario.md
+
+% gethelpcmd-teamsaddinscenario, windows
+
+# Run the troubleshooter, close Outlook, and accept this command's End-User License Agreement (EULA)
+GetHelpCmd.exe -S TeamsAddinScenario -AcceptEula -CloseOutlook

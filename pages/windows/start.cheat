@@ -9,7 +9,7 @@ tldr start-process
 # Start a new shell window with a custom title
 start "<window_title>" <cmd_powershell_python____>
 
-# Open a specific directory on Windows Explorer (equivalent to `explorer <path_to_directory>`)
+# Open a specific directory on Windows Explorer (equivalent to `explorer path\to\directory`)
 start "" "<path_to_directory>"
 
 # Start a specific Windows program file (command-line programs will open on a new console window)
