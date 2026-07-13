@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-enter.md
+
+% pct-enter, linux
+
+# Launch a shell
+pct <_en_enter_> <100>

@@ -3,8 +3,14 @@
 
 % get-filehash, windows
 
-# Calculate a hash for a specified file using the SHA256 algorithm
+# Calculate the SHA256 checksum for a file
 Get-FileHash <path_to_file>
 
-# Calculate a hash for a specified file using a specified algorithm
-Get-FileHash <path_to_file> -Algorithm <SHA1_SHA384_SHA256_SHA512_MD5>
+# Calculate the checksum for a file using a specified algorithm
+Get-FileHash <path_to_file> -Algorithm <SHA1_SHA256_SHA384_SHA512_MD5>
+
+# Calculate the checksum for a file using a deprecated algorithm (no longer available in PowerShell 6 or later)
+Get-FileHash <path_to_file> -Algorithm <MACTripleDES_RIPEMD160>
+
+# Check a known checksum of a file
+(Get-FileHash <path_to_file> -Algorithm <SHA1_SHA256_SHA384_SHA512_MD5>).Hash -eq "<known_hash>"

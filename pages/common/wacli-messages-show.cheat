@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-messages-show.md
+
+% wacli-messages-show, common
+
+# Show a specific message in JSON format
+wacli messages show <message_id> --json
+
+# Show a specific message using a custom store
+wacli messages show <message_id> --json --store <path_to_store>

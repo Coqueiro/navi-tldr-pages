@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/docker-container-stop.md
+
+% docker-container-stop, common
+
+# Stop a Docker container
+docker {{[stop|container stop]}} <container>
+
+# Stop a container, sending a specific signal to it
+docker {{[stop|container stop]}} <__s___signal_> <signal> <container>
+
+# Stop a container, waiting a specific number of seconds before forcibly killing it
+docker {{[stop|container stop]}} <__t___timeout_> <seconds> <container>
+
+# Stop one or more containers
+docker {{[stop|container stop]}} {{container1 container2 ...}}
+
+# Display help
+docker {{[stop|container stop]}} --help

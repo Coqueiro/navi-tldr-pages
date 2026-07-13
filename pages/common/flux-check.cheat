@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-check.md
+
+% flux-check, common
+
+# Check pre-requisites before installing Flux
+flux check --pre
+
+# Check the status and health of all Flux controllers
+flux check

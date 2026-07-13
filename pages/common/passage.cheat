@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/passage.md
+
+% passage, common
+
+# Insert a new password (press `<Ctrl d>` on a new line to complete)
+passage insert <__m___multiline_> <path_to_data>
+
+# Insert a new password from `stdin`
+echo "<password>" | passage insert <__e___echo_> <path_to_data>
+
+# Show a password
+passage <path_to_data>
+
+# Copy a password to the clipboard
+passage <__c___clip_> <path_to_data>
+
+# List the whole store tree
+passage ls
+
+# Generate a new random password of a given length
+passage generate <path_to_data> <length>
+
+# Edit an entry
+passage edit <path_to_data>
+
+# Remove an entry
+passage rm <path_to_data>

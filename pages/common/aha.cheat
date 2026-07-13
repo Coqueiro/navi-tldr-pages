@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/aha.md
+
+% aha, common
+
+# Convert terminal output to HTML
+<color_command> | aha > <path_to_output>.html
+
+# Read from a file instead of `stdin`
+aha -f <path_to_input_txt> > <path_to_output>.html
+
+# Convert to HTML with a black background
+<color_command> | aha <__b___black_> > <path_to_output>.html
+
+# Convert to HTML with a pink background and set the document title
+<color_command> | aha <__p___pink_> <__t___title_> "<title>" > <path_to_output>.html
+
+# Add a CSS file to the HTML output
+<color_command> | aha <__c___css_> <path_to_style>.css > <path_to_output>.html
+
+# Enable word-wrap to prevent horizontal scrolling
+<color_command> | aha <__w___word_wrap_> > <path_to_output>.html
+
+# Display help
+aha <__h___help_>

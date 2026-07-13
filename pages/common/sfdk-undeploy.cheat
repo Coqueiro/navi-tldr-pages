@@ -3,8 +3,8 @@
 
 % sfdk-undeploy, common
 
-# Undeploy using a specified method (`pkcon`, `rpm`, `rsync`, `sdk`, or `zypper`)
-sfdk undeploy --<method>
+# Undeploy using a specified method
+sfdk undeploy --<pkcon_rpm_rsync_sdk_zypper>
 
 # Preview undeploy without applying the changes
 sfdk undeploy --<method> <__n___dry_run_>

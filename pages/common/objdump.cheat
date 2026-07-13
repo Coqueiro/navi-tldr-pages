@@ -21,5 +21,5 @@ objdump <__d___disassemble_> <path_to_binary> --visualize-jumps=<color_extended_
 # Display the symbol [t]able
 objdump <__t___syms_> <path_to_binary>
 
-# Display a complete binary hex dump of all sections
+# Display a complete binary hex dump of all [s]ections
 objdump <__s___full_contents_> <path_to_binary>

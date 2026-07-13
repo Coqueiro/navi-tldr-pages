@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-bootstrap.md
+
+% flux-bootstrap, common
+
+# Bootstrap using a GitHub repository
+flux bootstrap github --owner <owner> --repository <repository> --path <path_to_cluster_directory> --personal
+
+# Bootstrap using a GitLab repository
+flux bootstrap gitlab --owner <owner> --repository <repository> --path <path_to_cluster_directory>
+
+# Bootstrap from a generic Git repository via SSH
+flux bootstrap git --url <ssh___git_example_com_repository_git> --branch <main> --path <path_to_cluster_directory>

@@ -3,8 +3,8 @@
 
 % sfdk-deploy, common
 
-# Deploy using a specified method (`pkcon`, `rsync`, `sdk`, `zypper`, `zypper-dup`, or `manual`)
-sfdk deploy --<method>
+# Deploy using a specified method
+sfdk deploy --<pkcon_rsync_sdk_zypper_zypper_dup_manual>
 
 # Preview deploy without applying the changes
 sfdk deploy --<method> <__n___dry_run_>
@@ -15,5 +15,5 @@ sfdk deploy --<method> "+package*"
 # Deploy all files excluding `ignore*`
 sfdk deploy --<method> "-ignore*"
 
-# Undeploy using a specified method (`pkcon`, `rpm`, `rsync`, `sdk`, or `zypper`)
-sfdk undeploy --<method>
+# Undeploy using a specified method
+sfdk undeploy --<pkcon_rpm_rsync_sdk_zypper>

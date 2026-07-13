@@ -4,7 +4,7 @@
 % pct-console, linux
 
 # Attach to a terminal
-pct console <100>
+pct <_cons_console_> <100>
 
 # Detach from a terminal
 <Ctrl a><q>

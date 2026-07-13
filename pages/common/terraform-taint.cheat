@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-taint.md
+
+% terraform-taint, common
+
+# Mark a resource as tainted
+terraform taint <resource_type_resource_name_instance_index_>
+
+# Mark a resource as tainted, even if the resource is missing
+terraform taint -allow-missing <resource_type_resource_name_instance_index_>
+
+# Mark a resource as tainted without acquiring a state lock
+terraform taint -lock=false <resource_type_resource_name_instance_index_>
+
+# Mark a resource as tainted with a custom lock timeout
+terraform taint -lock-timeout=<duration> <resource_type_resource_name_instance_index_>

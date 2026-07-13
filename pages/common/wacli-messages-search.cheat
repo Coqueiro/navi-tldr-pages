@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-messages-search.md
+
+% wacli-messages-search, common
+
+# Search messages in a specific chat
+wacli messages search "<query>" --chat <phone_number>@s.whatsapp.net --json
+
+# Search messages from a specific sender
+wacli messages search "<query>" --from <phone_number>@s.whatsapp.net --json
+
+# Search messages after a specific date
+wacli messages search "<query>" --chat <phone_number>@s.whatsapp.net --after <2026_01_28> --json
+
+# Search messages of a specific type
+wacli messages search "<query>" --type <image_video_audio_document> --json
+
+# Search messages with a result limit
+wacli messages search "<query>" --chat <phone_number>@s.whatsapp.net --limit <10> --json

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-rollback.md
+
+% pct-rollback, linux
+
+# Restore a snapshot
+pct <_ro_rollback_> <100> <snapshot_name>
+
+# Start the container as soon as the snapshot is restored
+pct <_ro_rollback_> <100> <snapshot_name> --start

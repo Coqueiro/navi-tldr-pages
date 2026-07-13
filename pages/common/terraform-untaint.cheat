@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-untaint.md
+
+% terraform-untaint, common
+
+# Remove tainted status from a resource
+terraform untaint <resource_type_resource_name_instance_index_>
+
+# Remove tainted status, even if the resource is missing
+terraform untaint -allow-missing <resource_type_resource_name_instance_index_>
+
+# Remove tainted status without acquiring a state lock
+terraform untaint -lock=false <resource_type_resource_name_instance_index_>
+
+# Remove tainted status with a custom lock timeout
+terraform untaint -lock-timeout=<duration> <resource_type_resource_name_instance_index_>

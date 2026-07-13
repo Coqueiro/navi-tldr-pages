@@ -21,8 +21,8 @@ sfdk config device="{{Sailfish OS Emulator 5.0.0.62}}"; sfdk deploy --sdk
 # Display help
 sfdk --help
 
-# Display help for specific topic (`building`, `testing`, `maintaining`, `ide`, `all`)
-sfdk --help-<topic>
+# Display help for specific topic
+sfdk --help-<building_testing_maintaining_ide_all>
 
 # Display version
 sfdk --version

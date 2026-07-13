@@ -9,7 +9,7 @@ bun pm version
 # Set a specific version
 bun pm version <9_0_1>
 
-# Bump the version using a semantic version type (`major`, `minor`, `patch`, etc.)
+# Bump the version using a semantic version type
 bun pm version <major_minor_patch_premajor_preminor_prepatch_prerelease>
 
 # Set the version based on Git tags

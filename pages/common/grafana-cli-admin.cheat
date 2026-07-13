@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/grafana-cli-admin.md
+
+% grafana-cli-admin, common
+
+# Reset the admin password
+grafana cli admin reset-admin-password <new_password>
+
+# Reset the password for a specific user
+grafana cli admin reset-admin-password --user-id <user_id> <new_password>
+
+# Reset the password using a specific Grafana home directory
+grafana cli --homepath <path_to_grafana> admin reset-admin-password <new_password>
+
+# Display help
+grafana cli admin <__h___help_>
+
+# Display version
+grafana cli admin <__v___version_>

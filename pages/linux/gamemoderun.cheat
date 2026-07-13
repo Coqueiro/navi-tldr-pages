@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/gamemoderun.md
+
+% gamemoderun, linux
+
+# Run a program with optimizations
+gamemoderun <path_to_program>
+
+# Within Steam's launch options for a specific game, run a game with optimizations
+gamemoderun %command%

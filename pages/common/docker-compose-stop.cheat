@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/docker-compose-stop.md
+
+% docker-compose-stop, common
+
+# Stop all running services
+docker compose stop
+
+# Stop specific services
+docker compose stop {{service_1 service_2 ...}}
+
+# Stop with a custom shutdown timeout in seconds
+docker compose stop <__t___timeout_> <seconds>
+
+# Stop services defined in a specific compose file
+docker compose <__f___file_> <path_to_compose_file> stop
+
+# Dry run (show operations without executing)
+docker compose stop --dry-run
+
+# Stop specific services with a custom timeout
+docker compose stop <__t___timeout_> <seconds> {{service_1 service_2 ...}}

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-create.md
+
+% flux-create, common
+
+# Create a GitRepository source
+flux create source git <source_name> --url <https___github_com_repository> --branch <branch_name>
+
+# Create a Kustomization resource to sync a directory from a Git source
+flux create kustomization <kustomization_name> --source <source_name> --path <path_to_directory>
+
+# Create a HelmRelease
+flux create helmrelease <release_name> --chart <chart_name> --source <HelmRepository_repository_name>
+
+# Create a Secret to authenticate with a Git repository
+flux create secret git <secret_name> --url <https___github_com_repository> --username "<username>" --password "<password>"

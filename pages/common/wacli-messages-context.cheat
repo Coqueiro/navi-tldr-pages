@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/wacli-messages-context.md
+
+% wacli-messages-context, common
+
+# Show context around a specific message in JSON format
+wacli messages context <message_id> --json
+
+# Show context around a message using a custom store
+wacli messages context <message_id> --json --store <path_to_store>

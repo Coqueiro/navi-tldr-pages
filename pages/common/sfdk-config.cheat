@@ -18,5 +18,5 @@ sfdk config <name>
 # Clear option value
 sfdk --drop <name>
 
-# Run subcommand in specified scope (`global`, `session`, or `command`)
-sfdk config --<scope> <subcommand>
+# Run subcommand in specified scope
+sfdk config --<global_session_command> <subcommand>
