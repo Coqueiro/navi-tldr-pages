@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fmtutil-user.md
+
+% fmtutil-user, common
+
+# Recreate all user format files
+fmtutil-user --all
+
+# Create all missing user format files
+fmtutil-user --missing
+
+# Recreate a specific user format
+fmtutil-user --byfmt <format>
+
+# Recreate all formats built with a specific engine
+fmtutil-user --byengine <engine>
+
+# List all available format configurations
+fmtutil-user --listcfg

@@ -4,4 +4,10 @@
 % qm-cleanup, linux
 
 # Clean up resources
-qm <_cl_cleanup_> <100> <clean_shutdown> <guest_requested>
+qm <_cle_cleanup_> <100> <true_false> <true_false>
+
+# Indicate to the system that the VM was not shut down cleanly
+qm <_cle_cleanup_> <100> false <true_false>
+
+# Indicate to the system that the shutdown was requested by the guest
+qm <_cle_cleanup_> <100> <true_false> true

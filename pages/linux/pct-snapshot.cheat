@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-snapshot.md
+
+% pct-snapshot, linux
+
+# Create a snapshot
+pct <_sn_snapshot_> <100> <snapshot_name>
+
+# Add a description to the snapshot
+pct <_sn_snapshot_> <100> <snapshot_name> --description "<description_text>"

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/aconnect.md
+
+% aconnect, common
+
+# List all ports
+aconnect <__a___all_>
+
+# List readable input ports
+aconnect <__i___input_>
+
+# List writeable output ports
+aconnect <__o___output_>
+
+# Display help
+aconnect

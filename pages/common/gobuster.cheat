@@ -7,7 +7,7 @@
 gobuster dir <__u___url_> <https___example_com_> <__w___wordlist_> <path_to_file>
 
 # Discover subdomains
-gobuster dns <__d___domain_> <example_com> <__w___wordlist_> <path_to_file>
+gobuster dns <__do___domain_> <example_com> <__w___wordlist_> <path_to_file>
 
 # Discover Amazon S3 buckets
 gobuster s3 <__w___wordlist_> <path_to_file>

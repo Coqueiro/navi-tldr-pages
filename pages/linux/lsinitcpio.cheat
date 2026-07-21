@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/lsinitcpio.md
+
+% lsinitcpio, linux
+
+# View a list of all files and directories of a specific image
+lsinitcpio <path_to_initramfs_img>
+
+# Extract an image to the current directory
+lsinitcpio <__x___extract_> <path_to_initramfs_img>
+
+# View human-readable information on an image
+lsinitcpio <__a___analyze_> <path_to_initramfs_img>

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/twurl-authorize.md
+
+% twurl-authorize, common
+
+# Authorize twurl using a consumer key and secret
+twurl authorize <__c___consumer_key_> <consumer_key> <__s___consumer_secret_> <consumer_secret>
+
+# Authorize twurl using a consumer key and secret, and open the authorization URL in a browser
+twurl authorize <__c___consumer_key_> <consumer_key> <__s___consumer_secret_> <consumer_secret> --open
+
+# Authorize twurl for a specific host
+twurl authorize <__c___consumer_key_> <consumer_key> <__s___consumer_secret_> <consumer_secret> <__H___host_> <api_twitter_com>

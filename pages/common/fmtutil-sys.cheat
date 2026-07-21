@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fmtutil-sys.md
+
+% fmtutil-sys, common
+
+# Recreate all system format files
+fmtutil-sys --all
+
+# Create all missing system format files
+fmtutil-sys --missing
+
+# Recreate a specific system format
+fmtutil-sys --byfmt <format>
+
+# List configured formats
+fmtutil-sys --listcfg

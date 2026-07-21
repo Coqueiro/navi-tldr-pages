@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-shutdown.md
+
+% pct-shutdown, linux
+
+# Shutdown a container
+pct <_sh_shutdown_> <100>

@@ -4,10 +4,10 @@
 % pct-config, linux
 
 # Display the saved configuration
-pct config <100>
+pct <_conf_config_> <100>
 
 # Display the running configuration without pending changes
-pct config <100> --current
+pct <_conf_config_> <100> --current
 
 # Display configuration of a specific snapshot
-pct config <100> --snapshot <snapshot_name>
+pct <_conf_config_> <100> --snapshot <snapshot_name>

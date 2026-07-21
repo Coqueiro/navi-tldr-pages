@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-pull.md
+
+% pct-pull, linux
+
+# Copy a file from a container
+pct pull <100> /<path_to_source_file> <path_to_destination_file>

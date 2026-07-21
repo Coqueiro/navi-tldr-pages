@@ -16,4 +16,4 @@ qm <_sn_snapshot_> <100> <snapshot_name> --description <description> --vmstate 1
 qm <_lists_listsnapshot_> <100>
 
 # Rollback the state of a specific VM to a specified snapshot
-qm <_ro_rollback_> <100> <snap_name>
+qm <_ro_rollback_> <100> <snapshot_name>

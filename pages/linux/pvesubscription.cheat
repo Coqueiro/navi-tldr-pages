@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pvesubscription.md
+
+% pvesubscription, linux
+
+# Display subscription information
+pvesubscription <_g_get_>
+
+# Set the subscription key
+pvesubscription set <subscription_key>
+
+# Update subscription information
+pvesubscription <_u_update_>
+
+# Delete the subscription key from the current node
+pvesubscription <_d_delete_>

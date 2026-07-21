@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/glob.md
+
+% glob, common
+
+# Match zero or more of any characters
+*
+
+# Match any single character
+?
+
+# Match one character in a set of characters
+[<abc>]
+
+# Match ranges of characters
+[<a_z>][<3_9>]
+
+# Match anything but the specified character
+[!<a>]
+
+# Match a single character not withing a range
+[!<a_z>]

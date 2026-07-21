@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-start.md
+
+% pct-start, linux
+
+# Start a container
+pct start <100>

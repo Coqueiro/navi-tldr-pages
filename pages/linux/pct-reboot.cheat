@@ -4,4 +4,4 @@
 % pct-reboot, linux
 
 # Reboot a container
-pct reboot <100>
+pct <_reb_reboot_> <100>

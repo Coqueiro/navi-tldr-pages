@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mktexfmt.md
+
+% mktexfmt, common
+
+# Create a format
+mktexfmt <format>
+
+# Display version information
+mktexfmt --version
+
+# Display help
+mktexfmt --help

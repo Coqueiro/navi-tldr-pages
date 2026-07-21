@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-push.md
+
+% pct-push, linux
+
+# Copy a file to a container
+pct push <100> <path_to_source_file> /<path_to_destination_file>
