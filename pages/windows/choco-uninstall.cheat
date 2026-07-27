@@ -10,10 +10,10 @@ choco uninstall {{package1 package2 ...}}
 choco uninstall <package> --version <version>
 
 # Confirm all prompts automatically
-choco uninstall <package> --yes
+choco uninstall <package> <__y___yes_>
 
 # Remove all dependencies when uninstalling
-choco uninstall <package> --remove-dependencies
+choco uninstall <package> <__x___remove_dependencies_>
 
 # Uninstall all packages
 choco uninstall all

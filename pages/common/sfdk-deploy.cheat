@@ -6,7 +6,7 @@
 # Deploy using a specified method
 sfdk deploy --<pkcon_rsync_sdk_zypper_zypper_dup_manual>
 
-# Preview deploy without applying the changes
+# Simulate a deployment without applying the changes
 sfdk deploy --<method> <__n___dry_run_>
 
 # Deploy files in glob pattern `package*`

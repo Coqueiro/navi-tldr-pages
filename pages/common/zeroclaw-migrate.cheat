@@ -3,7 +3,7 @@
 
 % zeroclaw-migrate, common
 
-# Preview migration from OpenClaw without writing data
+# Simulate migration from OpenClaw without writing data
 zeroclaw migrate openclaw --dry-run
 
 # Migrate memory from OpenClaw workspace

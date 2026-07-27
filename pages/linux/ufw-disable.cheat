@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-disable.md
+
+% ufw-disable, linux
+
+# Simulate disabling the firewall without making changes
+sudo ufw --dry-run disable
+
+# Unload and disable `ufw`
+sudo ufw disable

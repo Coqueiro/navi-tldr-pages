@@ -12,5 +12,5 @@ choco apikey <__s___source_> "<source_url>"
 # Set an API key for a source
 choco apikey <__s___source_> "<source_url>" <__k___api_key_> "<api_key>"
 
-# Remove an API key for a source
-choco apikey <__s___source_> "<source_url>" --remove
+# Remove the API key for a source
+choco apikey remove <__s___source_> "<source_url>"

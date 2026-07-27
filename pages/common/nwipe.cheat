@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/nwipe.md
+
+% nwipe, common
+
+# Launch the interactive Ncurses interface
+sudo nwipe
+
+# Wipe specific devices using the default method (DoD 3-pass) without confirmation prompts
+sudo nwipe --autonuke {{/dev/sdX /dev/sdY ...}}
+
+# Wipe a specific disk using a custom erasing method
+sudo nwipe <__m___method_> <zero_one_gutmann_dod522022m____> <_dev_sdX>
+
+# Wipe a disk and power off the system upon completion
+sudo nwipe --autonuke --autopoweroff <_dev_sdX>
+
+# Display version
+nwipe <__V___version_>

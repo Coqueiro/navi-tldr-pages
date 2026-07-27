@@ -11,3 +11,15 @@ go get <example_com_pkg>@<v1_2_3>
 
 # Remove a specified package
 go get <example_com_pkg>@<none>
+
+# Update a package to its latest release
+go get -u example.com/pkg
+
+# Update direct dependencies
+go get -u
+
+# Update direct and indirect dependencies
+go get -u ./...
+
+# Update direct, indirect, and test dependencies
+go get -u -t ./...

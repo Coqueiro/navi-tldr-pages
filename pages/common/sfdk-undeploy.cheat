@@ -6,7 +6,7 @@
 # Undeploy using a specified method
 sfdk undeploy --<pkcon_rpm_rsync_sdk_zypper>
 
-# Preview undeploy without applying the changes
+# Simulate an undeployment without applying the changes
 sfdk undeploy --<method> <__n___dry_run_>
 
 # Undeploy files in glob pattern `package*`

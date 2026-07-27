@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/marzban-cli.md
+
+% marzban-cli, linux
+
+# List all administrators
+marzban cli admin list
+
+# Create a new administrator
+marzban cli admin create <__u___username_> <username>
+
+# List all users
+marzban cli user list
+
+# Transfer ownership of a user to another administrator
+marzban cli user set-owner <__u___username_> <username> --owner <owner>
+
+# Generate a subscription configuration for a user
+marzban cli subscription get-config <__u___username_> <username> <__f___format_> <v2ray_clash>
+
+# Display a user's subscription link
+marzban cli subscription get-link <__u___username_> <username>
+
+# Display help
+marzban cli --help

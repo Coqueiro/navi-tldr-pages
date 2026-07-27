@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-enable.md
+
+% ufw-enable, linux
+
+# Simulate enabling the firewall without making changes
+sudo ufw --dry-run enable
+
+# Reload and enable `ufw`
+sudo ufw enable

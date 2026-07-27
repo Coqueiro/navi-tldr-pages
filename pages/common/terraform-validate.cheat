@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-validate.md
+
+% terraform-validate, common
+
+# Validate the configuration in the current directory
+terraform validate
+
+# Output the validation result in JSON format
+terraform validate -json
+
+# Validate the configuration without validating test files
+terraform validate -no-tests
+
+# Validate the configuration in a specific directory
+terraform validate <path_to_directory>
+
+# Validate the configuration using a custom test directory
+terraform validate -test-directory <path_to_test_directory>

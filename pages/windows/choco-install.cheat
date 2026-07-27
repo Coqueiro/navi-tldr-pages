@@ -15,14 +15,14 @@ choco install <path_to_file>
 # Install a specific version of a package
 choco install <package> --version <version>
 
-# Allow installing multiple versions of a package
-choco install <package> --allow-multiple
+# Force reinstallation of a package
+choco install <package> <__f___force_>
 
 # Confirm all prompts automatically
-choco install <package> --yes
+choco install <package> <__y___yes_>
 
 # Specify a custom source to receive packages from
-choco install <package> --source <source_url_alias>
+choco install <package> <__s___source_> <source_url_alias>
 
 # Provide a username and password for authentication
-choco install <package> --user <username> --password <password>
+choco install <package> <__u___user_> <username> <__p___password_> <password>

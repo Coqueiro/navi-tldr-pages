@@ -3,7 +3,7 @@
 
 % tshark, linux
 
-# Monitor everything on localhost
+# Monitor packets from the default interface
 tshark
 
 # Only capture packets matching a specific capture filter

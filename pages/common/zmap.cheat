@@ -15,7 +15,7 @@ sudo zmap <__o___output_file_> <path_to_output_file_csv> <__f___output_fields_> 
 # Limit the scan rate to a specific number of packets per second
 sudo zmap <__r___rate_> <packets_per_second> <subnet>
 
-# Perform a dry run without sending packets
+# Simulate running zmap without sending packets
 zmap <__d___dryrun_> <subnet>
 
 # Exclude subnets using a blocklist file in CIDR notation

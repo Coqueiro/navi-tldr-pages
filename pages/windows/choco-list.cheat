@@ -3,20 +3,20 @@
 
 % choco-list, windows
 
-# Display all available packages
+# List locally installed packages
 choco list
 
-# Display all locally installed packages
-choco list --local-only
-
-# Display a list including local programs
+# List installed packages including system programs
 choco list <__i___include_programs_>
 
-# Display only approved packages
-choco list --approved-only
+# List only the IDs of installed packages
+choco list --id-only
 
-# Specify a custom source to display packages from
-choco list <__s___source_> <source_url_alias>
+# List installed packages matching a name exactly
+choco list <package> <__e___exact_>
 
-# Provide a username and password for authentication
-choco list --user <username> --password <password>
+# List installed packages starting with a specific prefix
+choco list --id-starts-with <prefix>
+
+# List installed packages from a specific alternative source
+choco list <__s___source_> <windowsfeatures_ruby_cygwin____>

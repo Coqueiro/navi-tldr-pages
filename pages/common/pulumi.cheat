@@ -15,7 +15,7 @@ pulumi config
 # Preview and deploy changes to a program and/or infrastructure
 pulumi up
 
-# Preview deployment changes without performing them (dry-run)
+# Simulate deployment changes without performing them (dry-run)
 pulumi preview
 
 # Destroy a program and its infrastructure

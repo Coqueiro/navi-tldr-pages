@@ -7,13 +7,13 @@
 plantuml <diagram1_puml> <diagram2_puml>
 
 # Render a diagram in given format (e.g. `png`, `pdf`, `svg`, `txt`)
-plantuml -t <format> <diagram_puml>
+plantuml <__f___format_> <format> <diagram_puml>
 
 # Render all diagrams of a directory
 plantuml <path_to_diagrams>
 
 # Render a diagram to the output directory
-plantuml -o <path_to_output> <diagram_puml>
+plantuml <__o___output_dir_> <path_to_output> <diagram_puml>
 
 # Render a diagram without storing the diagram's source code (Note: It's stored by default when the `-nometadata` option isn't specified)
 plantuml -nometadata <diagram_png> > <diagram_puml>
@@ -22,7 +22,7 @@ plantuml -nometadata <diagram_png> > <diagram_puml>
 plantuml -metadata <diagram_png> > <diagram_puml>
 
 # Render a diagram with the configuration file
-plantuml -config <config_cfg> <diagram_puml>
+plantuml --config <config_cfg> <diagram_puml>
 
 # Display help
-plantuml -help
+plantuml <__h___help_>

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/numbat.md
+
+% numbat, common
+
+# Start an interactive session
+numbat
+
+# Evaluate one or more expressions
+numbat <__e___expression_> '{{2 hours + 30 minutes -> seconds}}'
+
+# Run a Numbat script
+numbat <path_to_script_nbt>
+
+# Enter an interactive session after running a script or expression
+numbat <__i___inspect_interactively_> <path_to_script_nbt>
+
+# Start without loading the prelude of predefined dimensions and units
+numbat <__N___no_prelude_>
+
+# Generate a default configuration file
+numbat --generate-config

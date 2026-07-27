@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jless.md
+
+% jless, common
+
+# Open a JSON file
+jless <path_to_file_json>
+
+# Read JSON from `stdin`
+cat <path_to_file_json> | jless
+
+# Force YAML parsing regardless of file extension
+jless --yaml <path_to_file>
+
+# Start in line mode (show braces, commas, and quoted object keys)
+jless <__m___mode_> line <path_to_file_json>
+
+# Hide line numbers
+jless <__N___no_line_numbers_> <path_to_file_json>
+
+# Show relative line numbers
+jless <__r___relative_line_numbers_> <path_to_file_json>
+
+# [Interactive] Search forward for a pattern (press `<n>`/`<N>` for next/previous match)
+</><pattern>
+
+# [Interactive] Exit
+<q>

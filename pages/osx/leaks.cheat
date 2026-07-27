@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/leaks.md
+
+% leaks, osx
+
+# Examine a running process for leaks by its name
+leaks <process_name>
+
+# Examine a running process for leaks by its PID
+leaks <pid>
+
+# Launch a command and check for leaks when it exits
+leaks -atExit -- <command>
+
+# Enable backtraces for each leak by setting the `MallocStackLogging` environment variable
+MallocStackLogging=YES leaks <process_name>
+
+# Display results in the classic list format instead of a tree
+leaks -list <process_name>
+
+# Group leaked objects by type
+leaks -groupByType <process_name>
+
+# Save the memory state to a memory graph file for later analysis
+leaks <process_name> -outputGraph <path_to_file_memgraph>
+
+# Examine a previously saved memory graph file
+leaks <path_to_file_memgraph>

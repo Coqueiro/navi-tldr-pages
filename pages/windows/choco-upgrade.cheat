@@ -16,10 +16,10 @@ choco upgrade all
 choco upgrade all --except "<package1_package2____>"
 
 # Confirm all prompts automatically
-choco upgrade <package> --yes
+choco upgrade <package> <__y___yes_>
 
 # Specify a custom source to receive packages from
-choco upgrade <package> --source <source_url_alias>
+choco upgrade <package> <__s___source_> <source_url_alias>
 
 # Provide a username and password for authentication
-choco upgrade <package> --user <username> --password <password>
+choco upgrade <package> <__u___user_> <username> <__p___password_> <password>
