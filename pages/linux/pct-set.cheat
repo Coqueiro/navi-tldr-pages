@@ -22,4 +22,4 @@ pct <_se_set_> <100> --mp<0> /<path_to_host_directory>,mp=/<path_to_guest_mount_
 pct <_se_set_> <100> --tags <tag1_tag2____>
 
 # Remove an option
-pct <_se_set_> <100> --delete <net0_mp0_mp1____>
+pct <_se_set_> <100> --delete <unused0_net0_mp0_mp1____>

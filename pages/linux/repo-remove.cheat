@@ -5,3 +5,6 @@
 
 # Remove a package from a local repository
 repo-remove <path_to_database_db_tar_gz> <package>
+
+# Also remove the package file
+repo-remove <__R___remove_> <path_to_database_db_tar_gz> <package>

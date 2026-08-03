@@ -15,5 +15,8 @@ cage -d <application>
 # Allow [s]witching terminals with `<Ctrl Alt F2>`
 cage -s <application>
 
+# Run a specific file
+cage /<path_to_file>
+
 # Display help
 cage -h

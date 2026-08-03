@@ -21,8 +21,8 @@ tldr <__u___update_>
 # List all pages for the current platform and `common`
 tldr <__l___list_>
 
+# Print the tldr page for a command and display short options
+tldr --short-options <command>
+
 # Browse tldr pages in a terminal window (`fzf` must be available)
 tldr <__l___list_> | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr
-
-# Print the tldr page for a random command
-tldr <__l___list_> | shuf <__n___head_count_> 1 | xargs tldr

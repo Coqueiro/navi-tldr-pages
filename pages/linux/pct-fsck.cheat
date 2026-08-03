@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pct-fsck.md
+
+% pct-fsck, linux
+
+# Check all volumes of a container
+pct fsck <100>
+
+# Specify which volume to check
+pct fsck <100> --device <mp0_mp1_rootfs____>

@@ -15,5 +15,5 @@ bun <_rm_remove_> <__g___global_> <package_name>
 # Remove a dependency without updating the `package.json` file
 bun <_rm_remove_> --no-save <package_name>
 
-# Run the command without actually removing packages (simulate the removal)
+# Simulate running the command without actually removing packages
 bun <_rm_remove_> --dry-run <package_name>

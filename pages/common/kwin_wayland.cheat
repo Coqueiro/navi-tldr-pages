@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kwin_wayland.md
+
+% kwin_wayland, common
+
+# Start KWin
+kwin_wayland
+
+# Replace the currently running KWin
+kwin_wayland --replace
+
+# Display help
+kwin_wayland <__h___help_>

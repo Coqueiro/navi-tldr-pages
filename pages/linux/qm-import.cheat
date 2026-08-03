@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/qm-import.md
+
+% qm-import, linux
+
+# Import an image
+qm <_i_import_> <100> <storage_name>:<import>/<file_name> --storage <destination_storage>

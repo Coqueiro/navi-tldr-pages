@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/windows/choco-config.md
+
+% choco-config, windows
+
+# Display all configuration settings and their values
+choco config list
+
+# Display the value of a specific configuration setting
+choco config get <setting_name>
+
+# Set a value for a specific configuration setting
+choco config set <setting_name> <value>
+
+# Remove a specific configuration setting
+choco config unset <setting_name>

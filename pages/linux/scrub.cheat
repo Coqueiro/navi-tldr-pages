@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/scrub.md
+
+% scrub, linux
+
+# Securely overwrite a file using the default overwrite pattern
+scrub <path_to_file>
+
+# Securely overwrite multiple files
+scrub {{path/to/file1 path/to/file2 ...}}
+
+# Securely overwrite a block device or partition
+sudo scrub <_dev_sdX>
+
+# Securely overwrite a file with a single-pass overwrite pattern
+scrub <__p___pattern_> random <path_to_file>
+
+# Securely overwrite a file using the DoD 5220.22-M overwrite pattern
+scrub <__p___pattern_> dod <path_to_file>
+
+# Securely overwrite a file using the Gutmann overwrite pattern
+scrub <__p___pattern_> gutmann <path_to_file>
+
+# Remove a file after successfully overwriting it
+scrub <__r___remove_> <path_to_file>
+
+# Securely overwrite free space in a directory
+scrub <__X___freespace_> <path_to_directory>

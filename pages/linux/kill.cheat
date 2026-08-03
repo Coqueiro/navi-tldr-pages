@@ -25,4 +25,4 @@ kill <__9__KILL_> <process_id>
 kill <__19__STOP_> <process_id>
 
 # Send a `SIGUSR1` signal to all processes with the given GID (group id)
-kill -SIGUSR1 -<group_id>
+kill <__10__SIGUSR1_> -<group_id>

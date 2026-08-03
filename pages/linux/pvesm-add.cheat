@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/pvesm-add.md
+
+% pvesm-add, linux
+
+# Add a directory storage
+pvesm <_ad_add_> dir <storage_name> --path <path_to_directory>
+
+# Add an LVM storage
+pvesm <_ad_add_> lvm <storage_name> --vgname <volume_group_name>
+
+# Add an LVM-Thin storage
+pvesm <_ad_add_> lvmthin <storage_name> --vgname <volume_group_name> --thinpool <logical_volume_name>

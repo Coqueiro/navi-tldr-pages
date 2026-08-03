@@ -24,5 +24,5 @@ read -p "{{Enter your input here: }}" <variable>
 # Do not echo typed characters (silent mode)
 read -s <variable>
 
-# Read `stdin` and perform an action on every line
-cat <_dev_stdin_path_to_file____> | while read line; do <echo_ls_rm____> "$line"; done
+# Perform an action on each line of a command's output
+<command> | while IFS= read -r line; do <echo_ls_rm____> "$line"; done

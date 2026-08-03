@@ -9,14 +9,17 @@ pvesm <_st_status_>
 # List storage contents
 pvesm <_l_list_> <storage_name>
 
+# View the path of a stored file
+pvesm <_pa_path_> <storage_name>:<content_type>/<file_name>
+
 # Add a directory storage
-pvesm add <_d_dir_> <storage_name> --path <path_to_directory>
+pvesm <_ad_add_> dir <storage_name> --path <path_to_directory>
 
 # Set a storage to contain specific content
-pvesm set <storage_name> --content <iso_images_backup_vztmpl____>
+pvesm <_se_set_> <storage_name> --content <iso_images_backup_vztmpl_rootdir_snippets_import>
 
 # Delete a file from storage
-pvesm free <local_iso_archlinux_2025_08_01_x86_64_iso>
+pvesm <_f_free_> <local_iso_archlinux_2025_08_01_x86_64_iso>
 
 # Remove a storage
 pvesm <_r_remove_> <storage_name>
