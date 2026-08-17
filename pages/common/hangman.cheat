@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/hangman.md
+
+% hangman, common
+
+# Start the game
+hangman
+
+# Guess a letter
+<_a___b___c_____>
+
+# Move to the next word
+<Space>
+
+# Quit the game
+<Enter>
+
+# Start the game with a specific minimum word length (default is 6)
+hangman -m <min_length>
+
+# Start the game with a specific word list
+hangman -d <path_to_word_list>

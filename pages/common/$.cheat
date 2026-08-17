@@ -9,8 +9,8 @@ echo $<VARIABLE>
 # Run variable contents as a command
 $<VARIABLE>
 
-# Print the exit status of the previous command
-echo $?
+# Print the PID or the exit status of the previous command
+echo <_____>
 
 # Print a random number between 0 and 32767
 echo $RANDOM

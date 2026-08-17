@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/edid-decode.md
+
+% edid-decode, linux
+
+# View EDID information of a display
+edid-decode /sys/class/drm/<card1_DP_1>/edid

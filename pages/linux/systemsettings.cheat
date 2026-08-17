@@ -9,5 +9,8 @@ systemsettings
 # List all possible KCM modules for `systemsettings`
 systemsettings --list
 
+# Open a specific KCM
+systemsettings <kcm_name>
+
 # Display help
 systemsettings <__h___help_>

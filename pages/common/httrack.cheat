@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/httrack.md
+
+% httrack, common
+
+# Mirror a website
+httrack <https___example_com>
+
+# Mirror a website to a specific directory
+httrack <https___example_com> <__O___path_> <path_to_output_directory>
+
+# Continue an interrupted mirror using the cache
+httrack <https___example_com> <__O___path_> <path_to_output_directory> <__i___continue_>
+
+# Limit the recursion depth
+httrack <https___example_com> <__r___depth__><5>
+
+# Mirror all links from the first-level pages
+httrack <https___example_com> <__Y___mirrorlinks_>
+
+# Exclude ZIP files while mirroring
+httrack <https___example_com> "-*.zip"

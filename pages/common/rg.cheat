@@ -16,7 +16,7 @@ rg <__F___fixed_strings_> -- <string>
 rg <______hidden_> --no-ignore <pattern>
 
 # Only search the files matching the glob pattern(s) (e.g. `README.*`, use `!filename_pattern` to exclude instead)
-rg <pattern> <__g___glob_> <filename_glob_pattern>
+rg <pattern> <__g___glob_> '<filename_glob_pattern>'
 
 # Recursively list filenames in the current directory that match a pattern
 rg --files | rg <pattern>

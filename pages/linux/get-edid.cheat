@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/get-edid.md
+
+% get-edid, linux
+
+# Retrieve monitor specifications
+sudo get-edid
+
+# Parse the information
+sudo get-edid | parse-edid

@@ -12,6 +12,9 @@ paru
 # Upgrade AUR packages
 paru -Sua
 
+# List manually installed packages
+paru -Qqm
+
 # Remove an installed package, it's configuration files, and dependencies
 paru -Rns <package>
 
@@ -22,4 +25,4 @@ paru -Si <package>
 paru --getpkgbuild <package>
 
 # Display the `PKGBUILD` file of a package
-paru --getpkgbuild --print <package>
+paru -Gp <package>

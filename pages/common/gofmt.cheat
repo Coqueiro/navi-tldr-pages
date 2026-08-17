@@ -4,13 +4,22 @@
 % gofmt, common
 
 # Format a file and display the result to the console
-gofmt <source_go>
+gofmt <path_to_source_go>
 
 # Format a file, overwriting the original file in-place
-gofmt -w <source_go>
+gofmt -w <path_to_source_go>
 
 # Format a file, and then simplify the code, overwriting the original file
-gofmt -s -w <source_go>
+gofmt -s -w <path_to_source_go>
 
-# Print all (including spurious) errors
-gofmt -e <source_go>
+# Display diffs instead of rewriting files
+gofmt -d <path_to_source_go>
+
+# List files that would be changed by gofmt
+gofmt -l <path_to_directory>
+
+# Apply a rewrite rule to the source before reformatting (e.g. replace nil checks with `isNil` calls)
+gofmt -r '{{x == nil -> isNil(x)}}' <path_to_source_go>
+
+# Report all errors, including multiple ones per line
+gofmt -e <path_to_source_go>

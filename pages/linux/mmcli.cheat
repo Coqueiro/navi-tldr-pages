@@ -4,16 +4,19 @@
 % mmcli, linux
 
 # List available modems
-mmcli --list-modems
+mmcli <__L___list_modems_>
+
+# List available modems and monitor for ones added or removed
+mmcli <__M___monitor_modems_>
 
 # Print information about a modem
-mmcli --modem=<modem>
+mmcli <__m___modem_> <modem_number>
 
 # Enable a modem
-mmcli --modem=<modem> --enable
+mmcli <__m___modem_> <modem_number> <__e___enable_>
 
 # List SMS messages available on the modem
-sudo mmcli --modem=<modem> --messaging-list-sms
+sudo mmcli <__m___modem_> <modem_number> --messaging-list-sms
 
 # Delete a message from the modem, specifying its path
-sudo mmcli --modem=<modem> --messaging-delete-sms=<path_to_message_file>
+sudo mmcli <__m___modem_> <modem_number> --messaging-delete-sms <path_to_message_file>

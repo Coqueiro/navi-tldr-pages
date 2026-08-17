@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/unity.md
+
+% unity, common
+
+# Install a specific version of the Unity Editor
+unity <_i_install_> "<unity_version>"
+
+# Log in to your Unity account
+unity <_a_auth_> login
+
+# Install modules interactively
+unity <_im_install_modules_>
+
+# Create a new Universal Render Pipeline 2D project
+unity <_p_projects_> new "<project_name>" --template com.unity.template.universal-2d --path "<path_to_parent_directory>"
+
+# Open an existing project
+unity open "<path_to_project_directory>"

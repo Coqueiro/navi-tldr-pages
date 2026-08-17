@@ -13,7 +13,7 @@ killall <__l___list_>
 killall <__i___interactive_> <process_name>
 
 # Terminate a process using the SIGINT (interrupt) signal, which is the same signal sent by pressing `<Ctrl c>`
-killall -INT <process_name>
+killall <__2__SIGINT_> <process_name>
 
 # Force kill a process
-killall -KILL <process_name>
+killall <__9__SIGKILL_> <process_name>

@@ -3,11 +3,17 @@
 
 % swaybg, common
 
-# Set the wallpaper to an image
+# Set the wallpaper on all monitors to an image
 swaybg <__i___image_> <path_to_image>
 
-# Set the wallpaper mode
+# Set the image scaling mode (default: `stretch`)
 swaybg <__i___image_> <path_to_image> <__m___mode_> <stretch_fit_fill_center_tile_solid_color>
 
 # Set the wallpaper to a static color
-swaybg <__c___color_> "<_rrggbb>"
+swaybg <__c___color_> <rrggbb>
+
+# Set the wallpaper on a specific monitor
+swaybg <__o___output_> <HDMI_1> <__i___image_> <path_to_image>
+
+# Set different wallpapers on multiple monitors
+swaybg <__o___output_> <HDMI_1> <__i___image_> <path_to_image> <__o___output_> <DP_1> <__i___image_> <path_to_image>

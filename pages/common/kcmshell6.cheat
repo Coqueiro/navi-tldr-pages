@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kcmshell6.md
+
+% kcmshell6, common
+
+# Display a KCM
+kcmshell6 <kcm_name>
+
+# Display help
+kcmshell6 <__h___help_>
