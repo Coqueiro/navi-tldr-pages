@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/kscreenctl.md
+
+% kscreenctl, linux
+
+# List all connected outputs
+kscreenctl list-outputs
+
+# Show an on-screen label on each monitor to identify connector names
+kscreenctl identify
+
+# Show information about a specific output (or use `active-output` / `primary-output`)
+kscreenctl <DP_1>
+
+# Set the resolution and refresh rate of an output
+kscreenctl <DP_1> set-mode 1920x1080@60
+
+# Set the scale of an output to 200%
+kscreenctl <DP_1> set-scale 200%
+
+# Place an output to the right of another
+kscreenctl <HDMI_A_1> right-of <DP_1>
+
+# Disable a specific output
+kscreenctl <HDMI_A_1> set-enabled false
+
+# Turn all outputs off through Display Power Management Signaling
+kscreenctl off

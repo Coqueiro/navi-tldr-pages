@@ -7,7 +7,7 @@
 sudo f3fix <_dev_device_name>
 
 # Mark the partition as bootable
-sudo f3fix --boot <_dev_device_name>
+sudo f3fix <__b___boot_> <_dev_device_name>
 
 # Specify the filesystem
-sudo f3fix --fs-type=<filesystem_type> <_dev_device_name>
+sudo f3fix <__f___fs_type_> <filesystem_type> <_dev_device_name>

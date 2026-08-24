@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/litert-lm.md
+
+% litert-lm, common
+
+# List all imported models
+litert-lm list
+
+# Run a local or imported model interactively
+litert-lm run <path_to_model_litertlm_model_id>
+
+# Run a model directly from a Hugging Face repository with a single prompt
+litert-lm run --from-huggingface-repo <owner_repository> <model_litertlm> --prompt "{{What is the capital of France?}}"
+
+# Run a model using GPU acceleration
+litert-lm run <path_to_model_litertlm_model_id> --backend gpu
+
+# Run a multimodal model with an image attachment
+litert-lm run <path_to_model_litertlm_model_id> --vision-backend <gpu_cpu> --attachment <path_to_image_jpg> --prompt "{{Describe this image.}}"
+
+# Run a model with Python function calling tools via a preset file
+litert-lm run <path_to_model_litertlm_model_id> --preset <path_to_preset_py>
+
+# Benchmark a model's performance
+litert-lm benchmark <path_to_model_litertlm_model_id>
+
+# Start an OpenAI-compatible API server on a specific port
+litert-lm serve --port <9379>

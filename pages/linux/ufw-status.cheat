@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-status.md
+
+% ufw-status, linux
+
+# Show whether the firewall is active and list the rules
+sudo ufw status
+
+# Show rules with numbers (useful before deleting a rule by number)
+sudo ufw status numbered
+
+# Show a verbose status, including default policies and listening ports
+sudo ufw status verbose

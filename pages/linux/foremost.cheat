@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/foremost.md
+
+% foremost, linux
+
+# Recover files of a specific [t]ype (e.g., JPEG) from a disk image
+foremost -t <jpg> -i <path_to_disk_image_dd>
+
+# Recover files of multiple [t]ypes
+foremost -t <gif_png_pdf> -i <path_to_disk_image_dd>
+
+# Recover files using all predefined formats
+foremost -t all -i <path_to_disk_image_dd>
+
+# Recover files into a specific [o]utput directory
+foremost -o <path_to_output_directory> -i <path_to_disk_image_dd>
+
+# Display [h]elp
+foremost -h
+
+# Display [V]ersion
+foremost -V

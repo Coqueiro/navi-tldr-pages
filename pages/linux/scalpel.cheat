@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/scalpel.md
+
+% scalpel, linux
+
+# Carve files from a disk image using a specific configuration file
+scalpel -c <path_to_scalpel_conf> -o <path_to_output_directory> <path_to_disk_image_dd>
+
+# Preview which files would be carved, without actually carving them
+scalpel -p -c <path_to_scalpel_conf> -o <path_to_output_directory> <path_to_disk_image_dd>
+
+# Skip the first N bytes of the disk image before carving
+scalpel -s <number> -c <path_to_scalpel_conf> -o <path_to_output_directory> <path_to_disk_image_dd>
+
+# Carve files without organizing them into subdirectories by type
+scalpel -O -c <path_to_scalpel_conf> -o <path_to_output_directory> <path_to_disk_image_dd>
+
+# Display help
+scalpel -h
+
+# Display version
+scalpel -V

@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/govulncheck.md
+
+% govulncheck, common
+
+# Scan the current module and its dependencies for vulnerabilities
+govulncheck ./...
+
+# Scan a specific package
+govulncheck <path_to_package>
+
+# Scan a Go binary instead of source code
+govulncheck -mode binary <path_to_binary>
+
+# Extract build information and build information from a go binary
+govulncheck -mode extract <path_to_binary>
+
+# Scan test files as well
+govulncheck -test ./...
+
+# Print the results in a specific format
+govulncheck -format <text_json_sarif_openvex> ./...
+
+# Display the call stacks leading to each vulnerable symbol
+govulncheck -show traces ./...

@@ -6,8 +6,11 @@
 # Probe a block device
 sudo f3probe <path_to_block_device>
 
-# Use the minimum about of RAM possible
-sudo f3probe --min-memory <path_to_block_device>
+# Probe a whole block device destructively, without preserving any data (required for raw devices with no partition table)
+sudo f3probe <__n___destructive_> <path_to_block_device>
+
+# Use the minimum amount of RAM possible
+sudo f3probe <__l___min_memory_> <path_to_block_device>
 
 # Time disk operations
-sudo f3probe --time-ops <path_to_block_device>
+sudo f3probe <__t___time_ops_> <path_to_block_device>

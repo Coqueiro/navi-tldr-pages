@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/switcherooctl.md
+
+% switcherooctl, linux
+
+# Enable the switcheroo service
+systemctl start switcheroo-control
+
+# List known GPUs
+switcherooctl
+
+# Launch a command on the first discrete GPU
+switcherooctl launch <command>
+
+# Launch a command on a specific GPU
+switcherooctl launch <__g___gpu_> <device_number> <command>
+
+# Display help
+switcherooctl help

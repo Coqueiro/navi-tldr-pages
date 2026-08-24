@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mmdblookup.md
+
+% mmdblookup, common
+
+# Look up an IP address in the specified MaxMind DB file
+mmdblookup <__f___file_> <path_to_dataset_mmdb> <__i___ip_> <8_8_8_8>
+
+# Look up a subset of data for an IP address in the specified MaxMind DB file
+mmdblookup <__f___file_> <path_to_dataset_mmdb> <__i___ip_> <8_8_8_8> {{key1 key2 ...}}
+
+# Look up the country ISO code for an IP address in the specified MaxMind DB file
+mmdblookup <__f___file_> <path_to_dataset_mmdb> <__i___ip_> <8_8_8_8> country iso_code
+
+# Display help
+mmdblookup <__h___help_>
+
+# Display version
+mmdblookup --version

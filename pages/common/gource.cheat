@@ -15,14 +15,14 @@ gource <__s___seconds_per_day_> <seconds>
 # Use fullscreen mode and a custom background color
 gource <__f___fullscreen_> <__b___background_colour_> <hex_color_code>
 
+# Highlight the name of a specific user
+gource --follow-user <user_name>
+
 # Specify the animation title
 gource --title <title>
 
 # Pause the animation
 <Space>
 
-# Adjust simulation speed
-<<___>>
-
-# Display help
-gource <__h___help_>
+# Adjust simulation speed and timescale
+<<_______>>

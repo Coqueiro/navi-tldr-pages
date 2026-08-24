@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/colcrt.md
+
+% colcrt, common
+
+# Provide virtual half-line and reverse line feed sequences
+colcrt
+
+# Print all half-lines
+colcrt <__2___half_lines_>
+
+# Suppress all underlining
+colcrt <_____no_underlining_>
+
+# Display help
+colcrt <__h___help_>
+
+# Display version
+colcrt <__V___version_>

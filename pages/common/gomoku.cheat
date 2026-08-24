@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gomoku.md
+
+% gomoku, common
+
+# Start the game
+gomoku
+
+# Move the cursor
+<_h___j___k___l___ArrowLeft___ArrowDown___ArrowUp___ArrowRight_>
+
+# Select the cell
+<Space>
+
+# Quit the game
+<q>

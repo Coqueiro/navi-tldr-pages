@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/rmpc.md
+
+% rmpc, linux
+
+# Start the TUI client
+rmpc
+
+# Connect to a specific MPD instance
+rmpc <__a___address_> <host_port>
+
+# Print the default configuration to use as a starting point
+rmpc config
+
+# Scan the music directory for changes
+rmpc update
+
+# Save the currently playing song's album art to a file
+rmpc albumart <__o___output_> <path_to_cover_jpg>
+
+# Toggle playback control functions (consume plays the song and deletes it from the queue afterwards)
+rmpc <next_prev_stop_consume_togglerepeat_pause_unpause>
+
+# View the currently playing song
+rmpc song

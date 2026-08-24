@@ -22,7 +22,7 @@ git rebase --abort
 git rebase --onto <new_base> <old_base>
 
 # Reapply the last 5 commits in-place, stopping to allow them to be reordered, omitted, combined, or modified
-git rebase <__i___interactive_> <HEAD_5>
+git rebase <__i___interactive_> HEAD~5
 
 # Auto-resolve any conflicts by favoring the working branch version (`theirs` keyword has reversed meaning in this case)
 git rebase <__X___strategy_option_> theirs <branch_name>

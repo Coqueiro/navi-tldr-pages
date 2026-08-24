@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/container.md
+
+% container, osx
+
+# Start the container services (required before running containers)
+container system start
+
+# Run a container from an image interactively and remove it after it exits
+container run --rm {{[-it|--interactive --tty]}} <image> <sh>
+
+# Run a container in the background with a name and a published port
+container run <__d___detach_> --name <container_name> <__p___publish_> <8080_80> <image>
+
+# Execute a command inside a running container
+container exec {{[-it|--interactive --tty]}} <container_name> <sh>
+
+# List all containers (running and stopped)
+container <_ls_list_> <__a___all_>
+
+# Follow the logs of a container
+container logs <__f___follow_> <container_name>
+
+# Build an image from a Dockerfile in a directory
+container build <__t___tag_> <image_name> <path_to_directory>
+
+# Stop or delete a container
+container <stop_delete> <container_name>

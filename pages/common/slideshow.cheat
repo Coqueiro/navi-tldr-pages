@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/slideshow.md
+
+% slideshow, common
+
+# Display a default slide with options to run the tutorial or load a `.rkt` presentation file
+slideshow
+
+# Start a presentation in full screen
+slideshow <path_to_presentation_rkt>
+
+# Display the presentation window with a title bar and resize border
+slideshow --keep-titlebar <path_to_presentation_rkt>
+
+# Set the width and height (in pixels) of the presentation window
+slideshow <__s___size_> <width> <height> <path_to_presentation_rkt>
+
+# Export a presentation to a PDF file
+slideshow <__D___pdf_> -o <path_to_presentation_pdf> <path_to_presentation_rkt>

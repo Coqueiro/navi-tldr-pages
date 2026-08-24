@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/multipass-transfer.md
+
+% multipass-transfer, common
+
+# Transfer a file from the host to an instance
+multipass transfer <path_to_local_file> <instance_name>:<path_to_remote_directory>
+
+# Transfer a file from an instance to the host
+multipass transfer <instance_name>:<path_to_remote_file> <path_to_local_directory>
+
+# Transfer a directory from the host to an instance
+multipass transfer <__r___recursive_> <path_to_local_directory> <instance_name>:<path_to_remote_directory>
