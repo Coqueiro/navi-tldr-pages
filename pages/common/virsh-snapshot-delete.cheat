@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/virsh-snapshot-delete.md
+
+% virsh-snapshot-delete, common
+
+# Delete a snapshot and merge it to its children
+sudo virsh snapshot-delete "<vm_name>" "<snapshot_name>"
+
+# Delete only the metadata, leaving the snapshot contents in place
+sudo virsh snapshot-delete "<vm_name>" "<snapshot_name>" --metadata
+
+# Display help
+virsh snapshot-delete --help

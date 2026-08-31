@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/kubectl-krew.md
+
+% kubectl-krew, common
+
+# Search for available plugins
+kubectl krew search
+
+# Install a plugin
+kubectl krew install <plugin_name>
+
+# List installed plugins
+kubectl krew list
+
+# Update the local plugin index
+kubectl krew update
+
+# Upgrade all installed plugins
+kubectl krew upgrade
+
+# Get information about a plugin
+kubectl krew info <plugin_name>
+
+# Uninstall a plugin
+kubectl krew uninstall <plugin_name>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/virsh-domblkinfo.md
+
+% virsh-domblkinfo, common
+
+# Print block device info
+sudo virsh domblkinfo "<vm_name>" <vda>
+
+# Display help
+virsh domblkinfo --help

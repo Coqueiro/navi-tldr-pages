@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/duff.md
+
+% duff, linux
+
+# Find duplicate files recursively
+duff -r <path_to_directory>
+
+# List all but one file from each cluster of duplicates
+duff -er <path_to_directory>
+
+# List unique files
+duff -ur <path_to_directory>
+
+# Use SHA-256 instead of SHA-1
+duff -d sha256 <path_to_directory>
+
+# Compare files byte by byte instead of using digests
+duff -t <path_to_directory>
+
+# Include hidden files and directories when searching recursively
+duff -ar <path_to_directory>

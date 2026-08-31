@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dolos.md
+
+% dolos, common
+
+# Run a basic analysis
+dolos run <path_to_files__>
+
+# Run an analysis with a web server view
+dolos run <__f___output_format_> web <path_to_files__>
+
+# Specify the programming language
+dolos run <__l___language_> <language_name> <path_to_files__>
+
+# Ignore boilerplate/template code
+dolos run <__i___ignore_> <path_to_template_file> <path_to_files__>
+
+# Output a CSV report
+dolos run <__f___output_format_> csv <path_to_files__>
+
+# Serve an existing analysis report
+dolos serve <path_to_report_directory>
+
+# Display help
+dolos <__h___help_>
+
+# Display version
+dolos <__v___version_>

@@ -12,7 +12,7 @@ govulncheck <path_to_package>
 # Scan a Go binary instead of source code
 govulncheck -mode binary <path_to_binary>
 
-# Extract build information and build information from a go binary
+# Extract build information and build dependencies from a Go binary
 govulncheck -mode extract <path_to_binary>
 
 # Scan test files as well

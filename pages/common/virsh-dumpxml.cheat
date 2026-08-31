@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/virsh-dumpxml.md
+
+% virsh-dumpxml, common
+
+# Print the XML of a virtual machine
+sudo virsh dumpxml "<vm_name>"
+
+# Display help
+virsh dumpxml --help

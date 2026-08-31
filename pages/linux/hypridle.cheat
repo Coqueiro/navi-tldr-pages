@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hypridle.md
+
+% hypridle, linux
+
+# Start the idle daemon using the default configuration
+hypridle
+
+# Start the idle daemon using a specific configuration file
+hypridle <__c___config_> <path_to_hypridle_conf>
+
+# Start the idle daemon with verbose output
+hypridle <__v___verbose_>
+
+# Display help
+hypridle <__h___help_>

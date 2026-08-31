@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hyprlock.md
+
+% hyprlock, linux
+
+# Lock the screen using the default configuration
+hyprlock
+
+# Lock the screen using a specific configuration file
+hyprlock <__c___config_> <path_to_hyprlock_conf>
+
+# Lock the screen immediately, bypassing the grace period
+hyprlock --grace 0
+
+# Disable the fade-in animation when locking
+hyprlock --no-fade-in
+
+# Display help
+hyprlock <__h___help_>

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/setleds.md
+
+% setleds, linux
+
+# Print current key and LED states
+setleds
+
+# Turn a lock key and its LED off
+setleds -<num_caps_scroll>
+
+# Turn a lock key and its LED on
+setleds +<num_caps_scroll>
+
+# Unpair key and LED states and only set the LED
+setleds -L <_scroll>
+
+# Restore key and LED pairing
+setleds -L

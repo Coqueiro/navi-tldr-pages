@@ -3,11 +3,14 @@
 
 % posh, common
 
-# Download documentation to your machine (run inside a Ruby project) and print full sync report
-posh sync --full
+# Download documentation to your machine (run inside a Ruby project)
+posh sync
 
 # Start the interactive documentation browser for the current project
 posh
+
+# Open a specific project
+posh --project <path_to_project>
 
 # Clear all docsets from your machine
 posh clear

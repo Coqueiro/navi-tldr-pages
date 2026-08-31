@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/hyprcursor-util.md
+
+% hyprcursor-util, linux
+
+# Compile a working directory into a Hyprcursor theme
+hyprcursor-util <__c___create_> <path_to_theme_directory>
+
+# Extract an XCursor theme into a Hyprcursor working directory
+hyprcursor-util <__e___extract_> <path_to_xcursor_theme>
+
+# Specify the output directory
+hyprcursor-util <__c___create_> <path_to_theme_directory> <__o___output_> <path_to_output>
+
+# Extract a theme with a specific resize mode
+hyprcursor-util --extract <path_to_xcursor_theme> --resize <none_nearest_bilinear>

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/doctl.md
+
+% doctl, common
+
+# Authenticate with DigitalOcean
+doctl auth init
+
+# Display account information
+doctl account get
+
+# List all Droplets
+doctl compute droplet list
+
+# List Kubernetes clusters
+doctl kubernetes cluster list
+
+# Display version
+doctl version

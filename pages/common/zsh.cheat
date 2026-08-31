@@ -7,7 +7,7 @@
 zsh
 
 # Execute specific [c]ommands
-zsh -c "{{echo Hello world}}"
+zsh -c "{{echo 'zsh is executed'}}"
 
 # Execute a specific script
 zsh <path_to_script_zsh>
@@ -16,7 +16,7 @@ zsh <path_to_script_zsh>
 zsh <__n___no_exec_> <path_to_script_zsh>
 
 # Execute specific commands from `stdin`
-{{echo echo Hello world}} | zsh
+{{echo "echo 'zsh is executed'"}} | zsh
 
 # Execute a specific script, printing each command in the script before executing it
 zsh <__x___xtrace_> <path_to_script_zsh>
