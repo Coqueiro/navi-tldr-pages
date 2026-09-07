@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/doctl-1-click.md
+
+% doctl-1-click, common
+
+# Retrieve a list of available 1-Click applications
+doctl 1-click list
+
+# Display help
+doctl 1-click <__h___help_>

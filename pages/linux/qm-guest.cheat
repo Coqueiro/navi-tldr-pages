@@ -4,7 +4,7 @@
 % qm-guest, linux
 
 # Print the status of a specific PID
-qm <_g_guest_> <_exec_s_exec_status_> <100> <pid>
+qm <_g_guest_> <_exec_s_exec_status_> <100> <process_id>
 
 # Set a password for a specific user in a virtual machine interactively
 qm <_g_guest_> <_p_passwd_> <100> <username>

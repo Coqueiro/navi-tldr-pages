@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-delete.md
+
+% ufw-delete, linux
+
+# Delete an exact matching rule
+sudo ufw delete <rule>
+
+# Delete a rule by its rule number
+sudo ufw delete <number>

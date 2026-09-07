@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-default.md
+
+% ufw-default, linux
+
+# Allow traffic going a certain direction
+sudo ufw default allow <incoming_outgoing_routed>
+
+# Deny traffic going a certain direction
+sudo ufw default deny <incoming_outgoing_routed>
+
+# Reject traffic going a certain direction
+sudo ufw default reject <incoming_outgoing_routed>

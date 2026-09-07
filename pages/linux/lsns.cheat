@@ -10,7 +10,7 @@ lsns
 lsns <__J___json_>
 
 # List namespaces associated with the specified process
-lsns <__p___task_> <pid>
+lsns <__p___task_> <process_id>
 
 # List the specified type of namespaces only
 lsns <__t___type_> <mnt_net_ipc_user_pid_uts_cgroup_time>

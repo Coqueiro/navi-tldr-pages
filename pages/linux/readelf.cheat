@@ -4,16 +4,19 @@
 % readelf, linux
 
 # Display all information about the ELF file
-readelf -all <path_to_binary>
+readelf <__a___all_> <path_to_binary>
 
 # Display all the headers present in the ELF file
-readelf --headers <path_to_binary>
+readelf <__e___headers_> <path_to_binary>
 
 # Display the entries in symbol table section of the ELF file, if it has one
-readelf --symbols <path_to_binary>
+readelf <__s___symbols_> <path_to_binary>
 
 # Display ELF header information
-readelf --file-header <path_to_binary>
+readelf <__h___file_header_> <path_to_binary>
 
 # Display ELF section header information
-readelf --section-headers <path_to_binary>
+readelf <__S___section_headers_> <path_to_binary>
+
+# Display DWARF information
+readelf <__w___debug_dump_> <path_to_binary>

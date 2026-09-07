@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/impacket-machine_role.md
+
+% impacket-machine_role, common
+
+# View documentation for the original command
+tldr machine_role.py

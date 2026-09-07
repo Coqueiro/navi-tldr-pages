@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file-annotate.md
+
+% jj-file-annotate, common
+
+# Annotate a file line by line in the working copy
+jj file annotate <path_to_file>
+
+# Annotate a file starting at a specific revision
+jj file annotate <__r___revision_> <revision> <path_to_file>
+
+# Annotate a file using a custom template
+jj file annotate <__T___template_> "<template>" <path_to_file>

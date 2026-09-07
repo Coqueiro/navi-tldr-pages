@@ -17,3 +17,6 @@ sudo umount <__R___recursive_> <path_to_mounted_directory>
 
 # Unmount all mounted filesystems (except the `proc` filesystem)
 sudo umount <__a___all_>
+
+# Detach a filesystem from the filesystem hierarchy and unmount it as soon as there are no references to it
+sudo umount <__l___lazy_> <path_to_mounted_directory>

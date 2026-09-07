@@ -19,7 +19,7 @@ journalctl _SYSTEMD_INVOCATION_ID=$(systemctl show --value --property=Invocation
 journalctl <__S___since_> <now_today_yesterday_tomorrow____> <__U___until_> "{{YYYY-MM-DD HH:MM:SS}}"
 
 # Show all messages by a specific process
-journalctl _PID=<pid>
+journalctl _PID=<process_id>
 
 # Show all messages by a specific executable
 journalctl <path_to_executable>

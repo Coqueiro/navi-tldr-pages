@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-operation-show.md
+
+% jj-operation-show, common
+
+# Show repository changes in the current operation compared to its parent
+jj <_op_operation_> show
+
+# Show repository changes in a specific operation
+jj <_op_operation_> show <operation_id>
+
+# Show repository changes with patch details
+jj <_op_operation_> show <__p___patch_> <operation_id>
+
+# Show a summary of changed paths in an operation
+jj <_op_operation_> show <__s___summary_> <operation_id>
+
+# Show a histogram of changes in an operation
+jj <_op_operation_> show --stat <operation_id>
+
+# Show changes without a graph
+jj <_op_operation_> show <__G___no_graph_> <operation_id>

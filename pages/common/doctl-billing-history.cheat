@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/doctl-billing-history.md
+
+% doctl-billing-history, common
+
+# Retrieve a paginated billing history
+doctl billing-history list
+
+# Display help
+doctl billing-history <__h___help_>

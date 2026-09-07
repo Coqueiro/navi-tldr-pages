@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file-list.md
+
+% jj-file-list, common
+
+# List all files in the current working copy
+jj file list
+
+# List all files in a specific revision
+jj file list <__r___revision_> <revision>
+
+# List files matching a specific prefix or path
+jj file list <path_to_directory>
+
+# List files rendered using a custom template
+jj file list <__T___template_> "<template>"

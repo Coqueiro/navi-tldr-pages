@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-version.md
+
+% ufw-version, linux
+
+# Show `ufw` version
+sudo ufw version

@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/grub-mkfont.md
+
+% grub-mkfont, linux
+
+# Convert a font to PF2
+grub-mkfont <__o___output_> <path_to_output_pf2> <path_to_font_ttf>
+
+# Convert a font at a specific size
+grub-mkfont <__o___output_> <path_to_output_pf2> <__s___size_> <24> <path_to_font_ttf>
+
+# Convert only characters in specific Unicode ranges
+grub-mkfont <__o___output_> <path_to_output_pf2> <__r___range_> <0x20_0x7E_0xA0_0xFF> <path_to_font_ttf>
+
+# Set the output font family name
+grub-mkfont <__o___output_> <path_to_output_pf2> <__n___name_> "<font_family_name>" <path_to_font_ttf>
+
+# Convert a font to bold while forcing automatic hinting
+grub-mkfont <__o___output_> <path_to_output_pf2> <__b___bold_> <__a___force_autohint_> <path_to_font_ttf>
+
+# Disable hinting and ignore embedded bitmap strikes
+grub-mkfont <__o___output_> <path_to_output_pf2> --no-hinting --no-bitmap <path_to_font_ttf>

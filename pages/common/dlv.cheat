@@ -16,7 +16,7 @@ dlv test
 dlv connect <ip_address>
 
 # Attach to a running process and begin debugging
-dlv attach <pid>
+dlv attach <process_id>
 
 # Compile and begin tracing a program
 dlv trace <package> --regexp '<regex>'

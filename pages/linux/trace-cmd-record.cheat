@@ -19,4 +19,4 @@ sudo trace-cmd record -n <function>
 sudo trace-cmd record --max-graph-depth <depth>
 
 # Record a trace from a specific process ID
-sudo trace-cmd record -P <pid>
+sudo trace-cmd record -P <process_id>

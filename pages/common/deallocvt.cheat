@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/deallocvt.md
+
+% deallocvt, common
+
+# Free all unused consoles
+deallocvt
+
+# Deallocate a specific console
+deallocvt <__C___console_> <_dev_ttyN>
+
+# Display help
+deallocvt <__h___help_>
+
+# Display version
+deallocvt <__V___version_>

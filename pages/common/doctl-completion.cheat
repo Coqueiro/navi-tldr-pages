@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/doctl-completion.md
+
+% doctl-completion, common
+
+# Generate the autocompletion script for Bash
+doctl completion bash
+
+# Generate the autocompletion script for fish
+doctl completion fish
+
+# Generate the autocompletion script for PowerShell
+doctl completion powershell
+
+# Generate the autocompletion script for Zsh
+doctl completion zsh

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-operation-log.md
+
+% jj-operation-log, common
+
+# Show the operation log
+jj <_op_operation_> log
+
+# Limit the number of operations to show
+jj <_op_operation_> log <__n___limit_> <count>
+
+# Show operations in reverse order (oldest first)
+jj <_op_operation_> log --reversed
+
+# Show operations without a graph
+jj <_op_operation_> log <__G___no_graph_>
+
+# Render the operation log using a custom template
+jj <_op_operation_> log <__T___template_> "<template>"

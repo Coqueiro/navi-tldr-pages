@@ -13,10 +13,10 @@ ionice <__c___class_> <scheduling_class> -<p_P_u> <id>
 ionice <__c___class_> <scheduling_class> <__n___classdata_> <priority> <command>
 
 # Ignore failure to set the requested priority
-ionice <__t___ignore_> <__n___classdata_> <priority> <__p___pid_> <pid>
+ionice <__t___ignore_> <__n___classdata_> <priority> <__p___pid_> <process_id>
 
 # Run the command even in case it was not possible to set the desired priority (this can happen due to insufficient privileges or an old kernel version)
-ionice <__t___ignore_> <__n___classdata_> <priority> <__p___pid_> <pid>
+ionice <__t___ignore_> <__n___classdata_> <priority> <__p___pid_> <process_id>
 
 # Print the I/O scheduling class and priority of a running process
-ionice <__p___pid_> <pid>
+ionice <__p___pid_> <process_id>

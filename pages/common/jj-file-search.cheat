@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file-search.md
+
+% jj-file-search, common
+
+# Search for files containing a `regex` in the working copy
+jj file search <__p___pattern_> "<regex>"
+
+# Search for files containing a glob pattern
+jj file search <__p___pattern_> "<glob__pattern_>"
+
+# Search for content in files in a specific revision
+jj file search <__r___revision_> <revision> <__p___pattern_> "<pattern>"
+
+# Search only within specific paths or files
+jj file search <__p___pattern_> "<pattern>" <path_to_file_or_directory>

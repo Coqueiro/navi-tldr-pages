@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file-show.md
+
+% jj-file-show, common
+
+# Print the contents of a file in the working copy
+jj file show <path_to_file>
+
+# Print the contents of a file in a specific revision
+jj file show <__r___revision_> <revision> <path_to_file>
+
+# Print all files under a directory recursively
+jj file show <path_to_directory>
+
+# Print file metadata using a custom template
+jj file show <__T___template_> "<template>" <path_to_file>

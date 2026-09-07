@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-operation-diff.md
+
+% jj-operation-diff, common
+
+# Compare repository changes in a specific operation to its parent
+jj <_op_operation_> diff <___op___operation_> <operation_id>
+
+# Compare repository changes between two specific operations
+jj <_op_operation_> diff <__f___from_> <from_op> <__t___to_> <to_op>
+
+# Show diff with a patch of modifications to changes
+jj <_op_operation_> diff <__p___patch_> <___op___operation_> <operation_id>
+
+# Show diff as a histogram of changes
+jj <_op_operation_> diff --stat <___op___operation_> <operation_id>
+
+# Show diff without a graph
+jj <_op_operation_> diff <__G___no_graph_> <___op___operation_> <operation_id>

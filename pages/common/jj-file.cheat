@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file.md
+
+% jj-file, common
+
+# List files tracked in the working copy
+jj file list
+
+# Print the contents of a file in the working copy
+jj file show <path_to_file>
+
+# Search for a pattern across tracked files
+jj file search <__p___pattern_> "<pattern>"
+
+# Show line-by-line source change annotation for a file
+jj file annotate <path_to_file>
+
+# Track specified paths in the working copy
+jj file track <path_to_file_or_directory>
+
+# Stop tracking specified paths in the working copy
+jj file untrack <path_to_file_or_directory>
+
+# Set or remove the executable bit for a file
+jj file chmod <__x___executable_> <path_to_file>

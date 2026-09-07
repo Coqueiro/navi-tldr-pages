@@ -4,13 +4,13 @@
 % renice, linux
 
 # Set the absolute priority of a running process
-renice --priority <3> <__p___pid_> <pid>
+renice --priority <3> <__p___pid_> <process_id>
 
 # Increase the priority of a running process
-sudo renice --relative <_4> <__p___pid_> <pid>
+sudo renice --relative <_4> <__p___pid_> <process_id>
 
 # Decrease the priority of all processes owned by a user
-renice --relative <4> <__u___user_> <uid_user>
+renice --relative <4> <__u___user_> <user_id_username>
 
 # Set the priority of all processes that belong to a process group
 sudo renice <_5> <__g___pgrp_> <process_group>

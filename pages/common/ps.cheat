@@ -19,7 +19,7 @@ ps <__u___user_> $(id <__u___user_>) -F
 ps <__u___user_> $(id <__u___user_>) f
 
 # Get the parent PID of a process
-ps <__o___format_> ppid= <__p___pid_> <pid>
+ps <__o___format_> ppid= <__p___pid_> <process_id>
 
 # Sort processes by memory consumption
 ps <_k___sort_> size

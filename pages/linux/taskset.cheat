@@ -4,10 +4,10 @@
 % taskset, linux
 
 # Get a running process' CPU affinity by PID
-taskset <__p___pid_> <__c___cpu_list_> <pid>
+taskset <__p___pid_> <__c___cpu_list_> <process_id>
 
 # Set a running process' CPU affinity by PID
-taskset <__p___pid_> <__c___cpu_list_> <cpu_id> <pid>
+taskset <__p___pid_> <__c___cpu_list_> <cpu_id> <process_id>
 
 # Start a new process with affinity for a single CPU
 taskset <__c___cpu_list_> <cpu_id> <command>

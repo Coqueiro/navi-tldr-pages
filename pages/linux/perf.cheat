@@ -13,7 +13,7 @@ sudo perf top
 sudo perf record <command>
 
 # Record the profile of an existing process into `perf.data`
-sudo perf record <__p___pid_> <pid>
+sudo perf record <__p___pid_> <process_id>
 
 # Read `perf.data` (created by `perf record`) and display the profile
 sudo perf report
