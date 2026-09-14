@@ -3,7 +3,7 @@
 
 % aws-history, common
 
-# List commands history with command IDs
+# List commands in the history with their command IDs
 aws history list
 
 # Display events related to a specific command given a command ID

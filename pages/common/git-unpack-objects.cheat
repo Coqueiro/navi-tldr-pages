@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/git-unpack-objects.md
+
+% git-unpack-objects, common
+
+# Simulate the pack file without unpacking objects
+git < <pack_file_pack> unpack-objects -n
+
+# Suppress percentage progress typically shown by the command
+git < <pack_file_pack> unpack-objects -q
+
+# Unpack a corrupt packfile beyond the first corruption
+git < <pack_file_pack> unpack-objects -r
+
+# Don't write objects containing broken content or links
+git < <pack_file_pack> unpack-objects --strict
+
+# Die, given a pack larger than `size`
+git < <pack_file_pack> unpack-objects --max-input-size=<size>

@@ -16,7 +16,7 @@ sudo iotop <__b___batch_>
 sudo iotop <__P___processes_>
 
 # Show I/O usage of given PID(s)
-sudo iotop <__p___pid_> <pid>
+sudo iotop <__p___pid_> <process_id>
 
 # Show I/O usage of a given user
 sudo iotop <__u___user_> <user>

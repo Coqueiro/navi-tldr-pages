@@ -12,6 +12,9 @@ jj config <_g_get_> <name>
 # List all config variables and their values
 jj config <_l_list_>
 
+# List the value of a specific config option
+jj config <_l_list_> <name>
+
 # Print the path to the user-level config file
 jj config <_p_path_> --user
 
@@ -20,3 +23,6 @@ jj config <_s_set_> --user <name> <value>
 
 # Unset a config option in the user-level config
 jj config <_u_unset_> --user <name>
+
+# Find and delete stale repo-level config directories
+jj config gc

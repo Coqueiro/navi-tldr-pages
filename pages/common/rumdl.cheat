@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/rumdl.md
+
+% rumdl, common
+
+# Lint the specified files or directories
+rumdl check {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+
+# Lint and automatically fix issues where possible
+rumdl check <__f___fix_> <path_to_file_or_directory>
+
+# Lint with specific rules disabled
+rumdl check <__d___disable_> <rule_id1_rule_id2____> <path_to_file_or_directory>
+
+# Re-run the linter whenever files change
+rumdl check <__w___watch_> <path_to_file_or_directory>
+
+# Format files in place
+rumdl fmt <path_to_file_or_directory>
+
+# Create a default configuration file (`.rumdl.toml`) in the current directory
+rumdl init
+
+# Show information about a specific rule (list all rules if omitted)
+rumdl rule <MD013>
+
+# Display version
+rumdl version

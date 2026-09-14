@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-operation-revert.md
+
+% jj-operation-revert, common
+
+# Revert the most recent operation
+jj <_op_operation_> revert
+
+# Revert a specific operation
+jj <_op_operation_> revert <operation_id>
+
+# Revert only the repository state and local bookmarks of an operation
+jj <_op_operation_> revert --what repo <operation_id>

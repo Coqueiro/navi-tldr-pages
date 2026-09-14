@@ -3,7 +3,7 @@
 
 % aws-sqs, common
 
-# List all availables queues
+# List all available queues
 aws sqs list-queues
 
 # Display the URL of a specific queue

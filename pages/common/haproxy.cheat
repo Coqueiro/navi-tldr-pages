@@ -19,10 +19,10 @@ haproxy -W -f <path_to_haproxy_cfg>
 haproxy -d -f <path_to_haproxy_cfg>
 
 # Reload configuration with graceful shutdown of old process
-haproxy -f <path_to_haproxy_cfg> -sf <pid>
+haproxy -f <path_to_haproxy_cfg> -sf <process_id>
 
 # Set maximum number of simultaneous connections
 haproxy -f <path_to_haproxy_cfg> -n <maxconn>
 
 # Reload with zero downtime by reusing sockets from old process
-haproxy -f <path_to_haproxy_cfg> -x <path_to_haproxy_sock> -sf <pid>
+haproxy -f <path_to_haproxy_cfg> -x <path_to_haproxy_sock> -sf <process_id>

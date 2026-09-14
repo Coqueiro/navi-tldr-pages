@@ -19,7 +19,7 @@ adb logcat ReactNative:V ReactNativeJS:V *:S
 adb logcat *:W
 
 # Display logs for a specific PID
-adb logcat --pid <pid>
+adb logcat --pid <process_id>
 
 # Display logs for the process of a specific package
 adb logcat --pid $(adb shell pidof -s <package>)

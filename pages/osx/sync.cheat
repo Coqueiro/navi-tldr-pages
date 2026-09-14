@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/osx/sync.md
+
+% sync, osx
+
+# Flush all pending write operations on all disks
+sync
+
+# Flush all pending write operations on a single file to disk
+sync <path_to_file>
+
+# Flush disk writes and attempts to clear inactive memory and filesystem caches
+sync; sudo purge

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-operation-restore.md
+
+% jj-operation-restore, common
+
+# Restore the repository state at a specific operation
+jj <_op_operation_> restore <operation_id>
+
+# Restore only the repository state and local bookmarks (ignoring remote-tracking bookmarks)
+jj <_op_operation_> restore --what repo <operation_id>

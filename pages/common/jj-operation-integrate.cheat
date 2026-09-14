@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-operation-integrate.md
+
+% jj-operation-integrate, common
+
+# Integrate an unintegrated operation into the operation log
+jj <_op_operation_> integrate <operation_id>

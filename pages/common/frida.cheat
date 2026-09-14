@@ -10,7 +10,7 @@ frida <process_name>
 frida <__U___usb_> <process_name>
 
 # Attach to a running process by its PID
-frida <__p___attach_pid_> <pid>
+frida <__p___attach_pid_> <process_id>
 
 # Load a JavaScript script into a process
 frida <__l___load_> <path_to_script_js> <process_name>

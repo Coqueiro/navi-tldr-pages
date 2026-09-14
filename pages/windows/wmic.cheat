@@ -19,7 +19,7 @@ wmic process get <name_process_id_parent_process_id>
 wmic process where <name__example_exe_> list full
 
 # Display specific fields for a specific process
-wmic process where processid=<pid> get <name_commandline>
+wmic process where processid=<process_id> get <name_commandline>
 
 # Kill a process
-wmic process <pid> delete
+wmic process <process_id> delete

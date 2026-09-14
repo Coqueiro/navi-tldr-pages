@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tw.md
+
+% tw, common
+
+# Open one or more files, detecting the format based on the file extension
+tw {{path/to/file1 path/to/file2 ...}}
+
+# Open a file, overriding the format detection
+tw <path_to_file> <__f___format_> <csv_tsv_parquet_sqlite_excel____>
+
+# Open a delimiter-separated file with a custom separator
+tw <path_to_file_csv> --separator '<_>'
+
+# Open a delimiter-separated file without a header row
+tw <path_to_file_csv> --no-header
+
+# Read tabular data from `stdin`
+curl <__s___silent_> <https___example_com_data_csv> | tw
+
+# Open files with identical columns and concatenate them vertically into a single table
+tw --multiparts {{path/to/part1.csv path/to/part2.csv ...}}

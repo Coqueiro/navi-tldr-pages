@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-git-colocation.md
+
+% jj-git-colocation, common
+
+# Show the current colocation status
+jj git colocation status
+
+# Convert into a colocated Jujutsu/Git repository
+jj git colocation enable
+
+# Convert into a non-colocated Jujutsu/Git repository
+jj git colocation disable

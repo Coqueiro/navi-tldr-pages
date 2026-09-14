@@ -18,7 +18,7 @@ git branch <branch_name>
 # Create new branch based on a specific commit
 git branch <branch_name> <commit_hash>
 
-# Rename a branch (you must switch to a different branch before doing this)
+# Rename a branch
 git branch <__m___move_> <old_branch_name> <new_branch_name>
 
 # Delete a local branch (you must switch to a different branch before doing this)

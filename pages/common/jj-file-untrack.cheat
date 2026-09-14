@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file-untrack.md
+
+% jj-file-untrack, common
+
+# Stop tracking an ignored file or directory
+jj file untrack <path_to_file_or_directory>
+
+# Stop tracking multiple ignored paths
+jj file untrack {{path/to/file1 path/to/directory2 ...}}

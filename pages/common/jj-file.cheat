@@ -9,6 +9,9 @@ jj file list
 # Print the contents of a file in the working copy
 jj file show <path_to_file>
 
+# Print the contents of a file from another revision
+jj file show <__r___revision_> <revset> <path_to_file>
+
 # Search for a pattern across tracked files
 jj file search <__p___pattern_> "<pattern>"
 

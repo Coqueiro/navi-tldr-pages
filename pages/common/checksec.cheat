@@ -10,7 +10,7 @@ checksec file <path_to_binary>
 checksec dir <path_to_directory>
 
 # List security properties of a process
-checksec proc <pid>
+checksec proc <process_id>
 
 # List security properties of the running kernel
 checksec kernel

@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-operation-abandon.md
+
+% jj-operation-abandon, common
+
+# Abandon a specific operation
+jj <_op_operation_> abandon <operation_id>
+
+# Abandon a specific operation and all of its ancestors
+jj <_op_operation_> abandon ..<operation_id>
+
+# Discard recent operations after restoring to an earlier state
+jj <_op_operation_> abandon <operation_id>..@-

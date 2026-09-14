@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/sync.md
+
+% sync, linux
+
+# Flush all pending write operations on all disks
+sync
+
+# Flush all pending write operations on a single file to disk
+sync <path_to_file>
+
+# Flush writes and drop filesystem caches
+sync; echo 3 | sudo tee /proc/sys/vm/drop_caches

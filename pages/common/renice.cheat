@@ -4,10 +4,10 @@
 % renice, common
 
 # Increase/decrease the priority of a running [p]rocess
-renice -n <3> -p <pid>
+renice -n <3> -p <process_id>
 
 # Increase/decrease the priority of all processes owned by a [u]ser
-renice -n <_4> -u <uid_user>
+renice -n <_4> -u <user_id_username>
 
 # Increase/decrease the priority of all processes that belong to a process [g]roup
 renice -n <5> -g <process_group>

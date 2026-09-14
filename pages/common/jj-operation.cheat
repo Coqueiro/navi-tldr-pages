@@ -6,17 +6,23 @@
 # Show operation log
 jj <_op_operation_> log
 
-# Undo the last operation
-jj <_op_operation_> undo
-
-# Undo a given operation
-jj <_op_operation_> undo <operation>
+# Abandon a specific operation
+jj <_op_operation_> abandon <operation>
 
 # Restore the repository to its state at a given operation
 jj <_op_operation_> restore <operation>
+
+# Revert an earlier operation by applying its inverse
+jj <_op_operation_> revert <operation>
 
 # Show changes to the repository in an operation
 jj <_op_operation_> show <operation>
 
 # Show stat, summary, and patch of modifications of an operation
 jj <_op_operation_> show <__stat> <__s___summary_> <__p___patch_> <operation>
+
+# Compare repository changes between two operations
+jj <_op_operation_> diff <__f___from_> <from_op> <__t___to_> <to_op>
+
+# Show diff as a histogram of changes
+jj <_op_operation_> diff <__stat> <___op___operation_> <operation_id>

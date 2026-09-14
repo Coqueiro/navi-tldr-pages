@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/clinfo.md
+
+% clinfo, common
+
+# Display information about all OpenCL platforms and devices
+clinfo
+
+# List platforms and devices by name
+clinfo <__l___list_>
+
+# Display information for a specific device
+clinfo <__d___device_> <platform_index>:<device_index>
+
+# Display machine-friendly output
+clinfo --raw
+
+# Include offline devices
+clinfo --offline
+
+# Try to retrieve all properties, including unofficial ones
+clinfo <__a___all_props_>
+
+# Display only properties matching the given property name
+clinfo --prop <property_name>

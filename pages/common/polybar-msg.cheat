@@ -22,4 +22,4 @@ polybar-msg cmd toggle
 polybar-msg action "#<module_name>.<action_name>.<data_string>"
 
 # Only send messages to a specific Polybar instance (all instances by default)
-polybar-msg -p <pid> <cmd_action> <payload>
+polybar-msg -p <process_id> <cmd_action> <payload>

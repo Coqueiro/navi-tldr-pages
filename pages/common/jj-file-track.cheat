@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file-track.md
+
+% jj-file-track, common
+
+# Track all untracked files in the working copy
+jj file track
+
+# Track a specific file or directory
+jj file track <path_to_file_or_directory>
+
+# Track multiple paths
+jj file track {{path/to/file1 path/to/directory2 ...}}
+
+# Track paths even if they are ignored or exceed the maximum file size
+jj file track --include-ignored <path_to_file_or_directory>

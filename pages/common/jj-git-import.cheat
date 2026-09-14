@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-git-import.md
+
+% jj-git-import, common
+
+# Import changes from the underlying Git repository
+jj git import
+
+# Forcibly import changes in a colocated workspace
+jj git import --ignore-working-copy

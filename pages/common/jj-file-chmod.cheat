@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-file-chmod.md
+
+% jj-file-chmod, common
+
+# Make a file executable in the working copy
+jj file chmod <_x_executable_> <path_to_file>
+
+# Make a file non-executable (normal) in the working copy
+jj file chmod <_n_normal_> <path_to_file>
+
+# Make multiple files executable
+jj file chmod <_x_executable_> {{path/to/file1 path/to/file2 ...}}
+
+# Make a file executable in a specific revision
+jj file chmod <__r___revision_> <revision> <_x_executable_> <path_to_file>

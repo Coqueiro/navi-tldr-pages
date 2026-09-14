@@ -16,7 +16,7 @@ ag <__l___files_with_matches_> string
 ag <__i___ignore_case_> <__o___only_matching_> STRING
 
 # Find `string` in files with a name matching `file_name`
-ag string <__G___file_search_regex_> file_name
+ag string <__G___file_search_regex_> <file_name>
 
 # Find files whose contents match a `regex`
 ag '<_ca_t_r__>'
