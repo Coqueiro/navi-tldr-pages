@@ -9,7 +9,7 @@ bup <__d___bup_dir_> <path_to_repository> init
 # Prepare a given directory before taking a backup
 bup <__d___bup_dir_> <path_to_repository> index <path_to_directory>
 
-# Backup a directory to the repository specifying its name
+# Back up a directory to the repository specifying its name
 bup <__d___bup_dir_> <path_to_repository> save <__n___name_> <backup_name> <path_to_directory>
 
 # Show the backup snapshots currently stored in the repository

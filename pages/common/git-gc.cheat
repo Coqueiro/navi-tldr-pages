@@ -3,10 +3,10 @@
 
 % git-gc, common
 
-# Optimise the repository
+# Optimize the repository
 git gc
 
-# Aggressively optimise, takes more time
+# Aggressively optimize, takes more time
 git gc --aggressive
 
 # Do not prune loose objects (prunes by default)

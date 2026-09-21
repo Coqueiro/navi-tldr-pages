@@ -6,7 +6,7 @@
 # Set the keyboard in French AZERTY
 setxkbmap <fr>
 
-# Set multiple keyboard layouts, their variants and switching option
+# Set multiple keyboard layouts, their variants, and switching option
 setxkbmap -layout <us_de> -variant <_qwerty> -option '<grp_alt_caps_toggle>'
 
 # List all layouts

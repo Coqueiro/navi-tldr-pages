@@ -3,7 +3,7 @@
 
 % ppmtoicr, common
 
-# Convert a PPM image to a ICR file
+# Convert a PPM image to an ICR file
 ppmtoicr <path_to_file_ppm> > <path_to_file_icr>
 
 # Display the output in name

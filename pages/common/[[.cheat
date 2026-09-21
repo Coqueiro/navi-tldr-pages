@@ -3,7 +3,7 @@
 
 % [[, common
 
-# Test if a given variable is equal to the specified string or glob
+# Test if a given variable is equal to the specified string or `glob`
 [[ $<variable> == "<string>" ]]
 
 # Test if a given string conforms the specified `regex`

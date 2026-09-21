@@ -3,7 +3,7 @@
 
 % hardlink, linux
 
-# Perform a dry run without modifying files
+# Simulate hardlinking duplicate files without modifying them
 hardlink <__n___dry_run_> <path_to_directory>
 
 # Hardlink duplicate files in a directory

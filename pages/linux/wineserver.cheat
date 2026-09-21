@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wineserver.md
+
+% wineserver, linux
+
+# Kill the current Wine server, terminating all of its Wine processes
+wineserver <__k___kill_>
+
+# Wait until the current Wine server has finished
+wineserver <__w___wait_>
+
+# Keep the server persistent so it does not exit when the last process closes
+wineserver <__p___persistent_>
+
+# Display help
+wineserver <__h___help_>
+
+# Display version
+wineserver <__v___version_>

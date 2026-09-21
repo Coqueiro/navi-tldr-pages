@@ -18,10 +18,10 @@ tree -i -f
 # Print the size of each file and the cumulative size of each directory, in human-readable format
 tree -s -h --du
 
-# Print files within the tree hierarchy, using a wildcard (glob) pattern, and pruning out directories that don't contain matching files
+# Print files within the tree hierarchy, using a wildcard (`glob`) pattern, and pruning out directories that don't contain matching files
 tree -P '<__txt>' --prune
 
-# Print directories within the tree hierarchy, using the wildcard (glob) pattern, and pruning out directories that aren't ancestors of the wanted one
+# Print directories within the tree hierarchy, using the wildcard (`glob`) pattern, and pruning out directories that aren't ancestors of the wanted one
 tree -P <directory_name> --matchdirs --prune
 
 # Print the tree ignoring the given directories

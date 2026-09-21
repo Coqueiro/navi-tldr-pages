@@ -9,7 +9,7 @@ nagios /etc/nagios/nagios.cfg
 # Start `nagios` in daemon mode
 nagios -d
 
-# Start `nagios`, print service check scheduling information to `stdout`, then shutdown
+# Start `nagios`, print service check scheduling information to `stdout`, then shut down
 nagios -s
 
 # Verify configuration file

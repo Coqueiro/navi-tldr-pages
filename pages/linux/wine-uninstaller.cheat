@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wine-uninstaller.md
+
+% wine-uninstaller, linux
+
+# Open the graphical "Add/Remove Programs" dialog
+wine uninstaller
+
+# List all installed applications and their registry keys
+wine uninstaller --list
+
+# Remove a specific application by its registry key
+wine uninstaller --remove <registry_key>
+
+# Display help
+wine uninstaller --help

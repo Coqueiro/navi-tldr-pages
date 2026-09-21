@@ -9,7 +9,7 @@ pbzip2 <path_to_file>
 # Compress a file using the specified number of processors
 pbzip2 -p<4> <path_to_file>
 
-# Compress in combination with tar (options can be passed to `pbzip2`)
+# Compress in combination with `tar` (options can be passed to `pbzip2`)
 tar -cf <path_to_compressed_file>.tar.bz2 <__I___use_compress_program_> "pbzip2 {{-option1 -option2 ...}}" <path_to_file>
 
 # Decompress a file

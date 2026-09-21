@@ -9,5 +9,5 @@ hub issue list <__L___limit_> <10> <__l___labels_> "<bug>"
 # Display a specific issue
 hub issue show <issue_number>
 
-# List 10 closed issues assigneed to a specific user
+# List 10 closed issues assigned to a specific user
 hub issue <__s___state_> <closed> <__a___assignee_> <username> --limit <10>

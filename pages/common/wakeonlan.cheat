@@ -9,7 +9,7 @@ wakeonlan <01_02_03_04_05_06>
 # Send packet to a specific device via IP address
 wakeonlan <01_02_03_04_05_06> <__i___ip_> <192_168_178_2>
 
-# Print the commands, but don't execute them (dry-run)
+# Simulate execution and print the commands without running them
 wakeonlan <__n___dry_run_> <01_02_03_04_05_06>
 
 # Run in quiet mode

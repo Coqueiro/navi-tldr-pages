@@ -3,7 +3,7 @@
 
 % errno, common
 
-# Lookup errno description by name or code
+# Look up errno description by name or code
 errno <name_code>
 
 # List all errno names, codes, and descriptions

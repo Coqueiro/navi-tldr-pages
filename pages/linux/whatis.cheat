@@ -9,7 +9,7 @@ whatis <command>
 # Don't cut the description off at the end of the line
 whatis <__l___long_> <command>
 
-# Display descriptions for all commands matching a glob
+# Display descriptions for all commands matching a `glob`
 whatis <__w___wildcard_> <net_>
 
 # Search man page descriptions with a `regex`

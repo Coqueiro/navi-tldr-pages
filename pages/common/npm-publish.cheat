@@ -18,7 +18,7 @@ npm publish --access restricted
 # Publish a package to a custom registry
 npm publish --registry <https___registry_npmjs_org_>
 
-# Run a dry run to see what would be published without uploading
+# Simulate what would be published without uploading
 npm publish --dry-run
 
 # Publish a package with a specific distribution tag (e.g., beta)

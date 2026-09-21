@@ -4,7 +4,7 @@
 % rpicam-still, linux
 
 # Capture a photo with different encoding
-rpicam-still <__e___encoding_> <bmp_png_rgb_yuv420> <__o___output_> <path_to_file__bmp_png_rgb_yuv420_>
+rpicam-still <__e___encoding_> <bmp_png_rgb_yuv420> <__o___output_> <path_to_file_ext>
 
 # Capture a raw image
 rpicam-still <__r___raw_> <__o___output_> <path_to_file_jpg>

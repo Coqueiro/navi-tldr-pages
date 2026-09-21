@@ -4,7 +4,7 @@
 % talosctl, common
 
 # Apply a config to a fresh node
-talosctl apply-config <__i___insecture_> <__n___nodes_> <control_plane_ip> <__f___file_> <path_to_control_plane_yaml>
+talosctl apply-config <__i___insecure_> <__n___nodes_> <control_plane_ip> <__f___file_> <path_to_control_plane_yaml>
 
 # Bootstrap the `etcd` cluster on a node
 talosctl bootstrap <__n___nodes_> <node_ip>

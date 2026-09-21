@@ -3,7 +3,7 @@
 
 % uinput, linux
 
-# Show resulting YAML device description merge and exit (dry-run)
+# Simulate merging the device descriptions and print the resulting YAML
 uinput -p
 
 # Merge YAML device description(s) to resulting virtual device

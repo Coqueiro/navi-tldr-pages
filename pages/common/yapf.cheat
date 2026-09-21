@@ -3,7 +3,7 @@
 
 % yapf, common
 
-# Display a diff of the changes that would be made, without making them (dry-run)
+# Simulate formatting and display a diff of the changes that would be made
 yapf <__d___diff_> <path_to_file>
 
 # Recursively format all Python files in a directory, concurrently

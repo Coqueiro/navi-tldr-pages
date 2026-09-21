@@ -15,7 +15,7 @@ sudo aa-status --pretty-json
 # Display the number of loaded policies
 sudo aa-status --profiled
 
-# Display the number of loaded enforicing policies
+# Display the number of loaded enforcing policies
 sudo aa-status --enforced
 
 # Display the number of loaded non-enforcing policies

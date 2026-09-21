@@ -12,8 +12,8 @@ amass intel -active -addr <192_168_0_1_254>
 # Find root domains related to a [d]omain
 amass intel -whois -d <domain_name>
 
-# Find ASNs belonging to an [org]anisation
-amass intel -org <organisation_name>
+# Find ASNs belonging to an [org]anization
+amass intel -org <organization_name>
 
 # Find root domains belonging to a given Autonomous System Number
 amass intel -asn <asn>

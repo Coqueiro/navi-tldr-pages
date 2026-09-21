@@ -6,7 +6,7 @@
 # Generate a configuration file on very first run and display help
 spicetify
 
-# Backup and preprocess Spotify application files
+# Back up and preprocess Spotify application files
 spicetify backup
 
 # Print all configuration fields and values

@@ -3,7 +3,7 @@
 
 % doppler, common
 
-# Setup Doppler project and configuration in current directory
+# Set up Doppler project and configuration in current directory
 doppler setup
 
 # Run a command with secrets injected into the environment

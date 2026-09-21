@@ -18,8 +18,8 @@ gpclient connect --fix-openssl <vpn_gateway_url>
 # Ignore TLS errors during connection
 gpclient connect --ignore-tls-errors <vpn_gateway_url>
 
-# Display version
-gpclient --version
-
 # Display help for any command
 gpclient help <command>
+
+# Display version
+gpclient --version

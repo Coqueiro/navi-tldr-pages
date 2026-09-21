@@ -9,7 +9,7 @@ mac-cleanup
 # Open the module configuration screen
 mac-cleanup <__c___configure_>
 
-# Perform a dry-run, showing what will be removed without actually deleting it
+# Simulate the cleanup, showing what will be removed without actually deleting it
 mac-cleanup <__n___dry_run_>
 
 # Specify the directory with custom cleanup modules

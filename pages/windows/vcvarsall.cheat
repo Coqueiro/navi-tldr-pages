@@ -3,7 +3,7 @@
 
 % vcvarsall, windows
 
-# Setup the environment for native x64
+# Set up the environment for native x64
 vcvarsall x64
 
 # Setup the environment for cross-compiled native x86 from the x64 host

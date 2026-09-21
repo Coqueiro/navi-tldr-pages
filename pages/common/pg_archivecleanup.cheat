@@ -6,7 +6,7 @@
 # Clean an archive directory up to a given WAL file
 pg_archivecleanup <path_to_archive> <path_to_walfile>
 
-# Perform a dry run (list files that would be removed without actually doing it)
+# Simulate removing files without actually doing it
 pg_archivecleanup <__n___dry_run_> <path_to_archive> <path_to_walfile>
 
 # Strip a file extension before deciding deletion

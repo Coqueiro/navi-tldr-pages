@@ -13,7 +13,7 @@ az quantum workspace list
 az quantum workspace set <__g___resource_group_> <ResourceGroup> <__w___workspace_name_> <Workspace>
 
 # Submit a QIR quantum job to a target
-az quantum job submit <__g___resource_group_> <ResourceGroup> <__w___workspace_name_> <Workspace> <__l___location_> <Location> <__t___target_id_> <Id> --job-name <Job> --job-input-file <QirBitcode_bc> --job-input-format <qir_v1>
+az quantum job submit <__g___resource_group_> <ResourceGroup> <__w___workspace_name_> <Workspace> <__l___location_> <Location> <__t___target_id_> <target_id> --job-name <Job> --job-input-file <QirBitcode_bc> --job-input-format <qir_v1>
 
 # List all jobs in a Quantum Workspace
 az quantum job list <__g___resource_group_> <ResourceGroup> <__l___location_> <Location> <__w___workspace_name_> <Workspace>
@@ -25,4 +25,4 @@ az quantum job output <__g___resource_group_> <ResourceGroup> <__w___workspace_n
 az quantum offerings list <__l___location_> <Location>
 
 # Set a default target for job submissions
-az quantum target set <__t___target_id_> <Id>
+az quantum target set <__t___target_id_> <target_id>

@@ -6,7 +6,7 @@
 # Reset the WAL and control information for a specific data directory
 pg_resetwal <__D___pgdata_> <path_to_data>
 
-# Perform a dry run
+# Simulate resetting without actually doing it
 pg_resetwal <__D___pgdata_> <path_to_data> <__n___dry_run_>
 
 # Force the WAL and control information reset

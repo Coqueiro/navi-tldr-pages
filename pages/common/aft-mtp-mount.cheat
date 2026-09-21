@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/aft-mtp-mount.md
+
+% aft-mtp-mount, common
+
+# Mount an MTP device to a directory
+aft-mtp-mount <path_to_mount_point>
+
+# Mount a specific device to a directory
+aft-mtp-mount -D <device_name> <path_to_mount_point>
+
+# Reset the device before mounting
+aft-mtp-mount -R <path_to_mount_point>
+
+# Mount a device without claiming the USB interface
+aft-mtp-mount -C <path_to_mount_point>
+
+# Mount a device and display debug output
+aft-mtp-mount -d <path_to_mount_point>
+
+# Display help
+aft-mtp-mount <__h___help_>

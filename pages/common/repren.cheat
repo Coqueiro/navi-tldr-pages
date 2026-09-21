@@ -3,10 +3,10 @@
 
 % repren, common
 
-# Do a dry-run renaming a directory of PNGs with a literal string replacement
+# Simulate renaming a directory of PNGs with a literal string replacement
 repren <__n___dry_run_> --rename --literal --from '<find_string>' --to '<replacement_string>' <__png>
 
-# Do a dry-run renaming a directory of JPEGs with a `regex`
+# Simulate renaming a directory of JPEGs with a `regex`
 repren --rename <__n___dry_run_> --from '<regex>' --to '<replacement_string>' <__jpg> <__jpeg>
 
 # Do a find-and-replace on the contents of a directory of CSV files

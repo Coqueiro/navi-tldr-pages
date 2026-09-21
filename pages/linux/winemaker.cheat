@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/winemaker.md
+
+% winemaker, linux
+
+# Generate build files for a source tree (assumes a graphical application)
+winemaker <path_to_source_directory>
+
+# Treat the target as a console application
+winemaker --console <path_to_source_directory>
+
+# Treat the target as a DLL
+winemaker --dll <path_to_source_directory>
+
+# Generate build files without modifying or renaming the original sources
+winemaker --nosource-fix <path_to_source_directory>
+
+# Process a project that uses MFC
+winemaker --mfc <path_to_source_directory>
+
+# Display help
+winemaker --help

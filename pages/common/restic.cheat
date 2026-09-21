@@ -6,7 +6,7 @@
 # Initialize a backup repository in the specified local directory
 restic init <__r___repo_> <path_to_repository>
 
-# Backup a directory to the repository
+# Back up a directory to the repository
 restic <__r___repo_> <path_to_repository> backup <path_to_directory>
 
 # Show backup snapshots currently stored in the repository

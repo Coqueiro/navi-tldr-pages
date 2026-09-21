@@ -19,10 +19,10 @@ grim - | <clipboard_manager>
 grim -t <png_ppm_jpeg> <path_to_output_file>
 
 # Set the PNG compression level (default: 6)
-grim -l <0_9> <path_to_output_png>
+grim -l <0__9> <path_to_output_png>
 
 # Set the JPEG quality level (default: 80)
-grim -t jpeg -q <0_100> <path_to_output_jpg>
+grim -t jpeg -q <0__100> <path_to_output_jpg>
 
 # Include cursors in the screenshot
 grim -c

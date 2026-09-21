@@ -9,7 +9,7 @@ ld <path_to_file_o> <__o___output_> <path_to_output_executable>
 # Link multiple object files together
 ld {{path/to/file1.o path/to/file2.o ...}} <__o___output_> <path_to_output_executable>
 
-# Link a object file to a specific target emulation
+# Link an object file to a specific target emulation
 ld <path_to_file_o> -m <target_emulation> <__o___output_> <path_to_output_executable>
 
 # Dynamically link an x86_64 program to glibc (file paths change depending on the system)

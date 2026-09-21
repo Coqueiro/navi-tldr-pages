@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wine-net.md
+
+% wine-net, linux
+
+# List the currently running services
+wine net start
+
+# Start a specific service
+wine net start <service_name>
+
+# Stop a running service
+wine net stop <service_name>
+
+# List the current network connections
+wine net use
+
+# Display help
+wine net help

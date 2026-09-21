@@ -12,5 +12,5 @@
 # Add [i]ncremental timestamps with microsecond precision, starting from zero
 <command> | ts -i "<_H__M___S>"
 
-# Convert existing timestamps in a text file (eg. a log file) into [r]elative format
+# Convert existing timestamps in a text file (e.g. a log file) into [r]elative format
 cat <path_to_file> | ts -r

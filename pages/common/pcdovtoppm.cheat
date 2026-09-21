@@ -9,8 +9,8 @@ pcdovtoppm <path_to_file_pcd> > <path_to_output_ppm>
 # Specify the maximum width of the output image and the maximum size of each of the images contained in the output
 pcdovtoppm <__m__maxwidth_> <width> <__s__size_> <size> <path_to_file_pcd> > <path_to_output_ppm>
 
-# Specify the maximum number of images across and the maximum number of colours
-pcdovtoppm <__a__across_> <n_images> <__c__colors_> <n_colours> <path_to_file_pcd> > <path_to_output_ppm>
+# Specify the maximum number of images across and the maximum number of colors
+pcdovtoppm <__a__across_> <n_images> <__c__colors_> <n_colors> <path_to_file_pcd> > <path_to_output_ppm>
 
 # Use the specified font for annotations and paint the background white
 pcdovtoppm <__f__font_> <font> <__w__white_> <path_to_file_pcd> > <path_to_output_ppm>

@@ -15,7 +15,7 @@ sudo kernelstub <__v___verbose_> <__l___loader_>
 # Copy kernel only to ESP without NVRAM changes
 sudo kernelstub <__m___manage_only_>
 
-# Run a simulation without making any changes (dry-run)
+# Simulate the operation without making any changes
 sudo kernelstub <__c___dry_run_>
 
 # Specify paths manually

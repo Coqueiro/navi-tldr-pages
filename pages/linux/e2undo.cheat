@@ -6,7 +6,7 @@
 # Display information about a specific undo file
 e2undo -h <path_to_undo_file> <_dev_sdXN>
 
-# Perform a dry-run and display the candidate blocks for replaying
+# Simulate replaying the undo file and display the candidate blocks
 e2undo -nv <path_to_undo_file> <_dev_sdXN>
 
 # Perform an undo operation

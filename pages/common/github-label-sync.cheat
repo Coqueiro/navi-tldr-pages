@@ -9,7 +9,7 @@ github-label-sync --access-token <token> <repository_name>
 # Synchronize labels using a specific labels JSON file
 github-label-sync --access-token <token> --labels <url_path_to_json_file> <repository_name>
 
-# Perform a dry run instead of actually synchronizing labels
+# Simulate synchronizing labels without actually doing it
 github-label-sync --access-token <token> --dry-run <repository_name>
 
 # Keep labels that aren't in `labels.json`

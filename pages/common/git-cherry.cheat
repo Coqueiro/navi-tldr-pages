@@ -6,8 +6,8 @@
 # Show commits (and their messages) with equivalent commits upstream
 git cherry <__v___verbose_>
 
-# Specify a different upstream and topic branch
-git cherry <origin> <topic>
+# Specify a different upstream and branch
+git cherry <origin> <branch_name>
 
-# Limit commits to those within a given limit
-git cherry <origin> <topic> <base>
+# Limit commits to those after a given commit
+git cherry <origin> <branch_name> <limit_commit>

@@ -9,7 +9,7 @@ qm clone <100> <101>
 # Copy a virtual machine using a specific name
 qm clone <100> <101> --name <name>
 
-# Copy a virtual machine using a specific descriptionn
+# Copy a virtual machine using a specific description
 qm clone <100> <101> --description <description>
 
 # Copy a virtual machine creating a full copy of all disks

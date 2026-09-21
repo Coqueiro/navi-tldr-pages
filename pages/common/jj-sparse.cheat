@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-sparse.md
+
+% jj-sparse, common
+
+# List the patterns currently present in the working copy
+jj sparse list
+
+# Start an editor to update the sparse patterns
+jj sparse edit
+
+# Reset the patterns to include all files in the working copy
+jj sparse reset
+
+# Exclude all files from the working copy
+jj sparse set --clear
+
+# Update patterns to only include specified paths
+jj sparse set --clear --add <path_to_directory>
+
+# Add a path to the working copy
+jj sparse set --add <path_to_directory>
+
+# Add multiple paths to the working copy
+jj sparse set --add <path_to_directory1> --add <path_to_directory2>
+
+# Remove a path from the working copy
+jj sparse set --remove <path_to_directory>

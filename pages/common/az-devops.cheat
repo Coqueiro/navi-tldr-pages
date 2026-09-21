@@ -3,7 +3,7 @@
 
 % az-devops, common
 
-# Set the Personal Access Token (PAT) to login to a particular organization
+# Set the Personal Access Token (PAT) to log in to a particular organization
 az devops login <___org___organization_> <organization_url>
 
 # Open a project in the browser

@@ -21,7 +21,7 @@ pv {{[-EE|--skip-errors --skip-errors]}} <path_to_faulty_media> > <path_to_image
 # Stop reading after reading specified amount of data, rate limit to 1K/s
 pv <__L___rate_limit_> <1K> <__S___stop_at_size_> <maximum_file_size_to_be_read>
 
-# Calculate hash (MD5, SHA1, SHA256, etc) of a large file and show progress
+# Calculate hash (MD5, SHA1, SHA256, etc.) of a large file and show progress
 pv <path_to_file> | <sha256sum>
 
 # Only display a timer for how long a command has taken to run

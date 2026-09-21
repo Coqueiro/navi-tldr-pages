@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-fix.md
+
+% jj-fix, common
+
+# Fix changed files in all mutable revisions connected to the working-copy commit
+jj fix
+
+# Fix changed files in the specified revision(s) and their descendants
+jj fix <__s___source_> <revsets>
+
+# Fix files only in the working-copy commit
+jj fix <__s___source_> @
+
+# Fix only a specific file or directory
+jj fix <path_to_file_or_directory>
+
+# Fix all lines instead of only modified lines
+jj fix <__a___all_lines_>
+
+# Format all lines in a specific file
+jj fix <__a___all_lines_> <path_to_file>
+
+# Fix unchanged files in addition to changed ones across the entire repository
+jj fix --include-unchanged-files
+
+# Fix unchanged files in addition to changed ones for specific paths
+jj fix --include-unchanged-files <path_to_file_or_directory>

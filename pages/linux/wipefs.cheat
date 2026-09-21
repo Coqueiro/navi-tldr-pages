@@ -9,10 +9,10 @@ sudo wipefs <_dev_sdX>
 # Wipe all available signature types for a specific device with no recursion into partitions
 sudo wipefs <__a___all_> <_dev_sdX>
 
-# Wipe all available signature types for the device and partitions using a glob pattern
+# Wipe all available signature types for the device and partitions using a `glob` pattern
 sudo wipefs <__a___all_> <_dev_sdX>*
 
-# Perform dry run
+# Simulate wiping all signature types from a device without actually modifying it
 sudo wipefs <__a___all_> <__n___no_act_> <_dev_sdX>
 
 # Force wipe, even if the filesystem is mounted

@@ -9,7 +9,7 @@ sfdk undeploy --<pkcon_rpm_rsync_sdk_zypper>
 # Simulate an undeployment without applying the changes
 sfdk undeploy --<method> <__n___dry_run_>
 
-# Undeploy files in glob pattern `package*`
+# Undeploy files in `glob` pattern `package*`
 sfdk undeploy --<method> "+package*"
 
 # Undeploy all files excluding `ignore*`

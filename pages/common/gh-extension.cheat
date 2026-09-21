@@ -18,9 +18,6 @@ gh <_ext_extension_> upgrade <extension_name>
 # Upgrade all extensions
 gh <_ext_extension_> upgrade --all
 
-# List installed extensions
-gh <_ext_extension_> <_ls_list_>
-
 # Remove an extension
 gh <_ext_extension_> remove <extension_name>
 

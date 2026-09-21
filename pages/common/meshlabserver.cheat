@@ -6,7 +6,7 @@
 # Convert an STL file to an OBJ file
 meshlabserver -i <input_stl> -o <output_obj>
 
-# Convert a WRL file to a OFF file, including the vertex and face normals in the output mesh
+# Convert a WRL file to an OFF file, including the vertex and face normals in the output mesh
 meshlabserver -i <input_wrl> -o <output_off> -om vn fn
 
 # Dump a list of all the available processing filters into a file

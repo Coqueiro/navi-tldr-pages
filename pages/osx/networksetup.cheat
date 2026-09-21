@@ -3,7 +3,7 @@
 
 % networksetup, osx
 
-# List available network service providers (Ethernet, Wi-Fi, Bluetooth, etc)
+# List available network service providers (Ethernet, Wi-Fi, Bluetooth, etc.)
 networksetup -listallnetworkservices
 
 # Show network settings for a particular networking device

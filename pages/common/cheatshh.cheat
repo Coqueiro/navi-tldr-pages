@@ -3,13 +3,13 @@
 
 % cheatshh, common
 
-# Add a new command to the cheatshheet
+# Add a new command to the cheatsheet
 cheatshh <__a___add_>
 
-# Edit an existing command's description or group in the cheatshheet
+# Edit an existing command's description or group in the cheatsheet
 cheatshh <__ec___edit_command_>
 
-# Delete an existing command from the cheatshheet
+# Delete an existing command from the cheatsheet
 cheatshh <__dc___delete_command_>
 
 # Create a new group
@@ -18,7 +18,7 @@ cheatshh <__g___group_>
 # Edit an existing group's name or description in the cheatsheet
 cheatshh <__eg___edit_group_>
 
-# Delete an existing group and it's sub commands from `commands.json` file
+# Delete an existing group and its subcommands from `commands.json` file
 cheatshh <__dg___delete_group_>
 
 # Display man pages after tldr in the preview

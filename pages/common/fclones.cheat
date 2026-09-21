@@ -15,7 +15,7 @@ fclones group <path_to_directory> --depth 1 > <path_to_file_txt>
 # Move the duplicate files in a TXT file to a different directory
 fclones < <path_to_file_txt> move <path_to_target_directory>
 
-# Perform a dry run for soft links in a TXT file without actually linking
+# Simulate soft links in a TXT file without actually linking
 fclones < <path_to_file_txt> link --soft --dry-run 2 > /dev/null
 
 # Delete the newest duplicates from the current directory without storing them in a file

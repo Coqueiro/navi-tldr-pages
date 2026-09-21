@@ -15,7 +15,7 @@ git clean <__f___force_>
 # Delete untracked [d]irectories
 git clean <__f___force_> -d
 
-# Delete only untracked files matching specific paths or glob patterns
+# Delete only untracked files matching specific paths or `glob` patterns
 git clean <__f___force_> -- <path_to_directory> '<__ext>'
 
 # Delete untracked files except those matching the given patterns

@@ -6,7 +6,7 @@
 # Replace `from` with `to` in the filenames of the specified files
 rename 's/<from>/<to>/' <__txt>
 
-# Dry-run - display which changes would occur without performing them
+# Simulate running the program without doing anything
 rename -n 's/<from>/<to>/' <__txt>
 
 # Change the extension

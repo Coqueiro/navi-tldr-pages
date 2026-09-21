@@ -12,7 +12,7 @@ bun link <package_name>
 # Link a package in a specific directory
 bun link --cwd <path_to_package>
 
-# Perform a dry run without actually linking
+# Simulate linking without actually doing it
 bun link --dry-run
 
 # Display help

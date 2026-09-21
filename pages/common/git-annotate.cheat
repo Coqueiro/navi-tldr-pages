@@ -10,4 +10,4 @@ git annotate <path_to_file>
 git annotate <__e___show_email_> <path_to_file>
 
 # Print only rows that match a `regex`
-git annotate -L :<regexp> <path_to_file>
+git annotate -L :<regex> <path_to_file>

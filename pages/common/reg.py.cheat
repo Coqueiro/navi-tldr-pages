@@ -18,5 +18,5 @@ reg.py <domain>/<username>:<password>@<target> delete -keyName '<HKLM_SOFTWARE_E
 # Save a registry key (and subkeys) to a file on the target via UNC path
 reg.py <domain>/<username>:<password>@<target> save -keyName '<HKLM_SOFTWARE_Example>' -o '\\<target>\<share>\<output_file_reg>'
 
-# Backup SAM, SYSTEM and SECURITY hives to a file on a target via UNC path (requires SYSTEM privileges)
+# Back up SAM, SYSTEM, and SECURITY hives to a file on a target via UNC path (requires SYSTEM privileges)
 reg.py <domain>/<username>:<password>@<target> backup -o '\\<target>\<share>'

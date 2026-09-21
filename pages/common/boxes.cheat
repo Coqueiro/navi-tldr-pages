@@ -15,7 +15,7 @@ echo "<string>" | boxes <__d___design_> <parchment>
 # Specify the box size (in columns by lines)
 echo "<string>" | boxes <__s___size_> <10>x<5>
 
-# Align the box text [h]orizonally (at [l]eft, [c]enter, or [r]ight)
+# Align the box text [h]orizontally (at [l]eft, [c]enter, or [r]ight)
 echo "<string>" | boxes <__a___align_> h<l_c_r>
 
 # Align the box text [v]ertically (at [t]op, [c]enter, or [b]ottom)

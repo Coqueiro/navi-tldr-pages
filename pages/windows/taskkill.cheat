@@ -18,5 +18,5 @@ taskkill /im <process_name> /t
 # Terminate a process on a remote machine
 taskkill /pid <process_id> /s <remote_name>
 
-# Display information about the usage of the command
+# Display help
 taskkill /?

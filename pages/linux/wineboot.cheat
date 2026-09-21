@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wineboot.md
+
+% wineboot, linux
+
+# Perform a simulated reboot of the Wine prefix
+wineboot
+
+# Initialize or update the prefix (e.g. after upgrading Wine)
+wineboot <__u___update_>
+
+# Restart Wine without performing a full boot
+wineboot <__r___restart_>
+
+# Shut down the Wine session without rebooting
+wineboot <__s___shutdown_>
+
+# End the current session, forcing unresponsive processes to close
+wineboot {{[-ef|--end-session --force]}}
+
+# Kill all processes in the prefix without any cleanup
+wineboot <__k___kill_>
+
+# Display help
+wineboot <__h___help_>

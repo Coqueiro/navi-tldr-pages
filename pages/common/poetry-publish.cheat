@@ -15,7 +15,7 @@ poetry publish <__r___repository_> <repository_name>
 # Publish with specific credentials
 poetry publish <__u___username_> <username> <__p___password_> <password>
 
-# Perform a dry run to see what would be done without actually publishing
+# Simulate publishing the current package without actually publishing it
 poetry publish --dry-run
 
 # Skip files that already exist in the repository

@@ -3,7 +3,7 @@
 
 % mkinitcpio, linux
 
-# Perform a dry run (print what would be done without actually doing it)
+# Simulate generating the initial ramdisk environments and print what would be done
 mkinitcpio
 
 # Generate ramdisk environments based on all existing presets (used to regenerate all the initramfs images after a change in `/etc/mkinitcpio.conf`)

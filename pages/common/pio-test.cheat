@@ -9,10 +9,10 @@ pio test
 # Test only specific environments
 pio test <__e___environment_> <environment1> <__e___environment_> <environment2>
 
-# Run only tests whose name matches a specific glob pattern
+# Run only tests whose name matches a specific `glob` pattern
 pio test <__f___filter_> "<pattern>"
 
-# Ignore tests whose name matches a specific glob pattern
+# Ignore tests whose name matches a specific `glob` pattern
 pio test <__i___ignore_> "<pattern>"
 
 # Specify a port for firmware uploading

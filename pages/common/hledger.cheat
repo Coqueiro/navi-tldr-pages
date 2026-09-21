@@ -18,7 +18,7 @@ hledger accounts <__t___tree_> --types
 # Show asset and liability account balances, including zeros, hierarchically
 hledger <_bs_balancesheet_> <__E___empty_> <__t___tree_> --no-elide
 
-# Show monthly incomes/expenses/totals, largest first, summarised to 2 levels
+# Show monthly incomes/expenses/totals, largest first, summarized to 2 levels
 hledger <_is_incomestatement_> <__M___monthly_> <__T___row_total_> <__A___average_> --sort {{[-2|--depth 2]}}
 
 # Show the `assets:bank:checking` account's transactions and running balance

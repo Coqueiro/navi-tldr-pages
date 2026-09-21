@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-run.md
+
+% jj-run, common
+
+# Run a command on the current revision
+jj run -- <command>
+
+# Run a command across a revset
+jj run <__r___revision_> <revset> -- <command>
+
+# Run a formatter across all commits in a stack
+jj run <__r___revision_> 'trunk()..@' -- cargo fmt
+
+# Print the change ID of each revision in a revset (`$JJ_CHANGE_ID` is set by `jj run` for each revision)
+jj run <__r___revision_> <revset> -- sh -c 'echo $JJ_CHANGE_ID'
+
+# Run a command in parallel across multiple revisions
+jj run <__r___revision_> <revset> <__j___jobs_> <num_jobs> -- <command>
+
+# Simulate running a command without rewriting any commits
+jj run --ignore-changes <__r___revision_> <revset> -- <command>
+
+# Run a command while keeping descendants' content unchanged
+jj run --restore-descendants <__r___revision_> <revset> -- <command>
+
+# Run a command from the workspace root instead of each revision's root
+jj run <__r___revision_> <revset> --root -- <command>

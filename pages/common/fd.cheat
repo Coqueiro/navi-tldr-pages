@@ -18,7 +18,7 @@ fd "<regex>" <__t___type_> <_d_directory_>
 # Include ignored and hidden files in the search
 fd "<regex>" {{[-HI|--hidden --no-ignore]}}
 
-# Exclude files that match a specific glob pattern
+# Exclude files that match a specific `glob` pattern
 fd "<regex>" <__E___exclude_> <glob>
 
 # Execute a command on each search result returned

@@ -12,7 +12,7 @@ spotify_player
 # Use the specified theme
 spotify_player <__t___theme_> <theme_name>
 
-# Use configuration files (`app.toml`, `keymap.toml` and `theme.toml`) in the specified directory
+# Use configuration files (`app.toml`, `keymap.toml`, and `theme.toml`) in the specified directory
 spotify_player <__c___config_folder_> <path_to_directory>
 
 # Like the currently playing track

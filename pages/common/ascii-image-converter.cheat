@@ -9,7 +9,7 @@ ascii-image-converter <path_to_image_url>
 # Colorize the output
 ascii-image-converter <__C___color_> <path_to_image_url>
 
-# Create a tresholded image using braille (if the image is barely visible, try changing the terminal font)
+# Create a thresholded image using braille (if the image is barely visible, try changing the terminal font)
 ascii-image-converter <__b___braille_> <path_to_image_url>
 
 # Create a dithered image using braille (if the image is barely visible, try changing the terminal font)

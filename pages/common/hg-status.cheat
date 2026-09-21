@@ -21,8 +21,8 @@ hg status <__d___deleted_>
 # Display changes in the working directory compared to a specified changeset
 hg status --rev <revision>
 
-# Display only files matching a specified glob pattern
+# Display only files matching a specified `glob` pattern
 hg status <__I___include_> <pattern>
 
-# Display files, excluding those that match a specified glob pattern
+# Display files, excluding those that match a specified `glob` pattern
 hg status <__X___exclude_> <pattern>

@@ -6,7 +6,7 @@
 # Convert a physical replica to a logical replica for a specific database
 pg_createsubscriber <__d___database_> <dbname> <__D___pgdata_> <path_to_data> <__P___publisher_server_> <connstr>
 
-# Perform a dry run without modifying the target directory
+# Simulate converting a physical replica to a logical replica without modifying the target directory
 pg_createsubscriber <__n___dry_run_> <__d___database_> <dbname> <__D___pgdata_> <path_to_data> <__P___publisher_server_> <connstr>
 
 # Enable two-phase commit for the subscription

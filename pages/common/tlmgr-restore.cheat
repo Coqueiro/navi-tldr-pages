@@ -18,5 +18,5 @@ tlmgr restore --all
 # Restore a package from a custom backup directory
 tlmgr restore <package> <revision> --backupdir <path_to_backup_directory>
 
-# Perform a dry-run and print all taken actions without making them
+# Simulate a restore and print all actions that would be taken
 tlmgr restore --dry-run <package> <revision>

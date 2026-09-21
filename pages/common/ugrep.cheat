@@ -21,7 +21,7 @@ ugrep <__Z___fuzzy__><3> "<search_pattern>"
 # Also search compressed files, Zip and `.tar` archives recursively
 ugrep <__z___decompress_> "<search_pattern>"
 
-# Search only files whose filenames match a specific glob pattern
+# Search only files whose filenames match a specific `glob` pattern
 ugrep {{[-g |--glob=]}}"<glob_pattern>" "<search_pattern>"
 
 # Search only C++ source files (use `--file-type=list` to list all file types)

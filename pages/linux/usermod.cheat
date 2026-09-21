@@ -7,7 +7,7 @@
 sudo usermod <__l___login_> <new_username> <username>
 
 # Change a user ID
-sudo usermod <__u___uid_> <id> <username>
+sudo usermod <__u___uid_> <user_id> <username>
 
 # Change a user shell
 sudo usermod <__s___shell_> <path_to_shell> <username>

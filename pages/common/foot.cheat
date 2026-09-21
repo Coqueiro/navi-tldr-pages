@@ -19,7 +19,7 @@ foot <__F___fullscreen_>
 foot <__w___window_size_pixels_> <width>x<height>
 
 # Start a terminal with the specified Wayland app id (default: `foot`)
-foot <__a___app_id_> <id>
+foot <__a___app_id_> <app_id>
 
 # Check for errors in the configuration file
 foot <__C___check_config_>

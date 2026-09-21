@@ -15,7 +15,7 @@ echo "{{command1; command2; command3}}" | ntfyme exec
 # Track and terminate the process after prolonged suspension
 ntfyme exec <__t___track_process_> <__c___cmd_> <command>
 
-# Setup the tool configurations interactively
+# Set up the tool configurations interactively
 ntfyme setup
 
 # Encrypt your password

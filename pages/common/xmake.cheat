@@ -4,10 +4,13 @@
 % xmake, common
 
 # Create an Xmake C project, consisting of a hello world and `xmake.lua`
-xmake create <__l___language_> <_c_clean_> <__P___project_> <project_name>
+xmake create {{[-l |--language=]}}c <project_name>
 
-# Build and run an Xmake project
-xmake <_b_build_> <_r_run_>
+# Build an Xmake project
+xmake <_b_build_>
+
+# Run an Xmake project
+xmake <_r_run_>
 
 # Run a compiled Xmake target directly
 xmake <_r_run_> <target_name>

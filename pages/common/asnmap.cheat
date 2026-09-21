@@ -3,19 +3,19 @@
 
 % asnmap, common
 
-# Lookup CIDR ranges for an ASN
+# Look up CIDR ranges for an ASN
 asnmap <__a__asn_> <AS5650> -silent
 
-# Lookup CIDR ranges for an IP address
+# Look up CIDR ranges for an IP address
 asnmap <__i__ip_> <100_19_12_21> -silent
 
-# Lookup CIDR ranges for a domain
+# Look up CIDR ranges for a domain
 asnmap <__d__domain_> <example_com> -silent
 
-# Lookup CIDR ranges for an organization
+# Look up CIDR ranges for an organization
 asnmap -org <GOOGLE> -silent
 
-# Lookup CIDR ranges from a file of targets
+# Look up CIDR ranges from a file of targets
 asnmap <__f__file_> <path_to_targets_txt> -silent
 
 # Output results in JSON format

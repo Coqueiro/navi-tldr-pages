@@ -9,7 +9,7 @@ pgmhist <path_to_image_pgm>
 # Display the median grey value
 pgmhist <__me__median_> <path_to_image_pgm>
 
-# Display four quartile grey value
+# Display the four quartile grey values
 pgmhist <__qua__quartile_> <path_to_image_pgm>
 
 # Report the existence of invalid grey values

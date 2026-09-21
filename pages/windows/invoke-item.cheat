@@ -18,5 +18,5 @@ Invoke-Item -Path <path_to_directory>\* -Include <_keyword_>
 # Open all files inside a directory except those containing a specific keyword
 Invoke-Item -Path <path_to_directory>\* -Exclude <_keyword_>
 
-# Perform a dry run to determine which files will be opened inside a directory through `Invoke-Item`
+# Simulate a run to determine which files will be opened inside a directory through `Invoke-Item`
 Invoke-Item -Path <path_to_directory>\* -WhatIf

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-help.md
+
+% jj-help, common
+
+# Display help for `jj`
+jj help
+
+# Display help for a specific subcommand
+jj help <subcommand>
+
+# Display help for a nested subcommand
+jj help <subcommand> <sub_subcommand>
+
+# Display help for a keyword (e.g. `bookmarks`, `config`, `filesets`, `revsets`, `templates`, etc.)
+jj help <__k___keyword_> <keyword>

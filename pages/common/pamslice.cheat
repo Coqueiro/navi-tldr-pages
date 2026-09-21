@@ -12,5 +12,5 @@ pamslice <__c__column_> <n> <path_to_image_pam>
 # Consider the m'th plane of the input image only
 pamslice <__r__row_> <n> -plane <m> <path_to_image_pam>
 
-# Produce output in a format suitable for input to an `xmgr` for visualisation
+# Produce output in a format suitable for input to an `xmgr` for visualization
 pamslice <__r__row_> <n> <__x__xmgr_> <path_to_image_pam>

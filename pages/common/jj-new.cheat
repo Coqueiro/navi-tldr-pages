@@ -12,5 +12,5 @@ jj new <revision>
 # Create a new merge change on top of multiple revisions
 jj new {{revset1 revset2 ...}}
 
-# Create a new empty change before and after specified revisions
-jj new <__B___insert_before_> <revsets> <__A___insert_after_> <revsets>
+# Insert a new empty change between specified revisions
+jj new <__A___insert_after_> <revsets> <__B___insert_before_> <revsets>

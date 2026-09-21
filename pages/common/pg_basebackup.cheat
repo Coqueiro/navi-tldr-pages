@@ -9,7 +9,7 @@ pg_basebackup <__h___host_> <host> <__D___pgdata_> <path_to_backup_dir>
 # Take a backup with progress shown
 pg_basebackup <__h___host_> <host> <__D___pgdata_> <path_to_backup_dir> <__P___progress_>
 
-# Create a compressed backup (`gzip`) in tar format
+# Create a compressed backup (`gzip`) in `tar` format
 pg_basebackup <__D___pgdata_> <path_to_backup_dir> <__F___format_> <_t_tar_> <__z___gzip_>
 
 # Create an incremental backup using a previous manifest file

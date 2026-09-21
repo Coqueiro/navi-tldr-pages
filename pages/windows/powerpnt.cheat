@@ -3,8 +3,8 @@
 
 % powerpnt, windows
 
-# Launch the presentation application
-powerpnt
+# Launch the presentation application (omitting the file path will launch the File page)
+powerpnt <path_to_file_pptx>
 
 # Create a new [b]lank presentation
 powerpnt /b

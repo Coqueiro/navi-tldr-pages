@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/wine-start.md
+
+% wine-start, linux
+
+# Launch a Windows program
+wine start <path_to_program_exe>
+
+# Open a document with its associated program
+wine start <path_to_document_ext>
+
+# Launch a program from a Unix-style path
+wine start /unix <path_to_program_exe>
+
+# Launch a program and wait for it to exit, returning its exit code
+wine start /wait <path_to_program_exe>
+
+# Launch a program minimized or maximized
+wine start <_min__max> <path_to_program_exe>
+
+# Launch a program from a specific working [d]irectory
+wine start /d <path_to_directory> <path_to_program_exe>
+
+# Launch a program without opening a new console window
+wine start /b <path_to_program_exe>
+
+# Display help
+wine start /?

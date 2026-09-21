@@ -7,7 +7,7 @@
 frpc
 
 # Start the service, using the newer TOML configuration file
-frpc <__c___config_> <path_to_frps_toml>
+frpc <__c___config_> <path_to_frpc_toml>
 
 # Start the service, using a specific configuration file
 frpc <__c___config_> <path_to_file>

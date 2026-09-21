@@ -3,8 +3,8 @@
 
 % winword, windows
 
-# Launch the word processor application
-winword
+# Launch the word processor application (omitting the file path will launch the File page)
+winword <path_to_file_docx>
 
 # Launch Word with [n]o open documents
 winword /n

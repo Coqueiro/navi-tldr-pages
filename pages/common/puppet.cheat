@@ -6,7 +6,7 @@
 # Apply a Puppet manifest file to configure the system
 puppet apply <path_to_file_pp>
 
-# Apply a manifest in no operation (dry-run) mode to preview changes
+# Simulate applying a manifest to preview changes
 puppet apply --noop <path_to_file_pp>
 
 # Validate the syntax of a Puppet manifest

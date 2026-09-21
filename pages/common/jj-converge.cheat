@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-converge.md
+
+% jj-converge, common
+
+# Converge divergent revisions in the default search space (configured by `revsets.converge`)
+jj converge
+
+# Converge divergent revisions within a specific search space
+jj converge <__r___revision_> <revset>
+
+# Resolve divergence without interactive prompts
+jj converge --no-interactive

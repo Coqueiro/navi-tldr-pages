@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/docker-buildx-build.md
+
+% docker-buildx-build, common
+
+# Build an image from the Dockerfile in the current directory
+docker buildx build .
+
+# Build an image and tag it
+docker buildx build <__t___tag_> <image_tag> .
+
+# Build an image using a specific Dockerfile
+docker buildx build <__f___file_> <path_to_Dockerfile> .
+
+# Build an image passing build-time variables
+docker buildx build --build-arg <HTTP_PROXY_http___proxy_example_com> --build-arg <VERSION_1_0> .
+
+# Build an image without using the build cache
+docker buildx build --no-cache .
+
+# Build an image and load it into `docker images`
+docker buildx build --load <__t___tag_> <image_tag> .
+
+# Build for multiple platforms and push to a registry
+docker buildx build --platform <linux_amd64_linux_arm64> --push <__t___tag_> <registry_example_com_image_tag> .
+
+# Build a specific stage from a multi-stage Dockerfile
+docker buildx build --target <stage_name> <__t___tag_> <image_tag> .

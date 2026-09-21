@@ -9,7 +9,7 @@ vibe
 # Resume the most recent Vibe session in the current directory
 vibe <__c___continue_>
 
-# Start an interactive Vibe session to setup an API key then exit
+# Start an interactive Vibe session to set up an API key then exit
 vibe --setup
 
 # Run a single Vibe prompt in the terminal with automatic approval of file edits and commands

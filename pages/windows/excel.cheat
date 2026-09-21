@@ -3,8 +3,8 @@
 
 % excel, windows
 
-# Launch the spreadsheet application
-excel
+# Launch the spreadsheet application (omitting the file path will launch the File page)
+excel <path_to_file_xlsx>
 
 # Create a new workbook with a [m]acro-enabled sheet
 excel /m

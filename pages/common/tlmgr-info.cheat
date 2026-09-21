@@ -3,7 +3,7 @@
 
 % tlmgr-info, common
 
-# List all available TeX Live packages, prefexing installed ones with `i`
+# List all available TeX Live packages, prefixing installed ones with `i`
 tlmgr info
 
 # List all available collections

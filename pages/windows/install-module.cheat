@@ -24,5 +24,5 @@ Install-Module <module> -Repository {{repository1 , repository2 , ...}}
 # Install the module for all/current user
 Install-Module <module> -Scope <AllUsers_CurrentUser>
 
-# Perform a dry run to determine which modules will be installed, upgraded, or removed through `Install-Module`
+# Simulate a run to determine which modules will be installed, upgraded, or removed through `Install-Module`
 Install-Module <module> -WhatIf

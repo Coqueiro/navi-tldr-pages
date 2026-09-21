@@ -15,7 +15,7 @@ rawtopgm <width> <height> <__bt__bottomfirst_> <path_to_image_raw> > <path_to_ou
 # Ignore the first `n` bytes of the specified file
 rawtopgm <width> <height> <__h__headerskip_> <n> <path_to_image_raw> > <path_to_output_pgm>
 
-# Ignore the last m bytes of each row in the specified file
+# Ignore the last `m` bytes of each row in the specified file
 rawtopgm <width> <height> <__r__rowskip_> <m> <path_to_image_raw> > <path_to_output_pgm>
 
 # Specify the maxval for the grey values in the input to be equal to `n`

@@ -3,7 +3,7 @@
 
 % 2to3, common
 
-# Display the changes that would be performed without performing them (dry-run)
+# Simulate the conversion and display the changes that would be made
 2to3 <path_to_file_py>
 
 # Convert a Python 2 file to Python 3

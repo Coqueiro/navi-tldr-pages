@@ -9,7 +9,7 @@ paccache <__r___remove_>
 # Set the number of package versions to keep
 paccache {{[-rk|--remove --keep]}} <num_versions>
 
-# Perform a dry-run and show the number of candidate packages for deletion
+# Simulate the cleaning and show the number of candidate packages for deletion
 paccache <__d___dryrun_>
 
 # Move candidate packages to a directory instead of deleting them

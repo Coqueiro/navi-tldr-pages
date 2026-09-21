@@ -6,7 +6,7 @@
 # Combine a full and incremental backup into one synthetic full backup
 pg_combinebackup <path_to_full_backup> <path_to_incremental_backup> <__o___output_> <path_to_output_directory>
 
-# Perform a dry run to show what would be done, without creating files
+# Simulate what would be done without creating files
 pg_combinebackup <__n___dry_run_> <path_to_full_backup> <path_to_incremental_backup> <__o___output_> <path_to_output_directory>
 
 # Use hard links instead of copying files (faster, same filesystem required)

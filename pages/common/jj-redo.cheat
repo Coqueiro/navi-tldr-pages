@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-redo.md
+
+% jj-redo, common
+
+# Redo the last undone operation
+jj redo

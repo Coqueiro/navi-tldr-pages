@@ -15,10 +15,10 @@ ftp -n <host>
 # Run a file containing a list of FTP commands
 ftp -s:<path_to_file> <host>
 
-# [Interactive] Download multiple files (glob expression)
+# [Interactive] Download multiple files (`glob` expression)
 mget <__png>
 
-# [Interactive] Upload multiple files (glob expression)
+# [Interactive] Upload multiple files (`glob` expression)
 mput <__zip>
 
 # [Interactive] Delete multiple files on the remote server

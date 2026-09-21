@@ -10,4 +10,4 @@ sudo groupadd <group_name>
 sudo groupadd <__r___system_> <group_name>
 
 # Create a new group with the specific groupid
-sudo groupadd <__g___gid_> <id> <group_name>
+sudo groupadd <__g___gid_> <group_id> <group_name>

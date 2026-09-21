@@ -3,7 +3,7 @@
 
 % authconfig, linux
 
-# Display the current configuration (or dry run)
+# Display the current configuration
 authconfig --test
 
 # Configure the server to use a different password hashing algorithm

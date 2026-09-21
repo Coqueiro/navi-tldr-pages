@@ -3,7 +3,7 @@
 
 % xmodmap, linux
 
-# Swap `<LeftClick>` and `<RightCLick>` on the pointer
+# Swap `<LeftClick>` and `<RightClick>` on the pointer
 xmodmap -e 'pointer = 3 2 1'
 
 # Reassign a key on the keyboard to another key

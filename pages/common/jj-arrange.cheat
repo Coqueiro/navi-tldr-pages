@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-arrange.md
+
+% jj-arrange, common
+
+# Interactively arrange commits configured by `revsets.arrange` (defaults to mutable commits)
+jj arrange
+
+# Interactively arrange specific revisions
+jj arrange <__r___revisions_> <revset>
+
+# Interactively arrange multiple revsets
+jj arrange <__r___revisions_> <revset1> <__r___revisions_> <revset2>
+
+# Interactively arrange a stack of commits from `trunk` to the current revision
+jj arrange <__r___revisions_> 'trunk()..@'

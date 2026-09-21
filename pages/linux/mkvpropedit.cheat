@@ -6,7 +6,7 @@
 # Delete title
 mkvpropedit <__d___delete_> title <path_to_file_mkv>
 
-# Mark subtitle track 3 as SDH - Subtitles for deaf and hearing impared
+# Mark subtitle track 3 as SDH - Subtitles for deaf and hearing impaired
 mkvpropedit <path_to_file_mkv> <__e___edit_> track:s3 <__s___set_> flag-hearing-impaired=1
 
 # Mark audio track 2 as Default

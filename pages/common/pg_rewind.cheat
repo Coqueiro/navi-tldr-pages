@@ -9,7 +9,7 @@ pg_rewind <__D___target_pgdata_> <path_to_target_data> --source-pgdata <path_to_
 # Synchronize target with source server using connection string
 pg_rewind <__D___target_pgdata_> <path_to_target_data> --source-server <connstr>
 
-# Perform a dry run
+# Simulate a synchronization without actually doing it
 pg_rewind <__D___target_pgdata_> <path_to_target_data> --source-pgdata <path_to_source_data> <__n___dry_run_>
 
 # Show progress during synchronization

@@ -12,5 +12,5 @@ alex
 # Analyze a specific file
 alex <path_to_file_md>
 
-# Analyze all Markdown files except `example.md`
-alex *.md !example.md
+# Analyze all Markdown files except a specified file
+alex *.md !<file_md>

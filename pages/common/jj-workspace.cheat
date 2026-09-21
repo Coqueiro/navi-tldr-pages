@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-workspace.md
+
+% jj-workspace, common
+
+# List all workspaces attached to the repository
+jj workspace list
+
+# Create a new workspace at the specified path
+jj workspace add <path_to_directory>
+
+# Create a new workspace with a specific name and parent revision
+jj workspace add --name <workspace_name> <__r___revision_> <revision> <path_to_directory>
+
+# Print the root directory of the current workspace
+jj workspace root
+
+# Print the root directory of a specific workspace
+jj workspace root --name <workspace_name>
+
+# Rename the current workspace
+jj workspace rename <new_name>
+
+# Stop tracking a workspace without deleting its files
+jj workspace forget <workspace_name>
+
+# Update a workspace whose working copy has become stale
+jj workspace update-stale

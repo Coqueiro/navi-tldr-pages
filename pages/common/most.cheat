@@ -22,7 +22,7 @@ most <path_to_file> +/<string>
 <e>
 
 # Split the current window in half
-<CTRL x><o>
+<Ctrl x><o>
 
 # Exit
 <q>

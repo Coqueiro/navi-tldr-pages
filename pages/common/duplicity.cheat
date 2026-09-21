@@ -3,10 +3,10 @@
 
 % duplicity, common
 
-# Backup a directory via FTPS to a remote machine, encrypting it with a password
+# Back up a directory via FTPS to a remote machine, encrypting it with a password
 FTP_PASSWORD=<ftp_login_password> PASSPHRASE=<encryption_password> duplicity <path_to_source_directory> <ftps___user_hostname_path_to_target_directory>/
 
-# Backup a directory to Amazon S3, doing a full backup every month
+# Back up a directory to Amazon S3, doing a full backup every month
 duplicity --full-if-older-than <1M> s3://<bucket_name__prefix_>
 
 # Delete versions older than 1 year from a backup stored on a WebDAV share

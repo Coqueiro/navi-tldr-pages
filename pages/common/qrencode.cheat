@@ -16,7 +16,7 @@ qrencode <__o___output_> <path_to_output_file_png> <__r___read_from_> <path_to_i
 qrencode <__t___type_> ansiutf8 <string>
 
 # Convert a string to a QR code with a specific error correction level and save to an output file
-qrencode <__o___output_> <path_to_output_file_png> <__l___level_> <_l_m_q_h_> <string>
+qrencode <__o___output_> <path_to_output_file_png> <__l___level_> <l_m_q_h> <string>
 
 # Convert input from pipe to a QR code and print it in terminal
 echo <string> | qrencode <__t___type_> utf8

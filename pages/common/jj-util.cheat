@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-util.md
+
+% jj-util, common
+
+# Generate shell completion script
+jj util completion <bash_fish_nushell_zsh>
+
+# Execute an external command in the workspace (helpful for creating aliases)
+jj util exec -- <command>
+
+# Run garbage collection on obsolete objects and abandoned operations older than 2 weeks
+jj util gc
+
+# Run garbage collection immediately without waiting for the default expiration
+jj util gc --expire now
+
+# Explicitly snapshot the working copy
+jj util snapshot
+
+# Print the JSON schema for the Jujutsu configuration format
+jj util config-schema
+
+# Print the name of the backend used in the current repository
+jj util backend name
+
+# Install Jujutsu's man pages to a directory
+jj util install-man-pages <path_to_directory>

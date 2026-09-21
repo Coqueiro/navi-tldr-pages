@@ -16,7 +16,7 @@ inkscape <path_to_file_svg> <__o___export_filename_> <path_to_file_png> <__w___e
 inkscape <path_to_file_svg> <__o___export_filename_> <path_to_file_png> <__D___export_area_drawing_>
 
 # Export a single object, given its ID, into a bitmap
-inkscape <path_to_file_svg> <__i___export_id_> <id> <__o___export_filename_> <object_png>
+inkscape <path_to_file_svg> <__i___export_id_> <object_id> <__o___export_filename_> <object_png>
 
 # Export an SVG document to PDF, converting all texts to paths
 inkscape <path_to_file_svg> <__o___export_filename_> <path_to_file_pdf> <__T___export_text_to_path_>

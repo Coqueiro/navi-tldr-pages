@@ -6,7 +6,7 @@
 # Initialize a (local) repository
 borg init <path_to_repo_directory>
 
-# Backup a directory into the repository, creating an archive called "Monday"
+# Back up a directory into the repository, creating an archive called "Monday"
 borg create --progress <path_to_repo_directory>::<Monday> <path_to_source_directory>
 
 # List all archives in a repository

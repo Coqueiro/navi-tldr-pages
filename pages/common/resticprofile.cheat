@@ -12,7 +12,7 @@ resticprofile backup
 # Run a backup with a specific profile (default profile is "default")
 resticprofile <__n___name_> "<profile_name>" backup
 
-# Run in dry-run mode and show the underlying restic commands
+# Simulate a backup and show the underlying restic commands
 resticprofile --dry-run backup
 
 # Display the names of all profiles from the configuration file

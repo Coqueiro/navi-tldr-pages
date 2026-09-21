@@ -12,7 +12,7 @@ cs install <application_name>
 # Uninstall a specific application
 cs uninstall <application_name>
 
-# Setup machine for the Scala development
+# Set up machine for the Scala development
 cs setup
 
 # Update all the installed applications

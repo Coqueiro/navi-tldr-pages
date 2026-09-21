@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/winepath.md
+
+% winepath, linux
+
+# Convert a Windows path to a Unix path
+winepath <__u___unix_> '<C__path_to_file>'
+
+# Convert a Unix path to a long Windows path
+winepath <__w___windows_> <path_to_file>
+
+# Convert a short (8.3) Windows path of an existing file to its long form
+winepath <__l___long_> '<C__PROGRA_1>'
+
+# Convert a long Windows path of an existing file to its short (8.3) form
+winepath <__s___short_> '{{C:\Program Files}}'
+
+# Separate output paths with a null character instead of a newline
+winepath <__u___unix_> -0 {{path1 path2 ...}}
+
+# Display help
+winepath <__h___help_>

@@ -18,7 +18,7 @@ http <__F___follow_> <https___example_com> {{'User-Agent: Mozilla/5.0' 'Accept-E
 # Authenticate to a server using different authentication methods
 http <__a___auth_> <username_password_token> <__A___auth_type_> <basic_digest_bearer> <GET_POST____> <https___example_com_auth>
 
-# Construct a request but do not send it (similar to a dry-run)
+# Simulate sending a request without actually sending it
 http --offline <GET_DELETE____> <https___example_com>
 
 # Use named sessions for persistent custom headers, auth credentials and cookies

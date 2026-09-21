@@ -3,7 +3,7 @@
 
 % sfdk, common
 
-# Setup the current environment for building for SailfishOS with a specific version and architecture target
+# Set up the current environment for building for SailfishOS with a specific version and architecture target
 sfdk config target=SailfishOS-<5_0_0_62>-<aarch64>
 
 # Initialize the current directory as the build directory

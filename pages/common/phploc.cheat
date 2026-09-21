@@ -6,10 +6,10 @@
 # Analyze a directory and print the result
 phploc <path_to_directory>
 
-# Include only specific files from a comma-separated list (globs are allowed)
+# Include only specific files from a comma-separated list (`glob`s are allowed)
 phploc <path_to_directory> --names '<path_to_file1_path_to_file2____>'
 
-# Exclude specific files from a comma-separated list (globs are allowed)
+# Exclude specific files from a comma-separated list (`glob`s are allowed)
 phploc <path_to_directory> --names-exclude '<path_to_file1_path_to_file2____>'
 
 # Exclude a specific directory from analysis

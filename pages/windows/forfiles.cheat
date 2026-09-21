@@ -12,7 +12,7 @@ forfiles /p <path_to_directory>
 # Run the specified command for each file
 forfiles /c "<command>"
 
-# Search for files using a specific glob mask
+# Search for files using a specific `glob` mask
 forfiles /m <glob_pattern>
 
 # Search for files recursively

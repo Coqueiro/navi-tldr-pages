@@ -3,7 +3,7 @@
 
 % ludusavi, common
 
-# Backup games
+# Back up games
 ludusavi backup --path <path_to_backup>
 
 # Restore games

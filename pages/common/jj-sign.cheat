@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-sign.md
+
+% jj-sign, common
+
+# Sign revisions configured by the `revsets.sign` setting
+jj sign
+
+# Sign a specific revision
+jj sign <__r___revision_> <revset>
+
+# Sign multiple revisions
+jj sign <__r___revision_> <revset1> <__r___revision_> <revset2>
+
+# Sign revisions using a specific signing key
+jj sign --key <key_id> <__r___revision_> <revset>

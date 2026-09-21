@@ -9,7 +9,7 @@ readarray <array_name>
 # Read lines from a file and insert them in an array
 readarray < <path_to_file_txt> <array_name>
 
-# Remove [t]railing deliminators (newline by default)
+# Remove [t]railing delimiters (newline by default)
 readarray < <path_to_file_txt> -t <array_name>
 
 # Copy at most `n` lines

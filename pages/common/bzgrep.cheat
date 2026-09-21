@@ -6,7 +6,7 @@
 # Search for a pattern within a compressed file
 bzgrep "<search_pattern>" <path_to_file>
 
-# Recursively search files in a bzip2 compressed `.tar` archive for a pattern
+# Recursively search files in a `bzip2` compressed `.tar` archive for a pattern
 bzgrep <__r___recursive_> "<search_pattern>" <path_to_tar_file>
 
 # Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match

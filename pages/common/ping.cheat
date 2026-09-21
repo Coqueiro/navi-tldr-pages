@@ -12,7 +12,7 @@ ping -c <count> <host>
 # Ping host, specifying the interval in seconds between requests (default is 1 second)
 ping -i <seconds> <host>
 
-# Ping host without trying to lookup symbolic names for addresses
+# Ping host without trying to look up symbolic names for addresses
 ping -n <host>
 
 # Ping host and ring the bell when a packet is received (if your terminal supports it)

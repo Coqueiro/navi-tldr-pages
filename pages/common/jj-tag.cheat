@@ -21,7 +21,7 @@ jj tag <_s_set_> <tag_name> <__r___revision_> <revision> --allow-move
 # Delete a tag
 jj tag <_d_delete_> <tag_name>
 
-# Delete tags matching a glob pattern
+# Delete tags matching a `glob` pattern
 jj tag <_d_delete_> "<glob_v1__>"
 
 # Display help

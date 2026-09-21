@@ -3,10 +3,10 @@
 
 % pacstrap, linux
 
-# Install the `base` package, the Linux kernel and firmware for common hardware
+# Install the `base` package, the Linux kernel, and firmware for common hardware
 pacstrap <path_to_new_root> <base> <linux> <linux_firmware>
 
-# Install the `base` package, the Linux LTS kernel and `base-devel` build tools
+# Install the `base` package, the Linux LTS kernel, and `base-devel` build tools
 pacstrap <path_to_new_root> <base> <base_devel> <linux_lts>
 
 # Install packages and copy the host's Pacman config to the target

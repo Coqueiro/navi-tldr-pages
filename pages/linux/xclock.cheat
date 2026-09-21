@@ -9,7 +9,7 @@ xclock
 # Display a 24-hour digital clock with the hour and minute fields only
 xclock -digital -brief
 
-# Display a digital clock using an strftime format string (see strftime(3))
+# Display a digital clock using a strftime format string (see strftime(3))
 xclock -digital -strftime <format>
 
 # Display a 24-hour digital clock with the hour, minute, and second fields that updates every second

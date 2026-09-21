@@ -15,5 +15,5 @@ pdfgrep <__m___max_count_> <3> <__i___ignore_case_> '<_file_name>' <file_pdf>
 # Find pattern in files with a `.pdf` extension in the current directory recursively
 pdfgrep <__r___recursive_> <pattern>
 
-# Find pattern on files that match a specific glob in the current directory recursively
+# Find pattern on files that match a specific `glob` in the current directory recursively
 pdfgrep <__r___recursive_> --include '<_book_pdf>' <pattern>

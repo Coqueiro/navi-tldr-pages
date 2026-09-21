@@ -12,7 +12,7 @@ sudo tc <_q_qdisc_> <_a_add_> dev <eth0> root netem delay <mean_delay_ms>ms <del
 # Add package corruption/loss/duplication to a portion of packages
 sudo tc <_q_qdisc_> <_a_add_> dev <eth0> root netem <corruption_loss_duplication> <effect_percentage>%
 
-# Limit bandwidth, burst rate and max latency
+# Limit bandwidth, burst rate, and max latency
 sudo tc <_q_qdisc_> <_a_add_> dev eth0 root tbf rate <max_bandwidth_mb>mbit burst <max_burst_rate_kb>kbit latency <max_latency_before_drop_ms>ms
 
 # Show active traffic control policies

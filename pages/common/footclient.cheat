@@ -19,7 +19,7 @@ footclient <__F___fullscreen_>
 footclient <__w___window_size_pixels_> <width>x<height>
 
 # Start a terminal with the specified Wayland app id (default: `footclient`)
-footclient <__a___app_id_> <id>
+footclient <__a___app_id_> <app_id>
 
 # Override a configuration option
 footclient <__o___override_> <section>.<key>=<value>

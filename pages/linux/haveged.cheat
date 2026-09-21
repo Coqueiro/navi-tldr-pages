@@ -16,13 +16,13 @@ sudo haveged <__f___file_> <path_to_file>
 sudo haveged <__r___run_> <runlevel>
 
 # Set collection buffer size in kibibyte words
-sudo haveged <__b___buffer_> <buffersizeinKW>
+sudo haveged <__b___buffer_> <buffer_size_in_kw>
 
 # Insert a command to an already running `haveged` process or daemon
 sudo haveged <__c___command_> <command>
 
 # Set cache size in kibibyte words
-sudo haveged <__d___data_> <cachesizeinKW>
+sudo haveged <__d___data_> <cache_size_in_kw>
 
 # Set number of bytes to write to the output file
 sudo haveged <__n___number_> <byteamount>

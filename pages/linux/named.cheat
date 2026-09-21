@@ -9,7 +9,7 @@ named
 # Read a custom configuration file
 named -c <path_to_named_conf>
 
-# Use IPv4 or IPv6 only, even if the host machine is capable of utilising other protocols
+# Use IPv4 or IPv6 only, even if the host machine is capable of utilizing other protocols
 named <_4__6>
 
 # Listen for queries on a specific port instead of the default port 53

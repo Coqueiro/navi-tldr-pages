@@ -15,7 +15,7 @@ typos --diff <path_to_file_or_directory>
 # Check a file or directory, including hidden files and directories
 typos --hidden <path_to_file_or_directory>
 
-# Check a file or directory, ignoring files that match a specific glob pattern
+# Check a file or directory, ignoring files that match a specific `glob` pattern
 typos --exclude <pattern> <path_to_file_or_directory>
 
 # Write the current configuration to a specific file

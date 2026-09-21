@@ -6,7 +6,7 @@
 # Start the daemon with one or more [c]onfiguration files (read in order)
 babeld -c <path_to_ports_conf> -c <path_to_filters_conf> -c <path_to_interfaces_conf>
 
-# [D]eamonize after startup
+# [D]aemonize after startup
 babeld -D
 
 # Specify a [C]onfiguration command

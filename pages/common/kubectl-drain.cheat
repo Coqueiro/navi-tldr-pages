@@ -24,5 +24,5 @@ kubectl drain <node_name> --pod-selector <label_key>=<label_value>
 # Drain a node with a timeout
 kubectl drain <node_name> --timeout <duration>
 
-# Preview the drain operation without actually evicting pods (dry run)
+# Simulate the drain operation without actually evicting pods
 kubectl drain <node_name> --dry-run=<none_server_client>

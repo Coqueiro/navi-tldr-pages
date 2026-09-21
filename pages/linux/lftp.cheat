@@ -6,10 +6,10 @@
 # Connect to an FTP server
 lftp <__u___user_> <username> <ftp_example_com>
 
-# [Interactive] Download multiple files (glob expression)
+# [Interactive] Download multiple files (`glob` expression)
 mget <path_to___png>
 
-# [Interactive] Upload multiple files (glob expression)
+# [Interactive] Upload multiple files (`glob` expression)
 mput <path_to___zip>
 
 # [Interactive] Delete multiple files on the remote server

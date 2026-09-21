@@ -9,7 +9,7 @@ jj tag <_d_delete_> <tag_name>
 # Delete multiple tags
 jj tag <_d_delete_> {{tag1 tag2 ...}}
 
-# Delete tags matching a glob pattern
+# Delete tags matching a `glob` pattern
 jj tag <_d_delete_> "<glob_v1__>"
 
 # Delete tags matching a substring pattern

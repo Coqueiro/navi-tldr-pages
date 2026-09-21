@@ -15,5 +15,5 @@ b4 send --preview-to {{email_address1 email_address2 ...}}
 # Send a previously sent version of the series again
 b4 send --resend <version_number>
 
-# Perform a dry run without sending any mail
+# Simulate sending the path series without sending any mail
 b4 send <__d___dry_run_>

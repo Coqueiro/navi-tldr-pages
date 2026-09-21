@@ -12,7 +12,7 @@ jbang init <__t___template_>=<cli> <path_to_file_java>
 # Use `jshell` to explore and use a script and any dependencies in a REPL editor
 jbang run <__i___interactive_>
 
-# Setup a temporary project to edit a script in an IDE
+# Set up a temporary project to edit a script in an IDE
 jbang edit --open=<codium_code_eclipse_idea_netbeans_gitpod> <path_to_script_java>
 
 # Run a Java code snippet (Java 9 and later)

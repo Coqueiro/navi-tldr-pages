@@ -15,7 +15,7 @@ hx --tutor
 # Change the Helix theme
 <:>theme <theme_name>
 
-# Save and Quit
+# Save and quit
 <:>wq<Enter>
 
 # Force-quit without saving

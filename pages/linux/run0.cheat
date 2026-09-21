@@ -7,4 +7,4 @@
 run0 <command>
 
 # Run a command as another user and/or group
-run0 <__u___user_> <username_uid> <__g___group_> <group_name_gid> <command>
+run0 <__u___user_> <username_user_id> <__g___group_> <group_name_group_id> <command>

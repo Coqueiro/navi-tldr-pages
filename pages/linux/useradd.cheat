@@ -7,7 +7,7 @@
 sudo useradd <username>
 
 # Create a new user with the specified user ID
-sudo useradd <__u___uid_> <id> <username>
+sudo useradd <__u___uid_> <user_id> <username>
 
 # Create a new user with the specified shell
 sudo useradd <__s___shell_> <path_to_shell> <username>

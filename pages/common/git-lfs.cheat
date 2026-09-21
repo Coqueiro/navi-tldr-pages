@@ -6,7 +6,7 @@
 # Initialize Git LFS
 git lfs install
 
-# Track files that match a glob
+# Track files that match a `glob`
 git lfs track '<__bin>'
 
 # Change the Git LFS endpoint URL (useful if the LFS server is separate from the Git server)

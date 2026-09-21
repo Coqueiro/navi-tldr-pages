@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/aft-mtp-cli.md
+
+% aft-mtp-cli, common
+
+# List connected devices
+aft-mtp-cli <__l___device_list_>
+
+# Connect to a specific device by name
+aft-mtp-cli <__d___device_name_> <device_name>
+
+# Show debug output
+aft-mtp-cli <__v___verbose_>
+
+# Start interactive mode
+aft-mtp-cli <__i___interactive_>
+
+# Execute commands from a file in batch mode
+aft-mtp-cli <__b___batch_> <__f___input_file_> <path_to_file>
+
+# Display help
+aft-mtp-cli <__h___help_>
+
+# Display version
+aft-mtp-cli <__V___version_>

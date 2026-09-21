@@ -12,7 +12,7 @@ html5validator --root <path_to_directory>
 # Show warnings as well as errors
 html5validator --show-warnings <path_to_file>
 
-# Match multiple files using a glob pattern
+# Match multiple files using a `glob` pattern
 html5validator --root <path_to_directory> --match "{{*.html *.php}}"
 
 # Ignore specific directory names

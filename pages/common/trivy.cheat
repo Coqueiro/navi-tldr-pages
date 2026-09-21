@@ -15,7 +15,7 @@ trivy image --ignore-unfixed <alpine_3_15>
 # Scan the filesystem for vulnerabilities and misconfigurations
 trivy fs --scanners <vuln_misconfig> <path_to_project_directory>
 
-# Scan a IaC (Terraform, CloudFormation, ARM, Helm, and Dockerfile) directory for misconfigurations
+# Scan an IaC (Terraform, CloudFormation, ARM, Helm, and Dockerfile) directory for misconfigurations
 trivy config <path_to_iac_directory>
 
 # Scan a local or remote Git repository for vulnerabilities

@@ -21,7 +21,7 @@ critique origin/<branch> HEAD
 # Review changes, automatically refreshing when files change
 critique --watch
 
-# Restrict the review to files matching a glob pattern
+# Restrict the review to files matching a `glob` pattern
 critique --filter "<src______ts>"
 
 # Generate an AI code review using a specific agent

@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gopls.md
+
+% gopls, common
+
+# Start the language server
+gopls serve
+
+# Show diagnostics for one or more files
+gopls check {{path/to/file1.go path/to/file2.go ...}}
+
+# Format one or more files in-place
+gopls format <__w__write_> {{path/to/file1.go path/to/file2.go ...}}
+
+# Add missing and remove unused imports in a file in-place
+gopls imports <__w__write_> <path_to_file_go>
+
+# Show the definition of the identifier at a specific line and column
+gopls definition <path_to_file_go>:<line>:<column>
+
+# List all references to the identifier at a specific line and column
+gopls references <path_to_file_go>:<line>:<column>
+
+# Rename the identifier at a specific line and column, writing the changes to the affected files
+gopls rename <__w__write_> <path_to_file_go>:<line>:<column> <new_name>
+
+# Display version
+gopls version

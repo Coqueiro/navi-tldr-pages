@@ -24,5 +24,5 @@ mv -Force <path_to_source> <path_to_target>
 # Prompt for confirmation before overwriting existing files, regardless of file permissions
 mv -Confirm <path_to_source> <path_to_target>
 
-# Move files in dry-run mode, showing files and directories which could be moved without executing them
+# Simulate moving files, showing the files and directories which could be moved without executing them
 mv -WhatIf <path_to_source> <path_to_target>

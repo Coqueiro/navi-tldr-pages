@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-unsign.md
+
+% jj-unsign, common
+
+# Drop the cryptographic signature from the working-copy commit
+jj unsign
+
+# Drop the signature from a specific revision
+jj unsign <__r___revision_> <revset>
+
+# Drop signatures from multiple revisions
+jj unsign <__r___revision_> <revset1> <__r___revision_> <revset2>

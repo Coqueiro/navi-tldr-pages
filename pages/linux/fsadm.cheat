@@ -6,7 +6,7 @@
 # Check a filesystem for errors
 fsadm check <_dev_vg_name_lv_name>
 
-# Perform a dry-run resize to a specific size (no changes made)
+# Simulate resizing to a specific size, without making any changes
 fsadm <__n___dry_run_> resize <_dev_vg_name_lv_name> <10G>
 
 # Grow a filesystem to fill the entire device (omit the size)

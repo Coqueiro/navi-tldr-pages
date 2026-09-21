@@ -15,7 +15,7 @@ sinfo <__p___partition_> <partition_name>
 # View information about idle nodes
 sinfo <__t___states_> <idle>
 
-# Summarise dead nodes
+# Summarize dead nodes
 sinfo <__d___dead_>
 
 # List dead nodes and the reasons why

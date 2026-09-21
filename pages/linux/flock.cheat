@@ -15,5 +15,5 @@ flock <__n___nonblock_> <__E___conflict_exit_code_> <123> <path_to_lock_lock> <c
 # Run a command with a file lock, waiting up to 10 seconds for the lock to be available before giving up
 flock <__w___timeout_> 10 <path_to_lock_lock> <command>
 
-# Backup a bunch of files, waiting for the previous `tar` command to finish if it's still running elsewhere and holding the same lock file (can be used in a `cron` job that runs often)
+# Back up a bunch of files, waiting for the previous `tar` command to finish if it's still running elsewhere and holding the same lock file (can be used in a `cron` job that runs often)
 flock <path_to_backup_lock> {{tar -cvf path/to/backup.tar path/to/data/}}

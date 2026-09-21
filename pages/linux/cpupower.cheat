@@ -3,9 +3,6 @@
 
 % cpupower, linux
 
-# List CPUs
-sudo cpupower <__c___cpu_> <all> info
-
 # Print information about all cores
 sudo cpupower <__c___cpu_> <all> info
 

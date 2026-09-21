@@ -15,7 +15,7 @@ helm install <package_name> <https___example_com_charts_packagename_1_2_3_tgz>
 # Install a helm chart and generate a name
 helm install <repository_name>/<chart_name> <__g___generate_name_>
 
-# Perform a dry run
+# Simulate an install without actually doing it
 helm install <name> <repository_name>/<chart_name> --dry-run
 
 # Install a helm chart with custom values

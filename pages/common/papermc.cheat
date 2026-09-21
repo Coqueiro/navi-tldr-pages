@@ -12,7 +12,7 @@ papermc stop
 # Restart a server
 papermc restart
 
-# Backup a world
+# Back up a world
 papermc backup
 
 # Restore world data from a backup

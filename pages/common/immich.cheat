@@ -15,7 +15,7 @@ immich upload <__r___recursive_> <path_to_directory>
 # Create an album based on a directory
 immich upload <__r___recursive_> <path_to_directory> <__A___album_name_> "{{My summer holiday}}"
 
-# Skip assets matching a glob pattern
+# Skip assets matching a `glob` pattern
 immich upload <__r___recursive_> <path_to_directory> <__i___ignore_> {{**/Raw/** **/*.tif}}
 
 # Include hidden files

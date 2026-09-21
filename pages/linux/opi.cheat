@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/opi.md
+
+% opi, linux
+
+# Search for a package
+opi <package>
+
+# Install media codecs
+opi codecs
+
+# Search for a package without running scripts
+opi -P <package>
+
+# Search for a package in non-interactive mode
+sudo opi -n <package>
+
+# Search for multiple packages
+opi -m {{package1 package2 ...}}

@@ -18,7 +18,7 @@ sudo tlp-stat <__c___config_>
 # Monitor [p]ower supply `udev` [ev]ents
 sudo tlp-stat <__P___pev_>
 
-# Show [p]ower [sup]ply diagonistics
+# Show [p]ower [sup]ply diagnostics
 sudo tlp-stat --psup
 
 # Show [t]emperatures and fan speed

@@ -15,5 +15,5 @@ textutil <path_to_file_rtf> -convert txt
 # Convert `file.txt` into `file.rtf`, using Times 10 for the font
 textutil -convert rtf -font Times -fontsize 10 <path_to_file_txt>
 
-# Load all RTF files in the current directory, concatenates their contents, and writes the result out as `index.html` with the HTML title set to "Several Files"
+# Load all RTF files in the current directory, concatenate their contents, and write the result out as `index.html` with the HTML title set to "Several Files"
 textutil -cat <html> -title "Several Files" -output <path_to_index_html> *.rtf

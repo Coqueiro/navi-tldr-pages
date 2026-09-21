@@ -6,7 +6,7 @@
 # Delete a specific S3 object
 aws s3 rm s3://<bucket_name>/<path_to_file>
 
-# Preview the deletion of a specific S3 object without deleting it (dry-run)
+# Simulate the deletion of a specific S3 object without deleting it
 aws s3 rm s3://<bucket_name>/<path_to_file> --dryrun
 
 # Delete an object from a specific S3 access point

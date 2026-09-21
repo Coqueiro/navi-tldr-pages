@@ -12,7 +12,7 @@ sudo nala remove <package>
 # Remove a package and its configuration files
 nala purge <package>
 
-# Search package names and descriptions using a word, `regex` (default) or glob
+# Search package names and descriptions using a word, `regex` (default) or `glob`
 nala search "<pattern>"
 
 # Update the list of available packages and upgrade the system

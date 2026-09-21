@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/winecfg.md
+
+% winecfg, linux
+
+# Open the graphical Wine configuration tool
+winecfg
+
+# Display the Windows [v]ersion the prefix currently emulates
+winecfg /v
+
+# Set the Windows [v]ersion the prefix emulates
+winecfg /v <win11_win10_win7_winxp____>
+
+# Display help
+winecfg /?
