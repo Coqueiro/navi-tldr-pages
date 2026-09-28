@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/podlet.md
+
+% podlet, linux
+
+# Generate the equivalent Quadlet for a podman command
+podlet <podman_command>
+
+# Generate a Quadlet with a custom name and a description
+podlet <__n___name_> <name> <__d___description_> <description> <podman_command>
+
+# Add startup dependency and ordering declarations to the generated Quadlet
+podlet <__i___install_> --wanted-by <unit> --after <unit> <podman_command>
+
+# Generate Quadlets from a compose file in the current directory
+podlet compose
+
+# Generate Quadlets for a compose file into the unit directory of the current user
+podlet <__u___unit_directory_> compose <path_to_compose_yaml>

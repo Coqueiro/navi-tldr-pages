@@ -3,10 +3,10 @@
 
 % gethelpcmd-outlookcalendarchecktask, windows
 
-# Analyse the calendar for the current, active profile, and accept this command's End-User License Agreement (EULA)
+# Analyze the calendar for the current, active profile, and accept this command's End-User License Agreement (EULA)
 GetHelpCmd.exe -S OutlookCalendarCheckTask -AcceptEula
 
-# Analyse calendar for a specific Outlook profile
+# Analyze calendar for a specific Outlook profile
 GetHelpCmd.exe -S OutlookCalendarCheckTask -AcceptEula -P <profile>
 
 # Analyze the calendar for a specific profile and save the logs to a specific directory

@@ -3,7 +3,7 @@
 
 % git-prune, common
 
-# Report what would be removed by Git prune without removing it
+# Simulate pruning, reporting what would be removed
 git prune <__n___dry_run_>
 
 # Prune unreachable objects and display what has been pruned to `stdout`

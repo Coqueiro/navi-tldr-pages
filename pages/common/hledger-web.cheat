@@ -6,7 +6,7 @@
 # Start the web app, and a browser if possible, for local viewing and adding only
 hledger-web
 
-# As above but with a specified file, and allow editing of existing data
+# Start the web app with a specific file, and allow editing of existing data
 hledger-web <__f___file_> <path_to_file_journal> --allow edit
 
 # Start just the web app, and accept incoming connections to the specified host and port

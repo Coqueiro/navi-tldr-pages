@@ -3,5 +3,5 @@
 
 % pueue-shutdown, common
 
-# Shutdown the daemon without a service manager
+# Shut down the daemon without a service manager
 pueue shutdown

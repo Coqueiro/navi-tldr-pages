@@ -15,5 +15,5 @@ sudo f5fpc --start --host <host_example_com> --username <user>
 # Show the current VPN status
 sudo f5fpc --info
 
-# Shutdown the VPN connection
+# Shut down the VPN connection
 sudo f5fpc --stop

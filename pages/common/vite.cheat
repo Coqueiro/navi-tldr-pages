@@ -3,14 +3,14 @@
 
 % vite, common
 
-# Setup using `npm` 6.x
+# Set up using `npm` 6.x
 npm create vite@latest my-react-app --template react-ts
 
-# Setup using `npm` 7+, extra double-dash is needed
+# Set up using `npm` 7+, extra double-dash is needed
 npm create vite@latest my-react-app -- --template react-ts
 
 # Set up using `yarn`
 yarn create vite my-react-app --template react-ts
 
-# Setup using `pnpm`
+# Set up using `pnpm`
 pnpm create vite my-react-app --template react-ts

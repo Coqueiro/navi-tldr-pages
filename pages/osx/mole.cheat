@@ -9,7 +9,7 @@ mole
 # Free up disk space
 mole clean
 
-# Preview cleanup without making changes
+# Simulate the cleanup without making changes
 mole clean --dry-run
 
 # Remove apps completely

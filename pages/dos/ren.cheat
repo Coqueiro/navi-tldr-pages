@@ -3,5 +3,5 @@
 
 % ren, dos
 
-# Rename file
+# Rename a file
 REN <path_to_file> <new_name>

@@ -6,7 +6,7 @@
 # List untagged images
 gcrane gc <repository>
 
-# Whether to recurse through repositories
+# Recurse through repositories
 gcrane gc <repository> <__r___recursive_>
 
 # Display help

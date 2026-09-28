@@ -6,7 +6,7 @@
 # Restore all files from a btrfs filesystem to a given directory
 sudo btrfs <_rest_restore_> <path_to_btrfs_device> <path_to_target_directory>
 
-# List (don't write) files to be restored from a btrfs filesystem
+# Simulate a restore, listing the files that would be restored from a btrfs filesystem
 sudo btrfs <_rest_restore_> <__D___dry_run_> <path_to_btrfs_device> <path_to_target_directory>
 
 # Restore files matching a given `regex` ([c]ase-insensitive) files to be restored from a btrfs filesystem (all parent directories of target file(s) must match as well)

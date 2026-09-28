@@ -24,5 +24,5 @@ jj gerrit upload --reviewer <reviewer_example_com> --cc <cc_example_com>
 # Upload while suppressing non-essential output
 jj gerrit upload --quiet
 
-# Preview what would be uploaded without pushing to Gerrit
+# Simulate an upload, showing what would be uploaded without pushing to Gerrit
 jj gerrit upload <__n___dry_run_>

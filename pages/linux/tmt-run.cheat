@@ -24,5 +24,5 @@ tmt run <__c___context_> <key_value> <__c___context_> <distro_fedora>
 # Run tests interactively (debug test code in the middle of a test)
 tmt run <__a___all_> execute <__h___how_> <tmt> --interactive
 
-# Use dry mode to see what actions would happen and use the highest verbosity
+# Simulate a run to see what actions would happen with the highest verbosity
 tmt run <__n___dry_> {{[-vvv|--verbose --verbose --verbose]}}

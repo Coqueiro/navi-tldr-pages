@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jj-workspace-root.md
+
+% jj-workspace-root, common
+
+# Print the root directory of the current workspace
+jj workspace root
+
+# Print the root directory of a specific workspace
+jj workspace root --name <workspace_name>

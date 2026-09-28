@@ -3,10 +3,10 @@
 
 % clangd, common
 
-# Display available options
+# Display help
 clangd --help
 
-# List of available options
+# Display help without grouping
 clangd --help-list
 
 # Display version

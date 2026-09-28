@@ -6,8 +6,8 @@
 # Download the contents of a URL to a file (named "foo" in this case)
 wget <https___example_com_foo>
 
-# Download the contents of a URL to a file (named "bar" in this case)
-wget <__O___output_document_> <bar> <https___example_com_foo>
+# Download the contents of a URL to a specific file
+wget <__O___output_document_> <path_to_file> <https___example_com_foo>
 
 # Download a single web page and all its resources with 3-second intervals between requests (scripts, stylesheets, images, etc.)
 wget {{[-pkw|--page-requisites --convert-links --wait]}} 3 <https___example_com_some_page_html>

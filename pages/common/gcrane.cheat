@@ -3,7 +3,7 @@
 
 % gcrane, common
 
-# Login to a registry
+# Log in to a registry
 gcrane auth login <registry> <__u___username_> <user> <__p___password_> <password>
 
 # List tags, manifests, and sub-repositories

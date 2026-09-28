@@ -9,7 +9,7 @@ MOUNT C .
 # Mount specific directory as C
 MOUNT C <C__path_to_directory>
 
-# Mount with free space limit (MB)
+# Mount with a free space limit (in MB)
 MOUNT C <C__path_to_directory> -freesize <1024>
 
 # Mount floppy drive

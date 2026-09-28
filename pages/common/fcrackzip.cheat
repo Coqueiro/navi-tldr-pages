@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fcrackzip.md
+
+% fcrackzip, common
+
+# Perform a dictionary attack using a wordlist
+fcrackzip <__D___dictionary_> <__p___init_password_> <path_to_wordlist_txt> <path_to_file_zip>
+
+# Perform a dictionary attack with verbose output and verify password guesses
+fcrackzip <__v___verbose_> <__u___use_unzip_> <__D___dictionary_> <__p___init_password_> <path_to_wordlist_txt> <path_to_file_zip>
+
+# Brute-force a password using lowercase letters within a length range
+fcrackzip <__b___brute_force_> <__c___charset_> a <__l___length_> <min>-<max> <path_to_file_zip>
+
+# Brute-force a password using lowercase letters and digits
+fcrackzip <__b___brute_force_> <__c___charset_> a1 <path_to_file_zip>

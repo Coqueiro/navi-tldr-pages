@@ -3,7 +3,7 @@
 
 % pamditherbw, common
 
-# Read a PGM image, apply dithering and save it to a file
+# Read a PGM image, apply dithering, and save it to a file
 pamditherbw <path_to_image_pgm> > <path_to_file_pgm>
 
 # Use the specified quantization method

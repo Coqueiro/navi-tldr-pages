@@ -3,7 +3,7 @@
 
 % pbmtoescp2, common
 
-# Convert a PBM image to a ESC/P2 printer file
+# Convert a PBM image to an ESC/P2 printer file
 pbmtoescp2 <path_to_image_pbm> > <path_to_output_escp2>
 
 # Specify the compression of the output

@@ -6,7 +6,7 @@
 # Push local image to remote registry
 crane push <path_to_tarball> <image_name>
 
-# Path to file with list of published image references
+# Write a list of published image references to a file
 crane push <path_to_tarball> <image_name> --image-refs <path_to_file>
 
 # Push a collection of images as a single index (required if path has multiple images)

@@ -12,5 +12,5 @@ getopt <__o___options_> f: <__l___longoptions_> file: -- --file=somefile
 # Add a `--verbose` option with an optional argument with shorthand `-v`, and pass a non-option parameter `arg`
 getopt <__o___options_> v:: <__l___longoptions_> verbose:: -- --verbose arg
 
-# Accept a `-r` and `--verbose` flag, a `--accept` option with an optional argument and add a `--target` with a required argument option with shorthands
+# Accept a `-r` and `--verbose` flag, a `--accept` option with an optional argument, and add a `--target` with a required argument option with shorthands
 getopt <__o___options_> rv::s::t: <__l___longoptions_> verbose,source::,target: -- -v --target target

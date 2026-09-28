@@ -18,7 +18,7 @@ rclone copy <__i___interactive_> --max-age 24h <remote_name>:<path_to_directory>
 # Mirror a specific file or directory (Note: Unlike copy, sync removes files from the remote if it does not exist locally)
 rclone sync <path_to_file_or_directory> <remote_name>:<path_to_directory>
 
-# Delete a remote file or directory (Note: `--dry-run` means test, remove it from the command to actually delete)
+# Simulate deleting a remote file or directory (remove `--dry-run` from the command to actually delete)
 rclone <__n___dry_run_> delete <remote_name>:<path_to_file_or_directory>
 
 # Mount rclone remote (experimental)

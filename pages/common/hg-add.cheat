@@ -15,5 +15,5 @@ hg add <__X___exclude_> <pattern>
 # Recursively add sub-repositories
 hg add <__S___subrepos_>
 
-# Perform a test-run without performing any actions
+# Simulate adding files without performing any actions
 hg add <__n___dry_run_>

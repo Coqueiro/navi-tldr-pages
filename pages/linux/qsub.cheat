@@ -6,7 +6,7 @@
 # Submit a script with default settings (depends on TORQUE settings)
 qsub <script_sh>
 
-# Submit a script with a specified wallclock runtime limit of 1 hour, 2 minutes and 3 seconds
+# Submit a script with a specified wallclock runtime limit of 1 hour 2 minutes and 3 seconds
 qsub -l walltime=<1>:<2>:<3> <script_sh>
 
 # Submit a script that is executed on 2 nodes using 4 cores per node

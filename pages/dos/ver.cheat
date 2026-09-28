@@ -3,5 +3,5 @@
 
 % ver, dos
 
-# Set version
+# Set the reported DOS version
 VER set <major_version> <minor_version>

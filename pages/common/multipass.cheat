@@ -6,7 +6,7 @@
 # List the aliases that can be used to launch an instance
 multipass find
 
-# Launch a new instance, set its name and use a cloud-init configuration file
+# Launch a new instance, set its name, and use a cloud-init configuration file
 multipass launch <__n___name_> <instance_name> --cloud-init <configuration_file>
 
 # List all the created instances and some of their properties

@@ -3,7 +3,7 @@
 
 % socat, common
 
-# Listen to a port, wait for an incoming connection and transfer data to STDIO
+# Listen to a port, wait for an incoming connection, and transfer data to STDIO
 sudo socat - TCP-LISTEN:8080,fork
 
 # Listen on a port using SSL and print to `stdout`

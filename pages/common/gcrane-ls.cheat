@@ -9,7 +9,7 @@ gcrane ls <repository>
 # Format response from the registry as JSON
 gcrane ls <repository> --json
 
-# Whether to recurse through repositories
+# Recurse through repositories
 gcrane ls <repository> <__r___recursive_>
 
 # Display help

@@ -9,5 +9,5 @@ DIR
 # Pause per page
 DIR /p
 
-# Wide view
+# List files in wide format
 DIR /w

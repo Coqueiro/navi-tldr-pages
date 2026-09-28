@@ -6,7 +6,7 @@
 # Remove spaces and other undesirable characters from a file's name
 detox <path_to_file>
 
-# Show how detox would rename all the files in a directory tree
+# Simulate renaming all the files in a directory tree, showing how they would be renamed
 detox <__n___dry_run_> -r <path_to_directory>
 
 # Remove spaces and other undesirable characters from all files in a directory tree

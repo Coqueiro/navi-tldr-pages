@@ -10,4 +10,4 @@
 dir ?
 
 # Show what IP information is viewable
-ip show ?
+show ip ?

@@ -9,7 +9,7 @@ compseq <path_to_file_fasta>
 # Count observed frequencies of amino acid pairs from a FASTA file, save output to a text file
 compseq <path_to_input_protein_fasta> -word 2 <path_to_output_file_comp>
 
-# Count observed frequencies of hexanucleotides from a FASTA file, save output to a text file and ignore zero counts
+# Count observed frequencies of hexanucleotides from a FASTA file, save output to a text file, and ignore zero counts
 compseq <path_to_input_dna_fasta> -word 6 <path_to_output_file_comp> -nozero
 
 # Count observed frequencies of codons in a particular reading frame; ignoring any overlapping counts (i.e. move window across by word-length 3)

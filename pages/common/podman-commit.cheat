@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/podman-commit.md
+
+% podman-commit, common
+
+# Create an image from a specific container
+podman commit <container> <image>:<tag>
+
+# Apply an `ENV` instruction to the created image
+podman commit <__c___change_> "ENV <name>=<value>" <container> <image>:<tag>
+
+# Apply `LABEL`, `ENTRYPOINT`, and `CMD` instruction to the created image
+podman commit <__c___change_> CMD=<command> <__c___change_> ENTRYPOINT=<command> <__c___change_> "LABEL <key>=<value>" <container> <image>:<tag>
+
+# Create an image with a specific author and comment in the metadata
+podman commit <__a___author_> "<author>" <__m___message_> "<comment>" <container> <image>:<tag>
+
+# Create an image without pausing the container during commit
+podman commit <__p___pause_> false <container> <image>:<tag>
+
+# Display help
+podman commit --help

@@ -6,7 +6,7 @@
 # Import new transactions from `bank.csv`, using `bank.csv.rules` to convert
 hledger import <path_to_bank_csv>
 
-# Show what would be imported from these two files, without doing anything
+# Simulate importing from these two files, showing what would be imported
 hledger import <path_to_bank1_csv> <path_to_bank2_csv> --dry-run
 
 # Import new transactions from all CSV files, using the same rules for all

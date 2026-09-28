@@ -6,7 +6,7 @@
 # List all properties in one's active configuration
 gcloud config list
 
-# Login to a Google account
+# Log in to a Google account
 gcloud auth login
 
 # Set the active project

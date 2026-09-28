@@ -15,5 +15,8 @@ pacman-mirrors --get-branch
 # Switch to a different branch
 sudo pacman-mirrors --api --set-branch <stable_unstable_testing>
 
-# Generate a mirrorlist, only using mirrors in your country
-sudo pacman-mirrors --geoip
+# List available countries
+pacman-mirrors --country-list
+
+# Generate a mirrorlist using only mirrors in specific countries
+sudo pacman-mirrors --country <United_States_France_Germany____>

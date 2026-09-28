@@ -9,7 +9,7 @@ topgrade
 # Say yes to all updates
 topgrade <__y___yes_>
 
-# Cleanup temporary/old files
+# Clean up temporary/old files
 topgrade <__c___cleanup_>
 
 # Disable a certain update operation

@@ -12,7 +12,7 @@ sudo nixos-rebuild switch <__p___profile_name_> <name>
 # Build and switch to the new configuration, making it the boot default and installing updates
 sudo nixos-rebuild switch --upgrade
 
-# Rollback changes to the configuration, switching to the previous generation
+# Roll back changes to the configuration, switching to the previous generation
 sudo nixos-rebuild switch --rollback
 
 # Build the new configuration and make it the boot default without switching to it

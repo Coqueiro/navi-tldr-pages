@@ -12,7 +12,7 @@ uv lock --check
 # Assert that a lockfile exists without checking if it's current
 uv lock --check-exists
 
-# Preview what would be locked without writing the lockfile
+# Simulate locking, showing what would be locked without writing the lockfile
 uv lock --dry-run
 
 # Lock a specific Python script instead of the current project

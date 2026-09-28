@@ -18,5 +18,5 @@ aws s3 sync <path_to_directory> s3://<bucket_name> --exclude <path_to_file> --ex
 # Remove file from bucket
 aws s3 rm s3://<bucket>/<path_to_file>
 
-# Preview changes only
+# Simulate a command without making any changes
 aws s3 <any_command> --dryrun

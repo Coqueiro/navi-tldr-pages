@@ -15,5 +15,5 @@ quarto render <path_to_file_ext> --to <html_pdf_docx>
 # Render and preview a document or a website
 quarto preview <path_to_destination_directory_path_to_file>
 
-# Publish a document or project to Quarto Pub, Github Pages, RStudio Connect, or Netlify
+# Publish a document or project to Quarto Pub, GitHub Pages, RStudio Connect, or Netlify
 quarto publish <quarto_pub_gh_pages_connect_netlify>

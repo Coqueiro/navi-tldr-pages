@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mold.md
+
+% mold, common
+
+# Run a build command such as `make`, `ninja`, or `cargo`, with `mold` used in place of `ld`
+mold --run <command> <arguments>
+
+# Link object files into an executable
+mold {{path/to/file1.o path/to/file2.o ...}} <__o___output_> <path_to_output_executable>
+
+# Link object files into a shared library
+mold --shared {{path/to/file1.o path/to/file2.o ...}} <__o___output_> <path_to_library_so>
+
+# Link an object file with a library located in a specific directory
+mold <path_to_file_o> <__L___library_path_> <path_to_library_directory> -l<library_name>
+
+# Print which input files depend on which others for each symbol
+mold --print-dependencies {{path/to/file1.o path/to/file2.o ...}} <__o___output_> <path_to_output_executable>

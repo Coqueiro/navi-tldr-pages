@@ -9,7 +9,7 @@ uv self update
 # Update `uv` to a specific version
 uv self update <0_4_0>
 
-# Check for available `uv` updates without installing
+# Simulate an update, checking for available `uv` updates without installing them
 uv self update --dry-run
 
 # Update `uv` with verbose output

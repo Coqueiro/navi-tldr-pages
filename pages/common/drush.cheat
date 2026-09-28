@@ -3,11 +3,11 @@
 
 % drush, common
 
-# Enable module "foo"
-drush en <foo>
+# Enable a module
+drush en <module_name>
 
-# Uninstall module "foo"
-drush pmu <foo>
+# Uninstall a module
+drush pmu <module_name>
 
 # Clear all caches
 drush cr

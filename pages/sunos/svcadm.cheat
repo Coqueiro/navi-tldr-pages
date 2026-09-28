@@ -6,7 +6,7 @@
 # Enable a service in the service database
 svcadm enable <service_name>
 
-# Disable service
+# Disable a service
 svcadm disable <service_name>
 
 # Restart a running service

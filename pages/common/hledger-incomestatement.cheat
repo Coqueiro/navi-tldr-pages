@@ -12,5 +12,5 @@ hledger <_is_incomestatement_> <__M___monthly_>
 # Show monthly revenues/expenses/totals, largest first, summarized to 2 levels
 hledger <_is_incomestatement_> {{[-MTAS|--monthly --row-total --average --sort-amount]}} {{[-2|--depth 2]}}
 
-# Same as above, and generate HTML output in `is.html`
+# Show monthly revenues/expenses/totals summarized to 2 levels, and generate HTML output in `is.html`
 hledger <_is_incomestatement_> {{[-MTAS|--monthly --row-total --average --sort-amount]}} {{[-2|--depth 2]}} <__o___output_file_> is.html

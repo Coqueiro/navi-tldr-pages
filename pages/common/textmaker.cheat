@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/textmaker.md
+
+% textmaker, common
+
+# Launch the word processor application with a new blank document
+textmaker
+
+# Open an existing file with TextMaker
+textmaker <path_to_file_tmdx>
+
+# Launch TextMaker with [N]o open documents
+textmaker -N

@@ -3,7 +3,7 @@
 
 % reg-save, windows
 
-# Save a registry key, its subkeys and values to a specific file
+# Save a registry key, its subkeys, and values to a specific file
 reg save <key_name> <path_to_file_hiv>
 
 # Forcefully (assuming [y]es) overwrite an existing file

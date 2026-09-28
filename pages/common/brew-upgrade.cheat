@@ -9,7 +9,7 @@ brew upgrade
 # Upgrade a specific formula/cask
 brew upgrade <formula_cask>
 
-# Print what would be upgraded, but don't actually upgrade anything
+# Simulate an upgrade, printing what would be upgraded
 brew upgrade <__n___dry_run_>
 
 # Upgrade all outdated packages without asking for confirmation

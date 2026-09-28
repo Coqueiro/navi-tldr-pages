@@ -18,7 +18,7 @@ limactl shell <vm_name>
 # Run a command inside a VM
 limactl shell <vm_name> <command>
 
-# Stop/shutdown a VM
+# Stop/shut down a VM
 limactl stop <vm_name>
 
 # Delete a VM

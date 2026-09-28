@@ -9,7 +9,7 @@ IPXNET startserver
 # Start server on specific port
 IPXNET startserver <19900>
 
-# Connect client to server IP
+# Connect as a client to a server IP
 IPXNET connect <192_168_2_100>
 
 # Connect with specific port

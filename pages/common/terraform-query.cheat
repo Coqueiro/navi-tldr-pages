@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-query.md
+
+% terraform-query, common
+
+# Query infrastructure using `.tfquery.hcl` files in the current directory
+terraform query
+
+# Query and generate import blocks and resource configuration
+terraform query -generate-config-out <path_to_generated_tf>
+
+# Specify values for input variables defined in the query file
+terraform query -var '<name1>=<value1>' -var '<name2>=<value2>'
+
+# Specify values for input variables from a file
+terraform query -var-file <path_to_file_tfvars>
+
+# Output results in JSON format
+terraform query -json

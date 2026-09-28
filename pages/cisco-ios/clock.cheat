@@ -3,8 +3,8 @@
 
 % clock, cisco-ios
 
-# Enter privileged execution mode
-clock set <23>:<59>:<59> <31> <april> <2000>
+# Set the current date and time
+clock set <23>:<59>:<59> <30> <april> <2000>
 
 # Auto negotiate with the far end of the link, defaulting to active-clock
 clock active prefer

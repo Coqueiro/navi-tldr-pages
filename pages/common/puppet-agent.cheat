@@ -12,7 +12,7 @@ puppet agent
 # Run the agent once in the foreground, then exit
 puppet agent --test
 
-# Run the agent in dry-mode
+# Simulate running the agent without applying any changes
 puppet agent --test --noop
 
 # Log every resource being evaluated (even if nothing is being changed)

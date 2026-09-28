@@ -18,7 +18,7 @@ firejail --list
 # List network activity from running sandboxes
 firejail --netstats
 
-# Shutdown a running sandbox
+# Shut down a running sandbox
 firejail --shutdown=<7777>
 
 # Run a restricted Firefox session to browse the internet

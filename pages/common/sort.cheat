@@ -18,7 +18,7 @@ sort <__n___numeric_sort_> <path_to_file>
 # Sort `/etc/passwd` by the 3rd field onward of each line numerically, using `:` as a field separator
 sort <__t___field_separator_> : <__k___key_> 3n /etc/passwd
 
-# As above, but when items in the 3rd field are equal, sort by the 4th field by numbers with exponents
+# Sort `/etc/passwd` numerically by the 3rd field, and when items in the 3rd field are equal, sort by the 4th field by numbers with exponents
 sort <__t___field_separator_> : <__k___key_> 3,3n <__k___key_> 4,4g /etc/passwd
 
 # Sort a file preserving only unique lines

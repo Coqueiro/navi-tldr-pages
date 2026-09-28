@@ -6,7 +6,7 @@
 # Scan for new disks
 devfsadm -c disk
 
-# Cleanup any dangling `/dev` links and scan for new device
+# Clean up any dangling `/dev` links and scan for new devices
 devfsadm -C -v
 
 # Simulate what would happen but make no modifications

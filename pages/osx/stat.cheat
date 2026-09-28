@@ -6,7 +6,7 @@
 # Show file properties such as size, permissions, creation date, and access date among others
 stat <path_to_file>
 
-# Same as above but verbose (more similar to Linux's `stat`)
+# Show file properties verbosely (more similar to Linux's `stat`)
 stat -x <path_to_file>
 
 # Show only octal file permissions

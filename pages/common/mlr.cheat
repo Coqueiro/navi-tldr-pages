@@ -16,10 +16,10 @@ mlr --icsv --opprint sort -f <field> <example_csv>
 mlr --icsv --opprint sort -nr <field> <example_csv>
 
 # Convert CSV to JSON, performing calculations, and display those calculations
-mlr --icsv --ojson put '$<newField1> = $<oldFieldA>/$<oldFieldB>' <example_csv>
+mlr --icsv --ojson put '$<new_field1> = $<old_field_a>/$<old_field_b>' <example_csv>
 
 # Receive JSON and format the output as vertical JSON
 {{echo '{"key1":"value1", "key2":"value2"}'}} | mlr --ijson --ojson --jvstack cat
 
 # Filter lines of a compressed CSV file treating numbers as [S]trings
-mlr --prepipe 'gunzip' <__c___csv_> filter <__S___infer_none_> '$<fieldName> =~ "<regex>"' <example_csv_gz>
+mlr --prepipe 'gunzip' <__c___csv_> filter <__S___infer_none_> '$<field_name> =~ "<regex>"' <example_csv_gz>

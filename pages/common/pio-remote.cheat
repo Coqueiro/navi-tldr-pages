@@ -18,7 +18,7 @@ pio remote --agent <agent_name> device monitor
 # Run all targets on a specified Agent
 pio remote --agent <agent_name> run
 
-# Update installed core packages, development platforms and global libraries on a specific Agent
+# Update installed core packages, development platforms, and global libraries on a specific Agent
 pio remote --agent <agent_name> update
 
 # Run all tests in all environments on a specific Agent

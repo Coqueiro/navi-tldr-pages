@@ -12,5 +12,5 @@ mr <__j___jobs_> <5> update
 # Print the status of all repositories
 mr status
 
-# Checkout all repositories to the latest version
+# Check out all repositories to the latest version
 mr checkout

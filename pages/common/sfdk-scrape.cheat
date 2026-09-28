@@ -6,7 +6,7 @@
 # Save source modifications as patches
 sfdk scrape
 
-# Preview the list of commits to be scrapped
+# Simulate saving modifications as patches, listing the commits that would be converted
 sfdk scrape <__n___dry_run_>
 
 # Scrape while preserving the original patches file names

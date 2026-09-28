@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/qsv.md
+
+% qsv, common
+
+# Count the rows in a CSV file
+qsv count <path_to_file_csv>
+
+# Select specific columns from a CSV file
+qsv select <column1_column2____> <path_to_file_csv>
+
+# Filter rows containing a `regex` or literal text
+qsv search <regex_or_text> <path_to_file_csv>
+
+# Sort a CSV file by one or more columns
+qsv sort <__s___select_> <column1_column2____> <path_to_file_csv>
+
+# Compute summary statistics and infer data types for each column
+qsv stats <path_to_file_csv>
+
+# Display help
+qsv --help
+
+# Display version
+qsv --version

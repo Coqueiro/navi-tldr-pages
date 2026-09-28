@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/planmaker.md
+
+% planmaker, common
+
+# Launch the spreadsheet application with a new blank document
+planmaker
+
+# Open an existing file with PlanMaker
+planmaker <path_to_file_pmdx>
+
+# Launch PlanMaker with [N]o open documents
+planmaker -N

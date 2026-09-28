@@ -3,7 +3,7 @@
 
 % hf, common
 
-# Login to Hugging Face Hub
+# Log in to Hugging Face Hub
 hf auth login
 
 # Display the name of the logged in user

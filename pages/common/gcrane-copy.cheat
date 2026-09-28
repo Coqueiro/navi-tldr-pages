@@ -9,7 +9,7 @@ gcrane <_cp_copy_> <source> <target>
 # Set the maximum number of concurrent copies, defaults to 20
 gcrane copy <source> <target> <__j___jobs_> <nr_of_copies>
 
-# Whether to recurse through repositories
+# Recurse through repositories
 gcrane copy <source> <target> <__r___recursive_>
 
 # Display help

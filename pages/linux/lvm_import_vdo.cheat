@@ -9,7 +9,7 @@ lvm_import_vdo <_dev_mapper_vdo_volume>
 # Import and set the destination VG/LV name
 lvm_import_vdo <__n___name_> <vg_name_lv_name> <_dev_mapper_vdo_volume>
 
-# Show what would be done without changing anything
+# Simulate the import, showing what would be done without changing anything
 lvm_import_vdo --dry-run <_dev_mapper_vdo_volume>
 
 # Convert in place without using a temporary snapshot (less safe)

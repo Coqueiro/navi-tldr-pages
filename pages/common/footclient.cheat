@@ -3,7 +3,7 @@
 
 % footclient, common
 
-# Start a new terminal window, wait until the window is closed and return its exit code
+# Start a new terminal window, wait until the window is closed, and return its exit code
 footclient
 
 # Start a new terminal window and exit immediately

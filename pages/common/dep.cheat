@@ -9,7 +9,7 @@ dep init
 # Deploy an application to a remote host
 dep deploy <hostname>
 
-# Rollback to the previous working release
+# Roll back to the previous working release
 dep rollback
 
 # Connect to a remote host via SSH

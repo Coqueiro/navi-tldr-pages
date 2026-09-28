@@ -21,7 +21,7 @@ http <__a___auth_> <username_password_token> <__A___auth_type_> <basic_digest_be
 # Simulate sending a request without actually sending it
 http --offline <GET_DELETE____> <https___example_com>
 
-# Use named sessions for persistent custom headers, auth credentials and cookies
+# Use named sessions for persistent custom headers, auth credentials, and cookies
 http --session <session_name_path_to_session_json> <__a___auth_> <username>:<password> <https___example_com_auth> <API_KEY_xxx>
 
 # Upload a file to a form (the example below assumes that the form field is `<input type="file" name="cv" />`)

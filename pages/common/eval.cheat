@@ -7,4 +7,4 @@
 eval "{{echo foo}}"
 
 # Set a variable in the current shell
-eval "<foo_bar>"
+eval "<variable_name_value>"

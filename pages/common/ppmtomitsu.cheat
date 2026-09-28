@@ -6,7 +6,7 @@
 # Convert a PPM image to a MITSU file
 ppmtomitsu <path_to_file_ppm> > <path_to_file_mitsu>
 
-# Enlarge the image by the specified factor, use the specified sharpness and produce `n` copies
+# Enlarge the image by the specified factor, use the specified sharpness, and produce `n` copies
 ppmtomitsu <__e__enlarge_> <1_2_3> <__s__sharpness_> <1_2_3_4> <__c__copy_> <n> <path_to_file_ppm> > <path_to_file_mitsu>
 
 # Use the given medium for the printing process

@@ -3,11 +3,11 @@
 
 % xmllint, common
 
-# Return all nodes (tags) named "foo"
-xmllint --xpath "//<foo>" <source_file_xml>
+# Return all nodes (tags) with a specific name
+xmllint --xpath "//<node_name>" <source_file_xml>
 
-# Return the contents of the first node named "foo" as a string
-xmllint --xpath "string(//<foo>)" <source_file_xml>
+# Return the contents of the first node with a specific name as a string
+xmllint --xpath "string(//<node_name>)" <source_file_xml>
 
 # Return the href attribute of the second anchor element in an HTML file
 xmllint --html --xpath "string(//a[2]/@href)" webpage.xhtml

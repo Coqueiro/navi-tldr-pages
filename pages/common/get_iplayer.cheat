@@ -15,7 +15,7 @@ get_iplayer "https://www.bbc.co.uk/iplayer/episode/<program_pid>/<name_of_show_e
 # Download subtitles for a program by results of search
 get_iplayer "<program_name>" --subtitles-only
 
-# Search for a program, record it and download subtitles
+# Search for a program, record it, and download subtitles
 get_iplayer "<program_name>" <__g___get_> --subtitles
 
 # Display help

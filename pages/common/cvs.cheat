@@ -9,7 +9,7 @@ cvs -d <path_to_repository> init
 # Add a project to the repository
 cvs import -m "<message>" <project_name> <version> <vendor>
 
-# Checkout a project
+# Check out a project
 cvs checkout <project_name>
 
 # Show changes made to files

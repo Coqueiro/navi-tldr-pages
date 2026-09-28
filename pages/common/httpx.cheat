@@ -3,7 +3,7 @@
 
 % httpx, common
 
-# Run a probe against a [u]RL, host, IP Address or subnet (CIDR notation) showing probe status
+# Run a probe against a [u]RL, host, IP Address, or subnet (CIDR notation) showing probe status
 httpx -probe <__u__target_> <url_host_ipaddress_subnet_with_cidr>
 
 # Run a probe against multiple hosts showing status code with input from `subfinder`

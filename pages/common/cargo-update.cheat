@@ -6,7 +6,7 @@
 # Update dependencies in `Cargo.lock` to the latest possible version
 cargo update
 
-# Display what would be updated, but don't actually write the lockfile
+# Simulate an update, displaying what would be updated without writing the lockfile
 cargo update <__n___dry_run_>
 
 # Update only the specified dependencies

@@ -3,7 +3,7 @@
 
 % railway, common
 
-# Login to a Railway account
+# Log in to a Railway account
 railway login
 
 # Link to an existing Project under a Railway account or team

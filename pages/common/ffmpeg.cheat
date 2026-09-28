@@ -12,7 +12,7 @@ ffmpeg -i <path_to_input_audio_flac> -ar 44100 -sample_fmt s16 <path_to_output_a
 # Save a video as GIF, scaling the height to 1000px and setting framerate to 15
 ffmpeg -i <path_to_video_mp4> <__vf__filter_v_> 'scale=-1:1000' -r 15 <path_to_output_gif>
 
-# Combine numbered images (`frame_1.jpg`, `frame_2.jpg`, etc) into a video or GIF
+# Combine numbered images (`frame_1.jpg`, `frame_2.jpg`, etc.) into a video or GIF
 ffmpeg -i <path_to_frame__d_jpg> -f image2 <video_mpg_video_gif>
 
 # Trim a video from a given start time mm:ss to an end time mm2:ss2 (omit the -to flag to trim till the end)

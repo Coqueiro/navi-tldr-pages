@@ -3,5 +3,5 @@
 
 % type, dos
 
-# Show file
+# Show a file
 TYPE <path_to_file_txt>

@@ -3,10 +3,10 @@
 
 % shutdown, windows
 
-# Shutdown the current machine
+# Shut down the current machine
 shutdown /s
 
-# Shutdown the current machine force-closing all apps
+# Shut down the current machine force-closing all apps
 shutdown /s /f
 
 # Restart the current machine immediately
@@ -24,5 +24,5 @@ shutdown /s /t <8>
 # Abort a shutdown sequence whose timeout is yet to expire
 shutdown /a
 
-# Shutdown a remote machine
+# Shut down a remote machine
 shutdown /m <__hostname>

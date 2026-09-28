@@ -6,7 +6,7 @@
 # Grow the root partition (/) to all available disk space
 systemd-repart
 
-# View changes without applying
+# Simulate repartitioning, showing the changes without applying them
 systemd-repart --dry-run yes
 
 # Grow root partition size to 10 gigabytes

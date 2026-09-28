@@ -3,7 +3,7 @@
 
 % propelauth, common
 
-# Login to PropelAuth using an API Key generated from <https://auth.propelauth.com/api_keys/personal>
+# Log in to PropelAuth using an API Key generated from <https://auth.propelauth.com/api_keys/personal>
 propelauth login
 
 # Set the default PropelAuth Project for the CLI. If no default project is set, the system will prompt for selecting a Project each time certain commands are run

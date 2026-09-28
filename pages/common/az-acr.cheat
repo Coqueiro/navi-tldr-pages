@@ -6,7 +6,7 @@
 # Create a managed container registry
 az acr create <__n___name_> <registry_name> <__g___resource_group_> <resource_group> --sku <sku>
 
-# Login to a registry
+# Log in to a registry
 az acr login <__n___name_> <registry_name>
 
 # Tag a local image for ACR

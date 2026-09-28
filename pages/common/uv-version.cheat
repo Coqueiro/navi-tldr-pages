@@ -12,7 +12,7 @@ uv version <1_2_3>
 # Bump the project version using semantic versioning
 uv version --bump <major_minor_patch>
 
-# Preview version changes without writing to `pyproject.toml`
+# Simulate a version bump without writing to `pyproject.toml`
 uv version --bump <patch> --dry-run
 
 # Update version for a specific package in a workspace

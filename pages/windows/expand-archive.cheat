@@ -9,5 +9,5 @@ Expand-Archive -Path <path_to_example_zip> -DestinationPath <path_to_extracted_f
 # Overwrite existing files
 Expand-Archive -Path <path_to_example_zip> -DestinationPath <path_to_extracted_files> -Force
 
-# Preview without extracting
+# Simulate extracting an archive without extracting anything
 Expand-Archive -Path <path_to_example_zip> -DestinationPath <path_to_extracted_files> -WhatIf

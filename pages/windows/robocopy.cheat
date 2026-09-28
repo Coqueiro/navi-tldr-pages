@@ -9,7 +9,7 @@ robocopy <path_to_source_directory> <path_to_destination_directory> <__jpg> <__b
 # Copy all files and subdirectories, including empty ones
 robocopy <path_to_source_directory> <path_to_destination_directory> /E
 
-# Mirror/Sync a directory, deleting anything not in source and include all attributes and permissions
+# Mirror/Sync a directory, deleting anything not in source, and include all attributes and permissions
 robocopy <path_to_source_directory> <path_to_destination_directory> /MIR /COPYALL
 
 # Copy all files and subdirectories, excluding source files that are older than destination files

@@ -3,7 +3,7 @@
 
 % glab-release, common
 
-# List releases in a Gitlab repository, limited to 30 items
+# List releases in a GitLab repository, limited to 30 items
 glab release list
 
 # Display information about a specific release

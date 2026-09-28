@@ -12,7 +12,7 @@ opencode uninstall <__c___keep_config_>
 # Uninstall and keep session data and snapshots
 opencode uninstall <__d___keep_data_>
 
-# Show what would be removed without removing
+# Simulate uninstalling, showing what would be removed
 opencode uninstall --dry-run
 
 # Skip confirmation prompts

@@ -3,5 +3,5 @@
 
 % rd, dos
 
-# Remove directory
+# Remove a directory
 RD <path_to_directory>

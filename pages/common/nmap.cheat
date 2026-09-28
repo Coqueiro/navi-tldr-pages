@@ -24,5 +24,5 @@ nmap --script "default and safe" <ip_or_host1_ip_or_host2____>
 # Scan for web servers running on standard [p]orts 80 and 443 using all available `http-*` NSE scripts
 nmap --script "http-*" <ip_or_host1_ip_or_host2____> -p 80,443
 
-# Attempt evading IDS/IPS detection by using an extremely slow scan (`-T0`), [D]ecoy source addresses, [f]ragmented packets, random data and other methods
+# Attempt evading IDS/IPS detection by using an extremely slow scan (`-T0`), [D]ecoy source addresses, [f]ragmented packets, random data, and other methods
 sudo nmap -T0 -D <decoy_ip1_decoy_ip2____> --source-port <53> -f --data-length <16> -Pn <ip_or_host>

@@ -7,7 +7,7 @@
 lychee <https___example_com>
 
 # Display a breakdown of error types
-lychee --format detailed <https___example_com>
+lychee <__f___format_> <compact_detailed_json_junit_markdown> <https___example_com>
 
 # Limit the amount of connections to prevent DDOS protection
 lychee --max-concurrency <5> <links_txt>
@@ -16,4 +16,4 @@ lychee --max-concurrency <5> <links_txt>
 grep <__r___recursive_> "<pattern>" | lychee -
 
 # Display help
-lychee --help
+lychee <__h___help_>
