@@ -22,7 +22,7 @@ docker system prune <__a___all_> --volumes
 docker system events
 
 # Display real-time events from containers streamed as valid JSON Lines
-docker system events <__f___filter_> 'type=container' --format '{{json .}}'
+docker system events <__f___filter_> 'type=container' --format '\{\{json .\}\}'
 
 # Display system-wide information
 docker system info

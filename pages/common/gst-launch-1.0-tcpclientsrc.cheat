@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-tcpclientsrc.md
+
+% gst-launch-1.0-tcpclientsrc, common
+
+# Receive data from a server on localhost
+gst-launch-1.0 tcpclientsrc ! <pipeline>
+
+# Receive data from a server
+gst-launch-1.0 tcpclientsrc host=<server_ip_address> ! <pipeline>

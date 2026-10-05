@@ -15,7 +15,7 @@
 # Set frames per second
 3d-ascii-viewer -f <fps> <path_to_model>.obj
 
-# Interactive mode
+# View a model in interactive mode
 3d-ascii-viewer --interactive <path_to_model>.obj
 
 # Display help

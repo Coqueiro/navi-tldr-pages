@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ifreload.md
+
+% ifreload, linux
+
+# Reload all network interface configurations
+sudo ifreload <__a___all_>
+
+# Reload a specific network interface
+sudo ifreload <interface>
+
+# Reload interfaces and print detailed output
+sudo ifreload <__v___verbose_>
+
+# Check the configuration without applying changes
+sudo ifreload <__c___currently_up_>

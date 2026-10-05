@@ -16,7 +16,7 @@ streamlink <example_com_stream> <best_worst>
 streamlink <__p___player_> <mpv> <example_com_stream> <best>
 
 # Skip a specific amount of time from the beginning of the stream. For live streams, this is a negative offset from the end of the stream (rewind)
-streamlink --hls-start-offset <_HH__MM_SS> <example_com_stream> <best>
+streamlink --hls-start-offset <HH_MM_SS> <example_com_stream> <best>
 
 # Skip to the beginning of a live stream, or as far back as possible
 streamlink --hls-live-restart <example_com_stream> <best>

@@ -18,5 +18,5 @@ mosh <remote_host> -- {{command -with -flags}}
 # Select Mosh UDP port (useful when `remote_host` is behind a NAT)
 mosh -p <124> <username>@<remote_host>
 
-# Usage when `mosh-server` binary is outside standard path
+# Connect to a remote server when the `mosh-server` binary is outside the standard path
 mosh --server=<path_to_mosh_server> <remote_host>

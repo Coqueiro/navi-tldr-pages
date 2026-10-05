@@ -3,7 +3,7 @@
 
 % tracepath, linux
 
-# A preferred way to trace the path to a host
+# Trace the path to a host using a specific destination port
 tracepath -p <33434> <host>
 
 # Specify the initial destination port, useful with non-standard firewall settings

@@ -16,7 +16,7 @@ zpaq <_x_extract_> <path_to_archive_zpaq>
 zpaq <_l_list_> <path_to_archive_zpaq>
 
 # Set the level of compression (higher means more compression but slower)
-zpaq <_a_add_> <path_to_archive_zpaq> -m<1_2_3_4_5> <path_to_file_or_directory>
+zpaq <_a_add_> <path_to_archive_zpaq> -m<1__5> <path_to_file_or_directory>
 
 # Extract the specified files from the archive that are not newer than the specified date
 zpaq <_x_extract_> <path_to_archive_zpaq> <path_in_archive_to_extract> -to <path_to_output> -until <YYYY_MM_DD>

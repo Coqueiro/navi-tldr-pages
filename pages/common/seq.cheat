@@ -12,6 +12,9 @@ seq 10 20
 # Print every 3rd number from 5 to 20
 seq 5 3 20
 
+# Print a reverse sequence from 10 to 1
+seq 10 -1 1
+
 # Separate the output with a space instead of a newline
 seq <__s___separator_> " " {{5 3 20}}
 

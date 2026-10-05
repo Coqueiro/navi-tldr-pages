@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/stripe-docs.md
+
+% stripe-docs, common
+
+# Read a documentation page by path
+stripe docs <_payments>
+
+# Read an API reference page by resource name
+stripe docs api <product>
+
+# Read an API reference page by HTTP method and path
+stripe docs api {{GET /v1/products}}
+
+# Read an API reference page for a webhook event
+stripe docs api <product_created>
+
+# Search documentation by keywords
+stripe docs search "{{payment intents}}"

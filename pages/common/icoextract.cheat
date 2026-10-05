@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/icoextract.md
+
+% icoextract, common
+
+# Extract the icons from an executable to an ICO file
+icoextract <path_to_input_exe> <path_to_output_ico>
+
+# Extract a specific icon by its index
+icoextract <__n___num_> <index> <path_to_input_exe> <path_to_output_ico>
+
+# Extract an icon by its resource ID
+icoextract <__i___id_> <resource_id> <path_to_input_exe> <path_to_output_ico>
+
+# Run with verbose/debug logging
+icoextract <__v___verbose_> <path_to_input_exe> <path_to_output_ico>
+
+# Display help
+icoextract <__h___help_>
+
+# Display version
+icoextract <__V___version_>

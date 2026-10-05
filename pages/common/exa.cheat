@@ -9,7 +9,7 @@ exa <__1___oneline_>
 # List all files, including hidden files
 exa <__a___all_>
 
-# Long format list (permissions, ownership, size, and modification date) of all files
+# List all files in long format (permissions, ownership, size, and modification date)
 exa <__l___long_> <__a___all_>
 
 # List files with the largest at the top

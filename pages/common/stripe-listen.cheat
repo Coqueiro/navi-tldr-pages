@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/stripe-listen.md
+
+% stripe-listen, common
+
+# Forward all events to a local endpoint
+stripe listen --forward-to "<localhost_3000_webhook>"
+
+# Forward only specific event types
+stripe listen --events "<payment_intent_succeeded_payment_intent_payment_failed>" --forward-to="<localhost_3000_webhook>"
+
+# Print events as JSON without forwarding
+stripe listen --print-json
+
+# Forward connect events to a separate local endpoint
+stripe listen --forward-to "<localhost_3000_webhook>" --forward-connect-to "<localhost_3000_connect_webhook>"
+
+# Skip SSL certificate verification when forwarding
+stripe listen --forward-to "<localhost_3000_webhook>" --skip-verify

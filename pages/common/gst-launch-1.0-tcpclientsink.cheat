@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-tcpclientsink.md
+
+% gst-launch-1.0-tcpclientsink, common
+
+# Send data to a server on localhost
+gst-launch-1.0 <pipeline> ! tcpclientsink
+
+# Send data to a server
+gst-launch-1.0 <pipeline> ! tcpclientsink host=<server_ip_address>

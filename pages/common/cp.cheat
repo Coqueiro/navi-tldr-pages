@@ -12,8 +12,8 @@ cp <path_to_source_file> <path_to_target_parent_directory>
 # Recursively copy a directory's contents to another location (if the destination exists, the directory is copied inside it)
 cp <__r___recursive_> <path_to_source_directory> <path_to_target_directory>
 
-# Copy a directory recursively, in verbose mode (shows files as they are copied)
-cp {{[-vr|--verbose --recursive]}} <path_to_source_directory> <path_to_target_directory>
+# Copy a directory recursively, in verbose mode (shows files as they are copied) and preserve permission, timestamps, and symlinks
+cp {{[-vra|--verbose --recursive --archive]}} <path_to_source_directory> <path_to_target_directory>
 
 # Copy multiple files at once to a directory
 cp <__t___target_directory_> <path_to_destination_directory> {{path/to/file1 path/to/file2 ...}}

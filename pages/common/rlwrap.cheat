@@ -9,7 +9,7 @@ rlwrap <command>
 # Use all words seen on input and output for prompt completion
 rlwrap <__r___remember_> <command>
 
-# Better prompt completion if prompts contain ANSI colour codes
+# Improve prompt completion if prompts contain ANSI colour codes
 rlwrap <__A___ansi_colour_aware_> <command>
 
 # Enable filename completion (case sensitive)

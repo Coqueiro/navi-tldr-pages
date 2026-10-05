@@ -3,7 +3,7 @@
 
 % trip, common
 
-# Basic usage with default parameters
+# Trace the route to a host with default parameters
 sudo trip <example_com>
 
 # Trace without requiring elevated privileges (supported platforms only)

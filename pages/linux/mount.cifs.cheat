@@ -4,10 +4,10 @@
 % mount.cifs, linux
 
 # Connect using the specified username or `$USER` by default (you will be prompted for a password)
-mount.cifs -o user=<username> //<server>/<share_name> <mountpoint>
+mount.cifs -o user=<username> //<server>/<share_name> <path_to_mount_point>
 
 # Connect as the guest user (without a password)
-mount.cifs -o guest //<server>/<share_name> <mountpoint>
+mount.cifs -o guest //<server>/<share_name> <path_to_mount_point>
 
 # Set ownership information for the mounted directory
-mount.cifs -o uid=<user_id_username>,gid=<group_id_groupname> //<server>/<share_name> <mountpoint>
+mount.cifs -o uid=<user_id_username>,gid=<group_id_groupname> //<server>/<share_name> <path_to_mount_point>

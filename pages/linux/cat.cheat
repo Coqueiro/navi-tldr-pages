@@ -21,5 +21,8 @@ cat <__n___number_> <path_to_file>
 # Display all characters, including tabs, line endings, and non-printing characters
 cat <__A___show_all_> <path_to_file>
 
+# Omit repeating empty lines
+cat <__s___squeeze_blank_> <path_to_file>
+
 # Pass file contents to another program through `stdin`
 cat <path_to_file> | <program>

@@ -15,7 +15,7 @@ ned --colors never '<__dl_og>' <_>
 # Search ignoring certain files
 ned <__R___recursive_> --exclude '<__htm>' '<__dl_og>' <_>
 
-# Simple replace
+# Replace a string in all files in the current directory
 ned '<dog>' <__r___replace_> '<cat>' <_>
 
 # Replace using numbered group references

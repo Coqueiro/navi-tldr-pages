@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vllm.md
+
+% vllm, common
+
+# Launch an OpenAI-compatible API server for a model
+vllm serve <model_name>
+
+# Serve a model on a specific host and port
+vllm serve <model_name> --host <0_0_0_0> --port <8000>
+
+# Start an interactive chat session
+vllm chat
+
+# Run batch prompts from a file and write results to a file
+vllm run-batch -i <input_jsonl> -o <output_jsonl> --model <model_name>
+
+# Print environment information for bug reports
+vllm collect-env
+
+# List all available subcommands
+vllm --help

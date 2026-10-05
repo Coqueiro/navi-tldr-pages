@@ -3,6 +3,9 @@
 
 % stripe, common
 
+# Browse Stripe documentation
+stripe docs
+
 # Follow the logs of activity on the account
 stripe logs tail
 
@@ -13,7 +16,7 @@ stripe listen --events="<charge_succeeded>" --forward-to="<localhost_3000_events
 stripe trigger <charge_succeeded>
 
 # Create a customer
-stripe customers create --email="<test_example_com>" --name="{{Jenny Rosen}}"
+stripe customers create --email "<test_example_com>" --name "{{Jenny Rosen}}"
 
 # Print to JSON
 stripe listen --print-json

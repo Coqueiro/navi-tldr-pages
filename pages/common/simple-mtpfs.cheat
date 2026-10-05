@@ -7,10 +7,10 @@
 simple-mtpfs <__l___list_devices_>
 
 # Mount a device to a directory
-simple-mtpfs <mount_point>
+simple-mtpfs <path_to_mount_point>
 
 # Mount a specific device to a directory (useful when multiple devices are connected)
-simple-mtpfs --device <number> <mount_point>
+simple-mtpfs --device <number> <path_to_mount_point>
 
 # Unmount the filesystem
-umount <mount_point>
+umount <path_to_mount_point>

@@ -13,7 +13,7 @@ docker buildx du --filter "<description__golang>"
 docker buildx du --verbose
 
 # Format the output using a Go template
-docker buildx du --format "table <_ID>    <_Description>"
+docker buildx du --format "table \{\{.ID\}\}    \{\{.Description\}\}"
 
 # Pretty print output as JSON with `jq` command
 docker buildx du --format json | jq .

@@ -4,4 +4,4 @@
 % pamarith, common
 
 # Apply the specified binary function pixel-wise on the two specified images (which must be of the same size)
-pamarith -<add_subtract_multiply_divide_difference_minimum_maximum____> <path_to_image1_pam_pbm_pgm_ppm> <path_to_image2_pam_pbm_pgm_ppm>
+pamarith -<add_subtract_multiply_divide_difference_minimum_maximum____> <path_to_image1>.<pam_pbm_pgm_ppm> <path_to_image2>.<pam_pbm_pgm_ppm>

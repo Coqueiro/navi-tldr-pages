@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-tcpserversink.md
+
+% gst-launch-1.0-tcpserversink, common
+
+# Set up a server to send data to a client
+gst-launch-1.0 <pipeline> ! tcpserversink host=<interface_ip_address>

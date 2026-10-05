@@ -10,7 +10,7 @@ crane registry serve
 crane registry serve --address <address_name>
 
 # Store blobs in a specific directory
-crane registry serve --disk <path_to_store_directory>
+crane registry serve --disk <path_to_directory>
 
 # Display help for `crane registry`
 crane registry <__h___help_>

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/far2l.md
+
+% far2l, common
+
+# Start FAR2L
+far2l
+
+# Start in the terminal (no GUI window)
+far2l --tty
+
+# Open a directory
+far2l <path_to_directory>
+
+# Display help
+far2l --help

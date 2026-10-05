@@ -4,4 +4,4 @@
 % vectorize-pixelart, common
 
 # Convert a PNG to a vector image format
-vectorize-pixelart <path_to_input_png> <path_to_output_svg__eps>
+vectorize-pixelart <path_to_input_png> <path_to_output>.<svg_eps>

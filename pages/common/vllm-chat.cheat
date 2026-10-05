@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vllm-chat.md
+
+% vllm-chat, common
+
+# Send a single chat prompt to the API server and get a response
+vllm chat --quick "<message>"
+
+# Chat with a specific model name
+vllm chat --model-name <model_name> --quick "<message>"
+
+# Chat with a custom system prompt
+vllm chat --system-prompt "<system_prompt>" --quick "<message>"
+
+# Chat using a custom API server URL
+vllm chat --url <http___custom_host_port_v1> --quick "<message>"
+
+# Chat with an API key for authentication
+vllm chat --api-key <your_api_key> --quick "<message>"
+
+# Start an interactive chat session
+vllm chat

@@ -15,7 +15,7 @@ pulumi refresh --expect-no-changes
 # Only show a preview of the refresh, but don't perform the refresh itself
 pulumi refresh --preview-only
 
-# The name of the stack to operate on (defaults to the current stack)
+# Specify the name of the stack to operate on (defaults to the current stack)
 pulumi refresh <__s___stack_> <stack_name>
 
 # Display help

@@ -1,0 +1,16 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/icolist.md
+
+% icolist, common
+
+# List the icons present in an executable
+icolist <path_to_input_exe>
+
+# Run with verbose/debug logging
+icolist <__v___verbose_> <path_to_input_exe>
+
+# Display help
+icolist <__h___help_>
+
+# Display version
+icolist <__V___version_>

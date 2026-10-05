@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-limit.md
+
+% ufw-limit, linux
+
+# Simulate a rule without applying it
+sudo ufw --dry-run limit <profile>
+
+# Rate limit a specific service by profile
+sudo ufw limit <profile>
+
+# Rate limit a specific port and protocol
+sudo ufw limit <22>/<tcp>
+
+# Rate limit only from a specific source address or subnet
+sudo ufw limit from <192_168_0_0_16> to any port <22> proto <tcp>
+
+# Rate limit on a specific network interface
+sudo ufw limit in on <eth0> to any port <22>
+
+# Delete a limit rule
+sudo ufw delete limit <service_port>/<tcp>

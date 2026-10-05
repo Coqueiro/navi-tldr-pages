@@ -13,7 +13,7 @@ aws sns create-topic --name <name>
 aws sns subscribe --topic-arn <topic_ARN> --protocol email --notification-endpoint <email>
 
 # Publish a message to a specific topic or phone number and show the message ID
-aws sns publish {{--topic-arn "arn:aws:sns:us-west-2:123456789012:topic-name"||--phone-number +1-555-555-0100}} --message file://<path_to_file>
+aws sns publish {{--topic-arn "arn:aws:sns:us-west-2:123456789012:topic-name"|--phone-number +1-555-555-0100}} --message file://<path_to_file>
 
 # Delete the subscription with a specific ARN from its topic
 aws sns unsubscribe --subscription-arn <subscription_ARN>

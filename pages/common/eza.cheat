@@ -9,7 +9,7 @@ eza <__1___oneline_>
 # List all files, including hidden files
 eza <__a___all_>
 
-# Long format list (permissions, ownership, size, and modification date) of all files
+# List all files in long format (permissions, ownership, size, and modification date)
 eza {{[-al|--all --long]}}
 
 # List files with the largest at the top

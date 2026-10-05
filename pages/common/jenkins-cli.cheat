@@ -1,7 +1,7 @@
 ; This has been extracted from
-; https://github.com/tldr-pages/tldr/blob/master/pages/common/jenkins.md
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/jenkins-cli.md
 
-% jenkins, common
+% jenkins-cli, common
 
 # Connect to jenkins CLI
 java -jar jenkins-cli.jar -s <jenkins_server_url> -auth <username>:<api_token>

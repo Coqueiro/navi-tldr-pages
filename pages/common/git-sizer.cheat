@@ -9,5 +9,5 @@ git-sizer
 # Report all statistics
 git-sizer -v
 
-# See additional options
+# Display help
 git-sizer -h

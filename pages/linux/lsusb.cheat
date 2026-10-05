@@ -13,7 +13,7 @@ lsusb <__t___tree_>
 sudo lsusb <__v___verbose_>
 
 # List detailed information about a USB device
-sudo lsusb <__v___verbose_> -s <bus>:{{device number}}
+sudo lsusb <__v___verbose_> -s <bus>:<device_number>
 
 # List devices with a specified vendor and product ID only
 lsusb -d <vendor>:<product>

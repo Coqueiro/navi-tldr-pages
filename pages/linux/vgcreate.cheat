@@ -10,4 +10,4 @@ sudo vgcreate <volume_group> <_dev_sdXY>
 sudo vgcreate <volume_group> {{/dev/sdXY /dev/sdXZ ...}}
 
 # Create a new volume group with custom physical extent size
-sudo vgcreate <_s___physicalextentsize> <8M> <volume_group> {{/dev/sdXY /dev/sdXZ ...}}
+sudo vgcreate <__s___physicalextentsize_> <8M> <volume_group> {{/dev/sdXY /dev/sdXZ ...}}

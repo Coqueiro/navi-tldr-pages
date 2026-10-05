@@ -12,5 +12,5 @@ promtool check rules <rules_file_yml>
 # Pass Prometheus metrics over `stdin` to check them for consistency and correctness
 curl --silent <http___example_com_9090_metrics_> | promtool check metrics
 
-# Unit tests for rules config
+# Run unit tests for rules config
 promtool test rules <test_file_yml>

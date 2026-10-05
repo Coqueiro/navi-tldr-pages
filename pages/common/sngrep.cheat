@@ -9,7 +9,7 @@ sngrep -I <path_to_file_pcap>
 # Visualize only dialogs starting with INVITE packets with RTP packets from a PCAP file
 sngrep -crI <path_to_file_pcap>
 
-# Real-time interface with only dialogs starting with INVITE packets with RTP packets
+# Display a real-time interface with only dialogs starting with INVITE packets, including RTP packets
 sngrep -cr
 
 # Only capture packets without interface to a file

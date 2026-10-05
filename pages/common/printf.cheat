@@ -6,6 +6,9 @@
 # Print a text message
 printf "<_s_n>" "{{Hello world}}"
 
+# Print formatted message multiple times with different strings
+printf "%s\n" {{string1 string2 ...}}
+
 # Print an integer in bold blue
 printf "<_e_1_34m__3d_e_0m_n>" <42>
 

@@ -7,10 +7,10 @@
 FTP_PASSWORD=<ftp_login_password> PASSPHRASE=<encryption_password> duplicity <path_to_source_directory> <ftps___user_hostname_path_to_target_directory>/
 
 # Back up a directory to Amazon S3, doing a full backup every month
-duplicity --full-if-older-than <1M> s3://<bucket_name__prefix_>
+duplicity --full-if-older-than <1M> s3://<bucket_name_prefix>
 
 # Delete versions older than 1 year from a backup stored on a WebDAV share
-FTP_PASSWORD=<webdav_login_password> duplicity remove-older-than <1Y> --force <webdav_s____user_hostname__port__some_directory>
+FTP_PASSWORD=<webdav_login_password> duplicity remove-older-than <1Y> --force <webdav___user_hostname_port_some_directory>
 
 # List the available backups
 duplicity collection-status "file://<absolute_path_to_backup_directory>"

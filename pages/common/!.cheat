@@ -15,14 +15,14 @@ sudo !!
 # Substitute with the most recent command that starts with a string
 !<string>
 
-# Substitute with all of the arguments of the latest command
-<command> !*
-
-# Substitute with the last argument of the latest command
-<command> !$
+# Substitute with the first, last, or all arguments of the latest command
+<command> <________>
 
 # Substitute with the last command but without the last argument
 !:-
+
+# Omit all arguments from the substitution
+!:0
 
 # Print last command that starts with a string without executing it
 !<string>:p

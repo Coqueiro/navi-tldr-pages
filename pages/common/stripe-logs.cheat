@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/stripe-logs.md
+
+% stripe-logs, common
+
+# Tail all API request logs in real time
+stripe logs tail
+
+# Filter logs by HTTP method
+stripe logs tail --filter-http-method <GET>
+
+# Filter logs by API path
+stripe logs tail --filter-request-path <_v1_customers>
+
+# Filter logs by response status code
+stripe logs tail --filter-http-status-code <404>
+
+# Show logs as JSON
+stripe logs tail --format JSON

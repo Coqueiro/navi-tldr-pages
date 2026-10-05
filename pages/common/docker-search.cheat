@@ -19,4 +19,4 @@ docker search <__f___filter_> stars=<number> <keyword>
 docker search --limit <number> <keyword>
 
 # Customize the output format
-docker search <__f___format_> "<_Name>: <_Description>" <keyword>
+docker search <__f___format_> "\{\{.Name\}\}: \{\{.Description\}\}" <keyword>

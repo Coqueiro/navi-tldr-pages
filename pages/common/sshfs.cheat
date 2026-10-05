@@ -4,10 +4,10 @@
 % sshfs, common
 
 # Mount remote directory
-sshfs <username>@<remote_host>:<remote_directory> <mountpoint>
+sshfs <username>@<remote_host>:<remote_directory> <path_to_mount_point>
 
 # Unmount remote directory
-umount <mountpoint>
+umount <path_to_mount_point>
 
 # Mount remote directory from server with specific port
 sshfs <username>@<remote_host>:<remote_directory> -p <2222>
@@ -16,4 +16,4 @@ sshfs <username>@<remote_host>:<remote_directory> -p <2222>
 sshfs <username>@<remote_host>:<remote_directory> -C
 
 # Follow symbolic links
-sshfs -o follow_symlinks <username>@<remote_host>:<remote_directory> <mountpoint>
+sshfs -o follow_symlinks <username>@<remote_host>:<remote_directory> <path_to_mount_point>

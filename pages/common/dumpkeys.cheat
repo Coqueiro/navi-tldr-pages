@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/dumpkeys.md
+
+% dumpkeys, common
+
+# Display the current keyboard mapping
+dumpkeys
+
+# Display kernel keyboard info
+dumpkeys <__i___short_info_>
+
+# Skip shorthand heuristics
+dumpkeys <__f___full_table_>
+
+# Print one line per (modifier, keycode) pair
+dumpkeys <__1___separate_lines_>
+
+# Display function key strings
+dumpkeys <__t___funcs_only_>
+
+# Enable verbose output
+dumpkeys <__v___verbose_>
+
+# Display help
+dumpkeys <__h___help_>
+
+# Display version
+dumpkeys <__V___version_>

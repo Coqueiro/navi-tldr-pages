@@ -3,7 +3,7 @@
 
 % wfuzz, common
 
-# Directory and file bruteforce using the specified [w]ordlist and also [p]roxying the traffic
+# Brute force directories and files using the specified [w]ordlist and also [p]roxy the traffic
 wfuzz -w <path_to_file> -p <127_0_0_1_8080_HTTP> <http___example_com_FUZZ>
 
 # Save the results to a [f]ile

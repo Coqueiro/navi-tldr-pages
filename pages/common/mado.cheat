@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/mado.md
+
+% mado, common
+
+# Check all Markdown files in the current directory recursively
+mado check
+
+# Check specific files or directories
+mado check {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+
+# Exclude files matching a `glob` pattern
+mado check --exclude "<___node_modules___>" <path_to_directory>
+
+# Check using a specific configuration file
+mado --config <path_to_mado_toml> check <path_to_directory>
+
+# Display violations in a specific format
+mado check <path_to_directory> --output-format <concise_mdl_markdownlint>
+
+# Generate a completion script for a specific shell
+mado generate-shell-completion <bash_elvish_fish_powershell_zsh>
+
+# Display help
+mado --help
+
+# Display version
+mado --version

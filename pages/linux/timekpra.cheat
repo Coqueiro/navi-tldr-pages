@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/timekpra.md
+
+% timekpra, linux
+
+# List all users known to Timekpr-nExT
+timekpra --getuserlist
+
+# Show the stored configuration and time information for a user
+timekpra --getuserinfo <username>
+
+# Show real-time configuration and time information for a user
+timekpra --getuserinfort <username>
+
+# Set the allowed days of the week for a user (e.g. Monday to Friday)
+timekpra --setalloweddays <username> '<1_2_3_4_5>'
+
+# Set daily time limits for each allowed day
+timekpra --settimelimits <username> '<2h_2h_2h_2h_3h>'
+
+# Set the weekly time limit for a user
+timekpra --settimelimitweek <username> <13h53m20s>
+
+# Add, subtract, or set a user's remaining time for today
+timekpra --settimeleft <username> <_____> <30m>
+
+# Set the lockout action applied once a user's time runs out
+timekpra --setlockouttype <username> <lock_suspend_suspendwake_terminate_kill_shutdown>

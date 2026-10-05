@@ -15,5 +15,5 @@ yadm transcrypt <__y___yes_>
 # Display the current repository's cipher and password
 yadm transcrypt <__d___display_>
 
-# Re -encrypt all encrypted files using new credentials
+# Re-encrypt all encrypted files using new credentials
 yadm transcrypt <__r___rekey_>

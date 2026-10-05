@@ -16,7 +16,7 @@ tofu plan -refresh-only
 tofu plan -var '<name1>=<value1>' -var '<name2>=<value2>'
 
 # Focus Tofu's attention on only a subset of resources
-tofu plan -target {{resource_type.resource_name[instance index]}}
+tofu plan -target <resource_type_resource_name>
 
 # Output a plan as JSON
 tofu plan -json

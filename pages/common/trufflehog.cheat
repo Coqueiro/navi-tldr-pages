@@ -16,7 +16,7 @@ trufflehog git <https___github_com_trufflesecurity_test_keys> --only-verified --
 trufflehog github --repo <https___github_com_trufflesecurity_test_keys> --issue-comments --pr-comments
 
 # Scan an S3 bucket for verified keys
-trufflehog s3 --bucket {{bucket name}} --only-verified
+trufflehog s3 --bucket <bucket_name> --only-verified
 
 # Scan S3 buckets using IAM Roles
 trufflehog s3 --role-arn <iam_role_arn>

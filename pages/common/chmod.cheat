@@ -9,8 +9,8 @@ chmod u+x <path_to_file>
 # Give the [u]ser rights to [r]ead and [w]rite to a file/directory
 chmod u+rw <path_to_file_or_directory>
 
-# Remove e[x]ecutable rights from the [g]roup
-chmod g-x <path_to_file>
+# Remove e[x]ecutable rights from the [g]roup and [o]thers
+chmod g-x,o-x <path_to_file>
 
 # Give [a]ll users rights to [r]ead and e[x]ecute
 chmod a+rx <path_to_file>
@@ -21,8 +21,8 @@ chmod o=g <path_to_file>
 # Remove all rights from [o]thers
 chmod o= <path_to_file>
 
-# Change permissions recursively giving [g]roup and [o]thers the ability to [w]rite
-chmod <__R___recursive_> g+w,o+w <path_to_directory>
+# Set rights using the octal notation
+chmod <644> <path_to_file>
 
 # Recursively give [a]ll users [r]ead permissions to files. Also give e[X]ecute permissions to files that have at least one execution permission and to all sub-directories
 chmod <__R___recursive_> a+rX <path_to_directory>

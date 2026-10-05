@@ -4,7 +4,7 @@
 % bcachefs-device, linux
 
 # Format and add a new device to an existing filesystem
-sudo bcachefs device add --label <group>.<name> <path_to_mountpoint> <path_to_device>
+sudo bcachefs device add --label <group>.<name> <path_to_mount_point> <path_to_device>
 
 # Migrate data off a device to prepare for removal
 bcachefs device evacuate <path_to_device>

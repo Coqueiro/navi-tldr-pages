@@ -3,8 +3,8 @@
 
 % read, common
 
-# Store data that you type from the keyboard
-read <variable>
+# Store data that you type from the keyboard to one or more variable
+read {{variable1 variable2 ...}}
 
 # Store each of the next lines you enter as values of an array
 read -a <array>

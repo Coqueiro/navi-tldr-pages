@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-tcpserversrc.md
+
+% gst-launch-1.0-tcpserversrc, common
+
+# Set up a server to receive data
+gst-launch-1.0 tcpserversrc host=<interface_ip_address> ! <pipeline>

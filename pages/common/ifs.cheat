@@ -9,6 +9,9 @@ echo "$IFS"
 # Change the `$IFS` value
 IFS="<_>"
 
+# Specify what character to use for word splitting with `read`
+IFS=<_> read {{variable1 variable2 ...}}
+
 # Reset `$IFS` to default
 IFS=$' \t\n'
 

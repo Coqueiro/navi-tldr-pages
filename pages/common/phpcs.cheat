@@ -21,7 +21,7 @@ phpcs <path_to_directory> --report <format>
 # Set configuration variables to be used during the process
 phpcs <path_to_directory> --config-set <key> <value>
 
-# A comma-separated list of files to load before processing
+# Specify a comma-separated list of files to load before processing
 phpcs <path_to_directory> --bootstrap <path_to_file1_path_to_file2____>
 
 # Don't recurse into subdirectories

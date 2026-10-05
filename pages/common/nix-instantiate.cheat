@@ -12,7 +12,7 @@ nix-instantiate --eval <__E___expr_> <expression>
 # Evaluate with machine readable output
 nix-instantiate --eval --xml <__E___expr_> <expression>
 
-# Raw output, output of the function must be a string
+# Evaluate an expression and print the raw output (the output of the function must be a string)
 nix-instantiate --eval --raw <__E___expr_> <expression>
 
 # Evaluate a Nix expression from a specified file

@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/llm-install.md
+
+% llm-install, common
+
+# Install a plugin from PyPI
+llm install <plugin_name>
+
+# Upgrade a plugin to its latest version
+llm install <__U___upgrade_> <plugin_name>
+
+# Install a local plugin in editable mode
+llm install <__e___editable_> <path_to_plugin_directory>
+
+# Reinstall a plugin even if it is already up to date
+llm install --force-reinstall <plugin_name>
+
+# Include pre-release versions when installing a plugin
+llm install --pre <plugin_name>

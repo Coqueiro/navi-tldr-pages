@@ -6,7 +6,7 @@
 # Let a steam locomotive run through your terminal
 sl
 
-# The train burns, people scream
+# Make the train burn and people scream
 sl -a
 
 # Let the train fly

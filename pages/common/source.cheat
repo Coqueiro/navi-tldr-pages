@@ -6,5 +6,14 @@
 # Evaluate contents of a given file
 source <path_to_file>
 
+# Evaluate a file with arguments
+source <path_to_file> {{argument1 argument2 ...}}
+
+# Search and evaluate a file from `$PATH`
+source <file>
+
+# Search and evaluate a file in a given set of directories
+source -p <path_to_directory1_path_to_directory2____> <file>
+
 # Evaluate contents of a given file (alternatively replacing `source` with `.`)
 . <path_to_file>

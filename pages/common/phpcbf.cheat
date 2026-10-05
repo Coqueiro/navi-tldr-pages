@@ -15,7 +15,7 @@ phpcbf <path_to_directory> --standard <standard>
 # Specify comma-separated file extensions to include when sniffing
 phpcbf <path_to_directory> --extensions <file_extension1_file_extension2____>
 
-# A comma-separated list of files to load before processing
+# Specify a comma-separated list of files to load before processing
 phpcbf <path_to_directory> --bootstrap <path_to_file1_path_to_file2____>
 
 # Don't recurse into subdirectories

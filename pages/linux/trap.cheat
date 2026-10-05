@@ -17,3 +17,6 @@ trap - {{SIGHUP SIGINT ...}}
 
 # Ignore a signal
 trap '' <_INT_SIGINT_>
+
+# Display help
+help trap

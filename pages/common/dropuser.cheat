@@ -9,7 +9,7 @@ dropuser <__i___interactive_>
 # Remove user instantly
 dropuser <username>
 
-# No error if the user to be removed doesn't exist
+# Do not throw an error if the user to be removed doesn't exist
 dropuser --if-exists <username>
 
 # Remove a user on the server with address 127.0.0.1 on port 4321

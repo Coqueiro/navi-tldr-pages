@@ -4,4 +4,4 @@
 % smbnetfs, linux
 
 # Make shares available at `mountpoint`
-smbnetfs <mountpoint>
+smbnetfs <path_to_mount_point>

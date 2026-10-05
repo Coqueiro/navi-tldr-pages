@@ -15,7 +15,7 @@ lvm_import_vdo --dry-run <_dev_mapper_vdo_volume>
 # Convert in place without using a temporary snapshot (less safe)
 lvm_import_vdo --no-snapshot <_dev_mapper_vdo_volume>
 
-# Verbose output and automatically answer "yes" to prompts
+# Convert a VDO volume with verbose output and automatically answer "yes" to prompts
 lvm_import_vdo <__v___verbose_> <__y___yes_> <_dev_mapper_vdo_volume>
 
 # Use a VDO manager configuration file during import

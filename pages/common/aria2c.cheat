@@ -21,7 +21,7 @@ aria2c <__i___input_file_> <path_to_file> <__j___max_concurrent_downloads_> <num
 # Download with multiple connections
 aria2c <__s___split_> <number_of_connections> "<url>"
 
-# FTP download with username and password
+# Download a file via FTP with a username and password
 aria2c --ftp-user <username> --ftp-passwd <password> "<url>"
 
 # Limit download speed in bytes/s
