@@ -3,7 +3,7 @@
 
 % tts, common
 
-# Run text-to-speech with the default models, writing the output to "tts_output.wav"
+# Run text-to-speech with the default models, writing the output to `tts_output.wav`
 tts --text "<text>"
 
 # List provided models

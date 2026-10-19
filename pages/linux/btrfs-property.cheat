@@ -17,3 +17,6 @@ sudo btrfs <_p_property_> <_g_get_> -t <subvol_filesystem_inode_device> <path_to
 
 # Set the `compression` property for a given btrfs inode (either a file or directory)
 sudo btrfs <_p_property_> <_s_set_> <path_to_btrfs_inode> compression <zstd_zlib_lzo_none>
+
+# Set the `ro` (read-only) property for a given btrfs subvolume
+sudo btrfs <_p_property_> <_s_set_> <path_to_btrfs_subvolume> ro <true_false>

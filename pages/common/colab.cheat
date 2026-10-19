@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/colab.md
+
+% colab, common
+
+# Allocate a new named session with a specific GPU
+colab new <__s___session_> <session_name> --gpu <T4_L4_G4_A100_H100>
+
+# List all active sessions
+colab sessions
+
+# Run a local script on a fresh GPU VM and automatically release it upon completion
+colab run --gpu <T4_L4_A100_H100> <path_to_script_py>
+
+# Execute a local Python script or Jupyter notebook in an specific session
+colab exec <__s___session_> <session_name> <__f___file_> <path_to_file_py_path_to_notebook_ipynb>
+
+# Connect to an interactive TTY shell on the remote VM
+colab console <__s___session_> <session_name>
+
+# Mount Google Drive in a specific session
+colab drivemount <__s___session_> <session_name>
+
+# Download a file from the remote session
+colab download <__s___session_> <session_name> <path_to_remote_file> <path_to_local_destination>
+
+# Stop and terminate a specific session
+colab stop <__s___session_> <session_name>

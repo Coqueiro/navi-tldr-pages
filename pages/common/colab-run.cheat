@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/colab-run.md
+
+% colab-run, common
+
+# Run a local script on a fresh CPU VM and release the VM upon completion
+colab run <path_to_script_py>
+
+# Run a local script on a GPU runtime
+colab run --gpu <T4_L4_G4_A100_H100> <path_to_script_py>
+
+# Run a local script on a TPU runtime
+colab run --tpu <v5e1_v6e1> <path_to_script_py>
+
+# Run a script with forwarded command-line arguments
+colab run <path_to_script_py> {{argument1 argument2 ...}}
+
+# Run a script on a GPU and keep the session active after completion
+colab run --gpu <T4_L4_G4_A100_H100> --keep <path_to_script_py>
+
+# Run a script on a named session with a custom timeout
+colab run <__s___session_> <session_name> --timeout <60_0> <path_to_script_py>

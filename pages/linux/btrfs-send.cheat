@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/btrfs-send.md
+
+% btrfs-send, linux
+
+# Send a subvolume snapshot to a file instead of `stdout`
+sudo btrfs send -f <path_to_file_btrfs> <path_to_source_snapshot>
+
+# Restore a subvolume snapshot from a file instead of `stdin`
+sudo btrfs receive -f <path_to_file_btrfs> <path_to_destination_directory>
+
+# Send a subvolume snapshot stream and pipe it to a receiving destination
+sudo btrfs send <path_to_source_snapshot> | sudo btrfs receive <path_to_destination_directory>
+
+# Send an incremental update (differences between parent and new snapshot) to a file
+sudo btrfs send -p <path_to_parent_snapshot> -f <path_to_incremental_btrfs> <path_to_new_snapshot>
+
+# Send an incremental update stream and pipe it to a receiving destination
+sudo btrfs send -p <path_to_parent_snapshot> <path_to_new_snapshot> | sudo btrfs receive <path_to_destination_directory>
+
+# Send a subvolume snapshot over SSH (the receiving `sudo` must be configured for passwordless execution)
+sudo btrfs send <path_to_source_snapshot> | ssh <user>@<host> "sudo btrfs receive <path_to_destination_directory>"
+
+# Dump stream metadata from a file without modifying the filesystem
+sudo btrfs receive --dump -f <path_to_file_btrfs>

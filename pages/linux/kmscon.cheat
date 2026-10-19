@@ -3,7 +3,7 @@
 
 % kmscon, linux
 
-# Start `kmscon` on the first available TTY
+# Start `kmscon` on the first available TTY, as reported by `fgconsole --next-available`
 sudo kmscon
 
 # Start `kmscon` in a specific TTY

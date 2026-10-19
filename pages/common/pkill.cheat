@@ -12,7 +12,7 @@ pkill <__f___full_> "<command_name>"
 # Force kill matching processes (can't be blocked)
 pkill <__9__SIGKILL_> "<process_name>"
 
-# Send SIGUSR1 signal to processes which match
+# Send `SIGUSR1` signal to processes which match
 pkill <__10__SIGUSR1_> "<process_name>"
 
 # Kill the main `firefox` process to close the browser

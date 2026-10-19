@@ -15,7 +15,7 @@ daemon <__n___name_> "<name>" <__r___respawn_> <__A___attempts_> 2 <__L___delay_
 # Run a command as a daemon, writing logs to a specific file
 daemon <__n___name_> "<name>" <__l___errlog_> <path_to_file_log> <command>
 
-# Kill a daemon (SIGTERM)
+# Kill a daemon (`SIGTERM`)
 daemon <__n___name_> "<name>" --stop
 
 # List daemons

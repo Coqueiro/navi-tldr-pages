@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/setterm.md
+
+% setterm, linux
+
+# Clear the screen
+setterm --clear
+
+# Make the cursor visible or invisible
+setterm --cursor <on_off>
+
+# Turn blinking text on or off
+setterm --blink <on_off>
+
+# Set the text color
+setterm --foreground <default_black_blue_red____>
+
+# Set the background color
+setterm --background <default_black_blue_red____>
+
+# Set the screen blanking timeout in minutes (`0` disables blanking)
+setterm --blank <0__60>
+
+# Reset the terminal to its default state
+setterm --reset

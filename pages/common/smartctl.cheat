@@ -13,7 +13,7 @@ sudo smartctl <__i___info_> <_dev_sdX>
 sudo smartctl <__t___test_> <short_long> <_dev_sdX>
 
 # Display the self-test log
-sudo smartctl <__l___log_> selftest
+sudo smartctl <__l___log_> selftest <_dev_sdX>
 
 # Display current/last self-test status and other SMART capabilities
 sudo smartctl <__c___capabilities_> <_dev_sdX>

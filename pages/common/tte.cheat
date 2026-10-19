@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/tte.md
+
+% tte, common
+
+# Apply a random effect to a command's output
+<command> | tte <__R___random_effect_>
+
+# Apply a specific effect to a command's output
+{{ls -la}} | tte <matrix>
+
+# View the options for a specific effect
+tte <decrypt> <__h___help_>
+
+# Apply an effect to text from a file
+tte <__i___input_file_> <path_to_file> <beams>
+
+# Print shell completion scripts
+tte --print-completion <bash>

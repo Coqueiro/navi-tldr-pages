@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/mirrorselect.md
+
+% mirrorselect, linux
+
+# Interactively select source mirrors from a list
+sudo mirrorselect <__i___interactive_>
+
+# Interactively select mirrors from a specific country
+sudo mirrorselect <__i___interactive_> <__c___country_> "<Germany>"
+
+# Automatically select a specific number of the fastest mirrors
+sudo mirrorselect <__s___servers_> <3>
+
+# Automatically select the fastest mirrors using a more accurate download test
+sudo mirrorselect <__D___deep_> <__s___servers_> <3>
+
+# Only consider HTTPS mirrors
+sudo mirrorselect <__S___https_> <__s___servers_> <3>
+
+# Print the selected mirrors instead of writing them to `make.conf`
+mirrorselect <__s___servers_> <3> <__o___output_>
+
+# Interactively select an rsync mirror and append it to the repository configuration
+mirrorselect <__i___interactive_> <__r___rsync_> <__o___output_> | sudo tee -a /etc/portage/repos.conf/gentoo.conf

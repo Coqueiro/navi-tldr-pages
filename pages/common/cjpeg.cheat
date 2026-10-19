@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/cjpeg.md
+
+% cjpeg, common
+
+# Compress a JPEG file with default settings
+cjpeg -outfile <path_to_output>.jpg <path_to_image_file>

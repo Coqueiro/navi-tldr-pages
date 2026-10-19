@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/ufw-app.md
+
+% ufw-app, linux
+
+# List available application profiles
+sudo ufw app list
+
+# Display information about a specific or all profiles
+sudo ufw app info <profile_name_all>
+
+# Allow or deny traffic using a specific profile
+sudo ufw <allow_deny> "<profile_name>"
+
+# Update firewall rules for a modified profile or all profiles
+sudo ufw app update <profile_name_all>
+
+# Update a profile, adding new rules if none exist
+sudo ufw app update --add-new "<profile_name>"
+
+# Configure the default behavior of `update --add-new`
+sudo ufw app default <allow_deny_reject_skip>

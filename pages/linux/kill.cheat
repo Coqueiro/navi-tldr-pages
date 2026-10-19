@@ -3,7 +3,7 @@
 
 % kill, linux
 
-# Terminate a program using the default SIGTERM (terminate) signal
+# Terminate a program using the default `SIGTERM` (terminate) signal
 kill <process_id>
 
 # List signal values and their corresponding names (to be used without the `SIG` prefix). The available options may depend on the `kill` implementation
@@ -12,16 +12,16 @@ kill <_l__L___table>
 # Terminate a background job
 kill %<job_id>
 
-# Terminate a program using the SIGHUP (hang up) signal. Many daemons will reload instead of terminating
+# Terminate a program using the `SIGHUP` (hang up) signal. Many daemons will reload instead of terminating
 kill <__1__HUP_> <process_id>
 
-# Terminate a program using the SIGINT (interrupt) signal. This is typically initiated by the user pressing `<Ctrl c>`
+# Terminate a program using the `SIGINT` (interrupt) signal. This is typically initiated by the user pressing `<Ctrl c>`
 kill <__2__INT_> <process_id>
 
 # Signal the operating system to immediately terminate a program (which gets no chance to capture the signal)
 kill <__9__KILL_> <process_id>
 
-# Signal the operating system to pause a program until a SIGCONT ("continue") signal is received
+# Signal the operating system to pause a program until a `SIGCONT` ("continue") signal is received
 kill <__19__STOP_> <process_id>
 
 # Send a `SIGUSR1` signal to all processes with the given GID (group id)

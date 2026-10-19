@@ -9,6 +9,9 @@ uv tool run <command>
 # Install a Python package system-wide
 uv tool install <package>
 
+# Install from a specific git repo on a specific tag
+uv tool install "git+<repo_url>@<v1_2_3>"
+
 # Upgrade an installed Python package
 uv tool upgrade <package>
 

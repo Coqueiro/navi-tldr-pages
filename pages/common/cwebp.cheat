@@ -4,19 +4,19 @@
 % cwebp, common
 
 # Compress a WebP file with default settings (lossy compression, q = 75) to the [o]utput file
-cwebp <path_to_image_file> -o <path_to_output_webp>
+cwebp <path_to_image_file> -o <path_to_output>.webp
 
 # Compress a WebP file with the best lossy compression [q]uality and largest file size
-cwebp <path_to_image_file> -o <path_to_output_webp> -q <100>
+cwebp <path_to_image_file> -o <path_to_output>.webp -q <100>
 
 # Compress a WebP file with the worst lossy compression [q]uality and smallest file size
-cwebp <path_to_image_file> -o <path_to_output_webp> -q <0>
+cwebp <path_to_image_file> -o <path_to_output>.webp -q <0>
 
 # Compress a WebP file with lossless compression and smallest possible file size
-cwebp <path_to_image_file> -o <path_to_output_webp> -z 9
+cwebp <path_to_image_file> -o <path_to_output>.webp -z 9
 
 # Compress a WebP file and apply resize to image (if width or height are 0, scaling preserves aspect ratio)
-cwebp <path_to_image_file> -o <path_to_output_webp> -resize <width> <height>
+cwebp <path_to_image_file> -o <path_to_output>.webp -resize <width> <height>
 
 # Compress a WebP file and drop alpha channel information
-cwebp <path_to_image_file> -o <path_to_output_webp> -noalpha
+cwebp <path_to_image_file> -o <path_to_output>.webp -noalpha

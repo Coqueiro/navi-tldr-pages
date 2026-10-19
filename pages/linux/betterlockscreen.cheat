@@ -10,7 +10,7 @@ betterlockscreen <__l___lock_>
 betterlockscreen <__u___update_> <path_to_image_png>
 
 # Lock the screen, showing some custom text
-betterlockscreen <__l___lock_> pixel --text "{{custom lock screen text}}"
+betterlockscreen <__l___lock_> pixel --text "<custom_lock_screen_text>"
 
 # Lock the screen, with a custom monitor off timeout in seconds
 betterlockscreen --off <5> <__l___lock_>

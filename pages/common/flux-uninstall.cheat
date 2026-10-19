@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-uninstall.md
+
+% flux-uninstall, common
+
+# Uninstall Flux components, custom resources, and namespace
+flux uninstall
+
+# Uninstall Flux without asking for confirmation
+flux uninstall <__s___silent_>
+
+# Uninstall Flux from a specific namespace
+flux uninstall <__n___namespace_> <namespace>
+
+# Uninstall Flux but keep the namespace
+flux uninstall --keep-namespace
+
+# Simulate uninstalling Flux
+flux uninstall --dry-run

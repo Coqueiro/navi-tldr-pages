@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/sbpctl.md
+
+% sbpctl, linux
+
+# Install the boot manager into the EFI system partition
+sudo sbpctl install /<path_to_efi_system_partition>
+
+# Install the boot manager only as the default EFI loader (`/EFI/BOOT/BOOT*.EFI`)
+sudo sbpctl install <__d___default_> /<path_to_efi_system_partition>
+
+# Install the boot manager with `/etc/sbp/loader.conf` included in the EFI binary
+sudo sbpctl install <__i___include_> /<path_to_efi_system_partition>
+
+# Install the boot manager and sign it for Secure Boot with the keys in `/etc/sbp`
+sudo sbpctl install <__s___sign_> /<path_to_efi_system_partition>
+
+# Generate a SHA-512 hash of a password for the `password` option in `loader.conf`
+sbpctl generate
+
+# Create a standalone EFI application from a Linux EFI application and an initramfs
+sudo sbpctl standalone <__i___initrd_> <path_to_initramfs_img> <path_to_vmlinuz> <path_to_output_efi>

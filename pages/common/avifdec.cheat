@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/avifdec.md
+
+% avifdec, common
+
+# Convert a specific AVIF image to PNG
+avifdec <path_to_input>.avif <path_to_output>.png

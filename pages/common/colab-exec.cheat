@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/colab-exec.md
+
+% colab-exec, common
+
+# Execute code provided via `stdin`
+echo "{{print('Hello from Colab')}}" | colab exec
+
+# Execute a local Python script in the active session
+colab exec <__f___file_> <path_to_script_py>
+
+# Execute a local Jupyter notebook in a specific named session
+colab exec <__s___session_> <session_name> <__f___file_> <path_to_notebook_ipynb>
+
+# Execute a script and save generated plots to an image file
+colab exec <__f___file_> <path_to_script_py> --output-image <path_to_plot_png>
+
+# Execute code with a custom timeout in seconds
+colab exec <__f___file_> <path_to_script_py> --timeout <60_0>

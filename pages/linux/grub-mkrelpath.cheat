@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/grub-mkrelpath.md
+
+% grub-mkrelpath, linux
+
+# Print the GRUB path of a file
+grub-mkrelpath <path_to_file>
+
+# Print the GRUB path of a file on a separately mounted filesystem
+grub-mkrelpath <_mnt_partition_path_to_file>

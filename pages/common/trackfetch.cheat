@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/trackfetch.md
+
+% trackfetch, common
+
+# Download every song from a file with one `Artist - Title` per line into `~/Music/trackfetch`
+trackfetch <path_to_songs_txt>
+
+# Download songs into a specific directory
+trackfetch <path_to_songs_txt> <__o___output_> <path_to_directory>
+
+# Keep YouTube's original audio instead of converting it to MP3
+trackfetch <path_to_songs_txt> <__f___format_> <opus_m4a>
+
+# Name the files by song title only, instead of `Artist - Title`
+trackfetch <path_to_songs_txt> --title-only
+
+# Wait a number of seconds between songs to avoid rate limiting
+trackfetch <path_to_songs_txt> --delay <3>
+
+# Retry the songs that failed in a previous run
+cut <__d___delimiter_> '|' <__f___fields_> 1 <path_to_directory>/failed.txt > <path_to_retry_txt> && trackfetch <path_to_retry_txt> <__o___output_> <path_to_directory>
+
+# Display help
+trackfetch <__h___help_>

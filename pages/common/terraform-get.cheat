@@ -1,0 +1,13 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/terraform-get.md
+
+% terraform-get, common
+
+# Download modules referenced in the configuration
+terraform get
+
+# Update already-downloaded modules to the latest allowed versions
+terraform get -update
+
+# Disable color output
+terraform get -no-color

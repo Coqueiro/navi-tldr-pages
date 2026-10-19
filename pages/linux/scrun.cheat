@@ -12,7 +12,7 @@ scrun start <container_id>
 # Query the state of a container
 scrun state <container_id>
 
-# Send a signal to a container (default: SIGTERM)
+# Send a signal to a container (default: `SIGTERM`)
 scrun kill <container_id>
 
 # Send a specific signal to a container

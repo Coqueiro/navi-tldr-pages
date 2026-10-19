@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/djpeg.md
+
+% djpeg, common
+
+# Decompress a JPEG file with default settings
+djpeg -outfile <path_to_output_image> <path_to_input>.jpg

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/2048.md
+
+% 2048, common
+
+# Play the game 2048 in the console (using original color scheme)
+2048
+
+# Use an alternative color scheme (requires 256-color terminal support)
+2048 <bluered_blackwhite>
