@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-delete.md
+
+% flux-delete, common
+
+# Delete a Kustomization
+flux delete kustomization <kustomization_name>
+
+# Delete a Kustomization without asking for confirmation
+flux delete kustomization <kustomization_name> <__s___silent_>
+
+# Delete a HelmRelease
+flux delete helmrelease <release_name>
+
+# Delete a GitRepository source
+flux delete source git <source_name>
+
+# Delete a HelmRepository source
+flux delete source helm <source_name>

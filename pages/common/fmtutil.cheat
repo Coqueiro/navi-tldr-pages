@@ -17,3 +17,9 @@ fmtutil --byengine <engine>
 
 # Recreate a specific format
 fmtutil --byfmt <format>
+
+# Recreate all system format files
+fmtutil --sys --all
+
+# Recreate all user format files
+fmtutil --user --all

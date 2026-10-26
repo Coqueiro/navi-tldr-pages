@@ -6,7 +6,7 @@
 # Build a package from `src.rpm`
 koji build <target> <path_to_src_rpm>
 
-# Build a package from a SCM (Source Code Management) URL
+# Build a package from an SCM (Source Code Management) URL
 koji build <target> <git_https___src_fedoraproject_org_rpms_vim_git_e847a50297a216229050bf4db3d06a139104e7cf>
 
 # Perform a scratch build

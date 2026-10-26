@@ -6,7 +6,7 @@
 # Query your system's default name server for an IP address (A record) of the domain
 nslookup <example_com>
 
-# Query a given name server for a NS record of the domain
+# Query a given name server for an NS record of the domain
 nslookup -type=NS <example_com> <8_8_8_8>
 
 # Query for a reverse lookup (PTR record) of an IP address

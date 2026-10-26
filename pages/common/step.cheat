@@ -21,7 +21,7 @@ step certificate format <path_to_certificate_pem> --out <path_to_certificate_der
 # Install or uninstall a root certificate in the system's default trust store
 step certificate <install_uninstall> <path_to_root_ca_crt>
 
-# Create a RSA/EC private and public keypair (append `--no-password --insecure` to skip private key password protection)
+# Create an RSA/EC private and public keypair (append `--no-password --insecure` to skip private key password protection)
 step crypto keypair <path_to_public_key> <path_to_private_key> --kty <RSA_EC>
 
 # Display help for subcommands

@@ -21,5 +21,5 @@ ffuf -w <path_to_postdata_txt> -X <POST> -d "<username_admin__password_FUZZ>" -u
 # Fuzz multiple positions with multiple wordlists using different modes and [a]uto [c]alibration to reduce false positives
 ffuf -w <path_to_keys_KEY> -w <path_to_values_VALUE> -mode <pitchfork_clusterbomb> -u <https___example_com_id_KEY_VALUE> -ac
 
-# Proxy requests through a HTTP MITM pro[x]y (such as Burp Suite or `mitmproxy`)
+# Proxy requests through an HTTP MITM pro[x]y (such as Burp Suite or `mitmproxy`)
 ffuf -w <path_to_wordlist> -x <http___127_0_0_1_8080> -u <https___example_com_FUZZ>

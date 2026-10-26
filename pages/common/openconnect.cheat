@@ -10,7 +10,7 @@ sudo openconnect <vpn_example_org>
 sudo openconnect <__b___background_> <vpn_example_org>
 
 # Terminate the connection that is running in the background
-sudo killall -SIGINT openconnect
+sudo killall <__2__SIGINT_> openconnect
 
 # Specify the user to log in as
 sudo openconnect <__u___user_> <username> <vpn_example_org>

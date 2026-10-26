@@ -3,7 +3,7 @@
 
 % mc.cli, common
 
-# Add connection to a S3 server
+# Add connection to an S3 server
 mc alias set <local> <http___localhost_9000> <access_key> <secret_key>
 
 # Create a bucket

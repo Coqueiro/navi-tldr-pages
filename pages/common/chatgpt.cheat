@@ -18,5 +18,5 @@ chatgpt <__i___init_prompt_> "{{You are Rick, from Rick and Morty. Respond to qu
 # Pipe the result of a command to `chatgpt` as a prompt
 echo "{{How to view running processes on Ubuntu?}}" | chatgpt
 
-# Generate an image using DALL-E
+# Generate an image using DALL·E
 chatgpt <__p___prompt_> "{{image: A white cat}}"

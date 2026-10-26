@@ -7,7 +7,7 @@
 cbatticon
 
 # Show the battery icon and set the update interval to 20 seconds
-cbatticon <__u___update_interval_> <20>
+cbatticon <__u___update_interval_> 20
 
 # List available icon types
 cbatticon <__t___list_icon_types_>

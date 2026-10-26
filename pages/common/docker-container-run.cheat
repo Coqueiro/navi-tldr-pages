@@ -16,7 +16,7 @@ docker {{[run|container run]}} --rm {{[-it|--interactive --tty]}} <image> <comma
 docker {{[run|container run]}} <__e___env_> '<variable>=<value>' <__e___env_> <variable> <image> <command>
 
 # Run command in a new container with bind mounted volumes
-docker {{[run|container run]}} <__v___volume_> /<path_to_host_path>:/<path_to_container_path> <image> <command>
+docker {{[run|container run]}} <__v___volume_> /<path_to_host_directory>:/<path_to_container_directory> <image> <command>
 
 # Run command in a new container with published ports
 docker {{[run|container run]}} <__p___publish_> <host_port>:<container_port> <image> <command>

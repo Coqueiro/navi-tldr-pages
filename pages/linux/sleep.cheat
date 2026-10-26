@@ -18,5 +18,8 @@ sleep 20m && <command>
 # Delay forever
 sleep <_inf_infinity_>
 
+# Delay for one millisecond
+sleep <0_001_1e_3>
+
 # Display help
 sleep --help

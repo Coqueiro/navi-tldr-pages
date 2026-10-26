@@ -3,7 +3,7 @@
 
 % msgunfmt, common
 
-# Output conversion
+# Decompile a `.mo` file and print the result to `stdout`
 msgunfmt <path_to_file_mo>
 
 # Convert a `.mo` file to a `.po` file

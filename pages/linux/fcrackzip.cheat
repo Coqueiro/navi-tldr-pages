@@ -3,7 +3,7 @@
 
 % fcrackzip, linux
 
-# Brute-force a password with a length of 4 to 8 characters and contains only alphanumeric characters (order matters)
+# Brute-force a password with a length of 4 to 8 characters and containing only alphanumeric characters (order matters)
 fcrackzip <__b___brute_force_> <__l___length_> 4-8 <__c___charset_> aA1 <archive>
 
 # Brute-force a password in verbose mode with a length of 3 characters that only contains lowercase characters, `$`, and `%`

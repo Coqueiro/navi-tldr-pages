@@ -16,7 +16,7 @@ es -w <search_term>
 es -n <10> <search_term>
 
 # Search within a specific folder
-es -path <folder_path> <search_term>
+es -path <path_to_folder> <search_term>
 
 # List folders only
 es /ad

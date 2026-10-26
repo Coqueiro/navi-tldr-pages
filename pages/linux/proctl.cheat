@@ -9,10 +9,10 @@ proctl <__ll__list_licenses_>
 # List available languages
 proctl <__lL__list_languages_>
 
-# Pick a license in a FZF menu
+# Pick a license in an FZF menu
 proctl <__pl__pick_license_>
 
-# Pick a language in a FZF menu
+# Pick a language in an FZF menu
 proctl <__pL__pick_language_>
 
 # Remove all licenses from the current project

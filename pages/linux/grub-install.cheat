@@ -9,10 +9,10 @@ sudo grub-install <path_to_device>
 # Install GRUB on a BIOS system while specifying architecture
 sudo grub-install --target <i386_pc> <path_to_device>
 
-# Install GRUB on an UEFI system
+# Install GRUB on a UEFI system
 sudo grub-install --efi-directory <path_to_efi_directory>
 
-# Install GRUB on an UEFI system while specifying architecture and boot menu text
+# Install GRUB on a UEFI system while specifying architecture and boot menu text
 sudo grub-install --target <x86_64_efi> --efi-directory <path_to_efi_directory> --bootloader-id <GRUB>
 
 # Install GRUB pre-loading specific modules

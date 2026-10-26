@@ -3,7 +3,7 @@
 
 % valet, osx
 
-# Start the valet daemon
+# Start the `valet` daemon
 valet start
 
 # Register the current working directory as a path that Valet should search for sites

@@ -18,7 +18,7 @@ grex <__w___words_> {{string1 string2 ...}}
 # Replace spaces with `\s`
 grex <__s___spaces_> {{string1 string2 ...}}
 
-# Detect repeating patterns in the input and shorten them using {min,max} quantifiers
+# Detect repeating patterns in the input and shorten them using `{min,max}` quantifiers
 grex <__r___repetitions_> {{string1 string2 ...}}
 
 # Generate `regex` of test cases (separated by newline) from a file

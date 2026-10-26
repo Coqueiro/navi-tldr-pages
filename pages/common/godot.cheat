@@ -13,7 +13,7 @@ godot <__e___editor_>
 godot <__p___project_manager_>
 
 # Export a project for release using a given export preset (the preset must be defined in the project)
-godot --export-release <preset> <output_path>
+godot --export-release <preset> <path_to_output>
 
 # Execute a standalone GDScript file (the script must inherit from `SceneTree` or `MainLoop`)
 godot <__s___script_> <script_gd>

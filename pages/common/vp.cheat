@@ -1,0 +1,28 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/vp.md
+
+% vp, common
+
+# Create a new project interactively
+vp create
+
+# Start the development server
+vp dev
+
+# Build the project for production
+vp build
+
+# Run format, lint, and type checks
+vp check
+
+# Run tests using Vitest
+vp test
+
+# Execute a task or script
+vp run <task_name>
+
+# Install all dependencies
+vp <_i_install_>
+
+# Add a package to dependencies
+vp add <package_name>

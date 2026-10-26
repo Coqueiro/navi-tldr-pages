@@ -6,7 +6,7 @@
 # Render a PNG image with a filename based on the input filename and output format (uppercase -O)
 fdp -T png -O <path_to_input_gv>
 
-# Render a SVG image with the specified output filename (lowercase -o)
+# Render an SVG image with the specified output filename (lowercase -o)
 fdp -T svg -o <path_to_image_svg> <path_to_input_gv>
 
 # Render the output in a specific format

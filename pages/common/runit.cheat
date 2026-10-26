@@ -7,4 +7,4 @@
 runit
 
 # Shut down runit
-kill --CONT <runit_process_id>
+kill <__CONT__SIGCONT_> <runit_process_id>

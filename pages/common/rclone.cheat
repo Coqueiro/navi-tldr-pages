@@ -3,7 +3,7 @@
 
 % rclone, common
 
-# Launch an interactive menu to setup rclone
+# Launch an interactive menu to set up rclone
 rclone config
 
 # List contents of a directory on an rclone remote

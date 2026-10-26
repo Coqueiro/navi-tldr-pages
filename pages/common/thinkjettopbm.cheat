@@ -3,7 +3,7 @@
 
 % thinkjettopbm, common
 
-# Convert a HP ThinkJet printer commands file to a PBM file
+# Convert an HP ThinkJet printer commands file to a PBM file
 thinkjettopbm <path_to_input> > <path_to_output_pbm>
 
 # Print debug information to `stderr`

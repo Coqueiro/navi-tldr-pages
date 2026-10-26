@@ -3,7 +3,7 @@
 
 % ppmtopjxl, common
 
-# Convert a PPM image into an PJXL file
+# Convert a PPM image into a PJXL file
 ppmtopjxl <path_to_image_ppm> > <path_to_output_pjxl>
 
 # Resize the input image

@@ -1,0 +1,7 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/gst-launch-1.0-vulkanh264enc.md
+
+% gst-launch-1.0-vulkanh264enc, common
+
+# Encode h264 video
+gst-launch-1.0 <source> ! vulkanupload ! vulkanh264enc ! h264parse ! <sink>

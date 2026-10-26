@@ -3,5 +3,5 @@
 
 % pbmtomgr, common
 
-# Convert a PBM image into a MGR bitmap
+# Convert a PBM image into an MGR bitmap
 pbmtomgr <path_to_image_pbm> > <path_to_output_mgr>

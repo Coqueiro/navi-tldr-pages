@@ -3,7 +3,7 @@
 
 % ydotool, linux
 
-# Start the ydotool daemon in the background
+# Start the `ydotool` daemon in the background
 ydotoold
 
 # Perform a `<LeftClick>` input

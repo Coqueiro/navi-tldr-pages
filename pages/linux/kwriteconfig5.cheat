@@ -13,7 +13,7 @@ kwriteconfig5 --file <path_to_file> --group <group_name> --key <key> <value>
 kwriteconfig5 --group <group_name> --key <key> --delete
 
 # Use systemd to start the Plasma session when available
-kwriteconfig5 --file <startkderc> --group <General> --key <systemdBoot> <true>
+kwriteconfig5 --file <startkderc> --group <General> --key systemdBoot <true>
 
 # Hide the title bar when a window is maximized (like Ubuntu)
 kwriteconfig5 --file <___config_kwinrc> --group <Windows> --key <BorderlessMaximizedWindows> <true>

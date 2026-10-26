@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-reconcile.md
+
+% flux-reconcile, common
+
+# Trigger reconciliation of a GitRepository source
+flux reconcile source git <source_name>
+
+# Trigger reconciliation of a Kustomization
+flux reconcile kustomization <kustomization_name>
+
+# Trigger reconciliation of a Kustomization and its source
+flux reconcile kustomization <kustomization_name> --with-source
+
+# Trigger reconciliation of a HelmRelease
+flux reconcile helmrelease <release_name>
+
+# Trigger reconciliation of a HelmRelease and its source
+flux reconcile helmrelease <release_name> --with-source

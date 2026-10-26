@@ -12,7 +12,7 @@ udisksctl info <__b___block_device_> <_dev_sdX>
 # Show detailed information about a device partition
 udisksctl info <__b___block_device_> <_dev_sdXN>
 
-# Mount a device partition and prints the mount point
+# Mount a device partition and print the mount point
 udisksctl mount <__b___block_device_> <_dev_sdXN>
 
 # Unmount a device partition

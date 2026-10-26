@@ -3,5 +3,5 @@
 
 % pjtoppm, common
 
-# Convert a HP PaintJet file to PPM
+# Convert an HP PaintJet file to PPM
 pjtoppm <path_to_input_pj> > <path_to_output_ppm>

@@ -12,7 +12,7 @@ quickget <os> <release> <edition>
 # Download configuration for a Windows 11 VM with VirtIO drivers for Windows
 quickget windows 11
 
-# Download a macOS recovery image and creates a virtual machine configuration
+# Download a macOS recovery image and create a virtual machine configuration
 quickget macos <mojave_catalina_big_sur_monterey_ventura_sonoma>
 
 # Show an ISO URL for an operating system

@@ -9,7 +9,7 @@ host <domain>
 # Look up a field (CNAME, TXT, ...) of a domain
 host -t <field> <domain>
 
-# Reverse lookup an IP
+# Reverse look up an IP
 host <ip_address>
 
 # Specify an alternate DNS server to query

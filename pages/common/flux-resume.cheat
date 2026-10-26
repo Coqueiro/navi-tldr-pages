@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-resume.md
+
+% flux-resume, common
+
+# Resume reconciliation for a Kustomization
+flux resume kustomization <kustomization_name>
+
+# Resume reconciliation for all Kustomizations in a namespace
+flux resume kustomization --all
+
+# Resume reconciliation for a HelmRelease
+flux resume helmrelease <release_name>
+
+# Resume reconciliation for a GitRepository source
+flux resume source git <source_name>
+
+# Resume reconciliation for an ImageUpdateAutomation resource
+flux resume image update <automation_name>

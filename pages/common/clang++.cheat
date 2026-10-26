@@ -16,7 +16,7 @@ clang++ <path_to_source_cpp> -Wall <__g___debug_> -Og <__o___output_> <path_to_o
 clang++ <path_to_source_cpp> -std=<c__20> <__o___output_> <path_to_output_executable>
 
 # Include libraries located at a different path than the source file
-clang++ <path_to_source_cpp> <__o___output_> <path_to_output_executable> -I<path_to_header_path> -L<path_to_library_path> -l<path_to_library_name>
+clang++ <path_to_source_cpp> <__o___output_> <path_to_output_executable> -I<path_to_headers> -L<path_to_library> -l<path_to_library_name>
 
 # Compile source code into LLVM Intermediate Representation (IR)
 clang++ <__S___assemble_> -emit-llvm <path_to_source_cpp> <__o___output_> <path_to_output_ll>

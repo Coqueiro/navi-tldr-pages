@@ -13,7 +13,7 @@ feedreader --addFeed=<feed_url>
 feedreader --grabArticle=<article_url>
 
 # Download all images from a specific article
-feedreader --url=<feed_url> --grabImages=<article_path>
+feedreader --url=<feed_url> --grabImages=<path_to_article>
 
 # Play media from a URL
 feedreader --playMedia=<article_url>

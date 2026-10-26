@@ -3,8 +3,8 @@
 
 % borg, common
 
-# Initialize a (local) repository
-borg init <path_to_repo_directory>
+# Initialize a repository
+borg init <__e___encryption_> <repokey_keyfile_none____> <path_to_repo_directory>
 
 # Back up a directory into the repository, creating an archive called "Monday"
 borg create --progress <path_to_repo_directory>::<Monday> <path_to_source_directory>

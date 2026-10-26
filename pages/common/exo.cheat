@@ -9,7 +9,7 @@ exo config
 # Generate the exo autocompletion script for a specified shell
 exo completion <zsh>
 
-# List all of the available zones and output them as json
+# List all of the available zones and output them as JSON
 exo zone <__O___output_format_> <json>
 
 # Quietly create a Compute instance in a specific zone (disables the non-essential command output)

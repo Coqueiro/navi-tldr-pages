@@ -4,7 +4,7 @@
 % pstoedit, linux
 
 # Convert a PDF page to PNG or JPEG format
-pstoedit -page <page_number> -f magick <path_to_file_pdf> <page_png_page_jpg>
+pstoedit -page <page_number> -f magick <path_to_file_pdf> <page>.<png_jpg>
 
 # Convert multiple PDF pages to numbered images
-pstoedit -f magick <path_to_file> <page_d_png_page_d_jpg>
+pstoedit -f magick <path_to_file> <page_d>.<png_jpg>

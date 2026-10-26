@@ -12,7 +12,7 @@ java_home --arch <i386>
 # List JVMs based on a specific tasks (defaults to `CommandLine`)
 java_home --datamodel <Applets_WebStart_BundledApp_JNI_CommandLine>
 
-# List JVMs in a XML format
+# List JVMs in an XML format
 java_home --xml
 
 # Display help

@@ -9,7 +9,7 @@ vinmap <__ip___ip_range_> <192_168_1_0_24>
 # Scan a domain with version and OS detection, saving results to a specific file
 vinmap <__ip___ip_range_> <example_com> <__s___scan_type_> "-sV -O" -o <path_to_scan_results_xml>
 
-# Scan an IP range using 10 chunks and 20 concurrent threads, uses half of the system's CPU cores if not specified
+# Scan an IP range using 10 chunks and 20 concurrent threads (uses half of the system's CPU cores if not specified)
 vinmap <__ip___ip_range_> <10_0_0_1_10_0_0_255> <__n___num_chunks_> 10 <__t___threads_> 20
 
 # Output scan results in JSON format

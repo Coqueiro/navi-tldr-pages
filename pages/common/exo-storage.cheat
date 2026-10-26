@@ -13,7 +13,7 @@ exo storage put <path_to_file> <bucket_name>/<prefix_>
 exo storage ls <bucket_name>
 
 # Simulate the download of an object from a bucket
-exo storage get <bucket_name>/<object_key> <local_path> --dry-run
+exo storage get <bucket_name>/<object_key> <path_to_local_file> --dry-run
 
 # Manage the metadata of an object
 exo storage metadata add <bucket_name>/<object_key> <key_value>

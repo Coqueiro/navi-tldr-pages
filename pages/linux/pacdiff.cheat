@@ -6,7 +6,7 @@
 # Review files that need maintenance in interactive mode
 pacdiff
 
-# Use sudo and sudoedit to remove and merge files
+# Use `sudo` and `sudoedit` to remove and merge files
 pacdiff <__s___sudo_>
 
 # Review files needing maintenance, creating `.bak`ups of the original if you `(O)verwrite`

@@ -3,7 +3,7 @@
 
 % wkhtmltopdf, common
 
-# Convert a HTML document into PDF
+# Convert an HTML document into PDF
 wkhtmltopdf <input_html> <output_pdf>
 
 # Specify the PDF page size (please see `PaperSize` of `QPrinter` for supported sizes)

@@ -16,7 +16,7 @@ sui client switch --address <address_alias>
 sui client switch --env <env_alias>
 
 # Publish a smart contract
-sui client publish <package_path>
+sui client publish <path_to_package>
 
 # Interact with the Sui faucet
 sui client faucet <subcommand>

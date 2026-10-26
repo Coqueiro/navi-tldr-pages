@@ -13,7 +13,7 @@ pyrit list_cores
 pyrit -e "<extended_ssid>" create_essid
 
 # [r]ead and analyze a specific packet capture file
-pyrit -r <path_to_file_cap_path_to_file_pcap> analyze
+pyrit -r <path_to_file>.<cap_pcap> analyze
 
 # Read and [i]mport passwords to the current database
 pyrit -i <path_to_file> <import_unique_passwords_unique_passwords_import_passwords>

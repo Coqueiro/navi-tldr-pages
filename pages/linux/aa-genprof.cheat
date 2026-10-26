@@ -4,13 +4,13 @@
 % aa-genprof, linux
 
 # Start generating a profile for a program
-sudo aa-genprof <program_path>
+sudo aa-genprof <path_to_program>
 
 # Specify a custom directory for profiles
-sudo aa-genprof <__d___dir_> /<path_to_profiles> <program_path>
+sudo aa-genprof <__d___dir_> /<path_to_profiles> <path_to_program>
 
 # Specify a custom logfile for profiling
-sudo aa-genprof <__f___file_> /<path_to_logfile> <program_path>
+sudo aa-genprof <__f___file_> /<path_to_logfile> <path_to_program>
 
 # Display help
 aa-genprof <__h___help_>

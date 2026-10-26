@@ -4,10 +4,10 @@
 % ko, common
 
 # Build and publish a container image from a Go package import path
-ko build <import_path>
+ko build <path_to_import_directory>
 
 # Build and load a container image into a local Docker daemon
-ko build <__L___local_> <import_path>
+ko build <__L___local_> <path_to_import_directory>
 
 # Apply Kubernetes manifests with Go image references resolved to digests
 ko apply <__f___filename_> <path_to_manifest_yaml>
@@ -19,7 +19,7 @@ ko create <__f___filename_> <path_to_manifest_yaml>
 ko resolve <__f___filename_> <path_to_manifest_yaml>
 
 # Build and run a Go package on Kubernetes
-ko run <import_path>
+ko run <path_to_import_directory>
 
 # Delete Kubernetes resources defined in a manifest
 ko delete <__f___filename_> <path_to_manifest_yaml>

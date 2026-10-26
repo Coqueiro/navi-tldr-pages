@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/flux-export.md
+
+% flux-export, common
+
+# Export a Kustomization
+flux export kustomization <kustomization_name>
+
+# Export all Kustomization resources and save them to a file
+flux export kustomization --all > <path_to_kustomizations_yaml>
+
+# Export a GitRepository source including credentials
+flux export source git <source_name> --with-credentials
+
+# Export all GitRepository sources
+flux export source git --all
+
+# Export a HelmRelease
+flux export helmrelease <release_name>

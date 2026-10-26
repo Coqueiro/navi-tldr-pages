@@ -4,7 +4,7 @@
 % arthas, common
 
 # Start Arthas
-java -jar <path_to_arthas_boot_jar>
+java -jar <path_to_arthas_boot>.jar
 
 # Reconnect Arthas (default port used by Arthas is 3658)
 telnet localhost <port_number>

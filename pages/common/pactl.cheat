@@ -20,3 +20,6 @@ pactl set-sink-volume <1> <0_75>
 
 # Toggle mute on the default sink (using the special name `@DEFAULT_SINK@`)
 pactl set-sink-mute <_DEFAULT_SINK_> toggle
+
+# Specify which HDMI output is being used
+pactl set-card-profile <alsa_card_pci_0000_0c_00_1> output:<hdmi_stereo_extra1>

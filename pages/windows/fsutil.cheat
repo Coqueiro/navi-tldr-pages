@@ -7,7 +7,7 @@
 fsutil volume list
 
 # Display information about a volume's filesystem
-fsutil fsInfo volumeInfo <drive_letter_volume_path>
+fsutil fsInfo volumeInfo <drive_letter_path_to_volume>
 
 # Display the current state of the filesystem auto-repair for all volumes
 fsutil repair state
@@ -16,4 +16,4 @@ fsutil repair state
 fsutil dirty query
 
 # Set the dirty bit state of a volume
-fsutil dirty set <drive_letter_volume_path>
+fsutil dirty set <drive_letter_path_to_volume>
