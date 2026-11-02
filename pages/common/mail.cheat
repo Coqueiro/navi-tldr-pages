@@ -10,7 +10,7 @@ mail
 mail --subject "<subject_line>" <to_user_example_com> --cc "<cc_email_address>"
 
 # Send an email that contains file content
-mail < <path_to_file_txt> --subject "{{$HOSTNAME filename.txt}}" <to_user_example_com>
+mail <<path_to_file_txt> --subject "{{$HOSTNAME filename.txt}}" <to_user_example_com>
 
 # Send a `.tar.gz` file as an attachment
 tar cvzf - {{path/to/directory1 path/to/directory2}} | uuencode <data_tar_gz> | mail --subject "<subject_line>" <to_user_example_com>

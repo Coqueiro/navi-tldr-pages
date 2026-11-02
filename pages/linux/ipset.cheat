@@ -16,4 +16,4 @@ ipset add <set_name> <192_168_1_25>
 ipset del <set_name> <192_168_1_25>
 
 # Save an IP set
-ipset save <set_name> > <path_to_ip_set>
+ipset save <set_name> ><path_to_ip_set>

@@ -4,4 +4,4 @@
 % ppmtoapplevol, common
 
 # Convert a PPM image into an Apple volume label image
-ppmtoapplevol <path_to_image_ppm> > <path_to_output>
+ppmtoapplevol <path_to_image_ppm> ><path_to_output>

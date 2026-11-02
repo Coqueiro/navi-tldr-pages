@@ -4,7 +4,7 @@
 % ppmdraw, common
 
 # Draw on the specified PPM image by executing the supplied script
-ppmdraw -script '{{setpos 50 50; text_here "hello!"; }}' <path_to_image_pnm> > <path_to_output_pnm>
+ppmdraw -script '{{setpos 50 50; text_here "hello!"; }}' <path_to_image_pnm> ><path_to_output_pnm>
 
 # Draw on the specified PPM image by executing the script in the specified file
-ppmdraw -scriptfile <path_to_script> <path_to_image_pnm> > <path_to_output_pnm>
+ppmdraw -scriptfile <path_to_script> <path_to_image_pnm> ><path_to_output_pnm>

@@ -22,4 +22,4 @@ tofu plan -target <resource_type_resource_name>
 tofu plan -json
 
 # Write a plan to a specific file
-tofu plan -no-color > <path_to_file>
+tofu plan -no-color ><path_to_file>

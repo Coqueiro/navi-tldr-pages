@@ -4,4 +4,4 @@
 % srftopam, common
 
 # Convert an SRF file to Netpbm format
-srftopam <path_to_file_srf> > <path_to_output_pam>
+srftopam <path_to_file_srf> ><path_to_output_pam>

@@ -7,7 +7,7 @@
 dot2gxl <path_to_input_file_dot> -o <path_to_output_file_gxl>
 
 # Convert DOT to GXL based on `.dot` input extension
-dot2gxl <path_to_input_file_dot> > <path_to_output_file_gxl>
+dot2gxl <path_to_input_file_dot> ><path_to_output_file_gxl>
 
 # Convert GXL to DOT based on `.gxl` input extension
-dot2gxl <path_to_input_file_gxl> > <path_to_output_file_dot>
+dot2gxl <path_to_input_file_gxl> ><path_to_output_file_dot>

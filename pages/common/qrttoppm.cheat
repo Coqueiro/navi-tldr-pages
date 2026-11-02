@@ -4,4 +4,4 @@
 % qrttoppm, common
 
 # Convert a QRT file to a PPM image
-qrttoppm <path_to_file_qrt> > <path_to_image_ppm>
+qrttoppm <path_to_file_qrt> ><path_to_image_ppm>

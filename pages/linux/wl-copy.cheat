@@ -13,7 +13,7 @@ wl-copy "<text>"
 wl-copy --paste-once "<text>"
 
 # Copy an image
-wl-copy < <path_to_image>
+wl-copy <<path_to_image>
 
 # Clear the clipboard
 wl-copy --clear

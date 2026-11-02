@@ -4,7 +4,7 @@
 % unzipsfx, linux
 
 # Create a self-extracting binary file of a Zip archive
-cat $(which unzipsfx) <path_to_archive_zip> > <filename> && chmod 755 <filename>
+cat $(which unzipsfx) <path_to_archive_zip> ><filename> && chmod 755 <filename>
 
 # Extract a self-extracting binary in the current directory
 <__path_to_binary>

@@ -1,0 +1,10 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/cdemu.md
+
+% cdemu, linux
+
+# Mount a CD
+cdemu load <device_number> <path_to_file_cue>
+
+# Unmount CDs
+cdemu unload <device_number_all>

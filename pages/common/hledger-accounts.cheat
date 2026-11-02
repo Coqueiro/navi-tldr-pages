@@ -13,7 +13,7 @@ hledger <_acc_accounts_> <__u___used_>
 hledger <_acc_accounts_> <__d___declared_>
 
 # Add new account directives, for accounts used but not declared, to the journal
-hledger <_acc_accounts_> --undeclared --directives >> <2024_accounts_journal>
+hledger <_acc_accounts_> --undeclared --directives >><2024_accounts_journal>
 
 # Show accounts with `asset` in their name, and their declared/inferred types
 hledger <_acc_accounts_> asset --types

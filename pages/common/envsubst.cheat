@@ -7,10 +7,10 @@
 echo '<_HOME>' | envsubst
 
 # Replace environment variables in an input file and output to `stdout`
-envsubst < <path_to_input_file>
+envsubst <<path_to_input_file>
 
 # Replace environment variables in an input file and output to a file
-envsubst < <path_to_input_file> > <path_to_output_file>
+envsubst <<path_to_input_file> ><path_to_output_file>
 
 # Replace environment variables in an input file from a space-separated list
-envsubst < <path_to_input_file> '{{$USER $SHELL $HOME}}'
+envsubst <<path_to_input_file> '{{$USER $SHELL $HOME}}'

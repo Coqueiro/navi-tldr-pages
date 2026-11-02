@@ -13,10 +13,10 @@ protoc --java_out=<path_to_output_directory> --proto_path=<path_to_import_search
 protoc --csharp_out=<path_to_c__output_directory> --js_out=<path_to_js_output_directory> <input_file_proto>
 
 # Encode a text-format message into a protocol message from a `.proto` file
-protoc < <message_txt> --encode=<TypeName> <input_file_proto>
+protoc <<message_txt> --encode=<TypeName> <input_file_proto>
 
 # Decode a protocol message into text-format from a `.proto` file
-protoc < <message_bin> --decode=<TypeName> <input_file_proto>
+protoc <<message_bin> --decode=<TypeName> <input_file_proto>
 
 # Decode a protocol message into raw tag/value pairs
-protoc < <message_bin> --decode_raw
+protoc <<message_bin> --decode_raw

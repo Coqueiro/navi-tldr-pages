@@ -16,7 +16,7 @@ eol <product> <__w___web_>
 eol {{product1 product2 ...}} --<html_json_md_markdown_pretty_rst_csv_tsv_yaml>
 
 # Get EoLs of one or more products as a single markdown file
-eol {{product1 product2 ...}} --<markdown> > <eol_report_md>
+eol {{product1 product2 ...}} --<markdown> ><eol_report_md>
 
 # Display help
 eol <__h___help_>

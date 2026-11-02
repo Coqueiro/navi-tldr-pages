@@ -7,19 +7,19 @@
 readarray <array_name>
 
 # Read lines from a file and insert them in an array
-readarray < <path_to_file_txt> <array_name>
+readarray <<path_to_file_txt> <array_name>
 
 # Remove [t]railing delimiters (newline by default)
-readarray < <path_to_file_txt> -t <array_name>
+readarray <<path_to_file_txt> -t <array_name>
 
 # Copy at most `n` lines
-readarray < <path_to_file_txt> -n <n> <array_name>
+readarray <<path_to_file_txt> -n <n> <array_name>
 
 # [s]kip the first `n` lines
-readarray < <path_to_file_txt> -s <n> <array_name>
+readarray <<path_to_file_txt> -s <n> <array_name>
 
 # Define a custom [d]elimiter
-readarray < <path_to_file_txt> -d <delimiter> <array_name>
+readarray <<path_to_file_txt> -d <delimiter> <array_name>
 
 # Display help
 help mapfile

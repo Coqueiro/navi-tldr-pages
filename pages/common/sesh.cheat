@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/sesh.md
+
+% sesh, common
+
+# List sessions excluding the currently attached
+sesh list <__H___hide_attached_>
+
+# List sessions with icons
+sesh list <__i___icons_>
+
+# List panes for the currently connected session
+sesh list <__p___panes_>
+
+# Start an interactive session picker with icons
+sesh picker <__i___icons_>
+
+# Connect to a session
+sesh connect <session_name>
+
+# Connect to the previously connected session
+sesh last
+
+# Preview the active window in a session
+sesh preview <session_name>

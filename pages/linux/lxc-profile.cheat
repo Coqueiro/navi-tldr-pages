@@ -13,7 +13,7 @@ lxc profile show <profile_name>
 lxc profile edit <profile_name>
 
 # Edit a specific profile importing the configuration values from a file
-lxc < <config_yaml> profile edit <profile_name>
+lxc <<config_yaml> profile edit <profile_name>
 
 # Launch a new container with specific profiles
 lxc launch <container_image> <container_name> <__p___profile_> <profile1> <__p___profile_> <profile2>

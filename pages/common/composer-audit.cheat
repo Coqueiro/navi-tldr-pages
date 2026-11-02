@@ -13,7 +13,7 @@ composer audit --no-dev
 composer audit --format <table_plain_json_summary>
 
 # Output audit results to a file in JSON format
-composer audit --format json > audit_report.json
+composer audit --format json >audit_report.json
 
 # Verify whether a specific package in your project is affected by security issues
 composer audit <vendor>/<package>

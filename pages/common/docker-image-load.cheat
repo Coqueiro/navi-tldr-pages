@@ -4,7 +4,7 @@
 % docker-image-load, common
 
 # Load a Docker image from `stdin`
-docker < <path_to_image_file_tar> {{[load|image load]}}
+docker <<path_to_image_file_tar> {{[load|image load]}}
 
 # Load a Docker image from a specific file
 docker {{[load|image load]}} <__i___input_> <path_to_image_file_tar>

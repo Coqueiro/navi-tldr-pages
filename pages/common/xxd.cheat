@@ -13,10 +13,10 @@ xxd <input_file> <output_file>
 xxd <__a__autoskip_> <input_file>
 
 # Display the output with 10 columns of one octet (byte) each
-xxd <__c__cols_> <10> <input_file>
+xxd <__c__cols_> 10 <input_file>
 
 # Display output only up to a length of 32 bytes
-xxd <__l__len_> <32> <input_file>
+xxd <__l__len_> 32 <input_file>
 
 # Display the output in plain mode, without any gaps between the columns
 xxd <__p__postscript_> <input_file>

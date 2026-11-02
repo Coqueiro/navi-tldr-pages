@@ -4,4 +4,4 @@
 % pbmpscale, common
 
 # Enlarge a PBM image by the specified factor with edge smoothing
-pbmpscale <n> <path_to_image_pbm> > <path_to_file_pbm>
+pbmpscale <n> <path_to_image_pbm> ><path_to_file_pbm>

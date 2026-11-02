@@ -13,4 +13,4 @@ nohup <command> {{argument1 argument2 ...}} &
 nohup <path_to_script_sh> &
 
 # Run a process and write the output to a specific file
-nohup <command> {{argument1 argument2 ...}} > <path_to_output_file> &
+nohup <command> {{argument1 argument2 ...}} ><path_to_output_file> &

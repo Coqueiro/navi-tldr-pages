@@ -4,4 +4,4 @@
 % sunicontopnm, common
 
 # Convert a Sun icon into a Netpbm image
-sunicontopnm <path_to_input_ico> > <path_to_output_pbm>
+sunicontopnm <path_to_input_ico> ><path_to_output_pbm>

@@ -7,7 +7,7 @@
 newsboat <__i___import_from_opml_> <my_feeds_xml>
 
 # Alternatively, add feeds manually
-echo <http___example_com_path_to_feed> >> "${HOME}/.newsboat/urls"
+echo <http___example_com_path_to_feed> >>"${HOME}/.newsboat/urls"
 
 # Start Newsboat and refresh all feeds on startup
 newsboat <__r___refresh_on_start_>

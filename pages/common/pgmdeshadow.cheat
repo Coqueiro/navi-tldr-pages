@@ -4,4 +4,4 @@
 % pgmdeshadow, common
 
 # Remove grey shadows from a PGM image
-pgmdeshadow <path_to_input_file_pgm> > <path_to_output_file_pgm>
+pgmdeshadow <path_to_input_file_pgm> ><path_to_output_file_pgm>

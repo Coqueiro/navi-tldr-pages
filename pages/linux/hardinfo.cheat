@@ -10,4 +10,4 @@ hardinfo
 hardinfo <__r___generate_report_>
 
 # Save report to HTML file
-hardinfo <__r___generate_report_> <__f___report_format_> html > hardinfo.html
+hardinfo <__r___generate_report_> <__f___report_format_> html >hardinfo.html

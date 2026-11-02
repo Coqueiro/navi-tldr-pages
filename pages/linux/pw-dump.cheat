@@ -13,7 +13,7 @@ pw-dump <object_id>
 pw-dump <__m___monitor_>
 
 # Dump the current state of a remote instance to a file
-pw-dump <__r___remote_> <remote_name> > <path_to_dump_file_json>
+pw-dump <__r___remote_> <remote_name> ><path_to_dump_file_json>
 
 # Set a color configuration
 pw-dump <__C___color_> <never_always_auto>

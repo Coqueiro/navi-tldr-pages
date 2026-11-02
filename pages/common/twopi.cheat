@@ -13,7 +13,7 @@ twopi -T <svg> -o <path_to_image_svg> <path_to_input_gv>
 twopi -T <format> -O <path_to_input_gv>
 
 # Render a GIF image using `stdin` and `stdout`
-echo "{{digraph {this -> that} }}" | twopi -T <gif> > <path_to_image_gif>
+echo "{{digraph {this -> that} }}" | twopi -T <gif> ><path_to_image_gif>
 
 # Display help
 twopi -?

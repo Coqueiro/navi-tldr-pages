@@ -4,13 +4,13 @@
 % winicontopam, common
 
 # Read an ICO file and convert the best quality image contained therein to the PAM format
-winicontopam <path_to_input_file_ico> > <path_to_output_pam>
+winicontopam <path_to_input_file_ico> ><path_to_output_pam>
 
 # Convert all images in the input file to PAM
-winicontopam <__al__allimages_> <path_to_input_file_ico> > <path_to_output_pam>
+winicontopam <__al__allimages_> <path_to_input_file_ico> ><path_to_output_pam>
 
 # Convert the n'th image in the input file to PAM
-winicontopam <__i__image_> <n> <path_to_input_file_ico> > <path_to_output_pam>
+winicontopam <__i__image_> <n> <path_to_input_file_ico> ><path_to_output_pam>
 
 # If the image(s) to be extracted contain graded transparency data and an AND mask, write the AND mask into the fifth channel of the output PAM file
-winicontopam <__an__andmasks_> <path_to_input_file_ico> > <path_to_output_pam>
+winicontopam <__an__andmasks_> <path_to_input_file_ico> ><path_to_output_pam>

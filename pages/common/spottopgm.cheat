@@ -4,10 +4,10 @@
 % spottopgm, common
 
 # Convert the specified SPOT image to PGM format
-spottopgm <path_to_file_spot> > <path_to_output_pgm>
+spottopgm <path_to_file_spot> ><path_to_output_pgm>
 
 # Extract the specified color channel
-spottopgm -<1_2_3> <path_to_file_spot> > <path_to_output_pgm>
+spottopgm -<1_2_3> <path_to_file_spot> ><path_to_output_pgm>
 
 # Extract the specified rectangle from the input image
-spottopgm {{first_col first_row last_col last_row}} <path_to_file_spot> > <path_to_output_pgm>
+spottopgm {{first_col first_row last_col last_row}} <path_to_file_spot> ><path_to_output_pgm>

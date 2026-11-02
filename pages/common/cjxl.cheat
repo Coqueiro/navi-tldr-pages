@@ -18,5 +18,8 @@ cjxl <__q___quality_> <0__100> <path_to_image_ext> <path_to_output>.jxl
 # Convert a JPEG to a JPEG XL with specific lossy quality
 cjxl <__q___quality_> <0__100> <__j___lossless_jpeg_> 0 <path_to_image_jpeg> <path_to_output>.jxl
 
+# Adjust decoding speed at the expense of filesize
+cjxl --faster_decoding <0__4> <path_to_image_ext> <path_to_output>.jxl
+
 # Display an extremely detailed help
 cjxl {{[-h -v -v -v -v|--help --verbose --verbose --verbose --verbose]}}

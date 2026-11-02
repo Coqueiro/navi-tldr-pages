@@ -10,7 +10,7 @@ fabric <__S___setup_>
 fabric <__l___listpatterns_>
 
 # Run a pattern with input from a file
-fabric < <path_to_input_file> <__p___pattern_> <pattern_name>
+fabric <<path_to_input_file> <__p___pattern_> <pattern_name>
 
 # Run a pattern on a YouTube video URL
 fabric <__y___youtube_> "<https___www_youtube_com_watch_v_video_id>" <__p___pattern_> <pattern_name>

@@ -10,10 +10,10 @@ gifsicle <path_to_input_gif> <__O___optimize__>3 <__o___output_> <path_to_output
 gifsicle <__b___batch_> <path_to_input_gif> <__U___unoptimize_>
 
 # Extract a frame from a GIF
-gifsicle <path_to_input_gif> '#<0>' > <path_to_first_frame_gif>
+gifsicle <path_to_input_gif> '#<0>' ><path_to_first_frame_gif>
 
 # Make a GIF animation from selected GIFs
-gifsicle <__gif> <__d___delay_> <10> <__l___loop_> > <path_to_output_gif>
+gifsicle <__gif> <__d___delay_> <10> <__l___loop_> ><path_to_output_gif>
 
 # Reduce file size using lossy compression
 gifsicle <__b___batch_> <path_to_input_gif> <__O___optimize__>3 --lossy=<100> <__k___colors_> <16> <__f___dither_>

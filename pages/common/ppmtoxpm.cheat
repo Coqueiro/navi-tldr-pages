@@ -3,14 +3,14 @@
 
 % ppmtoxpm, common
 
-# Convert a PPM image to a XPM image
-ppmtoxpm <path_to_input_file_ppm> > <path_to_output_file_xpm>
+# Convert a PPM image to an XPM image
+ppmtoxpm <path_to_input_file_ppm> ><path_to_output_file_xpm>
 
 # Specify the prefix string in the output XPM image
-ppmtoxpm <__n__name_> <prefix_string> <path_to_input_file_ppm> > <path_to_output_file_xpm>
+ppmtoxpm <__n__name_> <prefix_string> <path_to_input_file_ppm> ><path_to_output_file_xpm>
 
 # In the output XPM file, specify colors by their hexadecimal code instead of their name
-ppmtoxpm <__h__hexonly_> <path_to_input_file_ppm> > <path_to_output_file_xpm>
+ppmtoxpm <__h__hexonly_> <path_to_input_file_ppm> ><path_to_output_file_xpm>
 
 # Use the specified PGM file as a transparency mask
-ppmtoxpm <__a__alphamask_> <path_to_alpha_file_pgm> <path_to_input_file_ppm> > <path_to_output_file_xpm>
+ppmtoxpm <__a__alphamask_> <path_to_alpha_file_pgm> <path_to_input_file_ppm> ><path_to_output_file_xpm>

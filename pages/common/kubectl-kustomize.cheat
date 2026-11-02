@@ -13,7 +13,7 @@ kubectl kustomize <path_to_directory>
 kubectl kustomize <https___github_com_user_repo_path>
 
 # Build resources and save to a file
-kubectl kustomize <path_to_directory> > <output_yaml>
+kubectl kustomize <path_to_directory> ><output_yaml>
 
 # Build resources with load restrictor disabled
 kubectl kustomize --load-restrictor <LoadRestrictionsNone> <path_to_directory>

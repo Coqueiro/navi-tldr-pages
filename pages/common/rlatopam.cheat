@@ -4,4 +4,4 @@
 % rlatopam, common
 
 # Convert the specified SPOT image to PGM format
-rlatopam <path_to_file> > <path_to_output_pam>
+rlatopam <path_to_file> ><path_to_output_pam>

@@ -18,5 +18,11 @@ trap - {{SIGHUP SIGINT ...}}
 # Ignore a signal
 trap '' <_2_SIGINT_>
 
+# Execute a command when the current shell exits
+trap '{{echo "Initiating cleanup"}}' EXIT
+
+# Execute a command before every single command
+trap '{{echo "Debug output"}}' DEBUG
+
 # Display help
 help trap

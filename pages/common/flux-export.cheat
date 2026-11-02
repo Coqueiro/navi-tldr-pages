@@ -7,7 +7,7 @@
 flux export kustomization <kustomization_name>
 
 # Export all Kustomization resources and save them to a file
-flux export kustomization --all > <path_to_kustomizations_yaml>
+flux export kustomization --all ><path_to_kustomizations_yaml>
 
 # Export a GitRepository source including credentials
 flux export source git <source_name> --with-credentials

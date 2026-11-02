@@ -7,7 +7,7 @@
 rhash <path_to_file>
 
 # Recursively process a directory to generate an SFV file using SHA1
-rhash --sha1 --recursive <path_to_folder> > <path_to_output_sfv>
+rhash --sha1 --recursive <path_to_folder> ><path_to_output_sfv>
 
 # Verify the integrity of files based on an SFV file
 rhash --check <path_to_file_sfv>

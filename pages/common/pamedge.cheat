@@ -4,4 +4,4 @@
 % pamedge, common
 
 # Perform edge-detection on a Netpbm image
-pamedge <path_to_input_pam> > <path_to_output_pam>
+pamedge <path_to_input_pam> ><path_to_output_pam>

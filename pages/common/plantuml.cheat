@@ -16,10 +16,10 @@ plantuml <path_to_diagrams>
 plantuml <__o___output_dir_> <path_to_output> <diagram_puml>
 
 # Render a diagram without storing the diagram's source code (Note: It's stored by default when the `-nometadata` option isn't specified)
-plantuml -nometadata <diagram_png> > <diagram_puml>
+plantuml -nometadata <diagram_png> ><diagram_puml>
 
 # Retrieve source from a `plantuml` diagram's metadata
-plantuml -metadata <diagram_png> > <diagram_puml>
+plantuml -metadata <diagram_png> ><diagram_puml>
 
 # Render a diagram with the configuration file
 plantuml --config <config_cfg> <diagram_puml>

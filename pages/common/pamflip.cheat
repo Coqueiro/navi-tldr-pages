@@ -4,13 +4,13 @@
 % pamflip, common
 
 # Rotate the input image counter-clockwise for a specific degree
-pamflip <__r__rotate_><90_180_270> <path_to_input_pam> > <path_to_output_pam>
+pamflip <__r__rotate_><90_180_270> <path_to_input_pam> ><path_to_output_pam>
 
 # Flip left for right
-pamflip <__lr__leftright_> <path_to_input_pam> > <path_to_output_pam>
+pamflip <__lr__leftright_> <path_to_input_pam> ><path_to_output_pam>
 
 # Flip top for bottom
-pamflip <__tb__topbottom_> <path_to_input_pam> > <path_to_output_pam>
+pamflip <__tb__topbottom_> <path_to_input_pam> ><path_to_output_pam>
 
 # Flip the input image on the main diagonal
-pamflip <__xy__transpose_> <path_to_input_pam> > <path_to_output_pam>
+pamflip <__xy__transpose_> <path_to_input_pam> ><path_to_output_pam>

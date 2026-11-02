@@ -10,7 +10,7 @@ pnpm audit
 pnpm audit fix
 
 # Generate a security report in JSON format
-pnpm audit --json > <path_to_audit_report_json>
+pnpm audit --json ><path_to_audit_report_json>
 
 # Audit only dev dependencies
 pnpm audit <__D___dev_>

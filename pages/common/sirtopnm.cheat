@@ -4,4 +4,4 @@
 % sirtopnm, common
 
 # Convert a SIR image to a PNM file
-sirtopnm <path_to_input_sir> > <path_to_output_pnm>
+sirtopnm <path_to_input_sir> ><path_to_output_pnm>

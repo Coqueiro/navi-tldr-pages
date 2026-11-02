@@ -4,10 +4,10 @@
 % pnmrotate, common
 
 # Rotate a PNM image by some angle (measured in degrees, counter-clockwise)
-pnmrotate <angle> <path_to_input_pnm> > <path_to_output_pnm>
+pnmrotate <angle> <path_to_input_pnm> ><path_to_output_pnm>
 
 # Specify the background color exposed by rotating the input image
-pnmrotate <__b__background_> <color> <angle> <path_to_input_pnm> > <path_to_output_pnm>
+pnmrotate <__b__background_> <color> <angle> <path_to_input_pnm> ><path_to_output_pnm>
 
 # Disable anti-aliasing, improving performance but decreasing quality
-pnmrotate <__n__noantialias_> <angle> <path_to_input_pnm> > <path_to_output_pnm>
+pnmrotate <__n__noantialias_> <angle> <path_to_input_pnm> ><path_to_output_pnm>

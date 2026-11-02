@@ -19,7 +19,7 @@ doskey <name> =
 doskey /history
 
 # Save macros to a file for portability
-doskey /macros > <path_to_macinit_file>
+doskey /macros ><path_to_macinit_file>
 
 # Load macros from a file
 doskey /macrofile = <path_to_macinit_file>

@@ -19,4 +19,4 @@ radare2 -i <path_to_script_r2> <path_to_binary>
 !<shell_command>
 
 # [Interactive] Dump raw bytes of current block to a file
-pr > <path_to_file_bin>
+pr ><path_to_file_bin>

@@ -19,7 +19,7 @@ trackfetch <path_to_songs_txt> --title-only
 trackfetch <path_to_songs_txt> --delay <3>
 
 # Retry the songs that failed in a previous run
-cut <__d___delimiter_> '|' <__f___fields_> 1 <path_to_directory>/failed.txt > <path_to_retry_txt> && trackfetch <path_to_retry_txt> <__o___output_> <path_to_directory>
+cut <__d___delimiter_> '|' <__f___fields_> 1 <path_to_directory>/failed.txt ><path_to_retry_txt> && trackfetch <path_to_retry_txt> <__o___output_> <path_to_directory>
 
 # Display help
 trackfetch <__h___help_>

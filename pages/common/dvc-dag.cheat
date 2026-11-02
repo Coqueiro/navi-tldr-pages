@@ -10,4 +10,4 @@ dvc dag
 dvc dag <target>
 
 # Export the pipeline in the dot format
-dvc dag --dot > <path_to_pipeline_dot>
+dvc dag --dot ><path_to_pipeline_dot>

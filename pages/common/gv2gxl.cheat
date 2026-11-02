@@ -7,7 +7,7 @@
 gv2gxl -o <output_gxl> <input_gv>
 
 # Convert a graph using `stdin` and `stdout`
-cat <input_gv> | gv2gxl > <output_gxl>
+cat <input_gv> | gv2gxl ><output_gxl>
 
 # Display help
 gv2gxl -?

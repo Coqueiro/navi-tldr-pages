@@ -19,4 +19,4 @@
 man ls | col <__b___no_backspaces_> | less
 
 # Process a file with reverse line feeds and save the cleaned output
-cat <path_to_input_file> | col <__x___spaces_> > <output_file>
+cat <path_to_input_file> | col <__x___spaces_> ><output_file>

@@ -4,4 +4,4 @@
 % eyuvtoppm, common
 
 # Read a Berkeley YUV file from the specified input file, convert it to a PPM image, and store it in the specified output file
-eyuvtoppm --width <width> --height <height> <path_to_input_file_eyuv> > <path_to_output_file_ppm>
+eyuvtoppm --width <width> --height <height> <path_to_input_file_eyuv> ><path_to_output_file_ppm>

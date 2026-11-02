@@ -7,7 +7,7 @@
 gml2gv -o <output_gv> <input_gml>
 
 # Convert a graph using `stdin` and `stdout`
-cat <input_gml> | gml2gv > <output_gv>
+cat <input_gml> | gml2gv ><output_gv>
 
 # Display help
 gml2gv -?

@@ -4,4 +4,4 @@
 % sputoppm, common
 
 # Convert an SPU file to a PPM image
-sputoppm <path_to_input_spu> > <path_to_output_ppm>
+sputoppm <path_to_input_spu> ><path_to_output_ppm>

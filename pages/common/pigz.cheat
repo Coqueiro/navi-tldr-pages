@@ -10,10 +10,10 @@ pigz <path_to_file>
 pigz <__9___best_> <path_to_file>
 
 # Compress a file using no compression and 4 processors
-pigz -0 <__p___processes_> <4> <path_to_file>
+pigz -0 <__p___processes_> 4 <path_to_file>
 
 # Compress a directory using `tar`
-tar cf - <path_to_directory> | pigz > <path_to_file_tar_gz>
+tar cf - <path_to_directory> | pigz ><path_to_file_tar_gz>
 
 # Decompress a file
 pigz <__d___decompress_> <archive_gz>

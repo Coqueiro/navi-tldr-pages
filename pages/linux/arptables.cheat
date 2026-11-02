@@ -19,4 +19,4 @@ sudo arptables <__F___flush_>
 sudo arptables <__P___policy_> OUTPUT ACCEPT
 
 # Save the current ARP rules to a file
-sudo arptables-save > <path_to_file>
+sudo arptables-save ><path_to_file>

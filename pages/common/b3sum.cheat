@@ -7,7 +7,7 @@
 b3sum {{path/to/file1 path/to/file2 ...}}
 
 # Calculate and save the list of BLAKE3 checksums to a file
-b3sum {{path/to/file1 path/to/file2 ...}} > <path_to_file_b3>
+b3sum {{path/to/file1 path/to/file2 ...}} ><path_to_file_b3>
 
 # Calculate a BLAKE3 checksum from `stdin`
 <command> | b3sum

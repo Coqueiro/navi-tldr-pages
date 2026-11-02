@@ -4,7 +4,7 @@
 % gemtopnm, common
 
 # Convert a GEM image file to a PNM image
-gemtopnm <path_to_file_img> > <path_to_output_pnm>
+gemtopnm <path_to_file_img> ><path_to_output_pnm>
 
 # Describe the contents of the specified GEM image
 gemtopnm <__d__debug_> <path_to_file_img>

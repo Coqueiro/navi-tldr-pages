@@ -4,7 +4,7 @@
 % pnmtorast, common
 
 # Convert a PNM image to a RAST image
-pnmtorast <path_to_input_pnm> > <path_to_output_rast>
+pnmtorast <path_to_input_pnm> ><path_to_output_rast>
 
 # Force either `RT_STANDARD` or `RT_BYTE_ENCODED` form for the output
-pnmtorast -<standard_rle> <path_to_input_pnm> > <path_to_output_rast>
+pnmtorast -<standard_rle> <path_to_input_pnm> ><path_to_output_rast>

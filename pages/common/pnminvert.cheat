@@ -4,4 +4,4 @@
 % pnminvert, common
 
 # Invert the colors or greyscale values in a PNM image
-pnminvert <path_to_input_pnm> > <path_to_output_pnm>
+pnminvert <path_to_input_pnm> ><path_to_output_pnm>

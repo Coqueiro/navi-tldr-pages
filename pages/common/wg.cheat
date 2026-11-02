@@ -13,10 +13,10 @@ sudo wg show <interface>
 wg genkey
 
 # Generate a public key from a private key and print it to `stdout`
-wg < <path_to_private_key> pubkey
+wg <<path_to_private_key> pubkey
 
 # Generate a public and private key and save them to files
-wg genkey | tee <path_to_private_key> | wg pubkey > <path_to_public_key>
+wg genkey | tee <path_to_private_key> | wg pubkey ><path_to_public_key>
 
 # Generate a pre-shared key and print it to `stdout`
 wg genpsk

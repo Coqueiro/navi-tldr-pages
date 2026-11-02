@@ -7,7 +7,7 @@
 sha1sum {{path/to/file1 path/to/file2 ...}}
 
 # Calculate and save the list of SHA1 checksums to a file
-sha1sum {{path/to/file1 path/to/file2 ...}} > <path_to_file_sha1>
+sha1sum {{path/to/file1 path/to/file2 ...}} ><path_to_file_sha1>
 
 # Calculate a SHA1 checksum from `stdin`
 <command> | sha1sum

@@ -13,4 +13,4 @@ qr --error-correction <L_M_Q_H> "<data>"
 <command> | qr
 
 # Save the QR code as a PNG image
-qr "<data>" > <path_to_file_png>
+qr "<data>" ><path_to_file_png>

@@ -25,4 +25,4 @@ tgpt --provider <llama2> <__s___shell_> "<prompt>"
 tgpt --provider openai --key "<api_key>" --model "<gpt_3_5_turbo>" --max-length <10> --temperature <0_7> --top_p <0_9> "<prompt>"
 
 # Feed a file as additional pre-prompt input
-tgpt < <path_to_file> --provider <blackboxai> "<prompt>"
+tgpt <<path_to_file> --provider <blackboxai> "<prompt>"

@@ -4,10 +4,10 @@
 % pnmshear, common
 
 # Shear a PNM image by the specified angle
-pnmshear <angle> <path_to_input_pnm> > <path_to_output_pnm>
+pnmshear <angle> <path_to_input_pnm> ><path_to_output_pnm>
 
 # Specify the color of the background in the sheared image
-pnmshear <__b__background_> <blue> <angle> <path_to_input_pnm> > <path_to_output_pnm>
+pnmshear <__b__background_> <blue> <angle> <path_to_input_pnm> ><path_to_output_pnm>
 
 # Do not perform anti-aliasing
-pnmshear <__n__noantialias_> <angle> <path_to_input_pnm> > <path_to_output_pnm>
+pnmshear <__n__noantialias_> <angle> <path_to_input_pnm> ><path_to_output_pnm>

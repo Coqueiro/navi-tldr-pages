@@ -13,4 +13,4 @@ ps aux | sk
 sk --query "<query>"
 
 # Select multiple files with `<Shift Tab>` and write to a file
-find <path_to_directory> -type f | sk --multi > <path_to_file>
+find <path_to_directory> -type f | sk --multi ><path_to_file>

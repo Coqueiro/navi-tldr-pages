@@ -10,7 +10,7 @@ squeue
 squeue <__u___user_> <username>
 
 # View the queue and refresh every 5 seconds
-squeue <__i___iterate_> <5>
+squeue <__i___iterate_> 5
 
 # View the queue with expected start times
 squeue --start

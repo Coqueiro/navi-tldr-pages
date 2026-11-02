@@ -4,16 +4,16 @@
 % pgmramp, common
 
 # Generate a left-to-right greyscale map
-pgmramp -lr > <path_to_output_pgm>
+pgmramp -lr ><path_to_output_pgm>
 
 # Generate a top-to-bottom greyscale map
-pgmramp -tb > <path_to_output_pgm>
+pgmramp -tb ><path_to_output_pgm>
 
 # Generate a rectangular greyscale map
-pgmramp -rectangle > <path_to_output_pgm>
+pgmramp -rectangle ><path_to_output_pgm>
 
 # Generate an elliptical greyscale map
-pgmramp -ellipse <path_to_image_pgm> > <path_to_output_pgm>
+pgmramp -ellipse <path_to_image_pgm> ><path_to_output_pgm>
 
 # Generate a greyscale map from the top-left corner to the bottom-right corner
-pgmramp -diagonal <path_to_image_pgm> > <path_to_output_pgm>
+pgmramp -diagonal <path_to_image_pgm> ><path_to_output_pgm>

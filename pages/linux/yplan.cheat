@@ -4,4 +4,4 @@
 % yplan, linux
 
 # Create a daily planner with specified language, lettercase (uppercase or lowercase) and year
-yplan <language> <lettercase> <year> > <path_to_file_tex>
+yplan <language> <lettercase> <year> ><path_to_file_tex>

@@ -16,4 +16,4 @@ share -F nfs -o ro /<path_to_directory>
 share -F nfs -o rw,root=<hostname> /<path_to_directory>
 
 # Make sharing persistent by adding entries to `/etc/dfs/dfstab`
-echo "share -F nfs -o rw /<path_to_directory>" >> /etc/dfs/dfstab
+echo "share -F nfs -o rw /<path_to_directory>" >>/etc/dfs/dfstab

@@ -4,4 +4,4 @@
 % lispmtopgm, common
 
 # Convert the specified Lisp Machine bitmap file into a PGM image
-lispmtopgm <path_to_input_lispm> > <path_to_output_pgm>
+lispmtopgm <path_to_input_lispm> ><path_to_output_pgm>

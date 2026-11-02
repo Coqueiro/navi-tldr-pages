@@ -16,7 +16,7 @@ fuzzel <__d___dmenu_>
 echo -e "<red>\n<green>\n<blue>" | fuzzel <__d___dmenu_>
 
 # Let the user choose between multiple items and save the selected one to a file
-echo -e "<red>\n<green>\n<blue>" | fuzzel <__d___dmenu_> > <color_txt>
+echo -e "<red>\n<green>\n<blue>" | fuzzel <__d___dmenu_> ><color_txt>
 
 # Reset apps usage count (default cache directory: `$XDG_CACHE_HOME/fuzzel`)
 rm <__v___verbose_> $HOME/.cache/fuzzel

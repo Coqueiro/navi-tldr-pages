@@ -1,0 +1,22 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/sio.md
+
+% sio, linux
+
+# Open Siomon TUI
+sio
+
+# Set custom polling interval
+sio --interval <milliseconds>
+
+# Snapshot the current sensor values
+sio sensors
+
+# Output report to filetype
+sio <__f___format_> <json_xml_html>
+
+# Output specific hardware details
+sio <cpu_gpu_memory_storage_network_pci_pcie_audio_usb_battery_board>
+
+# Open sio with root sensor access
+sudo sio

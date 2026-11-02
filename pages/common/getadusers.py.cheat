@@ -13,4 +13,4 @@ GetADUsers.py -user <user> -dc-ip <domain_controller_ip> <domain>/<username>:<pa
 GetADUsers.py -all -dc-ip <domain_controller_ip> -hashes <LM_Hash>:<NT_Hash> <domain>/<username>
 
 # Save output to a file
-GetADUsers.py -all -dc-ip <domain_controller_ip> <domain>/<username>:<password> > <path_to_output_txt>
+GetADUsers.py -all -dc-ip <domain_controller_ip> <domain>/<username>:<password> ><path_to_output_txt>

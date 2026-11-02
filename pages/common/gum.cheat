@@ -19,4 +19,4 @@ gum spin <__s___spinner_> <dot_line_minidot_jump_pulse_points_globe_moon_monkey_
 gum format <__t___type_> <emoji> "{{:smile: :heart: hello}}"
 
 # Interactively prompt for multi-line text and write the input to a file
-gum write > <path_to_file>
+gum write ><path_to_file>

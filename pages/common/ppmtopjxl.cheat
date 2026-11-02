@@ -4,13 +4,13 @@
 % ppmtopjxl, common
 
 # Convert a PPM image into a PJXL file
-ppmtopjxl <path_to_image_ppm> > <path_to_output_pjxl>
+ppmtopjxl <path_to_image_ppm> ><path_to_output_pjxl>
 
 # Resize the input image
-ppmtopjxl <__xsi__xsize_> <10cm> <__ysi__ysize_> <5cm> <path_to_image_ppm> > <path_to_output_pjxl>
+ppmtopjxl <__xsi__xsize_> <10cm> <__ysi__ysize_> <5cm> <path_to_image_ppm> ><path_to_output_pjxl>
 
 # Shift the input image
-ppmtopjxl <__xsh__xshift_> <10pt> <__ysh__yshift_> <5pt> <path_to_image_ppm> > <path_to_output_pjxl>
+ppmtopjxl <__xsh__xshift_> <10pt> <__ysh__yshift_> <5pt> <path_to_image_ppm> ><path_to_output_pjxl>
 
 # Do not use the normal TIFF 4.0 compression method
-ppmtopjxl <__n__nopack_> <path_to_image_ppm> > <path_to_output_pjxl>
+ppmtopjxl <__n__nopack_> <path_to_image_ppm> ><path_to_output_pjxl>

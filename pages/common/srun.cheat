@@ -16,4 +16,4 @@ srun --mem 8G <path_to_program>
 srun <__p___partition_> gpu <path_to_program>
 
 # Run a job and save the output to a file
-srun <path_to_program> > <path_to_output>
+srun <path_to_program> ><path_to_output>

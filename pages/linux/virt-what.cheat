@@ -7,7 +7,7 @@
 virt-what
 
 # Log output of `virt-what` into a file
-virt-what > <path_to_file>
+virt-what ><path_to_file>
 
 # Display version
 virt-what --version

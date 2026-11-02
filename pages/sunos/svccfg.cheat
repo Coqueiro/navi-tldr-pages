@@ -7,7 +7,7 @@
 svccfg validate <path_to_smf_file_xml>
 
 # Export service configurations to file
-svccfg export <servicename> > <path_to_smf_file_xml>
+svccfg export <servicename> ><path_to_smf_file_xml>
 
 # Import/update service configurations from file
 svccfg import <path_to_smf_file_xml>

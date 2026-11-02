@@ -4,10 +4,10 @@
 % pbmclean, common
 
 # Clean up a PBM image by erasing isolated black and white pixels
-pbmclean <path_to_image_pbm> > <path_to_output_pbm>
+pbmclean <path_to_image_pbm> ><path_to_output_pbm>
 
 # Clean up only black/white pixels
-pbmclean -<black_white> <path_to_image_pbm> > <path_to_output_pbm>
+pbmclean -<black_white> <path_to_image_pbm> ><path_to_output_pbm>
 
 # Specify the minimum number of neighboring pixels of the same color in order for a pixel not to be considered isolated
-pbmclean <__m__minneighbors_> <3> <path_to_image_pbm> > <path_to_output_pbm>
+pbmclean <__m__minneighbors_> <3> <path_to_image_pbm> ><path_to_output_pbm>

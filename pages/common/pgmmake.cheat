@@ -4,4 +4,4 @@
 % pgmmake, common
 
 # Create PGM image with a uniform gray level (specified as a number between 0 and 1) and the specified dimensions
-pgmmake <graylevel> <width> <height> > <path_to_output_file_pgm>
+pgmmake <graylevel> <width> <height> ><path_to_output_file_pgm>

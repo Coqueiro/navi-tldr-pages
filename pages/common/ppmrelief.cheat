@@ -4,4 +4,4 @@
 % ppmrelief, common
 
 # Produce a relief of the specified PPM image
-ppmrelief <path_to_input_file_ppm> > <path_to_output_file_ppm>
+ppmrelief <path_to_input_file_ppm> ><path_to_output_file_ppm>

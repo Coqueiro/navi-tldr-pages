@@ -16,7 +16,7 @@ pip install <__U___upgrade_> <package>
 pip uninstall <package>
 
 # Save installed packages to file
-pip freeze > <requirements_txt>
+pip freeze ><requirements_txt>
 
 # List installed packages
 pip list

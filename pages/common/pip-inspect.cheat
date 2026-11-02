@@ -7,7 +7,7 @@
 pip inspect
 
 # Inspect and save output to a file
-pip inspect > <environment_report_json>
+pip inspect ><environment_report_json>
 
 # Inspect only locally installed packages (not global)
 pip inspect --local

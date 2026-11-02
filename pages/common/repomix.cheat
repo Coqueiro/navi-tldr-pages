@@ -7,7 +7,7 @@
 repomix <__o___output_> <path_to_file> --style <xml_markdown_plain>
 
 # Send output to `stdout`
-repomix --stdout > <path_to_file>
+repomix --stdout ><path_to_file>
 
 # Send output to `stdout`, then pipe into another program
 repomix --stdout | <less>

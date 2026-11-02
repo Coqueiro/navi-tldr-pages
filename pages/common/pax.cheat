@@ -13,7 +13,7 @@ pax -zf <archive_tar_gz>
 pax -wf <target_tar> {{path/to/file1 path/to/file2 ...}}
 
 # Create an archive from files, using output redirection
-pax -w {{path/to/file1 path/to/file2 ...}} > <target_tar>
+pax -w {{path/to/file1 path/to/file2 ...}} ><target_tar>
 
 # Extract an archive into the current directory
 pax -rf <source_tar>

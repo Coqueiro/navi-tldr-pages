@@ -19,7 +19,7 @@ mysql <__S___socket_> <path_to_socket_sock>
 mysql <__e___execute_> "source <filename_sql>" <database_name>
 
 # Restore a database from a backup created with `mysqldump` (user will be prompted for a password)
-mysql < <path_to_backup_sql> <__u___user_> <user> <__p___password_> <database_name>
+mysql <<path_to_backup_sql> <__u___user_> <user> <__p___password_> <database_name>
 
 # Restore all databases from a backup (user will be prompted for a password)
-mysql < <path_to_backup_sql> <__u___user_> <user> <__p___password_>
+mysql <<path_to_backup_sql> <__u___user_> <user> <__p___password_>

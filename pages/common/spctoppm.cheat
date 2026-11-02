@@ -4,4 +4,4 @@
 % spctoppm, common
 
 # Convert an SPC file to a PPM image
-spctoppm <path_to_input_spc> > <path_to_output_ppm>
+spctoppm <path_to_input_spc> ><path_to_output_ppm>

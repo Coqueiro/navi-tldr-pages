@@ -1,0 +1,19 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/linux/psd.md
+
+% psd, linux
+
+# Show which browser profiles will be managed and their current state
+psd <_p_preview_>
+
+# Delete all crash recovery snapshots without prompting
+psd <_c_clean_>
+
+# Sync profiles from `tmpfs` back to disk immediately
+psd <sync_resync>
+
+# Sync profiles back to disk, close browsers, and restore original profile directories
+psd unsync
+
+# Display help
+psd

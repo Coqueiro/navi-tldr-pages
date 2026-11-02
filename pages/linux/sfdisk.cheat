@@ -4,10 +4,10 @@
 % sfdisk, linux
 
 # Back up the partition layout to a file
-sudo sfdisk <__d___dump_> <_dev_sdX> > <path_to_file_dump>
+sudo sfdisk <__d___dump_> <_dev_sdX> ><path_to_file_dump>
 
 # Restore a partition layout
-sudo sfdisk < <path_to_file_dump> <_dev_sdX>
+sudo sfdisk <<path_to_file_dump> <_dev_sdX>
 
 # Set the type of a partition
 sudo sfdisk --part-type <_dev_sdX> <partition_number> <swap>

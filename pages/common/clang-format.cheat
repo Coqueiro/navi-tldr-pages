@@ -16,4 +16,4 @@ clang-format --style <LLVM_GNU_Google_Chromium_Microsoft_Mozilla_WebKit> <path_t
 clang-format --style file <path_to_file>
 
 # Generate a custom `.clang-format` file
-clang-format --style <LLVM_GNU_Google_Chromium_Microsoft_Mozilla_WebKit> --dump-config > <_clang_format>
+clang-format --style <LLVM_GNU_Google_Chromium_Microsoft_Mozilla_WebKit> --dump-config ><_clang_format>

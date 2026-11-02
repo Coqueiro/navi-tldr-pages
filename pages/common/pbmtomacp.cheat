@@ -4,7 +4,7 @@
 % pbmtomacp, common
 
 # Convert a PBM image to a MACP file
-pbmtomacp <path_to_image_pbm> > <path_to_output_macp>
+pbmtomacp <path_to_image_pbm> ><path_to_output_macp>
 
 # Do not compress the output file
-pbmtomacp <__n__norle_> <path_to_image_pbm> > <path_to_output_macp>
+pbmtomacp <__n__norle_> <path_to_image_pbm> ><path_to_output_macp>

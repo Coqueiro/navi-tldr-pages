@@ -7,10 +7,10 @@
 vhs new <path_to_file_tape>
 
 # Record inputs to a tape file
-vhs record > <path_to_file_tape>
+vhs record ><path_to_file_tape>
 
 # Record inputs to a tape file using a specific shell
-vhs record <__s___shell_> <shell> > <path_to_file_tape>
+vhs record <__s___shell_> <shell> ><path_to_file_tape>
 
 # Stop recording
 exit

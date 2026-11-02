@@ -19,7 +19,7 @@ mariadb --show-warning
 mariadb <_s__ss__sss___silent>
 
 # Execute SQL statements from a script file
-mariadb < <path_to_script_sql> <db_name> > <path_to_output_tab>
+mariadb <<path_to_script_sql> <db_name> ><path_to_output_tab>
 
 # Check memory and open file usage at exit
 mariadb --debug-check

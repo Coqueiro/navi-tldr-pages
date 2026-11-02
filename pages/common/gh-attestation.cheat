@@ -22,4 +22,4 @@ gh <_at_attestation_> verify <path_to_artifact_bin> <__o___owner_> <organization
 gh <_at_attestation_> verify <path_to_artifact_bin> <__b___bundle_> <path_to_bundle_jsonl> --custom-trusted-root <path_to_trusted_root_jsonl>
 
 # Save the trusted root of signing certificates to a file for offline verification
-gh <_at_attestation_> trusted-root > <path_to_trusted_root_jsonl>
+gh <_at_attestation_> trusted-root ><path_to_trusted_root_jsonl>

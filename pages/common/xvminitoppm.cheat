@@ -4,4 +4,4 @@
 % xvminitoppm, common
 
 # Convert an XV thumbnail image file to PPM
-xvminitoppm <path_to_input_file> > <path_to_output_file_ppm>
+xvminitoppm <path_to_input_file> ><path_to_output_file_ppm>

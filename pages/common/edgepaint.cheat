@@ -4,13 +4,13 @@
 % edgepaint, common
 
 # Colorize edges of one or more graph layouts (that already have layout information) to clarify crossing edges
-edgepaint {{path/to/layout1.gv path/to/layout2.gv ...}} > <path_to_output_gv>
+edgepaint {{path/to/layout1.gv path/to/layout2.gv ...}} ><path_to_output_gv>
 
 # Colorize edges using a color scheme. (See <https://graphviz.org/doc/info/colors.html#brewer>)
-edgepaint -color-scheme=<accent7> <path_to_layout_gv> > <path_to_output_gv>
+edgepaint -color-scheme=<accent7> <path_to_layout_gv> ><path_to_output_gv>
 
 # Lay out a graph and colorize its edges, then convert to a PNG image
-dot <path_to_input_gv> | edgepaint | dot -T <png> > <path_to_output_png>
+dot <path_to_input_gv> | edgepaint | dot -T <png> ><path_to_output_png>
 
 # Display help
 edgepaint -?

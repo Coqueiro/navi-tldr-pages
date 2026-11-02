@@ -22,7 +22,7 @@ diff <__r___recursive_> <path_to_old_directory> <path_to_new_directory>
 diff <__r___recursive_> <__q___brief_> <path_to_old_directory> <path_to_new_directory>
 
 # Create a patch file for Git from the differences of two text files, treating nonexistent files as empty
-diff <__a___text_> <__u___unified_> <__N___new_file_> <path_to_old_file> <path_to_new_file> > <path_to_diff_patch>
+diff <__a___text_> <__u___unified_> <__N___new_file_> <path_to_old_file> <path_to_new_file> ><path_to_diff_patch>
 
 # Compare files, showing output in color, trying hard to find the smallest set of changes
 diff <__d___minimal_> --color=always <path_to_old_file> <path_to_new_file>

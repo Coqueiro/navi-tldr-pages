@@ -7,13 +7,13 @@
 cat <path_to_file>
 
 # Concatenate several files into an output file
-cat {{path/to/file1 path/to/file2 ...}} > <path_to_output_file>
+cat {{path/to/file1 path/to/file2 ...}} ><path_to_output_file>
 
 # Append several files to an output file
-cat {{path/to/file1 path/to/file2 ...}} >> <path_to_output_file>
+cat {{path/to/file1 path/to/file2 ...}} >><path_to_output_file>
 
 # Write to a file interactively
-cat > <path_to_file>
+cat ><path_to_file>
 
 # Number all output lines
 cat <__n___number_> <path_to_file>

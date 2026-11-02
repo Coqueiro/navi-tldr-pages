@@ -7,7 +7,7 @@
 lpr <path_to_file>
 
 # Print 2 copies
-lpr -# <2> <path_to_file>
+lpr -# 2 <path_to_file>
 
 # Print to a named printer
 lpr -P <printer> <path_to_file>

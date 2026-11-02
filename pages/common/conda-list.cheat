@@ -16,4 +16,4 @@ conda list <__p___prefix_> <path_to_environment>
 conda list <regex>
 
 # Save packages for future use
-conda list <__e___export_> > <path_to_package_list_txt>
+conda list <__e___export_> ><path_to_package_list_txt>

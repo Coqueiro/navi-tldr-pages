@@ -7,7 +7,7 @@
 bat {{path/to/file1 path/to/file2 ...}}
 
 # Concatenate several files into the target file
-bat {{path/to/file1 path/to/file2 ...}} > <path_to_target_file>
+bat {{path/to/file1 path/to/file2 ...}} ><path_to_target_file>
 
 # Remove decorations and disable paging
 bat {{[-pp|--style plain --pager never]}} <path_to_file>

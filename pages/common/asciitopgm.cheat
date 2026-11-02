@@ -4,7 +4,7 @@
 % asciitopgm, common
 
 # Read ASCII data as input and produce a PGM image with pixel values that are an approximation of the "brightness" of the ASCII characters
-asciitopgm <path_to_input_file> > <path_to_output_file_pgm>
+asciitopgm <path_to_input_file> ><path_to_output_file_pgm>
 
 # Display version
 asciitopgm <__v__version_>

@@ -10,4 +10,4 @@ pocount <path_to_file_po>
 pocount --short <translation___ts>
 
 # Generate a CSV file with the translation progress of various files
-pocount --csv <translation___ts> > <path_to_translation_progress_csv>
+pocount --csv <translation___ts> ><path_to_translation_progress_csv>

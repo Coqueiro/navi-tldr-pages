@@ -4,13 +4,13 @@
 % pamcomp, common
 
 # Overlay two images such with the overlay blocking parts of the underlay
-pamcomp <path_to_overlay_pam> <path_to_underlay_pam> > <path_to_output_pam>
+pamcomp <path_to_overlay_pam> <path_to_underlay_pam> ><path_to_output_pam>
 
 # Set the horizontal alignment of the overlay
-pamcomp <__ali__align_> <left_center_right_beyondleft_beyondright> <__x__xoff_> <x_offset> <path_to_overlay_pam> <path_to_underlay_pam> > <path_to_output_pam>
+pamcomp <__ali__align_> <left_center_right_beyondleft_beyondright> <__x__xoff_> <x_offset> <path_to_overlay_pam> <path_to_underlay_pam> ><path_to_output_pam>
 
 # Set the vertical alignment of the overlay
-pamcomp <__va__valign_> <top_middle_bottom_above_below> <__y__yoff_> <y_offset> <path_to_overlay_pam> <path_to_underlay_pam> > <path_to_output_pam>
+pamcomp <__va__valign_> <top_middle_bottom_above_below> <__y__yoff_> <y_offset> <path_to_overlay_pam> <path_to_underlay_pam> ><path_to_output_pam>
 
 # Set the opacity of the overlay
-pamcomp <__o__opacity_> <0_7> <path_to_overlay_pam> <path_to_underlay_pam> > <path_to_output_pam>
+pamcomp <__o__opacity_> <0_7> <path_to_overlay_pam> <path_to_underlay_pam> ><path_to_output_pam>

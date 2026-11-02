@@ -16,7 +16,7 @@ script <path_to_session_out>
 script <__a___append_> <logfile_log>
 
 # Record timing information (data is outputted to `stderr`)
-script <__t___timing_> 2> <path_to_timing_file>
+script <__t___timing_> 2><path_to_timing_file>
 
 # Write out data as soon as it happens
 script <__f___flush_> <path_to_file>

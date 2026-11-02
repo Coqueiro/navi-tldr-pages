@@ -3,11 +3,11 @@
 
 % pbmtomda, common
 
-# Convert a PBM image to a MDA file
-pbmtomda <path_to_image_pbm> > <path_to_output_mda>
+# Convert a PBM image to an MDA file
+pbmtomda <path_to_image_pbm> ><path_to_output_mda>
 
 # Invert the colors in the input image
-pbmtomda -i <path_to_image_pbm> > <path_to_output_mda>
+pbmtomda -i <path_to_image_pbm> ><path_to_output_mda>
 
 # Halve the input image's height
-pbmtomda -d <path_to_image_pbm> > <path_to_output_mda>
+pbmtomda -d <path_to_image_pbm> ><path_to_output_mda>

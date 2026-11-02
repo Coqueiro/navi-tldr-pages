@@ -19,4 +19,4 @@ terraform show -json
 terraform show -json <path_to_file_tfplan>
 
 # Write to a file without color codes
-terraform show -no-color > <path_to_file>
+terraform show -no-color ><path_to_file>

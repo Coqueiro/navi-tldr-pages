@@ -4,13 +4,13 @@
 % pamtopng, common
 
 # Convert the specified PAM image to PNG
-pamtopng <path_to_image_pam> > <path_to_output_png>
+pamtopng <path_to_image_pam> ><path_to_output_png>
 
 # Mark the specified color as transparent in the output image
-pamtopng <__t__transparent_> <color> <path_to_image_pam> > <path_to_output_png>
+pamtopng <__t__transparent_> <color> <path_to_image_pam> ><path_to_output_png>
 
 # Include the text in the specified file as tEXt chunks in the output
-pamtopng <__te__text_> <path_to_file_txt> <path_to_image_pam> > <path_to_output_png>
+pamtopng <__te__text_> <path_to_file_txt> <path_to_image_pam> ><path_to_output_png>
 
 # Cause the output file to be interlaced in Adam7 format
-pamtopng <__in__interlace_> <path_to_image_pam> > <path_to_output_png>
+pamtopng <__in__interlace_> <path_to_image_pam> ><path_to_output_png>

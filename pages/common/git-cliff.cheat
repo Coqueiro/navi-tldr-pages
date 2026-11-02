@@ -4,7 +4,7 @@
 % git-cliff, common
 
 # Generate a changelog from all commits in a Git repository and save it to `CHANGELOG.md`
-git cliff > <CHANGELOG_md>
+git cliff ><CHANGELOG_md>
 
 # Generate a changelog from commits starting from the latest tag and print it to `stdout`
 git cliff <__l___latest_>

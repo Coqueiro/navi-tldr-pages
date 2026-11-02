@@ -10,10 +10,10 @@ airpaste
 echo <text> | airpaste
 
 # Send a file
-airpaste < <path_to_file>
+airpaste <<path_to_file>
 
 # Receive a file
-airpaste > <path_to_file>
+airpaste ><path_to_file>
 
 # Create or join a channel
 airpaste <channel_name>

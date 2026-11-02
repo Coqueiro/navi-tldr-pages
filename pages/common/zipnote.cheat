@@ -7,7 +7,7 @@
 zipnote <path_to_file_zip>
 
 # Extract the comments on a Zip archive to a file
-zipnote <path_to_file_zip> > <path_to_file_txt>
+zipnote <path_to_file_zip> ><path_to_file_txt>
 
 # Add/Update comments in a Zip archive from a file
-zipnote < <path_to_file_txt> -w <path_to_file_zip>
+zipnote <<path_to_file_txt> -w <path_to_file_zip>

@@ -4,4 +4,4 @@
 % pbmtoatk, common
 
 # Convert a PBM image to an Andrew Toolkit raster object
-pbmtoatk <path_to_image_pbm> > <path_to_output_atk>
+pbmtoatk <path_to_image_pbm> ><path_to_output_atk>

@@ -22,4 +22,4 @@ sport cat <package>
 sudo sport install <package>
 
 # Install a list of packages from a file (format: packages separated by spaces)
-sudo sport install $(< <path_to_list>)
+sudo sport install $(<<path_to_list>)

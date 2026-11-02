@@ -4,4 +4,4 @@
 % pamtosrf, common
 
 # Convert a Netpbm image or a stream of Netpbm images to SRF format
-pamtosrf <path_to_file_pam> > <path_to_output_srf>
+pamtosrf <path_to_file_pam> ><path_to_output_srf>

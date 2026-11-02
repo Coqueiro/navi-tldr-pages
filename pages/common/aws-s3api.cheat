@@ -25,4 +25,4 @@ aws s3api get-object --bucket <bucket_name> --key <object_key> <path_to_output_f
 aws s3api put-bucket-policy --bucket <bucket_name> --policy file://<path_to_bucket_policy_json>
 
 # Download the Amazon S3 bucket policy from a specified bucket
-aws s3api get-bucket-policy --bucket <bucket_name> --query Policy --output <json_table_text_yaml_yaml_stream> > <path_to_bucket_policy>
+aws s3api get-bucket-policy --bucket <bucket_name> --query Policy --output <json_table_text_yaml_yaml_stream> ><path_to_bucket_policy>

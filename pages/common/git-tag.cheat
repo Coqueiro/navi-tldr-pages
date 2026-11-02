@@ -21,8 +21,8 @@ git tag <__d___delete_> <tag_name>
 # Get updated tags from remote
 git fetch <__t___tags_>
 
-# Push a tag to remote
-git push origin tag <tag_name>
+# Push all tags to a remote
+git push --tags
 
 # List all tags which contain a given commit (`HEAD` if not specified)
 git tag --contains <commit>

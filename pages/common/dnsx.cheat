@@ -7,7 +7,7 @@
 echo <example_com> | dnsx -a <__re__resp_>
 
 # Query all the DNS records (A, AAAA, CNAME, NS, TXT, SRV, PTR, MX, SOA, AXFR, CAA)
-dnsx <<< <example_com> -recon <__re__resp_>
+dnsx <<<<example_com> -recon <__re__resp_>
 
 # Query a specific type of DNS record
 echo <example_com> | dnsx <__re__resp_> -<a_aaaa_cname_ns_txt_srv_ptr_mx_soa_any_axfr_caa>

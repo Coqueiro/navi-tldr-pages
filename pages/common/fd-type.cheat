@@ -1,0 +1,25 @@
+; This has been extracted from
+; https://github.com/tldr-pages/tldr/blob/master/pages/common/fd-type.md
+
+% fd-type, common
+
+# Search for regular files
+fd <__t___type_> <_f_file_>
+
+# Search for directories
+fd <__t___type_> <_d_directory_>
+
+# Search for files with the executable bit set
+fd <__t___type_> <_x_executable_>
+
+# Search for empty files and directories
+fd <__t___type_> <_e_empty_>
+
+# Search for symbolic links
+fd <__t___type_> <_l_symlink_>
+
+# Search for block devices
+fd <__t___type_> <_b_block_device_>
+
+# Search for regular files that are also empty
+fd <__t___type_> <_f_file_> <__t___type_> <_e_empty_>

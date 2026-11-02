@@ -15,5 +15,8 @@ ulimit -S -n
 # Set max per-user process limit
 ulimit -u <30>
 
+# Remove limits for a specific resource
+ulimit -<c_f_s____> unlimited
+
 # Display help (Bash only)
 help ulimit

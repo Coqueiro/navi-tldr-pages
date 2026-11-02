@@ -22,4 +22,4 @@ torify -c <config_file> <command>
 torify -P <proxy> <command>
 
 # Redirect output to a file
-torify <command> > <path_to_output>
+torify <command> ><path_to_output>

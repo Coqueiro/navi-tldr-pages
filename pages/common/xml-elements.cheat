@@ -4,13 +4,13 @@
 % xml-elements, common
 
 # Extract elements from an XML document (producing XPATH expressions)
-xml <_el_elements_> <path_to_input_xml_uri> > <path_to_elements_xpath>
+xml <_el_elements_> <path_to_input_xml_uri> ><path_to_elements_xpath>
 
 # Extract elements and their attributes from an XML document
-xml <_el_elements_> -a <path_to_input_xml_uri> > <path_to_elements_xpath>
+xml <_el_elements_> -a <path_to_input_xml_uri> ><path_to_elements_xpath>
 
 # Extract elements and their attributes and values from an XML document
-xml <_el_elements_> -v <path_to_input_xml_uri> > <path_to_elements_xpath>
+xml <_el_elements_> -v <path_to_input_xml_uri> ><path_to_elements_xpath>
 
 # Print sorted unique elements from an XML document to see its structure
 xml <_el_elements_> -u <path_to_input_xml_uri>

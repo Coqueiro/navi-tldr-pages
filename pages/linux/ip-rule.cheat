@@ -22,7 +22,7 @@ sudo ip <_ru_rule_> <_d_delete_> from <192_168_178_2_32>
 sudo ip <_ru_rule_> <_f_flush_>
 
 # Save all rules to a file
-ip <_ru_rule_> <_s_save_> > <path_to_ip_rules_dat>
+ip <_ru_rule_> <_s_save_> ><path_to_ip_rules_dat>
 
 # Restore all rules from a file
-sudo ip < <path_to_ip_rules_dat> <_ru_rule_> <_r_restore_>
+sudo ip <<path_to_ip_rules_dat> <_ru_rule_> <_r_restore_>

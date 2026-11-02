@@ -13,7 +13,7 @@ xml <subcommand> <options> <path_to_input_xml_uri>
 xml <subcommand> <options>
 
 # Execute a subcommand with input from a file or URI and output to a file
-xml <subcommand> <options> <path_to_input_xml_uri> > <path_to_output>
+xml <subcommand> <options> <path_to_input_xml_uri> ><path_to_output>
 
 # Display help for a specific subcommand
 xml <subcommand> --help

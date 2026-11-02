@@ -10,7 +10,7 @@ wl-paste
 wl-paste --primary
 
 # Write the contents of the clipboard to a file
-wl-paste > <path_to_file>
+wl-paste ><path_to_file>
 
 # Pipe the contents of the clipboard to a command
 wl-paste | <command>

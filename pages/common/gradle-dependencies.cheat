@@ -13,4 +13,4 @@ gradle dependencies --configuration <implementation>
 gradle :<subproject>:dependencies
 
 # Display dependencies and save to a file
-gradle dependencies > <path_to_dependencies_txt>
+gradle dependencies ><path_to_dependencies_txt>

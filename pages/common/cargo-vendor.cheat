@@ -4,4 +4,4 @@
 % cargo-vendor, common
 
 # Vendor dependencies and configure `cargo` to use the vendored sources in the current project
-cargo vendor <path_to_directory> > .cargo/config.toml
+cargo vendor <path_to_directory> >.cargo/config.toml

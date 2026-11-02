@@ -10,4 +10,4 @@ wayland-info
 wayland-info <__i___interface_> <wl_output>
 
 # Save the output to a file
-wayland-info > <path_to_file_txt>
+wayland-info ><path_to_file_txt>

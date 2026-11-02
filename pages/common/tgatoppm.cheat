@@ -4,13 +4,13 @@
 % tgatoppm, common
 
 # Convert a TrueVision Targa file to a PPM image
-tgatoppm <path_to_file_tga> > <path_to_output_ppm>
+tgatoppm <path_to_file_tga> ><path_to_output_ppm>
 
 # Dump information from the TGA header to `stdout`
-tgatoppm <__h__headerdump_> <path_to_file_tga> > <path_to_output_ppm>
+tgatoppm <__h__headerdump_> <path_to_file_tga> ><path_to_output_ppm>
 
 # Write the transparency channel values of the input image to the specified file
-tgatoppm <__a__alphaout_> <path_to_transparency_file_pgm> <path_to_file_tga> > <path_to_output_ppm>
+tgatoppm <__a__alphaout_> <path_to_transparency_file_pgm> <path_to_file_tga> ><path_to_output_ppm>
 
 # Display version
 tgatoppm <__v__version_>

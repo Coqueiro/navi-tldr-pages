@@ -13,7 +13,7 @@ cat <path_to_file> | xsel {{[-ib|--input --clipboard]}}
 xsel {{[-ob|--output --clipboard]}}
 
 # Output the clipboard's contents into a file
-xsel {{[-ob|--output --clipboard]}} > <path_to_file>
+xsel {{[-ob|--output --clipboard]}} ><path_to_file>
 
 # Clear the clipboard
 xsel {{[-cb|--clear --clipboard]}}

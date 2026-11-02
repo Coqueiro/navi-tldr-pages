@@ -7,13 +7,13 @@
 git fast-export --all
 
 # Export the entire repository to a file
-git fast-export --all > <path_to_file>
+git fast-export --all ><path_to_file>
 
 # Export a specific branch only
 git fast-export <main>
 
 # Export with `progress` statements every `n` objects (for showing progress during `git fast-import`)
-git fast-export --progress <n> --all > <path_to_file>
+git fast-export --progress <n> --all ><path_to_file>
 
 # Export only a specific subdirectory's history
-git fast-export --all -- <path_to_directory> > <path_to_file>
+git fast-export --all -- <path_to_directory> ><path_to_file>
